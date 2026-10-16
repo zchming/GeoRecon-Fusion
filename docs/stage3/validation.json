@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "scene": "dtu_scan1_blur5",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "same_common_input_bytes": true,
+      "output_protocol_and_artifact_hashes": true
+    }
+  ],
+  "runs": 24,
+  "all_failures_retained": true,
+  "no_not_run_rows": true,
+  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "source_commit": "3899747",
+  "full_suite": "59 tests passed; see tests.txt",
+  "gpu_allocator_peaks_within_10_5_gib": true,
+  "available_driver_samples_within_12_gib": true,
+  "driver_sampling_missing_for": [
+    "vggt_raw"
+  ]
+}

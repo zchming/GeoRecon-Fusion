@@ -1,0 +1,2155 @@
+{
+  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "condition": "blur5",
+      "method": "colmap",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 14.02202863080532,
+      "translation_deg": 46.34832701863171,
+      "ate_mm": 28.083872322444766,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.1023395478275599,
+          "20": 0.3347017025770833
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.5345681619983225,
+        "backend_import": 0.037042536001536064,
+        "feature_extraction": 0.3019247459997132,
+        "exhaustive_matching": 0.05124826500104973,
+        "incremental_mapping_including_native_ba": 0.11442774399984046,
+        "export_and_validation": 0.02877747099773842,
+        "worker_wall": 0.6526610719993187,
+        "total": 1.1953687249988434
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 802275328,
+        "peak_worker_rss_os": 802766848,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_blur5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/colmap"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 1.3156189750006888,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.3156189750006888,
+      "runner_total_seconds": 1.1953687249988434,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "condition": "blur5",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.4224539851591801,
+      "translation_deg": 0.7692346295957512,
+      "ate_mm": 1.6180507567877045,
+      "auc": {
+        "rotation": {
+          "5": 0.915509202968164,
+          "10": 0.957754601484082,
+          "20": 0.978877300742041
+        },
+        "translation": {
+          "5": 0.8461530740808497,
+          "10": 0.9230765370404249,
+          "20": 0.9615382685202125
+        },
+        "joint": {
+          "5": 0.8272897351389398,
+          "10": 0.9136448675694698,
+          "20": 0.9568224337847349
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.5464000430001761,
+        "runtime_and_official_utilities_import": 2.2921990290014946,
+        "official_preprocessing_and_independent_audit": 0.162287394003215,
+        "checkpoint_sha256": 3.0917817349982215,
+        "model_construct_checkpoint_load_and_gpu_transfer": 6.05829764399823,
+        "synchronized_raw_forward": 1.031817492999835,
+        "decode_cpu_export_and_internal_checks": 0.07144504300231347,
+        "worker_wall": 13.899304974998813,
+        "total": 14.467904092001845
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10875236352,
+        "peak_worker_rss_os": 10920243200,
+        "peak_gpu_allocated": 6382083072,
+        "peak_gpu_reserved": 8329887744,
+        "gpu_after_load_allocated": 5043804672,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_blur5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 14.633620697000879,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 14.633620697000879,
+      "runner_total_seconds": 14.467904092001845,
+      "peak_gpu_allocated_bytes": 6382083072
+    },
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "condition": "blur5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "failure_reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 668.00 MiB. GPU 0 has a total capacity of 11.99 GiB of which 709.00 MiB is free. 10.50 GiB allowed; Of the allocated memory 9.54 GiB is allocated by PyTorch, and 517.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "registered": 0,
+      "input_images": 5,
+      "coverage": 0.0,
+      "success": false,
+      "rotation_deg": null,
+      "translation_deg": null,
+      "ate_mm": null,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.5684124090003024,
+        "runtime_imports_and_cuda_setup": 0.6693817399973341,
+        "all_checkpoint_sha256_checks": 2.480857507998735,
+        "official_demo_import": 1.4663723500016204,
+        "vggt_model_construction": 4.52683418700326,
+        "square_preprocessing_and_pixel_audit": 0.22093833700273535,
+        "vggt_synchronized_forward": 8.390396569000586,
+        "retire_unused_vggt_storage": 0.05082996599958278,
+        "vggt_forward_and_initial_snapshot": 8.447047561996442,
+        "build_vggsfm_tracker": 0.17592144800073584,
+        "generate_rank_by_dino": 0.5919954439996218,
+        "initialize_feature_extractors": 0.017707218998111784,
+        "_forward_on_query": 11.957409366998036,
+        "tracking_including_models_and_export": 15.943093858000793,
+        "worker_wall": 35.52837122100027,
+        "total": 36.21186064699941
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10343131648,
+        "peak_gpu_reserved": 10785652736,
+        "peak_worker_rss_os": 11006754816,
+        "peak_worker_rss_sampled": 10570641408,
+        "peak_device_used_sampled_including_desktop": 11993612288
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_blur5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 36.360754930999974,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 36.360754930999974,
+      "runner_total_seconds": 36.21186064699941,
+      "peak_gpu_allocated_bytes": 10343131648
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "condition": "normal5",
+      "method": "colmap",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 1.1988502813367592,
+      "translation_deg": 1.1764412024015745,
+      "ate_mm": 0.7759048039915639,
+      "auc": {
+        "rotation": {
+          "5": 0.7602299437326481,
+          "10": 0.8801149718663241,
+          "20": 0.940057485933162
+        },
+        "translation": {
+          "5": 0.7647117595196852,
+          "10": 0.8823558797598425,
+          "20": 0.9411779398799214
+        },
+        "joint": {
+          "5": 0.7269006240937694,
+          "10": 0.8634503120468848,
+          "20": 0.9317251560234423
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.49041909200241207,
+        "backend_import": 0.033031865998054855,
+        "feature_extraction": 0.5022402129980037,
+        "exhaustive_matching": 0.20173824499943294,
+        "incremental_mapping_including_native_ba": 0.20968552300109877,
+        "export_and_validation": 0.09118314800070948,
+        "worker_wall": 1.1545601370016811,
+        "total": 1.651770808002766
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 808628224,
+        "peak_worker_rss_os": 809754624,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_normal5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/colmap"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 1.7663372099996195,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.7663372099996195,
+      "runner_total_seconds": 1.651770808002766,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "condition": "normal5",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.33175890040533007,
+      "translation_deg": 0.3601127870119665,
+      "ate_mm": 0.5922354602588805,
+      "auc": {
+        "rotation": {
+          "5": 0.9336482199189339,
+          "10": 0.966824109959467,
+          "20": 0.9834120549797335
+        },
+        "translation": {
+          "5": 0.9279774425976066,
+          "10": 0.9639887212988034,
+          "20": 0.9819943606494016
+        },
+        "joint": {
+          "5": 0.9098939925795164,
+          "10": 0.9549469962897582,
+          "20": 0.9774734981448792
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.48825937500078,
+        "runtime_and_official_utilities_import": 1.095273596001789,
+        "official_preprocessing_and_independent_audit": 0.16451472900007502,
+        "checkpoint_sha256": 2.1386394999972254,
+        "model_construct_checkpoint_load_and_gpu_transfer": 6.2678420020019985,
+        "synchronized_raw_forward": 0.6682764529978158,
+        "decode_cpu_export_and_internal_checks": 0.06253117000233033,
+        "worker_wall": 11.041751814998861,
+        "total": 11.555727389000822
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10828345344,
+        "peak_worker_rss_os": 10923364352,
+        "peak_gpu_allocated": 6382083072,
+        "peak_gpu_reserved": 8329887744,
+        "gpu_after_load_allocated": 5043804672,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_normal5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 11.677907771001628,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 11.677907771001628,
+      "runner_total_seconds": 11.555727389000822,
+      "peak_gpu_allocated_bytes": 6382083072
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "condition": "normal5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "failure_reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 2.94 GiB. GPU 0 has a total capacity of 11.99 GiB of which 2.84 GiB is free. 10.50 GiB allowed; Of the allocated memory 7.09 GiB is allocated by PyTorch, and 824.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "registered": 0,
+      "input_images": 5,
+      "coverage": 0.0,
+      "success": false,
+      "rotation_deg": null,
+      "translation_deg": null,
+      "ate_mm": null,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.4970079140002781,
+        "runtime_imports_and_cuda_setup": 0.6579449100026977,
+        "all_checkpoint_sha256_checks": 2.4417205220015603,
+        "official_demo_import": 1.0089417019989924,
+        "vggt_model_construction": 5.127041265001026,
+        "square_preprocessing_and_pixel_audit": 0.23801498800094123,
+        "vggt_synchronized_forward": 8.56736593900132,
+        "retire_unused_vggt_storage": 0.05254962700200849,
+        "vggt_forward_and_initial_snapshot": 8.629456835002202,
+        "build_vggsfm_tracker": 0.21529282000119565,
+        "generate_rank_by_dino": 0.5507176609971793,
+        "initialize_feature_extractors": 0.020299789001001045,
+        "_forward_on_query": 11.504293625999708,
+        "tracking_including_models_and_export": 15.485380359001283,
+        "worker_wall": 35.477721701998234,
+        "total": 36.04059375400175
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10343131648,
+        "peak_gpu_reserved": 11005853696,
+        "peak_worker_rss_os": 11007651840,
+        "peak_worker_rss_sampled": 10910830592,
+        "peak_device_used_sampled_including_desktop": 12195987456
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_normal5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 36.20890220900037,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 36.20890220900037,
+      "runner_total_seconds": 36.04059375400175,
+      "peak_gpu_allocated_bytes": 10343131648
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "condition": "reduced3",
+      "method": "colmap",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.6211192681341884,
+      "translation_deg": 1.190776374413691,
+      "ate_mm": 1.3834214775309344,
+      "auc": {
+        "rotation": {
+          "5": 0.8757761463731623,
+          "10": 0.9378880731865812,
+          "20": 0.9689440365932906
+        },
+        "translation": {
+          "5": 0.7618447251172618,
+          "10": 0.8809223625586308,
+          "20": 0.9404611812793154
+        },
+        "joint": {
+          "5": 0.7422274523358424,
+          "10": 0.8711137261679212,
+          "20": 0.9355568630839607
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.29840251600035117,
+        "backend_import": 0.0335187139971822,
+        "feature_extraction": 0.4528047099993273,
+        "exhaustive_matching": 0.20226979299695813,
+        "incremental_mapping_including_native_ba": 0.21686994099945878,
+        "export_and_validation": 0.04506123600003775,
+        "worker_wall": 1.0538130919994728,
+        "total": 1.3597021770001447
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 528785408,
+        "peak_worker_rss_os": 529334272,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_reduced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 1.5158840920012153,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.5158840920012153,
+      "runner_total_seconds": 1.3597021770001447,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "condition": "reduced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.3921386856694096,
+      "translation_deg": 0.721814923455467,
+      "ate_mm": 0.4238037571584978,
+      "auc": {
+        "rotation": {
+          "5": 0.921572262866118,
+          "10": 0.9607861314330591,
+          "20": 0.9803930657165295
+        },
+        "translation": {
+          "5": 0.8556370153089065,
+          "10": 0.9278185076544533,
+          "20": 0.9639092538272266
+        },
+        "joint": {
+          "5": 0.8556370153089065,
+          "10": 0.9278185076544533,
+          "20": 0.9639092538272266
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.3038686060026521,
+        "runtime_and_official_utilities_import": 1.029851390998374,
+        "official_preprocessing_and_independent_audit": 0.0972104219981702,
+        "checkpoint_sha256": 2.1107693669982837,
+        "model_construct_checkpoint_load_and_gpu_transfer": 6.303249009000865,
+        "synchronized_raw_forward": 0.5935264110012213,
+        "decode_cpu_export_and_internal_checks": 0.052676507002615836,
+        "worker_wall": 10.840950093999709,
+        "total": 11.160157379999873
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10805059584,
+        "peak_worker_rss_os": 10910941184,
+        "peak_gpu_allocated": 5887922176,
+        "peak_gpu_reserved": 7067402240,
+        "gpu_after_load_allocated": 5038931456,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_reduced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 11.32978698900115,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 11.32978698900115,
+      "runner_total_seconds": 11.160157379999873,
+      "peak_gpu_allocated_bytes": 5887922176
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "condition": "reduced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.5035020312432076,
+      "translation_deg": 1.1747596731354255,
+      "ate_mm": 0.4174043812641926,
+      "auc": {
+        "rotation": {
+          "5": 0.8992995937513585,
+          "10": 0.9496497968756792,
+          "20": 0.9748248984378396
+        },
+        "translation": {
+          "5": 0.7650480653729149,
+          "10": 0.8825240326864575,
+          "20": 0.9412620163432287
+        },
+        "joint": {
+          "5": 0.7650480653729149,
+          "10": 0.8825240326864575,
+          "20": 0.9412620163432287
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.3152751689995057,
+        "runtime_imports_and_cuda_setup": 0.6269274449987279,
+        "all_checkpoint_sha256_checks": 2.386450951998995,
+        "official_demo_import": 1.10043898299773,
+        "vggt_model_construction": 4.5257331270004215,
+        "square_preprocessing_and_pixel_audit": 0.14935203400091268,
+        "vggt_synchronized_forward": 7.512217583996971,
+        "retire_unused_vggt_storage": 0.09379930300201522,
+        "vggt_forward_and_initial_snapshot": 7.6131933750002645,
+        "build_vggsfm_tracker": 0.19372084999849903,
+        "generate_rank_by_dino": 0.5514060379973671,
+        "initialize_feature_extractors": 0.019212276998587186,
+        "_forward_on_query": 17.486729449003178,
+        "_augment_non_visible_frames": 0.00010881100024562329,
+        "tracking_including_models_and_export": 21.35126060100083,
+        "ceres_bundle_adjustment": 0.4750450009996712,
+        "official_demo_wall_including_nested_stages": 35.50568498999928,
+        "worker_wall": 40.14714396400086,
+        "total": 40.58837535699786
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720,
+        "peak_worker_rss_os": 11007819776,
+        "peak_worker_rss_sampled": 10774593536,
+        "peak_device_used_sampled_including_desktop": 11370758144
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_reduced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 40.71856662299979,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 40.71856662299979,
+      "runner_total_seconds": 40.58837535699786,
+      "peak_gpu_allocated_bytes": 10077113856
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "condition": "spaced3",
+      "method": "colmap",
+      "status": "no_reconstruction",
+      "failure_reason": "COLMAP returned no usable reconstruction",
+      "registered": 0,
+      "input_images": 3,
+      "coverage": 0.0,
+      "success": false,
+      "rotation_deg": null,
+      "translation_deg": null,
+      "ate_mm": null,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.33044669599985355,
+        "backend_import": 0.03945241600013105,
+        "feature_extraction": 0.45318403000055696,
+        "exhaustive_matching": 0.15158096000232035,
+        "incremental_mapping_including_native_ba": 0.034277419003046816,
+        "export_and_validation": 0.00012052099918946624,
+        "worker_wall": 0.7526951069994539,
+        "total": 1.0834753409981204
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 527851520,
+        "peak_worker_rss_os": 527761408,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/colmap"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 1.2153103360033128,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.2153103360033128,
+      "runner_total_seconds": 1.0834753409981204,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "condition": "spaced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.22916039913038952,
+      "translation_deg": 0.5106837697692291,
+      "ate_mm": 0.48031648138350624,
+      "auc": {
+        "rotation": {
+          "5": 0.954167920173922,
+          "10": 0.977083960086961,
+          "20": 0.9885419800434806
+        },
+        "translation": {
+          "5": 0.8978632460461542,
+          "10": 0.9489316230230771,
+          "20": 0.9744658115115384
+        },
+        "joint": {
+          "5": 0.8978632460461542,
+          "10": 0.9489316230230771,
+          "20": 0.9744658115115384
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.3344480260020646,
+        "runtime_and_official_utilities_import": 1.037068557998282,
+        "official_preprocessing_and_independent_audit": 0.10405988999991678,
+        "checkpoint_sha256": 2.130321096999978,
+        "model_construct_checkpoint_load_and_gpu_transfer": 5.915205281002272,
+        "synchronized_raw_forward": 0.511161236998305,
+        "decode_cpu_export_and_internal_checks": 0.04205804899902432,
+        "worker_wall": 10.389975492002122,
+        "total": 10.738367083002231
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10285256704,
+        "peak_worker_rss_os": 10911211520,
+        "peak_gpu_allocated": 5887922176,
+        "peak_gpu_reserved": 7067402240,
+        "gpu_after_load_allocated": 5038931456,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 10.878527501001372,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 10.878527501001372,
+      "runner_total_seconds": 10.738367083002231,
+      "peak_gpu_allocated_bytes": 5887922176
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "condition": "spaced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.8160881796747209,
+      "translation_deg": 0.6855504801399949,
+      "ate_mm": 1.568187063245789,
+      "auc": {
+        "rotation": {
+          "5": 0.8367823640650558,
+          "10": 0.9183911820325279,
+          "20": 0.9591955910162638
+        },
+        "translation": {
+          "5": 0.8628899039720012,
+          "10": 0.9314449519860005,
+          "20": 0.9657224759930002
+        },
+        "joint": {
+          "5": 0.8263491764766454,
+          "10": 0.9131745882383226,
+          "20": 0.9565872941191613
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.34037538499978837,
+        "runtime_imports_and_cuda_setup": 0.645716374998301,
+        "all_checkpoint_sha256_checks": 2.4197489069993026,
+        "official_demo_import": 1.0175490410001657,
+        "vggt_model_construction": 4.892409481999493,
+        "square_preprocessing_and_pixel_audit": 0.14593124099701527,
+        "vggt_synchronized_forward": 7.26536869100164,
+        "retire_unused_vggt_storage": 0.05471191899778205,
+        "vggt_forward_and_initial_snapshot": 7.324803694002185,
+        "build_vggsfm_tracker": 0.18533267699967837,
+        "generate_rank_by_dino": 0.5625438209972344,
+        "initialize_feature_extractors": 0.02731245899849455,
+        "_forward_on_query": 17.858152108005015,
+        "_augment_non_visible_frames": 0.00010943699817289598,
+        "tracking_including_models_and_export": 21.73634736099848,
+        "ceres_bundle_adjustment": 0.3446363029979693,
+        "official_demo_wall_including_nested_stages": 35.88687696800116,
+        "worker_wall": 40.54724846499812,
+        "total": 41.01222898599735
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720,
+        "peak_worker_rss_os": 11007717376,
+        "peak_worker_rss_sampled": 10587983872,
+        "peak_device_used_sampled_including_desktop": 9823059968
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 41.164066282999556,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 41.164066282999556,
+      "runner_total_seconds": 41.01222898599735,
+      "peak_gpu_allocated_bytes": 10077113856
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "condition": "blur5",
+      "method": "colmap",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 13.970645854325406,
+      "translation_deg": 44.84925856026268,
+      "ate_mm": 32.98826145714039,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.1031636612365487,
+          "20": 0.33625968450036253
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.5414438010011509,
+        "backend_import": 0.03552131600008579,
+        "feature_extraction": 0.3018684810012928,
+        "exhaustive_matching": 0.05120772900045267,
+        "incremental_mapping_including_native_ba": 0.11741439199977322,
+        "export_and_validation": 0.02777306099960697,
+        "worker_wall": 0.6522962109993387,
+        "total": 1.2024842509999871
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 802856960,
+        "peak_worker_rss_os": 801964032,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_blur5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/colmap"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 1.3659171919971413,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.3659171919971413,
+      "runner_total_seconds": 1.2024842509999871,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "condition": "blur5",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.30019530117800686,
+      "translation_deg": 0.9452657870490964,
+      "ate_mm": 1.918247874989216,
+      "auc": {
+        "rotation": {
+          "5": 0.9399609397643987,
+          "10": 0.9699804698821992,
+          "20": 0.9849902349410996
+        },
+        "translation": {
+          "5": 0.8109468425901808,
+          "10": 0.9054734212950905,
+          "20": 0.9527367106475453
+        },
+        "joint": {
+          "5": 0.8090989058340197,
+          "10": 0.9045494529170099,
+          "20": 0.952274726458505
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.5411099359989748,
+        "runtime_and_official_utilities_import": 1.0744664449994161,
+        "official_preprocessing_and_independent_audit": 0.15063886900315993,
+        "checkpoint_sha256": 2.130494114000612,
+        "model_construct_checkpoint_load_and_gpu_transfer": 5.770022427001095,
+        "synchronized_raw_forward": 0.7294006400006765,
+        "decode_cpu_export_and_internal_checks": 0.0707527550002851,
+        "worker_wall": 10.638439462996757,
+        "total": 11.213610329999938
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10517901312,
+        "peak_worker_rss_os": 10923737088,
+        "peak_gpu_allocated": 6382083072,
+        "peak_gpu_reserved": 8329887744,
+        "gpu_after_load_allocated": 5043804672,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_blur5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 11.379403028000525,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 11.379403028000525,
+      "runner_total_seconds": 11.213610329999938,
+      "peak_gpu_allocated_bytes": 6382083072
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "condition": "blur5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "failure_reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 676.00 MiB. GPU 0 has a total capacity of 11.99 GiB of which 214.89 MiB is free. 10.50 GiB allowed; Of the allocated memory 9.65 GiB is allocated by PyTorch, and 792.79 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "registered": 0,
+      "input_images": 5,
+      "coverage": 0.0,
+      "success": false,
+      "rotation_deg": null,
+      "translation_deg": null,
+      "ate_mm": null,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.5779549119979492,
+        "runtime_imports_and_cuda_setup": 0.6726451619979343,
+        "all_checkpoint_sha256_checks": 2.3386548520029464,
+        "official_demo_import": 1.02691771100217,
+        "vggt_model_construction": 4.984591935000935,
+        "square_preprocessing_and_pixel_audit": 0.24242664000121295,
+        "vggt_synchronized_forward": 8.297551209998346,
+        "retire_unused_vggt_storage": 0.048831829997652676,
+        "vggt_forward_and_initial_snapshot": 8.355197346998466,
+        "build_vggsfm_tracker": 0.18379198999900836,
+        "generate_rank_by_dino": 0.5543924529993092,
+        "initialize_feature_extractors": 0.018666617997951107,
+        "_forward_on_query": 11.566581611998117,
+        "tracking_including_models_and_export": 15.429591944001004,
+        "worker_wall": 34.9757308799999,
+        "total": 35.61891868499879
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10363299328,
+        "peak_gpu_reserved": 11194597376,
+        "peak_worker_rss_os": 11007602688,
+        "peak_worker_rss_sampled": 10812379136,
+        "peak_device_used_sampled_including_desktop": 12176064512
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_blur5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 35.762393842000165,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 35.762393842000165,
+      "runner_total_seconds": 35.61891868499879,
+      "peak_gpu_allocated_bytes": 10363299328
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "condition": "normal5",
+      "method": "colmap",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.9146149873006337,
+      "translation_deg": 0.9168378733260534,
+      "ate_mm": 1.0629266547010527,
+      "auc": {
+        "rotation": {
+          "5": 0.8170770025398733,
+          "10": 0.9085385012699365,
+          "20": 0.9542692506349683
+        },
+        "translation": {
+          "5": 0.8166324253347893,
+          "10": 0.9083162126673947,
+          "20": 0.9541581063336974
+        },
+        "joint": {
+          "5": 0.7910590689569372,
+          "10": 0.8955295344784686,
+          "20": 0.9477647672392344
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.526853753002797,
+        "backend_import": 0.03599329800272244,
+        "feature_extraction": 0.5018877740003518,
+        "exhaustive_matching": 0.20158284499848378,
+        "incremental_mapping_including_native_ba": 0.25474084300003597,
+        "export_and_validation": 0.09323445199697744,
+        "worker_wall": 1.204611957000452,
+        "total": 1.7400561410031514
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 809717760,
+        "peak_worker_rss_os": 809897984,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_normal5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/colmap"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 1.8662019330004114,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.8662019330004114,
+      "runner_total_seconds": 1.7400561410031514,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "condition": "normal5",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 5,
+      "input_images": 5,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.239703524098169,
+      "translation_deg": 0.4287405916424998,
+      "ate_mm": 0.8869093678583647,
+      "auc": {
+        "rotation": {
+          "5": 0.9520592951803662,
+          "10": 0.9760296475901831,
+          "20": 0.9880148237950916
+        },
+        "translation": {
+          "5": 0.9142518816715001,
+          "10": 0.95712594083575,
+          "20": 0.9785629704178749
+        },
+        "joint": {
+          "5": 0.9094876838539244,
+          "10": 0.9547438419269623,
+          "20": 0.977371920963481
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.5173079059968586,
+        "runtime_and_official_utilities_import": 1.0403444420007872,
+        "official_preprocessing_and_independent_audit": 0.24719292499867151,
+        "checkpoint_sha256": 2.1635357559971453,
+        "model_construct_checkpoint_load_and_gpu_transfer": 5.821452252999734,
+        "synchronized_raw_forward": 0.6701375570009986,
+        "decode_cpu_export_and_internal_checks": 0.06285831000059261,
+        "worker_wall": 10.643235621999338,
+        "total": 11.18758651799726
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10295541760,
+        "peak_worker_rss_os": 10922582016,
+        "peak_gpu_allocated": 6382083072,
+        "peak_gpu_reserved": 8329887744,
+        "gpu_after_load_allocated": 5043804672,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_normal5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 11.334315738000441,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 11.334315738000441,
+      "runner_total_seconds": 11.18758651799726,
+      "peak_gpu_allocated_bytes": 6382083072
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "condition": "normal5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "failure_reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 3.13 GiB. GPU 0 has a total capacity of 11.99 GiB of which 1.73 GiB is free. 10.50 GiB allowed; Of the allocated memory 7.49 GiB is allocated by PyTorch, and 1.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "registered": 0,
+      "input_images": 5,
+      "coverage": 0.0,
+      "success": false,
+      "rotation_deg": null,
+      "translation_deg": null,
+      "ate_mm": null,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.5662600129981001,
+        "runtime_imports_and_cuda_setup": 0.7078626779984916,
+        "all_checkpoint_sha256_checks": 2.379721409997728,
+        "official_demo_import": 1.092944553001871,
+        "vggt_model_construction": 4.946393197998987,
+        "square_preprocessing_and_pixel_audit": 0.2565250509978796,
+        "vggt_synchronized_forward": 8.452850685000158,
+        "retire_unused_vggt_storage": 0.05289625899968087,
+        "vggt_forward_and_initial_snapshot": 8.514383309997356,
+        "build_vggsfm_tracker": 0.17297416899964446,
+        "generate_rank_by_dino": 0.542748689000291,
+        "initialize_feature_extractors": 0.02163018600185751,
+        "_forward_on_query": 11.995478106000519,
+        "tracking_including_models_and_export": 15.899782733999018,
+        "worker_wall": 35.68496554699959,
+        "total": 36.2842373559979
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10343131648,
+        "peak_gpu_reserved": 10441719808,
+        "peak_worker_rss_os": 11007557632,
+        "peak_worker_rss_sampled": 10774708224,
+        "peak_device_used_sampled_including_desktop": 10818158592
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_normal5/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 36.462451461000455,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 36.462451461000455,
+      "runner_total_seconds": 36.2842373559979,
+      "peak_gpu_allocated_bytes": 10343131648
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "condition": "reduced3",
+      "method": "colmap",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 2.678542758238718,
+      "translation_deg": 3.7529919024372433,
+      "ate_mm": 4.1226673515085395,
+      "auc": {
+        "rotation": {
+          "5": 0.46429144835225644,
+          "10": 0.7321457241761283,
+          "20": 0.8660728620880641
+        },
+        "translation": {
+          "5": 0.24940161951255144,
+          "10": 0.6247008097562757,
+          "20": 0.8123504048781379
+        },
+        "joint": {
+          "5": 0.1835414698093982,
+          "10": 0.5917707349046991,
+          "20": 0.7958853674523495
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.307476702000713,
+        "backend_import": 0.03607865899903118,
+        "feature_extraction": 0.45279333100188524,
+        "exhaustive_matching": 0.2013982969983772,
+        "incremental_mapping_including_native_ba": 0.23170403400217765,
+        "export_and_validation": 0.04583246699985466,
+        "worker_wall": 1.0540952929986815,
+        "total": 1.36658332099978
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 528617472,
+        "peak_worker_rss_os": 529612800,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_reduced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 1.515973050998582,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.515973050998582,
+      "runner_total_seconds": 1.36658332099978,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "condition": "reduced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.3298224757578168,
+      "translation_deg": 0.14585926753043751,
+      "ate_mm": 0.21366545503283182,
+      "auc": {
+        "rotation": {
+          "5": 0.9340355048484366,
+          "10": 0.9670177524242183,
+          "20": 0.9835088762121091
+        },
+        "translation": {
+          "5": 0.9708281464939125,
+          "10": 0.9854140732469562,
+          "20": 0.9927070366234781
+        },
+        "joint": {
+          "5": 0.9340355048484366,
+          "10": 0.9670177524242183,
+          "20": 0.9835088762121091
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.3098190499986231,
+        "runtime_and_official_utilities_import": 1.037372063001385,
+        "official_preprocessing_and_independent_audit": 0.1040281719979248,
+        "checkpoint_sha256": 2.110077272998751,
+        "model_construct_checkpoint_load_and_gpu_transfer": 5.788950264999585,
+        "synchronized_raw_forward": 0.49510332600038964,
+        "decode_cpu_export_and_internal_checks": 0.04545632599911187,
+        "worker_wall": 10.184727498002758,
+        "total": 10.509694517000753
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10519961600,
+        "peak_worker_rss_os": 10910400512,
+        "peak_gpu_allocated": 5887922176,
+        "peak_gpu_reserved": 7067402240,
+        "gpu_after_load_allocated": 5038931456,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_reduced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 10.627727326998865,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 10.627727326998865,
+      "runner_total_seconds": 10.509694517000753,
+      "peak_gpu_allocated_bytes": 5887922176
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "condition": "reduced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.5197377896071907,
+      "translation_deg": 0.5636142763082589,
+      "ate_mm": 0.23479634641755603,
+      "auc": {
+        "rotation": {
+          "5": 0.8960524420785618,
+          "10": 0.948026221039281,
+          "20": 0.9740131105196405
+        },
+        "translation": {
+          "5": 0.8872771447383482,
+          "10": 0.9436385723691741,
+          "20": 0.9718192861845871
+        },
+        "joint": {
+          "5": 0.8685563606800928,
+          "10": 0.9342781803400464,
+          "20": 0.9671390901700233
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.3159232840007462,
+        "runtime_imports_and_cuda_setup": 0.6591510110010859,
+        "all_checkpoint_sha256_checks": 2.4033446030007326,
+        "official_demo_import": 0.9884460360008234,
+        "vggt_model_construction": 4.623963168000046,
+        "square_preprocessing_and_pixel_audit": 0.1504971430003934,
+        "vggt_synchronized_forward": 7.255756229002145,
+        "retire_unused_vggt_storage": 0.05250829299984616,
+        "vggt_forward_and_initial_snapshot": 7.312238942999102,
+        "build_vggsfm_tracker": 0.1748084110004129,
+        "generate_rank_by_dino": 0.5433584099992004,
+        "initialize_feature_extractors": 0.020725113001390127,
+        "_forward_on_query": 18.01720625300004,
+        "_augment_non_visible_frames": 0.00011550300041562878,
+        "tracking_including_models_and_export": 21.88400994499898,
+        "ceres_bundle_adjustment": 0.37947990400061826,
+        "official_demo_wall_including_nested_stages": 35.83395202199972,
+        "worker_wall": 40.44039376699948,
+        "total": 40.882428345001244
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720,
+        "peak_worker_rss_os": 11006935040,
+        "peak_worker_rss_sampled": 10380021760,
+        "peak_device_used_sampled_including_desktop": 11309940736
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_reduced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 41.01374594600202,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 41.01374594600202,
+      "runner_total_seconds": 40.882428345001244,
+      "peak_gpu_allocated_bytes": 10077113856
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "condition": "spaced3",
+      "method": "colmap",
+      "status": "no_reconstruction",
+      "failure_reason": "COLMAP returned no usable reconstruction",
+      "registered": 0,
+      "input_images": 3,
+      "coverage": 0.0,
+      "success": false,
+      "rotation_deg": null,
+      "translation_deg": null,
+      "ate_mm": null,
+      "auc": {
+        "rotation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "translation": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        },
+        "joint": {
+          "5": 0.0,
+          "10": 0.0,
+          "20": 0.0
+        }
+      },
+      "timing_seconds": {
+        "input_validation_and_preprocessing": 0.32989866500065546,
+        "backend_import": 0.03636434200234362,
+        "feature_extraction": 0.4529310349971638,
+        "exhaustive_matching": 0.2523205159995996,
+        "incremental_mapping_including_native_ba": 0.11401595599818393,
+        "export_and_validation": 0.00010812099935719743,
+        "worker_wall": 0.9530899199999112,
+        "total": 1.283377764000761
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 528658432,
+        "peak_worker_rss_os": 528502784,
+        "peak_gpu_allocated": null
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/colmap"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 1.4157556280006247,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 1.4157556280006247,
+      "runner_total_seconds": 1.283377764000761,
+      "peak_gpu_allocated_bytes": null
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "condition": "spaced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.38863816560539693,
+      "translation_deg": 0.5357051941948274,
+      "ate_mm": 1.1913266487757983,
+      "auc": {
+        "rotation": {
+          "5": 0.9222723668789206,
+          "10": 0.9611361834394603,
+          "20": 0.98056809171973
+        },
+        "translation": {
+          "5": 0.8928589611610346,
+          "10": 0.9464294805805172,
+          "20": 0.9732147402902586
+        },
+        "joint": {
+          "5": 0.8760767345299035,
+          "10": 0.9380383672649518,
+          "20": 0.9690191836324759
+        }
+      },
+      "timing_seconds": {
+        "input_validation_staging_and_source_check": 0.3369877949990041,
+        "runtime_and_official_utilities_import": 1.0755727869982366,
+        "official_preprocessing_and_independent_audit": 0.107713153000077,
+        "checkpoint_sha256": 2.1160471120019793,
+        "model_construct_checkpoint_load_and_gpu_transfer": 5.694578970000293,
+        "synchronized_raw_forward": 0.5219162850007706,
+        "decode_cpu_export_and_internal_checks": 0.04191813999932492,
+        "worker_wall": 10.192053507998935,
+        "total": 10.543162459998712
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10882752512,
+        "peak_worker_rss_os": 10910814208,
+        "peak_gpu_allocated": 5887922176,
+        "peak_gpu_reserved": 7067402240,
+        "gpu_after_load_allocated": 5038931456,
+        "gpu_after_load_reserved": 5062524928
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 10.679287245002342,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 10.679287245002342,
+      "runner_total_seconds": 10.543162459998712,
+      "peak_gpu_allocated_bytes": 5887922176
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "condition": "spaced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "failure_reason": null,
+      "registered": 3,
+      "input_images": 3,
+      "coverage": 1.0,
+      "success": true,
+      "rotation_deg": 0.947887056310464,
+      "translation_deg": 1.7672705723677182,
+      "ate_mm": 1.5966855460154519,
+      "auc": {
+        "rotation": {
+          "5": 0.8104225887379073,
+          "10": 0.9052112943689536,
+          "20": 0.9526056471844768
+        },
+        "translation": {
+          "5": 0.6465458855264563,
+          "10": 0.8232729427632282,
+          "20": 0.9116364713816142
+        },
+        "joint": {
+          "5": 0.6465458855264563,
+          "10": 0.8232729427632282,
+          "20": 0.9116364713816142
+        }
+      },
+      "timing_seconds": {
+        "staging_and_source_checks": 0.34239518999675056,
+        "runtime_imports_and_cuda_setup": 0.6217475869998452,
+        "all_checkpoint_sha256_checks": 2.3740374430017255,
+        "official_demo_import": 1.0380094190004456,
+        "vggt_model_construction": 4.65658982399691,
+        "square_preprocessing_and_pixel_audit": 0.18236119599896483,
+        "vggt_synchronized_forward": 7.279421317001834,
+        "retire_unused_vggt_storage": 0.04746210000303108,
+        "vggt_forward_and_initial_snapshot": 7.332126058998256,
+        "build_vggsfm_tracker": 0.16163599500214332,
+        "generate_rank_by_dino": 0.5318512430021656,
+        "initialize_feature_extractors": 0.02116842399846064,
+        "_forward_on_query": 17.71963452899945,
+        "_augment_non_visible_frames": 0.00011001099846907891,
+        "tracking_including_models_and_export": 21.524294882001413,
+        "ceres_bundle_adjustment": 0.2853028620011173,
+        "official_demo_wall_including_nested_stages": 35.37720701500075,
+        "worker_wall": 39.94153401999938,
+        "total": 40.41039982899747
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720,
+        "peak_worker_rss_os": 11007528960,
+        "peak_worker_rss_sampled": 10962952192,
+        "peak_device_used_sampled_including_desktop": 10443816960
+      },
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 40.56673181899896,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "cli_wall_seconds": 40.56673181899896,
+      "runner_total_seconds": 40.41039982899747,
+      "peak_gpu_allocated_bytes": 10077113856
+    }
+  ],
+  "groups": [
+    {
+      "split": "dev",
+      "method": "colmap",
+      "cases": 4,
+      "successes": 3,
+      "statuses": {
+        "no_reconstruction": 1,
+        "success": 3
+      },
+      "coverage": {
+        "count": 4,
+        "mean": 0.75,
+        "median": 1.0
+      },
+      "cli_wall_seconds": {
+        "count": 4,
+        "mean": 1.4532876532512091,
+        "median": 1.415751533500952
+      },
+      "runner_total_seconds": {
+        "count": 4,
+        "mean": 1.3225792627499686,
+        "median": 1.277535450999494
+      },
+      "peak_gpu_allocated_bytes": {
+        "count": 0,
+        "mean": null,
+        "median": null
+      },
+      "rotation_registered_subset": {
+        "count": 3,
+        "mean": 5.280666060092089,
+        "median": 1.1988502813367592
+      },
+      "translation_registered_subset": {
+        "count": 3,
+        "mean": 16.238514865148993,
+        "median": 1.190776374413691
+      },
+      "ate_available_subset": {
+        "count": 3,
+        "mean": 10.081066201322422,
+        "median": 1.3834214775309344
+      },
+      "joint_auc": {
+        "5": 0.367282019107403,
+        "10": 0.4336410095537015,
+        "20": 0.4668205047768508
+      },
+      "wall_seconds_total": 5.8131506130048365
+    },
+    {
+      "split": "dev",
+      "method": "vggt_raw",
+      "cases": 4,
+      "successes": 4,
+      "statuses": {
+        "success": 4
+      },
+      "coverage": {
+        "count": 4,
+        "mean": 1.0,
+        "median": 1.0
+      },
+      "cli_wall_seconds": {
+        "count": 4,
+        "mean": 12.129960739501257,
+        "median": 11.503847380001389
+      },
+      "runner_total_seconds": {
+        "count": 4,
+        "mean": 11.980538986001193,
+        "median": 11.357942384500348
+      },
+      "peak_gpu_allocated_bytes": {
+        "count": 4,
+        "mean": 6135002624.0,
+        "median": 6135002624.0
+      },
+      "rotation_registered_subset": {
+        "count": 4,
+        "mean": 0.3438779925910773,
+        "median": 0.3619487930373698
+      },
+      "translation_registered_subset": {
+        "count": 4,
+        "mean": 0.5904615274581034,
+        "median": 0.6162493466123481
+      },
+      "ate_available_subset": {
+        "count": 4,
+        "mean": 0.7786016138971472,
+        "median": 0.5362759708211934
+      },
+      "joint_auc": {
+        "5": 0.8726709972683792,
+        "10": 0.9363354986341896,
+        "20": 0.9681677493170947
+      },
+      "wall_seconds_total": 48.51984295800503
+    },
+    {
+      "split": "dev",
+      "method": "vggt_ba",
+      "cases": 4,
+      "successes": 2,
+      "statuses": {
+        "oom": 2,
+        "success": 2
+      },
+      "coverage": {
+        "count": 4,
+        "mean": 0.5,
+        "median": 0.5
+      },
+      "cli_wall_seconds": {
+        "count": 4,
+        "mean": 38.61307251149992,
+        "median": 38.53966077699988
+      },
+      "runner_total_seconds": {
+        "count": 4,
+        "mean": 38.46326468599909,
+        "median": 38.400118001998635
+      },
+      "peak_gpu_allocated_bytes": {
+        "count": 4,
+        "mean": 10210122752.0,
+        "median": 10210122752.0
+      },
+      "rotation_registered_subset": {
+        "count": 2,
+        "mean": 0.6597951054589642,
+        "median": 0.6597951054589642
+      },
+      "translation_registered_subset": {
+        "count": 2,
+        "mean": 0.9301550766377102,
+        "median": 0.9301550766377102
+      },
+      "ate_available_subset": {
+        "count": 2,
+        "mean": 0.9927957222549908,
+        "median": 0.9927957222549908
+      },
+      "joint_auc": {
+        "5": 0.3978493104623901,
+        "10": 0.44892465523119507,
+        "20": 0.4744623276155975
+      },
+      "wall_seconds_total": 154.4522900459997
+    },
+    {
+      "split": "test",
+      "method": "colmap",
+      "cases": 4,
+      "successes": 3,
+      "statuses": {
+        "no_reconstruction": 1,
+        "success": 3
+      },
+      "coverage": {
+        "count": 4,
+        "mean": 0.75,
+        "median": 1.0
+      },
+      "cli_wall_seconds": {
+        "count": 4,
+        "mean": 1.5409619509991899,
+        "median": 1.4658643394996034
+      },
+      "runner_total_seconds": {
+        "count": 4,
+        "mean": 1.39812536925092,
+        "median": 1.3249805425002705
+      },
+      "peak_gpu_allocated_bytes": {
+        "count": 0,
+        "mean": null,
+        "median": null
+      },
+      "rotation_registered_subset": {
+        "count": 3,
+        "mean": 5.85460119995492,
+        "median": 2.678542758238718
+      },
+      "translation_registered_subset": {
+        "count": 3,
+        "mean": 16.506362778675328,
+        "median": 3.7529919024372433
+      },
+      "ate_available_subset": {
+        "count": 3,
+        "mean": 12.724618487783326,
+        "median": 4.1226673515085395
+      },
+      "joint_auc": {
+        "5": 0.24365013469158386,
+        "10": 0.3718250673457919,
+        "20": 0.43591253367289595
+      },
+      "wall_seconds_total": 6.1638478039967595
+    },
+    {
+      "split": "test",
+      "method": "vggt_raw",
+      "cases": 4,
+      "successes": 4,
+      "statuses": {
+        "success": 4
+      },
+      "coverage": {
+        "count": 4,
+        "mean": 1.0,
+        "median": 1.0
+      },
+      "cli_wall_seconds": {
+        "count": 4,
+        "mean": 11.005183334500543,
+        "median": 11.006801491501392
+      },
+      "runner_total_seconds": {
+        "count": 4,
+        "mean": 10.863513456249166,
+        "median": 10.865374488997986
+      },
+      "peak_gpu_allocated_bytes": {
+        "count": 4,
+        "mean": 6135002624.0,
+        "median": 6135002624.0
+      },
+      "rotation_registered_subset": {
+        "count": 4,
+        "mean": 0.3145898666598474,
+        "median": 0.31500888846791186
+      },
+      "translation_registered_subset": {
+        "count": 4,
+        "mean": 0.5138927101042152,
+        "median": 0.4822228929186636
+      },
+      "ate_available_subset": {
+        "count": 4,
+        "mean": 1.0525373366640527,
+        "median": 1.0391180083170815
+      },
+      "joint_auc": {
+        "5": 0.882174707266571,
+        "10": 0.9410873536332857,
+        "20": 0.9705436768166427
+      },
+      "wall_seconds_total": 44.020733338002174
+    },
+    {
+      "split": "test",
+      "method": "vggt_ba",
+      "cases": 4,
+      "successes": 2,
+      "statuses": {
+        "oom": 2,
+        "success": 2
+      },
+      "coverage": {
+        "count": 4,
+        "mean": 0.5,
+        "median": 0.5
+      },
+      "cli_wall_seconds": {
+        "count": 4,
+        "mean": 38.4513307670004,
+        "median": 38.51459163999971
+      },
+      "runner_total_seconds": {
+        "count": 4,
+        "mean": 38.29899605374885,
+        "median": 38.347318592497686
+      },
+      "peak_gpu_allocated_bytes": {
+        "count": 4,
+        "mean": 10215164672.0,
+        "median": 10210122752.0
+      },
+      "rotation_registered_subset": {
+        "count": 2,
+        "mean": 0.7338124229588274,
+        "median": 0.7338124229588274
+      },
+      "translation_registered_subset": {
+        "count": 2,
+        "mean": 1.1654424243379886,
+        "median": 1.1654424243379886
+      },
+      "ate_available_subset": {
+        "count": 2,
+        "mean": 0.9157409462165039,
+        "median": 0.9157409462165039
+      },
+      "joint_auc": {
+        "5": 0.3787755615516373,
+        "10": 0.43938778077581864,
+        "20": 0.4696938903879094
+      },
+      "wall_seconds_total": 153.8053230680016
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "status": "complete",
+  "timing_seconds": {
+    "runtime_and_official_utilities_import": 1.037068557998282,
+    "official_preprocessing_and_independent_audit": 0.10405988999991678,
+    "checkpoint_sha256": 2.130321096999978,
+    "model_construct_checkpoint_load_and_gpu_transfer": 5.915205281002272,
+    "synchronized_raw_forward": 0.511161236998305,
+    "decode_cpu_export_and_internal_checks": 0.04205804899902432
+  },
+  "memory_bytes": {
+    "gpu_after_load_allocated": 5038931456,
+    "gpu_after_load_reserved": 5062524928,
+    "peak_gpu_allocated": 5887922176,
+    "peak_gpu_reserved": 7067402240
+  },
+  "peak_rss_bytes": 10911211520,
+  "versions": {
+    "python": "3.12.3",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "cuda_runtime": "12.8",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "huggingface_hub": "2.2.0",
+    "einops": "0.8.2",
+    "safetensors": "0.8.0"
+  },
+  "input_shape": [
+    3,
+    3,
+    392,
+    518
+  ],
+  "device": {
+    "name": "NVIDIA GeForce RTX 4070 SUPER",
+    "capability": [
+      8,
+      9
+    ],
+    "free_total_bytes_before": [
+      11587813376,
+      12878086144
+    ],
+    "tf32_matmul": false,
+    "cudnn_benchmark": false
+  },
+  "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+  "array_shapes": {
+    "pose_enc": [
+      3,
+      9
+    ],
+    "extrinsics": [
+      3,
+      3,
+      4
+    ],
+    "intrinsics": [
+      3,
+      3,
+      3
+    ],
+    "depth": [
+      3,
+      392,
+      518,
+      1
+    ],
+    "depth_conf": [
+      3,
+      392,
+      518
+    ],
+    "world_points": [
+      3,
+      392,
+      518,
+      3
+    ],
+    "world_points_conf": [
+      3,
+      392,
+      518
+    ]
+  },
+  "validation": {
+    "scope": "internal algebra only, NOT independent accuracy or reliability evidence",
+    "camera_export_max_abs_model_px": 8.279609556893774e-05,
+    "official_depth_unprojection_max_abs_world": 4.5368602208384345e-08,
+    "raw_model_keys": [
+      "pose_enc",
+      "pose_enc_list",
+      "depth",
+      "depth_conf",
+      "world_points",
+      "world_points_conf",
+      "images"
+    ],
+    "tracks": "not_run: no query points",
+    "raw_points": 609168,
+    "confidence_ranges": {
+      "depth_conf": [
+        1.0,
+        87.80903625488281
+      ],
+      "world_points_conf": [
+        1.0,
+        65.24583435058594
+      ]
+    }
+  }
+}

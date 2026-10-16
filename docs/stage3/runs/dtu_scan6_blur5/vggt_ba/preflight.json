@@ -1,0 +1,181 @@
+{
+  "input_shape": [
+    5,
+    3,
+    1024,
+    1024
+  ],
+  "independent_loader_max_abs": 0.0,
+  "range": [
+    0.0,
+    1.0
+  ],
+  "model_grid": [
+    518,
+    518
+  ],
+  "tracking_grid": [
+    1024,
+    1024
+  ],
+  "mapping": [
+    {
+      "image_id": "001",
+      "worker_name": "000000.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "7e9cdc91a2ef892d794e56af86b610d8065ea9ab3b37af26e8b63817382ba4dd",
+      "source_sha256": "644c8efff65130e33f589c2b7e336317ca60478fee3c5be686061097c5fd93eb"
+    },
+    {
+      "image_id": "002",
+      "worker_name": "000001.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "db34f03e63f31ab1507d658826226c33ceace9f16df85c3a1e24ea75d8d704da",
+      "source_sha256": "b8853ff0dbf2bf06850c2217be3dfba3f73913bdc7087aeaa4771e943c067fee"
+    },
+    {
+      "image_id": "003",
+      "worker_name": "000002.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "eb4a6a0b3181a633352fe076840ecffc44aeb338af4bca6ea0bec3ef97c20e0f",
+      "source_sha256": "4f027c405d32e03ddd71b128898744b28161a635a788a843f88c726e5eb29ad6"
+    },
+    {
+      "image_id": "004",
+      "worker_name": "000003.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "c3df68e3ddafa490c530b19fe254e928f1d6322236b4c65b849fcc2661007008",
+      "source_sha256": "69f16465a71690b040ed9a5189f8d0073c47faafbda84da796b210c7d2f2e730"
+    },
+    {
+      "image_id": "005",
+      "worker_name": "000004.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "352f977f19557e0e93c3e21bf06378f5144ff36882a4d3880b02a4dd6258d45a",
+      "source_sha256": "a86e7970fcbbe4377e3300f6420698023c52bd295f8d1bbb6baccfcbb66fe9f1"
+    }
+  ],
+  "pixel_convention": "integer tracking pixels inserted unchanged by official converter; no -0.5 adjustment",
+  "intrinsic_scaling": "official K[:2,:] *= 1024/518; literal upstream rule",
+  "export_note": "primary export inverses actual PIL pixel-center transform; official final sparse resets principal point separately"
+}

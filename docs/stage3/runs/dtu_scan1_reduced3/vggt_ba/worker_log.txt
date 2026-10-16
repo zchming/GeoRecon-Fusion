@@ -1,0 +1,38 @@
+/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue/lightglue/lightglue.py:24: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)
+Arguments: {'scene_dir': '/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_ba', 'seed': 42, 'use_ba': True, 'max_reproj_error': 8.0, 'shared_camera': False, 'camera_type': 'SIMPLE_PINHOLE', 'vis_thresh': 0.2, 'query_frame_num': 8, 'max_query_pts': 4096, 'fine_tracking': True, 'conf_thres_value': 5.0}
+Setting seed as: 42
+Using device: cuda
+Using dtype: torch.bfloat16
+Model loaded
+Loaded 3 images from /home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_ba/images
+/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/demo_colmap.py:75: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=dtype):
+/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/demo_colmap.py:147: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=dtype):
+/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+For faster inference, consider disabling fine_tracking
+Predicting tracks for query frame 0
+Predicting tracks for query frame 1
+Predicting tracks for query frame 2
+I20261016 17:58:45.408174 140463588892800 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+I20261016 17:58:45.880129 140463588892800 bundle_adjustment.cc:866] 
+Bundle adjustment report:
+    Residuals : 38354
+   Parameters : 24248
+   Iterations : 40
+         Time : 0.464462 [s]
+ Initial cost : 1.02054 [px]
+   Final cost : 0.118799 [px]
+  Termination : Convergence
+
+I20261016 17:58:45.880155 140463588892800 timer.cc:91] Elapsed time: 0.008 [minutes]
+Saving reconstruction to /home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_ba/sparse

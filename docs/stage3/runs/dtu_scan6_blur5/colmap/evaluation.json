@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "scene_id": "dtu_scan6_blur5",
+  "method_id": "colmap_sift_cpu_estimated_intrinsics",
+  "data_kind": "real",
+  "run_status": "success",
+  "failure_reason": null,
+  "input_images": 5,
+  "registered_images": 5,
+  "registration_ratio": 1.0,
+  "input_pairs": 10,
+  "rotation_evaluated_pairs": 10,
+  "translation_evaluated_pairs": 10,
+  "pairs": [
+    {
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "rotation_deg": 7.697893052642605,
+      "translation_direction_deg": 47.85882242686442,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "rotation_deg": 14.547686333241792,
+      "translation_direction_deg": 48.74669180056671,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "rotation_deg": 20.7837466428126,
+      "translation_direction_deg": 53.25488935215408,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "rotation_deg": 25.768283922850213,
+      "translation_direction_deg": 57.036377498058066,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "rotation_deg": 7.266287466315019,
+      "translation_direction_deg": 41.60393184379634,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "rotation_deg": 14.279318151593603,
+      "translation_direction_deg": 44.84801903258605,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "rotation_deg": 20.406364877663773,
+      "translation_direction_deg": 46.16636219962916,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "rotation_deg": 7.36645557313949,
+      "translation_direction_deg": 38.99088812238667,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "003",
+        "005"
+      ],
+      "rotation_deg": 14.237424738746968,
+      "translation_direction_deg": 37.92011979496027,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "004",
+        "005"
+      ],
+      "rotation_deg": 7.352997784248017,
+      "translation_direction_deg": 32.066483531625074,
+      "status": "evaluated",
+      "reason": null
+    }
+  ],
+  "rotation_deg_registered_subset": {
+    "count": 10,
+    "mean": 13.970645854325406,
+    "median": 14.258371445170287
+  },
+  "translation_direction_deg_registered_subset": {
+    "count": 10,
+    "mean": 44.84925856026268,
+    "median": 45.50719061610761
+  },
+  "camera_center_ate": {
+    "status": "evaluated",
+    "reason": null,
+    "unit": "mm",
+    "rmse": 32.98826145714039,
+    "image_ids": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005"
+    ],
+    "per_camera_error": [
+      38.993453270375824,
+      20.156379971613926,
+      38.988528090659266,
+      14.554193500967072,
+      42.21881153199947
+    ],
+    "alignment": {
+      "scope": "evaluation_only_registered_subset",
+      "type": "Sim3",
+      "scale": 43.82417890106567,
+      "R": [
+        [
+          -0.3878372092798441,
+          0.9173191384011966,
+          0.09004386387150531
+        ],
+        [
+          -0.9206509091551774,
+          -0.3902522199269109,
+          0.010252234579030912
+        ],
+        [
+          0.04454438875737517,
+          -0.07892276708913258,
+          0.995885030646222
+        ]
+      ],
+      "t": [
+        291.33860143966837,
+        -184.53596962323553,
+        111.17744105270722
+      ]
+    }
+  },
+  "dense_geometry": {
+    "status": "not_evaluated",
+    "reason": "pose evaluation only; dense geometry is not evaluated"
+  }
+}

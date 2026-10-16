@@ -1,0 +1,2 @@
+/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/models/vggt.py:65: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):

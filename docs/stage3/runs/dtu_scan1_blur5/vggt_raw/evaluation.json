@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "scene_id": "dtu_scan1_blur5",
+  "method_id": "vggt_1b_raw_crop_bf16",
+  "data_kind": "real",
+  "run_status": "success",
+  "failure_reason": null,
+  "input_images": 5,
+  "registered_images": 5,
+  "registration_ratio": 1.0,
+  "input_pairs": 10,
+  "rotation_evaluated_pairs": 10,
+  "translation_evaluated_pairs": 10,
+  "pairs": [
+    {
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "rotation_deg": 0.4761726706139199,
+      "translation_direction_deg": 1.270550358444473,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "rotation_deg": 0.6260244390678493,
+      "translation_direction_deg": 0.9294700843977709,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "rotation_deg": 0.725673220360573,
+      "translation_direction_deg": 0.28077623555883885,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "rotation_deg": 0.7978879117844462,
+      "translation_direction_deg": 0.2996179494906804,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "rotation_deg": 0.2562520787428821,
+      "translation_direction_deg": 1.4384206036400249,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "rotation_deg": 0.37018358515523836,
+      "translation_direction_deg": 0.5239109573396267,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "rotation_deg": 0.4103740978098519,
+      "translation_direction_deg": 0.47569214532634857,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "rotation_deg": 0.19211824506897845,
+      "translation_direction_deg": 0.7970207378999108,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "003",
+        "005"
+      ],
+      "rotation_deg": 0.26517913551660754,
+      "translation_direction_deg": 0.8861013515153257,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "004",
+        "005"
+      ],
+      "rotation_deg": 0.10467446747145355,
+      "translation_direction_deg": 0.7907858723445129,
+      "status": "evaluated",
+      "reason": null
+    }
+  ],
+  "rotation_deg_registered_subset": {
+    "count": 10,
+    "mean": 0.4224539851591801,
+    "median": 0.3902788414825451
+  },
+  "translation_direction_deg_registered_subset": {
+    "count": 10,
+    "mean": 0.7692346295957512,
+    "median": 0.7939033051222119
+  },
+  "camera_center_ate": {
+    "status": "evaluated",
+    "reason": null,
+    "unit": "mm",
+    "rmse": 1.6180507567877045,
+    "image_ids": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005"
+    ],
+    "per_camera_error": [
+      1.945526268795714,
+      1.5111465719588204,
+      1.96574056246733,
+      0.5746112015743953,
+      1.6815144487292124
+    ],
+    "alignment": {
+      "scope": "evaluation_only_registered_subset",
+      "type": "Sim3",
+      "scale": 672.2396217978775,
+      "R": [
+        [
+          0.9727449671604291,
+          -0.01683841049177905,
+          -0.23126542499078032
+        ],
+        [
+          0.00752205446377452,
+          0.9991264292837393,
+          -0.041107140539926576
+        ],
+        [
+          0.2317555771943792,
+          0.03824717295220135,
+          0.9720218650835302
+        ]
+      ],
+      "t": [
+        191.21922297317832,
+        0.7343469527162085,
+        24.088660627890476
+      ]
+    }
+  },
+  "dense_geometry": {
+    "status": "not_evaluated",
+    "reason": "pose evaluation only; dense geometry is not evaluated"
+  }
+}

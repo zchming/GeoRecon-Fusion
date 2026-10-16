@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan1_reduced3",
+  "method_id": "vggt_1b_raw_crop_bf16",
+  "run_id": "vggt_raw",
+  "input_manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "success",
+  "failure_reason": null,
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            3184.481328426641,
+            0.0,
+            801.0444015444016
+          ],
+          [
+            0.0,
+            3154.5369050940685,
+            601.030612244898
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            1.0,
+            5.103897274238989e-05,
+            3.542973718140274e-05
+          ],
+          [
+            -5.103909643366933e-05,
+            1.0,
+            3.478510279819602e-06
+          ],
+          [
+            -3.542956255842e-05,
+            -3.4803188100340776e-06,
+            1.0
+          ]
+        ],
+        "t": [
+          3.1077443054527976e-06,
+          2.833132748492062e-05,
+          -1.435500780644361e-05
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            3192.7794703185327,
+            0.0,
+            801.0444015444016
+          ],
+          [
+            0.0,
+            3166.0972128109056,
+            601.030612244898
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.8729813098907471,
+            -0.43879058957099915,
+            0.21299396455287933
+          ],
+          [
+            0.4521062970161438,
+            0.8918249011039734,
+            -0.015756016597151756
+          ],
+          [
+            -0.18303973972797394,
+            0.11005061864852905,
+            0.9769264459609985
+          ]
+        ],
+        "t": [
+          -0.19621355831623077,
+          0.011481144465506077,
+          0.02317143976688385
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            3188.236380912162,
+            0.0,
+            801.0444015444016
+          ],
+          [
+            0.0,
+            3164.154800103635,
+            601.030612244898
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.5234013795852661,
+            -0.7509535551071167,
+            0.40264102816581726
+          ],
+          [
+            0.8017241358757019,
+            0.5940623879432678,
+            0.0657900795340538
+          ],
+          [
+            -0.2885991930961609,
+            0.2883723974227905,
+            0.9129906296730042
+          ]
+        ],
+        "t": [
+          -0.3689796030521393,
+          -0.06537160277366638,
+          0.08143354207277298
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": {
+      "path": "raw_predictions.npz",
+      "sha256": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+      "semantics": "raw camera Z-depth on model-input grid, arbitrary reconstruction units; key depth",
+      "arrays": {
+        "pose_enc": [
+          3,
+          9
+        ],
+        "extrinsics": [
+          3,
+          3,
+          4
+        ],
+        "intrinsics": [
+          3,
+          3,
+          3
+        ],
+        "depth": [
+          3,
+          392,
+          518,
+          1
+        ],
+        "depth_conf": [
+          3,
+          392,
+          518
+        ],
+        "world_points": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "world_points_conf": [
+          3,
+          392,
+          518
+        ]
+      },
+      "coordinate_metadata": "preflight.json and native intrinsics/extrinsics in NPZ"
+    },
+    "pointcloud": {
+      "path": "raw_predictions.npz",
+      "sha256": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+      "semantics": "raw dense point-head world map, key world_points; not fused or filtered",
+      "arrays": {
+        "pose_enc": [
+          3,
+          9
+        ],
+        "extrinsics": [
+          3,
+          3,
+          4
+        ],
+        "intrinsics": [
+          3,
+          3,
+          3
+        ],
+        "depth": [
+          3,
+          392,
+          518,
+          1
+        ],
+        "depth_conf": [
+          3,
+          392,
+          518
+        ],
+        "world_points": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "world_points_conf": [
+          3,
+          392,
+          518
+        ]
+      },
+      "coordinate_metadata": "preflight.json and native intrinsics/extrinsics in NPZ"
+    },
+    "tracks": null,
+    "confidence": {
+      "path": "raw_predictions.npz",
+      "sha256": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+      "semantics": "raw depth_conf and world_points_conf on model-input grid; NOT calibrated probabilities",
+      "arrays": {
+        "pose_enc": [
+          3,
+          9
+        ],
+        "extrinsics": [
+          3,
+          3,
+          4
+        ],
+        "intrinsics": [
+          3,
+          3,
+          3
+        ],
+        "depth": [
+          3,
+          392,
+          518,
+          1
+        ],
+        "depth_conf": [
+          3,
+          392,
+          518
+        ],
+        "world_points": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "world_points_conf": [
+          3,
+          392,
+          518
+        ]
+      },
+      "coordinate_metadata": "preflight.json and native intrinsics/extrinsics in NPZ"
+    }
+  },
+  "provenance": {
+    "code_commit": "389974736bdcbcf3796f6a3dbbe80576960dea51",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "1e50ddd7af0bc7da9f0bd15388b0199505f40cc64e268c84f58d42f3695edc3e",
+    "data_kind": "real",
+    "official_source": {
+      "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "files_sha256": {
+        "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+        "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+        "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+        "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+        "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+        "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+        "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+      }
+    },
+    "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+    "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+    "gt_access": "none; no reference input",
+    "camera_coordinates": "original image zero-based pixel centers"
+  },
+  "config": {
+    "schema_version": 1,
+    "method_id": "vggt_1b_raw_crop_bf16",
+    "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+    "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+    "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+    "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+    "preprocessing": "official_crop_after_common_manifest_preprocessing",
+    "device": "cuda",
+    "autocast": "bfloat16",
+    "parameter_dtype": "float32",
+    "query_points": null,
+    "postprocessing": "none; no BA, filtering, sampling or fusion",
+    "seed": 42,
+    "num_threads": 8,
+    "timeout_seconds": 180,
+    "gpu_allocator_limit_gib": 10.5
+  },
+  "versions": {
+    "python": "3.12.3",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "cuda_runtime": "12.8",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "huggingface_hub": "2.2.0",
+    "einops": "0.8.2",
+    "safetensors": "0.8.0"
+  },
+  "timing_seconds": {
+    "input_validation_staging_and_source_check": 0.3038686060026521,
+    "runtime_and_official_utilities_import": 1.029851390998374,
+    "official_preprocessing_and_independent_audit": 0.0972104219981702,
+    "checkpoint_sha256": 2.1107693669982837,
+    "model_construct_checkpoint_load_and_gpu_transfer": 6.303249009000865,
+    "synchronized_raw_forward": 0.5935264110012213,
+    "decode_cpu_export_and_internal_checks": 0.052676507002615836,
+    "worker_wall": 10.840950093999709,
+    "total": 11.160157379999873
+  },
+  "memory_bytes": {
+    "peak_worker_rss_sampled": 10805059584,
+    "peak_worker_rss_os": 10910941184,
+    "peak_gpu_allocated": 5887922176,
+    "peak_gpu_reserved": 7067402240,
+    "gpu_after_load_allocated": 5038931456,
+    "gpu_after_load_reserved": 5062524928
+  },
+  "logs": [
+    "worker.log",
+    "worker_state.json",
+    "preflight.json",
+    "process.json"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/home/zchming/.venvs/georecon-colmap/bin/python",
+    "-m",
+    "georecon.cli",
+    "run-colmap",
+    "--manifest",
+    "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_blur5/manifest.json",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/colmap"
+  ],
+  "returncode": 0,
+  "full_cli_wall_seconds": 1.3156189750006888,
+  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+}

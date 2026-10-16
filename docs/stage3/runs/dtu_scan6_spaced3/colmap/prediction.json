@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan6_spaced3",
+  "method_id": "colmap_sift_cpu_estimated_intrinsics",
+  "run_id": "colmap",
+  "input_manifest_sha256": "21858f70615a51ff09a809ead63204d5de7788348d736ee891890fa35c14456e",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "no_reconstruction",
+  "failure_reason": "COLMAP returned no usable reconstruction",
+  "images": [
+    {
+      "image_id": "001",
+      "registered": false,
+      "camera": null,
+      "reason": "no_usable_model"
+    },
+    {
+      "image_id": "010",
+      "registered": false,
+      "camera": null,
+      "reason": "no_usable_model"
+    },
+    {
+      "image_id": "020",
+      "registered": false,
+      "camera": null,
+      "reason": "no_usable_model"
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": null,
+    "tracks": null,
+    "confidence": null
+  },
+  "provenance": {
+    "code_commit": "389974736bdcbcf3796f6a3dbbe80576960dea51",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "1e50ddd7af0bc7da9f0bd15388b0199505f40cc64e268c84f58d42f3695edc3e",
+    "data_kind": "real",
+    "gt_access": "none; reference files never opened by adapter",
+    "camera_coordinates": "original image, zero-based pixel centers",
+    "backend": "official PyCOLMAP CPU SfM"
+  },
+  "config": {
+    "schema_version": 1,
+    "method_id": "colmap_sift_cpu_estimated_intrinsics",
+    "pycolmap_version": "4.2.1",
+    "intrinsics": "estimate",
+    "camera_model": "PINHOLE",
+    "camera_sharing": "single",
+    "default_focal_length_factor": 1.2,
+    "seed": 42,
+    "num_threads": 8,
+    "sift_max_num_features": 8192,
+    "min_model_size": 3,
+    "timeout_seconds": 180
+  },
+  "versions": {
+    "pycolmap": "4.2.1",
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "timing_seconds": {
+    "input_validation_and_preprocessing": 0.32989866500065546,
+    "backend_import": 0.03636434200234362,
+    "feature_extraction": 0.4529310349971638,
+    "exhaustive_matching": 0.2523205159995996,
+    "incremental_mapping_including_native_ba": 0.11401595599818393,
+    "export_and_validation": 0.00010812099935719743,
+    "worker_wall": 0.9530899199999112,
+    "total": 1.283377764000761
+  },
+  "memory_bytes": {
+    "peak_worker_rss_sampled": 528658432,
+    "peak_worker_rss_os": 528502784,
+    "peak_gpu_allocated": null
+  },
+  "logs": [
+    "worker.log",
+    "worker_state.json",
+    "process.json"
+  ]
+}

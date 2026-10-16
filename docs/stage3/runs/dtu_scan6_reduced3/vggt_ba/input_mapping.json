@@ -1,0 +1,95 @@
+[
+  {
+    "image_id": "001",
+    "worker_name": "000000.png",
+    "original_wh": [
+      1600,
+      1200
+    ],
+    "common_wh": [
+      800,
+      600
+    ],
+    "original_to_square_transform": [
+      [
+        0.64,
+        0.0,
+        -0.18
+      ],
+      [
+        0.0,
+        0.64,
+        127.82
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "common_processed_sha256": "c38938b2e0c449fd172186a84cd0995793454764b0d3515a20ecc1335da2be81",
+    "source_sha256": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef"
+  },
+  {
+    "image_id": "002",
+    "worker_name": "000001.png",
+    "original_wh": [
+      1600,
+      1200
+    ],
+    "common_wh": [
+      800,
+      600
+    ],
+    "original_to_square_transform": [
+      [
+        0.64,
+        0.0,
+        -0.18
+      ],
+      [
+        0.0,
+        0.64,
+        127.82
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "common_processed_sha256": "49de799103456b4d3635a85d21186ecf0dbc3e3e56e54381740e72d92aa69df1",
+    "source_sha256": "17047847c82f2ec6bfa986f8987531591469dc764e9ee251e418be04ed122cac"
+  },
+  {
+    "image_id": "003",
+    "worker_name": "000002.png",
+    "original_wh": [
+      1600,
+      1200
+    ],
+    "common_wh": [
+      800,
+      600
+    ],
+    "original_to_square_transform": [
+      [
+        0.64,
+        0.0,
+        -0.18
+      ],
+      [
+        0.0,
+        0.64,
+        127.82
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "common_processed_sha256": "561072c7215d621423d6f79555223fbf753181d02ddd57075143be1cc7467348",
+    "source_sha256": "95801ec4c1c8e29913550dcbb9710a7beee33db90f30dca923aedb8110b3c906"
+  }
+]

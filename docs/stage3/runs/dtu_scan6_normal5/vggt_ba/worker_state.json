@@ -1,0 +1,81 @@
+{
+  "status": "process_error",
+  "timing_seconds": {
+    "runtime_imports_and_cuda_setup": 0.7078626779984916,
+    "all_checkpoint_sha256_checks": 2.379721409997728,
+    "official_demo_import": 1.092944553001871,
+    "vggt_model_construction": 4.946393197998987,
+    "square_preprocessing_and_pixel_audit": 0.2565250509978796,
+    "vggt_synchronized_forward": 8.452850685000158,
+    "retire_unused_vggt_storage": 0.05289625899968087,
+    "vggt_forward_and_initial_snapshot": 8.514383309997356,
+    "build_vggsfm_tracker": 0.17297416899964446,
+    "generate_rank_by_dino": 0.542748689000291,
+    "initialize_feature_extractors": 0.02163018600185751,
+    "_forward_on_query": 11.995478106000519,
+    "tracking_including_models_and_export": 15.899782733999018
+  },
+  "memory_bytes": {
+    "peak_gpu_allocated": 10343131648,
+    "peak_gpu_reserved": 10441719808
+  },
+  "weight_loads": [
+    {
+      "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+      "file": "model.pt",
+      "seconds": 0.06175479000012274
+    },
+    {
+      "url": "https://huggingface.co/facebook/VGGSfM/resolve/main/vggsfm_v2_tracker.pt",
+      "file": "vggsfm_v2_tracker.pt",
+      "seconds": 0.011512959998071892
+    },
+    {
+      "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+      "file": "dinov2_vitb14_reg4_pretrain.pth",
+      "seconds": 0.006520461000036448
+    },
+    {
+      "url": "https://github.com/Shiaoming/ALIKED/raw/main/models/aliked-n16.pth",
+      "file": "aliked-n16.pth",
+      "seconds": 0.0027964569999312516
+    },
+    {
+      "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+      "file": "superpoint_v1.pth",
+      "seconds": 0.002154723999410635
+    }
+  ],
+  "peak_rss_bytes": 11007557632,
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "pycolmap": "3.10.0",
+    "pyceres": "2.3",
+    "kornia": "0.8.3",
+    "trimesh": "4.12.2",
+    "hydra-core": "1.3.2",
+    "omegaconf": "2.3.0",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "lightglue": "0.0",
+    "python": "3.12.3",
+    "cuda_runtime": "12.8"
+  },
+  "device": {
+    "name": "NVIDIA GeForce RTX 4070 SUPER",
+    "total_bytes": 12878086144,
+    "allocator_cap_bytes": 11274289152
+  },
+  "verified_weight_sha256": {
+    "vggt": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+    "vggsfm_tracker": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+    "dinov2_vitb14_reg": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+    "aliked": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+    "superpoint": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+  },
+  "official_glob_order_corrected": true,
+  "memory_schedule": "retire_unused_vggt_after_forward",
+  "failure_kind": "oom",
+  "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 3.13 GiB. GPU 0 has a total capacity of 11.99 GiB of which 1.73 GiB is free. 10.50 GiB allowed; Of the allocated memory 7.49 GiB is allocated by PyTorch, and 1.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+}

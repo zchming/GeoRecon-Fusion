@@ -6,14 +6,16 @@
 
 研究问题：经典 SfM/MVS 与视觉几何基础模型分别何时失败？推理时无需真值的可靠性判断能否支持选择或融合，并改善精度、完整度、成功率与计算成本之间的权衡？融合有效与否尚待实验验证。
 
-## 当前状态：阶段 2 的 COLMAP、VGGT raw 与官方 BA 小样本子步骤完成
+## 当前状态：阶段 3 的首轮 DTU 相机位姿 Benchmark 完成
 
-已接入官方 PyCOLMAP CPU SfM、固定版本 VGGT 原始 GPU 推理及官方跟踪/BA，使用相同 DTU 三图及公共输入；57 项 CPU 数学/接口检查通过，GPU 与原生 BA 另行实跑验收。COLMAP 注册 3/3 图像、输出 690 个稀疏点；VGGT raw 输出相机与原始稠密预测；官方 BA 在显式 12GB 显存调度下输出 3/3 相机和 8220 个优化稀疏点，总耗时 40.45 s、整卡采样峰值 10.12 GiB。**这是单场景接入验证，没有固定 Benchmark、可靠性或融合结论；BA 并未使所有位姿指标改善。**
+已接入 COLMAP SfM、VGGT raw 和 VGGT 官方跟踪/BA，并完成阶段 2 产物与 GT 位姿评价复核。阶段 3 在运行前锁定 scan1 开发集、scan6 测试集及四种条件（正常五图、减少至三图、扩大视角间隔、固定模糊），完成 **24 次单次对比**，59 项 CPU 数学/接口检查通过。逐实例结果、失败、全部输入对分母的 AUC、完整耗时与显存均留档。**这是两场景的小型 pose Benchmark，不是完整 DTU 官方稠密评测；尚未开展可靠性分析或融合。**
 
 - [阶段 1 报告、真实执行记录与限制](docs/stage1/report.md)
 - [阶段 2 COLMAP 报告、结果与复现](docs/stage2_colmap/report.md)
 - [阶段 2 VGGT raw 报告、坐标核对与结果](docs/stage2_vggt/report.md)
 - [阶段 2 官方 BA 报告、完整耗时/显存与失败记录](docs/stage2_vggt_ba/report.md)
+- [阶段 3 首轮结果、失败分析与复现](docs/stage3/report.md)
+- [阶段 3 运行前冻结协议](docs/stage3/protocol.md)
 - [相机、输入、结果与评价协议](docs/protocol.md)
 - [阶段 0 环境审计与方案](docs/stage0/report.md)
 - [完整项目要求与阶段边界](docs/project_brief.md)
@@ -101,7 +103,7 @@ outputs/                 # 本地运行产物，Git 忽略
 ## 后续工作：等待明确授权
 
 2. 阶段 2 当前授权子步骤已完成；COLMAP MVS 仅在另行授权且 GPU 构建可用时开展。
-3. 固定 Benchmark 与失败分析。
+3. 阶段 3 首轮小型位姿 Benchmark 已完成；扩展场景、资源配置版本或稠密评测需另行明确范围。
 4. 几何可靠性分析。
 5. 选择/融合与消融。
 6. 教学版 SfM（仅按明确指示提前）。

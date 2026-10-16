@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan1_blur5",
+  "method_id": "colmap_sift_cpu_estimated_intrinsics",
+  "run_id": "colmap",
+  "input_manifest_sha256": "b04e1566393a84df5e71a2bf91e7c0f2d5aed4b834a28f408b3a013492f657b1",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "success",
+  "failure_reason": null,
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1545.7051677313539,
+            0.0,
+            799.5
+          ],
+          [
+            0.0,
+            1418.3534878738628,
+            599.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            -0.42659777025475054,
+            0.8977350909219053,
+            -0.10993656780668504
+          ],
+          [
+            -0.8517632476185719,
+            -0.35789459766807385,
+            0.38263667749742847
+          ],
+          [
+            0.3041606687590272,
+            0.2568718814651504,
+            0.9173347938962171
+          ]
+        ],
+        "t": [
+          2.6452527682125475,
+          -1.8384063501966,
+          3.545753486381645
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1545.7051677313539,
+            0.0,
+            799.5
+          ],
+          [
+            0.0,
+            1418.3534878738628,
+            599.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.08958371115778796,
+            0.975601585794516,
+            -0.2004402766173107
+          ],
+          [
+            -0.9485954111011436,
+            0.14491158582924213,
+            0.281366981592202
+          ],
+          [
+            0.3035481917802351,
+            0.16493082819073027,
+            0.9384329049960202
+          ]
+        ],
+        "t": [
+          1.094553607427369,
+          -2.041655807806871,
+          2.1584176229272085
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1545.7051677313539,
+            0.0,
+            799.5
+          ],
+          [
+            0.0,
+            1418.3534878738628,
+            599.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.5659038117085138,
+            0.7935215891336137,
+            -0.22377748651872773
+          ],
+          [
+            -0.7855719593109588,
+            0.601349180623592,
+            0.14579389461728465
+          ],
+          [
+            0.25025901110273013,
+            0.09328799784644783,
+            0.9636741030139208
+          ]
+        ],
+        "t": [
+          -0.6237764287634947,
+          -1.981396814893602,
+          0.055456006721491646
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "004",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1545.7051677313539,
+            0.0,
+            799.5
+          ],
+          [
+            0.0,
+            1418.3534878738628,
+            599.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.8875128315852625,
+            0.42459242865844843,
+            -0.1790034728641596
+          ],
+          [
+            -0.4298962683732959,
+            0.9028227073691205,
+            0.010017858923271079
+          ],
+          [
+            0.16586190704988482,
+            0.06806194667074876,
+            0.9837974380964628
+          ]
+        ],
+        "t": [
+          -2.1690240091273334,
+          -1.3751715159406963,
+          -1.688710880937621
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "005",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1545.7051677313539,
+            0.0,
+            799.5
+          ],
+          [
+            0.0,
+            1418.3534878738628,
+            599.5
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.9963343710983013,
+            -0.044483561511739135,
+            -0.07306869181382535
+          ],
+          [
+            0.03766172849867664,
+            0.9950258773667022,
+            -0.0922230859227581
+          ],
+          [
+            0.07680765049553616,
+            0.08913313708075002,
+            0.993053809568998
+          ]
+        ],
+        "t": [
+          -3.5918682041653067,
+          -1.0563151031827795,
+          -2.4844919978913147
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": {
+      "path": "sparse_points.npz",
+      "semantics": "sparse COLMAP xyz in reconstruction gauge; RGB uint8; not dense geometry",
+      "sha256": "4df9d75410611acbeaf633a50138d4486fdbea4b33de48e07900f5f4d29a9e22",
+      "world_unit": "arbitrary"
+    },
+    "tracks": null,
+    "confidence": null
+  },
+  "provenance": {
+    "code_commit": "389974736bdcbcf3796f6a3dbbe80576960dea51",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "1e50ddd7af0bc7da9f0bd15388b0199505f40cc64e268c84f58d42f3695edc3e",
+    "data_kind": "real",
+    "gt_access": "none; reference files never opened by adapter",
+    "camera_coordinates": "original image, zero-based pixel centers",
+    "backend": "official PyCOLMAP CPU SfM"
+  },
+  "config": {
+    "schema_version": 1,
+    "method_id": "colmap_sift_cpu_estimated_intrinsics",
+    "pycolmap_version": "4.2.1",
+    "intrinsics": "estimate",
+    "camera_model": "PINHOLE",
+    "camera_sharing": "single",
+    "default_focal_length_factor": 1.2,
+    "seed": 42,
+    "num_threads": 8,
+    "sift_max_num_features": 8192,
+    "min_model_size": 3,
+    "timeout_seconds": 180
+  },
+  "versions": {
+    "pycolmap": "4.2.1",
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  },
+  "timing_seconds": {
+    "input_validation_and_preprocessing": 0.5345681619983225,
+    "backend_import": 0.037042536001536064,
+    "feature_extraction": 0.3019247459997132,
+    "exhaustive_matching": 0.05124826500104973,
+    "incremental_mapping_including_native_ba": 0.11442774399984046,
+    "export_and_validation": 0.02877747099773842,
+    "worker_wall": 0.6526610719993187,
+    "total": 1.1953687249988434
+  },
+  "memory_bytes": {
+    "peak_worker_rss_sampled": 802275328,
+    "peak_worker_rss_os": 802766848,
+    "peak_gpu_allocated": null
+  },
+  "logs": [
+    "worker.log",
+    "worker_state.json",
+    "process.json"
+  ]
+}

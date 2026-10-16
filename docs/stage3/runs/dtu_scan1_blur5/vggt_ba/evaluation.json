@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "scene_id": "dtu_scan1_blur5",
+  "method_id": "vggt_official_ba_12gb",
+  "data_kind": "real",
+  "run_status": "oom",
+  "failure_reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 668.00 MiB. GPU 0 has a total capacity of 11.99 GiB of which 709.00 MiB is free. 10.50 GiB allowed; Of the allocated memory 9.54 GiB is allocated by PyTorch, and 517.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+  "input_images": 5,
+  "registered_images": 0,
+  "registration_ratio": 0.0,
+  "input_pairs": 10,
+  "rotation_evaluated_pairs": 0,
+  "translation_evaluated_pairs": 0,
+  "pairs": [
+    {
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "003",
+        "005"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    },
+    {
+      "image_ids": [
+        "004",
+        "005"
+      ],
+      "rotation_deg": null,
+      "translation_direction_deg": null,
+      "status": "unavailable",
+      "reason": "unregistered_image"
+    }
+  ],
+  "rotation_deg_registered_subset": {
+    "count": 0,
+    "mean": null,
+    "median": null
+  },
+  "translation_direction_deg_registered_subset": {
+    "count": 0,
+    "mean": null,
+    "median": null
+  },
+  "camera_center_ate": {
+    "status": "unavailable",
+    "reason": "requires >=3 noncollinear registered cameras",
+    "unit": "mm",
+    "rmse": null
+  },
+  "dense_geometry": {
+    "status": "not_evaluated",
+    "reason": "pose evaluation only; dense geometry is not evaluated"
+  }
+}

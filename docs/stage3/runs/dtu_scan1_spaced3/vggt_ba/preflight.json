@@ -1,0 +1,119 @@
+{
+  "input_shape": [
+    3,
+    3,
+    1024,
+    1024
+  ],
+  "independent_loader_max_abs": 0.0,
+  "range": [
+    0.0,
+    1.0
+  ],
+  "model_grid": [
+    518,
+    518
+  ],
+  "tracking_grid": [
+    1024,
+    1024
+  ],
+  "mapping": [
+    {
+      "image_id": "001",
+      "worker_name": "000000.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "d39122a44dd9c201671602c09c928dbe3d2b57906e12d2ad1b18519401a7d07d",
+      "source_sha256": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc"
+    },
+    {
+      "image_id": "010",
+      "worker_name": "000001.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "99e4d791b73bbea7c8cc12e01e311f52d944c7f5d59336fffe5a52ede5dec6f2",
+      "source_sha256": "da518e0581f3093237571f35a88fb571eae15a0ee4676714bb1389332347a482"
+    },
+    {
+      "image_id": "020",
+      "worker_name": "000002.png",
+      "original_wh": [
+        1600,
+        1200
+      ],
+      "common_wh": [
+        800,
+        600
+      ],
+      "original_to_square_transform": [
+        [
+          0.64,
+          0.0,
+          -0.18
+        ],
+        [
+          0.0,
+          0.64,
+          127.82
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "common_processed_sha256": "7e0e8a8689792feb3ab87a1a0c3bca4367c0144b820f263b0ec9b471729b1053",
+      "source_sha256": "4ccbc3235ebe19cc577428c723e264bf7405115837c316d59b19d236bbfd6ca3"
+    }
+  ],
+  "pixel_convention": "integer tracking pixels inserted unchanged by official converter; no -0.5 adjustment",
+  "intrinsic_scaling": "official K[:2,:] *= 1024/518; literal upstream rule",
+  "export_note": "primary export inverses actual PIL pixel-center transform; official final sparse resets principal point separately"
+}

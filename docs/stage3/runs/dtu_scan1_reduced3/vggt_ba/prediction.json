@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan1_reduced3",
+  "method_id": "vggt_official_ba_12gb",
+  "run_id": "vggt_ba",
+  "input_manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "success",
+  "failure_reason": null,
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            2925.016618217818,
+            0.0,
+            800.2812499999999
+          ],
+          [
+            0.0,
+            2925.016618217818,
+            600.28125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.9999999867765655,
+            0.00015416453343548766,
+            5.1770314187338676e-05
+          ],
+          [
+            -0.00015415931902322912,
+            0.9999999830461052,
+            -0.00010071094152633148
+          ],
+          [
+            -5.1785839364942466e-05,
+            0.00010070295931820621,
+            0.9999999935885704
+          ]
+        ],
+        "t": [
+          4.434793663676828e-05,
+          8.271626575151458e-05,
+          8.040491593419574e-06
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            2925.758526672216,
+            0.0,
+            800.2812499999999
+          ],
+          [
+            0.0,
+            2925.758526672216,
+            600.28125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.8728076029185372,
+            -0.4369111883450572,
+            0.21752126743495004
+          ],
+          [
+            0.45077896640123044,
+            0.8924902123672196,
+            -0.016110377989165522
+          ],
+          [
+            -0.18709679777547095,
+            0.11211527249944749,
+            0.9759226167758073
+          ]
+        ],
+        "t": [
+          -0.20332598686218262,
+          0.012618049918926167,
+          0.02386172683320288
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            2937.2549297525643,
+            0.0,
+            800.2812499999999
+          ],
+          [
+            0.0,
+            2937.2549297525643,
+            600.28125
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.5252180300277673,
+            -0.7465439545735847,
+            0.40843377042475937
+          ],
+          [
+            0.7981665505407652,
+            0.5986129275595523,
+            0.0677696138135544
+          ],
+          [
+            -0.2950867305244469,
+            0.29040435060139136,
+            0.9102687156110424
+          ]
+        ],
+        "t": [
+          -0.38114708757664995,
+          -0.06811509920077649,
+          0.08996105766002381
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": {
+      "path": "optimized_points.npz",
+      "sha256": "81f88b2793396a9dd55a362c0f6d997375c0eb11f0b1c9c08b9cbc7436785649",
+      "semantics": "actual optimized reconstruction.points3D in arbitrary world units; NOT upstream visualization PLY"
+    },
+    "tracks": {
+      "path": "tracks.npz",
+      "sha256": "ea358dc22f50c34a32da7de33304f3c7a90c0d9c02c7be7bdc3aa98391c6d8b0",
+      "semantics": "raw tracker observations/visibility; 1024 square grid; not calibrated confidence or reliability analysis"
+    },
+    "confidence": null
+  },
+  "provenance": {
+    "code_commit": "389974736bdcbcf3796f6a3dbbe80576960dea51",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "1e50ddd7af0bc7da9f0bd15388b0199505f40cc64e268c84f58d42f3695edc3e",
+    "data_kind": "real",
+    "official_source": {
+      "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "files_sha256": {
+        "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+        "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+        "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+        "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+        "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+        "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+        "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+      },
+      "ba_files_sha256": {
+        "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+        "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+        "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+        "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+        "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+      },
+      "dinov2": {
+        "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+        "license_sha256": {
+          "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+          "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+          "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+          "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+        }
+      },
+      "lightglue": {
+        "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+        "license_sha256": {
+          "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+        }
+      }
+    },
+    "gt_access": "none; reference is evaluated separately",
+    "pixel_convention": "official tracks inserted unchanged as integer centers; no additional COLMAP -0.5 shift"
+  },
+  "config": {
+    "schema_version": 1,
+    "method_id": "vggt_official_ba_12gb",
+    "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+    "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+    "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+    "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+    "device": "cuda",
+    "autocast": "bfloat16",
+    "parameter_dtype": "float32",
+    "seed": 42,
+    "num_threads": 8,
+    "timeout_seconds": 180,
+    "max_query_pts": 4096,
+    "query_frame_num": 8,
+    "fine_tracking": true,
+    "camera_type": "SIMPLE_PINHOLE",
+    "shared_camera": false,
+    "vis_thresh": 0.2,
+    "max_reproj_error": 8.0,
+    "gpu_allocator_limit_gib": 10.5,
+    "preprocessing": "official_black_square_1024_then_bilinear_518",
+    "pycolmap_version": "3.10.0",
+    "memory_schedule": "retire_unused_vggt_after_forward",
+    "allowed_input_counts": [
+      3,
+      5
+    ]
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "pycolmap": "3.10.0",
+    "pyceres": "2.3",
+    "kornia": "0.8.3",
+    "trimesh": "4.12.2",
+    "hydra-core": "1.3.2",
+    "omegaconf": "2.3.0",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "lightglue": "0.0",
+    "python": "3.12.3",
+    "cuda_runtime": "12.8"
+  },
+  "timing_seconds": {
+    "staging_and_source_checks": 0.3152751689995057,
+    "runtime_imports_and_cuda_setup": 0.6269274449987279,
+    "all_checkpoint_sha256_checks": 2.386450951998995,
+    "official_demo_import": 1.10043898299773,
+    "vggt_model_construction": 4.5257331270004215,
+    "square_preprocessing_and_pixel_audit": 0.14935203400091268,
+    "vggt_synchronized_forward": 7.512217583996971,
+    "retire_unused_vggt_storage": 0.09379930300201522,
+    "vggt_forward_and_initial_snapshot": 7.6131933750002645,
+    "build_vggsfm_tracker": 0.19372084999849903,
+    "generate_rank_by_dino": 0.5514060379973671,
+    "initialize_feature_extractors": 0.019212276998587186,
+    "_forward_on_query": 17.486729449003178,
+    "_augment_non_visible_frames": 0.00010881100024562329,
+    "tracking_including_models_and_export": 21.35126060100083,
+    "ceres_bundle_adjustment": 0.4750450009996712,
+    "official_demo_wall_including_nested_stages": 35.50568498999928,
+    "worker_wall": 40.14714396400086,
+    "total": 40.58837535699786
+  },
+  "memory_bytes": {
+    "peak_gpu_allocated": 10077113856,
+    "peak_gpu_reserved": 10192158720,
+    "peak_worker_rss_os": 11007819776,
+    "peak_worker_rss_sampled": 10774593536,
+    "peak_device_used_sampled_including_desktop": 11370758144
+  },
+  "logs": [
+    "worker.log",
+    "worker_state.json",
+    "preflight.json",
+    "process.json",
+    "gpu_memory.csv"
+  ]
+}

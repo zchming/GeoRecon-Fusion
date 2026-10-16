@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/zchming/.venvs/georecon-vggt/bin/python",
+    "-m",
+    "georecon.cli",
+    "run-vggt",
+    "--manifest",
+    "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan6_spaced3/manifest.json",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/vggt_raw",
+    "--official-repo",
+    "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+    "--checkpoint",
+    "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+  ],
+  "returncode": 0,
+  "full_cli_wall_seconds": 10.679287245002342,
+  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+}
