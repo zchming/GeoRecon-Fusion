@@ -73,4 +73,4 @@ def evaluate_poses(prediction, reference):
             "translation_evaluated_pairs": len(translations), "pairs": pairs,
             "rotation_deg_registered_subset": statistics(rotations),
             "translation_direction_deg_registered_subset": statistics(translations), "camera_center_ate": ate,
-            "dense_geometry": {"status": "not_evaluated", "reason": "stage1 pose protocol only"}}
+            "dense_geometry": {"status": "not_evaluated", "reason": "pose evaluation only; dense geometry is not evaluated"}}

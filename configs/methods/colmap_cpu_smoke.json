@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "method_id": "colmap_sift_cpu_estimated_intrinsics",
+  "pycolmap_version": "4.2.1",
+  "intrinsics": "estimate",
+  "camera_model": "PINHOLE",
+  "camera_sharing": "single",
+  "default_focal_length_factor": 1.2,
+  "seed": 42,
+  "num_threads": 8,
+  "sift_max_num_features": 8192,
+  "min_model_size": 3,
+  "timeout_seconds": 1200
+}

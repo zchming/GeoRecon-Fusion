@@ -9,6 +9,9 @@ description = "Reproducible geometry protocols and evaluation for GeoRecon-Fusio
 requires-python = ">=3.12"
 dependencies = ["numpy>=1.26,<3", "Pillow>=10,<13"]
 
+[project.optional-dependencies]
+colmap = ["pycolmap==4.2.1"]
+
 [project.scripts]
 georecon = "georecon.cli:main"
 

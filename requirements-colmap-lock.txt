@@ -1,0 +1,5 @@
+# Separate CPU SfM environment, not the VGGT BA environment.
+pycolmap==4.2.1
+numpy==2.5.2
+Pillow==12.3.0
+setuptools==78.1.0

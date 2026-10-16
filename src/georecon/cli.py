@@ -7,7 +7,7 @@ from .evaluation.poses import evaluate_poses
 
 
 def main():
-    parser = argparse.ArgumentParser(description="GeoRecon-Fusion stage 1 data/geometry checks")
+    parser = argparse.ArgumentParser(description="GeoRecon-Fusion geometry checks and explicit baseline runs")
     sub = parser.add_subparsers(dest="command", required=True)
     demo = sub.add_parser("synthetic-demo", help="Synthetic checks, never real benchmark results")
     demo.add_argument("--config", required=True)
@@ -22,6 +22,10 @@ def main():
     evaluate.add_argument("--prediction", required=True)
     evaluate.add_argument("--reference", required=True)
     evaluate.add_argument("--output", required=True)
+    colmap = sub.add_parser("run-colmap", help="Official CPU COLMAP SfM, estimated intrinsics, no reference access")
+    colmap.add_argument("--manifest", required=True)
+    colmap.add_argument("--config", required=True)
+    colmap.add_argument("--output", required=True)
     args = parser.parse_args()
     try:
         if args.command == "synthetic-demo":
@@ -38,10 +42,15 @@ def main():
                       "checks": "hashes_dimensions_decode_preprocessing_passed", "baseline_status": "not_run"}
             if args.output:
                 write_json(args.output, result)
+        elif args.command == "run-colmap":
+            from .baselines.colmap import run_colmap
+            result = run_colmap(args.manifest, args.config, args.output)
         else:
             result = evaluate_poses(read_json(args.prediction), read_json(args.reference))
             write_json(args.output, result)
         print(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False))
+        if args.command == "run-colmap" and result["status"] not in {"success", "partial"}:
+            raise SystemExit(1)
     except (ValueError, KeyError, OSError) as exc:
         print(f"georecon: {exc}", file=sys.stderr)
         raise SystemExit(2) from exc
