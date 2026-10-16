@@ -1,0 +1,63 @@
+{
+  "natural_gated": {
+    "outcome": "selected",
+    "selected_method": "vggt_raw",
+    "warning": null,
+    "trace": [
+      {
+        "method": "vggt_raw",
+        "eligible": true,
+        "reasons": [],
+        "evidence_status": "evidence_available"
+      },
+      {
+        "method": "colmap",
+        "eligible": true,
+        "reasons": [],
+        "evidence_status": "evidence_available"
+      },
+      {
+        "method": "vggt_ba",
+        "eligible": false,
+        "reasons": [
+          "no_complete_successful_camera_output",
+          "no_usable_geometric_evidence"
+        ],
+        "evidence_status": "unknown"
+      }
+    ],
+    "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+    "fallback_used": false,
+    "correctness_probability": null
+  },
+  "natural_without_evidence_gate": {
+    "outcome": "selected",
+    "selected_method": "vggt_raw",
+    "warning": null,
+    "trace": [
+      {
+        "method": "vggt_raw",
+        "eligible": true,
+        "reasons": [],
+        "evidence_status": "evidence_available"
+      },
+      {
+        "method": "colmap",
+        "eligible": true,
+        "reasons": [],
+        "evidence_status": "evidence_available"
+      },
+      {
+        "method": "vggt_ba",
+        "eligible": false,
+        "reasons": [
+          "no_complete_successful_camera_output"
+        ],
+        "evidence_status": "evidence_available"
+      }
+    ],
+    "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+    "fallback_used": false,
+    "correctness_probability": null
+  }
+}

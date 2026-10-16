@@ -1,0 +1,166 @@
+{
+  "new_three_ablation_batch_seconds_sum": 11.771679681999558,
+  "new_peak_batch_rss_gib": 0.18257522583007812,
+  "new_offline_evaluation_seconds": 8.015602514999955,
+  "new_peak_evaluator_rss_gib": 0.4069175720214844,
+  "new_GPU_allocated_bytes": 0,
+  "historical_stage_costs": {
+    "stage5_fusion": {
+      "rows": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "previous_eager_accounted_seconds": 52.9885609220006,
+          "new_native_track_export_seconds": 0.01461627300022883,
+          "new_fusion_seconds": 1.155707450999671,
+          "sum_historical_and_incremental_seconds": 54.1588846460005,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 15.949239672001568,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "previous_eager_accounted_seconds": 50.734003052002095,
+          "new_native_track_export_seconds": 0.04091200500033665,
+          "new_fusion_seconds": 1.4747156349999386,
+          "sum_historical_and_incremental_seconds": 52.24963069200237,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 13.444244981001248,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "previous_eager_accounted_seconds": 54.24594790900278,
+          "new_native_track_export_seconds": 0.02238956800010783,
+          "new_fusion_seconds": 0.797968347999813,
+          "sum_historical_and_incremental_seconds": 55.0663058250027,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 12.845671081002365,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "previous_eager_accounted_seconds": 53.88933570800532,
+          "new_native_track_export_seconds": 0.0027932170000894985,
+          "new_fusion_seconds": 0.6991121900000508,
+          "sum_historical_and_incremental_seconds": 54.59124111500546,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 12.093837837004685,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan6_blur5",
+          "previous_eager_accounted_seconds": 49.18653388399821,
+          "new_native_track_export_seconds": 0.014222866000181966,
+          "new_fusion_seconds": 1.157887192999624,
+          "sum_historical_and_incremental_seconds": 50.358643942998015,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 12.745320219997666,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan6_normal5",
+          "previous_eager_accounted_seconds": 50.69432048900205,
+          "new_native_track_export_seconds": 0.04106177299991032,
+          "new_fusion_seconds": 1.5177869659996759,
+          "sum_historical_and_incremental_seconds": 52.25316922800164,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 13.200517671000853,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan6_reduced3",
+          "previous_eager_accounted_seconds": 53.83568262200083,
+          "new_native_track_export_seconds": 0.023097481000149855,
+          "new_fusion_seconds": 0.797494012000243,
+          "sum_historical_and_incremental_seconds": 54.656274115001224,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 12.143700377997448,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        },
+        {
+          "scene_id": "dtu_scan6_spaced3",
+          "previous_eager_accounted_seconds": 53.295910341001445,
+          "new_native_track_export_seconds": 0.0029122649998498673,
+          "new_fusion_seconds": 0.6950732840000455,
+          "sum_historical_and_incremental_seconds": 53.99389589000134,
+          "minimal_raw_colmap_reuse_branch_historical_seconds": 12.095042873002967,
+          "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+        }
+      ],
+      "historical_eager_total_seconds": 418.87029492701333,
+      "new_track_export_seconds_sum": 0.1620054480008548,
+      "new_frozen_fusion_seconds_sum": 8.295745078999062,
+      "offline_evaluation_wall_seconds": 8.90747856500002,
+      "peak_fusion_rss_gib": 0.12046051025390625,
+      "peak_export_rss_gib": 0.0963287353515625,
+      "peak_evaluator_rss_gib": 0.3086738586425781,
+      "additional_gpu_allocated_bytes": 0,
+      "fresh_end_to_end_wall_time": null
+    },
+    "stage5_joint": {
+      "rows": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "previous_historical_eager_plus_fusion_seconds": 54.1588846460005,
+          "new_joint_process_body_seconds": 1.2311470279996684,
+          "new_solver_seconds": 0,
+          "accounted_historical_sum_seconds": 55.39003167400017
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "previous_historical_eager_plus_fusion_seconds": 52.24963069200237,
+          "new_joint_process_body_seconds": 1.6161242529997253,
+          "new_solver_seconds": 0.08723275200009084,
+          "accounted_historical_sum_seconds": 53.865754945002095
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "previous_historical_eager_plus_fusion_seconds": 55.0663058250027,
+          "new_joint_process_body_seconds": 0.7572414249998474,
+          "new_solver_seconds": 0,
+          "accounted_historical_sum_seconds": 55.82354725000255
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "previous_historical_eager_plus_fusion_seconds": 54.59124111500546,
+          "new_joint_process_body_seconds": 0.7485512690000178,
+          "new_solver_seconds": 0,
+          "accounted_historical_sum_seconds": 55.33979238400548
+        },
+        {
+          "scene_id": "dtu_scan6_blur5",
+          "previous_historical_eager_plus_fusion_seconds": 50.358643942998015,
+          "new_joint_process_body_seconds": 1.2480039550000583,
+          "new_solver_seconds": 0,
+          "accounted_historical_sum_seconds": 51.60664789799807
+        },
+        {
+          "scene_id": "dtu_scan6_normal5",
+          "previous_historical_eager_plus_fusion_seconds": 52.25316922800164,
+          "new_joint_process_body_seconds": 1.6595678419998876,
+          "new_solver_seconds": 0.13608413799966002,
+          "accounted_historical_sum_seconds": 53.912737070001526
+        },
+        {
+          "scene_id": "dtu_scan6_reduced3",
+          "previous_historical_eager_plus_fusion_seconds": 54.656274115001224,
+          "new_joint_process_body_seconds": 0.7583489570001802,
+          "new_solver_seconds": 0,
+          "accounted_historical_sum_seconds": 55.414623072001405
+        },
+        {
+          "scene_id": "dtu_scan6_spaced3",
+          "previous_historical_eager_plus_fusion_seconds": 53.99389589000134,
+          "new_joint_process_body_seconds": 0.7558405229997334,
+          "new_solver_seconds": 0,
+          "accounted_historical_sum_seconds": 54.749736413001074
+        }
+      ],
+      "new_joint_seconds_sum": 8.774825251999118,
+      "solver_only_seconds_sum": 0.22331688999975086,
+      "peak_joint_process_rss_gib": 0.17008590698242188,
+      "offline_evaluation_wall_seconds": 11.284433129000263,
+      "peak_evaluator_rss_gib": 0.4069175720214844,
+      "new_GPU_allocated_bytes": 0,
+      "fresh_online_end_to_end_wall_time": null,
+      "scope": "historical eager baseline including BA failures/diagnostics/selection, fusion and new joint body; not fresh online latency; new joint timing includes grouped-initial and attempt/accepted artifact writes; excludes process startup"
+    }
+  },
+  "filter_incremental_seconds": 4.741907721000189,
+  "no_speedup_claim": true,
+  "do_not_sum_nested_historical_entries": true,
+  "scope": "reused historical baseline and intermediate files; new batch includes shared loading, source hashes, three controls and writes; not fresh online latency and not three independently timed cold starts"
+}

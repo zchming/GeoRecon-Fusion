@@ -1,0 +1,269 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "f1_2mm": {
+        "raw_selector": 0.20772424480729015,
+        "filter": 0.20665022583355042,
+        "fusion": 0.20772424480729015,
+        "unweighted_fusion": 0.20772424480729015,
+        "grouped_initial": 0.20772424480729015,
+        "joint": 0.20772424480729015,
+        "filter_keep_unknown": 0.20772993917948282,
+        "fusion_without_raw_support": 0.20772424480729015,
+        "joint_fixed_poses": 0.20772424480729015
+      },
+      "selector_joint_auc10": 0.9136448675694698,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 1.6180507567877045,
+        "after": 1.6180507567877045
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.4224539851591801,
+          "translation_direction_deg": 0.7692346295957512,
+          "refitted_ATE_mm": 1.6180507567877045
+        },
+        "poses_after": {
+          "rotation_deg": 0.4224539851591801,
+          "translation_direction_deg": 0.7692346295957512,
+          "refitted_ATE_mm": 1.6180507567877045
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "f1_2mm": {
+        "raw_selector": 0.14849113976515557,
+        "filter": 0.14544845582170585,
+        "fusion": 0.15017777578444516,
+        "unweighted_fusion": 0.14862541253961428,
+        "grouped_initial": 0.15017777578444516,
+        "joint": 0.14946284386087663,
+        "filter_keep_unknown": 0.1484148545623326,
+        "fusion_without_raw_support": 0.14854424938497837,
+        "joint_fixed_poses": 0.14854173917510646
+      },
+      "selector_joint_auc10": 0.9549469962897582,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 0.5922354602588805,
+        "after": 0.8227692520943808
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.33175890040533007,
+          "translation_direction_deg": 0.3601127870119665,
+          "refitted_ATE_mm": 0.5922354602588805
+        },
+        "poses_after": {
+          "rotation_deg": 0.34287860338779436,
+          "translation_direction_deg": 0.584673848039318,
+          "refitted_ATE_mm": 0.7327361476903815
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "f1_2mm": {
+        "raw_selector": 0.12294160305959316,
+        "filter": 0.09489834976137794,
+        "fusion": 0.12294160305959316,
+        "unweighted_fusion": 0.12294160305959316,
+        "grouped_initial": 0.12294160305959316,
+        "joint": 0.12294160305959316,
+        "filter_keep_unknown": 0.12302587500968402,
+        "fusion_without_raw_support": 0.12294160305959316,
+        "joint_fixed_poses": 0.12294160305959316
+      },
+      "selector_joint_auc10": 0.9278185076544533,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 0.4238037571584978,
+        "after": 0.4238037571584978
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.3921386856694096,
+          "translation_direction_deg": 0.721814923455467,
+          "refitted_ATE_mm": 0.4238037571584978
+        },
+        "poses_after": {
+          "rotation_deg": 0.3921386856694096,
+          "translation_direction_deg": 0.721814923455467,
+          "refitted_ATE_mm": 0.4238037571584978
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "f1_2mm": {
+        "raw_selector": 0.2533303416292783,
+        "filter": 0.2362923906443903,
+        "fusion": 0.2533303416292783,
+        "unweighted_fusion": 0.2533303416292783,
+        "grouped_initial": 0.2533303416292783,
+        "joint": 0.2533303416292783,
+        "filter_keep_unknown": 0.2551057845123745,
+        "fusion_without_raw_support": 0.2533303416292783,
+        "joint_fixed_poses": 0.2533303416292783
+      },
+      "selector_joint_auc10": 0.9489316230230771,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 0.48031648138350624,
+        "after": 0.48031648138350624
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.22916039913038952,
+          "translation_direction_deg": 0.5106837697692291,
+          "refitted_ATE_mm": 0.48031648138350624
+        },
+        "poses_after": {
+          "rotation_deg": 0.22916039913038952,
+          "translation_direction_deg": 0.5106837697692291,
+          "refitted_ATE_mm": 0.48031648138350624
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "f1_2mm": {
+        "raw_selector": 0.14215290226485316,
+        "filter": 0.14221146253174402,
+        "fusion": 0.14215290226485316,
+        "unweighted_fusion": 0.14215290226485316,
+        "grouped_initial": 0.14215290226485316,
+        "joint": 0.14215290226485316,
+        "filter_keep_unknown": 0.14220570036611688,
+        "fusion_without_raw_support": 0.14215290226485316,
+        "joint_fixed_poses": 0.14215290226485316
+      },
+      "selector_joint_auc10": 0.9045494529170099,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 1.918247874989216,
+        "after": 1.918247874989216
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.30019530117800686,
+          "translation_direction_deg": 0.9452657870490964,
+          "refitted_ATE_mm": 1.918247874989216
+        },
+        "poses_after": {
+          "rotation_deg": 0.30019530117800686,
+          "translation_direction_deg": 0.9452657870490964,
+          "refitted_ATE_mm": 1.918247874989216
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "f1_2mm": {
+        "raw_selector": 0.06830223158205999,
+        "filter": 0.06817646295481075,
+        "fusion": 0.0684447448296453,
+        "unweighted_fusion": 0.06871820704323987,
+        "grouped_initial": 0.0684447448296453,
+        "joint": 0.06829890760255805,
+        "filter_keep_unknown": 0.068135148952471,
+        "fusion_without_raw_support": 0.07019384493854003,
+        "joint_fixed_poses": 0.06830460605122765
+      },
+      "selector_joint_auc10": 0.9547438419269623,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 0.8869093678583647,
+        "after": 1.3302934720251245
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.239703524098169,
+          "translation_direction_deg": 0.4287405916424998,
+          "refitted_ATE_mm": 0.8869093678583647
+        },
+        "poses_after": {
+          "rotation_deg": 0.22028420294342288,
+          "translation_direction_deg": 0.3683220948151481,
+          "refitted_ATE_mm": 0.7995053063843386
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "f1_2mm": {
+        "raw_selector": 0.20038538696859493,
+        "filter": 0.20049711637914153,
+        "fusion": 0.20038538696859493,
+        "unweighted_fusion": 0.20038538696859493,
+        "grouped_initial": 0.20038538696859493,
+        "joint": 0.20038538696859493,
+        "filter_keep_unknown": 0.20043216169638384,
+        "fusion_without_raw_support": 0.20038538696859493,
+        "joint_fixed_poses": 0.20038538696859493
+      },
+      "selector_joint_auc10": 0.9670177524242183,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 0.21366545503283182,
+        "after": 0.21366545503283182
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.3298224757578168,
+          "translation_direction_deg": 0.14585926753043751,
+          "refitted_ATE_mm": 0.21366545503283182
+        },
+        "poses_after": {
+          "rotation_deg": 0.3298224757578168,
+          "translation_direction_deg": 0.14585926753043751,
+          "refitted_ATE_mm": 0.21366545503283182
+        }
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "f1_2mm": {
+        "raw_selector": 0.21635887711543836,
+        "filter": 0.21752217273638116,
+        "fusion": 0.21635887711543836,
+        "unweighted_fusion": 0.21635887711543836,
+        "grouped_initial": 0.21635887711543836,
+        "joint": 0.21635887711543836,
+        "filter_keep_unknown": 0.219127454657592,
+        "fusion_without_raw_support": 0.21635887711543836,
+        "joint_fixed_poses": 0.21635887711543836
+      },
+      "selector_joint_auc10": 0.9380383672649518,
+      "selected_method": "vggt_raw",
+      "joint_fixed_frame_camera_rmse_mm": {
+        "before": 1.191326648775798,
+        "after": 1.191326648775798
+      },
+      "joint_relative_pose_metrics": {
+        "poses_before": {
+          "rotation_deg": 0.38863816560539693,
+          "translation_direction_deg": 0.5357051941948274,
+          "refitted_ATE_mm": 1.1913266487757983
+        },
+        "poses_after": {
+          "rotation_deg": 0.38863816560539693,
+          "translation_direction_deg": 0.5357051941948274,
+          "refitted_ATE_mm": 1.1913266487757983
+        }
+      }
+    }
+  ],
+  "small_changes_are_not_significance_claims": true
+}

@@ -1,0 +1,36 @@
+{
+  "rules": [
+    {
+      "file": "configs/selection/stage5_v1.json",
+      "frozen_commit": "131962e",
+      "sha256": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+      "unchanged": true
+    },
+    {
+      "file": "configs/filtering/stage5_points_v1.json",
+      "frozen_commit": "f54255c",
+      "sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+      "unchanged": true
+    },
+    {
+      "file": "configs/fusion/stage5_v1.json",
+      "frozen_commit": "89a0884",
+      "sha256": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+      "unchanged": true
+    },
+    {
+      "file": "configs/optimization/stage5_v1.json",
+      "frozen_commit": "c3510ce",
+      "sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+      "unchanged": true
+    },
+    {
+      "file": "configs/ablation/stage5_acceptance.json",
+      "frozen_commit": "c0bdab6",
+      "sha256": "69aa59e96faabec1ac1048a6a2477f756432b995ac5b721c87e749a394d65d3b",
+      "unchanged": true
+    }
+  ],
+  "ablation_protocol_frozen_before_runs": true,
+  "no_retuning": true
+}

@@ -1,0 +1,48 @@
+{
+  "scene_id": "dtu_scan6_reduced3",
+  "protocol_sha256": "69aa59e96faabec1ac1048a6a2477f756432b995ac5b721c87e749a394d65d3b",
+  "input_hashes": {
+    "outputs/stage5_v1/dtu_scan6_reduced3/prediction.json": "9e51f0cbe8fc22d6eb58f10cc7168372e0b99ebd0e1570812f8adf6a5477acc4",
+    "outputs/stage5_v1/dtu_scan6_reduced3/selected_artifacts/raw_predictions.npz": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_reduced3/evidence.npz": "faf0e67670ef604ddbacbe20085b3c1768194b1c17a89d7f5ebbe77155524e2d",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_reduced3/filtered.npz": "b32cd43c428a35e3670c41226970537d6e41d28431129545d3aa1e11d8b62a0c",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/fused.npz": "911fe7618b0811ab4f34c26506eb3c725976ebbad3854b95b6faaf8e23f35879",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/prediction.json": "b13fdff726e89b0942b14b9148b21e9517cafd0604a29433f03afb35fb56894a",
+    "outputs/stage5_joint_v1/frozen/dtu_scan6_reduced3/run.json": "b76fd12f7dcfea9e1d6aed6367b426425843b4196b6011d23230621f7d89df86"
+  },
+  "rows": [
+    {
+      "name": "filter_keep_unknown",
+      "point_count": 577000,
+      "artifact_sha256": "97ef3cbac41f190f39adb204592faae29f7c49f32729a1e3a45d9eab136bdb14",
+      "prediction_sha256": "38d03e1000f93260a9b7d397931acb332e5ba830c83f451376e1557a152f000c",
+      "solver": null,
+      "body_wall_seconds": 0.3206797209995784
+    },
+    {
+      "name": "fusion_without_raw_support",
+      "point_count": 609168,
+      "artifact_sha256": "8680a20e10e216328ab8b83df2e7602860c45c3164f5b5182e319ca371077b34",
+      "prediction_sha256": "fdc39e6818582d3f1e7ebcbf05887ce62b51a71920a7f78d21c8973d1a9ad6b0",
+      "solver": null,
+      "body_wall_seconds": 0.3365134980003859
+    },
+    {
+      "name": "joint_fixed_poses",
+      "point_count": 609168,
+      "artifact_sha256": "a797009cde0dc73b5e68099fa55593c06fbc8aef63ae532a118dd3aca62f9f8b",
+      "prediction_sha256": "2d42fb27e82ca242ff31059af4c716e8cb4cb52652379a80840d25b45c61e096",
+      "solver": {
+        "accepted": false,
+        "status": "no_eligible_correspondences"
+      },
+      "body_wall_seconds": 0.3331535919996895
+    }
+  ],
+  "all_cameras_fixed": true,
+  "wall_seconds": 1.0912333469996156,
+  "peak_rss_gib": 0.13337326049804688,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}

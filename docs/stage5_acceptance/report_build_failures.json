@@ -1,0 +1,13 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "stage": "summary report generation only",
+      "error": "SyntaxError at line113: invalid character U+3002 from malformed string concatenation",
+      "source_preserved": "outputs/stage5_acceptance_v1/report_failures/attempt01_report.py",
+      "source_sha256": "7ac7445f727d07f0e07ca8783dae43fa2ced71c1237a6b7d5fb3fc79e5f59c79",
+      "fix": "correct string delimiters; rerun report",
+      "experiment_outputs_or_rules_changed": false
+    }
+  ]
+}

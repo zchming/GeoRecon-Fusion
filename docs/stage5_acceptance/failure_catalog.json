@@ -1,0 +1,260 @@
+{
+  "upstream_natural_failures": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 668.00 MiB. GPU 0 has a total capacity of 11.99 GiB of which 709.00 MiB is free. 10.50 GiB allowed; Of the allocated memory 9.54 GiB is allocated by PyTorch, and 517.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "source": "data/stage5_bundles/dtu_scan1_blur5/vggt_ba.json",
+      "sha256": "d8fa3e8a328a7202ea434c0d2a50e918bc3c3827772c3842477b178e6accb6e6"
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 2.94 GiB. GPU 0 has a total capacity of 11.99 GiB of which 2.84 GiB is free. 10.50 GiB allowed; Of the allocated memory 7.09 GiB is allocated by PyTorch, and 824.90 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "source": "data/stage5_bundles/dtu_scan1_normal5/vggt_ba.json",
+      "sha256": "4ea2fdcd6d88eb409d86e9e7e3ba530cbe6f2b21cada608d048a039be0862bd7"
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "method": "colmap",
+      "status": "no_reconstruction",
+      "reason": "COLMAP returned no usable reconstruction",
+      "source": "data/stage5_bundles/dtu_scan1_spaced3/colmap.json",
+      "sha256": "e8e9e291cca753a8509e1ab53e27c79c4f8e518e67e17e56893028d7f35996f5"
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 676.00 MiB. GPU 0 has a total capacity of 11.99 GiB of which 214.89 MiB is free. 10.50 GiB allowed; Of the allocated memory 9.65 GiB is allocated by PyTorch, and 792.79 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "source": "data/stage5_bundles/dtu_scan6_blur5/vggt_ba.json",
+      "sha256": "1e4bd89e915a033e439fb700c74712186dee11bb368f50ff6ceae8896462facd"
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 3.13 GiB. GPU 0 has a total capacity of 11.99 GiB of which 1.73 GiB is free. 10.50 GiB allowed; Of the allocated memory 7.49 GiB is allocated by PyTorch, and 1.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+      "source": "data/stage5_bundles/dtu_scan6_normal5/vggt_ba.json",
+      "sha256": "1766030fd33da37d720774ce3c907f30e54f52e486cf4f22407372b0ae3b19b8"
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "method": "colmap",
+      "status": "no_reconstruction",
+      "reason": "COLMAP returned no usable reconstruction",
+      "source": "data/stage5_bundles/dtu_scan6_spaced3/colmap.json",
+      "sha256": "f768fa2b1e70a529a0c83d9a9a89f8e9b1503c1c3f72051b7b45ea284c5409f1"
+    }
+  ],
+  "upstream_counts": {
+    "oom": 4,
+    "no_reconstruction": 2
+  },
+  "source_records_sha256": {
+    "docs/stage5/fault_probes.json": "6e1cf7a3b5a4c079632d5cd9df488656b2662a1eb941b066df1901197011b022",
+    "docs/stage5/gt_isolation_probe.json": "73c581a1b5f2bf6d4533ec58d18d1da0204216cd9aa4267d2262cfe9ab5812fc",
+    "docs/stage5_points/failure_analysis.json": "81155c733f125272dcd76c0e5fdf6f25402c55a4eb5593d36760411e8a220cc3",
+    "docs/stage5_points/failures.json": "83c1c026a091469fc703f42007706bfe3841e6bbe23d81858f1f11595be636a8",
+    "docs/stage5_fusion/failure_analysis.json": "482988f596ab9aa7f0f1824ee73f49da054faa2fb67d892f8a26e8d97436b7ed",
+    "docs/stage5_fusion/attempt_history.json": "818a8fb339eaa71d1c1020e224d5858663b7ab5dc6cc1d67c34381aa29c0242b",
+    "docs/stage5_joint/failure_analysis.json": "58ecb25c8c94c447248c5389f22f1851b619da3b4b35fe7e2c04c3762a39d78b",
+    "docs/stage5_joint/budget_probe.json": "62b9bca39a81dec31bce8fb6df56be2b59453091a3eadbaf2b01cf961f0e71e3"
+  },
+  "source_failure_records_preserved": true,
+  "point_filter_unknown_correct_points_removed": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "good_points_removed": 2,
+      "good_unknown_removed": 0
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "good_points_removed": 423,
+      "good_unknown_removed": 389
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "good_points_removed": 2370,
+      "good_unknown_removed": 2366
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "good_points_removed": 1979,
+      "good_unknown_removed": 1690
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "good_points_removed": 0,
+      "good_unknown_removed": 0
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "good_points_removed": 21,
+      "good_unknown_removed": 0
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "good_points_removed": 40,
+      "good_unknown_removed": 12
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "good_points_removed": 741,
+      "good_unknown_removed": 589
+    }
+  ],
+  "fusion_affected_point_failure_counts": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "affected_points": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "affected_points": 174,
+      "distance_worsened": 84,
+      "good_to_bad_2mm": 67
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "affected_points": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "affected_points": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "affected_points": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "affected_points": 328,
+      "distance_worsened": 1,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "affected_points": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "affected_points": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0
+    }
+  ],
+  "joint_affected_point_failure_counts": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "eligible_points": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "eligible_points": 174,
+      "worsened": 70,
+      "good_to_bad_2mm": 34
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "eligible_points": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "eligible_points": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "eligible_points": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "eligible_points": 328,
+      "worsened": 326,
+      "good_to_bad_2mm": 50
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "eligible_points": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "eligible_points": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0
+    }
+  ],
+  "attempt_records": {
+    "point_filter": {
+      "attempt01": {
+        "scene_id": "dtu_scan1_blur5",
+        "stage": "invocation metadata serialization after point generation",
+        "exception": "TypeError: Object of type PosixPath is not JSON serializable",
+        "cause": "code_provenance was passed a Path as data_kind",
+        "preserved_directory": "outputs/stage5_points_v1/failures/attempt01",
+        "fix": "pass data_kind=real; rerun to a fresh frozen directory",
+        "algorithm_or_rule_changed": false
+      },
+      "colmap_test_attempt01": {
+        "stage": "regression test environment",
+        "exception": "ModuleNotFoundError: No module named scipy",
+        "cause": "new offline point evaluation test needs SciPy; native COLMAP environment deliberately has no SciPy",
+        "preserved_log": "docs/stage5_points/regression_colmap_attempt01.txt",
+        "fix": "skip only the SciPy evaluation test in that environment; run it in reliability environment"
+      }
+    },
+    "fusion": {
+      "attempts": [
+        {
+          "name": "center_only_alignment_dev_v1",
+          "split": "dev_only",
+          "test_access": false,
+          "preserved_directory": "outputs/stage5_fusion_v1/failures/center_only_alignment_dev_v1",
+          "original_protocol_sha256": "458a02508a8a860e26b5734a2b60fe5fb98969fba99915cfec04b24b905c3f65",
+          "original_source_sha256": "290de8851ee7a51c2d55cb5a564f27fb6a8dece8887004294bf8141d0cdf6291",
+          "outcome": "zero correspondences in all four dev conditions; weights unidentifiable",
+          "change": "rotation from predicted camera orientation mean, then closed-form scale/translation from centers; same local gates and weights; no GT used for this revision"
+        },
+        {
+          "name": "float64_output_attempt02",
+          "split": "dev_and_frozen_test",
+          "preserved_directory": "outputs/stage5_fusion_v1/failures/float64_output_attempt02",
+          "preserved_comparison": "docs/stage5_fusion/attempt02_comparison.json",
+          "issue": "casting untouched float32 points to float64 changed downstream NumPy scalar-scale rounding in inherited Sim3 evaluation, even on fallback",
+          "fix": "preserve source float32 dtype for entire output, round updated values to source precision; exact bytes at untouched positions",
+          "rule_strength_and_gates_changed": false,
+          "rule_sha256_before_fix": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b"
+        }
+      ]
+    }
+  },
+  "synthetic_counterfactuals_not_natural_benchmark_samples": {
+    "prior_selection_fault_probes": 10,
+    "new_dev_all_unknown_gate_probes": 4,
+    "joint_forced_budget_probe": 1
+  },
+  "report_build_failure_record": "report_build_failures.json",
+  "new_fixed_pose_solver_failures": 0
+}

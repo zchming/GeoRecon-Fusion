@@ -1,0 +1,66 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "three_ablation_artifacts_and_formulas_verified": true,
+      "cameras_intrinsics_and_source_float32_preserved": true,
+      "GT_access_guard_checked": true,
+      "counterfactual_gate_control_verified": true
+    }
+  ],
+  "frozen_protocol_commit": "c0bdab6",
+  "old_rules_unchanged": true,
+  "test_retuning": false,
+  "new_methods_promoted": false,
+  "GPU_allocated_bytes": 0,
+  "next_stage_started": false
+}

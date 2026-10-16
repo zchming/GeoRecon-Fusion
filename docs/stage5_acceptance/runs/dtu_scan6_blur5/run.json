@@ -1,0 +1,48 @@
+{
+  "scene_id": "dtu_scan6_blur5",
+  "protocol_sha256": "69aa59e96faabec1ac1048a6a2477f756432b995ac5b721c87e749a394d65d3b",
+  "input_hashes": {
+    "outputs/stage5_v1/dtu_scan6_blur5/prediction.json": "8b2a2abbbd802558b96c97a587bdfa63cec2db9e23b033c12622f5aff3ba1c65",
+    "outputs/stage5_v1/dtu_scan6_blur5/selected_artifacts/raw_predictions.npz": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_blur5/evidence.npz": "46001cfcab82327a73466be813327db6e10762fda4b621544900db7ee7bb171e",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_blur5/filtered.npz": "068c77299972c181b19b1786eca8972d1a90dad0d1267ba5784e2510051f6fb5",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/fused.npz": "8eb5a8a017e448be431d6980d2f9c4e72ce09c043183d5f6f08b84e505fe16c7",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/prediction.json": "12b416b34a1d1c0d3d9d9ac1819e8cd9831119fddc6a1f6437ae711493d728e0",
+    "outputs/stage5_joint_v1/frozen/dtu_scan6_blur5/run.json": "82ac298a945f91fd0e0ee2db4605dfd787f2a2e6805baccab5c3375f5f3cece6"
+  },
+  "rows": [
+    {
+      "name": "filter_keep_unknown",
+      "point_count": 975834,
+      "artifact_sha256": "6f25e103f5d3fedeeea63405bd69cf8d1831edcf5e5c94092567323a6fa1d428",
+      "prediction_sha256": "c6151248c11da34da21da9d9031851cee36c28148d73541b856690ea71e66a78",
+      "solver": null,
+      "body_wall_seconds": 0.540540083000451
+    },
+    {
+      "name": "fusion_without_raw_support",
+      "point_count": 1015280,
+      "artifact_sha256": "62778f8543dfd5b46d0147375fca7aa23e456a9e7ee947e17ac21492d03ca167",
+      "prediction_sha256": "e797d73305000bb5bdd3dc577c9d6ce8a0840dd00d4f001694e48dac1d82e96b",
+      "solver": null,
+      "body_wall_seconds": 0.5611459340007059
+    },
+    {
+      "name": "joint_fixed_poses",
+      "point_count": 1015280,
+      "artifact_sha256": "ea0889e3678a7ac59d3f925395c2be978a9b37e6150345afa6a7d86eb342a2b0",
+      "prediction_sha256": "a513079898b949080d2bf235ffbd390296557f1e57392dfeeb61d1b21111f849",
+      "solver": {
+        "accepted": false,
+        "status": "no_eligible_correspondences"
+      },
+      "body_wall_seconds": 0.5479151989993625
+    }
+  ],
+  "all_cameras_fixed": true,
+  "wall_seconds": 1.81018905899964,
+  "peak_rss_gib": 0.17478179931640625,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}

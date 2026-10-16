@@ -1,0 +1,48 @@
+{
+  "scene_id": "dtu_scan6_spaced3",
+  "protocol_sha256": "69aa59e96faabec1ac1048a6a2477f756432b995ac5b721c87e749a394d65d3b",
+  "input_hashes": {
+    "outputs/stage5_v1/dtu_scan6_spaced3/prediction.json": "2ee1b59c22f552bc4d6d2733abd00c32e590c49e9b2bb322c0063bdbcc8555cc",
+    "outputs/stage5_v1/dtu_scan6_spaced3/selected_artifacts/raw_predictions.npz": "ef65beeb125afbd3c744c4313a0c86fc5a0dd18211a3ab808eba2b68210ce8b7",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_spaced3/evidence.npz": "d893e4b2a81338d096e50414dac3c3176e620c7935f4e59c9a053ed4a1ed27be",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_spaced3/filtered.npz": "eb61f708ab4bb50d5bda6ac5d193b34f53025d67c5322b9c70ece94be9b14e24",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/fused.npz": "479aae70ccbb3e076b7790427dcc4ea4c82695608971127009faf3ff50461bcb",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/prediction.json": "f892c10e60c04b19b551df85c56bac9fbfc59fa99922913a3a652c683cb9e09d",
+    "outputs/stage5_joint_v1/frozen/dtu_scan6_spaced3/run.json": "0a22414ba3cd523a4679df56fa0fe1521e4a26f9b57ed49bf6bbe5d8dfd365fd"
+  },
+  "rows": [
+    {
+      "name": "filter_keep_unknown",
+      "point_count": 532525,
+      "artifact_sha256": "f1babe9ef528d1fc96d645c65aba8ca05390ffaee19b84115fd2459fcfb44975",
+      "prediction_sha256": "4d918091c989704c5faaeeb87bffd6d3ff2f63d745508b17757ba9f86badbdb3",
+      "solver": null,
+      "body_wall_seconds": 0.2963898440002595
+    },
+    {
+      "name": "fusion_without_raw_support",
+      "point_count": 609168,
+      "artifact_sha256": "644971b607790c18570449b1ee8927395fc11bb6eab8cc04a2b1ab617b0c625e",
+      "prediction_sha256": "ef8cb45767b9f7d6d9e1221792d087543f9a3b8334a9c1e52c17b29a8ca7251b",
+      "solver": null,
+      "body_wall_seconds": 0.3364915350002775
+    },
+    {
+      "name": "joint_fixed_poses",
+      "point_count": 609168,
+      "artifact_sha256": "42f01dd7b5043c8e46593d9325d5f3128434628db08610d7a2b726a4fc16e639",
+      "prediction_sha256": "8f0887eeb77410ceb6e24990fe7159072d2d930b43064eab7b5cbad63f015b1e",
+      "solver": {
+        "accepted": false,
+        "status": "no_eligible_correspondences"
+      },
+      "body_wall_seconds": 0.3320734380004069
+    }
+  ],
+  "all_cameras_fixed": true,
+  "wall_seconds": 1.0668351189997338,
+  "peak_rss_gib": 0.13235092163085938,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}

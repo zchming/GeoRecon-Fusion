@@ -1,0 +1,96 @@
+{
+  "scene_id": "dtu_scan6_normal5",
+  "protocol_sha256": "69aa59e96faabec1ac1048a6a2477f756432b995ac5b721c87e749a394d65d3b",
+  "input_hashes": {
+    "outputs/stage5_v1/dtu_scan6_normal5/prediction.json": "ff9f36fe5ff76879805bb6b424aca789556776c5c7266a2c15f1b8303d3f8018",
+    "outputs/stage5_v1/dtu_scan6_normal5/selected_artifacts/raw_predictions.npz": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_normal5/evidence.npz": "9fafd3d1e9ea1b8141111b7246f6325f7cd70864c93ce4fd9d8057baf495a6e8",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_normal5/filtered.npz": "882adcd8da34bde6cf43d77ab96d75ba97c003764d45f1cd3cad4c474d6fc971",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/anchors.npz": "89147f71817cdce1dffb6fae6c02355f0bd47d8f7f6db9af2390b3ad7e717810",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/fused.npz": "557e751ced79ce94caeadefdcd8a2f6bf2f582ef9c26d33dcff7325aff92892b",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/prediction.json": "c66dbd4a53f39dbebd121d7137a892d08bfe2f9ddc91f3175fd9757d4e0c41a4",
+    "outputs/stage5_joint_v1/frozen/dtu_scan6_normal5/run.json": "dc970cb8f2ec689026bab82b4c6dca9a1758426d249bbb067dda6d0cb2c0e1aa",
+    "outputs/stage5_joint_v1/frozen/dtu_scan6_normal5/problem.npz": "3ff9f8ee83203a6c1bd281095b7af1a19b461b4ef8ae4363c8c03d96f585f3f4"
+  },
+  "rows": [
+    {
+      "name": "filter_keep_unknown",
+      "point_count": 974123,
+      "artifact_sha256": "743aa63442b20b1f99a9bce1dd4d781da5a3e4abe6a9857ecc7e7cb45f36f7ec",
+      "prediction_sha256": "c77e056894cfc7e018eaf7accc2f703a1735ed01d8924f556610f93d2159c891",
+      "solver": null,
+      "body_wall_seconds": 0.5374823689999175
+    },
+    {
+      "name": "fusion_without_raw_support",
+      "point_count": 1015280,
+      "artifact_sha256": "549e71de890277cff16dccddb16ad9b0eafe6dd8735d342eef986c1a099caf79",
+      "prediction_sha256": "fcb7948f66c069a6db5e157d2628f279b4f4309226f420e0ff418767a7fce681",
+      "solver": null,
+      "body_wall_seconds": 0.5532951740005956
+    },
+    {
+      "name": "joint_fixed_poses",
+      "point_count": 1015280,
+      "artifact_sha256": "2d7df4f635d1161ce828744bd5c056a40e977a68b740dee9bf47080cda0ac3a6",
+      "prediction_sha256": "b697d019aa77455797f760447b541e3a3822ecb7c8923d011da583f184722c17",
+      "solver": {
+        "accepted": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 8,
+        "residual_calls_including_finite_differences": 32,
+        "initial_objective": 1240.8408287884215,
+        "final_objective": 643.2436524475997,
+        "wall_seconds": 0.10397116900003311,
+        "initial_reprojection_rms_native_px": 2.760923220121811,
+        "final_reprojection_rms_native_px": 0.90331693849837,
+        "variables": 984,
+        "history": [
+          {
+            "iteration": 1,
+            "objective": 1151.8091790107062,
+            "wall_seconds": 0.08360495999932027
+          },
+          {
+            "iteration": 2,
+            "objective": 1007.900148265434,
+            "wall_seconds": 0.0869801290000396
+          },
+          {
+            "iteration": 3,
+            "objective": 822.0003200491328,
+            "wall_seconds": 0.09022343899960106
+          },
+          {
+            "iteration": 4,
+            "objective": 659.0073208958203,
+            "wall_seconds": 0.09370956299972022
+          },
+          {
+            "iteration": 5,
+            "objective": 643.3423438804267,
+            "wall_seconds": 0.09719289299937373
+          },
+          {
+            "iteration": 6,
+            "objective": 643.2436939636339,
+            "wall_seconds": 0.10064383799999632
+          },
+          {
+            "iteration": 7,
+            "objective": 643.2436524475997,
+            "wall_seconds": 0.10362001300018164
+          }
+        ],
+        "all_poses_fixed": true
+      },
+      "body_wall_seconds": 0.6568001890000232
+    }
+  ],
+  "all_cameras_fixed": true,
+  "wall_seconds": 1.910933827000008,
+  "peak_rss_gib": 0.18257522583007812,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}
