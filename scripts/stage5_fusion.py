@@ -124,7 +124,7 @@ def fit():
         rows.append(row)
     scores=[float(np.mean([r['candidates'][i]['thresholds_mm']['2']['f1'] for r in rows])) for i in range(len(protocol['candidate_strengths']))]
     best=int(np.argmax(scores));baseline=float(np.mean([r['raw']['thresholds_mm']['2']['f1'] for r in rows]))
-    rule={'schema_version':1,'strength':protocol['candidate_strengths'][best],'candidate_index':best,'protocol_sha256':sha256(PROTOCOL),'fit_split':'dev_only','default_enable_recommended':scores[best]>baseline,'dev_gain_f1_2mm':scores[best]-baseline}
+    rule={'schema_version':1,'strength':protocol['candidate_strengths'][best],'candidate_index':best,'protocol_sha256':sha256(PROTOCOL),'fit_split':'dev_only','dev_beats_raw':scores[best]>baseline,'default_enable_recommended':False,'deployment':'explicit experimental tool; dev gain alone is insufficient for default enable','dev_gain_f1_2mm':scores[best]-baseline}
     write_json(RULE,rule)
     write_json(DOC/'fit_report.json',{'rows':rows,'macro_dev_f1_2mm':scores,'raw_macro_f1_2mm':baseline,'winner':best,'project_file_accesses':sorted(set(accesses)),'test_access_denied_by_audit_hook':True})
     print(rule,scores,flush=True)

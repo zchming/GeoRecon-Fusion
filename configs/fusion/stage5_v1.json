@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "strength": 0.5,
+  "candidate_index": 1,
+  "protocol_sha256": "dc95d541bb12979cfe11430f30f2bf58f4a2174a6eb3ffd39a42cee3d5c81439",
+  "fit_split": "dev_only",
+  "default_enable_recommended": false,
+  "dev_gain_f1_2mm": 0.0004216590048223834,
+  "dev_beats_raw": true,
+  "deployment": "explicit experimental tool; dev gain alone is insufficient for default enable"
+}
