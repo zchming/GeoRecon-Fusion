@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "stage": "5_minimal_joint_pose_sparse_structure_refinement",
+  "input": "immutable weighted fusion grid, same eligible COLMAP point IDs and actual measured tracks; raw point/camera priors",
+  "fusion_rule_sha256": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+  "scope": "jointly optimize relative camera poses and one shared 3D point per eligible COLMAP track; write shared points only to previously eligible grid positions; no dense propagation, new matching, intrinsic fitting or training",
+  "gauge": "first raw pose fixed exactly; raw/anchor XYZ priors fix arbitrary scale and world frame; all remaining poses regularized",
+  "normalization": "median positive source-camera raw Z over previously eligible anchor grid points; no GT",
+  "candidate_pose_prior_strengths": [
+    1.0,
+    10.0
+  ],
+  "residuals": {
+    "reprojection_sigma_native_px": 2.0,
+    "raw_xyz_sigma_over_depth": 0.01,
+    "classical_xyz_sigma_over_depth": 0.01,
+    "pose_rotation_sigma_deg": 0.5,
+    "pose_translation_sigma_over_depth": 0.005,
+    "raw_prior_weight": "same w_raw as fusion per grid point",
+    "classical_prior_weight": "one alpha*w_col per unique COLMAP point; alpha frozen fusion strength; duplicate observations do not duplicate this prior",
+    "reprojection_weight": "w_col per actual track observation; measured uv mapped to raw native pixel centers",
+    "robust_loss": "soft_l1 f_scale=1 applied to all normalized scalar residuals",
+    "cheirality": "soft barrier z>=0.0001*normalization with sigma=0.001*normalization; reject output with any nonpositive observation Z"
+  },
+  "solver": {
+    "method": "scipy least_squares trf, sparse two-point Jacobian and lsmr",
+    "max_nfev": 60,
+    "wall_budget_seconds": 20.0,
+    "ftol": 1e-06,
+    "xtol": 1e-06,
+    "gtol": 1e-06,
+    "pose_rotation_component_bound_deg": 1.0,
+    "pose_translation_component_bound_over_depth": 0.01,
+    "point_delta_component_bound_over_depth": 0.02,
+    "min_unique_points": 3,
+    "max_unique_points": 2000,
+    "max_observations": 12000
+  },
+  "acceptance": "positive solver success status, finite parameters and residuals, objective nonincrease, positive depths; otherwise exact pre-optimization fallback, preserving attempted parameters and outputs",
+  "fallback": "upstream fusion fallback/no eligible anchors/insufficient constraints/solver budget or failure -> byte-identical pre-optimization XYZ and unchanged cameras",
+  "initialization": "one arithmetic mean of previously fused grid positions per shared track; initial-only grouping is a reported comparator, not counted as solver benefit",
+  "fit": "maximize dev macro F1@2mm, ties first candidate; raw/fused/grouped-initial comparisons; never tune on test or automatically enable",
+  "evaluation": "inherit fixed DTU split and previous 200000 original indices/STL cap/ROI/1,2,5mm metrics. Same raw-camera-to-GT Sim3 for every point version; separately evaluate poses and fixed-frame camera center errors; never refit GT point alignment to optimized camera changes",
+  "runtime": {
+    "device": "CPU sparse nonlinear least squares",
+    "threads": 8,
+    "gpu_budget_gib": 12,
+    "new_models_weights_dependencies": false
+  },
+  "prohibited": [
+    "test-based configuration changes",
+    "GT in objective or initialization",
+    "intrinsic optimization",
+    "new dense MVS",
+    "expanded data",
+    "training",
+    "UI"
+  ]
+}

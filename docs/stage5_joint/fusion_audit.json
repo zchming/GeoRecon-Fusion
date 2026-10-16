@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 0,
+      "worsened_points_recomputed": 0,
+      "good_to_bad_2mm": 0,
+      "fallback": true
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 174,
+      "worsened_points_recomputed": 84,
+      "good_to_bad_2mm": 67,
+      "fallback": false
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 0,
+      "worsened_points_recomputed": 0,
+      "good_to_bad_2mm": 0,
+      "fallback": true
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 0,
+      "worsened_points_recomputed": 0,
+      "good_to_bad_2mm": 0,
+      "fallback": true
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 0,
+      "worsened_points_recomputed": 0,
+      "good_to_bad_2mm": 0,
+      "fallback": true
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 328,
+      "worsened_points_recomputed": 1,
+      "good_to_bad_2mm": 0,
+      "fallback": false
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 0,
+      "worsened_points_recomputed": 0,
+      "good_to_bad_2mm": 0,
+      "fallback": true
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "published_metrics_recomputed_identical": true,
+      "affected_points": 0,
+      "worsened_points_recomputed": 0,
+      "good_to_bad_2mm": 0,
+      "fallback": true
+    }
+  ],
+  "previous_comparison_sha256": "8cbbda4dbb3f1a22e91bc4fcabc0f65467f5f1aeac050dc5434b0e5b8cc8245f",
+  "previous_failures_sha256": "482988f596ab9aa7f0f1824ee73f49da054faa2fb67d892f8a26e8d97436b7ed",
+  "conclusion": "weighting did not consistently beat unweighted; only 502 points in two normal5 cases; joint step stays on same correspondences",
+  "previous_test_already_seen": true
+}

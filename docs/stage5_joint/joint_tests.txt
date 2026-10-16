@@ -1,0 +1,13 @@
+test_bounds_and_first_pose_gauge (test_joint_optimization.JointOptimizationTest.test_bounds_and_first_pose_gauge) ... ok
+test_joint_solve_reduces_cost_and_changes_pose_and_points (test_joint_optimization.JointOptimizationTest.test_joint_solve_reduces_cost_and_changes_pose_and_points) ... ok
+test_no_or_excess_constraints_do_not_run (test_joint_optimization.JointOptimizationTest.test_no_or_excess_constraints_do_not_run) ... ok
+test_normalized_objective_matches_soft_l1_definition (test_joint_optimization.JointOptimizationTest.test_normalized_objective_matches_soft_l1_definition) ... ok
+test_scatter_changes_only_allowed_grid_indices_and_preserves_dtype (test_joint_optimization.JointOptimizationTest.test_scatter_changes_only_allowed_grid_indices_and_preserves_dtype) ... ok
+test_solver_budget_failure_keeps_attempt_for_caller (test_joint_optimization.JointOptimizationTest.test_solver_budget_failure_keeps_attempt_for_caller) ... ok
+test_sparse_jacobian_covers_numerical_dependencies (test_joint_optimization.JointOptimizationTest.test_sparse_jacobian_covers_numerical_dependencies) ... ok
+test_zero_parameters_preserve_baseline_projection (test_joint_optimization.JointOptimizationTest.test_zero_parameters_preserve_baseline_projection) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.028s
+
+OK
