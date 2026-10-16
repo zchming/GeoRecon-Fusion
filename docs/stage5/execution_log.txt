@@ -1,0 +1,8 @@
+dtu_scan1_blur5 vggt_raw
+dtu_scan1_normal5 vggt_raw
+dtu_scan1_reduced3 vggt_raw
+dtu_scan1_spaced3 vggt_raw
+dtu_scan6_blur5 vggt_raw
+dtu_scan6_normal5 vggt_raw
+dtu_scan6_reduced3 vggt_raw
+dtu_scan6_spaced3 vggt_raw

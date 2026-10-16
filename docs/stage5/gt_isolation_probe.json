@@ -1,0 +1,26 @@
+{
+  "scope": "DEV-only integration probe, not refitting or benchmark retry",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.selection.run",
+    "/home/zchming/projects/VisionGeometryLab/data/stage5_gt_probe_attempt02",
+    "/home/zchming/projects/VisionGeometryLab/configs/selection/stage5_v1.json",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage5_gt_probe_attempt02"
+  ],
+  "wall_seconds": 0.10799840300001051,
+  "decision_cameras_and_artifact_hashes_identical": true,
+  "invalid_gt_files_present": true,
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "status": "probe_harness_error_before_selector_execution",
+      "reason": "dev-only fit guard blocked writing invalid evaluation.json sentinel; incomplete bundle retained at data/stage5_gt_probe"
+    },
+    {
+      "attempt": 2,
+      "status": "success",
+      "change": "sentinel preparation in a separate process; selector and frozen policy unchanged"
+    }
+  ]
+}

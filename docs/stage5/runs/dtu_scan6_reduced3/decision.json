@@ -1,0 +1,28 @@
+{
+  "outcome": "selected",
+  "selected_method": "vggt_raw",
+  "warning": null,
+  "trace": [
+    {
+      "method": "vggt_raw",
+      "eligible": true,
+      "reasons": [],
+      "evidence_status": "evidence_available"
+    },
+    {
+      "method": "colmap",
+      "eligible": true,
+      "reasons": [],
+      "evidence_status": "evidence_available"
+    },
+    {
+      "method": "vggt_ba",
+      "eligible": true,
+      "reasons": [],
+      "evidence_status": "evidence_available"
+    }
+  ],
+  "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+  "fallback_used": false,
+  "correctness_probability": null
+}

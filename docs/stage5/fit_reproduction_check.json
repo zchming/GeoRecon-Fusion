@@ -1,0 +1,43 @@
+{
+  "frozen_policy_unchanged": true,
+  "same_dev_optimum": true,
+  "priority": [
+    "vggt_raw",
+    "colmap",
+    "vggt_ba"
+  ],
+  "mean_dev_joint_auc10": 0.9363354986341896,
+  "policy_sha256": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+  "test_or_mixed_evaluation_reads": false,
+  "project_file_accesses": [
+    "configs/selection/stage5_protocol.json",
+    "configs/selection/stage5_v1.json",
+    "data/stage3_dtu/scan1_blur5/reference.json",
+    "data/stage3_dtu/scan1_normal5/reference.json",
+    "data/stage3_dtu/scan1_reduced3/reference.json",
+    "data/stage3_dtu/scan1_spaced3/reference.json",
+    "data/stage5_bundles/dtu_scan1_blur5/colmap.json",
+    "data/stage5_bundles/dtu_scan1_blur5/manifest.json",
+    "data/stage5_bundles/dtu_scan1_blur5/reliability.json",
+    "data/stage5_bundles/dtu_scan1_blur5/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_blur5/vggt_raw.json",
+    "data/stage5_bundles/dtu_scan1_normal5/colmap.json",
+    "data/stage5_bundles/dtu_scan1_normal5/manifest.json",
+    "data/stage5_bundles/dtu_scan1_normal5/reliability.json",
+    "data/stage5_bundles/dtu_scan1_normal5/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_normal5/vggt_raw.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/colmap.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/manifest.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/reliability.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/vggt_raw.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/colmap.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/manifest.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/reliability.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/vggt_raw.json",
+    "docs/stage3/freeze.json",
+    "docs/stage5/fit_report.json",
+    "docs/stage5/input_lock.json"
+  ]
+}

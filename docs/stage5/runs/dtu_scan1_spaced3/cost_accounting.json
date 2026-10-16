@@ -1,0 +1,111 @@
+{
+  "execution_model": "eager snapshots; sum of historical measured stages plus new selector process, not a freshly timed end-to-end model run",
+  "baseline_branches": {
+    "colmap": {
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-colmap/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-colmap",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/colmap_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/colmap"
+        ],
+        "returncode": 1,
+        "full_cli_wall_seconds": 1.2153103360033128,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 527851520,
+        "peak_worker_rss_os": 527761408,
+        "peak_gpu_allocated": null
+      }
+    },
+    "vggt_raw": {
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_raw_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_raw",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 10.878527501001372,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "memory_bytes": {
+        "peak_worker_rss_sampled": 10285256704,
+        "peak_worker_rss_os": 10911211520,
+        "peak_gpu_allocated": 5887922176,
+        "peak_gpu_reserved": 7067402240,
+        "gpu_after_load_allocated": 5038931456,
+        "gpu_after_load_reserved": 5062524928
+      }
+    },
+    "vggt_ba": {
+      "invocation": {
+        "command": [
+          "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+          "-m",
+          "georecon.cli",
+          "run-vggt-ba",
+          "--manifest",
+          "/home/zchming/projects/VisionGeometryLab/data/stage3_dtu/scan1_spaced3/manifest.json",
+          "--config",
+          "/home/zchming/projects/VisionGeometryLab/configs/methods/vggt_ba_stage3.json",
+          "--output",
+          "/home/zchming/projects/VisionGeometryLab/outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_ba",
+          "--official-repo",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official",
+          "--checkpoint",
+          "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/model.pt",
+          "--assets",
+          "/home/zchming/projects/VisionGeometryLab/data/vggt_ba_assets",
+          "--dinov2-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2",
+          "--lightglue-repo",
+          "/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue"
+        ],
+        "returncode": 0,
+        "full_cli_wall_seconds": 41.164066282999556,
+        "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720,
+        "peak_worker_rss_os": 11007717376,
+        "peak_worker_rss_sampled": 10587983872,
+        "peak_device_used_sampled_including_desktop": 9823059968
+      }
+    }
+  },
+  "shared_diagnostics_invocation": {
+    "command": [
+      "/home/zchming/.venvs/georecon-reliability/bin/python",
+      "-m",
+      "georecon.reliability.analyze",
+      "/home/zchming/projects/VisionGeometryLab/data/stage4_bundles/dtu_scan1_spaced3",
+      "/home/zchming/projects/VisionGeometryLab/configs/reliability/stage4_v1.json",
+      "/home/zchming/projects/VisionGeometryLab/outputs/stage4_v1/dtu_scan1_spaced3"
+    ],
+    "returncode": 0,
+    "full_process_wall_seconds": 0.46440345700102625,
+    "input_lock_sha256": "f33c17340de8fe8fb6f53de1004bf8339777fc6fc996025e0ed36de1debdae0a"
+  },
+  "new_selector_process_seconds": 0.16702813100005187,
+  "accounted_eager_total_seconds": 53.88933570800532
+}

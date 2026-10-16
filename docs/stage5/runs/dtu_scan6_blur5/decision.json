@@ -1,0 +1,31 @@
+{
+  "outcome": "selected",
+  "selected_method": "vggt_raw",
+  "warning": "partial_evidence_not_whole_scene_correctness",
+  "trace": [
+    {
+      "method": "vggt_raw",
+      "eligible": true,
+      "reasons": [],
+      "evidence_status": "partial_evidence"
+    },
+    {
+      "method": "colmap",
+      "eligible": true,
+      "reasons": [],
+      "evidence_status": "partial_evidence"
+    },
+    {
+      "method": "vggt_ba",
+      "eligible": false,
+      "reasons": [
+        "no_complete_successful_camera_output",
+        "no_usable_geometric_evidence"
+      ],
+      "evidence_status": "unknown"
+    }
+  ],
+  "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+  "fallback_used": false,
+  "correctness_probability": null
+}

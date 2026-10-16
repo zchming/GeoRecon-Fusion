@@ -10,7 +10,10 @@ ROOT=Path(__file__).resolve().parents[1];DOC=ROOT/'docs/stage5'
 
 
 def audit():
+    from georecon.evaluation.poses import evaluate_poses
     source=read_json(ROOT/'docs/stage4/input_lock.json');rows=[]
+    prior_evaluation=read_json(ROOT/'docs/stage4/evaluation.json')
+    freeze=read_json(ROOT/'docs/stage3/freeze.json')
     for case in source['cases']:
         scene=case['scene_id'];path=ROOT/'outputs/stage4_v1'/scene
         r=read_json(path/'reliability.json')
@@ -23,8 +26,16 @@ def audit():
             assert value['correctness_probability'] is None and value['composite_score'] is None
             assert sha256(ROOT/case['bundle']/(method+'.json'))==value['prediction_sha256']
             if value['baseline_status'] not in ['success','partial']:assert value['status']=='unknown'
+            entry=next(d for d in freeze['datasets'] if d['manifest']['scene_id']==scene)
+            truth_path=(ROOT/entry['path']).parent/'reference.json'
+            assert sha256(truth_path)==entry['reference_sha256']
+            prediction=read_json(ROOT/case['bundle']/(method+'.json'))
+            evaluation=evaluate_poses(prediction,read_json(truth_path))
+            published=next(d for d in prior_evaluation['rows'] if d['scene_id']==scene and d['method']==method)
+            for key,current in [('gt_rotation_deg',evaluation['rotation_deg_registered_subset']['mean']),('gt_translation_deg',evaluation['translation_direction_deg_registered_subset']['mean']),('gt_ate_mm',evaluation['camera_center_ate']['rmse'])]:
+                assert current is None and published[key] is None or current is not None and np.isclose(current,published[key],atol=1e-10,rtol=0)
             rows.append({'scene_id':scene,'split':case['split'],'method':method,'baseline_status':value['baseline_status'],'diagnostic_status':value['status']})
-    write_json(DOC/'stage4_audit.json',{'rows':rows,'counts':dict(Counter(r['diagnostic_status'] for r in rows)),'published_snapshots_and_array_hashes_match':True,
+    write_json(DOC/'stage4_audit.json',{'rows':rows,'counts':dict(Counter(r['diagnostic_status'] for r in rows)),'published_snapshots_and_array_hashes_match':True,'gt_evaluation_values_recomputed_and_matched':True,
                                       'counterexamples_reviewed':['blur COLMAP low Sampson does not establish correct pose','spaced3 partial geometric evidence cannot certify all cameras','OOM/no model remains unknown','stage3 native image-ID mapping correction retained']})
 
 

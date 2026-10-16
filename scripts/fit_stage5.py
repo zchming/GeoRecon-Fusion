@@ -24,14 +24,14 @@ def score(evaluation,threshold=10):
     return sum(values)/len(values)
 
 
-def fit():
+def fit(verify_frozen=False):
     start=time.perf_counter();reads=[]
     def guard(event,args):
         dev_only_guard(event,args)
         if event=='open' and isinstance(args[0],str) and args[0].startswith(str(ROOT)):
             reads.append(str(Path(args[0]).relative_to(ROOT)))
     sys.addaudithook(guard)
-    if (ROOT/'configs/selection/stage5_v1.json').exists():raise ValueError('fitted policy already exists; never silently refit')
+    if not verify_frozen and (ROOT/'configs/selection/stage5_v1.json').exists():raise ValueError('fitted policy already exists; use --verify-frozen to recompute without changing it')
     protocol=read_json(ROOT/'configs/selection/stage5_protocol.json');lock=read_json(DOC/'input_lock.json')
     freeze=read_json(ROOT/'docs/stage3/freeze.json')
     assert lock['protocol_sha256']==sha256(ROOT/'configs/selection/stage5_protocol.json')
@@ -61,6 +61,12 @@ def fit():
     best=sorted(trials,key=lambda t:(-t['mean_dev_joint_auc10'],tuple(canonical[m] for m in t['policy']['priority'])))[0]
     selected=best['policy']
     selected.update(fit_protocol_sha256=sha256(ROOT/'configs/selection/stage5_protocol.json'),dev_scene_ids=[d['scene_id'] for d in dev],training_split='dev_only')
+    if verify_frozen:
+        existing=read_json(ROOT/'configs/selection/stage5_v1.json');prior=read_json(DOC/'fit_report.json')
+        assert selected==existing and abs(best['mean_dev_joint_auc10']-prior['winning_mean_dev_joint_auc10'])<1e-12
+        write_json(DOC/'fit_reproduction_check.json',{'frozen_policy_unchanged':True,'same_dev_optimum':True,'priority':selected['priority'],'mean_dev_joint_auc10':best['mean_dev_joint_auc10'],'policy_sha256':sha256(ROOT/'configs/selection/stage5_v1.json'),'test_or_mixed_evaluation_reads':False,'project_file_accesses':sorted(set(reads))})
+        print('Frozen policy reproduced from DEV only; policy and original fit report unchanged')
+        return
     write_json(ROOT/'configs/selection/stage5_v1.json',selected)
     write_json(DOC/'fit_report.json',{'objective':protocol['objective'],'trials':trials,'winning_priority':selected['priority'],'winning_mean_dev_joint_auc10':best['mean_dev_joint_auc10'],
                                     'policy_sha256':sha256(ROOT/'configs/selection/stage5_v1.json'),'input_lock_sha256':sha256(DOC/'input_lock.json'),
@@ -70,4 +76,6 @@ def fit():
     print('Frozen dev-only priority:',selected['priority'])
 
 
-if __name__=='__main__':fit()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser();parser.add_argument('--verify-frozen',action='store_true');args=parser.parse_args();fit(args.verify_frozen)

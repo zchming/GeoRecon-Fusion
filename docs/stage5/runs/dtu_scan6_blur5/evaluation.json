@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "scene_id": "dtu_scan6_blur5",
+  "method_id": "scene_selector_v1",
+  "data_kind": "real",
+  "run_status": "success",
+  "failure_reason": null,
+  "input_images": 5,
+  "registered_images": 5,
+  "registration_ratio": 1.0,
+  "input_pairs": 10,
+  "rotation_evaluated_pairs": 10,
+  "translation_evaluated_pairs": 10,
+  "pairs": [
+    {
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "rotation_deg": 0.30726507264777614,
+      "translation_direction_deg": 0.8307520011890634,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "rotation_deg": 0.3709629887473509,
+      "translation_direction_deg": 0.4047296105938736,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "rotation_deg": 0.32342989447211007,
+      "translation_direction_deg": 0.514583371700199,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "rotation_deg": 0.2540475862680685,
+      "translation_direction_deg": 0.43236151523465516,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "rotation_deg": 0.19425761386143695,
+      "translation_direction_deg": 1.668442733289693,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "rotation_deg": 0.46377109988993326,
+      "translation_direction_deg": 0.5458370687100277,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "rotation_deg": 0.3366646734840216,
+      "translation_direction_deg": 0.24426783567597243,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "rotation_deg": 0.3708902969725424,
+      "translation_direction_deg": 2.3477200901985533,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "003",
+        "005"
+      ],
+      "rotation_deg": 0.2520564853852431,
+      "translation_direction_deg": 1.1610021301604483,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "004",
+        "005"
+      ],
+      "rotation_deg": 0.12860730005158497,
+      "translation_direction_deg": 1.3029615137384765,
+      "status": "evaluated",
+      "reason": null
+    }
+  ],
+  "rotation_deg_registered_subset": {
+    "count": 10,
+    "mean": 0.30019530117800686,
+    "median": 0.31534748355994313
+  },
+  "translation_direction_deg_registered_subset": {
+    "count": 10,
+    "mean": 0.9452657870490964,
+    "median": 0.6882945349495455
+  },
+  "camera_center_ate": {
+    "status": "evaluated",
+    "reason": null,
+    "unit": "mm",
+    "rmse": 1.918247874989216,
+    "image_ids": [
+      "001",
+      "002",
+      "003",
+      "004",
+      "005"
+    ],
+    "per_camera_error": [
+      0.3414952963958834,
+      1.7268889784346577,
+      2.8795181877117293,
+      2.205181237047615,
+      1.4646367080658997
+    ],
+    "alignment": {
+      "scope": "evaluation_only_registered_subset",
+      "type": "Sim3",
+      "scale": 682.3688866953822,
+      "R": [
+        [
+          0.9706536108426294,
+          -0.010203878977163884,
+          -0.2402653712293669
+        ],
+        [
+          0.004040081865045499,
+          0.9996503178615839,
+          -0.026132733070978225
+        ],
+        [
+          0.2404480099661669,
+          0.02439513994742925,
+          0.9703554151187366
+        ]
+      ],
+      "t": [
+        190.70686459700607,
+        -0.8602119110309161,
+        24.273044499362328
+      ]
+    }
+  },
+  "dense_geometry": {
+    "status": "not_evaluated",
+    "reason": "pose evaluation only; dense geometry is not evaluated"
+  }
+}

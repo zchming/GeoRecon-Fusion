@@ -175,6 +175,7 @@
     "evidence_available": 10
   },
   "published_snapshots_and_array_hashes_match": true,
+  "gt_evaluation_values_recomputed_and_matched": true,
   "counterexamples_reviewed": [
     "blur COLMAP low Sampson does not establish correct pose",
     "spaced3 partial geometric evidence cannot certify all cameras",

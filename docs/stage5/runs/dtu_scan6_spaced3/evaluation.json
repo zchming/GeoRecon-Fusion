@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "scene_id": "dtu_scan6_spaced3",
+  "method_id": "scene_selector_v1",
+  "data_kind": "real",
+  "run_status": "success",
+  "failure_reason": null,
+  "input_images": 3,
+  "registered_images": 3,
+  "registration_ratio": 1.0,
+  "input_pairs": 3,
+  "rotation_evaluated_pairs": 3,
+  "translation_evaluated_pairs": 3,
+  "pairs": [
+    {
+      "image_ids": [
+        "001",
+        "010"
+      ],
+      "rotation_deg": 0.17407165464217114,
+      "translation_direction_deg": 0.8670061398774271,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "001",
+        "020"
+      ],
+      "rotation_deg": 0.4876714699236406,
+      "translation_direction_deg": 0.4501881406908236,
+      "status": "evaluated",
+      "reason": null
+    },
+    {
+      "image_ids": [
+        "010",
+        "020"
+      ],
+      "rotation_deg": 0.504171372250379,
+      "translation_direction_deg": 0.2899213020162318,
+      "status": "evaluated",
+      "reason": null
+    }
+  ],
+  "rotation_deg_registered_subset": {
+    "count": 3,
+    "mean": 0.38863816560539693,
+    "median": 0.4876714699236406
+  },
+  "translation_direction_deg_registered_subset": {
+    "count": 3,
+    "mean": 0.5357051941948274,
+    "median": 0.4501881406908236
+  },
+  "camera_center_ate": {
+    "status": "evaluated",
+    "reason": null,
+    "unit": "mm",
+    "rmse": 1.1913266487757983,
+    "image_ids": [
+      "001",
+      "010",
+      "020"
+    ],
+    "per_camera_error": [
+      1.2991332603420507,
+      1.5328834357616234,
+      0.4693598795069693
+    ],
+    "alignment": {
+      "scope": "evaluation_only_registered_subset",
+      "type": "Sim3",
+      "scale": 668.730036488551,
+      "R": [
+        [
+          0.9704985736344103,
+          -0.005927413655125151,
+          -0.2410339900116509
+        ],
+        [
+          -0.0012743973352329486,
+          0.9995576898005474,
+          -0.029711961766678768
+        ],
+        [
+          0.24110349330735045,
+          0.02914258958901337,
+          0.9700617583365704
+        ]
+      ],
+      "t": [
+        190.00402179357906,
+        -2.068660471988551,
+        24.652788769923376
+      ]
+    }
+  },
+  "dense_geometry": {
+    "status": "not_evaluated",
+    "reason": "pose evaluation only; dense geometry is not evaluated"
+  }
+}

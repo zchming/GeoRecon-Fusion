@@ -1,0 +1,16 @@
+{
+  "cases": 8,
+  "original_baseline_diagnostics_reaudited": 24,
+  "policy_fit_dev_only_file_audit_passed": true,
+  "policy_sha256": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+  "source_commit": "131962e",
+  "source_and_all_input_hashes_verified": true,
+  "whole_scene_cameras_frames_and_artifact_bytes_preserved": true,
+  "all_branch_and_diagnostic_costs_accounted": true,
+  "natural_fallbacks": 0,
+  "partial_evidence_warnings": 4,
+  "dev_only_counterfactual_probes": 10,
+  "gt_isolation_probe_passed": true,
+  "geometry_filtering_weighting_or_joint_optimization": false,
+  "additional_GPU_allocation": false
+}

@@ -1,0 +1,8 @@
+usage: cli.py select-scene [-h] --bundle BUNDLE --policy POLICY --output
+                           OUTPUT
+
+options:
+  -h, --help       show this help message and exit
+  --bundle BUNDLE
+  --policy POLICY
+  --output OUTPUT
