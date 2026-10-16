@@ -1,0 +1,708 @@
+[
+  {
+    "scan": 1,
+    "provenance": {
+      "source_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+      "etag": "\"19b9bf4d3-5652d3a88539d\"",
+      "archive_size_bytes": 6905656531,
+      "members": [
+        {
+          "archive_member": "SampleSet/ReadMe.txt",
+          "local_path": "source/ReadMe.txt",
+          "bytes": 3648,
+          "sha256": "2d437c34541be6110f2bbfafb399681e823d8ed775f461575e9ba941a3e08ea3",
+          "crc32": "eab38388"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_001_3_r5000.png",
+          "local_path": "images/001.png",
+          "bytes": 2646101,
+          "sha256": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+          "crc32": "83414b96"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_001.txt",
+          "local_path": "calibration/pos_001.txt",
+          "bytes": 139,
+          "sha256": "892234b937d511d0e10ab80f7832f2e3316a032aa0221db264c795169273ba20",
+          "crc32": "1d2e855c"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_002_3_r5000.png",
+          "local_path": "images/002.png",
+          "bytes": 2962334,
+          "sha256": "d2a04b6d16d3c1638aabbc519e34135684152541cdca8f316a7377a78a956e66",
+          "crc32": "dcc1a2b9"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_002.txt",
+          "local_path": "calibration/pos_002.txt",
+          "bytes": 142,
+          "sha256": "ad57a8e6042f616d7c225d944fe5b01ecbfedfcb8fea3148e776139c0a79045a",
+          "crc32": "496ae13d"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_003_3_r5000.png",
+          "local_path": "images/003.png",
+          "bytes": 3031675,
+          "sha256": "2809df3c735bceb23644779c800e2b994739ffda3b2c5e2080da04d5617efbab",
+          "crc32": "0bdb45b5"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_003.txt",
+          "local_path": "calibration/pos_003.txt",
+          "bytes": 144,
+          "sha256": "2ae1bd34ae18b7595cf0c3125aa5d669f69775a885b69ee9e8426cabcba491cb",
+          "crc32": "5cfd1414"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_004_3_r5000.png",
+          "local_path": "images/004.png",
+          "bytes": 3074175,
+          "sha256": "5d66db3f23e918d94c5910183a9aab59aca65c40d7e2c703b3dc6d0abc280544",
+          "crc32": "4fe41c33"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_004.txt",
+          "local_path": "calibration/pos_004.txt",
+          "bytes": 144,
+          "sha256": "b34fbd8b584ee6085ed59ad2656e46dc3abe9fdc0d09b310228a87bd141ff34d",
+          "crc32": "519721e7"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_005_3_r5000.png",
+          "local_path": "images/005.png",
+          "bytes": 2718948,
+          "sha256": "93100baccffb5acf2c44775339960347127173e1f7d454ba3e65dcb49e9638a0",
+          "crc32": "c6ff03e5"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_005.txt",
+          "local_path": "calibration/pos_005.txt",
+          "bytes": 147,
+          "sha256": "54d049c6e0b234ec949e1902d89eec33587f8ad4a53fd7df648ae3707d493642",
+          "crc32": "76a14f6a"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_010_3_r5000.png",
+          "local_path": "images/010.png",
+          "bytes": 2891125,
+          "sha256": "da518e0581f3093237571f35a88fb571eae15a0ee4676714bb1389332347a482",
+          "crc32": "961e35d8"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_010.txt",
+          "local_path": "calibration/pos_010.txt",
+          "bytes": 145,
+          "sha256": "ecc3a331d36a3bc4d8b1c739fb24184a590f017498d2268ab0d52e42a56f6a23",
+          "crc32": "88552adb"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_020_3_r5000.png",
+          "local_path": "images/020.png",
+          "bytes": 2523246,
+          "sha256": "4ccbc3235ebe19cc577428c723e264bf7405115837c316d59b19d236bbfd6ca3",
+          "crc32": "fa4484f7"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_020.txt",
+          "local_path": "calibration/pos_020.txt",
+          "bytes": 144,
+          "sha256": "bf2344171ffa41969c9761ddbe1c1c097e12070b749673afe4022d959083bcd1",
+          "crc32": "260d5af5"
+        }
+      ],
+      "scope": "real_scene_loader_only_not_benchmark",
+      "config": {
+        "scene_id": "dtu_scan1_stage3_pool",
+        "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+        "source_page": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+        "max_transfer_bytes": 67108864,
+        "view_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ],
+        "scan": 1,
+        "light": 3,
+        "seed": 42,
+        "split": "dev",
+        "resize_wh": [
+          800,
+          600
+        ],
+        "crop_xywh": [
+          0,
+          0,
+          800,
+          600
+        ],
+        "archive_size_bytes": 6905656531,
+        "archive_etag": "\"19b9bf4d3-5652d3a88539d\""
+      },
+      "code": {
+        "code_commit": "5e031c8932272d31a26566c83f2d503791f61a2d",
+        "working_tree_dirty": true,
+        "source_tree_sha256": "b6f9028b665f86d7928c1514ffef2c6ebc0b0103cc4adb9926eb569e45414c5e",
+        "data_kind": "real"
+      },
+      "transferred_bytes": 20144972,
+      "ranges": [
+        [
+          6905656509,
+          6905656530
+        ],
+        [
+          6905656489,
+          6905656508
+        ],
+        [
+          6905656433,
+          6905656488
+        ],
+        [
+          6905362731,
+          6905656432
+        ],
+        [
+          6905360960,
+          6905360989
+        ],
+        [
+          6905360990,
+          6905361009
+        ],
+        [
+          6905361010,
+          6905362730
+        ],
+        [
+          4401820865,
+          4401820894
+        ],
+        [
+          4401820895,
+          4401820949
+        ],
+        [
+          4401820950,
+          4404467050
+        ],
+        [
+          395211502,
+          395211531
+        ],
+        [
+          395211532,
+          395211579
+        ],
+        [
+          395211580,
+          395211670
+        ],
+        [
+          4423840031,
+          4423840060
+        ],
+        [
+          4423840061,
+          4423840115
+        ],
+        [
+          4423840116,
+          4426802449
+        ],
+        [
+          395211671,
+          395211700
+        ],
+        [
+          395211701,
+          395211748
+        ],
+        [
+          395211749,
+          395211840
+        ],
+        [
+          4447607891,
+          4447607920
+        ],
+        [
+          4447607921,
+          4447607975
+        ],
+        [
+          4447607976,
+          4450639650
+        ],
+        [
+          395211841,
+          395211870
+        ],
+        [
+          395211871,
+          395211918
+        ],
+        [
+          395211919,
+          395212011
+        ],
+        [
+          4471910329,
+          4471910358
+        ],
+        [
+          4471910359,
+          4471910413
+        ],
+        [
+          4471910414,
+          4474984588
+        ],
+        [
+          395212012,
+          395212041
+        ],
+        [
+          395212042,
+          395212089
+        ],
+        [
+          395212090,
+          395212183
+        ],
+        [
+          4495615345,
+          4495615374
+        ],
+        [
+          4495615375,
+          4495615429
+        ],
+        [
+          4495615430,
+          4498334377
+        ],
+        [
+          395212184,
+          395212213
+        ],
+        [
+          395212214,
+          395212261
+        ],
+        [
+          395212262,
+          395212358
+        ],
+        [
+          4610759502,
+          4610759531
+        ],
+        [
+          4610759532,
+          4610759586
+        ],
+        [
+          4610759587,
+          4613650711
+        ],
+        [
+          395213051,
+          395213080
+        ],
+        [
+          395213081,
+          395213128
+        ],
+        [
+          395213129,
+          395213222
+        ],
+        [
+          4833046662,
+          4833046691
+        ],
+        [
+          4833046692,
+          4833046746
+        ],
+        [
+          4833046747,
+          4835569992
+        ],
+        [
+          395214774,
+          395214803
+        ],
+        [
+          395214804,
+          395214851
+        ],
+        [
+          395214852,
+          395214945
+        ]
+      ],
+      "download_seconds": 96.01424624599895
+    }
+  },
+  {
+    "scan": 6,
+    "provenance": {
+      "source_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+      "etag": "\"19b9bf4d3-5652d3a88539d\"",
+      "archive_size_bytes": 6905656531,
+      "members": [
+        {
+          "archive_member": "SampleSet/ReadMe.txt",
+          "local_path": "source/ReadMe.txt",
+          "bytes": 3648,
+          "sha256": "2d437c34541be6110f2bbfafb399681e823d8ed775f461575e9ba941a3e08ea3",
+          "crc32": "eab38388"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_001_3_r5000.png",
+          "local_path": "images/001.png",
+          "bytes": 2733419,
+          "sha256": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+          "crc32": "ab2a5b12"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_001.txt",
+          "local_path": "calibration/pos_001.txt",
+          "bytes": 139,
+          "sha256": "892234b937d511d0e10ab80f7832f2e3316a032aa0221db264c795169273ba20",
+          "crc32": "1d2e855c"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_002_3_r5000.png",
+          "local_path": "images/002.png",
+          "bytes": 2964463,
+          "sha256": "17047847c82f2ec6bfa986f8987531591469dc764e9ee251e418be04ed122cac",
+          "crc32": "e4c5db95"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_002.txt",
+          "local_path": "calibration/pos_002.txt",
+          "bytes": 142,
+          "sha256": "ad57a8e6042f616d7c225d944fe5b01ecbfedfcb8fea3148e776139c0a79045a",
+          "crc32": "496ae13d"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_003_3_r5000.png",
+          "local_path": "images/003.png",
+          "bytes": 3050232,
+          "sha256": "95801ec4c1c8e29913550dcbb9710a7beee33db90f30dca923aedb8110b3c906",
+          "crc32": "0d64a3a4"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_003.txt",
+          "local_path": "calibration/pos_003.txt",
+          "bytes": 144,
+          "sha256": "2ae1bd34ae18b7595cf0c3125aa5d669f69775a885b69ee9e8426cabcba491cb",
+          "crc32": "5cfd1414"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_004_3_r5000.png",
+          "local_path": "images/004.png",
+          "bytes": 3071218,
+          "sha256": "806128d37487a2f4d3cafdc049c33e05f9ed43bf048e8ee9ebe124200582c3a2",
+          "crc32": "342312cf"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_004.txt",
+          "local_path": "calibration/pos_004.txt",
+          "bytes": 144,
+          "sha256": "b34fbd8b584ee6085ed59ad2656e46dc3abe9fdc0d09b310228a87bd141ff34d",
+          "crc32": "519721e7"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_005_3_r5000.png",
+          "local_path": "images/005.png",
+          "bytes": 2772414,
+          "sha256": "23961c677ee20e8a361f8be26ced28ef3408aea8cb9553a327ac4f8146e25065",
+          "crc32": "1fbcc634"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_005.txt",
+          "local_path": "calibration/pos_005.txt",
+          "bytes": 147,
+          "sha256": "54d049c6e0b234ec949e1902d89eec33587f8ad4a53fd7df648ae3707d493642",
+          "crc32": "76a14f6a"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_010_3_r5000.png",
+          "local_path": "images/010.png",
+          "bytes": 2885163,
+          "sha256": "1fe7963754f1c6aa4d574fc4c9a1b1f5545352141750bbf52e0d1ad3a905eb19",
+          "crc32": "74cf7be3"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_010.txt",
+          "local_path": "calibration/pos_010.txt",
+          "bytes": 145,
+          "sha256": "ecc3a331d36a3bc4d8b1c739fb24184a590f017498d2268ab0d52e42a56f6a23",
+          "crc32": "88552adb"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_020_3_r5000.png",
+          "local_path": "images/020.png",
+          "bytes": 2585891,
+          "sha256": "3b81cedb82724753171730ce087b352c863ca0a24b3dbd7daa1231681e3608d0",
+          "crc32": "4c6b342b"
+        },
+        {
+          "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_020.txt",
+          "local_path": "calibration/pos_020.txt",
+          "bytes": 144,
+          "sha256": "bf2344171ffa41969c9761ddbe1c1c097e12070b749673afe4022d959083bcd1",
+          "crc32": "260d5af5"
+        }
+      ],
+      "scope": "real_scene_loader_only_not_benchmark",
+      "config": {
+        "scene_id": "dtu_scan6_stage3_pool",
+        "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+        "source_page": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+        "max_transfer_bytes": 67108864,
+        "view_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          10,
+          20
+        ],
+        "scan": 6,
+        "light": 3,
+        "seed": 42,
+        "split": "test",
+        "resize_wh": [
+          800,
+          600
+        ],
+        "crop_xywh": [
+          0,
+          0,
+          800,
+          600
+        ],
+        "archive_size_bytes": 6905656531,
+        "archive_etag": "\"19b9bf4d3-5652d3a88539d\""
+      },
+      "code": {
+        "code_commit": "c0243e61d06e314b5ac63fd1b1dc4dadcf06f6f9",
+        "working_tree_dirty": true,
+        "source_tree_sha256": "1e50ddd7af0bc7da9f0bd15388b0199505f40cc64e268c84f58d42f3695edc3e",
+        "data_kind": "real"
+      },
+      "transferred_bytes": 20360168,
+      "ranges": [
+        [
+          6905656509,
+          6905656530
+        ],
+        [
+          6905656489,
+          6905656508
+        ],
+        [
+          6905656433,
+          6905656488
+        ],
+        [
+          6905362731,
+          6905656432
+        ],
+        [
+          6905360960,
+          6905360989
+        ],
+        [
+          6905360990,
+          6905361009
+        ],
+        [
+          6905361010,
+          6905362730
+        ],
+        [
+          5470809912,
+          5470809941
+        ],
+        [
+          5470809942,
+          5470809996
+        ],
+        [
+          5470809997,
+          5473543415
+        ],
+        [
+          395211502,
+          395211531
+        ],
+        [
+          395211532,
+          395211579
+        ],
+        [
+          395211580,
+          395211670
+        ],
+        [
+          5493292785,
+          5493292814
+        ],
+        [
+          5493292815,
+          5493292869
+        ],
+        [
+          5493292870,
+          5496257332
+        ],
+        [
+          395211671,
+          395211700
+        ],
+        [
+          395211701,
+          395211748
+        ],
+        [
+          395211749,
+          395211840
+        ],
+        [
+          5517243503,
+          5517243532
+        ],
+        [
+          5517243533,
+          5517243587
+        ],
+        [
+          5517243588,
+          5520293819
+        ],
+        [
+          395211841,
+          395211870
+        ],
+        [
+          395211871,
+          395211918
+        ],
+        [
+          395211919,
+          395212011
+        ],
+        [
+          5541745989,
+          5541746018
+        ],
+        [
+          5541746019,
+          5541746073
+        ],
+        [
+          5541746074,
+          5544817291
+        ],
+        [
+          395212012,
+          395212041
+        ],
+        [
+          395212042,
+          395212089
+        ],
+        [
+          395212090,
+          395212183
+        ],
+        [
+          5565992357,
+          5565992386
+        ],
+        [
+          5565992387,
+          5565992441
+        ],
+        [
+          5565992442,
+          5568764855
+        ],
+        [
+          395212184,
+          395212213
+        ],
+        [
+          395212214,
+          395212261
+        ],
+        [
+          395212262,
+          395212358
+        ],
+        [
+          5682720214,
+          5682720243
+        ],
+        [
+          5682720244,
+          5682720298
+        ],
+        [
+          5682720299,
+          5685605461
+        ],
+        [
+          395213051,
+          395213080
+        ],
+        [
+          395213081,
+          395213128
+        ],
+        [
+          395213129,
+          395213222
+        ],
+        [
+          5908203772,
+          5908203801
+        ],
+        [
+          5908203802,
+          5908203856
+        ],
+        [
+          5908203857,
+          5910789747
+        ],
+        [
+          395214774,
+          395214803
+        ],
+        [
+          395214804,
+          395214851
+        ],
+        [
+          395214852,
+          395214945
+        ]
+      ],
+      "download_seconds": 72.32025197099938
+    }
+  }
+]

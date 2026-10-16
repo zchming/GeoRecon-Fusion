@@ -1,0 +1,646 @@
+{
+  "plan_sha256": "57a0a71399aef6c0b0e2abf4fb6e64bd9a92c6416391b8bdf2dbb8e61882a44c",
+  "created_at_utc": "2026-10-16T09:55:41.770204+00:00",
+  "methods": {
+    "colmap": {
+      "path": "configs/methods/colmap_stage3.json",
+      "sha256": "3eeb9e538412a95f7b019ae10e6163d60605e86dc838ad163703e2beba1d8a08"
+    },
+    "vggt_raw": {
+      "path": "configs/methods/vggt_raw_stage3.json",
+      "sha256": "a5585399da007f89a0a77620ca4d28c0e1657291b42b59686708be73b4a27418"
+    },
+    "vggt_ba": {
+      "path": "configs/methods/vggt_ba_stage3.json",
+      "sha256": "171a24656f730b9ec2b06bc83cfb1e31c3d5333d6b487f06f233bd470ed9f991"
+    }
+  },
+  "datasets": [
+    {
+      "path": "data/stage3_dtu/scan1_blur5/manifest.json",
+      "manifest_sha256": "b04e1566393a84df5e71a2bf91e7c0f2d5aed4b834a28f408b3a013492f657b1",
+      "reference_sha256": "f36088dabb2b03f2621d320d6874b6a0b909f520c6370c75e0434613e39dba5b",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan1_blur5",
+        "split": "dev",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 1,
+          "light": 3,
+          "condition": {
+            "id": "blur5",
+            "views": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "blur_radius_original_px": 4
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "147da144c7f05149dfe5b900bd630837e108f2e775837f380c4234eb898f4cc6",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "002",
+            "path": "images/002.png",
+            "sha256": "3e1f6ac407bb33449ad18585e0ce9226457643596cf46c139e792c404aee7a76",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "003",
+            "path": "images/003.png",
+            "sha256": "291fa7d1049a7616158e4c1707654fa91ea25d8e482ace3bbcc7184d141ea8c3",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "004",
+            "path": "images/004.png",
+            "sha256": "2c42240013893b77deee0d826e6e9f6e77e9cd19045c3ab305510f7183e8307f",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "005",
+            "path": "images/005.png",
+            "sha256": "3f0574c4819a6e0808ee2807428a02c14526e87d8dad8d0ab28a0e42d6aea2ab",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan1_normal5/manifest.json",
+      "manifest_sha256": "8df96f4f5460ae9799044b425e6397048ac52e5d49b2a2cfec7a34b20641f678",
+      "reference_sha256": "cd0f84f8e330e834e459934b89eac4a911152d3e9a885799be9e3f7a92d95fc8",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan1_normal5",
+        "split": "dev",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 1,
+          "light": 3,
+          "condition": {
+            "id": "normal5",
+            "views": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "blur_radius_original_px": 0
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "002",
+            "path": "images/002.png",
+            "sha256": "d2a04b6d16d3c1638aabbc519e34135684152541cdca8f316a7377a78a956e66",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "003",
+            "path": "images/003.png",
+            "sha256": "2809df3c735bceb23644779c800e2b994739ffda3b2c5e2080da04d5617efbab",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "004",
+            "path": "images/004.png",
+            "sha256": "5d66db3f23e918d94c5910183a9aab59aca65c40d7e2c703b3dc6d0abc280544",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "005",
+            "path": "images/005.png",
+            "sha256": "93100baccffb5acf2c44775339960347127173e1f7d454ba3e65dcb49e9638a0",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan1_reduced3/manifest.json",
+      "manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+      "reference_sha256": "f02fc31a6985b0977097deb539885deaef217aca74b6c59cfcd38498cadef655",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan1_reduced3",
+        "split": "dev",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 1,
+          "light": 3,
+          "condition": {
+            "id": "reduced3",
+            "views": [
+              1,
+              2,
+              3
+            ],
+            "blur_radius_original_px": 0
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "002",
+            "path": "images/002.png",
+            "sha256": "d2a04b6d16d3c1638aabbc519e34135684152541cdca8f316a7377a78a956e66",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "003",
+            "path": "images/003.png",
+            "sha256": "2809df3c735bceb23644779c800e2b994739ffda3b2c5e2080da04d5617efbab",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan1_spaced3/manifest.json",
+      "manifest_sha256": "5d4d75d7a1c42daeb53183dc9ea96e2594ade589506bdc6845a77bbf0890f6a2",
+      "reference_sha256": "426de37ee73b2775f475817d6a1112cc3d26223f02f4ae1f87a0982adf76f6f7",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan1_spaced3",
+        "split": "dev",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 1,
+          "light": 3,
+          "condition": {
+            "id": "spaced3",
+            "views": [
+              1,
+              10,
+              20
+            ],
+            "blur_radius_original_px": 0,
+            "interpretation": "wider index spacing; overlap not guaranteed"
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "010",
+            "path": "images/010.png",
+            "sha256": "da518e0581f3093237571f35a88fb571eae15a0ee4676714bb1389332347a482",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "020",
+            "path": "images/020.png",
+            "sha256": "4ccbc3235ebe19cc577428c723e264bf7405115837c316d59b19d236bbfd6ca3",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan6_blur5/manifest.json",
+      "manifest_sha256": "78ecd44dc7422b93398e28f224a3a0b3cbc4473091c189846ed734a4a841a690",
+      "reference_sha256": "6ebbb6052b4d5e07d140bc18b810eba6617e275b1b8651ee1ba6e77cebdc34e0",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan6_blur5",
+        "split": "test",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 6,
+          "light": 3,
+          "condition": {
+            "id": "blur5",
+            "views": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "blur_radius_original_px": 4
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "644c8efff65130e33f589c2b7e336317ca60478fee3c5be686061097c5fd93eb",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "002",
+            "path": "images/002.png",
+            "sha256": "b8853ff0dbf2bf06850c2217be3dfba3f73913bdc7087aeaa4771e943c067fee",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "003",
+            "path": "images/003.png",
+            "sha256": "4f027c405d32e03ddd71b128898744b28161a635a788a843f88c726e5eb29ad6",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "004",
+            "path": "images/004.png",
+            "sha256": "69f16465a71690b040ed9a5189f8d0073c47faafbda84da796b210c7d2f2e730",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "005",
+            "path": "images/005.png",
+            "sha256": "a86e7970fcbbe4377e3300f6420698023c52bd295f8d1bbb6baccfcbb66fe9f1",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan6_normal5/manifest.json",
+      "manifest_sha256": "30872f0dbdab8bcd0d158bd813d126c958b84bfe5bea869b569d1cc1315afa61",
+      "reference_sha256": "949391dce0fbe95131d948925e526dc13cddf4d40f51e940839febfb9e3b8f5c",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan6_normal5",
+        "split": "test",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 6,
+          "light": 3,
+          "condition": {
+            "id": "normal5",
+            "views": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "blur_radius_original_px": 0
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "002",
+            "path": "images/002.png",
+            "sha256": "17047847c82f2ec6bfa986f8987531591469dc764e9ee251e418be04ed122cac",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "003",
+            "path": "images/003.png",
+            "sha256": "95801ec4c1c8e29913550dcbb9710a7beee33db90f30dca923aedb8110b3c906",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "004",
+            "path": "images/004.png",
+            "sha256": "806128d37487a2f4d3cafdc049c33e05f9ed43bf048e8ee9ebe124200582c3a2",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "005",
+            "path": "images/005.png",
+            "sha256": "23961c677ee20e8a361f8be26ced28ef3408aea8cb9553a327ac4f8146e25065",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan6_reduced3/manifest.json",
+      "manifest_sha256": "d9655387c9f83279abad8e9d9188657924fe07d6752c45c8a9b3e9b5bc223030",
+      "reference_sha256": "1318d7bfccf1a445ebf4054bed535620f3c2923584db48af5d438759ad48c3ae",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan6_reduced3",
+        "split": "test",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 6,
+          "light": 3,
+          "condition": {
+            "id": "reduced3",
+            "views": [
+              1,
+              2,
+              3
+            ],
+            "blur_radius_original_px": 0
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "002",
+            "path": "images/002.png",
+            "sha256": "17047847c82f2ec6bfa986f8987531591469dc764e9ee251e418be04ed122cac",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "003",
+            "path": "images/003.png",
+            "sha256": "95801ec4c1c8e29913550dcbb9710a7beee33db90f30dca923aedb8110b3c906",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    },
+    {
+      "path": "data/stage3_dtu/scan6_spaced3/manifest.json",
+      "manifest_sha256": "21858f70615a51ff09a809ead63204d5de7788348d736ee891890fa35c14456e",
+      "reference_sha256": "21604ba4b8cf2c6c4a7ce6dce423e3b74d23cfcae8ce61cfb3f0c8841fb70908",
+      "manifest": {
+        "schema_version": 1,
+        "kind": "real",
+        "scene_id": "dtu_scan6_spaced3",
+        "split": "test",
+        "seed": 42,
+        "source": {
+          "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+          "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+          "scan": 6,
+          "light": 3,
+          "condition": {
+            "id": "spaced3",
+            "views": [
+              1,
+              10,
+              20
+            ],
+            "blur_radius_original_px": 0,
+            "interpretation": "wider index spacing; overlap not guaranteed"
+          }
+        },
+        "license_note": "DTU SampleSet ReadMe calls data citeware; cite Jensen et al., CVPR 2014. Raw data stays local.",
+        "images": [
+          {
+            "image_id": "001",
+            "path": "images/001.png",
+            "sha256": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "010",
+            "path": "images/010.png",
+            "sha256": "1fe7963754f1c6aa4d574fc4c9a1b1f5545352141750bbf52e0d1ad3a905eb19",
+            "width": 1600,
+            "height": 1200
+          },
+          {
+            "image_id": "020",
+            "path": "images/020.png",
+            "sha256": "3b81cedb82724753171730ce087b352c863ca0a24b3dbd7daa1231681e3608d0",
+            "width": 1600,
+            "height": 1200
+          }
+        ],
+        "preprocessing": {
+          "operation": "resize_then_crop",
+          "resize_wh": [
+            800,
+            600
+          ],
+          "crop_xywh": [
+            0,
+            0,
+            800,
+            600
+          ],
+          "pixel_centers": "u_out=sx*(u_in+0.5)-0.5-left",
+          "implementation": "Pillow bilinear"
+        },
+        "budget": {
+          "max_download_bytes": 67108864,
+          "baseline_runs": 0
+        }
+      }
+    }
+  ]
+}

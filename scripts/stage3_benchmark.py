@@ -125,6 +125,7 @@ def summarize():
             for p in e['pairs']:
                 a,b=p['rotation_deg'],p['translation_direction_deg'];errors['rotation'].append(a);errors['translation'].append(b);errors['joint'].append(max(a,b) if a is not None and b is not None else None)
             row=dict(scene_id=scene,split=manifest['split'],condition=manifest['source']['condition']['id'],method=method,status=r['status'],failure_reason=r['failure_reason'],registered=e['registered_images'],input_images=e['input_images'],coverage=e['registration_ratio'],success=r['status']=='success',rotation_deg=e['rotation_deg_registered_subset']['mean'],translation_deg=e['translation_direction_deg_registered_subset']['mean'],ate_mm=e['camera_center_ate']['rmse'],auc={name:{str(t):auc(values,t) for t in plan['metrics']['auc_thresholds_deg']} for name,values in errors.items()},timing_seconds=r['timing_seconds'],memory_bytes=r['memory_bytes'],invocation=read_json(root/'benchmark_invocation.json'))
+            row.update(cli_wall_seconds=row['invocation']['full_cli_wall_seconds'],runner_total_seconds=row['timing_seconds']['total'],peak_gpu_allocated_bytes=row['memory_bytes'].get('peak_gpu_allocated'))
             rows.append(row)
             target=DOC/'runs'/scene/method;target.mkdir(parents=True,exist_ok=True)
             for name in ['prediction.json','evaluation.json','worker_state.json','process.json','input_mapping.json','preflight.json','benchmark_invocation.json']:
@@ -136,7 +137,7 @@ def summarize():
             part=[r for r in rows if r['split']==split and r['method']==method]
             def stat(key):
                 values=[r[key] for r in part if r[key] is not None];return dict(count=len(values),mean=float(np.mean(values)) if values else None,median=float(np.median(values)) if values else None)
-            groups.append(dict(split=split,method=method,cases=len(part),successes=sum(r['success'] for r in part),statuses={s:sum(r['status']==s for r in part) for s in sorted({r['status'] for r in part})},coverage=stat('coverage'),rotation_registered_subset=stat('rotation_deg'),translation_registered_subset=stat('translation_deg'),ate_available_subset=stat('ate_mm'),joint_auc={str(t):float(np.mean([r['auc']['joint'][str(t)] for r in part])) for t in plan['metrics']['auc_thresholds_deg']},wall_seconds_total=sum(r['invocation']['full_cli_wall_seconds'] for r in part)))
+            groups.append(dict(split=split,method=method,cases=len(part),successes=sum(r['success'] for r in part),statuses={s:sum(r['status']==s for r in part) for s in sorted({r['status'] for r in part})},coverage=stat('coverage'),cli_wall_seconds=stat('cli_wall_seconds'),runner_total_seconds=stat('runner_total_seconds'),peak_gpu_allocated_bytes=stat('peak_gpu_allocated_bytes'),rotation_registered_subset=stat('rotation_deg'),translation_registered_subset=stat('translation_deg'),ate_available_subset=stat('ate_mm'),joint_auc={str(t):float(np.mean([r['auc']['joint'][str(t)] for r in part])) for t in plan['metrics']['auc_thresholds_deg']},wall_seconds_total=sum(r['invocation']['full_cli_wall_seconds'] for r in part)))
     write_json(DOC/'results.json',dict(freeze_sha256=sha256(DOC/'freeze.json'),rows=rows,groups=groups))
 
 
