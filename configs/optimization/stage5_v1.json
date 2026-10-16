@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "pose_prior_strength": 1.0,
+  "candidate_index": 0,
+  "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+  "fit_split": "dev_only",
+  "default_enable_recommended": false
+}
