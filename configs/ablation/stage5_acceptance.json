@@ -1,0 +1,20 @@
+{
+  "schema_version":1,
+  "stage":"5_acceptance_and_minimal_component_ablations",
+  "scope":"fixed prior DTU scenes/configuration; audit and diagnostic ablations only, no new method selection or tuning",
+  "cases":["dtu_scan1_blur5","dtu_scan1_normal5","dtu_scan1_reduced3","dtu_scan1_spaced3","dtu_scan6_blur5","dtu_scan6_normal5","dtu_scan6_reduced3","dtu_scan6_spaced3"],
+  "inherited_controls":["always_raw_vs_selector","same_correspondence_unweighted_fusion","grouped_structure_initial_only","dev_only_priority_permutations_and_threshold_fit","counterfactual_fallbacks"],
+  "new_ablations":{
+    "filter_keep_unknown":"frozen filter keep OR finite with zero valid other-view depth observation; only unknown handling changes",
+    "fusion_without_raw_support":"same frozen correspondences, alpha and classical weights, replace raw weight 1+s/(N-1) by 1",
+    "joint_fixed_poses":"same frozen problem/initial points/weights/priors/loss/bounds/budget, all poses fixed to source fusion; optimize only point coordinates"
+  },
+  "selection_gate_control":"natural all8 gate vs no-geometric-evidence gate; additionally dev-only all_unknown counterfactual, preserving identity/hash/status/artifact gates; diagnostics never presented as actual evidence",
+  "evaluation":"same 200000 fixed prediction IDs and STL cap, same raw-camera GT Sim3, dynamic and fixed-raw ROI sensitivity, 1/2/5mm P/R/F1, accuracy/completeness, previous failure-aware pose AUC; no sampling expansion",
+  "prior_test_results_already_seen":true,
+  "fit_new_rules":false,
+  "promote_ablations_to_default":false,
+  "runtime":{"device":"CPU vectorization and sparse SciPy TRF/LSMR","threads":8,"GPU_budget_gib":12,"solver_budget":"inherit frozen joint config, max_nfev60 / wall20s; no new models, weights or dependencies"},
+  "acceptance":{"engineering":"all immutable inputs/rules/source hashes verified, baseline results reproduced, required controls and failure catalog complete, GT guards and regression checks pass","scientific":"stable improvement over raw is a separate claim, not implied by engineering completion; no significance/generalization claims from two dependent scene groups"},
+  "prohibited":["test retuning","expanded data/resolution","new matching or models","next stage","training","UI"]
+}

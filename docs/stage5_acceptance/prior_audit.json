@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "selection_decision_recomputed": true,
+      "raw_filter_fusion_joint_point_metrics_recomputed": true,
+      "joint_pose_metrics_recomputed": true,
+      "artifact_hashes_verified": true
+    }
+  ],
+  "prior_source_locks": {
+    "stage5_points": "80f492a84cb01adedff833e6e5b801a4cb4b6a51657d013ec010b57794c9039c",
+    "stage5_fusion": "45dcd7770dd28ee77b7eeaa7836ef66c6e7fbe32db9555d8e2fd174d898cd762",
+    "stage5_joint": "bcf100d847d6d0bf6298016d905c4c9094a238f647e3472b247d9f32374b8e9c"
+  },
+  "frozen_rule_hashes": {
+    "configs/selection/stage5_v1.json": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+    "configs/filtering/stage5_points_v1.json": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+    "configs/fusion/stage5_v1.json": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+    "configs/optimization/stage5_v1.json": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460"
+  },
+  "all_prior_outputs_unchanged": true,
+  "prior_test_already_seen": true
+}
