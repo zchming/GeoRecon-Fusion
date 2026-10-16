@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "dtu_pose_pilot_v1",
+  "scope": "camera_pose_only; two official SampleSet scenes; not canonical DTU dense MVS evaluation",
+  "seed": 42,
+  "splits": {
+    "dev": [
+      1
+    ],
+    "test": [
+      6
+    ]
+  },
+  "light": 3,
+  "conditions": [
+    {
+      "id": "normal5",
+      "views": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blur_radius_original_px": 0
+    },
+    {
+      "id": "reduced3",
+      "views": [
+        1,
+        2,
+        3
+      ],
+      "blur_radius_original_px": 0
+    },
+    {
+      "id": "spaced3",
+      "views": [
+        1,
+        10,
+        20
+      ],
+      "blur_radius_original_px": 0,
+      "interpretation": "wider index spacing; overlap not guaranteed"
+    },
+    {
+      "id": "blur5",
+      "views": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "blur_radius_original_px": 4
+    }
+  ],
+  "common_resize_wh": [
+    800,
+    600
+  ],
+  "methods": {
+    "colmap": "configs/methods/colmap_stage3.json",
+    "vggt_raw": "configs/methods/vggt_raw_stage3.json",
+    "vggt_ba": "configs/methods/vggt_ba_stage3.json"
+  },
+  "budget": {
+    "per_run_seconds": 180,
+    "max_runs": 24,
+    "sequential_gpu": true,
+    "allocator_gib": 10.5,
+    "physical_gpu_ceiling_gib": 12,
+    "download_per_scene_bytes": 67108864,
+    "no_test_retuning_or_retry": true
+  },
+  "metrics": {
+    "auc_thresholds_deg": [
+      5,
+      10,
+      20
+    ],
+    "auc_definition": "exact integral of empirical recall: mean(max(0,1-error/threshold)); missing pairs contribute zero; joint error=max(rotation,oriented_translation)",
+    "success": "prediction status success AND all input cameras available; not an accuracy threshold",
+    "partial": "2 or more cameras but fewer than inputs; retain coverage and subset errors",
+    "ate": "evaluation-only Sim3, mm, >=3 noncollinear registered centers",
+    "aggregation": "per-scene-condition rows; means and medians separately dev/test; pairs not pooled across unequal view counts",
+    "dense": "not evaluated: no matched dense MVS baseline; not DTU official dense accuracy/completeness"
+  },
+  "archive": {
+    "url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+    "size_bytes": 6905656531,
+    "etag": "\"19b9bf4d3-5652d3a88539d\""
+  }
+}

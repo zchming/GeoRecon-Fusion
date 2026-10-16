@@ -67,6 +67,8 @@ def main(output):
         if not torch.cuda.is_available() or not torch.cuda.is_bf16_supported():
             raise ValueError("configured CUDA BF16 unavailable; no silent CPU/FP16 fallback")
         torch.cuda.manual_seed_all(config["seed"])
+        if "gpu_allocator_limit_gib" in config:
+            torch.cuda.set_per_process_memory_fraction(config["gpu_allocator_limit_gib"]*1024**3/torch.cuda.get_device_properties(0).total_memory)
         state["device"] = {"name": torch.cuda.get_device_name(), "capability": list(torch.cuda.get_device_capability()),
                            "free_total_bytes_before": list(torch.cuda.mem_get_info()), "tf32_matmul": torch.backends.cuda.matmul.allow_tf32,
                            "cudnn_benchmark": torch.backends.cudnn.benchmark}

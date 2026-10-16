@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "method_id": "vggt_1b_raw_crop_bf16",
+  "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+  "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+  "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+  "preprocessing": "official_crop_after_common_manifest_preprocessing",
+  "device": "cuda",
+  "autocast": "bfloat16",
+  "parameter_dtype": "float32",
+  "query_points": null,
+  "postprocessing": "none; no BA, filtering, sampling or fusion",
+  "seed": 42,
+  "num_threads": 8,
+  "timeout_seconds": 180,
+  "gpu_allocator_limit_gib": 10.5
+}

@@ -52,6 +52,8 @@ def validate_config(config):
         raise ValueError("checkpoint requires a SHA-256 pin")
     if type(config["seed"]) is not int or type(config["num_threads"]) is not int or config["num_threads"] <= 0 or not np.isfinite(config["timeout_seconds"]) or config["timeout_seconds"] <= 0:
         raise ValueError("invalid seed, thread or timeout configuration")
+    if "gpu_allocator_limit_gib" in config and not 0 < config["gpu_allocator_limit_gib"] <= 10.5:
+        raise ValueError("GPU allocator budget must be within 10.5 GiB")
     return config
 
 

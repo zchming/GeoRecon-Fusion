@@ -64,8 +64,8 @@ def run_vggt_ba(manifest_path, config_path, official_repo, checkpoint, assets, d
     source['dinov2'] = verify_vendor(dinov2_repo, asset_config['dinov2_commit'])
     source['lightglue'] = verify_vendor(lightglue_repo, asset_config['lightglue_commit'])
     manifest, images = load_scene(manifest_path, preprocess=True)
-    if len(images) != 3:
-        raise ValueError('this authorized smoke profile requires exactly three images')
+    if len(images) not in c.get('allowed_input_counts', [3]):
+        raise ValueError('input count outside explicit profile')
     (output/'images').mkdir(parents=True)
     mapping = []
     for i, (record, image) in enumerate(zip(manifest['images'], images)):

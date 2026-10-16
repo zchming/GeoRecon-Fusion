@@ -113,7 +113,7 @@ def main(output):
                     expected.append(independent_square(image,size))
             actual = images.numpy()
             error = float(np.max(np.abs(actual-np.stack(expected))))
-            if error > 1e-7 or list(images.shape) != [3,3,1024,1024]:
+            if error > 1e-7 or list(images.shape) != [len(mapping),3,1024,1024]:
                 raise ValueError('official square pixel audit failed')
             write_json(output/'preflight.json',dict(input_shape=list(images.shape),independent_loader_max_abs=error,range=[float(actual.min()),float(actual.max())],model_grid=[518,518],tracking_grid=[1024,1024],mapping=mapping,pixel_convention='integer tracking pixels inserted unchanged by official converter; no -0.5 adjustment',intrinsic_scaling='official K[:2,:] *= 1024/518; literal upstream rule',export_note='primary export inverses actual PIL pixel-center transform; official final sparse resets principal point separately'))
             return images,coords
@@ -198,7 +198,7 @@ def main(output):
         state['timing_seconds']['official_demo_wall_including_nested_stages']=time.perf_counter()-start
         # Confirm native model can be read after serialization.
         reread=pycolmap.Reconstruction(str(output/'native_after_ba'))
-        if len(reread.points3D)!=state['optimized_points'] or len(reread.images)!=3:
+        if len(reread.points3D)!=state['optimized_points'] or len(reread.images)!=len(mapping):
             raise ValueError('native reconstruction roundtrip failed')
         with np.load(output/'optimized_points.npz',allow_pickle=False) as points:
             actual=np.array([reread.points3D[int(i)].xyz for i in points['point_ids']])
