@@ -1,0 +1,26 @@
+{
+  "checked_at_utc": "2026-10-16T09:31:41.225093+00:00",
+  "repository": "https://github.com/facebookresearch/vggt",
+  "source": {
+    "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+    "files_sha256": {
+      "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+      "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+      "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+      "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+      "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+      "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+      "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+    }
+  },
+  "model_card": "https://huggingface.co/facebook/VGGT-1B",
+  "checkpoint": {
+    "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+    "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+    "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0"
+  },
+  "code_license": "https://github.com/facebookresearch/vggt/blob/a288dd0f14786c93483e45524328726ab7b1b4ce/LICENSE.txt",
+  "weights_license_model_card": "CC-BY-NC-4.0",
+  "api": "official VGGT().eval(), strict local checkpoint, model(images) without queries; no from_pretrained or BA",
+  "geometry_reference": "https://github.com/facebookresearch/vggt/blob/a288dd0f14786c93483e45524328726ab7b1b4ce/vggt/utils/geometry.py"
+}

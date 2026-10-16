@@ -52,3 +52,11 @@ The CLI requires separate `--prediction` and `--reference` files. It evaluates a
 Means/medians are labeled **registered subset**, alongside input pair counts, evaluated pair counts, registration ratio and failure state. No pose AUC or scene ranking is reported in stage 1. The center ATE is an RMSE after source-to-reference Sim(3), only with at least three noncollinear registered centers. Alignment parameters, camera IDs and per-camera distances are saved; units follow the reference. Two-camera or collinear fits return unavailable, not zero. This GT alignment is evaluation only; it is not an inference fusion transform.
 
 For DTU, `prediction_not_run.json` supplies no method estimates. Evaluating it exercises unavailable-state handling and returns zero coverage plus null errors. Comparing calibration against itself would be an algebra check, never a reconstruction accuracy result.
+
+## Stage 2 adapter extensions
+
+COLMAP exports validated sparse arrays (`xyz`, `rgb`, `point_ids`) and converts its corner-origin pixels to the project center-origin convention. VGGT raw exports the unfiltered depth, confidence and point maps in a single NPZ with native intrinsics/extrinsics and separate grid-transform metadata. Their shapes/dtypes/finiteness are now checked by the respective adapters; the stage 1 descriptions above are historical protocol scope, not a claim that every optional artifact remains unimplemented.
+
+VGGT's native geometry uses integer pixel centers; no COLMAP half-pixel correction is applied. Its unified camera K maps original image pixels, while dense arrays remain on the **model-input** grid. Consumers must follow the explicit transform metadata rather than assuming identical camera/image-array dimensions. No dense GT metric or fusion is implemented.
+
+For VGGT, the generic `registered` field means a finite valid predicted camera is available. It does not mean successful feature-track registration, geometric verification or independent correctness. Cross-method reports must label this distinction; the stage 2 same-input summary records both availability semantics. Raw confidence maps are not probabilities, and absent query-point tracks stay null.

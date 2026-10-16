@@ -1,0 +1,262 @@
+{
+  "scope": "descriptive single-scene outputs; no ranking/generalization claim",
+  "manifest_sha256": "5753c59b26dc9389bbb2dc7a356144f98381d97aeccd40d77baa38652b609a00",
+  "colmap": {
+    "camera_availability": "classical registered images",
+    "evaluation": {
+      "schema_version": 1,
+      "scene_id": "dtu_scan1_light3_smoke",
+      "method_id": "colmap_sift_cpu_estimated_intrinsics",
+      "data_kind": "real",
+      "run_status": "success",
+      "failure_reason": null,
+      "input_images": 3,
+      "registered_images": 3,
+      "registration_ratio": 1.0,
+      "input_pairs": 3,
+      "rotation_evaluated_pairs": 3,
+      "translation_evaluated_pairs": 3,
+      "pairs": [
+        {
+          "image_ids": [
+            "001",
+            "002"
+          ],
+          "rotation_deg": 0.26050116253740324,
+          "translation_direction_deg": 1.6872541568527104,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "001",
+            "003"
+          ],
+          "rotation_deg": 0.9213688916912427,
+          "translation_direction_deg": 0.6271097999699529,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "002",
+            "003"
+          ],
+          "rotation_deg": 0.681487750173919,
+          "translation_direction_deg": 1.2579651664184097,
+          "status": "evaluated",
+          "reason": null
+        }
+      ],
+      "rotation_deg_registered_subset": {
+        "count": 3,
+        "mean": 0.6211192681341884,
+        "median": 0.681487750173919
+      },
+      "translation_direction_deg_registered_subset": {
+        "count": 3,
+        "mean": 1.190776374413691,
+        "median": 1.2579651664184097
+      },
+      "camera_center_ate": {
+        "status": "evaluated",
+        "reason": null,
+        "unit": "mm",
+        "rmse": 1.3834214775309344,
+        "image_ids": [
+          "001",
+          "002",
+          "003"
+        ],
+        "per_camera_error": [
+          0.9924279624927861,
+          1.9311747209687105,
+          1.013516595737565
+        ],
+        "alignment": {
+          "scope": "evaluation_only_registered_subset",
+          "type": "Sim3",
+          "scale": 25.012895035994188,
+          "R": [
+            [
+              0.9682824390617318,
+              0.022847189320404696,
+              -0.2488114228584005
+            ],
+            [
+              -0.00500583260306786,
+              0.9973845354455093,
+              0.07210430010821635
+            ],
+            [
+              0.24980804599654957,
+              -0.06857181924306263,
+              0.9658642998688182
+            ]
+          ],
+          "t": [
+            280.09464688180793,
+            -78.61982784631338,
+            66.56332683200654
+          ]
+        }
+      },
+      "dense_geometry": {
+        "status": "not_evaluated",
+        "reason": "pose evaluation only; dense geometry is not evaluated"
+      }
+    },
+    "timing_seconds": {
+      "input_validation_and_preprocessing": 0.32088145699890447,
+      "backend_import": 0.03621298299913178,
+      "feature_extraction": 0.5031069569995452,
+      "exhaustive_matching": 0.20144787299796008,
+      "incremental_mapping_including_native_ba": 0.1983000690015615,
+      "export_and_validation": 0.0496464610005205,
+      "worker_wall": 1.1042803060008737,
+      "total": 1.4304239060002146
+    },
+    "memory_bytes": {
+      "peak_worker_rss_sampled": 528723968,
+      "peak_worker_rss_os": 529268736,
+      "peak_gpu_allocated": null
+    },
+    "inference_hw": "CPU",
+    "input_hw": [
+      600,
+      800
+    ],
+    "sparse_points": 690
+  },
+  "vggt": {
+    "camera_availability": "predicted cameras present; NOT feature-track registration",
+    "evaluation": {
+      "schema_version": 1,
+      "scene_id": "dtu_scan1_light3_smoke",
+      "method_id": "vggt_1b_raw_crop_bf16",
+      "data_kind": "real",
+      "run_status": "success",
+      "failure_reason": null,
+      "input_images": 3,
+      "registered_images": 3,
+      "registration_ratio": 1.0,
+      "input_pairs": 3,
+      "rotation_evaluated_pairs": 3,
+      "translation_evaluated_pairs": 3,
+      "pairs": [
+        {
+          "image_ids": [
+            "001",
+            "002"
+          ],
+          "rotation_deg": 0.27331413540612637,
+          "translation_direction_deg": 0.7184882246935244,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "001",
+            "003"
+          ],
+          "rotation_deg": 0.5752250737126788,
+          "translation_direction_deg": 0.6150775894859939,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "002",
+            "003"
+          ],
+          "rotation_deg": 0.3278768478894238,
+          "translation_direction_deg": 0.8318789561868832,
+          "status": "evaluated",
+          "reason": null
+        }
+      ],
+      "rotation_deg_registered_subset": {
+        "count": 3,
+        "mean": 0.3921386856694096,
+        "median": 0.3278768478894238
+      },
+      "translation_direction_deg_registered_subset": {
+        "count": 3,
+        "mean": 0.721814923455467,
+        "median": 0.7184882246935244
+      },
+      "camera_center_ate": {
+        "status": "evaluated",
+        "reason": null,
+        "unit": "mm",
+        "rmse": 0.4238037571584978,
+        "image_ids": [
+          "001",
+          "002",
+          "003"
+        ],
+        "per_camera_error": [
+          0.3079269513991063,
+          0.5921324163048509,
+          0.30559624982647926
+        ],
+        "alignment": {
+          "scope": "evaluation_only_registered_subset",
+          "type": "Sim3",
+          "scale": 652.9428254658395,
+          "R": [
+            [
+              0.9665806347929253,
+              -0.031314108620060704,
+              -0.25444312339820724
+            ],
+            [
+              0.02130088601915078,
+              0.998889907151622,
+              -0.04201458848331523
+            ],
+            [
+              0.2554763172939979,
+              0.03519062363690463,
+              0.9661746588013691
+            ]
+          ],
+          "t": [
+            190.6236703756789,
+            -1.3545654773453037,
+            24.31409058210909
+          ]
+        }
+      },
+      "dense_geometry": {
+        "status": "not_evaluated",
+        "reason": "pose evaluation only; dense geometry is not evaluated"
+      }
+    },
+    "timing_seconds": {
+      "input_validation_staging_and_source_check": 0.3244917429983616,
+      "runtime_and_official_utilities_import": 2.4808620309995604,
+      "official_preprocessing_and_independent_audit": 0.11515971400149283,
+      "checkpoint_sha256": 3.160997605002194,
+      "model_construct_checkpoint_load_and_gpu_transfer": 6.442738743000518,
+      "synchronized_raw_forward": 0.8663046370020311,
+      "decode_cpu_export_and_internal_checks": 0.06257655999797862,
+      "worker_wall": 14.303524694998487,
+      "total": 14.64461343199946
+    },
+    "memory_bytes": {
+      "peak_worker_rss_sampled": 10688229376,
+      "peak_worker_rss_os": 10906980352,
+      "peak_gpu_allocated": 5887922176,
+      "peak_gpu_reserved": 7067402240,
+      "gpu_after_load_allocated": 5038931456,
+      "gpu_after_load_reserved": 5062524928
+    },
+    "inference_hw": "RTX 4070 SUPER GPU",
+    "input_hw": [
+      392,
+      518
+    ],
+    "raw_point_head_pixels": 609168
+  }
+}

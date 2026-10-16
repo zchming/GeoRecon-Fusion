@@ -1,0 +1,57 @@
+test_corrupt_export_is_failure_not_fake_success (test_colmap_adapter.ColmapAdapterTests.test_corrupt_export_is_failure_not_fake_success) ... ok
+test_existing_output_is_never_overwritten (test_colmap_adapter.ColmapAdapterTests.test_existing_output_is_never_overwritten) ... ok
+test_known_intrinsics_not_silently_enabled (test_colmap_adapter.ColmapAdapterTests.test_known_intrinsics_not_silently_enabled) ... ok
+test_native_blank_scene_reports_no_reconstruction (test_colmap_adapter.ColmapAdapterTests.test_native_blank_scene_reports_no_reconstruction) ... ok
+test_partial_preserves_order_and_does_not_open_reference (test_colmap_adapter.ColmapAdapterTests.test_partial_preserves_order_and_does_not_open_reference) ... ok
+test_pixel_origin_resize_and_crop_known_numbers (test_colmap_adapter.ColmapAdapterTests.test_pixel_origin_resize_and_crop_known_numbers) ... ok
+test_sparse_shape_nan_and_ids_are_validated (test_colmap_adapter.ColmapAdapterTests.test_sparse_shape_nan_and_ids_are_validated) ... ok
+test_timeout_kills_worker_and_preserves_log (test_colmap_adapter.ColmapAdapterTests.test_timeout_kills_worker_and_preserves_log) ... ok
+test_timeout_oom_and_crash_are_saved (test_colmap_adapter.ColmapAdapterTests.test_timeout_oom_and_crash_are_saved) ... ok
+test_truncated_worker_state_still_saves_failure (test_colmap_adapter.ColmapAdapterTests.test_truncated_worker_state_still_saves_failure) ... ok
+test_official_layout_mapping_and_not_run_evaluation (test_dtu_loader.DtuLoaderTests.test_official_layout_mapping_and_not_run_evaluation) ... ok
+test_alignment_degenerate_and_reflection (test_geometry.GeometryTests.test_alignment_degenerate_and_reflection) ... ok
+test_camera_center_and_nonidentity_roundtrip (test_geometry.GeometryTests.test_camera_center_and_nonidentity_roundtrip) ... ok
+test_error_units_and_direction_sign (test_geometry.GeometryTests.test_error_units_and_direction_sign) ... ok
+test_invalid_camera_and_unprojection (test_geometry.GeometryTests.test_invalid_camera_and_unprojection) ... ok
+test_projection_decomposition_under_positive_negative_scale (test_geometry.GeometryTests.test_projection_decomposition_under_positive_negative_scale) ... ok
+test_projection_known_numbers_and_depth (test_geometry.GeometryTests.test_projection_known_numbers_and_depth) ... ok
+test_relative_pose_has_expected_baseline (test_geometry.GeometryTests.test_relative_pose_has_expected_baseline) ... ok
+test_resize_crop_pixel_centers_and_projection (test_geometry.GeometryTests.test_resize_crop_pixel_centers_and_projection) ... ok
+test_sim3_and_se3_known_transform (test_geometry.GeometryTests.test_sim3_and_se3_known_transform) ... ok
+test_triangulation_known_disparity (test_geometry.GeometryTests.test_triangulation_known_disparity) ... ok
+test_triangulation_negative_depth_and_zero_parallax (test_geometry.GeometryTests.test_triangulation_negative_depth_and_zero_parallax) ... ok
+test_z_depth_not_euclidean_range (test_geometry.GeometryTests.test_z_depth_not_euclidean_range) ... ok
+test_cli_evaluate_and_invalid_input_exit (test_protocol_and_integration.ProtocolTests.test_cli_evaluate_and_invalid_input_exit) ... ok
+test_convention_intrinsics_and_negative_timing_rejected (test_protocol_and_integration.ProtocolTests.test_convention_intrinsics_and_negative_timing_rejected) ... ok
+test_exact_gauge_transform_and_real_order (test_protocol_and_integration.ProtocolTests.test_exact_gauge_transform_and_real_order) ... ok
+test_failure_not_zero_error (test_protocol_and_integration.ProtocolTests.test_failure_not_zero_error) ... ok
+test_image_resize_crop_executes (test_protocol_and_integration.ProtocolTests.test_image_resize_crop_executes) ... ok
+test_images_hash_and_dimensions_verified (test_protocol_and_integration.ProtocolTests.test_images_hash_and_dimensions_verified) ... ok
+test_no_two_camera_ate (test_protocol_and_integration.ProtocolTests.test_no_two_camera_ate) ... ok
+test_nonstandard_json_and_repeat_run_rejected (test_protocol_and_integration.ProtocolTests.test_nonstandard_json_and_repeat_run_rejected) ... ok
+test_partial_keeps_missing_pairs (test_protocol_and_integration.ProtocolTests.test_partial_keeps_missing_pairs) ... ok
+test_path_traversal_symlink_and_duplicate_manifest (test_protocol_and_integration.ProtocolTests.test_path_traversal_symlink_and_duplicate_manifest) ... ok
+test_scene_manifest_order_and_roles_must_match (test_protocol_and_integration.ProtocolTests.test_scene_manifest_order_and_roles_must_match) ... ok
+test_success_cannot_hide_missing_camera (test_protocol_and_integration.ProtocolTests.test_success_cannot_hide_missing_camera) ... ok
+test_synthetic_real_mixing_and_invalid_preprocessing_rejected (test_protocol_and_integration.ProtocolTests.test_synthetic_real_mixing_and_invalid_preprocessing_rejected) ... ok
+test_unregistered_geometry_and_duplicate_ids_rejected (test_protocol_and_integration.ProtocolTests.test_unregistered_geometry_and_duplicate_ids_rejected) ... ok
+test_zero_baseline_rotation_only (test_protocol_and_integration.ProtocolTests.test_zero_baseline_rotation_only) ... ok
+test_bad_content_range_rejected (test_remote_zip.RemoteZipTests.test_bad_content_range_rejected) ... ok
+test_cap_prevents_large_request (test_remote_zip.RemoteZipTests.test_cap_prevents_large_request) ... ok
+test_etag_change_rejected (test_remote_zip.RemoteZipTests.test_etag_change_rejected) ... ok
+test_server_ignoring_range_is_rejected (test_remote_zip.RemoteZipTests.test_server_ignoring_range_is_rejected) ... ok
+test_zip_metadata_and_crc_extraction_over_range (test_remote_zip.RemoteZipTests.test_zip_metadata_and_crc_extraction_over_range) ... ok
+test_independent_rgb_pixels_and_crop (test_vggt_adapter.VggtAdapterTests.test_independent_rgb_pixels_and_crop) ... ok
+test_integer_pixel_origin_does_not_apply_colmap_half_pixel (test_vggt_adapter.VggtAdapterTests.test_integer_pixel_origin_does_not_apply_colmap_half_pixel) ... ok
+test_missing_preflight_cannot_report_success (test_vggt_adapter.VggtAdapterTests.test_missing_preflight_cannot_report_success) ... ok
+test_no_queries_ba_or_unpinned_source (test_vggt_adapter.VggtAdapterTests.test_no_queries_ba_or_unpinned_source) ... ok
+test_official_crop_rounding_and_portrait_crop (test_vggt_adapter.VggtAdapterTests.test_official_crop_rounding_and_portrait_crop) ... ok
+test_oom_timeout_and_launch_failure_are_preserved (test_vggt_adapter.VggtAdapterTests.test_oom_timeout_and_launch_failure_are_preserved) ... ok
+test_preflight_success_has_no_geometry_or_fake_metrics (test_vggt_adapter.VggtAdapterTests.test_preflight_success_has_no_geometry_or_fake_metrics) ... ok
+test_raw_shapes_dtype_nonfinite_and_nonpositive_depth (test_vggt_adapter.VggtAdapterTests.test_raw_shapes_dtype_nonfinite_and_nonpositive_depth) ... ok
+test_source_git_commit_and_cleanliness_are_enforced (test_vggt_adapter.VggtAdapterTests.test_source_git_commit_and_cleanliness_are_enforced) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 4.018s
+
+OK

@@ -6,12 +6,13 @@
 
 研究问题：经典 SfM/MVS 与视觉几何基础模型分别何时失败？推理时无需真值的可靠性判断能否支持选择或融合，并改善精度、完整度、成功率与计算成本之间的权衡？融合有效与否尚待实验验证。
 
-## 当前状态：阶段 2 的 COLMAP 小样本子步骤完成
+## 当前状态：阶段 2 的 COLMAP 与 VGGT raw 子步骤完成
 
-已实现统一数据/相机协议、几何检查及官方 PyCOLMAP CPU SfM 接入；隔离环境中 43 项检查通过。DTU scan1 三图小样本已完成 COLMAP 推理与独立位姿评价，3/3 图像注册、690 个稀疏点。**这只是单场景开发验证，尚无固定 Benchmark、VGGT 对比或融合性能结论。整个阶段 2 尚未完成。**
+已接入官方 PyCOLMAP CPU SfM 和固定版本 VGGT 原始 GPU 推理，使用相同 DTU 三图及公共输入；52 项 CPU 数学/接口检查通过，真实 GPU forward 另行验证。COLMAP 注册 3/3 图像、输出 690 个稀疏点；VGGT 为三图输出相机、原始深度/点图及置信度。**这只是单场景开发验证，没有固定 Benchmark 或融合结论；VGGT 官方 BA 尚未接入，阶段 2 整体尚未完成。**
 
 - [阶段 1 报告、真实执行记录与限制](docs/stage1/report.md)
 - [阶段 2 COLMAP 报告、结果与复现](docs/stage2_colmap/report.md)
+- [阶段 2 VGGT raw 报告、坐标核对与结果](docs/stage2_vggt/report.md)
 - [相机、输入、结果与评价协议](docs/protocol.md)
 - [阶段 0 环境审计与方案](docs/stage0/report.md)
 - [完整项目要求与阶段边界](docs/project_brief.md)
@@ -59,6 +60,24 @@ georecon evaluate-poses --prediction outputs/my_colmap_run/prediction.json --ref
 
 最终开发样本的三对图像平均相对旋转误差约 0.621°、平移方向误差约 1.191°；Sim(3) 对齐三相机中心后的 ATE 为 1.383 mm。仅一个三图场景，不能据此宣称泛化性能或优于其他方法。[完整记录及限制](docs/stage2_colmap/report.md)。
 
+## VGGT 三图原始推理
+
+使用具有已验证 CUDA/BF16 运行库的独立命令环境；官方 checkout 和本地 checkpoint 通过参数提供，不自动下载或修改。环境版本见 `requirements-vggt-runtime-lock.txt`。本机采用只读共享既有 Torch 的 overlay，完整新机器安装尚未实测，详见报告。
+
+```bash
+# 以下变量指向你准备的固定源码和本地原始权重
+GEOR_VGGT_REPO=experiment03_depth_reprojection/vggt_official
+GEOR_VGGT_CHECKPOINT=experiment03_depth_reprojection/model.pt
+
+georecon run-vggt --manifest data/dtu_smoke/manifest.json --config configs/methods/vggt_raw_smoke.json --official-repo "$GEOR_VGGT_REPO" --checkpoint "$GEOR_VGGT_CHECKPOINT" --output outputs/my_vggt_preflight --preflight-only
+georecon run-vggt --manifest data/dtu_smoke/manifest.json --config configs/methods/vggt_raw_smoke.json --official-repo "$GEOR_VGGT_REPO" --checkpoint "$GEOR_VGGT_CHECKPOINT" --output outputs/my_vggt_run
+georecon evaluate-poses --prediction outputs/my_vggt_run/prediction.json --reference data/dtu_smoke/reference.json --output outputs/my_vggt_run/evaluation.json
+```
+
+官方 crop 实际输入 518×392，与 COLMAP 的 800×600 不同；所有尺寸和复合变换明确记录。统一相机恢复原图坐标，原始数组保留模型网格，不过滤、不融合，不接 BA。VGGT 的“相机可用”不等于经典 SfM 注册成功，置信度也不是已校准概率。
+
+该单场景 VGGT 平均旋转误差约 0.392°、平移方向误差约 0.722°，评价专用 Sim(3) 后中心 ATE 为 0.424 mm。GPU forward 约 0.866 s，包含加载/校验的 runner 总耗时约 14.645 s；不能用纯 forward 与 COLMAP 整条链路直接比较。详细成本、输出与限制见 [VGGT 报告](docs/stage2_vggt/report.md)。
+
 ## 代码结构
 
 ```text
@@ -67,7 +86,7 @@ src/georecon/
   data/                  # 协议、图像加载、DTU 小样本获取
   geometry/              # 相机、投影、三角化、SE(3)/Sim(3)
   evaluation/            # 独立参考位姿评价
-  baselines/             # 官方 COLMAP CPU SfM 适配
+  baselines/             # 官方 COLMAP 与 VGGT raw 适配
   cli.py                 # 命令入口
   synthetic.py           # 明确标记的合成验证
 tests/                   # CPU 数学与接口检查
@@ -76,11 +95,11 @@ data/                    # 本地数据，Git 忽略
 outputs/                 # 本地运行产物，Git 忽略
 ```
 
-只支持无畸变 PINHOLE；其他相机模型明确拒绝。COLMAP 稀疏点云已导出并校验，深度/置信度及统一轨迹数组尚未接入。`requirements-stage1-lock.txt` 是 CPU 几何环境，`requirements-colmap-lock.txt` 是隔离 COLMAP 环境；均不是 VGGT 环境配置。
+只支持无畸变 PINHOLE；其他相机模型明确拒绝。COLMAP 稀疏点云和 VGGT 原始深度/点图/置信度已导出校验；统一轨迹数组未接入。三个依赖锁分别对应 CPU 几何、COLMAP、VGGT 运行环境，不混装旧版官方 BA 依赖。
 
 ## 后续工作：等待明确授权
 
-2. 阶段 2 剩余：VGGT 及其官方 BA 小样本接入；COLMAP MVS 仅在另行授权且 GPU 构建可用时开展。
+2. 阶段 2 剩余：VGGT 官方 BA 小样本接入；COLMAP MVS 仅在另行授权且 GPU 构建可用时开展。
 3. 固定 Benchmark 与失败分析。
 4. 几何可靠性分析。
 5. 选择/融合与消融。

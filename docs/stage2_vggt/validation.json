@@ -1,0 +1,113 @@
+{
+  "checked_at_utc": "2026-10-16T09:26:23.447686+00:00",
+  "code": {
+    "code_commit": "950d102e8c0b6484f399d8ff9cbed6d5781d3b6f",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "6dcd96c101912a6e24f6afa0020e52ecef776c30000556bb472446373c54e9cf",
+    "data_kind": "real"
+  },
+  "checks": {
+    "raw_input_ids_order_hashes_match_colmap": "PASS",
+    "common_processed_png_bytes_match_colmap": "PASS",
+    "official_loader_matches_independent_pixels": "PASS",
+    "no_colmap_half_pixel_shift": "PASS",
+    "native_R_t_preserved": "PASS",
+    "original_K_maps_to_native_K": "PASS",
+    "CPU_official_pose_decoder_matches_saved_GPU_decode": "PASS",
+    "final_camera_iteration_preserved": "PASS"
+  },
+  "raw_arrays": {
+    "pose_enc": {
+      "shape": [
+        3,
+        9
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": -0.3689796030521393,
+      "max": 1.000040054321289
+    },
+    "depth": {
+      "shape": [
+        3,
+        392,
+        518,
+        1
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": 0.80454021692276,
+      "max": 1.4288841485977173
+    },
+    "depth_conf": {
+      "shape": [
+        3,
+        392,
+        518
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": 1.0,
+      "max": 92.94549560546875
+    },
+    "world_points": {
+      "shape": [
+        3,
+        392,
+        518,
+        3
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": -0.5134974122047424,
+      "max": 1.3784747123718262
+    },
+    "world_points_conf": {
+      "shape": [
+        3,
+        392,
+        518
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": 1.0,
+      "max": 60.77554702758789
+    },
+    "extrinsics": {
+      "shape": [
+        3,
+        3,
+        4
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": -0.7509535551071167,
+      "max": 1.0
+    },
+    "intrinsics": {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": 0.0,
+      "max": 1034.2584228515625
+    },
+    "pose_enc_iterations": {
+      "shape": [
+        4,
+        3,
+        9
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "min": -0.3689796030521393,
+      "max": 1.000040054321289
+    }
+  },
+  "raw_artifact_sha256": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+  "reference_sha256": "c03e2d81f93e9c42657ef68a640ee7d31e566359f92de302987a2c583abf7f44",
+  "note": "coordinate/shape checks do not prove geometry accuracy; GT evaluation is separate"
+}

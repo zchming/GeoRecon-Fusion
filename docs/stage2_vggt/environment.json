@@ -1,0 +1,61 @@
+{
+  "checked_at_utc": "2026-10-16T09:26:24.464495+00:00",
+  "python": "/home/zchming/.venvs/georecon-vggt/bin/python",
+  "isolation": "dedicated venv overlays read-only existing scientific site-packages; not a fully independent torch installation",
+  "shared_runtime": "/home/zchming/.venvs/visual-geometry/lib/python3.12/site-packages",
+  "new_local_dependencies": [
+    "huggingface_hub",
+    "einops",
+    "safetensors",
+    "their resolved dependencies"
+  ],
+  "commands": {
+    "dependencies": {
+      "command": [
+        "/home/zchming/.venvs/georecon-vggt/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "returncode": 0,
+      "stdout": "anyio==4.15.1\nargon2-cffi==25.1.0\nargon2-cffi-bindings==26.1.0\narrow==1.4.0\nasttokens==3.0.2\nasync-lru==2.4.0\nattrs==26.1.0\nbabel==2.18.0\nbeautifulsoup4==4.15.0\nbleach==6.4.0\ncertifi==2026.7.22\ncffi==2.1.1\ncharset-normalizer==3.5.2\nclick==8.5.0\ncomm==0.2.3\ncontourpy==1.4.0\ncuda-bindings==12.9.7\ncuda-pathfinder==1.6.0\ncuda-toolkit==12.8.1\ncycler==0.12.1\ndebugpy==1.8.22\ndefusedxml==0.7.1\neinops==0.8.2\nexecuting==2.3.0\nfastjsonschema==2.22.2\nfilelock==3.32.3\nfonttools==4.67.0\nfqdn==1.6.0\nfsspec==2026.7.0\n-e git+https://github.com/zchming/GeoRecon-Fusion-Geometry-Reliability-Aware-Hybrid-Multi-View-3D-Reconstruction.git@950d102e8c0b6484f399d8ff9cbed6d5781d3b6f#egg=georecon_fusion\nh11==0.16.0\nhf-xet==1.7.0\nhttpcore==1.0.9\nhttpcore2==2.13.1\nhttpx==0.28.1\nhttpx2==2.13.1\nhuggingface_hub==2.2.0\nidna==3.20\nipykernel==7.4.0\nipython==9.17.1\nipython_pygments_lexers==1.1.1\nipywidgets==8.1.9\nisoduration==20.11.0\njedi==0.20.1\nJinja2==3.1.6\njson5==0.17.3\njsonpointer==3.2.1\njsonschema==4.26.0\njsonschema-specifications==2025.9.1\njupyter==1.1.1\njupyter-console==6.6.3\njupyter-events==0.12.1\njupyter-lsp==2.3.1\njupyter_builder==1.2.3\njupyter_client==8.10.0\njupyter_core==5.9.1\njupyter_server==2.21.1\njupyter_server_terminals==0.5.4\njupyterlab==4.6.4\njupyterlab_pygments==0.3.0\njupyterlab_server==2.28.1\njupyterlab_widgets==3.0.17\nkiwisolver==1.5.1\nlark==1.3.1\nMarkupSafe==3.0.3\nmatplotlib==3.11.2\nmatplotlib-inline==0.2.2\nmistune==3.3.4\nmpmath==1.3.0\nnarwhals==2.27.1\nnbclient==0.11.0\nnbconvert==7.17.2\nnbformat==5.11.1\nnest-asyncio2==1.7.4\nnetworkx==3.6.1\nnotebook==7.6.3\nnotebook_shim==0.2.4\nnumpy==2.5.2\nnvidia-cublas-cu12==12.8.4.1\nnvidia-cuda-cupti-cu12==12.8.90\nnvidia-cuda-nvrtc-cu12==12.8.93\nnvidia-cuda-runtime-cu12==12.8.90\nnvidia-cudnn-cu12==9.19.0.56\nnvidia-cufft-cu12==11.3.3.83\nnvidia-cufile-cu12==1.13.1.3\nnvidia-curand-cu12==10.3.9.90\nnvidia-cusolver-cu12==11.7.3.90\nnvidia-cusparse-cu12==12.5.8.93\nnvidia-cusparselt-cu12==0.7.1\nnvidia-nccl-cu12==2.28.9\nnvidia-nvjitlink-cu12==12.8.93\nnvidia-nvshmem-cu12==3.4.5\nnvidia-nvtx-cu12==12.8.90\nopencv-python==5.0.0.93\npackaging==26.3\npandocfilters==1.5.1\nparso==0.8.7\npexpect==4.9.0\npillow==12.3.0\nplatformdirs==4.13.0\nplotly==7.1.0\nprometheus_client==0.26.0\nprompt_toolkit==3.0.53\npsutil==7.2.2\nptyprocess==0.7.0\npure_eval==0.2.4\npycparser==3.11\nPygments==2.21.0\npyparsing==3.3.3\npython-dateutil==2.9.0.post0\npython-json-logger==4.2.0\nPyYAML==6.0.3\npyzmq==27.2.0\nreferencing==0.37.0\nrequests==2.34.2\nrfc3339-validator==0.1.4\nrfc3986-validator==0.1.1\nrfc3987-syntax==1.1.0\nrpds-py==2026.9.1\nsafetensors==0.8.0\nscipy==1.18.1\nSend2Trash==2.1.0\nsetuptools==78.1.0\nsix==1.17.0\nsoupsieve==3.0.3\nstack-data==0.6.3\nsympy==1.14.0\nterminado==0.18.1\ntinycss2==1.5.1\ntorch==2.11.0+cu128\ntorchvision==0.26.0+cu128\ntornado==6.5.10\ntqdm==4.70.1\ntraitlets==5.16.1\ntriton==3.6.0\ntruststore==0.10.5\ntyping_extensions==4.16.0\ntzdata==2026.5\nuri-template==1.3.0\nurllib3==2.8.0\nwcwidth==0.9.2\nwebcolors==25.10.0\nwebencodings==0.6.1\nwebsocket-client==1.9.2\nwidgetsnbextension==4.0.16\n",
+      "stderr": ""
+    },
+    "pip_check": {
+      "command": [
+        "/home/zchming/.venvs/georecon-vggt/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    "gpu": {
+      "command": [
+        "nvidia-smi"
+      ],
+      "returncode": 0,
+      "stdout": "Fri Oct 16 17:26:24 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 615.78.05              KMD Version: 617.42        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4070 ...    On  |   00000000:01:00.0  On |                  N/A |\n|  0%   47C    P8             12W /  220W |     820MiB /  12282MiB |     18%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A              37      G   /Xwayland                             N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+      "stderr": ""
+    },
+    "cpu": {
+      "command": [
+        "lscpu"
+      ],
+      "returncode": 0,
+      "stdout": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  24\nOn-line CPU(s) list:                     0-23\nVendor ID:                               GenuineIntel\nModel name:                              13th Gen Intel(R) Core(TM) i7-13700KF\nCPU family:                              6\nModel:                                   183\nThread(s) per core:                      2\nCore(s) per socket:                      12\nSocket(s):                               1\nStepping:                                1\nBogoMIPS:                                6835.19\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities\nVirtualization:                          VT-x\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               576 KiB (12 instances)\nL1i cache:                               384 KiB (12 instances)\nL2 cache:                                24 MiB (12 instances)\nL3 cache:                                30 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-23\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Mitigation; Clear Register File\nVulnerability Retbleed:                  Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "returncode": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:     16681775104  1632288768  7726157824     4419584  7539449856 15049486336\nSwap:     4294967296           0  4294967296\n",
+      "stderr": ""
+    }
+  }
+}

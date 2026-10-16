@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-10-16T09:26:25.730781+00:00",
+  "command": [
+    "/home/zchming/.venvs/georecon-colmap/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 0,
+  "log": "tests.txt",
+  "scope": "52 CPU unit/integration checks; native COLMAP blank fixture included; VGGT GPU forward separately recorded"
+}
