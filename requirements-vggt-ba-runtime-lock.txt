@@ -1,0 +1,16 @@
+# Add to the pinned Torch 2.11.0+cu128 / torchvision 0.26.0+cu128 CUDA runtime.
+# Separate environment: incompatible with the COLMAP 4.2.1 baseline environment.
+# See docs/stage2_vggt_ba/report.md for inherited runtime and pinned vendor checkouts.
+pycolmap==3.10.0
+pyceres==2.3
+hydra-core==1.3.2
+omegaconf==2.3.0
+antlr4-python3-runtime==4.9.3
+trimesh==4.12.2
+kornia==0.8.3
+kornia_rs==0.2.0
+scipy==1.18.1
+opencv-python==5.0.0.93
+PyYAML==6.0.3
+six==1.17.0
+# LightGlue: pip install --no-deps -e data/third_party/LightGlue at commit in configs/assets/vggt_ba.json

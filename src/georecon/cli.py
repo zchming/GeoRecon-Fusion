@@ -33,6 +33,9 @@ def main():
     vggt.add_argument("--checkpoint", required=True)
     vggt.add_argument("--output", required=True)
     vggt.add_argument("--preflight-only", action="store_true", help="Verify official preprocessing before any model inference")
+    ba = sub.add_parser("run-vggt-ba", help="Pinned official VGGT BA, offline weights, same three-view smoke input")
+    for name in ["manifest", "config", "official-repo", "checkpoint", "assets", "dinov2-repo", "lightglue-repo", "output"]:
+        ba.add_argument("--"+name, required=True)
     args = parser.parse_args()
     try:
         if args.command == "synthetic-demo":
@@ -55,11 +58,14 @@ def main():
         elif args.command == "run-vggt":
             from .baselines.vggt import run_vggt
             result = run_vggt(args.manifest, args.config, args.official_repo, args.checkpoint, args.output, args.preflight_only)
+        elif args.command == "run-vggt-ba":
+            from .baselines.vggt_ba import run_vggt_ba
+            result = run_vggt_ba(args.manifest, args.config, args.official_repo, args.checkpoint, args.assets, args.dinov2_repo, args.lightglue_repo, args.output)
         else:
             result = evaluate_poses(read_json(args.prediction), read_json(args.reference))
             write_json(args.output, result)
         print(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False))
-        if args.command in {"run-colmap", "run-vggt"} and result["status"] not in {"success", "partial"} and not (args.command == "run-vggt" and args.preflight_only and result["status"] == "not_run"):
+        if args.command in {"run-colmap", "run-vggt", "run-vggt-ba"} and result["status"] not in {"success", "partial"} and not (args.command == "run-vggt" and args.preflight_only and result["status"] == "not_run"):
             raise SystemExit(1)
     except (ValueError, KeyError, OSError) as exc:
         print(f"georecon: {exc}", file=sys.stderr)
