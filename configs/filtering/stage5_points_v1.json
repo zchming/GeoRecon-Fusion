@@ -1,0 +1,7 @@
+{
+  "relative_z_tolerance": 0.05,
+  "min_support": 1,
+  "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+  "fit_split": "dev_only",
+  "candidate_index": 4
+}

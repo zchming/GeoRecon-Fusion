@@ -1,0 +1,297 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": "partial_evidence_not_whole_scene_correctness",
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          },
+          {
+            "method": "colmap",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": false,
+            "reasons": [
+              "no_complete_successful_camera_output",
+              "no_usable_geometric_evidence"
+            ],
+            "evidence_status": "unknown"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "3b5ae44990209e5f88a3506e6366068404a065e1f71138c233729083b3aa5004"
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": null,
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "colmap",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": false,
+            "reasons": [
+              "no_complete_successful_camera_output",
+              "no_usable_geometric_evidence"
+            ],
+            "evidence_status": "unknown"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "b892b447594385fade118940801e357f2bb2758cf9dcaf046d871e0279dd5c55"
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": null,
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "colmap",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5"
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": "partial_evidence_not_whole_scene_correctness",
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          },
+          {
+            "method": "colmap",
+            "eligible": false,
+            "reasons": [
+              "no_complete_successful_camera_output",
+              "no_usable_geometric_evidence"
+            ],
+            "evidence_status": "unknown"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd"
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": "partial_evidence_not_whole_scene_correctness",
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          },
+          {
+            "method": "colmap",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": false,
+            "reasons": [
+              "no_complete_successful_camera_output",
+              "no_usable_geometric_evidence"
+            ],
+            "evidence_status": "unknown"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291"
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": null,
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "colmap",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": false,
+            "reasons": [
+              "no_complete_successful_camera_output",
+              "no_usable_geometric_evidence"
+            ],
+            "evidence_status": "unknown"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d"
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": null,
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "colmap",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "evidence_available"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d"
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "selection": {
+        "outcome": "selected",
+        "selected_method": "vggt_raw",
+        "warning": "partial_evidence_not_whole_scene_correctness",
+        "trace": [
+          {
+            "method": "vggt_raw",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          },
+          {
+            "method": "colmap",
+            "eligible": false,
+            "reasons": [
+              "no_complete_successful_camera_output",
+              "no_usable_geometric_evidence"
+            ],
+            "evidence_status": "unknown"
+          },
+          {
+            "method": "vggt_ba",
+            "eligible": true,
+            "reasons": [],
+            "evidence_status": "partial_evidence"
+          }
+        ],
+        "basis": "fixed dev-fitted priority among eligible whole-scene outputs; not minimum residual or calibrated probability",
+        "fallback_used": false,
+        "correctness_probability": null
+      },
+      "source_sha256": "ef65beeb125afbd3c744c4313a0c86fc5a0dd18211a3ab808eba2b68210ce8b7"
+    }
+  ],
+  "immutable_selection_inputs_verified": true,
+  "complete_camera_outputs_unchanged": true,
+  "natural_fallbacks": 0,
+  "counterexamples": [
+    "blur COLMAP can pass internal geometry checks but have bad GT pose",
+    "all natural outputs selected raw; fallback tested only by counterfactual dev probes",
+    "point/depth heads are correlated; agreement is not correctness",
+    "occlusion and missing views can remove valid geometry"
+  ],
+  "point_subset_bytes_verified": false,
+  "weighted_fusion_or_joint_optimization": false
+}
