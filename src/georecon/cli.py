@@ -39,6 +39,9 @@ def main():
     reliability = sub.add_parser("analyze-reliability", help="GT-free geometric diagnostics only; no selection or fusion")
     for name in ["bundle", "config", "output"]:
         reliability.add_argument("--"+name, required=True)
+    selection = sub.add_parser("select-scene", help="Frozen whole-scene selection/fallback only; no fusion")
+    for name in ["bundle", "policy", "output"]:
+        selection.add_argument("--"+name, required=True)
     args = parser.parse_args()
     try:
         if args.command == "synthetic-demo":
@@ -67,6 +70,9 @@ def main():
         elif args.command == "analyze-reliability":
             from .reliability.analyze import run
             result = run(args.bundle, args.config, args.output)
+        elif args.command == "select-scene":
+            from .selection.run import run
+            result = run(args.bundle, args.policy, args.output)
         else:
             result = evaluate_poses(read_json(args.prediction), read_json(args.reference))
             write_json(args.output, result)

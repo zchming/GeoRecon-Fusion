@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "methods": ["colmap", "vggt_raw", "vggt_ba"],
+  "canonical_tie_order": ["colmap", "vggt_ba", "vggt_raw"],
+  "rule_family": "six fixed method-priority permutations with identical eligibility gates",
+  "objective": "maximize dev mean joint AUC@10, using stage3 empirical-CDF integral and zero for unavailable pairs",
+  "tie_break": "lexicographic canonical order; cannot learn fallback order when raw always wins",
+  "eligibility": "full successful camera output plus at least one available geometric evidence pair; partial evidence allowed with explicit warning",
+  "no_eligible_candidate": "abstain; no fabricated cameras or per-view mixing",
+  "selection_mode": "eager snapshots; account for all baseline branches and shared diagnostics",
+  "residual_ranking": false,
+  "calibration_or_weights": false,
+  "point_filtering_or_fusion": false,
+  "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "stage4_input_lock_sha256": "f33c17340de8fe8fb6f53de1004bf8339777fc6fc996025e0ed36de1debdae0a"
+}

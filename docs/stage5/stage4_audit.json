@@ -1,0 +1,184 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "method": "colmap",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "method": "vggt_ba",
+      "baseline_status": "oom",
+      "diagnostic_status": "unknown"
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "method": "colmap",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "method": "vggt_ba",
+      "baseline_status": "oom",
+      "diagnostic_status": "unknown"
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "method": "colmap",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "method": "vggt_ba",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "method": "colmap",
+      "baseline_status": "no_reconstruction",
+      "diagnostic_status": "unknown"
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "method": "vggt_ba",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "method": "colmap",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "method": "vggt_ba",
+      "baseline_status": "oom",
+      "diagnostic_status": "unknown"
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "method": "colmap",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "method": "vggt_ba",
+      "baseline_status": "oom",
+      "diagnostic_status": "unknown"
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "method": "colmap",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "method": "vggt_ba",
+      "baseline_status": "success",
+      "diagnostic_status": "evidence_available"
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "method": "colmap",
+      "baseline_status": "no_reconstruction",
+      "diagnostic_status": "unknown"
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "method": "vggt_raw",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "method": "vggt_ba",
+      "baseline_status": "success",
+      "diagnostic_status": "partial_evidence"
+    }
+  ],
+  "counts": {
+    "partial_evidence": 8,
+    "unknown": 6,
+    "evidence_available": 10
+  },
+  "published_snapshots_and_array_hashes_match": true,
+  "counterexamples_reviewed": [
+    "blur COLMAP low Sampson does not establish correct pose",
+    "spaced3 partial geometric evidence cannot certify all cameras",
+    "OOM/no model remains unknown",
+    "stage3 native image-ID mapping correction retained"
+  ]
+}

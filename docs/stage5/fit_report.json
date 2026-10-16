@@ -1,0 +1,294 @@
+{
+  "objective": "maximize dev mean joint AUC@10, using stage3 empirical-CDF integral and zero for unavailable pairs",
+  "trials": [
+    {
+      "policy": {
+        "schema_version": 1,
+        "priority": [
+          "colmap",
+          "vggt_raw",
+          "vggt_ba"
+        ],
+        "gate": "complete_cameras_and_nonempty_evidence",
+        "partial_evidence": "allow_with_warning",
+        "no_candidate": "abstain"
+      },
+      "cases": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "selected_method": "colmap",
+          "joint_auc10": 0.0,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "selected_method": "colmap",
+          "joint_auc10": 0.8634503120468848,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "selected_method": "colmap",
+          "joint_auc10": 0.8711137261679212,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9489316230230771,
+          "fallback_used": true
+        }
+      ],
+      "mean_dev_joint_auc10": 0.6708739153094707
+    },
+    {
+      "policy": {
+        "schema_version": 1,
+        "priority": [
+          "colmap",
+          "vggt_ba",
+          "vggt_raw"
+        ],
+        "gate": "complete_cameras_and_nonempty_evidence",
+        "partial_evidence": "allow_with_warning",
+        "no_candidate": "abstain"
+      },
+      "cases": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "selected_method": "colmap",
+          "joint_auc10": 0.0,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "selected_method": "colmap",
+          "joint_auc10": 0.8634503120468848,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "selected_method": "colmap",
+          "joint_auc10": 0.8711137261679212,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "selected_method": "vggt_ba",
+          "joint_auc10": 0.9131745882383226,
+          "fallback_used": true
+        }
+      ],
+      "mean_dev_joint_auc10": 0.6619346566132822
+    },
+    {
+      "policy": {
+        "schema_version": 1,
+        "priority": [
+          "vggt_raw",
+          "colmap",
+          "vggt_ba"
+        ],
+        "gate": "complete_cameras_and_nonempty_evidence",
+        "partial_evidence": "allow_with_warning",
+        "no_candidate": "abstain",
+        "fit_protocol_sha256": "88b4fa2e383673f7ead5a981a8a4add6895804cd45d8f9c52a7fe28820ef72fe",
+        "dev_scene_ids": [
+          "dtu_scan1_blur5",
+          "dtu_scan1_normal5",
+          "dtu_scan1_reduced3",
+          "dtu_scan1_spaced3"
+        ],
+        "training_split": "dev_only"
+      },
+      "cases": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9136448675694698,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9549469962897582,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9278185076544533,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9489316230230771,
+          "fallback_used": false
+        }
+      ],
+      "mean_dev_joint_auc10": 0.9363354986341896
+    },
+    {
+      "policy": {
+        "schema_version": 1,
+        "priority": [
+          "vggt_raw",
+          "vggt_ba",
+          "colmap"
+        ],
+        "gate": "complete_cameras_and_nonempty_evidence",
+        "partial_evidence": "allow_with_warning",
+        "no_candidate": "abstain"
+      },
+      "cases": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9136448675694698,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9549469962897582,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9278185076544533,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9489316230230771,
+          "fallback_used": false
+        }
+      ],
+      "mean_dev_joint_auc10": 0.9363354986341896
+    },
+    {
+      "policy": {
+        "schema_version": 1,
+        "priority": [
+          "vggt_ba",
+          "colmap",
+          "vggt_raw"
+        ],
+        "gate": "complete_cameras_and_nonempty_evidence",
+        "partial_evidence": "allow_with_warning",
+        "no_candidate": "abstain"
+      },
+      "cases": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "selected_method": "colmap",
+          "joint_auc10": 0.0,
+          "fallback_used": true
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "selected_method": "colmap",
+          "joint_auc10": 0.8634503120468848,
+          "fallback_used": true
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "selected_method": "vggt_ba",
+          "joint_auc10": 0.8825240326864575,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "selected_method": "vggt_ba",
+          "joint_auc10": 0.9131745882383226,
+          "fallback_used": false
+        }
+      ],
+      "mean_dev_joint_auc10": 0.6647872332429162
+    },
+    {
+      "policy": {
+        "schema_version": 1,
+        "priority": [
+          "vggt_ba",
+          "vggt_raw",
+          "colmap"
+        ],
+        "gate": "complete_cameras_and_nonempty_evidence",
+        "partial_evidence": "allow_with_warning",
+        "no_candidate": "abstain"
+      },
+      "cases": [
+        {
+          "scene_id": "dtu_scan1_blur5",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9136448675694698,
+          "fallback_used": true
+        },
+        {
+          "scene_id": "dtu_scan1_normal5",
+          "selected_method": "vggt_raw",
+          "joint_auc10": 0.9549469962897582,
+          "fallback_used": true
+        },
+        {
+          "scene_id": "dtu_scan1_reduced3",
+          "selected_method": "vggt_ba",
+          "joint_auc10": 0.8825240326864575,
+          "fallback_used": false
+        },
+        {
+          "scene_id": "dtu_scan1_spaced3",
+          "selected_method": "vggt_ba",
+          "joint_auc10": 0.9131745882383226,
+          "fallback_used": false
+        }
+      ],
+      "mean_dev_joint_auc10": 0.9160726211960021
+    }
+  ],
+  "winning_priority": [
+    "vggt_raw",
+    "colmap",
+    "vggt_ba"
+  ],
+  "winning_mean_dev_joint_auc10": 0.9363354986341896,
+  "policy_sha256": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+  "input_lock_sha256": "bd020f0dd9b431c2140397700da5b7170e7ab4686dcc46d4fdde980d3b2fc325",
+  "test_and_mixed_evaluation_reads_forbidden": true,
+  "project_file_accesses": [
+    "configs/selection/stage5_protocol.json",
+    "configs/selection/stage5_v1.json",
+    "data/stage3_dtu/scan1_blur5/reference.json",
+    "data/stage3_dtu/scan1_normal5/reference.json",
+    "data/stage3_dtu/scan1_reduced3/reference.json",
+    "data/stage3_dtu/scan1_spaced3/reference.json",
+    "data/stage5_bundles/dtu_scan1_blur5/colmap.json",
+    "data/stage5_bundles/dtu_scan1_blur5/manifest.json",
+    "data/stage5_bundles/dtu_scan1_blur5/reliability.json",
+    "data/stage5_bundles/dtu_scan1_blur5/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_blur5/vggt_raw.json",
+    "data/stage5_bundles/dtu_scan1_normal5/colmap.json",
+    "data/stage5_bundles/dtu_scan1_normal5/manifest.json",
+    "data/stage5_bundles/dtu_scan1_normal5/reliability.json",
+    "data/stage5_bundles/dtu_scan1_normal5/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_normal5/vggt_raw.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/colmap.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/manifest.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/reliability.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_reduced3/vggt_raw.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/colmap.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/manifest.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/reliability.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/vggt_ba.json",
+    "data/stage5_bundles/dtu_scan1_spaced3/vggt_raw.json",
+    "docs/stage3/freeze.json",
+    "docs/stage5/input_lock.json"
+  ],
+  "fallback_identifiability": "winner always selects raw on actual dev; secondary order resolved by predeclared canonical tie-break, not learned from natural raw failures",
+  "wall_seconds": 0.04275259600001391
+}

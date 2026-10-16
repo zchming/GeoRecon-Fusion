@@ -1,0 +1,15 @@
+test_empty_unknown_abstains_partial_warns (test_selection.SelectionTests.test_empty_unknown_abstains_partial_warns) ... ok
+test_export_preserves_camera_frames_and_artifact_bytes (test_selection.SelectionTests.test_export_preserves_camera_frames_and_artifact_bytes) ... ok
+test_fit_guard_forbids_test_data_and_mixed_metrics (test_selection.SelectionTests.test_fit_guard_forbids_test_data_and_mixed_metrics) ... ok
+test_integrity_failure_causes_fallback (test_selection.SelectionTests.test_integrity_failure_causes_fallback) ... ok
+test_invalid_policy_cannot_add_new_algorithm (test_selection.SelectionTests.test_invalid_policy_cannot_add_new_algorithm) ... ok
+test_missing_preferred_and_two_stage_fallback (test_selection.SelectionTests.test_missing_preferred_and_two_stage_fallback) ... ok
+test_oom_or_partial_never_mixed_with_other_cameras (test_selection.SelectionTests.test_oom_or_partial_never_mixed_with_other_cameras) ... ok
+test_priority_not_smallest_residual (test_selection.SelectionTests.test_priority_not_smallest_residual) ... ok
+test_reference_and_invalid_predictions_fail_closed (test_selection.SelectionTests.test_reference_and_invalid_predictions_fail_closed) ... ok
+test_stale_or_wrong_input_is_rejected (test_selection.SelectionTests.test_stale_or_wrong_input_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.371s
+
+OK

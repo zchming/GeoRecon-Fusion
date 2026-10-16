@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "priority": [
+    "vggt_raw",
+    "colmap",
+    "vggt_ba"
+  ],
+  "gate": "complete_cameras_and_nonempty_evidence",
+  "partial_evidence": "allow_with_warning",
+  "no_candidate": "abstain",
+  "fit_protocol_sha256": "88b4fa2e383673f7ead5a981a8a4add6895804cd45d8f9c52a7fe28820ef72fe",
+  "dev_scene_ids": [
+    "dtu_scan1_blur5",
+    "dtu_scan1_normal5",
+    "dtu_scan1_reduced3",
+    "dtu_scan1_spaced3"
+  ],
+  "training_split": "dev_only"
+}
