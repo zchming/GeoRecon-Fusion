@@ -1,0 +1,36 @@
+{
+  "scene_id": "dtu_scan1_light3_smoke",
+  "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+  "source_page": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+  "max_transfer_bytes": 33554432,
+  "view_ids": [
+    1,
+    2,
+    3
+  ],
+  "scan": 1,
+  "light": 3,
+  "seed": 42,
+  "split": "dev",
+  "resize_wh": [
+    800,
+    600
+  ],
+  "crop_xywh": [
+    0,
+    0,
+    800,
+    600
+  ],
+  "archive_size_bytes": 6905656531,
+  "archive_etag": "\"19b9bf4d3-5652d3a88539d\"",
+  "member_sha256": {
+    "SampleSet/ReadMe.txt": "2d437c34541be6110f2bbfafb399681e823d8ed775f461575e9ba941a3e08ea3",
+    "SampleSet/MVS Data/Rectified/scan1/rect_001_3_r5000.png": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+    "SampleSet/MVS Data/Calibration/cal18/pos_001.txt": "892234b937d511d0e10ab80f7832f2e3316a032aa0221db264c795169273ba20",
+    "SampleSet/MVS Data/Rectified/scan1/rect_002_3_r5000.png": "d2a04b6d16d3c1638aabbc519e34135684152541cdca8f316a7377a78a956e66",
+    "SampleSet/MVS Data/Calibration/cal18/pos_002.txt": "ad57a8e6042f616d7c225d944fe5b01ecbfedfcb8fea3148e776139c0a79045a",
+    "SampleSet/MVS Data/Rectified/scan1/rect_003_3_r5000.png": "2809df3c735bceb23644779c800e2b994739ffda3b2c5e2080da04d5617efbab",
+    "SampleSet/MVS Data/Calibration/cal18/pos_003.txt": "2ae1bd34ae18b7595cf0c3125aa5d669f69775a885b69ee9e8426cabcba491cb"
+  }
+}

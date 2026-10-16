@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "georecon-fusion"
+version = "0.1.0"
+description = "Reproducible geometry protocols and evaluation for GeoRecon-Fusion"
+requires-python = ">=3.12"
+dependencies = ["numpy>=1.26,<3", "Pillow>=10,<13"]
+
+[project.scripts]
+georecon = "georecon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

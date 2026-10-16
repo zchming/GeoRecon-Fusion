@@ -1,0 +1,4 @@
+# CPU data/geometry layer tested on Python 3.12; not VGGT/COLMAP requirements.
+numpy==2.5.2
+Pillow==12.3.0
+setuptools==78.1.0
