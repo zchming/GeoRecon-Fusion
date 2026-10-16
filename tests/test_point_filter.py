@@ -51,4 +51,46 @@ class PointFilterTest(unittest.TestCase):
         with self.assertRaises(ValueError):evidence(p[:1],d,e,k,[.01])
 
 
+
+class PointEvaluationTest(unittest.TestCase):
+    def test_subset_cannot_increase_fixed_sample_recall(self):
+        import importlib.util
+        from pathlib import Path
+        try:
+            from scipy.spatial import cKDTree
+        except ImportError:
+            self.skipTest('SciPy evaluation dependency unavailable in this environment')
+        spec=importlib.util.spec_from_file_location('stage5_points',Path(__file__).resolve().parents[1]/'scripts/stage5_points.py')
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        ev=module.Evaluator.__new__(module.Evaluator)
+        ev.xyz=np.array([[0.,0,0],[10,0,0],[100,0,0]])
+        ev.ids=np.arange(3);ev.in_mask=np.ones(3,bool)
+        ev.recall_gt=np.array([[0.,0,0],[10,0,0]])
+        ev.tree=cKDTree(ev.recall_gt)
+        before=ev.measure(np.ones(3,bool));after=ev.measure(np.array([True,False,False]))
+        self.assertEqual(before['thresholds_mm']['2']['precision'],2/3)
+        self.assertEqual(after['thresholds_mm']['2']['precision'],1)
+        self.assertEqual(before['thresholds_mm']['2']['recall'],1)
+        self.assertEqual(after['thresholds_mm']['2']['recall'],.5)
+        empty=ev.measure(np.zeros(3,bool))
+        self.assertEqual(empty['thresholds_mm']['2']['f1'],0)
+        self.assertIsNone(empty['mean_completeness_mm'])
+
+    def test_runtime_guard_blocks_gt(self):
+        import subprocess,sys
+        script="""import sys
+from georecon.reliability.analyze import deny_ground_truth
+sys.addaudithook(deny_ground_truth)
+try:
+ open('reference.json')
+except PermissionError:
+ print('blocked')
+else:
+ raise AssertionError('GT read was allowed')
+"""
+        result=subprocess.run([sys.executable,'-c',script],capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stderr)
+        self.assertEqual(result.stdout.strip(),'blocked')
+
+
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,38 @@
+{
+  "scene_id": "dtu_scan1_spaced3",
+  "source": "outputs/stage5_v1/dtu_scan1_spaced3/selected_artifacts/raw_predictions.npz",
+  "source_sha256": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd",
+  "prediction_sha256": "5dc3caa87d23b76e5270f1b0ef24969f2fbd17c1390713a288a9ad86bf391773",
+  "source_shape": [
+    3,
+    392,
+    518,
+    3
+  ],
+  "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+  "rows": [
+    {
+      "candidate": 0,
+      "relative_z_tolerance": 0.05,
+      "min_support": 1,
+      "points": 609168,
+      "kept": 422031,
+      "unknown": 113641,
+      "invalid": 0,
+      "observed_but_not_kept": 73496,
+      "retention": 0.6927990308092349,
+      "artifact": "filtered.npz",
+      "sha256": "fa43d32bf3a73b84a532377286566b1139de56057ab9c927bf9fbb1de21eb8d4"
+    }
+  ],
+  "tolerances": [
+    0.05
+  ],
+  "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+  "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+  "wall_seconds": 0.3641331750000063,
+  "peak_rss_gib": 0.10322952270507812,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0,
+  "cameras_unchanged": true
+}

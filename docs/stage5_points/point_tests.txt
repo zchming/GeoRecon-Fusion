@@ -1,0 +1,13 @@
+test_runtime_guard_blocks_gt (test_point_filter.PointEvaluationTest.test_runtime_guard_blocks_gt) ... ok
+test_subset_cannot_increase_fixed_sample_recall (test_point_filter.PointEvaluationTest.test_subset_cannot_increase_fixed_sample_recall) ... ok
+test_batch_invariance_and_no_gt_parameters (test_point_filter.PointFilterTest.test_batch_invariance_and_no_gt_parameters) ... ok
+test_consistent_points_and_native_boundary (test_point_filter.PointFilterTest.test_consistent_points_and_native_boundary) ... ok
+test_no_self_view_support (test_point_filter.PointFilterTest.test_no_self_view_support) ... ok
+test_occlusion_disagreement_is_not_support (test_point_filter.PointFilterTest.test_occlusion_disagreement_is_not_support) ... ok
+test_point_head_not_replaced_by_depth (test_point_filter.PointFilterTest.test_point_head_not_replaced_by_depth) ... ok
+test_unknown_invalid_and_empty (test_point_filter.PointFilterTest.test_unknown_invalid_and_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.368s
+
+OK

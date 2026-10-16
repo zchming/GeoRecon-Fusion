@@ -1,0 +1,18 @@
+{
+  "attempt01": {
+    "scene_id": "dtu_scan1_blur5",
+    "stage": "invocation metadata serialization after point generation",
+    "exception": "TypeError: Object of type PosixPath is not JSON serializable",
+    "cause": "code_provenance was passed a Path as data_kind",
+    "preserved_directory": "outputs/stage5_points_v1/failures/attempt01",
+    "fix": "pass data_kind=real; rerun to a fresh frozen directory",
+    "algorithm_or_rule_changed": false
+  },
+  "colmap_test_attempt01": {
+    "stage": "regression test environment",
+    "exception": "ModuleNotFoundError: No module named scipy",
+    "cause": "new offline point evaluation test needs SciPy; native COLMAP environment deliberately has no SciPy",
+    "preserved_log": "docs/stage5_points/regression_colmap_attempt01.txt",
+    "fix": "skip only the SciPy evaluation test in that environment; run it in reliability environment"
+  }
+}

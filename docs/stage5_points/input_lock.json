@@ -1,0 +1,189 @@
+{
+  "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+  "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+  "frozen_before_test_commit": "f54255c",
+  "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "source_files": {
+    "scripts/stage5_points.py": "8f938eecfbac297d4d91287a7037bef5749f5ac998f6730228849401e6256be2",
+    "scripts/stage5_point_data.py": "cbbda11e9b17b29dc86bfdd3d5bbeafa696aa4e5a005fc29d08d0403ca83a620",
+    "src/georecon/filtering/points.py": "3114a602354c767cd865b7b512884521e65e7fac5a917eeb4490f87e92191e52"
+  },
+  "official_evaluation_source": {
+    "url": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+    "archive": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+    "files_sha256": {
+      "BaseEval2Obj_web.m": "cad47b8e7aa35240d2117ac50ceaf18d519d8e7ab9eea1a5e02758b54ef8eddd",
+      "BaseEvalMain_web.m": "f63f79138bc3039e7b9ce2768b1dda31d94fb4849d08dd4b9afffb101dd03487",
+      "ComputeStat_web.m": "4fb782bd65c9046aba2025792d44377efa6153e7df983e5683550544ca9158a9",
+      "GetUsedLightSets.m": "9ec4a1bbea122f2c2583f952a932039447b1404dc724073da57167ef4384b0c2",
+      "GetUsedSets.m": "6a9ce66833782ff5cdea0b9fd6190d99d4666dd06f95dd2585f8c6bef6daf6fc",
+      "MaxDistCP.m": "17194c53f20dc4f8d8107ee38553ce3757fa1ab0e6616d4d08990790e8d0ca22",
+      "PointCompareMain.m": "bf8c6ba59e3a6b4aaf175a7ebdde3e8f87cb9ea78cf7ef387e5a12ba717e3e58",
+      "getPaths.m": "41559ee99e78f56502c6e8c45645969df2023297ea473a8f6bb3e82663e12e7f",
+      "plyread.m": "b402bd14ea0e9b79cc7ecce732579f818ebab5eadfab4afc68eb87e8ca4f8a5d",
+      "reducePts_haa.m": "e0e2592ccbef07581af8f3021fe071c9b1111f1e516ae937a7215ed4f1069d62"
+    }
+  },
+  "gt": {
+    "1": {
+      "url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+      "size": 6905656531,
+      "etag": "\"19b9bf4d3-5652d3a88539d\"",
+      "transferred_bytes": 45009330,
+      "ranges": [
+        [
+          6905656509,
+          6905656530
+        ],
+        [
+          6905656489,
+          6905656508
+        ],
+        [
+          6905656433,
+          6905656488
+        ],
+        [
+          6905362731,
+          6905656432
+        ],
+        [
+          4250727618,
+          4250727647
+        ],
+        [
+          4250727648,
+          4250727693
+        ],
+        [
+          4250727694,
+          4295065406
+        ],
+        [
+          2814505216,
+          2814505245
+        ],
+        [
+          2814505246,
+          2814505287
+        ],
+        [
+          2814505288,
+          2814882705
+        ],
+        [
+          2907140991,
+          2907141020
+        ],
+        [
+          2907141021,
+          2907141057
+        ],
+        [
+          2907141058,
+          2907141240
+        ]
+      ],
+      "files": [
+        {
+          "member": "SampleSet/MVS Data/Points/stl/stl001_total.ply",
+          "local": "data/stage5_point_gt/scan1/stl001_total.ply",
+          "sha256": "91c07cde9e63139120ea4c07fbafcc67b5f8967ed2eb6395ed0eb3e299b89921",
+          "bytes": 77783981
+        },
+        {
+          "member": "SampleSet/MVS Data/ObsMask/ObsMask1_10.mat",
+          "local": "data/stage5_point_gt/scan1/ObsMask1_10.mat",
+          "sha256": "0704f3a9b68bea7a21f3d6fa50497f4a58c558209f3992fbe3aa0edaf26a34fa",
+          "bytes": 408809
+        },
+        {
+          "member": "SampleSet/MVS Data/ObsMask/Plane1.mat",
+          "local": "data/stage5_point_gt/scan1/Plane1.mat",
+          "sha256": "e4a9073b2fe2ecc0b625b13376c682857c63db93230c82ab287764d40ec52e35",
+          "bytes": 206
+        }
+      ]
+    },
+    "6": {
+      "url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+      "size": 6905656531,
+      "etag": "\"19b9bf4d3-5652d3a88539d\"",
+      "transferred_bytes": 51667430,
+      "ranges": [
+        [
+          6905656509,
+          6905656530
+        ],
+        [
+          6905656489,
+          6905656508
+        ],
+        [
+          6905656433,
+          6905656488
+        ],
+        [
+          6905362731,
+          6905656432
+        ],
+        [
+          4295065407,
+          4295065436
+        ],
+        [
+          4295065437,
+          4295065482
+        ],
+        [
+          4295065483,
+          4346035967
+        ],
+        [
+          2871314918,
+          2871314947
+        ],
+        [
+          2871314948,
+          2871314989
+        ],
+        [
+          2871314990,
+          2871717734
+        ],
+        [
+          2907155811,
+          2907155840
+        ],
+        [
+          2907155841,
+          2907155877
+        ],
+        [
+          2907155878,
+          2907156061
+        ]
+      ],
+      "files": [
+        {
+          "member": "SampleSet/MVS Data/Points/stl/stl006_total.ply",
+          "local": "data/stage5_point_gt/scan6/stl006_total.ply",
+          "sha256": "cd413559cf259f05ab8b55a0dc3baca8f17485256ffd6d50d2072be4a2d64d89",
+          "bytes": 88559951
+        },
+        {
+          "member": "SampleSet/MVS Data/ObsMask/ObsMask6_10.mat",
+          "local": "data/stage5_point_gt/scan6/ObsMask6_10.mat",
+          "sha256": "d3035476146790a423af23f48b2cfe1fda0975617d79dd3c8f004e957d8d1c1d",
+          "bytes": 425750
+        },
+        {
+          "member": "SampleSet/MVS Data/ObsMask/Plane6.mat",
+          "local": "data/stage5_point_gt/scan6/Plane6.mat",
+          "sha256": "ab064141802d232eebd192e7bff10de3b1947d1dc046112e535e9bd077fca83b",
+          "bytes": 206
+        }
+      ]
+    }
+  }
+}

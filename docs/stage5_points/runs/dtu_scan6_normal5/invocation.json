@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "scripts/stage5_points.py",
+    "generate",
+    "--scene",
+    "dtu_scan6_normal5"
+  ],
+  "project_file_accesses": [
+    "configs/filtering/stage5_points_protocol.json",
+    "configs/filtering/stage5_points_v1.json",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_normal5/evidence.npz",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_normal5/filtered.npz",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_normal5/prediction.json",
+    "outputs/stage5_points_v1/frozen/dtu_scan6_normal5/run.json",
+    "outputs/stage5_v1/dtu_scan6_normal5/decision.json",
+    "outputs/stage5_v1/dtu_scan6_normal5/prediction.json",
+    "outputs/stage5_v1/dtu_scan6_normal5/selected_artifacts/raw_predictions.npz",
+    "src/georecon/selection/__pycache__/__init__.cpython-312.pyc",
+    "src/georecon/selection/__pycache__/policy.cpython-312.pyc",
+    "src/georecon/selection/__pycache__/run.cpython-312.pyc"
+  ],
+  "code": {
+    "code_commit": "f54255c8d8a9aee8ae37f975475e34113561f634",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "4a64be30216d27290e557921ce68a9e79789dd3bbde8c50a52811777d395b3fe",
+    "data_kind": "real"
+  },
+  "gt_guard_active": true,
+  "numpy_version": "2.5.2"
+}

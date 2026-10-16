@@ -1,0 +1,94 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 96586,
+      "good_points_before": 20974,
+      "good_points_removed": 2,
+      "bad_points_before": 75612,
+      "bad_points_kept": 75587,
+      "unknown_in_mask": 4,
+      "good_unknown_removed": 0
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 86209,
+      "good_points_before": 24590,
+      "good_points_removed": 423,
+      "bad_points_before": 61619,
+      "bad_points_kept": 61530,
+      "unknown_in_mask": 436,
+      "good_unknown_removed": 389
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 75489,
+      "good_points_before": 11844,
+      "good_points_removed": 2370,
+      "bad_points_before": 63645,
+      "bad_points_kept": 61813,
+      "unknown_in_mask": 3803,
+      "good_unknown_removed": 2366
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 110181,
+      "good_points_before": 26930,
+      "good_points_removed": 1979,
+      "bad_points_before": 83251,
+      "bad_points_kept": 73294,
+      "unknown_in_mask": 5310,
+      "good_unknown_removed": 1690
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 55607,
+      "good_points_before": 10529,
+      "good_points_removed": 0,
+      "bad_points_before": 45078,
+      "bad_points_kept": 45017,
+      "unknown_in_mask": 6,
+      "good_unknown_removed": 0
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 79252,
+      "good_points_before": 4912,
+      "good_points_removed": 21,
+      "bad_points_before": 74340,
+      "bad_points_kept": 74082,
+      "unknown_in_mask": 87,
+      "good_unknown_removed": 0
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 26225,
+      "good_points_before": 8739,
+      "good_points_removed": 40,
+      "bad_points_before": 17486,
+      "bad_points_kept": 17282,
+      "unknown_in_mask": 64,
+      "good_unknown_removed": 12
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "scope": "same fixed source sample, official prediction ROI, 2mm distance to sampled GT",
+      "in_mask": 109178,
+      "good_points_before": 21314,
+      "good_points_removed": 741,
+      "bad_points_before": 87864,
+      "bad_points_kept": 81003,
+      "unknown_in_mask": 3724,
+      "good_unknown_removed": 589
+    }
+  ],
+  "classification_is_posthoc_GT_only": true,
+  "rule_not_changed": true
+}

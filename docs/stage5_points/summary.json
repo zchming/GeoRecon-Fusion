@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "before": {
+      "precision": 0.2259259256775488,
+      "recall": 0.16585987261146495,
+      "f1": 0.1831218323153293
+    },
+    "after": {
+      "precision": 0.22151634173099857,
+      "recall": 0.14744832965033147,
+      "f1": 0.17082235551525612
+    }
+  },
+  "test": {
+    "before": {
+      "precision": 0.19494507582526444,
+      "recall": 0.14393744924954816,
+      "f1": 0.15679984948273662
+    },
+    "after": {
+      "precision": 0.19721169103095054,
+      "recall": 0.1419008827304398,
+      "f1": 0.15710180365051937
+    }
+  },
+  "incremental_filter_seconds_sum": 4.741907721000189,
+  "max_filter_process_rss_gib": 0.13304519653320312,
+  "gpu_allocated_bytes": 0,
+  "default_enable_recommended": false,
+  "reason": "dev-selected best filtering candidate is worse than the no-filter baseline; test is one scene with four dependent conditions"
+}

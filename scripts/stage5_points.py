@@ -181,13 +181,22 @@ def evaluate():
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['generate','fit','evaluate']);p.add_argument('--scene');p.add_argument('--dev-candidates',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['generate','fit','evaluate']);p.add_argument('--scene');p.add_argument('--dev-candidates',action='store_true');p.add_argument('--output-root',type=Path);args=p.parse_args()
+    if args.output_root is not None: OUT=args.output_root.resolve()
     if args.action=='generate':
         from georecon.reliability.analyze import deny_ground_truth
         if args.dev_candidates:
             from fit_stage5 import dev_only_guard
             sys.addaudithook(dev_only_guard)
         sys.addaudithook(deny_ground_truth)
+        accesses=[]
+        def trace(event,values):
+            if event=='open' and isinstance(values[0],str) and values[0].startswith(str(ROOT)):
+                accesses.append(str(Path(values[0]).relative_to(ROOT)))
+        sys.addaudithook(trace)
         generate(args.scene,args.dev_candidates)
+        dest=OUT/('dev_candidates' if args.dev_candidates else 'frozen')/args.scene
+        from georecon.provenance import code_provenance
+        write_json(dest/'invocation.json',{'argv':sys.argv,'project_file_accesses':sorted(set(accesses)),'code':code_provenance('real'),'gt_guard_active':True,'numpy_version':np.__version__})
     elif args.action=='fit': fit()
     else: evaluate()

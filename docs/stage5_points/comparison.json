@@ -1,0 +1,967 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "before": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 96586,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.389032962017629,
+        "mean_completeness_mm": 4.853181677147973,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.07412047294638975,
+            "recall": 0.07058364747172755,
+            "f1": 0.07230883706378097
+          },
+          "2": {
+            "precision": 0.2171536247489284,
+            "recall": 0.19907968282854543,
+            "f1": 0.20772424480729015
+          },
+          "5": {
+            "precision": 0.6488414470006005,
+            "recall": 0.5841310282074613,
+            "f1": 0.6147881306370944
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 899295,
+        "prediction_sample_count": 177141,
+        "precision_mask_count": 96559,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.3868004641898475,
+        "mean_completeness_mm": 4.902474666016669,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.07414119864538779,
+            "recall": 0.0702508774210321,
+            "f1": 0.07214363003534408
+          },
+          "2": {
+            "precision": 0.21719363290837726,
+            "recall": 0.1970830625243728,
+            "f1": 0.20665022583355042
+          },
+          "5": {
+            "precision": 0.6488364626808479,
+            "recall": 0.5813440790328871,
+            "f1": 0.6132388264159817
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 672.2396217978775,
+        "R": [
+          [
+            0.9727449671604291,
+            -0.01683841049177905,
+            -0.23126542499078032
+          ],
+          [
+            0.00752205446377452,
+            0.9991264292837393,
+            -0.041107140539926576
+          ],
+          [
+            0.2317555771943792,
+            0.03824717295220135,
+            0.9720218650835302
+          ]
+        ],
+        "t": [
+          191.21922297317832,
+          0.7343469527162085,
+          24.088660627890476
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_blur5",
+        "source": "outputs/stage5_v1/dtu_scan1_blur5/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "3b5ae44990209e5f88a3506e6366068404a065e1f71138c233729083b3aa5004",
+        "prediction_sha256": "10a1aac44427523a5605d7723229e43344ba8a6781ccda5bbcad5c6dad1b8964",
+        "source_shape": [
+          5,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 1015280,
+            "kept": 899295,
+            "unknown": 82147,
+            "invalid": 0,
+            "observed_but_not_kept": 33838,
+            "retention": 0.8857605783626192,
+            "artifact": "filtered.npz",
+            "sha256": "5b12b87d881c35b82655a1eb12773360b7c1078704043c2847f45c9c9fa6e172"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.8124187140001595,
+        "peak_rss_gib": 0.13304519653320312,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "before": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 86209,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.758122365872936,
+        "mean_completeness_mm": 7.221499498524064,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.05334709833080073,
+            "recall": 0.012629663330300273,
+            "f1": 0.020424036421407877
+          },
+          "2": {
+            "precision": 0.2852370402162187,
+            "recall": 0.1003717665410113,
+            "f1": 0.14849113976515557
+          },
+          "5": {
+            "precision": 0.5157930146504426,
+            "recall": 0.22394384505394516,
+            "f1": 0.3122966482944904
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 899618,
+        "prediction_sample_count": 177208,
+        "precision_mask_count": 85697,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.777003201024194,
+        "mean_completeness_mm": 7.295329421786,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.05136702568351284,
+            "recall": 0.012120109190172885,
+            "f1": 0.019612602184592716
+          },
+          "2": {
+            "precision": 0.2820052043828839,
+            "recall": 0.0979955803977642,
+            "f1": 0.14544845582170585
+          },
+          "5": {
+            "precision": 0.5130751368192585,
+            "recall": 0.21994020538151565,
+            "f1": 0.3078949224428874
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 657.0478888654001,
+        "R": [
+          [
+            0.9668337884220513,
+            -0.02179043905791651,
+            -0.254475150714422
+          ],
+          [
+            0.013667345418719404,
+            0.9993403651466111,
+            -0.03364577622590064
+          ],
+          [
+            0.25504044627209616,
+            0.029051873507593223,
+            0.9664938486152039
+          ]
+        ],
+        "t": [
+          191.10596299362112,
+          -0.8302567330882766,
+          24.18666995783279
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_normal5",
+        "source": "outputs/stage5_v1/dtu_scan1_normal5/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "b892b447594385fade118940801e357f2bb2758cf9dcaf046d871e0279dd5c55",
+        "prediction_sha256": "501c6000e076033e3fe6888645daf6d3e827791e4b5a10fa003fbe2e1c8e01aa",
+        "source_shape": [
+          5,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 1015280,
+            "kept": 899618,
+            "unknown": 82715,
+            "invalid": 0,
+            "observed_but_not_kept": 32947,
+            "retention": 0.8860787172011662,
+            "artifact": "filtered.npz",
+            "sha256": "b2a4d222274c62bbbd2dca52421e8e35865101cd47be595bac6d78b3bfcf05ff"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.8110044289999223,
+        "peak_rss_gib": 0.13283157348632812,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "before": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 75489,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.935475117351683,
+        "mean_completeness_mm": 7.984679942567126,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.042774443958722465,
+            "recall": 0.02289353958143767,
+            "f1": 0.029824531622601798
+          },
+          "2": {
+            "precision": 0.15689703135556174,
+            "recall": 0.10106850383465488,
+            "f1": 0.12294160305959316
+          },
+          "5": {
+            "precision": 0.459868325186451,
+            "recall": 0.3063720265176134,
+            "f1": 0.3677456829447906
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 511808,
+        "prediction_sample_count": 168019,
+        "precision_mask_count": 71287,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 5.045203345924129,
+        "mean_completeness_mm": 9.190451300543906,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.04070868461290277,
+            "recall": 0.019872611464968153,
+            "f1": 0.026707512877316947
+          },
+          "2": {
+            "precision": 0.13289940662392863,
+            "recall": 0.07379695827375536,
+            "f1": 0.09489834976137794
+          },
+          "5": {
+            "precision": 0.44378357905368443,
+            "recall": 0.26560769530742234,
+            "f1": 0.33231966027179227
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 652.9428254658395,
+        "R": [
+          [
+            0.9665806347929253,
+            -0.031314108620060704,
+            -0.25444312339820724
+          ],
+          [
+            0.02130088601915078,
+            0.998889907151622,
+            -0.04201458848331523
+          ],
+          [
+            0.2554763172939979,
+            0.03519062363690463,
+            0.9661746588013691
+          ]
+        ],
+        "t": [
+          190.6236703756789,
+          -1.3545654773453037,
+          24.31409058210909
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_reduced3",
+        "source": "outputs/stage5_v1/dtu_scan1_reduced3/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+        "prediction_sha256": "845f1850b52dcec9ac0b984b87f00cf92c6562765c14b4173382c24ecbc5bc08",
+        "source_shape": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 609168,
+            "kept": 511808,
+            "unknown": 77037,
+            "invalid": 0,
+            "observed_but_not_kept": 20323,
+            "retention": 0.8401754524203504,
+            "artifact": "filtered.npz",
+            "sha256": "5584d4b53e53057580b205c543affc77eb8246f8e7d918f6ebdc868a4b496c54"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.4081546130000788,
+        "peak_rss_gib": 0.10595703125,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "before": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 110181,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 7.441843330265054,
+        "mean_completeness_mm": 4.199603516269721,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.06749802597544041,
+            "recall": 0.06980891719745223,
+            "f1": 0.06863402530748704
+          },
+          "2": {
+            "precision": 0.24441600638948638,
+            "recall": 0.26291953724164824,
+            "f1": 0.2533303416292783
+          },
+          "5": {
+            "precision": 0.704223051161271,
+            "recall": 0.7004913557779799,
+            "f1": 0.7023522467501796
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 422031,
+        "prediction_sample_count": 138548,
+        "precision_mask_count": 98245,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 3.84681396195265,
+        "mean_completeness_mm": 5.554996775276138,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.06676166726042038,
+            "recall": 0.05444430001299883,
+            "f1": 0.059977117025845454
+          },
+          "2": {
+            "precision": 0.25396712300880453,
+            "recall": 0.2209177174054335,
+            "f1": 0.2362923906443903
+          },
+          "5": {
+            "precision": 0.7367296045600285,
+            "recall": 0.6397972182503575,
+            "f1": 0.6848505147728905
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 646.0408465900998,
+        "R": [
+          [
+            0.9684577710922619,
+            -0.0155515701963673,
+            -0.2486919666483745
+          ],
+          [
+            0.005885017162576692,
+            0.9991996310015712,
+            -0.03956594469136705
+          ],
+          [
+            0.24910823387436437,
+            0.03685439011503985,
+            0.9677741687735025
+          ]
+        ],
+        "t": [
+          191.28498352510928,
+          -1.1039963095239216,
+          24.504353592185026
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_spaced3",
+        "source": "outputs/stage5_v1/dtu_scan1_spaced3/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd",
+        "prediction_sha256": "5dc3caa87d23b76e5270f1b0ef24969f2fbd17c1390713a288a9ad86bf391773",
+        "source_shape": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 609168,
+            "kept": 422031,
+            "unknown": 113641,
+            "invalid": 0,
+            "observed_but_not_kept": 73496,
+            "retention": 0.6927990308092349,
+            "artifact": "filtered.npz",
+            "sha256": "fa43d32bf3a73b84a532377286566b1139de56057ab9c927bf9fbb1de21eb8d4"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.3641331750000063,
+        "peak_rss_gib": 0.10322952270507812,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "before": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 55607,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 4.311462570232597,
+        "mean_completeness_mm": 7.350819769924472,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.08191414749941554,
+            "recall": 0.04105613327396076,
+            "f1": 0.05469741364511884
+          },
+          "2": {
+            "precision": 0.18934666498822092,
+            "recall": 0.11379102601042512,
+            "f1": 0.14215290226485316
+          },
+          "5": {
+            "precision": 0.6035391227723128,
+            "recall": 0.41008460591455587,
+            "f1": 0.48835104449801153
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 893121,
+        "prediction_sample_count": 175946,
+        "precision_mask_count": 55546,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 4.307701996527961,
+        "mean_completeness_mm": 7.373647008152035,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.08200410470600944,
+            "recall": 0.04105613327396076,
+            "f1": 0.054717453941048703
+          },
+          "2": {
+            "precision": 0.1895546033917834,
+            "recall": 0.11379102601042512,
+            "f1": 0.14221146253174402
+          },
+          "5": {
+            "precision": 0.6037878515104598,
+            "recall": 0.4100584121329596,
+            "f1": 0.48841386812592685
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 682.3688866953822,
+        "R": [
+          [
+            0.9706536108426294,
+            -0.010203878977163884,
+            -0.2402653712293669
+          ],
+          [
+            0.004040081865045499,
+            0.9996503178615839,
+            -0.026132733070978225
+          ],
+          [
+            0.2404480099661669,
+            0.02439513994742925,
+            0.9703554151187366
+          ]
+        ],
+        "t": [
+          190.70686459700607,
+          -0.8602119110309161,
+          24.273044499362328
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_blur5",
+        "source": "outputs/stage5_v1/dtu_scan6_blur5/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291",
+        "prediction_sha256": "8b2a2abbbd802558b96c97a587bdfa63cec2db9e23b033c12622f5aff3ba1c65",
+        "source_shape": [
+          5,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 1015280,
+            "kept": 893121,
+            "unknown": 82713,
+            "invalid": 0,
+            "observed_but_not_kept": 39446,
+            "retention": 0.879679497281538,
+            "artifact": "filtered.npz",
+            "sha256": "068c77299972c181b19b1786eca8972d1a90dad0d1267ba5784e2510051f6fb5"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.8022211410000182,
+        "peak_rss_gib": 0.13265228271484375,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "before": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 79252,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.5893720697472515,
+        "mean_completeness_mm": 6.745372448723878,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.022245495381820017,
+            "recall": 0.020483537208266758,
+            "f1": 0.02132818857572508
+          },
+          "2": {
+            "precision": 0.06197950840357341,
+            "recall": 0.076061502999188,
+            "f1": 0.06830223158205999
+          },
+          "5": {
+            "precision": 0.32458486852066826,
+            "recall": 0.3212562537653561,
+            "f1": 0.3229119834326381
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 884344,
+        "prediction_sample_count": 174197,
+        "precision_mask_count": 78973,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.591296575838237,
+        "mean_completeness_mm": 6.791033368856802,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.022311422891367935,
+            "recall": 0.02042591088875501,
+            "f1": 0.02132707380039556
+          },
+          "2": {
+            "precision": 0.061932559229103616,
+            "recall": 0.0758205202085025,
+            "f1": 0.06817646295481075
+          },
+          "5": {
+            "precision": 0.32402213414711356,
+            "recall": 0.3199622809545014,
+            "f1": 0.3219794103405342
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 678.1279032377092,
+        "R": [
+          [
+            0.9675338941373145,
+            -0.014535417385069709,
+            -0.25232297821824684
+          ],
+          [
+            0.005205271759979607,
+            0.9992791162902247,
+            -0.03760522426649012
+          ],
+          [
+            0.25268769032421984,
+            0.03507091940155053,
+            0.966912075512009
+          ]
+        ],
+        "t": [
+          190.92940635397954,
+          -1.3322543352275318,
+          24.23071742142345
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_normal5",
+        "source": "outputs/stage5_v1/dtu_scan6_normal5/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d",
+        "prediction_sha256": "ff9f36fe5ff76879805bb6b424aca789556776c5c7266a2c15f1b8303d3f8018",
+        "source_shape": [
+          5,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 1015280,
+            "kept": 884344,
+            "unknown": 89779,
+            "invalid": 0,
+            "observed_but_not_kept": 41157,
+            "retention": 0.8710345914427547,
+            "artifact": "filtered.npz",
+            "sha256": "882adcd8da34bde6cf43d77ab96d75ba97c003764d45f1cd3cad4c474d6fc971"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.8095389549998799,
+        "peak_rss_gib": 0.13210296630859375,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "before": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 26225,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6131572056308467,
+        "mean_completeness_mm": 10.633203267552979,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.16358436606291707,
+            "recall": 0.052555203394714096,
+            "f1": 0.07955238971008724
+          },
+          "2": {
+            "precision": 0.3332316491897045,
+            "recall": 0.14326950781884382,
+            "f1": 0.20038538696859493
+          },
+          "5": {
+            "precision": 0.7179790276453766,
+            "recall": 0.3153836079314771,
+            "f1": 0.4382562487979405
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 493877,
+        "prediction_sample_count": 162135,
+        "precision_mask_count": 25981,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6086195460983994,
+        "mean_completeness_mm": 11.055427993642198,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.16469727878064738,
+            "recall": 0.05247662204992535,
+            "f1": 0.07959296046319887
+          },
+          "2": {
+            "precision": 0.3348216004002925,
+            "recall": 0.1430913901039893,
+            "f1": 0.20049711637914153
+          },
+          "5": {
+            "precision": 0.7182941380239406,
+            "recall": 0.31468685334101687,
+            "f1": 0.43764159061508157
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 689.3256358728918,
+        "R": [
+          [
+            0.9687509550702369,
+            -0.015645895761044994,
+            -0.24754149752382576
+          ],
+          [
+            0.007887764822603192,
+            0.9994470448744415,
+            -0.03230151169605002
+          ],
+          [
+            0.24791000426890206,
+            0.029339571189457663,
+            0.968338690410443
+          ]
+        ],
+        "t": [
+          190.95085005090908,
+          -1.2278052547076896,
+          24.307624307877774
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_reduced3",
+        "source": "outputs/stage5_v1/dtu_scan6_reduced3/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+        "prediction_sha256": "9e51f0cbe8fc22d6eb58f10cc7168372e0b99ebd0e1570812f8adf6a5477acc4",
+        "source_shape": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 609168,
+            "kept": 493877,
+            "unknown": 83123,
+            "invalid": 0,
+            "observed_but_not_kept": 32168,
+            "retention": 0.8107402227300187,
+            "artifact": "filtered.npz",
+            "sha256": "b32cd43c428a35e3670c41226970537d6e41d28431129545d3aa1e11d8b62a0c"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.3957237970000733,
+        "peak_rss_gib": 0.10575485229492188,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "before": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 109178,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.455713734619686,
+        "mean_completeness_mm": 3.723851317282418,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.09006393229405192,
+            "recall": 0.10669774995416088,
+            "f1": 0.09767774719141498
+          },
+          "2": {
+            "precision": 0.1952224807195589,
+            "recall": 0.2426277601697357,
+            "f1": 0.21635887711543836
+          },
+          "5": {
+            "precision": 0.7829507776291927,
+            "recall": 0.791172695602064,
+            "f1": 0.7870402643689138
+          }
+        },
+        "empty_output": false
+      },
+      "after": {
+        "retained_full_count": 408567,
+        "prediction_sample_count": 134165,
+        "precision_mask_count": 101576,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6148406873470287,
+        "mean_completeness_mm": 4.267777505586283,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.09322083956840198,
+            "recall": 0.10392644786127773,
+            "f1": 0.09828297258663231
+          },
+          "2": {
+            "precision": 0.20253800110262266,
+            "recall": 0.23490059459884224,
+            "f1": 0.21752217273638116
+          },
+          "5": {
+            "precision": 0.8168858785539891,
+            "recall": 0.7751001912146056,
+            "f1": 0.7954446495373456
+          }
+        },
+        "empty_output": false
+      },
+      "alignment": {
+        "scale": 668.730036488551,
+        "R": [
+          [
+            0.9704985736344103,
+            -0.005927413655125151,
+            -0.2410339900116509
+          ],
+          [
+            -0.0012743973352329486,
+            0.9995576898005474,
+            -0.029711961766678768
+          ],
+          [
+            0.24110349330735045,
+            0.02914258958901337,
+            0.9700617583365704
+          ]
+        ],
+        "t": [
+          190.00402179357906,
+          -2.068660471988551,
+          24.652788769923376
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_spaced3",
+        "source": "outputs/stage5_v1/dtu_scan6_spaced3/selected_artifacts/raw_predictions.npz",
+        "source_sha256": "ef65beeb125afbd3c744c4313a0c86fc5a0dd18211a3ab808eba2b68210ce8b7",
+        "prediction_sha256": "2ee1b59c22f552bc4d6d2733abd00c32e590c49e9b2bb322c0063bdbcc8555cc",
+        "source_shape": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "flattening": "C order: frame, native_y, native_x; integer native pixel centers",
+        "rows": [
+          {
+            "candidate": 0,
+            "relative_z_tolerance": 0.05,
+            "min_support": 1,
+            "points": 609168,
+            "kept": 408567,
+            "unknown": 123958,
+            "invalid": 0,
+            "observed_but_not_kept": 76643,
+            "retention": 0.6706967536049169,
+            "artifact": "filtered.npz",
+            "sha256": "eb61f708ab4bb50d5bda6ac5d193b34f53025d67c5322b9c70ece94be9b14e24"
+          }
+        ],
+        "tolerances": [
+          0.05
+        ],
+        "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+        "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+        "wall_seconds": 0.33871289700005036,
+        "peak_rss_gib": 0.102996826171875,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0,
+        "cameras_unchanged": true
+      }
+    }
+  ],
+  "protocol_sha256": "e74df5d9a76b3c082783203faff7b33ba719a96d1cdb51e127ecabb4acd05feb",
+  "rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+  "test_rule_retuning": false
+}
