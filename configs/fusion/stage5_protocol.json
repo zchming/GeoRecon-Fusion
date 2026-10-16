@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "stage": "5_minimal_weighted_sparse_anchor_fusion",
+  "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "point_filter_rule_sha256": "0e400eb6ca58c61757335f71126c7082302d0ce401f1fe9ccbcddfd3d0fd2c17",
+  "input": "unfiltered selected VGGT raw world_points plus existing COLMAP sparse points and measured tracks; no BA output or new inference",
+  "alignment": {
+    "source": "COLMAP to selected VGGT gauge: chordal mean of paired predicted camera rotations; closed-form positive scale and translation fit to paired camera centers; >=3 noncollinear common cameras",
+    "max_camera_rotation_disagreement_deg": 5.0,
+    "max_center_rmse_over_raw_center_diameter": 0.1
+  },
+  "correspondence": {
+    "min_track_length": 3,
+    "max_colmap_mean_reprojection_error_common_px": 2.0,
+    "max_aligned_anchor_reprojection_error_native_px": 2.0,
+    "max_3d_disagreement_over_raw_source_z": 0.05,
+    "pixel_rule": "COLMAP observed xy minus 0.5, inverse common transform then original_to_model transform; nearest native grid pixel; no world NN or interpolation across sparse anchors",
+    "collision": "maximum classical weight then minimum sparse point ID"
+  },
+  "reliability": {
+    "raw_support": "number of OTHER predicted raw depths within 5% relative Z at actual point-head XYZ; not a correctness probability",
+    "raw_weight": "1+support/(N-1)",
+    "classical_weight": "(track_length/N)/(1+(mean_reprojection_error_common_px/2)^2)",
+    "scope": "heuristic dimensionless weights, not calibrated probabilities; internal errors and correlated outputs remain possible"
+  },
+  "candidate_strengths": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "formula": "fused=raw + alpha*w_classic/(w_raw+alpha*w_classic)*(aligned_colmap_point-raw)",
+  "unknown": "no qualifying correspondence -> exact original XYZ, no deletion or invented reliability",
+  "fit": "maximize macro dev F1@2mm over three positive strengths; ties protocol order; audit raw and previous filter baselines separately; no default-enable unless dev beats raw",
+  "evaluation": {
+    "inherit": "configs/filtering/stage5_points_protocol.json evaluation; same 200000 original IDs and sampled GT; 1/2/5mm P/R/F1, means without distance trimming",
+    "roi": "recompute official mask at each evaluated XYZ after SAME raw-camera GT Sim3; report fixed pre-fusion ROI sensitivity too",
+    "comparators": [
+      "raw",
+      "prior_filtered",
+      "unweighted_correspondence_average",
+      "weighted_fused"
+    ],
+    "unweighted": "same eligible correspondences, weight=0.5; only weighting ablation"
+  },
+  "runtime": {
+    "device": "CPU",
+    "threads": 8,
+    "batch_points": 65536,
+    "gpu_budget_gib": 12,
+    "resource_profile": "reuse immutable raw and COLMAP outputs, native PyCOLMAP only for track export; no rerun or weights"
+  },
+  "prohibited": [
+    "test-based rule changes",
+    "test GT inference alignment",
+    "camera averaging",
+    "joint optimization",
+    "training",
+    "new dense MVS",
+    "expanded dataset"
+  ]
+}

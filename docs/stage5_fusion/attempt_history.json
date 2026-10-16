@@ -1,0 +1,14 @@
+{
+  "attempts": [
+    {
+      "name": "center_only_alignment_dev_v1",
+      "split": "dev_only",
+      "test_access": false,
+      "preserved_directory": "outputs/stage5_fusion_v1/failures/center_only_alignment_dev_v1",
+      "original_protocol_sha256": "458a02508a8a860e26b5734a2b60fe5fb98969fba99915cfec04b24b905c3f65",
+      "original_source_sha256": "290de8851ee7a51c2d55cb5a564f27fb6a8dece8887004294bf8141d0cdf6291",
+      "outcome": "zero correspondences in all four dev conditions; weights unidentifiable",
+      "change": "rotation from predicted camera orientation mean, then closed-form scale/translation from centers; same local gates and weights; no GT used for this revision"
+    }
+  ]
+}
