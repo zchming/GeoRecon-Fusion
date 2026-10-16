@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "role": "reliability_diagnostics",
+  "scene_id": "dtu_scan6_spaced3",
+  "split": "test",
+  "input_manifest_sha256": "21858f70615a51ff09a809ead63204d5de7788348d736ee891890fa35c14456e",
+  "config": {
+    "schema_version": 1,
+    "seed": 42,
+    "opencv_threads": 8,
+    "sift_features": 4096,
+    "ratio_threshold": 0.75,
+    "min_evidence_matches": 24,
+    "max_audit_matches": 512,
+    "image_f_ransac_px": 1.5,
+    "image_f_ransac_iterations": 10000,
+    "image_f_ransac_confidence": 0.999,
+    "grid_wh": [
+      8,
+      6
+    ],
+    "min_covered_cells": 4,
+    "epipolar_tolerance_px": 1.5,
+    "depth_sample_stride": 16,
+    "min_depth_samples": 64,
+    "depth_relative_tolerance": 0.05,
+    "unknown_rule": "missing camera, too few independent matches, poor spatial coverage, degenerate baseline, or absent depth => unknown/not_supported; never a high score",
+    "calibration": "none; raw diagnostic quantities, not probabilities; no universal composite score",
+    "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+  },
+  "config_sha256": "54c59e9c1591ccb172cfb08a82802c2f4587b134d5b7e1ff8470a637645e6ac2",
+  "gt_access": "none; runtime deny guard active; sanitized input bundle contains no calibration, reference or evaluation",
+  "provenance": {
+    "code_commit": "913863ea3616cd97a97c218a442a30f54f389788",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "28dc074b17fe2e301ab5d5e323bd9bf358b38c3130b5685ae81516466d7a7d9d",
+    "data_kind": "real"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "opencv": "5.0.0"
+  },
+  "methods": {
+    "colmap": {
+      "views": [
+        {
+          "image_id": "001",
+          "evidence_pairs": 0,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": null
+        },
+        {
+          "image_id": "010",
+          "evidence_pairs": 0,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": null
+        },
+        {
+          "image_id": "020",
+          "evidence_pairs": 0,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": null
+        }
+      ],
+      "method_id": "colmap_sift_cpu_estimated_intrinsics",
+      "baseline_status": "no_reconstruction",
+      "registered_cameras": 0,
+      "input_cameras": 3,
+      "status": "unknown",
+      "pairs": [
+        {
+          "image_ids": [
+            "001",
+            "010"
+          ],
+          "audit_matches": 313,
+          "status": "unknown",
+          "reason": "method_unavailable_no_reconstruction",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        },
+        {
+          "image_ids": [
+            "001",
+            "020"
+          ],
+          "audit_matches": 2,
+          "status": "unknown",
+          "reason": "method_unavailable_no_reconstruction",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        },
+        {
+          "image_ids": [
+            "010",
+            "020"
+          ],
+          "audit_matches": 2,
+          "status": "unknown",
+          "reason": "method_unavailable_no_reconstruction",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        }
+      ],
+      "summary": {
+        "scope": "available evidence pairs only; always read counts/coverage with values",
+        "input_pairs": 3,
+        "evidence_pairs": 0,
+        "evidence_pair_fraction": 0.0,
+        "median_pair_sampson_px": null,
+        "median_pair_positive_depth_ratio": null
+      },
+      "depth_consistency": {
+        "status": "not_supported",
+        "reason": "no method-owned optimized dense depth output"
+      },
+      "confidence": null,
+      "composite_score": null,
+      "correctness_probability": null,
+      "prediction_sha256": "f768fa2b1e70a529a0c83d9a9a89f8e9b1503c1c3f72051b7b45ea284c5409f1"
+    },
+    "vggt_raw": {
+      "views": [
+        {
+          "image_id": "001",
+          "evidence_pairs": 1,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": 0.8998133193825674
+        },
+        {
+          "image_id": "010",
+          "evidence_pairs": 1,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": 0.8998133193825674
+        },
+        {
+          "image_id": "020",
+          "evidence_pairs": 0,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": null
+        }
+      ],
+      "method_id": "vggt_1b_raw_crop_bf16",
+      "baseline_status": "success",
+      "registered_cameras": 3,
+      "input_cameras": 3,
+      "status": "partial_evidence",
+      "pairs": [
+        {
+          "image_ids": [
+            "001",
+            "010"
+          ],
+          "audit_matches": 313,
+          "status": "available",
+          "reason": null,
+          "sampson_px": {
+            "count": 313,
+            "median": 0.8998133193825674,
+            "p90": 1.4175907604130442,
+            "mean": 1.6144567590297285
+          },
+          "fraction_within_tolerance": 0.9169329073482428,
+          "triangulation": {
+            "finite_points": 313,
+            "positive_depth_ratio": 1.0,
+            "angle_median_deg": 16.86326448647727
+          }
+        },
+        {
+          "image_ids": [
+            "001",
+            "020"
+          ],
+          "audit_matches": 2,
+          "status": "unknown",
+          "reason": "insufficient_matches_or_spatial_coverage",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        },
+        {
+          "image_ids": [
+            "010",
+            "020"
+          ],
+          "audit_matches": 2,
+          "status": "unknown",
+          "reason": "insufficient_matches_or_spatial_coverage",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        }
+      ],
+      "summary": {
+        "scope": "available evidence pairs only; always read counts/coverage with values",
+        "input_pairs": 3,
+        "evidence_pairs": 1,
+        "evidence_pair_fraction": 0.3333333333333333,
+        "median_pair_sampson_px": 0.8998133193825674,
+        "median_pair_positive_depth_ratio": 1.0
+      },
+      "depth_consistency": {
+        "status": "available",
+        "scope": "raw depth on its native grid; compare source-projected Z against separately predicted target depth",
+        "limitations": "same joint network outputs are correlated; occlusion and padding are NOT removed; low discrepancy is not independent correctness",
+        "pairs": [
+          {
+            "indices": [
+              0,
+              1
+            ],
+            "status": "available",
+            "source_samples": 768,
+            "target_valid_samples": 597,
+            "valid_fraction": 0.77734375,
+            "relative_z_error": {
+              "count": 597,
+              "median": 0.0012859115655269886,
+              "p90": 0.23707135361506942,
+              "mean": 0.041053242504000005
+            },
+            "fraction_within_relative_tolerance": 0.8341708542713567
+          },
+          {
+            "indices": [
+              0,
+              2
+            ],
+            "status": "available",
+            "source_samples": 768,
+            "target_valid_samples": 447,
+            "valid_fraction": 0.58203125,
+            "relative_z_error": {
+              "count": 447,
+              "median": 0.009606449734886007,
+              "p90": 0.2470743964352924,
+              "mean": 0.05754031717120672
+            },
+            "fraction_within_relative_tolerance": 0.7225950782997763
+          },
+          {
+            "indices": [
+              1,
+              0
+            ],
+            "status": "available",
+            "source_samples": 768,
+            "target_valid_samples": 583,
+            "valid_fraction": 0.7591145833333334,
+            "relative_z_error": {
+              "count": 583,
+              "median": 0.0012580312949369602,
+              "p90": 0.015185476987211365,
+              "mean": 0.01132662612744664
+            },
+            "fraction_within_relative_tolerance": 0.9519725557461407
+          },
+          {
+            "indices": [
+              1,
+              2
+            ],
+            "status": "available",
+            "source_samples": 768,
+            "target_valid_samples": 515,
+            "valid_fraction": 0.6705729166666666,
+            "relative_z_error": {
+              "count": 515,
+              "median": 0.007743304439559954,
+              "p90": 0.22383653757228197,
+              "mean": 0.054703746644230444
+            },
+            "fraction_within_relative_tolerance": 0.7708737864077669
+          },
+          {
+            "indices": [
+              2,
+              0
+            ],
+            "status": "available",
+            "source_samples": 768,
+            "target_valid_samples": 550,
+            "valid_fraction": 0.7161458333333334,
+            "relative_z_error": {
+              "count": 550,
+              "median": 0.029921624668484584,
+              "p90": 0.3076079047358933,
+              "mean": 0.08465322227264044
+            },
+            "fraction_within_relative_tolerance": 0.5763636363636364
+          },
+          {
+            "indices": [
+              2,
+              1
+            ],
+            "status": "available",
+            "source_samples": 768,
+            "target_valid_samples": 539,
+            "valid_fraction": 0.7018229166666666,
+            "relative_z_error": {
+              "count": 539,
+              "median": 0.009863206153622812,
+              "p90": 0.28729503973325404,
+              "mean": 0.061915982453998576
+            },
+            "fraction_within_relative_tolerance": 0.7717996289424861
+          }
+        ],
+        "median_pair_relative_z_error": 0.00867487708722298
+      },
+      "confidence": {
+        "scope": "uncalibrated raw output; not probability; no GT-based mapping",
+        "depth_conf": {
+          "count": 609168,
+          "median": 52.41909217834473,
+          "p90": 70.9668975830078,
+          "mean": 41.28275459650722
+        },
+        "world_points_conf": {
+          "count": 609168,
+          "median": 9.83951711654663,
+          "p90": 37.052294921875,
+          "mean": 15.247971007393335
+        }
+      },
+      "composite_score": null,
+      "correctness_probability": null,
+      "prediction_sha256": "2fe8aded489ae62dc827fe930360fe59748033e2c6040996528486c2b431a1ed"
+    },
+    "vggt_ba": {
+      "views": [
+        {
+          "image_id": "001",
+          "evidence_pairs": 1,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": 0.12993663795221785
+        },
+        {
+          "image_id": "010",
+          "evidence_pairs": 1,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": 0.12993663795221785
+        },
+        {
+          "image_id": "020",
+          "evidence_pairs": 0,
+          "possible_pairs": 2,
+          "median_pair_sampson_px": null
+        }
+      ],
+      "method_id": "vggt_official_ba_12gb",
+      "baseline_status": "success",
+      "registered_cameras": 3,
+      "input_cameras": 3,
+      "status": "partial_evidence",
+      "pairs": [
+        {
+          "image_ids": [
+            "001",
+            "010"
+          ],
+          "audit_matches": 313,
+          "status": "available",
+          "reason": null,
+          "sampson_px": {
+            "count": 313,
+            "median": 0.12993663795221785,
+            "p90": 0.3689455940836764,
+            "mean": 0.8745029963322971
+          },
+          "fraction_within_tolerance": 0.9840255591054313,
+          "triangulation": {
+            "finite_points": 313,
+            "positive_depth_ratio": 1.0,
+            "angle_median_deg": 16.991121905162057
+          }
+        },
+        {
+          "image_ids": [
+            "001",
+            "020"
+          ],
+          "audit_matches": 2,
+          "status": "unknown",
+          "reason": "insufficient_matches_or_spatial_coverage",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        },
+        {
+          "image_ids": [
+            "010",
+            "020"
+          ],
+          "audit_matches": 2,
+          "status": "unknown",
+          "reason": "insufficient_matches_or_spatial_coverage",
+          "sampson_px": null,
+          "fraction_within_tolerance": null,
+          "triangulation": null
+        }
+      ],
+      "summary": {
+        "scope": "available evidence pairs only; always read counts/coverage with values",
+        "input_pairs": 3,
+        "evidence_pairs": 1,
+        "evidence_pair_fraction": 0.3333333333333333,
+        "median_pair_sampson_px": 0.12993663795221785,
+        "median_pair_positive_depth_ratio": 1.0
+      },
+      "depth_consistency": {
+        "status": "not_supported",
+        "reason": "no method-owned optimized dense depth output"
+      },
+      "confidence": null,
+      "composite_score": null,
+      "correctness_probability": null,
+      "prediction_sha256": "280e0df3f5bfee64aa12300658803d70feb43747c07b52305957842fbedc4470"
+    }
+  },
+  "observations": "observations.json",
+  "observations_sha256": "670bbf58dcdd07d9811b9d4ffb0b0cf03fc1c5952205fb61ef21a687ce2f905c",
+  "match_signals": {
+    "path": "match_signals.npz",
+    "sha256": "5cc15af3307c8cac1c2f5807e38f1093cd99a38ac5e0adbc60e29d6f90d54387",
+    "semantics": "per-match square-root Sampson error in common pixels; unknown pairs have no array; no filtering applied"
+  },
+  "timing_seconds": {
+    "shared_image_matching": 0.15944089600088773,
+    "colmap": 0.00013550599760492332,
+    "vggt_raw": 0.01989767999839387,
+    "vggt_ba": 0.0020136989987804554,
+    "total": 0.3345004799994058
+  },
+  "memory_bytes": {
+    "peak_rss_os": 212951040,
+    "peak_gpu_allocated": null
+  },
+  "compute": "CPU vectorized geometry and image matching; no model inference or CUDA allocation required"
+}

@@ -1,0 +1,248 @@
+{
+  "detector": "OpenCV SIFT + mutual Lowe ratio; independently extracted; no predicted geometry used",
+  "independence_limit": "not held-out images; baseline SIFT/tracker observations may spatially overlap; not statistical independence",
+  "keypoints_per_view": [
+    644,
+    772,
+    763,
+    751,
+    596
+  ],
+  "pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "descriptor_matches": 184,
+      "fit_matches": 92,
+      "audit_matches": 92,
+      "covered_cells": [
+        23,
+        25
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 92,
+        "median": 0.23015976942208732,
+        "p90": 1.411474267123504,
+        "mean": 0.8877561952334111
+      },
+      "image_only_f_audit_support_fraction": 0.9130434782608695,
+      "array_prefix": "0_1"
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "descriptor_matches": 79,
+      "fit_matches": 40,
+      "audit_matches": 39,
+      "covered_cells": [
+        15,
+        15
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 39,
+        "median": 0.3673911926944555,
+        "p90": 1.454828786185617,
+        "mean": 2.5314218120266694
+      },
+      "image_only_f_audit_support_fraction": 0.8974358974358975,
+      "array_prefix": "0_2"
+    },
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "descriptor_matches": 59,
+      "fit_matches": 30,
+      "audit_matches": 29,
+      "covered_cells": [
+        11,
+        12
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 29,
+        "median": 0.6798561353208291,
+        "p90": 7.598002422183596,
+        "mean": 5.08801374756813
+      },
+      "image_only_f_audit_support_fraction": 0.7931034482758621,
+      "array_prefix": "0_3"
+    },
+    {
+      "indices": [
+        0,
+        4
+      ],
+      "descriptor_matches": 38,
+      "fit_matches": 19,
+      "audit_matches": 19,
+      "covered_cells": [
+        10,
+        10
+      ],
+      "evidence_status": "insufficient",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 19,
+        "median": 0.7945307216423207,
+        "p90": 23.614680840334998,
+        "mean": 21.426989510653954
+      },
+      "image_only_f_audit_support_fraction": 0.7368421052631579,
+      "array_prefix": "0_4"
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "descriptor_matches": 181,
+      "fit_matches": 91,
+      "audit_matches": 90,
+      "covered_cells": [
+        31,
+        30
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 90,
+        "median": 0.6129873813537521,
+        "p90": 1.9754122232692444,
+        "mean": 5.600732285102211
+      },
+      "image_only_f_audit_support_fraction": 0.8111111111111111,
+      "array_prefix": "1_2"
+    },
+    {
+      "indices": [
+        1,
+        3
+      ],
+      "descriptor_matches": 68,
+      "fit_matches": 34,
+      "audit_matches": 34,
+      "covered_cells": [
+        15,
+        13
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 34,
+        "median": 0.47031173114337743,
+        "p90": 49.53936157076005,
+        "mean": 9.682219243141011
+      },
+      "image_only_f_audit_support_fraction": 0.8823529411764706,
+      "array_prefix": "1_3"
+    },
+    {
+      "indices": [
+        1,
+        4
+      ],
+      "descriptor_matches": 48,
+      "fit_matches": 24,
+      "audit_matches": 24,
+      "covered_cells": [
+        10,
+        13
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 24,
+        "median": 0.5734214127998374,
+        "p90": 13.718802979426052,
+        "mean": 8.113611811405217
+      },
+      "image_only_f_audit_support_fraction": 0.7916666666666666,
+      "array_prefix": "1_4"
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "descriptor_matches": 155,
+      "fit_matches": 78,
+      "audit_matches": 77,
+      "covered_cells": [
+        24,
+        25
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 77,
+        "median": 0.33581680831340394,
+        "p90": 1.6532512910453163,
+        "mean": 0.6592295069806936
+      },
+      "image_only_f_audit_support_fraction": 0.8831168831168831,
+      "array_prefix": "2_3"
+    },
+    {
+      "indices": [
+        2,
+        4
+      ],
+      "descriptor_matches": 64,
+      "fit_matches": 32,
+      "audit_matches": 32,
+      "covered_cells": [
+        13,
+        12
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 32,
+        "median": 0.7236368885827471,
+        "p90": 2.5919727833173485,
+        "mean": 6.092003162755061
+      },
+      "image_only_f_audit_support_fraction": 0.75,
+      "array_prefix": "2_4"
+    },
+    {
+      "indices": [
+        3,
+        4
+      ],
+      "descriptor_matches": 74,
+      "fit_matches": 37,
+      "audit_matches": 37,
+      "covered_cells": [
+        19,
+        15
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 37,
+        "median": 0.4433159186204987,
+        "p90": 10.579407452012665,
+        "mean": 3.4518595017496003
+      },
+      "image_only_f_audit_support_fraction": 0.7567567567567568,
+      "array_prefix": "3_4"
+    }
+  ],
+  "evidence_graph": {
+    "components": 1,
+    "largest_component_views": 5,
+    "isolated_views": 0
+  }
+}

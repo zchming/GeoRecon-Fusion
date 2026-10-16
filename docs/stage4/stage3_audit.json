@@ -1,5 +1,5 @@
 {
-  "audited_at_utc": "2026-10-16T10:12:20.175544+00:00",
+  "audited_at_utc": "2026-10-16T10:16:52.586615+00:00",
   "rows": [
     {
       "scene": "dtu_scan1_blur5",
@@ -175,5 +175,684 @@
     "oom": 4,
     "success": 18
   },
-  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "native_pair_audit": [
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "verified_matches": 423,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "verified_matches": 207,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        1,
+        4
+      ],
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "verified_matches": 99,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        1,
+        5
+      ],
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "verified_matches": 64,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "verified_matches": 443,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        2,
+        4
+      ],
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "verified_matches": 203,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        2,
+        5
+      ],
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "verified_matches": 84,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        3,
+        4
+      ],
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "verified_matches": 354,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        3,
+        5
+      ],
+      "image_ids": [
+        "003",
+        "005"
+      ],
+      "verified_matches": 124,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "native_pair_ids": [
+        4,
+        5
+      ],
+      "image_ids": [
+        "004",
+        "005"
+      ],
+      "verified_matches": 243,
+      "configuration": 3
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "verified_matches": 150,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "verified_matches": 1749,
+      "configuration": 3
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        1,
+        4
+      ],
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "verified_matches": 589,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        1,
+        5
+      ],
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "verified_matches": 286,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "005",
+        "002"
+      ],
+      "verified_matches": 229,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        2,
+        4
+      ],
+      "image_ids": [
+        "005",
+        "003"
+      ],
+      "verified_matches": 440,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        2,
+        5
+      ],
+      "image_ids": [
+        "005",
+        "004"
+      ],
+      "verified_matches": 714,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        3,
+        4
+      ],
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "verified_matches": 1401,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        3,
+        5
+      ],
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "verified_matches": 539,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "native_pair_ids": [
+        4,
+        5
+      ],
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "verified_matches": 1323,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "verified_matches": 1749,
+      "configuration": 3
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "verified_matches": 589,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "verified_matches": 1401,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "020",
+        "001"
+      ],
+      "verified_matches": 0,
+      "configuration": 1
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "020",
+        "010"
+      ],
+      "verified_matches": 0,
+      "configuration": 1
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "010"
+      ],
+      "verified_matches": 894,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "verified_matches": 441,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "verified_matches": 71,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        1,
+        4
+      ],
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "verified_matches": 208,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        1,
+        5
+      ],
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "verified_matches": 121,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "verified_matches": 81,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        2,
+        4
+      ],
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "verified_matches": 364,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        2,
+        5
+      ],
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "verified_matches": 179,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        3,
+        4
+      ],
+      "image_ids": [
+        "005",
+        "003"
+      ],
+      "verified_matches": 142,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        3,
+        5
+      ],
+      "image_ids": [
+        "005",
+        "004"
+      ],
+      "verified_matches": 169,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "native_pair_ids": [
+        4,
+        5
+      ],
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "verified_matches": 324,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "verified_matches": 1354,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "005"
+      ],
+      "verified_matches": 196,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        1,
+        4
+      ],
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "verified_matches": 657,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        1,
+        5
+      ],
+      "image_ids": [
+        "001",
+        "004"
+      ],
+      "verified_matches": 333,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "002",
+        "005"
+      ],
+      "verified_matches": 244,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        2,
+        4
+      ],
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "verified_matches": 1292,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        2,
+        5
+      ],
+      "image_ids": [
+        "002",
+        "004"
+      ],
+      "verified_matches": 627,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        3,
+        4
+      ],
+      "image_ids": [
+        "005",
+        "003"
+      ],
+      "verified_matches": 441,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        3,
+        5
+      ],
+      "image_ids": [
+        "005",
+        "004"
+      ],
+      "verified_matches": 722,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "native_pair_ids": [
+        4,
+        5
+      ],
+      "image_ids": [
+        "003",
+        "004"
+      ],
+      "verified_matches": 1206,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "001",
+        "002"
+      ],
+      "verified_matches": 1354,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "003"
+      ],
+      "verified_matches": 657,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "002",
+        "003"
+      ],
+      "verified_matches": 1292,
+      "configuration": 6
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "native_pair_ids": [
+        1,
+        2
+      ],
+      "image_ids": [
+        "020",
+        "001"
+      ],
+      "verified_matches": 0,
+      "configuration": 1
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "native_pair_ids": [
+        1,
+        3
+      ],
+      "image_ids": [
+        "020",
+        "010"
+      ],
+      "verified_matches": 0,
+      "configuration": 1
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "native_pair_ids": [
+        2,
+        3
+      ],
+      "image_ids": [
+        "001",
+        "010"
+      ],
+      "verified_matches": 857,
+      "configuration": 6
+    }
+  ],
+  "documentation_correction": "Stage3 edge labels corrected via database image-ID -> worker filename -> original image-ID mapping; retained wide-spacing edge is 001-010, not 010-020; numerical results unchanged"
 }

@@ -1,0 +1,248 @@
+{
+  "detector": "OpenCV SIFT + mutual Lowe ratio; independently extracted; no predicted geometry used",
+  "independence_limit": "not held-out images; baseline SIFT/tracker observations may spatially overlap; not statistical independence",
+  "keypoints_per_view": [
+    3809,
+    4096,
+    4096,
+    4096,
+    3887
+  ],
+  "pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "descriptor_matches": 1126,
+      "fit_matches": 563,
+      "audit_matches": 512,
+      "covered_cells": [
+        36,
+        34
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 512,
+        "median": 0.14161301217436612,
+        "p90": 0.6132390938252151,
+        "mean": 0.3752138349661994
+      },
+      "image_only_f_audit_support_fraction": 0.978515625,
+      "array_prefix": "0_1"
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "descriptor_matches": 427,
+      "fit_matches": 214,
+      "audit_matches": 213,
+      "covered_cells": [
+        25,
+        26
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 213,
+        "median": 0.30973599043312955,
+        "p90": 1.116079888643943,
+        "mean": 6.731013620770453
+      },
+      "image_only_f_audit_support_fraction": 0.9154929577464789,
+      "array_prefix": "0_2"
+    },
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "descriptor_matches": 172,
+      "fit_matches": 86,
+      "audit_matches": 86,
+      "covered_cells": [
+        14,
+        16
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 86,
+        "median": 0.18616057174484835,
+        "p90": 0.5852373290634195,
+        "mean": 6.2675295305770655
+      },
+      "image_only_f_audit_support_fraction": 0.9534883720930233,
+      "array_prefix": "0_3"
+    },
+    {
+      "indices": [
+        0,
+        4
+      ],
+      "descriptor_matches": 121,
+      "fit_matches": 61,
+      "audit_matches": 60,
+      "covered_cells": [
+        14,
+        14
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 60,
+        "median": 0.26090147361479266,
+        "p90": 9.20348730439743,
+        "mean": 16.626839515141857
+      },
+      "image_only_f_audit_support_fraction": 0.8833333333333333,
+      "array_prefix": "0_4"
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "descriptor_matches": 1018,
+      "fit_matches": 509,
+      "audit_matches": 509,
+      "covered_cells": [
+        38,
+        38
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 509,
+        "median": 0.2760444869306322,
+        "p90": 39.35078527815258,
+        "mean": 5.4323753809312
+      },
+      "image_only_f_audit_support_fraction": 0.8742632612966601,
+      "array_prefix": "1_2"
+    },
+    {
+      "indices": [
+        1,
+        3
+      ],
+      "descriptor_matches": 320,
+      "fit_matches": 160,
+      "audit_matches": 160,
+      "covered_cells": [
+        26,
+        25
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 160,
+        "median": 0.17784765932706081,
+        "p90": 0.7052994268776323,
+        "mean": 3.225846508814157
+      },
+      "image_only_f_audit_support_fraction": 0.94375,
+      "array_prefix": "1_3"
+    },
+    {
+      "indices": [
+        1,
+        4
+      ],
+      "descriptor_matches": 138,
+      "fit_matches": 69,
+      "audit_matches": 69,
+      "covered_cells": [
+        13,
+        12
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 69,
+        "median": 0.1787458598579724,
+        "p90": 1.1340447708094794,
+        "mean": 0.8585397435883393
+      },
+      "image_only_f_audit_support_fraction": 0.927536231884058,
+      "array_prefix": "1_4"
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "descriptor_matches": 846,
+      "fit_matches": 423,
+      "audit_matches": 423,
+      "covered_cells": [
+        37,
+        35
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 423,
+        "median": 0.27415547840287624,
+        "p90": 0.946416520740198,
+        "mean": 0.5364671986878243
+      },
+      "image_only_f_audit_support_fraction": 0.983451536643026,
+      "array_prefix": "2_3"
+    },
+    {
+      "indices": [
+        2,
+        4
+      ],
+      "descriptor_matches": 259,
+      "fit_matches": 130,
+      "audit_matches": 129,
+      "covered_cells": [
+        22,
+        22
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 129,
+        "median": 0.31267293642494925,
+        "p90": 0.6882771775187002,
+        "mean": 5.604268879185702
+      },
+      "image_only_f_audit_support_fraction": 0.937984496124031,
+      "array_prefix": "2_4"
+    },
+    {
+      "indices": [
+        3,
+        4
+      ],
+      "descriptor_matches": 446,
+      "fit_matches": 223,
+      "audit_matches": 223,
+      "covered_cells": [
+        29,
+        25
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 223,
+        "median": 0.19224524300372794,
+        "p90": 0.8496156582080756,
+        "mean": 3.121755646036057
+      },
+      "image_only_f_audit_support_fraction": 0.9551569506726457,
+      "array_prefix": "3_4"
+    }
+  ],
+  "evidence_graph": {
+    "components": 1,
+    "largest_component_views": 5,
+    "isolated_views": 0
+  }
+}

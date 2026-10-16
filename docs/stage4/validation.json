@@ -1,0 +1,15 @@
+{
+  "gt_isolation_integration_probe_passed": true,
+  "stage3_rows_reaudited": 24,
+  "diagnostic_methods": 24,
+  "cases": 8,
+  "source_commit": "913863e",
+  "config_sha256": "54c59e9c1591ccb172cfb08a82802c2f4587b134d5b7e1ff8470a637645e6ac2",
+  "input_lock_sha256": "f33c17340de8fe8fb6f53de1004bf8339777fc6fc996025e0ed36de1debdae0a",
+  "source_and_artifact_hashes_verified": true,
+  "failed_methods_preserved_as_unknown": 6,
+  "selection_or_fusion_implemented": false,
+  "compute": "CPU only; no additional GPU allocation",
+  "gt_excluded_from_reliability_inference": true,
+  "gt_evaluation_in_separate_process": true
+}

@@ -18,7 +18,7 @@ def audit():
     from georecon.evaluation.poses import evaluate_poses
     freeze=read_json(ROOT/'docs/stage3/freeze.json');config=read_json(CONFIG)
     assert sha256(ROOT/'docs/stage3/freeze.json')==config['stage3_freeze_sha256']
-    rows=[]
+    rows=[];native_pair_audit=[]
     for d in freeze['datasets']:
         manifest=ROOT/d['path'];assert sha256(manifest)==d['manifest_sha256']
         reference=manifest.parent/'reference.json';assert sha256(reference)==d['reference_sha256']
@@ -28,13 +28,21 @@ def audit():
             assert r==read_json(ROOT/'docs/stage3/runs'/d['manifest']['scene_id']/method/'prediction.json')
             for a in r['artifacts'].values():
                 if a and 'sha256' in a:assert sha256(root/a['path'])==a['sha256']
+            if method=='colmap':
+                state=read_json(root/'worker_state.json');mapping=read_json(root/'input_mapping.json')
+                names={m['worker_name']:m['image_id'] for m in mapping}
+                image_ids={i:names[name] for i,name,camera in state['database']['images']}
+                for pair_id,count,geometry in state['database']['verified_pairs']:
+                    first,second=divmod(pair_id,2147483647)
+                    native_pair_audit.append({'scene':r['scene_id'],'native_pair_ids':[first,second],'image_ids':[image_ids[first],image_ids[second]],'verified_matches':count,'configuration':geometry})
             rows.append(dict(scene=r['scene_id'],method=method,status=r['status'],evaluation_matches_published=True,artifact_hashes_verified=True))
-    write_json(DOC/'stage3_audit.json',dict(audited_at_utc=datetime.now(timezone.utc).isoformat(),rows=rows,counts={s:sum(r['status']==s for r in rows) for s in sorted({r['status'] for r in rows})},freeze_sha256=sha256(ROOT/'docs/stage3/freeze.json')))
+    write_json(DOC/'stage3_audit.json',dict(audited_at_utc=datetime.now(timezone.utc).isoformat(),rows=rows,counts={s:sum(r['status']==s for r in rows) for s in sorted({r['status'] for r in rows})},freeze_sha256=sha256(ROOT/'docs/stage3/freeze.json'),native_pair_audit=native_pair_audit,documentation_correction='Stage3 edge labels corrected via database image-ID -> worker filename -> original image-ID mapping; retained wide-spacing edge is 001-010, not 010-020; numerical results unchanged'))
 
 
 def prepare():
     if (DOC/'input_lock.json').exists():raise ValueError('stage4 input lock exists; never overwrite')
     freeze=read_json(ROOT/'docs/stage3/freeze.json')
+    assert sha256(ROOT/'docs/stage3/freeze.json')==read_json(CONFIG)['stage3_freeze_sha256']
     lock={'created_at_utc':datetime.now(timezone.utc).isoformat(),'stage3_freeze_sha256':sha256(ROOT/'docs/stage3/freeze.json'),'config_sha256':sha256(CONFIG),'cases':[]}
     for d in freeze['datasets']:
         scene=d['manifest']['scene_id'];src=ROOT/d['path'];dest=DATA/scene
@@ -55,6 +63,7 @@ def prepare():
 
 def infer():
     lock=read_json(DOC/'input_lock.json');assert sha256(CONFIG)==lock['config_sha256']
+    assert lock['stage3_freeze_sha256']==read_json(CONFIG)['stage3_freeze_sha256']
     python=Path.home()/'.venvs/georecon-reliability/bin/python'
     for case in lock['cases']:
         bundle=ROOT/case['bundle'];dest=OUT/case['scene_id']

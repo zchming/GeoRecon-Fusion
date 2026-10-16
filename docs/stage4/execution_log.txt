@@ -1,0 +1,8 @@
+dtu_scan1_blur5 completed
+dtu_scan1_normal5 completed
+dtu_scan1_reduced3 completed
+dtu_scan1_spaced3 completed
+dtu_scan6_blur5 completed
+dtu_scan6_normal5 completed
+dtu_scan6_reduced3 completed
+dtu_scan6_spaced3 completed

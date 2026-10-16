@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.reliability.analyze",
+    "/home/zchming/projects/VisionGeometryLab/data/stage4_bundles/dtu_scan6_reduced3",
+    "/home/zchming/projects/VisionGeometryLab/configs/reliability/stage4_v1.json",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage4_v1/dtu_scan6_reduced3"
+  ],
+  "returncode": 0,
+  "full_process_wall_seconds": 0.5144783040013863,
+  "input_lock_sha256": "f33c17340de8fe8fb6f53de1004bf8339777fc6fc996025e0ed36de1debdae0a"
+}

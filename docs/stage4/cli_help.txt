@@ -1,0 +1,8 @@
+usage: cli.py analyze-reliability [-h] --bundle BUNDLE --config CONFIG
+                                  --output OUTPUT
+
+options:
+  -h, --help       show this help message and exit
+  --bundle BUNDLE
+  --config CONFIG
+  --output OUTPUT

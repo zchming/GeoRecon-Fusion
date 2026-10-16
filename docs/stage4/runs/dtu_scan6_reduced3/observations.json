@@ -1,0 +1,85 @@
+{
+  "detector": "OpenCV SIFT + mutual Lowe ratio; independently extracted; no predicted geometry used",
+  "independence_limit": "not held-out images; baseline SIFT/tracker observations may spatially overlap; not statistical independence",
+  "keypoints_per_view": [
+    3584,
+    4096,
+    4097
+  ],
+  "pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "descriptor_matches": 1051,
+      "fit_matches": 526,
+      "audit_matches": 512,
+      "covered_cells": [
+        33,
+        34
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 512,
+        "median": 0.19912258502058328,
+        "p90": 0.7848573310434899,
+        "mean": 0.8339617667463295
+      },
+      "image_only_f_audit_support_fraction": 0.9609375,
+      "array_prefix": "0_1"
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "descriptor_matches": 434,
+      "fit_matches": 217,
+      "audit_matches": 217,
+      "covered_cells": [
+        24,
+        21
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 217,
+        "median": 0.20894556780009768,
+        "p90": 0.6179161064740749,
+        "mean": 1.7961461020957044
+      },
+      "image_only_f_audit_support_fraction": 0.967741935483871,
+      "array_prefix": "0_2"
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "descriptor_matches": 901,
+      "fit_matches": 451,
+      "audit_matches": 450,
+      "covered_cells": [
+        38,
+        37
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 450,
+        "median": 0.26230952387056305,
+        "p90": 0.686998410021357,
+        "mean": 0.6876937562502066
+      },
+      "image_only_f_audit_support_fraction": 0.9777777777777777,
+      "array_prefix": "1_2"
+    }
+  ],
+  "evidence_graph": {
+    "components": 1,
+    "largest_component_views": 3,
+    "isolated_views": 0
+  }
+}

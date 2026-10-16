@@ -1,0 +1,248 @@
+{
+  "detector": "OpenCV SIFT + mutual Lowe ratio; independently extracted; no predicted geometry used",
+  "independence_limit": "not held-out images; baseline SIFT/tracker observations may spatially overlap; not statistical independence",
+  "keypoints_per_view": [
+    3584,
+    4096,
+    4097,
+    4096,
+    3373
+  ],
+  "pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "descriptor_matches": 1051,
+      "fit_matches": 526,
+      "audit_matches": 512,
+      "covered_cells": [
+        33,
+        34
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 512,
+        "median": 0.19912258502058328,
+        "p90": 0.7848573310434899,
+        "mean": 0.8339617667463295
+      },
+      "image_only_f_audit_support_fraction": 0.9609375,
+      "array_prefix": "0_1"
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "descriptor_matches": 434,
+      "fit_matches": 217,
+      "audit_matches": 217,
+      "covered_cells": [
+        24,
+        21
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 217,
+        "median": 0.20894556780009768,
+        "p90": 0.6179161064740749,
+        "mean": 1.7961461020957044
+      },
+      "image_only_f_audit_support_fraction": 0.967741935483871,
+      "array_prefix": "0_2"
+    },
+    {
+      "indices": [
+        0,
+        3
+      ],
+      "descriptor_matches": 214,
+      "fit_matches": 107,
+      "audit_matches": 107,
+      "covered_cells": [
+        18,
+        18
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 107,
+        "median": 0.25485288067716333,
+        "p90": 0.905860411428358,
+        "mean": 7.573433632935912
+      },
+      "image_only_f_audit_support_fraction": 0.9158878504672897,
+      "array_prefix": "0_3"
+    },
+    {
+      "indices": [
+        0,
+        4
+      ],
+      "descriptor_matches": 120,
+      "fit_matches": 60,
+      "audit_matches": 60,
+      "covered_cells": [
+        9,
+        10
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 60,
+        "median": 0.26674182618618,
+        "p90": 1.0049536462796342,
+        "mean": 2.638209348775674
+      },
+      "image_only_f_audit_support_fraction": 0.9666666666666667,
+      "array_prefix": "0_4"
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "descriptor_matches": 901,
+      "fit_matches": 451,
+      "audit_matches": 450,
+      "covered_cells": [
+        38,
+        37
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 450,
+        "median": 0.26230952387056305,
+        "p90": 0.686998410021357,
+        "mean": 0.6876937562502066
+      },
+      "image_only_f_audit_support_fraction": 0.9777777777777777,
+      "array_prefix": "1_2"
+    },
+    {
+      "indices": [
+        1,
+        3
+      ],
+      "descriptor_matches": 328,
+      "fit_matches": 164,
+      "audit_matches": 164,
+      "covered_cells": [
+        24,
+        23
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 164,
+        "median": 0.22113320380473717,
+        "p90": 1.0090378532235027,
+        "mean": 6.632957134921427
+      },
+      "image_only_f_audit_support_fraction": 0.926829268292683,
+      "array_prefix": "1_3"
+    },
+    {
+      "indices": [
+        1,
+        4
+      ],
+      "descriptor_matches": 161,
+      "fit_matches": 81,
+      "audit_matches": 80,
+      "covered_cells": [
+        14,
+        13
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 80,
+        "median": 0.21309991281063356,
+        "p90": 0.7988498720887529,
+        "mean": 1.9414324771772058
+      },
+      "image_only_f_audit_support_fraction": 0.95,
+      "array_prefix": "1_4"
+    },
+    {
+      "indices": [
+        2,
+        3
+      ],
+      "descriptor_matches": 774,
+      "fit_matches": 387,
+      "audit_matches": 387,
+      "covered_cells": [
+        36,
+        35
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 387,
+        "median": 0.18004508625348462,
+        "p90": 0.8638113246027128,
+        "mean": 3.43339991861216
+      },
+      "image_only_f_audit_support_fraction": 0.9302325581395349,
+      "array_prefix": "2_3"
+    },
+    {
+      "indices": [
+        2,
+        4
+      ],
+      "descriptor_matches": 262,
+      "fit_matches": 131,
+      "audit_matches": 131,
+      "covered_cells": [
+        23,
+        19
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 131,
+        "median": 0.2487184134151586,
+        "p90": 0.9174432523933552,
+        "mean": 2.4830615994101453
+      },
+      "image_only_f_audit_support_fraction": 0.9389312977099237,
+      "array_prefix": "2_4"
+    },
+    {
+      "indices": [
+        3,
+        4
+      ],
+      "descriptor_matches": 449,
+      "fit_matches": 225,
+      "audit_matches": 224,
+      "covered_cells": [
+        29,
+        32
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 224,
+        "median": 0.1758466965758831,
+        "p90": 1.0249432737025865,
+        "mean": 5.295403220076344
+      },
+      "image_only_f_audit_support_fraction": 0.90625,
+      "array_prefix": "3_4"
+    }
+  ],
+  "evidence_graph": {
+    "components": 1,
+    "largest_component_views": 5,
+    "isolated_views": 0
+  }
+}

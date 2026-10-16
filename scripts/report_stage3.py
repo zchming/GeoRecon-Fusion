@@ -63,7 +63,7 @@ for r in results['rows']:
   if 'selected_model' in state:text+=f"；原生候选模型：{state.get('models')}。"
   lines.append(text)
 lines+=['',
-'对两次COLMAP失败，原生数据库中001–010、001–020的验证观测数均为0，只有010–020保留匹配（scan1为894，scan6为857），该对的PyCOLMAP4.2.1配置标记均为6，即PLANAR_OR_PANORAMIC。原生日志显示反复尝试后因bad initial pair丢弃模型，最终No good initial image pair。由此能定位到验证匹配图与初始化阶段；该估计器标记不证明真实物体必然是平面，也没有据此补造三维重建。',
+'对两次COLMAP失败，原生数据库中001–020、010–020的验证观测数均为0，只有001–010保留匹配（scan1为894，scan6为857），该对的PyCOLMAP4.2.1配置标记均为6，即PLANAR_OR_PANORAMIC。原生日志显示反复尝试后因bad initial pair丢弃模型，最终No good initial image pair。由此能定位到验证匹配图与初始化阶段；该估计器标记不证明真实物体必然是平面，也没有据此补造三维重建。',
 '',
 '四次BA OOM的traceback均进入track_modules/track_refine.py的fine_tracker：追加分配请求分别为668MiB、2.94GiB、676MiB、3.13GiB。即使已释放闲置VGGT模型，冻结的精细跟踪仍不适配本机五图显存预算；三图四次均完成。没有在看到测试集OOM后改chunk、查询点数或精度重跑。',
 '',
@@ -99,5 +99,6 @@ lines+=['','## 复现与验收','',
 '```','',
 '脚本自动按方法使用 `.venvs/georecon-colmap`、`georecon-vggt`、`georecon-vggt-ba`。源码/模型的取得与各环境锁见阶段2报告。重新执行完整Benchmark需独立的新运行标识/输出位置，当前脚本拒绝覆盖，不能借此静默多跑后挑最佳。发布包中的manifest快照及SHA用于核查；原始图片、模型、原生数据库、大型NPZ留在本地data/outputs，JSON内相对artifact路径以原运行目录为根。','',
 '59项测试通过；另逐次核验24份结果协议、每方法相同公共PNG摘要、预测manifest指纹与产物摘要，验证见 `validation.json`。八个实例均有三条显式终态记录，失败全部留表。本轮之后停止，未开始阶段4可靠性分析或阶段5融合。若要提高本轮资源成功率，应另开明确版本、只在开发数据调整资源配置并重新锁定方案，不能把已看过的scan6继续称作未经接触的新测试集。']
+lines+=['','阶段4复核勘误：此前将COLMAP原生图像ID误当清单索引，宽间隔案例的边名称已按数据库ID→worker文件名→DTU图像ID映射修正。实际保留001–010，020孤立；匹配数、模型状态和所有评价数值不变。']
 (DOC/'report.md').write_text('\n'.join(lines)+'\n')
 print('report and independent artifact checks complete')

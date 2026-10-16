@@ -1,0 +1,17 @@
+{
+  "scope": "dev-only integration invariance probe, not a benchmark retry",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.reliability.analyze",
+    "/home/zchming/projects/VisionGeometryLab/data/stage4_gt_probe",
+    "/home/zchming/projects/VisionGeometryLab/configs/reliability/stage4_v1.json",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage4_gt_isolation_probe"
+  ],
+  "wall_seconds": 0.6557187480029825,
+  "invalid_reference_evaluation_and_calibration_present": true,
+  "all_method_diagnostics_identical": true,
+  "all_match_observations_and_signal_arrays_identical": true,
+  "configuration_changed": false,
+  "raw_provenance_and_timing_excluded_from_numeric_comparison": true
+}

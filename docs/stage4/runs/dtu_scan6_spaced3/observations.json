@@ -1,0 +1,85 @@
+{
+  "detector": "OpenCV SIFT + mutual Lowe ratio; independently extracted; no predicted geometry used",
+  "independence_limit": "not held-out images; baseline SIFT/tracker observations may spatially overlap; not statistical independence",
+  "keypoints_per_view": [
+    3584,
+    4096,
+    1822
+  ],
+  "pairs": [
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "descriptor_matches": 627,
+      "fit_matches": 314,
+      "audit_matches": 313,
+      "covered_cells": [
+        24,
+        22
+      ],
+      "evidence_status": "available",
+      "image_only_f_fit_status": "available",
+      "image_only_f_audit_residual_px": {
+        "count": 313,
+        "median": 0.15541080189121365,
+        "p90": 0.4664644303985487,
+        "mean": 0.9015871886354754
+      },
+      "image_only_f_audit_support_fraction": 0.9840255591054313,
+      "array_prefix": "0_1"
+    },
+    {
+      "indices": [
+        0,
+        2
+      ],
+      "descriptor_matches": 4,
+      "fit_matches": 2,
+      "audit_matches": 2,
+      "covered_cells": [
+        2,
+        2
+      ],
+      "evidence_status": "insufficient",
+      "image_only_f_fit_status": "unavailable",
+      "image_only_f_audit_residual_px": {
+        "count": 0,
+        "median": null,
+        "p90": null,
+        "mean": null
+      },
+      "image_only_f_audit_support_fraction": null,
+      "array_prefix": "0_2"
+    },
+    {
+      "indices": [
+        1,
+        2
+      ],
+      "descriptor_matches": 5,
+      "fit_matches": 3,
+      "audit_matches": 2,
+      "covered_cells": [
+        2,
+        2
+      ],
+      "evidence_status": "insufficient",
+      "image_only_f_fit_status": "unavailable",
+      "image_only_f_audit_residual_px": {
+        "count": 0,
+        "median": null,
+        "p90": null,
+        "mean": null
+      },
+      "image_only_f_audit_support_fraction": null,
+      "array_prefix": "1_2"
+    }
+  ],
+  "evidence_graph": {
+    "components": 2,
+    "largest_component_views": 2,
+    "isolated_views": 1
+  }
+}
