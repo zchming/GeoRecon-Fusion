@@ -26,6 +26,13 @@ def main():
     colmap.add_argument("--manifest", required=True)
     colmap.add_argument("--config", required=True)
     colmap.add_argument("--output", required=True)
+    vggt = sub.add_parser("run-vggt", help="Pinned local VGGT raw forward, no BA or download")
+    vggt.add_argument("--manifest", required=True)
+    vggt.add_argument("--config", required=True)
+    vggt.add_argument("--official-repo", required=True)
+    vggt.add_argument("--checkpoint", required=True)
+    vggt.add_argument("--output", required=True)
+    vggt.add_argument("--preflight-only", action="store_true", help="Verify official preprocessing before any model inference")
     args = parser.parse_args()
     try:
         if args.command == "synthetic-demo":
@@ -45,11 +52,14 @@ def main():
         elif args.command == "run-colmap":
             from .baselines.colmap import run_colmap
             result = run_colmap(args.manifest, args.config, args.output)
+        elif args.command == "run-vggt":
+            from .baselines.vggt import run_vggt
+            result = run_vggt(args.manifest, args.config, args.official_repo, args.checkpoint, args.output, args.preflight_only)
         else:
             result = evaluate_poses(read_json(args.prediction), read_json(args.reference))
             write_json(args.output, result)
         print(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False))
-        if args.command == "run-colmap" and result["status"] not in {"success", "partial"}:
+        if args.command in {"run-colmap", "run-vggt"} and result["status"] not in {"success", "partial"} and not (args.command == "run-vggt" and args.preflight_only and result["status"] == "not_run"):
             raise SystemExit(1)
     except (ValueError, KeyError, OSError) as exc:
         print(f"georecon: {exc}", file=sys.stderr)
