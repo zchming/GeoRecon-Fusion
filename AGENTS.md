@@ -4,3 +4,5 @@
 - User preference (2026-10-16): GPU use is authorized for this project within the local 12 GB VRAM budget. Prefer GPU acceleration where supported and faster. Measure actual memory; this is not permission for paid/cloud resources or an exemption from stage boundaries.
 - Preserve actual failures, OOMs and all comparable runs. Do not silently change image counts, resolution or algorithm settings. Explicitly identify resource-profile changes and upstream capabilities.
 - Keep raw data, weights, vendor checkouts and large generated artifacts out of Git. Preserve existing local learning experiments.
+
+- User reporting preference (2026-10-16): Include a brief cumulative contribution summary with project results. Distinguish implemented capabilities and evidence-supported findings from unproven novelty or performance claims.

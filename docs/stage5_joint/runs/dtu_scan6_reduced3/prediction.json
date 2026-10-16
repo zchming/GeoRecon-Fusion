@@ -1,0 +1,516 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan6_reduced3",
+  "method_id": "joint_pose_sparse_structure_v1",
+  "run_id": "dtu_scan6_reduced3",
+  "input_manifest_sha256": "d9655387c9f83279abad8e9d9188657924fe07d6752c45c8a9b3e9b5bc223030",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "success",
+  "failure_reason": null,
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            3118.4379901665056,
+            0.0,
+            801.0444015444016
+          ],
+          [
+            0.0,
+            3085.452519630899,
+            601.030612244898
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            1.0,
+            2.5179260774166323e-05,
+            8.081261330517009e-05
+          ],
+          [
+            -2.5180723241646774e-05,
+            1.0,
+            1.807551961974241e-05
+          ],
+          [
+            -8.081216219579801e-05,
+            -1.8077553249895573e-05,
+            1.0
+          ]
+        ],
+        "t": [
+          -2.2980428184382617e-05,
+          -2.5768686100491323e-06,
+          1.1520962289068848e-05
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            3115.280375241313,
+            0.0,
+            801.0444015444016
+          ],
+          [
+            0.0,
+            3088.12959632095,
+            601.030612244898
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.8745247721672058,
+            -0.43837279081344604,
+            0.20745055377483368
+          ],
+          [
+            0.4506247937679291,
+            0.8926124572753906,
+            -0.01342759095132351
+          ],
+          [
+            -0.1792866438627243,
+            0.10522512346506119,
+            0.9781533479690552
+          ]
+        ],
+        "t": [
+          -0.18504175543785095,
+          0.009786685928702354,
+          0.019996535032987595
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            3103.7305441602316,
+            0.0,
+            801.0444015444016
+          ],
+          [
+            0.0,
+            3077.7060372488836,
+            601.030612244898
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.528208315372467,
+            -0.7525069117546082,
+            0.3933562636375427
+          ],
+          [
+            0.7996575236320496,
+            0.5966392755508423,
+            0.06759640574455261
+          ],
+          [
+            -0.2855585813522339,
+            0.2788453698158264,
+            0.9168977737426758
+          ]
+        ],
+        "t": [
+          -0.3498711884021759,
+          -0.06472660601139069,
+          0.07419107109308243
+        ],
+        "width": 1600,
+        "height": 1200
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": {
+      "path": "selected_artifacts/raw_predictions.npz",
+      "sha256": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+      "semantics": "raw camera Z-depth on model-input grid, arbitrary reconstruction units; key depth",
+      "arrays": {
+        "pose_enc": [
+          3,
+          9
+        ],
+        "extrinsics": [
+          3,
+          3,
+          4
+        ],
+        "intrinsics": [
+          3,
+          3,
+          3
+        ],
+        "depth": [
+          3,
+          392,
+          518,
+          1
+        ],
+        "depth_conf": [
+          3,
+          392,
+          518
+        ],
+        "world_points": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "world_points_conf": [
+          3,
+          392,
+          518
+        ]
+      },
+      "coordinate_metadata": "preflight.json and native intrinsics/extrinsics in NPZ"
+    },
+    "pointcloud": {
+      "path": "optimized.npz",
+      "sha256": "a797009cde0dc73b5e68099fa55593c06fbc8aef63ae532a118dd3aca62f9f8b",
+      "semantics": "full float32 source grid; eligible track grid positions share optimized XYZ if accepted, otherwise source fusion XYZ",
+      "arrays": {
+        "xyz": [
+          609168,
+          3
+        ]
+      }
+    },
+    "tracks": null,
+    "confidence": {
+      "path": "selected_artifacts/raw_predictions.npz",
+      "sha256": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+      "semantics": "raw depth_conf and world_points_conf on model-input grid; NOT calibrated probabilities",
+      "arrays": {
+        "pose_enc": [
+          3,
+          9
+        ],
+        "extrinsics": [
+          3,
+          3,
+          4
+        ],
+        "intrinsics": [
+          3,
+          3,
+          3
+        ],
+        "depth": [
+          3,
+          392,
+          518,
+          1
+        ],
+        "depth_conf": [
+          3,
+          392,
+          518
+        ],
+        "world_points": [
+          3,
+          392,
+          518,
+          3
+        ],
+        "world_points_conf": [
+          3,
+          392,
+          518
+        ]
+      },
+      "coordinate_metadata": "preflight.json and native intrinsics/extrinsics in NPZ"
+    }
+  },
+  "provenance": {
+    "selected_source_method": "vggt_raw",
+    "selected_source_prediction_sha256": "24e57c0d7349718a03d506154bccd7ceab4f79d43d2cea5f5dce860acf2ec0b1",
+    "selected_source_method_id": "vggt_1b_raw_crop_bf16",
+    "selected_source_config": {
+      "schema_version": 1,
+      "method_id": "vggt_1b_raw_crop_bf16",
+      "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "preprocessing": "official_crop_after_common_manifest_preprocessing",
+      "device": "cuda",
+      "autocast": "bfloat16",
+      "parameter_dtype": "float32",
+      "query_points": null,
+      "postprocessing": "none; no BA, filtering, sampling or fusion",
+      "seed": 42,
+      "num_threads": 8,
+      "timeout_seconds": 180,
+      "gpu_allocator_limit_gib": 10.5
+    },
+    "selected_source_provenance": {
+      "code_commit": "389974736bdcbcf3796f6a3dbbe80576960dea51",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "1e50ddd7af0bc7da9f0bd15388b0199505f40cc64e268c84f58d42f3695edc3e",
+      "data_kind": "real",
+      "official_source": {
+        "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+        "files_sha256": {
+          "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+          "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+          "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+          "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+          "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+          "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+          "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+        }
+      },
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "gt_access": "none; no reference input",
+      "camera_coordinates": "original image zero-based pixel centers"
+    },
+    "camera_and_world_frame": "unchanged from selected baseline; no alignment or mixed cameras",
+    "code_commit": "131962e00e524b61bd00d8ff6cfed9ff74132971",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "5aecca7d69b900f0ee113635b57b1ee6cce96317bbc7b4b96026e881a37693a8",
+    "data_kind": "real",
+    "gt_access": "none; runtime deny guard active",
+    "policy_sha256": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+    "diagnostics_sha256": "f4959515dc609249a72c3d088f44d2c6f8091447890112c5bea4f3645d3f1083",
+    "weighted_fusion": {
+      "code": {
+        "code_commit": "89a08846aab09d7ead8ee7a7cfb728519e86cafb",
+        "working_tree_dirty": true,
+        "source_tree_sha256": "9436fc2acab030ecb2a26866438e119030d72773b7074d36493200b8af076d89",
+        "data_kind": "real"
+      },
+      "protocol_sha256": "dc95d541bb12979cfe11430f30f2bf58f4a2174a6eb3ffd39a42cee3d5c81439",
+      "rule_sha256": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+      "input_hashes": {
+        "outputs/stage5_v1/dtu_scan6_reduced3/prediction.json": "9e51f0cbe8fc22d6eb58f10cc7168372e0b99ebd0e1570812f8adf6a5477acc4",
+        "outputs/stage5_v1/dtu_scan6_reduced3/decision.json": "fa411e948c78cc288b8f020146e0c66bbffc50a6c900be7f7029afd25b7763fa",
+        "outputs/stage5_v1/dtu_scan6_reduced3/selected_artifacts/raw_predictions.npz": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap/prediction.json": "90c516d765967820fe4a91516f852a2191eef5d31e9205fb6ede8dc51ae9053a",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap/input_mapping.json": "7da6c709506b994a5a4fd16dce1ed05a531cfc1fb735d8004946a3793dcc2914",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/vggt_raw/input_mapping.json": "c47194df7961c3dac6698ff0c3f619af2469668320f27c33f9682dc325c8844e",
+        "data/stage5_fusion_tracks/dtu_scan6_reduced3/observations.npz": "528ef2b4a45270b106029bb884a8520f24e653e9b9482b912626d3b8d8910ae9"
+      },
+      "alignment": {
+        "status": "aligned",
+        "source": "predicted camera orientations plus centers; closed form; no GT/ICP",
+        "scale": 0.03651234978918249,
+        "R": [
+          [
+            0.5311750986120652,
+            0.8199867024222994,
+            -0.21324826485827972
+          ],
+          [
+            -0.8069191874373955,
+            0.5663378826775757,
+            0.16775824149547772
+          ],
+          [
+            0.2583300980525455,
+            0.08296511613253045,
+            0.9624875843070799
+          ]
+        ],
+        "t": [
+          0.13959048471549595,
+          -0.11243481252294595,
+          0.03097363697781936
+        ],
+        "shared_ids": [
+          "001",
+          "002",
+          "003"
+        ],
+        "center_rmse": 0.008410445057330218,
+        "raw_center_diameter": 0.3634484830890966,
+        "relative_center_rmse": 0.023140680037639506,
+        "rotation_disagreement_deg": [
+          1.661981561491811,
+          0.32893278187128805,
+          1.97735660580326
+        ]
+      },
+      "gt_access": "none; deny guard active",
+      "camera_and_world_frame": "raw camera gauge unchanged; only eligible point XYZ corrected",
+      "dense_depth_and_confidence": "unfused source diagnostics; not derived from fused XYZ"
+    },
+    "joint_refinement": {
+      "code": {
+        "code_commit": "c3510cec68f86e4493baf6e52479a3f18e91b4d0",
+        "working_tree_dirty": true,
+        "source_tree_sha256": "8af8232dc0ea2f8acfe82d614cd6c0e51cfafe6525be32070c77db47690fabb1",
+        "data_kind": "real"
+      },
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/run.json": "53b5b69d1d1fd84945eee582be74b6988281cfd84c490ffe11542a5f5745e283",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/prediction.json": "b13fdff726e89b0942b14b9148b21e9517cafd0604a29433f03afb35fb56894a",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/fused.npz": "911fe7618b0811ab4f34c26506eb3c725976ebbad3854b95b6faaf8e23f35879",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan6_reduced3/selected_artifacts/raw_predictions.npz": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+        "data/stage5_fusion_tracks/dtu_scan6_reduced3/observations.npz": "528ef2b4a45270b106029bb884a8520f24e653e9b9482b912626d3b8d8910ae9",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap/input_mapping.json": "7da6c709506b994a5a4fd16dce1ed05a531cfc1fb735d8004946a3793dcc2914",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/vggt_raw/input_mapping.json": "c47194df7961c3dac6698ff0c3f619af2469668320f27c33f9682dc325c8844e"
+      },
+      "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+      "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "gt_access": "none; open deny guard active",
+      "frame": "raw gauge; first pose fixed and raw/anchor priors fix scale",
+      "depth_confidence_semantics": "unoptimized source diagnostics; not a regenerated optimized depth map"
+    }
+  },
+  "config": {
+    "joint_protocol": {
+      "schema_version": 1,
+      "stage": "5_minimal_joint_pose_sparse_structure_refinement",
+      "input": "immutable weighted fusion grid, same eligible COLMAP point IDs and actual measured tracks; raw point/camera priors",
+      "fusion_rule_sha256": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+      "scope": "jointly optimize relative camera poses and one shared 3D point per eligible COLMAP track; write shared points only to previously eligible grid positions; no dense propagation, new matching, intrinsic fitting or training",
+      "gauge": "first raw pose fixed exactly; raw/anchor XYZ priors fix arbitrary scale and world frame; all remaining poses regularized",
+      "normalization": "median positive source-camera raw Z over previously eligible anchor grid points; no GT",
+      "candidate_pose_prior_strengths": [
+        1.0,
+        10.0
+      ],
+      "residuals": {
+        "reprojection_sigma_native_px": 2.0,
+        "raw_xyz_sigma_over_depth": 0.01,
+        "classical_xyz_sigma_over_depth": 0.01,
+        "pose_rotation_sigma_deg": 0.5,
+        "pose_translation_sigma_over_depth": 0.005,
+        "raw_prior_weight": "same w_raw as fusion per grid point",
+        "classical_prior_weight": "one alpha*w_col per unique COLMAP point; alpha frozen fusion strength; duplicate observations do not duplicate this prior",
+        "reprojection_weight": "w_col per actual track observation; measured uv mapped to raw native pixel centers",
+        "robust_loss": "soft_l1 f_scale=1 applied to all normalized scalar residuals",
+        "cheirality": "soft barrier z>=0.0001*normalization with sigma=0.001*normalization; reject output with any nonpositive observation Z"
+      },
+      "solver": {
+        "method": "scipy least_squares trf, sparse two-point Jacobian and lsmr",
+        "max_nfev": 60,
+        "wall_budget_seconds": 20.0,
+        "ftol": 1e-06,
+        "xtol": 1e-06,
+        "gtol": 1e-06,
+        "pose_rotation_component_bound_deg": 1.0,
+        "pose_translation_component_bound_over_depth": 0.01,
+        "point_delta_component_bound_over_depth": 0.02,
+        "min_unique_points": 3,
+        "max_unique_points": 2000,
+        "max_observations": 12000
+      },
+      "acceptance": "positive solver success status, finite parameters and residuals, objective nonincrease, positive depths; otherwise exact pre-optimization fallback, preserving attempted parameters and outputs",
+      "fallback": "upstream fusion fallback/no eligible anchors/insufficient constraints/solver budget or failure -> byte-identical pre-optimization XYZ and unchanged cameras",
+      "initialization": "one arithmetic mean of previously fused grid positions per shared track; initial-only grouping is a reported comparator, not counted as solver benefit",
+      "fit": "maximize dev macro F1@2mm, ties first candidate; raw/fused/grouped-initial comparisons; never tune on test or automatically enable",
+      "evaluation": "inherit fixed DTU split and previous 200000 original indices/STL cap/ROI/1,2,5mm metrics. Same raw-camera-to-GT Sim3 for every point version; separately evaluate poses and fixed-frame camera center errors; never refit GT point alignment to optimized camera changes",
+      "runtime": {
+        "device": "CPU sparse nonlinear least squares",
+        "threads": 8,
+        "gpu_budget_gib": 12,
+        "new_models_weights_dependencies": false
+      },
+      "prohibited": [
+        "test-based configuration changes",
+        "GT in objective or initialization",
+        "intrinsic optimization",
+        "new dense MVS",
+        "expanded data",
+        "training",
+        "UI"
+      ],
+      "fusion_strength": 0.5
+    },
+    "pose_prior_strength": 1.0,
+    "source_fusion_config": {
+      "source_selection": {
+        "policy": {
+          "schema_version": 1,
+          "priority": [
+            "vggt_raw",
+            "colmap",
+            "vggt_ba"
+          ],
+          "gate": "complete_cameras_and_nonempty_evidence",
+          "partial_evidence": "allow_with_warning",
+          "no_candidate": "abstain",
+          "fit_protocol_sha256": "88b4fa2e383673f7ead5a981a8a4add6895804cd45d8f9c52a7fe28820ef72fe",
+          "dev_scene_ids": [
+            "dtu_scan1_blur5",
+            "dtu_scan1_normal5",
+            "dtu_scan1_reduced3",
+            "dtu_scan1_spaced3"
+          ],
+          "training_split": "dev_only"
+        },
+        "policy_sha256": "b46e7a86fe06001128874d5adb6afa47663106b9965f4b71bbd6c0b48a1c722d",
+        "execution": "eager_snapshot_selection"
+      },
+      "weighted_fusion": {
+        "schema_version": 1,
+        "strength": 0.5,
+        "candidate_index": 1,
+        "protocol_sha256": "dc95d541bb12979cfe11430f30f2bf58f4a2174a6eb3ffd39a42cee3d5c81439",
+        "fit_split": "dev_only",
+        "default_enable_recommended": false,
+        "dev_gain_f1_2mm": 0.0004216590048223834,
+        "dev_beats_raw": true,
+        "deployment": "explicit experimental tool; dev gain alone is insufficient for default enable"
+      }
+    }
+  },
+  "versions": {
+    "python": "3.12.3"
+  },
+  "timing_seconds": {
+    "joint_incremental_through_candidate": 0.7443376530000023
+  },
+  "memory_bytes": {
+    "peak_process_rss": 129871872,
+    "peak_gpu_allocated": 0
+  },
+  "logs": [
+    "decision.json",
+    "invocation.json"
+  ]
+}

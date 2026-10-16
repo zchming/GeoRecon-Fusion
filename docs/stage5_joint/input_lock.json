@@ -1,0 +1,138 @@
+{
+  "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+  "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+  "protocol_commit": "0489431",
+  "configuration_frozen_before_test_commit": "c3510ce",
+  "previous_fusion_input_lock_sha256": "45dcd7770dd28ee77b7eeaa7836ef66c6e7fbe32db9555d8e2fd174d898cd762",
+  "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "source_sha256": {
+    "src/georecon/optimization/joint.py": "ade3f2b92f23cde0a6f17c14171b8de32ba58db54fbf0d619796cc6aede3f3d9",
+    "scripts/stage5_joint.py": "becd8c1fa6309ca87a3b3d761860e83baa372d687f9c3250bee63498027567c9",
+    "scripts/check_stage5_joint.py": "7d760ce89b36a2f164f1e7913c06fa86537af95a574a0d6d4774fff405c4c436",
+    "scripts/report_stage5_joint.py": "90bda8eee840faedd49890a78061b9dcc25ec822ab5bdbb7fa7c147382774e91",
+    "scripts/stage5_fusion.py": "a9d97505d03e1f7e2bb2627acb9e12824a255304aa6d5b6fbb12615ba54b6458",
+    "scripts/stage5_points.py": "8f938eecfbac297d4d91287a7037bef5749f5ac998f6730228849401e6256be2"
+  },
+  "cases": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/run.json": "c62b7e3966a078b06f973fe195eb658629da65b4c27928d6bc2f2a59ee393ad1",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/prediction.json": "471d47be2e6ea9b9e27c7da640a819f1b28cf75c8bbca3a5d8d57f937f8ca984",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/fused.npz": "fc8b4aea3364434d2081589a7bbb6fe9518fca224ca78d191fcf28b687b3c1ed",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan1_blur5/selected_artifacts/raw_predictions.npz": "3b5ae44990209e5f88a3506e6366068404a065e1f71138c233729083b3aa5004",
+        "data/stage5_fusion_tracks/dtu_scan1_blur5/observations.npz": "7dca39f8ac5ef4508bdf73fcd8889b21426c30528ac152dd2d7877b2dfa51cfb",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/colmap/input_mapping.json": "db15db89b89860c67d62f111b0201c72ee37812290e896fbc14f73a309187afb",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/vggt_raw/input_mapping.json": "a25ecf91d05b5d00c0c35096cbb5b8bd001339c4442d1bf15896bf64e6f96c1e"
+      },
+      "optimized_sha256": "a514ce76e636074e818f0862aeb2f4da03a756452b1a70743a11a183b5d45d5b",
+      "problem_sha256": null
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/run.json": "15bc0fe4fafe178a7fe1fe8a8a331838b982b5bc15f915f8a5de1867ba24bc68",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/prediction.json": "389da05d60a58c6758c3984bc73e3bbb23fedacbdc9d4606f2a226e3105c2a9d",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/fused.npz": "a4590d53d30b78271649071fecc84d21965d364f1525d3e53a11310ba0817379",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/anchors.npz": "8f3c0433f5799310280e145df6e4487eb5f2550e0e96ef3f2140204bffc2d1ea",
+        "outputs/stage5_v1/dtu_scan1_normal5/selected_artifacts/raw_predictions.npz": "b892b447594385fade118940801e357f2bb2758cf9dcaf046d871e0279dd5c55",
+        "data/stage5_fusion_tracks/dtu_scan1_normal5/observations.npz": "48594635e8a2bc3a5eaa44eb634077c483b80f603bde9e0949dda7b69f45ffed",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/colmap/input_mapping.json": "78f7b41e460c2c56a702a3cd40776da73bda2c3c574ef9c6db9b830ed8a994e7",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/vggt_raw/input_mapping.json": "b314268fbca497fdfe51c0f94a81ee64ece15c145ac28fabd8f67cc18102e969"
+      },
+      "optimized_sha256": "030d84ccb7d1a9e613101b594249c7add6b156a257f488d9a7a848ebb7a70986",
+      "problem_sha256": "0a031202aade3c61b1be2a84d2b535d4eeddd0e4b4bc2418af04e7ca2999f07e"
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/run.json": "c8a6938049fa5c71789e18c1f14ccf21956520a17f68670c27723e25e80581c5",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/prediction.json": "f767761ef3c8a5ce6abbb4db8a214bf2e982750e37367f099175a9d516c0a367",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/fused.npz": "7be923486a99895f09de5ec03f5b2be9146ad2ab72dc4ce9d49e312faa67344c",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan1_reduced3/selected_artifacts/raw_predictions.npz": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+        "data/stage5_fusion_tracks/dtu_scan1_reduced3/observations.npz": "3316b724493259b575efc9666a5c6d4e99bd96d839f561afb681936ab5e4c691",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/input_mapping.json": "4a0bd605a5e256e681eba226339a1b4e9900e5e858fb0f92ead1d63d4a1a6b98",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_raw/input_mapping.json": "1393155e3d016f47851ba5bc46aec970b393a7f4b484c03ccc76bcd32fb441e8"
+      },
+      "optimized_sha256": "f16b3a9c846377f20ed4c3d0d167847375869596f464720053faa7cab33edf63",
+      "problem_sha256": null
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/run.json": "7e1aa759687f6360a729554343342f4caaf861c0ed3643dc4d5dcae87c36f0e1",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/prediction.json": "d4c7d82aac9078e7d997d5d4abe4511ec2fc55caad8742388b6401a287ee94e0",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/fused.npz": "564f4cabc6517431f3d7464965f27926ed7b1e6de7f47dacf31d91af4cfd733c",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan1_spaced3/selected_artifacts/raw_predictions.npz": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd",
+        "data/stage5_fusion_tracks/dtu_scan1_spaced3/observations.npz": "a28bf0893e839953f28530c3fb4c719626259db89a756079e91e5007ed945e08",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/colmap/input_mapping.json": "0b3f128b8e5072f1d4ac5ede91e8956b9a4d02e30c0a81c56b61a25f1f0647a8",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_raw/input_mapping.json": "84b2d340f423765554e7ec288f8770f44082fd122e8bcf0a190b089e8fc1b175"
+      },
+      "optimized_sha256": "640e3f02fee478e55a8a9520c5f3b6deff8ed34418166c65fe756d1a0ba06b68",
+      "problem_sha256": null
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/run.json": "06d8238c5849e8653390e07fbc8c6075ce1a57f8d8ea54e6063e27b51844b579",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/prediction.json": "12b416b34a1d1c0d3d9d9ac1819e8cd9831119fddc6a1f6437ae711493d728e0",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/fused.npz": "8eb5a8a017e448be431d6980d2f9c4e72ce09c043183d5f6f08b84e505fe16c7",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan6_blur5/selected_artifacts/raw_predictions.npz": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291",
+        "data/stage5_fusion_tracks/dtu_scan6_blur5/observations.npz": "7e7e2b736961eb2238940a325c62d847c70b1db9fd2e1ccf92f43a0c405df0f7",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/colmap/input_mapping.json": "a72afffddee3dd317460bf98b6f48fd68fc33bd6178a6d294fc71bbb77f40502",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/vggt_raw/input_mapping.json": "91f376195cbf1c61f41edab3d4c6759e1f71d16222c230067b2a88fbfdf2da3a"
+      },
+      "optimized_sha256": "ea0889e3678a7ac59d3f925395c2be978a9b37e6150345afa6a7d86eb342a2b0",
+      "problem_sha256": null
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/run.json": "cbfef36d72b2bd9465691e53cc1f567a9463f48f0947ca5aa55ff0d93d6f74e5",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/prediction.json": "c66dbd4a53f39dbebd121d7137a892d08bfe2f9ddc91f3175fd9757d4e0c41a4",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/fused.npz": "557e751ced79ce94caeadefdcd8a2f6bf2f582ef9c26d33dcff7325aff92892b",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/anchors.npz": "89147f71817cdce1dffb6fae6c02355f0bd47d8f7f6db9af2390b3ad7e717810",
+        "outputs/stage5_v1/dtu_scan6_normal5/selected_artifacts/raw_predictions.npz": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d",
+        "data/stage5_fusion_tracks/dtu_scan6_normal5/observations.npz": "8cd1d1945eb316907d687d51b8f6b79878129a0a937ebdc0721c838c425ea922",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/colmap/input_mapping.json": "97afa1a62b6a01be33665d389acc088d20b6f4ede9cb67181788f55f19ce08be",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/vggt_raw/input_mapping.json": "77df59136452b5f134a2b5e1d54b8f2df600e03b3616b39e27ed510bed2db852"
+      },
+      "optimized_sha256": "f8a9c24955a08b9148f80cef6ea7118e3d777249433ad8bc166f87b430a10bba",
+      "problem_sha256": "3ff9f8ee83203a6c1bd281095b7af1a19b461b4ef8ae4363c8c03d96f585f3f4"
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/run.json": "53b5b69d1d1fd84945eee582be74b6988281cfd84c490ffe11542a5f5745e283",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/prediction.json": "b13fdff726e89b0942b14b9148b21e9517cafd0604a29433f03afb35fb56894a",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/fused.npz": "911fe7618b0811ab4f34c26506eb3c725976ebbad3854b95b6faaf8e23f35879",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan6_reduced3/selected_artifacts/raw_predictions.npz": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+        "data/stage5_fusion_tracks/dtu_scan6_reduced3/observations.npz": "528ef2b4a45270b106029bb884a8520f24e653e9b9482b912626d3b8d8910ae9",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap/input_mapping.json": "7da6c709506b994a5a4fd16dce1ed05a531cfc1fb735d8004946a3793dcc2914",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/vggt_raw/input_mapping.json": "c47194df7961c3dac6698ff0c3f619af2469668320f27c33f9682dc325c8844e"
+      },
+      "optimized_sha256": "a797009cde0dc73b5e68099fa55593c06fbc8aef63ae532a118dd3aca62f9f8b",
+      "problem_sha256": null
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "input_hashes": {
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/run.json": "28a6d95895c56fb1ba1c166c5d22ab6fc76bc7208ce587aa2c95c60dcd5f7b4e",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/prediction.json": "f892c10e60c04b19b551df85c56bac9fbfc59fa99922913a3a652c683cb9e09d",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/fused.npz": "479aae70ccbb3e076b7790427dcc4ea4c82695608971127009faf3ff50461bcb",
+        "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+        "outputs/stage5_v1/dtu_scan6_spaced3/selected_artifacts/raw_predictions.npz": "ef65beeb125afbd3c744c4313a0c86fc5a0dd18211a3ab808eba2b68210ce8b7",
+        "data/stage5_fusion_tracks/dtu_scan6_spaced3/observations.npz": "a28bf0893e839953f28530c3fb4c719626259db89a756079e91e5007ed945e08",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/colmap/input_mapping.json": "626bd24edb37b70b19005f12430726b48542c9ab4f4be64e7ba3ca41e9ee36e4",
+        "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/vggt_raw/input_mapping.json": "d6af735488b8a7260d767f0e495a5c528bf4e0bed51e1a804becc2f84755a041"
+      },
+      "optimized_sha256": "42f01dd7b5043c8e46593d9325d5f3128434628db08610d7a2b726a4fc16e639",
+      "problem_sha256": null
+    }
+  ]
+}

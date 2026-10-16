@@ -1,0 +1,261 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 0,
+      "improved": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_cases": []
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "accepted": true,
+      "solver_status": 2,
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 174,
+      "improved": 104,
+      "worsened": 70,
+      "good_to_bad_2mm": 34,
+      "bad_to_good_2mm": 73,
+      "mean_before_mm": 2.2250516625115395,
+      "mean_after_mm": 1.5634602622787397,
+      "worst_cases": [
+        {
+          "source_point_index": 583552,
+          "colmap_point_id": 930,
+          "before_mm": 1.3603011848382218,
+          "after_mm": 5.062752222025936,
+          "change_mm": 3.702451037187714
+        },
+        {
+          "source_point_index": 578889,
+          "colmap_point_id": 925,
+          "before_mm": 0.8974169778859608,
+          "after_mm": 3.7659675709844844,
+          "change_mm": 2.8685505930985236
+        },
+        {
+          "source_point_index": 582021,
+          "colmap_point_id": 557,
+          "before_mm": 1.0236765391817404,
+          "after_mm": 3.711052671970965,
+          "change_mm": 2.6873761327892245
+        },
+        {
+          "source_point_index": 575807,
+          "colmap_point_id": 783,
+          "before_mm": 0.44826441593004684,
+          "after_mm": 3.135108473561075,
+          "change_mm": 2.686844057631028
+        },
+        {
+          "source_point_index": 578899,
+          "colmap_point_id": 793,
+          "before_mm": 0.15764073702363626,
+          "after_mm": 2.8268797525835145,
+          "change_mm": 2.6692390155598784
+        },
+        {
+          "source_point_index": 578377,
+          "colmap_point_id": 169,
+          "before_mm": 0.8324483239386739,
+          "after_mm": 3.488704924953096,
+          "change_mm": 2.656256601014422
+        },
+        {
+          "source_point_index": 576299,
+          "colmap_point_id": 550,
+          "before_mm": 0.5933409277433134,
+          "after_mm": 3.248627028637099,
+          "change_mm": 2.6552861008937856
+        },
+        {
+          "source_point_index": 575801,
+          "colmap_point_id": 547,
+          "before_mm": 0.26186168151912964,
+          "after_mm": 2.848204138164193,
+          "change_mm": 2.5863424566450632
+        },
+        {
+          "source_point_index": 580452,
+          "colmap_point_id": 1306,
+          "before_mm": 0.6005537179944367,
+          "after_mm": 3.048470313292007,
+          "change_mm": 2.4479165952975706
+        },
+        {
+          "source_point_index": 581962,
+          "colmap_point_id": 929,
+          "before_mm": 0.7070712173757073,
+          "after_mm": 3.134841624864828,
+          "change_mm": 2.427770407489121
+        }
+      ]
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 0,
+      "improved": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_cases": []
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 0,
+      "improved": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_cases": []
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 0,
+      "improved": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_cases": []
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "accepted": true,
+      "solver_status": 2,
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 328,
+      "improved": 2,
+      "worsened": 326,
+      "good_to_bad_2mm": 50,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": 3.62974149945778,
+      "mean_after_mm": 5.437103522224838,
+      "worst_cases": [
+        {
+          "source_point_index": 582518,
+          "colmap_point_id": 394,
+          "before_mm": 5.514340607055129,
+          "after_mm": 9.461129973648116,
+          "change_mm": 3.946789366592988
+        },
+        {
+          "source_point_index": 576835,
+          "colmap_point_id": 387,
+          "before_mm": 4.562979494254054,
+          "after_mm": 8.168499943156323,
+          "change_mm": 3.6055204489022694
+        },
+        {
+          "source_point_index": 790387,
+          "colmap_point_id": 776,
+          "before_mm": 1.858916845538814,
+          "after_mm": 5.459365680455147,
+          "change_mm": 3.6004488349163335
+        },
+        {
+          "source_point_index": 577357,
+          "colmap_point_id": 812,
+          "before_mm": 4.45471818329197,
+          "after_mm": 8.03755531834145,
+          "change_mm": 3.5828371350494805
+        },
+        {
+          "source_point_index": 793506,
+          "colmap_point_id": 276,
+          "before_mm": 1.590207326613011,
+          "after_mm": 5.163467736046512,
+          "change_mm": 3.5732604094335016
+        },
+        {
+          "source_point_index": 568483,
+          "colmap_point_id": 757,
+          "before_mm": 5.122593243090873,
+          "after_mm": 8.63693736498725,
+          "change_mm": 3.514344121896378
+        },
+        {
+          "source_point_index": 777936,
+          "colmap_point_id": 80,
+          "before_mm": 1.470419663101766,
+          "after_mm": 4.91624862895373,
+          "change_mm": 3.4458289658519643
+        },
+        {
+          "source_point_index": 578377,
+          "colmap_point_id": 685,
+          "before_mm": 3.3979134566286686,
+          "after_mm": 6.812049343192173,
+          "change_mm": 3.4141358865635048
+        },
+        {
+          "source_point_index": 789877,
+          "colmap_point_id": 851,
+          "before_mm": 2.498192926486102,
+          "after_mm": 5.8289604682135066,
+          "change_mm": 3.3307675417274045
+        },
+        {
+          "source_point_index": 760907,
+          "colmap_point_id": 443,
+          "before_mm": 1.5637914688333734,
+          "after_mm": 4.877370912004602,
+          "change_mm": 3.3135794431712284
+        }
+      ]
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 0,
+      "improved": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_cases": []
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "accepted": false,
+      "solver_status": "no_eligible_fusion_correspondence",
+      "scope": "all eligible points against fixed sampled STL, mm, no ROI; posthoc only",
+      "eligible_points": 0,
+      "improved": 0,
+      "worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_cases": []
+    }
+  ],
+  "GT_not_used_by_solver_or_acceptance": true,
+  "weights_or_bounds_not_retuned": true,
+  "natural_solver_failures": 0
+}

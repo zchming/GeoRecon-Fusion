@@ -1,0 +1,90 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "accepted": false,
+      "status": "no_eligible_fusion_correspondence",
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 1015280
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "accepted": true,
+      "status": 2,
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 1015280
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "accepted": false,
+      "status": "no_eligible_fusion_correspondence",
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 609168
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "accepted": false,
+      "status": "no_eligible_fusion_correspondence",
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 609168
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "accepted": false,
+      "status": "no_eligible_fusion_correspondence",
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 1015280
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "accepted": true,
+      "status": 2,
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 1015280
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "accepted": false,
+      "status": "no_eligible_fusion_correspondence",
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 609168
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "accepted": false,
+      "status": "no_eligible_fusion_correspondence",
+      "first_pose_exactly_fixed": true,
+      "intrinsics_unchanged": true,
+      "unaffected_point_bytes_unchanged": true,
+      "inputs_artifacts_formula_bounds_and_gt_isolation_checked": true,
+      "same_original_point_count": 609168
+    }
+  ],
+  "inference_has_no_GT_input": true,
+  "test_configuration_retuned": false,
+  "rule_frozen_before_test_commit": "c3510ce",
+  "new_matching_or_dense_propagation": false,
+  "GPU_allocated_bytes": 0,
+  "raw_camera_GT_point_alignment_fixed": true
+}

@@ -1,0 +1,37 @@
+{
+  "scene_id": "dtu_scan1_spaced3",
+  "rows": [
+    {
+      "name": "optimized",
+      "pose_prior_strength": 1.0,
+      "solver": {
+        "accepted": false,
+        "status": "no_eligible_fusion_correspondence",
+        "upstream_reason": "fewer_than_three_shared_cameras"
+      },
+      "artifact_sha256": "640e3f02fee478e55a8a9520c5f3b6deff8ed34418166c65fe756d1a0ba06b68",
+      "prediction_sha256": "179de6ea43891b28be92ab5c02d6f236246f967b27da1ee2a745ffdcc78821d7",
+      "moved_points_vs_fusion": 0,
+      "full_point_count": 609168,
+      "parameters_attempt_preserved": false
+    }
+  ],
+  "input_hashes": {
+    "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/run.json": "7e1aa759687f6360a729554343342f4caaf861c0ed3643dc4d5dcae87c36f0e1",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/prediction.json": "d4c7d82aac9078e7d997d5d4abe4511ec2fc55caad8742388b6401a287ee94e0",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/fused.npz": "564f4cabc6517431f3d7464965f27926ed7b1e6de7f47dacf31d91af4cfd733c",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+    "outputs/stage5_v1/dtu_scan1_spaced3/selected_artifacts/raw_predictions.npz": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd",
+    "data/stage5_fusion_tracks/dtu_scan1_spaced3/observations.npz": "a28bf0893e839953f28530c3fb4c719626259db89a756079e91e5007ed945e08",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/colmap/input_mapping.json": "0b3f128b8e5072f1d4ac5ede91e8956b9a4d02e30c0a81c56b61a25f1f0647a8",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_raw/input_mapping.json": "84b2d340f423765554e7ec288f8770f44082fd122e8bcf0a190b089e8fc1b175"
+  },
+  "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+  "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+  "grouped_initial_sha256": "640e3f02fee478e55a8a9520c5f3b6deff8ed34418166c65fe756d1a0ba06b68",
+  "problem_sha256": null,
+  "wall_seconds": 0.7485512690000178,
+  "peak_rss_gib": 0.12060546875,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}

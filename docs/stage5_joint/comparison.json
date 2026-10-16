@@ -1,0 +1,4415 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "raw": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 96586,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.389032962017629,
+        "mean_completeness_mm": 4.853181677147973,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.07412047294638975,
+            "recall": 0.07058364747172755,
+            "f1": 0.07230883706378097
+          },
+          "2": {
+            "precision": 0.2171536247489284,
+            "recall": 0.19907968282854543,
+            "f1": 0.20772424480729015
+          },
+          "5": {
+            "precision": 0.6488414470006005,
+            "recall": 0.5841310282074613,
+            "f1": 0.6147881306370944
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 96586,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.389032962017629,
+        "mean_completeness_mm": 4.853181677147973,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.07412047294638975,
+            "recall": 0.07058364747172755,
+            "f1": 0.07230883706378097
+          },
+          "2": {
+            "precision": 0.2171536247489284,
+            "recall": 0.19907968282854543,
+            "f1": 0.20772424480729015
+          },
+          "5": {
+            "precision": 0.6488414470006005,
+            "recall": 0.5841310282074613,
+            "f1": 0.6147881306370944
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 96586,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.389032962017629,
+          "mean_completeness_mm": 4.853181677147973,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.07412047294638975,
+              "recall": 0.07058364747172755,
+              "f1": 0.07230883706378097
+            },
+            "2": {
+              "precision": 0.2171536247489284,
+              "recall": 0.19907968282854543,
+              "f1": 0.20772424480729015
+            },
+            "5": {
+              "precision": 0.6488414470006005,
+              "recall": 0.5841310282074613,
+              "f1": 0.6147881306370944
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "grouped_initial": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 96586,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.389032962017629,
+        "mean_completeness_mm": 4.853181677147973,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.07412047294638975,
+            "recall": 0.07058364747172755,
+            "f1": 0.07230883706378097
+          },
+          "2": {
+            "precision": 0.2171536247489284,
+            "recall": 0.19907968282854543,
+            "f1": 0.20772424480729015
+          },
+          "5": {
+            "precision": 0.6488414470006005,
+            "recall": 0.5841310282074613,
+            "f1": 0.6147881306370944
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 96586,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.389032962017629,
+          "mean_completeness_mm": 4.853181677147973,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.07412047294638975,
+              "recall": 0.07058364747172755,
+              "f1": 0.07230883706378097
+            },
+            "2": {
+              "precision": 0.2171536247489284,
+              "recall": 0.19907968282854543,
+              "f1": 0.20772424480729015
+            },
+            "5": {
+              "precision": 0.6488414470006005,
+              "recall": 0.5841310282074613,
+              "f1": 0.6147881306370944
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "optimized": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 96586,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.389032962017629,
+        "mean_completeness_mm": 4.853181677147973,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.07412047294638975,
+            "recall": 0.07058364747172755,
+            "f1": 0.07230883706378097
+          },
+          "2": {
+            "precision": 0.2171536247489284,
+            "recall": 0.19907968282854543,
+            "f1": 0.20772424480729015
+          },
+          "5": {
+            "precision": 0.6488414470006005,
+            "recall": 0.5841310282074613,
+            "f1": 0.6147881306370944
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 96586,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.389032962017629,
+          "mean_completeness_mm": 4.853181677147973,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.07412047294638975,
+              "recall": 0.07058364747172755,
+              "f1": 0.07230883706378097
+            },
+            "2": {
+              "precision": 0.2171536247489284,
+              "recall": 0.19907968282854543,
+              "f1": 0.20772424480729015
+            },
+            "5": {
+              "precision": 0.6488414470006005,
+              "recall": 0.5841310282074613,
+              "f1": 0.6147881306370944
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_blur5",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.4761726706139199,
+            "translation_direction_deg": 1.270550358444473,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.6260244390678493,
+            "translation_direction_deg": 0.9294700843977709,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.725673220360573,
+            "translation_direction_deg": 0.28077623555883885,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.7978879117844462,
+            "translation_direction_deg": 0.2996179494906804,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.2562520787428821,
+            "translation_direction_deg": 1.4384206036400249,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.37018358515523836,
+            "translation_direction_deg": 0.5239109573396267,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.4103740978098519,
+            "translation_direction_deg": 0.47569214532634857,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.19211824506897845,
+            "translation_direction_deg": 0.7970207378999108,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.26517913551660754,
+            "translation_direction_deg": 0.8861013515153257,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.10467446747145355,
+            "translation_direction_deg": 0.7907858723445129,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.4224539851591801,
+          "median": 0.3902788414825451
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.7692346295957512,
+          "median": 0.7939033051222119
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 1.6180507567877045,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            1.945526268795714,
+            1.5111465719588204,
+            1.96574056246733,
+            0.5746112015743953,
+            1.6815144487292124
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 672.2396217978775,
+            "R": [
+              [
+                0.9727449671604291,
+                -0.01683841049177905,
+                -0.23126542499078032
+              ],
+              [
+                0.00752205446377452,
+                0.9991264292837393,
+                -0.041107140539926576
+              ],
+              [
+                0.2317555771943792,
+                0.03824717295220135,
+                0.9720218650835302
+              ]
+            ],
+            "t": [
+              191.21922297317832,
+              0.7343469527162085,
+              24.088660627890476
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_blur5",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.4761726706139199,
+            "translation_direction_deg": 1.270550358444473,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.6260244390678493,
+            "translation_direction_deg": 0.9294700843977709,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.725673220360573,
+            "translation_direction_deg": 0.28077623555883885,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.7978879117844462,
+            "translation_direction_deg": 0.2996179494906804,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.2562520787428821,
+            "translation_direction_deg": 1.4384206036400249,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.37018358515523836,
+            "translation_direction_deg": 0.5239109573396267,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.4103740978098519,
+            "translation_direction_deg": 0.47569214532634857,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.19211824506897845,
+            "translation_direction_deg": 0.7970207378999108,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.26517913551660754,
+            "translation_direction_deg": 0.8861013515153257,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.10467446747145355,
+            "translation_direction_deg": 0.7907858723445129,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.4224539851591801,
+          "median": 0.3902788414825451
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.7692346295957512,
+          "median": 0.7939033051222119
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 1.6180507567877045,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            1.945526268795714,
+            1.5111465719588204,
+            1.96574056246733,
+            0.5746112015743953,
+            1.6815144487292124
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 672.2396217978775,
+            "R": [
+              [
+                0.9727449671604291,
+                -0.01683841049177905,
+                -0.23126542499078032
+              ],
+              [
+                0.00752205446377452,
+                0.9991264292837393,
+                -0.041107140539926576
+              ],
+              [
+                0.2317555771943792,
+                0.03824717295220135,
+                0.9720218650835302
+              ]
+            ],
+            "t": [
+              191.21922297317832,
+              0.7343469527162085,
+              24.088660627890476
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 672.2396217978775,
+        "R": [
+          [
+            0.9727449671604291,
+            -0.01683841049177905,
+            -0.23126542499078032
+          ],
+          [
+            0.00752205446377452,
+            0.9991264292837393,
+            -0.041107140539926576
+          ],
+          [
+            0.2317555771943792,
+            0.03824717295220135,
+            0.9720218650835302
+          ]
+        ],
+        "t": [
+          191.21922297317832,
+          0.7343469527162085,
+          24.088660627890476
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_blur5",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": false,
+              "status": "no_eligible_fusion_correspondence",
+              "upstream_reason": "predicted_camera_disagreement"
+            },
+            "artifact_sha256": "a514ce76e636074e818f0862aeb2f4da03a756452b1a70743a11a183b5d45d5b",
+            "prediction_sha256": "70e2a78d0e49d2dc0450fc354203078a4fc2abf1b6109870d067f30a4fdb20ab",
+            "moved_points_vs_fusion": 0,
+            "full_point_count": 1015280,
+            "parameters_attempt_preserved": false
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/run.json": "c62b7e3966a078b06f973fe195eb658629da65b4c27928d6bc2f2a59ee393ad1",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/prediction.json": "471d47be2e6ea9b9e27c7da640a819f1b28cf75c8bbca3a5d8d57f937f8ca984",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/fused.npz": "fc8b4aea3364434d2081589a7bbb6fe9518fca224ca78d191fcf28b687b3c1ed",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_blur5/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+          "outputs/stage5_v1/dtu_scan1_blur5/selected_artifacts/raw_predictions.npz": "3b5ae44990209e5f88a3506e6366068404a065e1f71138c233729083b3aa5004",
+          "data/stage5_fusion_tracks/dtu_scan1_blur5/observations.npz": "7dca39f8ac5ef4508bdf73fcd8889b21426c30528ac152dd2d7877b2dfa51cfb",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/colmap/input_mapping.json": "db15db89b89860c67d62f111b0201c72ee37812290e896fbc14f73a309187afb",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/vggt_raw/input_mapping.json": "a25ecf91d05b5d00c0c35096cbb5b8bd001339c4442d1bf15896bf64e6f96c1e"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "a514ce76e636074e818f0862aeb2f4da03a756452b1a70743a11a183b5d45d5b",
+        "problem_sha256": null,
+        "wall_seconds": 1.2311470279996684,
+        "peak_rss_gib": 0.15024566650390625,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 1.6180507567877045,
+        "after": 1.6180507567877045
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "raw": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 86209,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.758122365872936,
+        "mean_completeness_mm": 7.221499498524064,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.05334709833080073,
+            "recall": 0.012629663330300273,
+            "f1": 0.020424036421407877
+          },
+          "2": {
+            "precision": 0.2852370402162187,
+            "recall": 0.1003717665410113,
+            "f1": 0.14849113976515557
+          },
+          "5": {
+            "precision": 0.5157930146504426,
+            "recall": 0.22394384505394516,
+            "f1": 0.3122966482944904
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 86212,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.75786821097538,
+        "mean_completeness_mm": 7.207856168834841,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.05343803646824108,
+            "recall": 0.012806447419732223,
+            "f1": 0.020661385343467266
+          },
+          "2": {
+            "precision": 0.28526191249478033,
+            "recall": 0.10191602755751983,
+            "f1": 0.15017777578444516
+          },
+          "5": {
+            "precision": 0.5157982647427273,
+            "recall": 0.22497855193032626,
+            "f1": 0.3133023174541662
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 86209,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.757822708086991,
+          "mean_completeness_mm": 7.207856168834841,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.05343989606653598,
+              "recall": 0.012806447419732223,
+              "f1": 0.020661524337080062
+            },
+            "2": {
+              "precision": 0.2852718393671194,
+              "recall": 0.10191602755751983,
+              "f1": 0.150179151393618
+            },
+            "5": {
+              "precision": 0.5158162140843764,
+              "recall": 0.22497855193032626,
+              "f1": 0.31330562857832867
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 3
+      },
+      "grouped_initial": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 86212,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.75786821097538,
+        "mean_completeness_mm": 7.207856168834841,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.05343803646824108,
+            "recall": 0.012806447419732223,
+            "f1": 0.020661385343467266
+          },
+          "2": {
+            "precision": 0.28526191249478033,
+            "recall": 0.10191602755751983,
+            "f1": 0.15017777578444516
+          },
+          "5": {
+            "precision": 0.5157982647427273,
+            "recall": 0.22497855193032626,
+            "f1": 0.3133023174541662
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 86209,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.757822708086991,
+          "mean_completeness_mm": 7.207856168834841,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.05343989606653598,
+              "recall": 0.012806447419732223,
+              "f1": 0.020661524337080062
+            },
+            "2": {
+              "precision": 0.2852718393671194,
+              "recall": 0.10191602755751983,
+              "f1": 0.150179151393618
+            },
+            "5": {
+              "precision": 0.5158162140843764,
+              "recall": 0.22497855193032626,
+              "f1": 0.31330562857832867
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 3
+      },
+      "optimized": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 86210,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.757587234689514,
+        "mean_completeness_mm": 7.216450082440337,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.0536132699222828,
+            "recall": 0.01315481606655401,
+            "f1": 0.021126042303266254
+          },
+          "2": {
+            "precision": 0.28532652824498317,
+            "recall": 0.10125048745612895,
+            "f1": 0.14946284386087663
+          },
+          "5": {
+            "precision": 0.5158102308316901,
+            "recall": 0.22430261276485117,
+            "f1": 0.3126484926383995
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 86209,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.757571649069048,
+          "mean_completeness_mm": 7.216450082440337,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.053613891821039567,
+              "recall": 0.01315481606655401,
+              "f1": 0.021126090584387348
+            },
+            "2": {
+              "precision": 0.285329837951954,
+              "recall": 0.10125048745612895,
+              "f1": 0.14946329794676907
+            },
+            "5": {
+              "precision": 0.5158162140843764,
+              "recall": 0.22430261276485117,
+              "f1": 0.3126495917368926
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 1
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_normal5",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.29312552692386834,
+            "translation_direction_deg": 0.7512842580024243,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.45952662530098776,
+            "translation_direction_deg": 0.3899265740033917,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.5084232482377671,
+            "translation_direction_deg": 0.3929174179682909,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.5684455980136559,
+            "translation_direction_deg": 0.241283451733901,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.19109006434538106,
+            "translation_direction_deg": 0.32146212953672837,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.27724188907133074,
+            "translation_direction_deg": 0.2785671240613236,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.3623382556605374,
+            "translation_direction_deg": 0.12268333829350438,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.21918717540061755,
+            "translation_direction_deg": 0.5982956902808197,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.327940633600856,
+            "translation_direction_deg": 0.1756910779102031,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.11026998749829893,
+            "translation_direction_deg": 0.3290168083290776,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.33175890040533007,
+          "median": 0.31053308026236215
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.3601127870119665,
+          "median": 0.325239468932903
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.5922354602588805,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            0.4242014673009957,
+            0.2729696315724612,
+            1.0238578799257518,
+            0.42567979988664817,
+            0.5193906497055227
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 657.0478888654001,
+            "R": [
+              [
+                0.9668337884220513,
+                -0.02179043905791651,
+                -0.254475150714422
+              ],
+              [
+                0.013667345418719404,
+                0.9993403651466111,
+                -0.03364577622590064
+              ],
+              [
+                0.25504044627209616,
+                0.029051873507593223,
+                0.9664938486152039
+              ]
+            ],
+            "t": [
+              191.10596299362112,
+              -0.8302567330882766,
+              24.18666995783279
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_normal5",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.22607911292717542,
+            "translation_direction_deg": 1.036652425947067,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.43070175608966454,
+            "translation_direction_deg": 0.6377594045195067,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.5090009576952564,
+            "translation_direction_deg": 0.5722536350650885,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.5577828976209199,
+            "translation_direction_deg": 0.2929295828295824,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.21649022408009863,
+            "translation_direction_deg": 0.6055632712356678,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.3245752086640912,
+            "translation_direction_deg": 0.38731638071172264,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.4289946499421348,
+            "translation_direction_deg": 0.23131332510524313,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.16327715453816813,
+            "translation_direction_deg": 0.9152932107185695,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.35402630029322535,
+            "translation_direction_deg": 0.47405056278844104,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.21785777202720952,
+            "translation_direction_deg": 0.6936066814722911,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.34287860338779436,
+          "median": 0.33930075447865826
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.584673848039318,
+          "median": 0.5889084531503781
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.7327361476903815,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            0.43150712233829197,
+            0.4277957124524441,
+            1.2540949583214058,
+            0.6896253659268171,
+            0.5166879451104596
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 657.4921887573188,
+            "R": [
+              [
+                0.9662906721548445,
+                -0.023093978462312793,
+                -0.2564156880249747
+              ],
+              [
+                0.014858572766859836,
+                0.9993110777282737,
+                -0.034008715719483065
+              ],
+              [
+                0.2570244340950307,
+                0.02905233361261859,
+                0.9659681165492938
+              ]
+            ],
+            "t": [
+              191.1187711185218,
+              -0.8261229799192904,
+              24.22838538550741
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 657.0478888654001,
+        "R": [
+          [
+            0.9668337884220513,
+            -0.02179043905791651,
+            -0.254475150714422
+          ],
+          [
+            0.013667345418719404,
+            0.9993403651466111,
+            -0.03364577622590064
+          ],
+          [
+            0.25504044627209616,
+            0.029051873507593223,
+            0.9664938486152039
+          ]
+        ],
+        "t": [
+          191.10596299362112,
+          -0.8302567330882766,
+          24.18666995783279
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_normal5",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": true,
+              "status": 2,
+              "message": "`ftol` termination condition is satisfied.",
+              "nfev": 8,
+              "residual_calls_including_finite_differences": 89,
+              "optimality": 0.0055605313404707,
+              "initial_objective": 824.3265683789498,
+              "final_objective": 405.2726879590634,
+              "objective_terms_final": {
+                "reprojection": 5.910035371311736,
+                "raw_xyz_prior": 18.997878454761533,
+                "classical_xyz_prior": 379.9123249537621,
+                "pose_prior": 0.4524491792279488,
+                "positive_depth": 0.0
+              },
+              "initial_reprojection_rms_native_px": 2.8108907008666972,
+              "final_reprojection_rms_native_px": 0.30937035307878713,
+              "min_observation_depth": 0.9937383209909081,
+              "unique_points": 174,
+              "observations": 683,
+              "variables": 546,
+              "normalization_raw_units": 1.0376313765705278,
+              "max_rotation_delta_deg": 0.3618046927773637,
+              "max_translation_delta_over_depth": 0.0010125081832045562,
+              "wall_seconds": 0.08723275200009084,
+              "history": [
+                {
+                  "iteration": 1,
+                  "objective": 606.0374172992086,
+                  "elapsed_seconds": 0.05431930900022053
+                },
+                {
+                  "iteration": 2,
+                  "objective": 505.8269714645189,
+                  "elapsed_seconds": 0.059177749999889784
+                },
+                {
+                  "iteration": 3,
+                  "objective": 436.18094701674903,
+                  "elapsed_seconds": 0.0647436019999077
+                },
+                {
+                  "iteration": 4,
+                  "objective": 406.4762972417449,
+                  "elapsed_seconds": 0.07062880600005883
+                },
+                {
+                  "iteration": 5,
+                  "objective": 405.27364966666437,
+                  "elapsed_seconds": 0.07699162300013995
+                },
+                {
+                  "iteration": 6,
+                  "objective": 405.2726948614462,
+                  "elapsed_seconds": 0.08254261899992343
+                },
+                {
+                  "iteration": 7,
+                  "objective": 405.2726879590634,
+                  "elapsed_seconds": 0.08689437100019859
+                }
+              ]
+            },
+            "artifact_sha256": "030d84ccb7d1a9e613101b594249c7add6b156a257f488d9a7a848ebb7a70986",
+            "prediction_sha256": "091e8226385aad5717d1467284796aba8221fa11fcdd4f92a3ec08821ba0724e",
+            "moved_points_vs_fusion": 174,
+            "full_point_count": 1015280,
+            "parameters_attempt_preserved": true
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/run.json": "15bc0fe4fafe178a7fe1fe8a8a331838b982b5bc15f915f8a5de1867ba24bc68",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/prediction.json": "389da05d60a58c6758c3984bc73e3bbb23fedacbdc9d4606f2a226e3105c2a9d",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/fused.npz": "a4590d53d30b78271649071fecc84d21965d364f1525d3e53a11310ba0817379",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_normal5/anchors.npz": "8f3c0433f5799310280e145df6e4487eb5f2550e0e96ef3f2140204bffc2d1ea",
+          "outputs/stage5_v1/dtu_scan1_normal5/selected_artifacts/raw_predictions.npz": "b892b447594385fade118940801e357f2bb2758cf9dcaf046d871e0279dd5c55",
+          "data/stage5_fusion_tracks/dtu_scan1_normal5/observations.npz": "48594635e8a2bc3a5eaa44eb634077c483b80f603bde9e0949dda7b69f45ffed",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/colmap/input_mapping.json": "78f7b41e460c2c56a702a3cd40776da73bda2c3c574ef9c6db9b830ed8a994e7",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/vggt_raw/input_mapping.json": "b314268fbca497fdfe51c0f94a81ee64ece15c145ac28fabd8f67cc18102e969"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "dbbf76f2e582a6b5cdb0284147a60b3e88228d3003577ef6cd1076670e119564",
+        "problem_sha256": "0a031202aade3c61b1be2a84d2b535d4eeddd0e4b4bc2418af04e7ca2999f07e",
+        "wall_seconds": 1.6161242529997253,
+        "peak_rss_gib": 0.16884613037109375,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 0.5922354602588805,
+        "after": 0.8227692520943808
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "raw": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 75489,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.935475117351683,
+        "mean_completeness_mm": 7.984679942567126,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.042774443958722465,
+            "recall": 0.02289353958143767,
+            "f1": 0.029824531622601798
+          },
+          "2": {
+            "precision": 0.15689703135556174,
+            "recall": 0.10106850383465488,
+            "f1": 0.12294160305959316
+          },
+          "5": {
+            "precision": 0.459868325186451,
+            "recall": 0.3063720265176134,
+            "f1": 0.3677456829447906
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 75489,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.935475117351683,
+        "mean_completeness_mm": 7.984679942567126,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.042774443958722465,
+            "recall": 0.02289353958143767,
+            "f1": 0.029824531622601798
+          },
+          "2": {
+            "precision": 0.15689703135556174,
+            "recall": 0.10106850383465488,
+            "f1": 0.12294160305959316
+          },
+          "5": {
+            "precision": 0.459868325186451,
+            "recall": 0.3063720265176134,
+            "f1": 0.3677456829447906
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 75489,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.935475117351683,
+          "mean_completeness_mm": 7.984679942567126,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.042774443958722465,
+              "recall": 0.02289353958143767,
+              "f1": 0.029824531622601798
+            },
+            "2": {
+              "precision": 0.15689703135556174,
+              "recall": 0.10106850383465488,
+              "f1": 0.12294160305959316
+            },
+            "5": {
+              "precision": 0.459868325186451,
+              "recall": 0.3063720265176134,
+              "f1": 0.3677456829447906
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "grouped_initial": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 75489,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.935475117351683,
+        "mean_completeness_mm": 7.984679942567126,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.042774443958722465,
+            "recall": 0.02289353958143767,
+            "f1": 0.029824531622601798
+          },
+          "2": {
+            "precision": 0.15689703135556174,
+            "recall": 0.10106850383465488,
+            "f1": 0.12294160305959316
+          },
+          "5": {
+            "precision": 0.459868325186451,
+            "recall": 0.3063720265176134,
+            "f1": 0.3677456829447906
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 75489,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.935475117351683,
+          "mean_completeness_mm": 7.984679942567126,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.042774443958722465,
+              "recall": 0.02289353958143767,
+              "f1": 0.029824531622601798
+            },
+            "2": {
+              "precision": 0.15689703135556174,
+              "recall": 0.10106850383465488,
+              "f1": 0.12294160305959316
+            },
+            "5": {
+              "precision": 0.459868325186451,
+              "recall": 0.3063720265176134,
+              "f1": 0.3677456829447906
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "optimized": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 75489,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 4.935475117351683,
+        "mean_completeness_mm": 7.984679942567126,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.042774443958722465,
+            "recall": 0.02289353958143767,
+            "f1": 0.029824531622601798
+          },
+          "2": {
+            "precision": 0.15689703135556174,
+            "recall": 0.10106850383465488,
+            "f1": 0.12294160305959316
+          },
+          "5": {
+            "precision": 0.459868325186451,
+            "recall": 0.3063720265176134,
+            "f1": 0.3677456829447906
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 75489,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 4.935475117351683,
+          "mean_completeness_mm": 7.984679942567126,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.042774443958722465,
+              "recall": 0.02289353958143767,
+              "f1": 0.029824531622601798
+            },
+            "2": {
+              "precision": 0.15689703135556174,
+              "recall": 0.10106850383465488,
+              "f1": 0.12294160305959316
+            },
+            "5": {
+              "precision": 0.459868325186451,
+              "recall": 0.3063720265176134,
+              "f1": 0.3677456829447906
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_reduced3",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.27331413540612637,
+            "translation_direction_deg": 0.7184882246935244,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.5752250737126788,
+            "translation_direction_deg": 0.6150775894859939,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.3278768478894238,
+            "translation_direction_deg": 0.8318789561868832,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.3921386856694096,
+          "median": 0.3278768478894238
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.721814923455467,
+          "median": 0.7184882246935244
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.4238037571584978,
+          "image_ids": [
+            "001",
+            "002",
+            "003"
+          ],
+          "per_camera_error": [
+            0.3079269513991063,
+            0.5921324163048509,
+            0.30559624982647926
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 652.9428254658395,
+            "R": [
+              [
+                0.9665806347929253,
+                -0.031314108620060704,
+                -0.25444312339820724
+              ],
+              [
+                0.02130088601915078,
+                0.998889907151622,
+                -0.04201458848331523
+              ],
+              [
+                0.2554763172939979,
+                0.03519062363690463,
+                0.9661746588013691
+              ]
+            ],
+            "t": [
+              190.6236703756789,
+              -1.3545654773453037,
+              24.31409058210909
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_reduced3",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.27331413540612637,
+            "translation_direction_deg": 0.7184882246935244,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.5752250737126788,
+            "translation_direction_deg": 0.6150775894859939,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.3278768478894238,
+            "translation_direction_deg": 0.8318789561868832,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.3921386856694096,
+          "median": 0.3278768478894238
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.721814923455467,
+          "median": 0.7184882246935244
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.4238037571584978,
+          "image_ids": [
+            "001",
+            "002",
+            "003"
+          ],
+          "per_camera_error": [
+            0.3079269513991063,
+            0.5921324163048509,
+            0.30559624982647926
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 652.9428254658395,
+            "R": [
+              [
+                0.9665806347929253,
+                -0.031314108620060704,
+                -0.25444312339820724
+              ],
+              [
+                0.02130088601915078,
+                0.998889907151622,
+                -0.04201458848331523
+              ],
+              [
+                0.2554763172939979,
+                0.03519062363690463,
+                0.9661746588013691
+              ]
+            ],
+            "t": [
+              190.6236703756789,
+              -1.3545654773453037,
+              24.31409058210909
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 652.9428254658395,
+        "R": [
+          [
+            0.9665806347929253,
+            -0.031314108620060704,
+            -0.25444312339820724
+          ],
+          [
+            0.02130088601915078,
+            0.998889907151622,
+            -0.04201458848331523
+          ],
+          [
+            0.2554763172939979,
+            0.03519062363690463,
+            0.9661746588013691
+          ]
+        ],
+        "t": [
+          190.6236703756789,
+          -1.3545654773453037,
+          24.31409058210909
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_reduced3",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": false,
+              "status": "no_eligible_fusion_correspondence",
+              "upstream_reason": "no_eligible_correspondences"
+            },
+            "artifact_sha256": "f16b3a9c846377f20ed4c3d0d167847375869596f464720053faa7cab33edf63",
+            "prediction_sha256": "0e6d6f5266db8b5dda4f1600c92b113ee6dc3f54399708b1386325a4d1180610",
+            "moved_points_vs_fusion": 0,
+            "full_point_count": 609168,
+            "parameters_attempt_preserved": false
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/run.json": "c8a6938049fa5c71789e18c1f14ccf21956520a17f68670c27723e25e80581c5",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/prediction.json": "f767761ef3c8a5ce6abbb4db8a214bf2e982750e37367f099175a9d516c0a367",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/fused.npz": "7be923486a99895f09de5ec03f5b2be9146ad2ab72dc4ce9d49e312faa67344c",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_reduced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+          "outputs/stage5_v1/dtu_scan1_reduced3/selected_artifacts/raw_predictions.npz": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+          "data/stage5_fusion_tracks/dtu_scan1_reduced3/observations.npz": "3316b724493259b575efc9666a5c6d4e99bd96d839f561afb681936ab5e4c691",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/input_mapping.json": "4a0bd605a5e256e681eba226339a1b4e9900e5e858fb0f92ead1d63d4a1a6b98",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_raw/input_mapping.json": "1393155e3d016f47851ba5bc46aec970b393a7f4b484c03ccc76bcd32fb441e8"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "f16b3a9c846377f20ed4c3d0d167847375869596f464720053faa7cab33edf63",
+        "problem_sha256": null,
+        "wall_seconds": 0.7572414249998474,
+        "peak_rss_gib": 0.12084197998046875,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 0.4238037571584978,
+        "after": 0.4238037571584978
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "raw": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 110181,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 7.441843330265054,
+        "mean_completeness_mm": 4.199603516269721,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.06749802597544041,
+            "recall": 0.06980891719745223,
+            "f1": 0.06863402530748704
+          },
+          "2": {
+            "precision": 0.24441600638948638,
+            "recall": 0.26291953724164824,
+            "f1": 0.2533303416292783
+          },
+          "5": {
+            "precision": 0.704223051161271,
+            "recall": 0.7004913557779799,
+            "f1": 0.7023522467501796
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 110181,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 7.441843330265054,
+        "mean_completeness_mm": 4.199603516269721,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.06749802597544041,
+            "recall": 0.06980891719745223,
+            "f1": 0.06863402530748704
+          },
+          "2": {
+            "precision": 0.24441600638948638,
+            "recall": 0.26291953724164824,
+            "f1": 0.2533303416292783
+          },
+          "5": {
+            "precision": 0.704223051161271,
+            "recall": 0.7004913557779799,
+            "f1": 0.7023522467501796
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 110181,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 7.441843330265054,
+          "mean_completeness_mm": 4.199603516269721,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.06749802597544041,
+              "recall": 0.06980891719745223,
+              "f1": 0.06863402530748704
+            },
+            "2": {
+              "precision": 0.24441600638948638,
+              "recall": 0.26291953724164824,
+              "f1": 0.2533303416292783
+            },
+            "5": {
+              "precision": 0.704223051161271,
+              "recall": 0.7004913557779799,
+              "f1": 0.7023522467501796
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "grouped_initial": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 110181,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 7.441843330265054,
+        "mean_completeness_mm": 4.199603516269721,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.06749802597544041,
+            "recall": 0.06980891719745223,
+            "f1": 0.06863402530748704
+          },
+          "2": {
+            "precision": 0.24441600638948638,
+            "recall": 0.26291953724164824,
+            "f1": 0.2533303416292783
+          },
+          "5": {
+            "precision": 0.704223051161271,
+            "recall": 0.7004913557779799,
+            "f1": 0.7023522467501796
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 110181,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 7.441843330265054,
+          "mean_completeness_mm": 4.199603516269721,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.06749802597544041,
+              "recall": 0.06980891719745223,
+              "f1": 0.06863402530748704
+            },
+            "2": {
+              "precision": 0.24441600638948638,
+              "recall": 0.26291953724164824,
+              "f1": 0.2533303416292783
+            },
+            "5": {
+              "precision": 0.704223051161271,
+              "recall": 0.7004913557779799,
+              "f1": 0.7023522467501796
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "optimized": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 110181,
+        "recall_reference_count": 192325,
+        "mean_accuracy_mm": 7.441843330265054,
+        "mean_completeness_mm": 4.199603516269721,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.06749802597544041,
+            "recall": 0.06980891719745223,
+            "f1": 0.06863402530748704
+          },
+          "2": {
+            "precision": 0.24441600638948638,
+            "recall": 0.26291953724164824,
+            "f1": 0.2533303416292783
+          },
+          "5": {
+            "precision": 0.704223051161271,
+            "recall": 0.7004913557779799,
+            "f1": 0.7023522467501796
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 110181,
+          "recall_reference_count": 192325,
+          "mean_accuracy_mm": 7.441843330265054,
+          "mean_completeness_mm": 4.199603516269721,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.06749802597544041,
+              "recall": 0.06980891719745223,
+              "f1": 0.06863402530748704
+            },
+            "2": {
+              "precision": 0.24441600638948638,
+              "recall": 0.26291953724164824,
+              "f1": 0.2533303416292783
+            },
+            "5": {
+              "precision": 0.704223051161271,
+              "recall": 0.7004913557779799,
+              "f1": 0.7023522467501796
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_spaced3",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "010"
+            ],
+            "rotation_deg": 0.2772784020474125,
+            "translation_direction_deg": 0.4120640913763426,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "020"
+            ],
+            "rotation_deg": 0.14557934618935905,
+            "translation_direction_deg": 0.4988856480996599,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "010",
+              "020"
+            ],
+            "rotation_deg": 0.264623449154397,
+            "translation_direction_deg": 0.6211015698316852,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.22916039913038952,
+          "median": 0.264623449154397
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.5106837697692291,
+          "median": 0.4988856480996599
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.48031648138350624,
+          "image_ids": [
+            "001",
+            "010",
+            "020"
+          ],
+          "per_camera_error": [
+            0.5239545759921362,
+            0.6186282623303327,
+            0.18676841866051672
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 646.0408465900998,
+            "R": [
+              [
+                0.9684577710922619,
+                -0.0155515701963673,
+                -0.2486919666483745
+              ],
+              [
+                0.005885017162576692,
+                0.9991996310015712,
+                -0.03956594469136705
+              ],
+              [
+                0.24910823387436437,
+                0.03685439011503985,
+                0.9677741687735025
+              ]
+            ],
+            "t": [
+              191.28498352510928,
+              -1.1039963095239216,
+              24.504353592185026
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan1_spaced3",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "010"
+            ],
+            "rotation_deg": 0.2772784020474125,
+            "translation_direction_deg": 0.4120640913763426,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "020"
+            ],
+            "rotation_deg": 0.14557934618935905,
+            "translation_direction_deg": 0.4988856480996599,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "010",
+              "020"
+            ],
+            "rotation_deg": 0.264623449154397,
+            "translation_direction_deg": 0.6211015698316852,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.22916039913038952,
+          "median": 0.264623449154397
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.5106837697692291,
+          "median": 0.4988856480996599
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.48031648138350624,
+          "image_ids": [
+            "001",
+            "010",
+            "020"
+          ],
+          "per_camera_error": [
+            0.5239545759921362,
+            0.6186282623303327,
+            0.18676841866051672
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 646.0408465900998,
+            "R": [
+              [
+                0.9684577710922619,
+                -0.0155515701963673,
+                -0.2486919666483745
+              ],
+              [
+                0.005885017162576692,
+                0.9991996310015712,
+                -0.03956594469136705
+              ],
+              [
+                0.24910823387436437,
+                0.03685439011503985,
+                0.9677741687735025
+              ]
+            ],
+            "t": [
+              191.28498352510928,
+              -1.1039963095239216,
+              24.504353592185026
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 646.0408465900998,
+        "R": [
+          [
+            0.9684577710922619,
+            -0.0155515701963673,
+            -0.2486919666483745
+          ],
+          [
+            0.005885017162576692,
+            0.9991996310015712,
+            -0.03956594469136705
+          ],
+          [
+            0.24910823387436437,
+            0.03685439011503985,
+            0.9677741687735025
+          ]
+        ],
+        "t": [
+          191.28498352510928,
+          -1.1039963095239216,
+          24.504353592185026
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan1_spaced3",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": false,
+              "status": "no_eligible_fusion_correspondence",
+              "upstream_reason": "fewer_than_three_shared_cameras"
+            },
+            "artifact_sha256": "640e3f02fee478e55a8a9520c5f3b6deff8ed34418166c65fe756d1a0ba06b68",
+            "prediction_sha256": "179de6ea43891b28be92ab5c02d6f236246f967b27da1ee2a745ffdcc78821d7",
+            "moved_points_vs_fusion": 0,
+            "full_point_count": 609168,
+            "parameters_attempt_preserved": false
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/run.json": "7e1aa759687f6360a729554343342f4caaf861c0ed3643dc4d5dcae87c36f0e1",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/prediction.json": "d4c7d82aac9078e7d997d5d4abe4511ec2fc55caad8742388b6401a287ee94e0",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/fused.npz": "564f4cabc6517431f3d7464965f27926ed7b1e6de7f47dacf31d91af4cfd733c",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan1_spaced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+          "outputs/stage5_v1/dtu_scan1_spaced3/selected_artifacts/raw_predictions.npz": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd",
+          "data/stage5_fusion_tracks/dtu_scan1_spaced3/observations.npz": "a28bf0893e839953f28530c3fb4c719626259db89a756079e91e5007ed945e08",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/colmap/input_mapping.json": "0b3f128b8e5072f1d4ac5ede91e8956b9a4d02e30c0a81c56b61a25f1f0647a8",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/vggt_raw/input_mapping.json": "84b2d340f423765554e7ec288f8770f44082fd122e8bcf0a190b089e8fc1b175"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "640e3f02fee478e55a8a9520c5f3b6deff8ed34418166c65fe756d1a0ba06b68",
+        "problem_sha256": null,
+        "wall_seconds": 0.7485512690000178,
+        "peak_rss_gib": 0.12060546875,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 0.48031648138350624,
+        "after": 0.48031648138350624
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "raw": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 55607,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 4.311462570232597,
+        "mean_completeness_mm": 7.350819769924472,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.08191414749941554,
+            "recall": 0.04105613327396076,
+            "f1": 0.05469741364511884
+          },
+          "2": {
+            "precision": 0.18934666498822092,
+            "recall": 0.11379102601042512,
+            "f1": 0.14215290226485316
+          },
+          "5": {
+            "precision": 0.6035391227723128,
+            "recall": 0.41008460591455587,
+            "f1": 0.48835104449801153
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 55607,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 4.311462570232597,
+        "mean_completeness_mm": 7.350819769924472,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.08191414749941554,
+            "recall": 0.04105613327396076,
+            "f1": 0.05469741364511884
+          },
+          "2": {
+            "precision": 0.18934666498822092,
+            "recall": 0.11379102601042512,
+            "f1": 0.14215290226485316
+          },
+          "5": {
+            "precision": 0.6035391227723128,
+            "recall": 0.41008460591455587,
+            "f1": 0.48835104449801153
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 55607,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 4.311462570232597,
+          "mean_completeness_mm": 7.350819769924472,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.08191414749941554,
+              "recall": 0.04105613327396076,
+              "f1": 0.05469741364511884
+            },
+            "2": {
+              "precision": 0.18934666498822092,
+              "recall": 0.11379102601042512,
+              "f1": 0.14215290226485316
+            },
+            "5": {
+              "precision": 0.6035391227723128,
+              "recall": 0.41008460591455587,
+              "f1": 0.48835104449801153
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "grouped_initial": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 55607,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 4.311462570232597,
+        "mean_completeness_mm": 7.350819769924472,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.08191414749941554,
+            "recall": 0.04105613327396076,
+            "f1": 0.05469741364511884
+          },
+          "2": {
+            "precision": 0.18934666498822092,
+            "recall": 0.11379102601042512,
+            "f1": 0.14215290226485316
+          },
+          "5": {
+            "precision": 0.6035391227723128,
+            "recall": 0.41008460591455587,
+            "f1": 0.48835104449801153
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 55607,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 4.311462570232597,
+          "mean_completeness_mm": 7.350819769924472,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.08191414749941554,
+              "recall": 0.04105613327396076,
+              "f1": 0.05469741364511884
+            },
+            "2": {
+              "precision": 0.18934666498822092,
+              "recall": 0.11379102601042512,
+              "f1": 0.14215290226485316
+            },
+            "5": {
+              "precision": 0.6035391227723128,
+              "recall": 0.41008460591455587,
+              "f1": 0.48835104449801153
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "optimized": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 55607,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 4.311462570232597,
+        "mean_completeness_mm": 7.350819769924472,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.08191414749941554,
+            "recall": 0.04105613327396076,
+            "f1": 0.05469741364511884
+          },
+          "2": {
+            "precision": 0.18934666498822092,
+            "recall": 0.11379102601042512,
+            "f1": 0.14215290226485316
+          },
+          "5": {
+            "precision": 0.6035391227723128,
+            "recall": 0.41008460591455587,
+            "f1": 0.48835104449801153
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 55607,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 4.311462570232597,
+          "mean_completeness_mm": 7.350819769924472,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.08191414749941554,
+              "recall": 0.04105613327396076,
+              "f1": 0.05469741364511884
+            },
+            "2": {
+              "precision": 0.18934666498822092,
+              "recall": 0.11379102601042512,
+              "f1": 0.14215290226485316
+            },
+            "5": {
+              "precision": 0.6035391227723128,
+              "recall": 0.41008460591455587,
+              "f1": 0.48835104449801153
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_blur5",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.30726507264777614,
+            "translation_direction_deg": 0.8307520011890634,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.3709629887473509,
+            "translation_direction_deg": 0.4047296105938736,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.32342989447211007,
+            "translation_direction_deg": 0.514583371700199,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.2540475862680685,
+            "translation_direction_deg": 0.43236151523465516,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.19425761386143695,
+            "translation_direction_deg": 1.668442733289693,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.46377109988993326,
+            "translation_direction_deg": 0.5458370687100277,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.3366646734840216,
+            "translation_direction_deg": 0.24426783567597243,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.3708902969725424,
+            "translation_direction_deg": 2.3477200901985533,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.2520564853852431,
+            "translation_direction_deg": 1.1610021301604483,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.12860730005158497,
+            "translation_direction_deg": 1.3029615137384765,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.30019530117800686,
+          "median": 0.31534748355994313
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.9452657870490964,
+          "median": 0.6882945349495455
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 1.918247874989216,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            0.3414952963958834,
+            1.7268889784346577,
+            2.8795181877117293,
+            2.205181237047615,
+            1.4646367080658997
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 682.3688866953822,
+            "R": [
+              [
+                0.9706536108426294,
+                -0.010203878977163884,
+                -0.2402653712293669
+              ],
+              [
+                0.004040081865045499,
+                0.9996503178615839,
+                -0.026132733070978225
+              ],
+              [
+                0.2404480099661669,
+                0.02439513994742925,
+                0.9703554151187366
+              ]
+            ],
+            "t": [
+              190.70686459700607,
+              -0.8602119110309161,
+              24.273044499362328
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_blur5",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.30726507264777614,
+            "translation_direction_deg": 0.8307520011890634,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.3709629887473509,
+            "translation_direction_deg": 0.4047296105938736,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.32342989447211007,
+            "translation_direction_deg": 0.514583371700199,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.2540475862680685,
+            "translation_direction_deg": 0.43236151523465516,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.19425761386143695,
+            "translation_direction_deg": 1.668442733289693,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.46377109988993326,
+            "translation_direction_deg": 0.5458370687100277,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.3366646734840216,
+            "translation_direction_deg": 0.24426783567597243,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.3708902969725424,
+            "translation_direction_deg": 2.3477200901985533,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.2520564853852431,
+            "translation_direction_deg": 1.1610021301604483,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.12860730005158497,
+            "translation_direction_deg": 1.3029615137384765,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.30019530117800686,
+          "median": 0.31534748355994313
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.9452657870490964,
+          "median": 0.6882945349495455
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 1.918247874989216,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            0.3414952963958834,
+            1.7268889784346577,
+            2.8795181877117293,
+            2.205181237047615,
+            1.4646367080658997
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 682.3688866953822,
+            "R": [
+              [
+                0.9706536108426294,
+                -0.010203878977163884,
+                -0.2402653712293669
+              ],
+              [
+                0.004040081865045499,
+                0.9996503178615839,
+                -0.026132733070978225
+              ],
+              [
+                0.2404480099661669,
+                0.02439513994742925,
+                0.9703554151187366
+              ]
+            ],
+            "t": [
+              190.70686459700607,
+              -0.8602119110309161,
+              24.273044499362328
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 682.3688866953822,
+        "R": [
+          [
+            0.9706536108426294,
+            -0.010203878977163884,
+            -0.2402653712293669
+          ],
+          [
+            0.004040081865045499,
+            0.9996503178615839,
+            -0.026132733070978225
+          ],
+          [
+            0.2404480099661669,
+            0.02439513994742925,
+            0.9703554151187366
+          ]
+        ],
+        "t": [
+          190.70686459700607,
+          -0.8602119110309161,
+          24.273044499362328
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_blur5",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": false,
+              "status": "no_eligible_fusion_correspondence",
+              "upstream_reason": "predicted_camera_disagreement"
+            },
+            "artifact_sha256": "ea0889e3678a7ac59d3f925395c2be978a9b37e6150345afa6a7d86eb342a2b0",
+            "prediction_sha256": "fb8519b6625dad1f714165b9af4c148140fd7770408d3f99f43d2a4fbc8c8a2e",
+            "moved_points_vs_fusion": 0,
+            "full_point_count": 1015280,
+            "parameters_attempt_preserved": false
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/run.json": "06d8238c5849e8653390e07fbc8c6075ce1a57f8d8ea54e6063e27b51844b579",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/prediction.json": "12b416b34a1d1c0d3d9d9ac1819e8cd9831119fddc6a1f6437ae711493d728e0",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/fused.npz": "8eb5a8a017e448be431d6980d2f9c4e72ce09c043183d5f6f08b84e505fe16c7",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+          "outputs/stage5_v1/dtu_scan6_blur5/selected_artifacts/raw_predictions.npz": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291",
+          "data/stage5_fusion_tracks/dtu_scan6_blur5/observations.npz": "7e7e2b736961eb2238940a325c62d847c70b1db9fd2e1ccf92f43a0c405df0f7",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/colmap/input_mapping.json": "a72afffddee3dd317460bf98b6f48fd68fc33bd6178a6d294fc71bbb77f40502",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/vggt_raw/input_mapping.json": "91f376195cbf1c61f41edab3d4c6759e1f71d16222c230067b2a88fbfdf2da3a"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "ea0889e3678a7ac59d3f925395c2be978a9b37e6150345afa6a7d86eb342a2b0",
+        "problem_sha256": null,
+        "wall_seconds": 1.2480039550000583,
+        "peak_rss_gib": 0.150146484375,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 1.918247874989216,
+        "after": 1.918247874989216
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "raw": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 79252,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.5893720697472515,
+        "mean_completeness_mm": 6.745372448723878,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.022245495381820017,
+            "recall": 0.020483537208266758,
+            "f1": 0.02132818857572508
+          },
+          "2": {
+            "precision": 0.06197950840357341,
+            "recall": 0.076061502999188,
+            "f1": 0.06830223158205999
+          },
+          "5": {
+            "precision": 0.32458486852066826,
+            "recall": 0.3212562537653561,
+            "f1": 0.3229119834326381
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 79260,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.587218848115225,
+        "mean_completeness_mm": 6.670693039045499,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.022243250063083524,
+            "recall": 0.020483537208266758,
+            "f1": 0.021327156540293483
+          },
+          "2": {
+            "precision": 0.062099419631592226,
+            "recall": 0.07623438195772324,
+            "f1": 0.0684447448296453
+          },
+          "5": {
+            "precision": 0.32511985869290944,
+            "recall": 0.33685727008408206,
+            "f1": 0.33088450729937835
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 79252,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 5.587166617531965,
+          "mean_completeness_mm": 6.670693039045499,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.022245495381820017,
+              "recall": 0.020483537208266758,
+              "f1": 0.02132818857572508
+            },
+            "2": {
+              "precision": 0.06210568818452531,
+              "recall": 0.07623438195772324,
+              "f1": 0.06844855217924942
+            },
+            "5": {
+              "precision": 0.3251400595568566,
+              "recall": 0.33685727008408206,
+              "f1": 0.33089496876582375
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 8
+      },
+      "grouped_initial": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 79260,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.587218848115225,
+        "mean_completeness_mm": 6.670693039045499,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.022243250063083524,
+            "recall": 0.020483537208266758,
+            "f1": 0.021327156540293483
+          },
+          "2": {
+            "precision": 0.062099419631592226,
+            "recall": 0.07623438195772324,
+            "f1": 0.0684447448296453
+          },
+          "5": {
+            "precision": 0.32511985869290944,
+            "recall": 0.33685727008408206,
+            "f1": 0.33088450729937835
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 79252,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 5.587166617531965,
+          "mean_completeness_mm": 6.670693039045499,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.022245495381820017,
+              "recall": 0.020483537208266758,
+              "f1": 0.02132818857572508
+            },
+            "2": {
+              "precision": 0.06210568818452531,
+              "recall": 0.07623438195772324,
+              "f1": 0.06844855217924942
+            },
+            "5": {
+              "precision": 0.3251400595568566,
+              "recall": 0.33685727008408206,
+              "f1": 0.33089496876582375
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 8
+      },
+      "optimized": {
+        "retained_full_count": 1015280,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 79259,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.588495817266737,
+        "mean_completeness_mm": 6.7236874922840615,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.022243530703137813,
+            "recall": 0.020483537208266758,
+            "f1": 0.021327285539260377
+          },
+          "2": {
+            "precision": 0.06197403449450536,
+            "recall": 0.076061502999188,
+            "f1": 0.06829890760255805
+          },
+          "5": {
+            "precision": 0.3248968571392523,
+            "recall": 0.32461953532231447,
+            "f1": 0.32475813702720435
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 1015280,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 79252,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 5.588352277898419,
+          "mean_completeness_mm": 6.7236874922840615,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.022245495381820017,
+              "recall": 0.020483537208266758,
+              "f1": 0.02132818857572508
+            },
+            "2": {
+              "precision": 0.06197950840357341,
+              "recall": 0.076061502999188,
+              "f1": 0.06830223158205999
+            },
+            "5": {
+              "precision": 0.3249255539292384,
+              "recall": 0.32461953532231447,
+              "f1": 0.32477247253887337
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 7
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_normal5",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.19037157204336463,
+            "translation_direction_deg": 0.1983897672461176,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.24152799132183814,
+            "translation_direction_deg": 0.07427696531019687,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.300195116927306,
+            "translation_direction_deg": 0.37325677939373375,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.45993054578247045,
+            "translation_direction_deg": 0.3889716809153323,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.07519682894921503,
+            "translation_direction_deg": 0.12923741179691337,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.16445908827457972,
+            "translation_direction_deg": 0.5612256485402923,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.2803304299048804,
+            "translation_direction_deg": 0.4108299319177914,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.2152553355126538,
+            "translation_direction_deg": 0.796925782096369,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.2793771516395233,
+            "translation_direction_deg": 0.4913151912314144,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.19039118062585836,
+            "translation_direction_deg": 0.8629767579768367,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.239703524098169,
+          "median": 0.22839166341724598
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.4287405916424998,
+          "median": 0.39990080641656184
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.8869093678583647,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            0.20521715599081924,
+            0.4543759003278915,
+            0.6648865005392816,
+            1.5484989665034252,
+            0.918992103448844
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 678.1279032377092,
+            "R": [
+              [
+                0.9675338941373145,
+                -0.014535417385069709,
+                -0.25232297821824684
+              ],
+              [
+                0.005205271759979607,
+                0.9992791162902247,
+                -0.03760522426649012
+              ],
+              [
+                0.25268769032421984,
+                0.03507091940155053,
+                0.966912075512009
+              ]
+            ],
+            "t": [
+              190.92940635397954,
+              -1.3322543352275318,
+              24.23071742142345
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_normal5",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 5,
+        "registered_images": 5,
+        "registration_ratio": 1.0,
+        "input_pairs": 10,
+        "rotation_evaluated_pairs": 10,
+        "translation_evaluated_pairs": 10,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.15390548517560926,
+            "translation_direction_deg": 0.28190690877903807,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.27747612672505745,
+            "translation_direction_deg": 0.31228626030505713,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.20831686197597094,
+            "translation_direction_deg": 0.25324697421060754,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.31376972103116957,
+            "translation_direction_deg": 0.3121304579168369,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.15691688993331523,
+            "translation_direction_deg": 0.29571212658400575,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.12334711558143992,
+            "translation_direction_deg": 0.36806297330027893,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.3284340254051127,
+            "translation_direction_deg": 0.3132788400437797,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.1236672833639276,
+            "translation_direction_deg": 0.8168299810520174,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.28341957232676407,
+            "translation_direction_deg": 0.3785583016400994,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.2335889479158618,
+            "translation_direction_deg": 0.35120812431976034,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.22028420294342288,
+          "median": 0.22095290494591635
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 10,
+          "mean": 0.3683220948151481,
+          "median": 0.3127825501744184
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.7995053063843386,
+          "image_ids": [
+            "001",
+            "002",
+            "003",
+            "004",
+            "005"
+          ],
+          "per_camera_error": [
+            0.3909206792525539,
+            0.21594139848138857,
+            1.0677773611724197,
+            1.28473042367806,
+            0.4537766577093364
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 679.4739063081734,
+            "R": [
+              [
+                0.970145715388172,
+                -0.010988781362111136,
+                -0.24227368325541931
+              ],
+              [
+                0.0030453618828924747,
+                0.9994461753542412,
+                -0.033137114249456166
+              ],
+              [
+                0.24250364262207227,
+                0.03141001836922418,
+                0.9696418895969127
+              ]
+            ],
+            "t": [
+              191.0326376628342,
+              -0.9787941686114721,
+              24.011822952977866
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 678.1279032377092,
+        "R": [
+          [
+            0.9675338941373145,
+            -0.014535417385069709,
+            -0.25232297821824684
+          ],
+          [
+            0.005205271759979607,
+            0.9992791162902247,
+            -0.03760522426649012
+          ],
+          [
+            0.25268769032421984,
+            0.03507091940155053,
+            0.966912075512009
+          ]
+        ],
+        "t": [
+          190.92940635397954,
+          -1.3322543352275318,
+          24.23071742142345
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_normal5",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": true,
+              "status": 2,
+              "message": "`ftol` termination condition is satisfied.",
+              "nfev": 8,
+              "residual_calls_including_finite_differences": 81,
+              "optimality": 0.028556411318639865,
+              "initial_objective": 1240.8408287884215,
+              "final_objective": 504.4477019966374,
+              "objective_terms_final": {
+                "reprojection": 12.909340173625074,
+                "raw_xyz_prior": 33.272549526147856,
+                "classical_xyz_prior": 457.55323053874577,
+                "pose_prior": 0.7125817581186915,
+                "positive_depth": 0.0
+              },
+              "initial_reprojection_rms_native_px": 2.760923220121811,
+              "final_reprojection_rms_native_px": 0.33515604880235145,
+              "min_observation_depth": 0.9631746259306364,
+              "unique_points": 328,
+              "observations": 1270,
+              "variables": 1008,
+              "normalization_raw_units": 1.0109132089889052,
+              "max_rotation_delta_deg": 0.40416702776632774,
+              "max_translation_delta_over_depth": 0.002772824053385217,
+              "wall_seconds": 0.13608413799966002,
+              "history": [
+                {
+                  "iteration": 1,
+                  "objective": 858.4498431751441,
+                  "elapsed_seconds": 0.09082204700007424
+                },
+                {
+                  "iteration": 2,
+                  "objective": 645.468054637992,
+                  "elapsed_seconds": 0.096670962999724
+                },
+                {
+                  "iteration": 3,
+                  "objective": 553.1294750352948,
+                  "elapsed_seconds": 0.1034644159999516
+                },
+                {
+                  "iteration": 4,
+                  "objective": 506.28862265924334,
+                  "elapsed_seconds": 0.11190627099995254
+                },
+                {
+                  "iteration": 5,
+                  "objective": 504.46312768545107,
+                  "elapsed_seconds": 0.12118946100008543
+                },
+                {
+                  "iteration": 6,
+                  "objective": 504.44778611343384,
+                  "elapsed_seconds": 0.12927487499973722
+                },
+                {
+                  "iteration": 7,
+                  "objective": 504.4477019966374,
+                  "elapsed_seconds": 0.13557160799973644
+                }
+              ]
+            },
+            "artifact_sha256": "f8a9c24955a08b9148f80cef6ea7118e3d777249433ad8bc166f87b430a10bba",
+            "prediction_sha256": "feae71e72c9c4fcded36a1bac8a79b1aa8f3de701cc48a763906c9e942e28930",
+            "moved_points_vs_fusion": 328,
+            "full_point_count": 1015280,
+            "parameters_attempt_preserved": true
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/run.json": "cbfef36d72b2bd9465691e53cc1f567a9463f48f0947ca5aa55ff0d93d6f74e5",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/prediction.json": "c66dbd4a53f39dbebd121d7137a892d08bfe2f9ddc91f3175fd9757d4e0c41a4",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/fused.npz": "557e751ced79ce94caeadefdcd8a2f6bf2f582ef9c26d33dcff7325aff92892b",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/anchors.npz": "89147f71817cdce1dffb6fae6c02355f0bd47d8f7f6db9af2390b3ad7e717810",
+          "outputs/stage5_v1/dtu_scan6_normal5/selected_artifacts/raw_predictions.npz": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d",
+          "data/stage5_fusion_tracks/dtu_scan6_normal5/observations.npz": "8cd1d1945eb316907d687d51b8f6b79878129a0a937ebdc0721c838c425ea922",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/colmap/input_mapping.json": "97afa1a62b6a01be33665d389acc088d20b6f4ede9cb67181788f55f19ce08be",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/vggt_raw/input_mapping.json": "77df59136452b5f134a2b5e1d54b8f2df600e03b3616b39e27ed510bed2db852"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "a1b606b7bf6dc4dc767d5c784c0b019513f9b85a1aae39eafc28d7f56cbb52bf",
+        "problem_sha256": "3ff9f8ee83203a6c1bd281095b7af1a19b461b4ef8ae4363c8c03d96f585f3f4",
+        "wall_seconds": 1.6595678419998876,
+        "peak_rss_gib": 0.17008590698242188,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 0.8869093678583647,
+        "after": 1.3302934720251245
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "raw": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 26225,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6131572056308467,
+        "mean_completeness_mm": 10.633203267552979,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.16358436606291707,
+            "recall": 0.052555203394714096,
+            "f1": 0.07955238971008724
+          },
+          "2": {
+            "precision": 0.3332316491897045,
+            "recall": 0.14326950781884382,
+            "f1": 0.20038538696859493
+          },
+          "5": {
+            "precision": 0.7179790276453766,
+            "recall": 0.3153836079314771,
+            "f1": 0.4382562487979405
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 26225,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6131572056308467,
+        "mean_completeness_mm": 10.633203267552979,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.16358436606291707,
+            "recall": 0.052555203394714096,
+            "f1": 0.07955238971008724
+          },
+          "2": {
+            "precision": 0.3332316491897045,
+            "recall": 0.14326950781884382,
+            "f1": 0.20038538696859493
+          },
+          "5": {
+            "precision": 0.7179790276453766,
+            "recall": 0.3153836079314771,
+            "f1": 0.4382562487979405
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 26225,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 3.6131572056308467,
+          "mean_completeness_mm": 10.633203267552979,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.16358436606291707,
+              "recall": 0.052555203394714096,
+              "f1": 0.07955238971008724
+            },
+            "2": {
+              "precision": 0.3332316491897045,
+              "recall": 0.14326950781884382,
+              "f1": 0.20038538696859493
+            },
+            "5": {
+              "precision": 0.7179790276453766,
+              "recall": 0.3153836079314771,
+              "f1": 0.4382562487979405
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "grouped_initial": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 26225,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6131572056308467,
+        "mean_completeness_mm": 10.633203267552979,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.16358436606291707,
+            "recall": 0.052555203394714096,
+            "f1": 0.07955238971008724
+          },
+          "2": {
+            "precision": 0.3332316491897045,
+            "recall": 0.14326950781884382,
+            "f1": 0.20038538696859493
+          },
+          "5": {
+            "precision": 0.7179790276453766,
+            "recall": 0.3153836079314771,
+            "f1": 0.4382562487979405
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 26225,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 3.6131572056308467,
+          "mean_completeness_mm": 10.633203267552979,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.16358436606291707,
+              "recall": 0.052555203394714096,
+              "f1": 0.07955238971008724
+            },
+            "2": {
+              "precision": 0.3332316491897045,
+              "recall": 0.14326950781884382,
+              "f1": 0.20038538696859493
+            },
+            "5": {
+              "precision": 0.7179790276453766,
+              "recall": 0.3153836079314771,
+              "f1": 0.4382562487979405
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "optimized": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 26225,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 3.6131572056308467,
+        "mean_completeness_mm": 10.633203267552979,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.16358436606291707,
+            "recall": 0.052555203394714096,
+            "f1": 0.07955238971008724
+          },
+          "2": {
+            "precision": 0.3332316491897045,
+            "recall": 0.14326950781884382,
+            "f1": 0.20038538696859493
+          },
+          "5": {
+            "precision": 0.7179790276453766,
+            "recall": 0.3153836079314771,
+            "f1": 0.4382562487979405
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 26225,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 3.6131572056308467,
+          "mean_completeness_mm": 10.633203267552979,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.16358436606291707,
+              "recall": 0.052555203394714096,
+              "f1": 0.07955238971008724
+            },
+            "2": {
+              "precision": 0.3332316491897045,
+              "recall": 0.14326950781884382,
+              "f1": 0.20038538696859493
+            },
+            "5": {
+              "precision": 0.7179790276453766,
+              "recall": 0.3153836079314771,
+              "f1": 0.4382562487979405
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_reduced3",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.29808864411171004,
+            "translation_direction_deg": 0.090216247835716,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.48988209286293216,
+            "translation_direction_deg": 0.20016030424708806,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.20149669029880812,
+            "translation_direction_deg": 0.14720125050850844,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.3298224757578168,
+          "median": 0.29808864411171004
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.14585926753043751,
+          "median": 0.14720125050850844
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.21366545503283182,
+          "image_ids": [
+            "001",
+            "002",
+            "003"
+          ],
+          "per_camera_error": [
+            0.15576602158985403,
+            0.298721714849352,
+            0.15317004804691026
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 689.3256358728918,
+            "R": [
+              [
+                0.9687509550702369,
+                -0.015645895761044994,
+                -0.24754149752382576
+              ],
+              [
+                0.007887764822603192,
+                0.9994470448744415,
+                -0.03230151169605002
+              ],
+              [
+                0.24791000426890206,
+                0.029339571189457663,
+                0.968338690410443
+              ]
+            ],
+            "t": [
+              190.95085005090908,
+              -1.2278052547076896,
+              24.307624307877774
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_reduced3",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.29808864411171004,
+            "translation_direction_deg": 0.090216247835716,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.48988209286293216,
+            "translation_direction_deg": 0.20016030424708806,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.20149669029880812,
+            "translation_direction_deg": 0.14720125050850844,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.3298224757578168,
+          "median": 0.29808864411171004
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.14585926753043751,
+          "median": 0.14720125050850844
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 0.21366545503283182,
+          "image_ids": [
+            "001",
+            "002",
+            "003"
+          ],
+          "per_camera_error": [
+            0.15576602158985403,
+            0.298721714849352,
+            0.15317004804691026
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 689.3256358728918,
+            "R": [
+              [
+                0.9687509550702369,
+                -0.015645895761044994,
+                -0.24754149752382576
+              ],
+              [
+                0.007887764822603192,
+                0.9994470448744415,
+                -0.03230151169605002
+              ],
+              [
+                0.24791000426890206,
+                0.029339571189457663,
+                0.968338690410443
+              ]
+            ],
+            "t": [
+              190.95085005090908,
+              -1.2278052547076896,
+              24.307624307877774
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 689.3256358728918,
+        "R": [
+          [
+            0.9687509550702369,
+            -0.015645895761044994,
+            -0.24754149752382576
+          ],
+          [
+            0.007887764822603192,
+            0.9994470448744415,
+            -0.03230151169605002
+          ],
+          [
+            0.24791000426890206,
+            0.029339571189457663,
+            0.968338690410443
+          ]
+        ],
+        "t": [
+          190.95085005090908,
+          -1.2278052547076896,
+          24.307624307877774
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_reduced3",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": false,
+              "status": "no_eligible_fusion_correspondence",
+              "upstream_reason": "no_eligible_correspondences"
+            },
+            "artifact_sha256": "a797009cde0dc73b5e68099fa55593c06fbc8aef63ae532a118dd3aca62f9f8b",
+            "prediction_sha256": "ea0b41b3505023847d39a340cabcd91f834b4be2043a528819f0a40f2b43bb88",
+            "moved_points_vs_fusion": 0,
+            "full_point_count": 609168,
+            "parameters_attempt_preserved": false
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/run.json": "53b5b69d1d1fd84945eee582be74b6988281cfd84c490ffe11542a5f5745e283",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/prediction.json": "b13fdff726e89b0942b14b9148b21e9517cafd0604a29433f03afb35fb56894a",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/fused.npz": "911fe7618b0811ab4f34c26506eb3c725976ebbad3854b95b6faaf8e23f35879",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_reduced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+          "outputs/stage5_v1/dtu_scan6_reduced3/selected_artifacts/raw_predictions.npz": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+          "data/stage5_fusion_tracks/dtu_scan6_reduced3/observations.npz": "528ef2b4a45270b106029bb884a8520f24e653e9b9482b912626d3b8d8910ae9",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap/input_mapping.json": "7da6c709506b994a5a4fd16dce1ed05a531cfc1fb735d8004946a3793dcc2914",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/vggt_raw/input_mapping.json": "c47194df7961c3dac6698ff0c3f619af2469668320f27c33f9682dc325c8844e"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "a797009cde0dc73b5e68099fa55593c06fbc8aef63ae532a118dd3aca62f9f8b",
+        "problem_sha256": null,
+        "wall_seconds": 0.7583489570001802,
+        "peak_rss_gib": 0.12095260620117188,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 0.21366545503283182,
+        "after": 0.21366545503283182
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "raw": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 109178,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.455713734619686,
+        "mean_completeness_mm": 3.723851317282418,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.09006393229405192,
+            "recall": 0.10669774995416088,
+            "f1": 0.09767774719141498
+          },
+          "2": {
+            "precision": 0.1952224807195589,
+            "recall": 0.2426277601697357,
+            "f1": 0.21635887711543836
+          },
+          "5": {
+            "precision": 0.7829507776291927,
+            "recall": 0.791172695602064,
+            "f1": 0.7870402643689138
+          }
+        },
+        "empty_output": false
+      },
+      "before_fused": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 109178,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.455713734619686,
+        "mean_completeness_mm": 3.723851317282418,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.09006393229405192,
+            "recall": 0.10669774995416088,
+            "f1": 0.09767774719141498
+          },
+          "2": {
+            "precision": 0.1952224807195589,
+            "recall": 0.2426277601697357,
+            "f1": 0.21635887711543836
+          },
+          "5": {
+            "precision": 0.7829507776291927,
+            "recall": 0.791172695602064,
+            "f1": 0.7870402643689138
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 109178,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 5.455713734619686,
+          "mean_completeness_mm": 3.723851317282418,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.09006393229405192,
+              "recall": 0.10669774995416088,
+              "f1": 0.09767774719141498
+            },
+            "2": {
+              "precision": 0.1952224807195589,
+              "recall": 0.2426277601697357,
+              "f1": 0.21635887711543836
+            },
+            "5": {
+              "precision": 0.7829507776291927,
+              "recall": 0.791172695602064,
+              "f1": 0.7870402643689138
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "grouped_initial": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 109178,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.455713734619686,
+        "mean_completeness_mm": 3.723851317282418,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.09006393229405192,
+            "recall": 0.10669774995416088,
+            "f1": 0.09767774719141498
+          },
+          "2": {
+            "precision": 0.1952224807195589,
+            "recall": 0.2426277601697357,
+            "f1": 0.21635887711543836
+          },
+          "5": {
+            "precision": 0.7829507776291927,
+            "recall": 0.791172695602064,
+            "f1": 0.7870402643689138
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 109178,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 5.455713734619686,
+          "mean_completeness_mm": 3.723851317282418,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.09006393229405192,
+              "recall": 0.10669774995416088,
+              "f1": 0.09767774719141498
+            },
+            "2": {
+              "precision": 0.1952224807195589,
+              "recall": 0.2426277601697357,
+              "f1": 0.21635887711543836
+            },
+            "5": {
+              "precision": 0.7829507776291927,
+              "recall": 0.791172695602064,
+              "f1": 0.7870402643689138
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "optimized": {
+        "retained_full_count": 609168,
+        "prediction_sample_count": 200000,
+        "precision_mask_count": 109178,
+        "recall_reference_count": 190885,
+        "mean_accuracy_mm": 5.455713734619686,
+        "mean_completeness_mm": 3.723851317282418,
+        "thresholds_mm": {
+          "1": {
+            "precision": 0.09006393229405192,
+            "recall": 0.10669774995416088,
+            "f1": 0.09767774719141498
+          },
+          "2": {
+            "precision": 0.1952224807195589,
+            "recall": 0.2426277601697357,
+            "f1": 0.21635887711543836
+          },
+          "5": {
+            "precision": 0.7829507776291927,
+            "recall": 0.791172695602064,
+            "f1": 0.7870402643689138
+          }
+        },
+        "empty_output": false,
+        "fixed_raw_roi_sensitivity": {
+          "retained_full_count": 609168,
+          "prediction_sample_count": 200000,
+          "precision_mask_count": 109178,
+          "recall_reference_count": 190885,
+          "mean_accuracy_mm": 5.455713734619686,
+          "mean_completeness_mm": 3.723851317282418,
+          "thresholds_mm": {
+            "1": {
+              "precision": 0.09006393229405192,
+              "recall": 0.10669774995416088,
+              "f1": 0.09767774719141498
+            },
+            "2": {
+              "precision": 0.1952224807195589,
+              "recall": 0.2426277601697357,
+              "f1": 0.21635887711543836
+            },
+            "5": {
+              "precision": 0.7829507776291927,
+              "recall": 0.791172695602064,
+              "f1": 0.7870402643689138
+            }
+          },
+          "empty_output": false
+        },
+        "sample_points_changed_roi_membership": 0
+      },
+      "poses_before": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_spaced3",
+        "method_id": "weighted_sparse_anchor_fusion_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "010"
+            ],
+            "rotation_deg": 0.17407165464217114,
+            "translation_direction_deg": 0.8670061398774271,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "020"
+            ],
+            "rotation_deg": 0.4876714699236406,
+            "translation_direction_deg": 0.4501881406908236,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "010",
+              "020"
+            ],
+            "rotation_deg": 0.504171372250379,
+            "translation_direction_deg": 0.2899213020162318,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.38863816560539693,
+          "median": 0.4876714699236406
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.5357051941948274,
+          "median": 0.4501881406908236
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 1.1913266487757983,
+          "image_ids": [
+            "001",
+            "010",
+            "020"
+          ],
+          "per_camera_error": [
+            1.2991332603420507,
+            1.5328834357616234,
+            0.4693598795069693
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 668.730036488551,
+            "R": [
+              [
+                0.9704985736344103,
+                -0.005927413655125151,
+                -0.2410339900116509
+              ],
+              [
+                -0.0012743973352329486,
+                0.9995576898005474,
+                -0.029711961766678768
+              ],
+              [
+                0.24110349330735045,
+                0.02914258958901337,
+                0.9700617583365704
+              ]
+            ],
+            "t": [
+              190.00402179357906,
+              -2.068660471988551,
+              24.652788769923376
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "poses_after": {
+        "schema_version": 1,
+        "scene_id": "dtu_scan6_spaced3",
+        "method_id": "joint_pose_sparse_structure_v1",
+        "data_kind": "real",
+        "run_status": "success",
+        "failure_reason": null,
+        "input_images": 3,
+        "registered_images": 3,
+        "registration_ratio": 1.0,
+        "input_pairs": 3,
+        "rotation_evaluated_pairs": 3,
+        "translation_evaluated_pairs": 3,
+        "pairs": [
+          {
+            "image_ids": [
+              "001",
+              "010"
+            ],
+            "rotation_deg": 0.17407165464217114,
+            "translation_direction_deg": 0.8670061398774271,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "001",
+              "020"
+            ],
+            "rotation_deg": 0.4876714699236406,
+            "translation_direction_deg": 0.4501881406908236,
+            "status": "evaluated",
+            "reason": null
+          },
+          {
+            "image_ids": [
+              "010",
+              "020"
+            ],
+            "rotation_deg": 0.504171372250379,
+            "translation_direction_deg": 0.2899213020162318,
+            "status": "evaluated",
+            "reason": null
+          }
+        ],
+        "rotation_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.38863816560539693,
+          "median": 0.4876714699236406
+        },
+        "translation_direction_deg_registered_subset": {
+          "count": 3,
+          "mean": 0.5357051941948274,
+          "median": 0.4501881406908236
+        },
+        "camera_center_ate": {
+          "status": "evaluated",
+          "reason": null,
+          "unit": "mm",
+          "rmse": 1.1913266487757983,
+          "image_ids": [
+            "001",
+            "010",
+            "020"
+          ],
+          "per_camera_error": [
+            1.2991332603420507,
+            1.5328834357616234,
+            0.4693598795069693
+          ],
+          "alignment": {
+            "scope": "evaluation_only_registered_subset",
+            "type": "Sim3",
+            "scale": 668.730036488551,
+            "R": [
+              [
+                0.9704985736344103,
+                -0.005927413655125151,
+                -0.2410339900116509
+              ],
+              [
+                -0.0012743973352329486,
+                0.9995576898005474,
+                -0.029711961766678768
+              ],
+              [
+                0.24110349330735045,
+                0.02914258958901337,
+                0.9700617583365704
+              ]
+            ],
+            "t": [
+              190.00402179357906,
+              -2.068660471988551,
+              24.652788769923376
+            ]
+          }
+        },
+        "dense_geometry": {
+          "status": "not_evaluated",
+          "reason": "pose evaluation only; dense geometry is not evaluated"
+        }
+      },
+      "evaluation_point_alignment_fixed_from_raw": {
+        "scale": 668.730036488551,
+        "R": [
+          [
+            0.9704985736344103,
+            -0.005927413655125151,
+            -0.2410339900116509
+          ],
+          [
+            -0.0012743973352329486,
+            0.9995576898005474,
+            -0.029711961766678768
+          ],
+          [
+            0.24110349330735045,
+            0.02914258958901337,
+            0.9700617583365704
+          ]
+        ],
+        "t": [
+          190.00402179357906,
+          -2.068660471988551,
+          24.652788769923376
+        ],
+        "source": "predicted and GT camera centers; evaluation only, no ICP"
+      },
+      "run": {
+        "scene_id": "dtu_scan6_spaced3",
+        "rows": [
+          {
+            "name": "optimized",
+            "pose_prior_strength": 1.0,
+            "solver": {
+              "accepted": false,
+              "status": "no_eligible_fusion_correspondence",
+              "upstream_reason": "fewer_than_three_shared_cameras"
+            },
+            "artifact_sha256": "42f01dd7b5043c8e46593d9325d5f3128434628db08610d7a2b726a4fc16e639",
+            "prediction_sha256": "e48d63df2d7dcf5eff88154ba18e6759d2c50527cdef180b3efe5ec35e28fa21",
+            "moved_points_vs_fusion": 0,
+            "full_point_count": 609168,
+            "parameters_attempt_preserved": false
+          }
+        ],
+        "input_hashes": {
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/run.json": "28a6d95895c56fb1ba1c166c5d22ab6fc76bc7208ce587aa2c95c60dcd5f7b4e",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/prediction.json": "f892c10e60c04b19b551df85c56bac9fbfc59fa99922913a3a652c683cb9e09d",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/fused.npz": "479aae70ccbb3e076b7790427dcc4ea4c82695608971127009faf3ff50461bcb",
+          "outputs/stage5_fusion_v1/frozen/dtu_scan6_spaced3/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+          "outputs/stage5_v1/dtu_scan6_spaced3/selected_artifacts/raw_predictions.npz": "ef65beeb125afbd3c744c4313a0c86fc5a0dd18211a3ab808eba2b68210ce8b7",
+          "data/stage5_fusion_tracks/dtu_scan6_spaced3/observations.npz": "a28bf0893e839953f28530c3fb4c719626259db89a756079e91e5007ed945e08",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/colmap/input_mapping.json": "626bd24edb37b70b19005f12430726b48542c9ab4f4be64e7ba3ca41e9ee36e4",
+          "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/vggt_raw/input_mapping.json": "d6af735488b8a7260d767f0e495a5c528bf4e0bed51e1a804becc2f84755a041"
+        },
+        "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+        "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+        "grouped_initial_sha256": "42f01dd7b5043c8e46593d9325d5f3128434628db08610d7a2b726a4fc16e639",
+        "problem_sha256": null,
+        "wall_seconds": 0.7558405229997334,
+        "peak_rss_gib": 0.12091064453125,
+        "device": "CPU",
+        "gpu_allocated_bytes": 0
+      },
+      "fixed_frame_camera_rmse_mm": {
+        "before": 1.191326648775798,
+        "after": 1.191326648775798
+      }
+    }
+  ],
+  "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+  "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+  "offline_evaluation_wall_seconds": 11.284433129000263,
+  "peak_evaluator_rss_gib": 0.4069175720214844,
+  "test_retuning": false
+}

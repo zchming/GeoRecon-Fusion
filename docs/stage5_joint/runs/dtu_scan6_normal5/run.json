@@ -1,0 +1,96 @@
+{
+  "scene_id": "dtu_scan6_normal5",
+  "rows": [
+    {
+      "name": "optimized",
+      "pose_prior_strength": 1.0,
+      "solver": {
+        "accepted": true,
+        "status": 2,
+        "message": "`ftol` termination condition is satisfied.",
+        "nfev": 8,
+        "residual_calls_including_finite_differences": 81,
+        "optimality": 0.028556411318639865,
+        "initial_objective": 1240.8408287884215,
+        "final_objective": 504.4477019966374,
+        "objective_terms_final": {
+          "reprojection": 12.909340173625074,
+          "raw_xyz_prior": 33.272549526147856,
+          "classical_xyz_prior": 457.55323053874577,
+          "pose_prior": 0.7125817581186915,
+          "positive_depth": 0.0
+        },
+        "initial_reprojection_rms_native_px": 2.760923220121811,
+        "final_reprojection_rms_native_px": 0.33515604880235145,
+        "min_observation_depth": 0.9631746259306364,
+        "unique_points": 328,
+        "observations": 1270,
+        "variables": 1008,
+        "normalization_raw_units": 1.0109132089889052,
+        "max_rotation_delta_deg": 0.40416702776632774,
+        "max_translation_delta_over_depth": 0.002772824053385217,
+        "wall_seconds": 0.13608413799966002,
+        "history": [
+          {
+            "iteration": 1,
+            "objective": 858.4498431751441,
+            "elapsed_seconds": 0.09082204700007424
+          },
+          {
+            "iteration": 2,
+            "objective": 645.468054637992,
+            "elapsed_seconds": 0.096670962999724
+          },
+          {
+            "iteration": 3,
+            "objective": 553.1294750352948,
+            "elapsed_seconds": 0.1034644159999516
+          },
+          {
+            "iteration": 4,
+            "objective": 506.28862265924334,
+            "elapsed_seconds": 0.11190627099995254
+          },
+          {
+            "iteration": 5,
+            "objective": 504.46312768545107,
+            "elapsed_seconds": 0.12118946100008543
+          },
+          {
+            "iteration": 6,
+            "objective": 504.44778611343384,
+            "elapsed_seconds": 0.12927487499973722
+          },
+          {
+            "iteration": 7,
+            "objective": 504.4477019966374,
+            "elapsed_seconds": 0.13557160799973644
+          }
+        ]
+      },
+      "artifact_sha256": "f8a9c24955a08b9148f80cef6ea7118e3d777249433ad8bc166f87b430a10bba",
+      "prediction_sha256": "feae71e72c9c4fcded36a1bac8a79b1aa8f3de701cc48a763906c9e942e28930",
+      "moved_points_vs_fusion": 328,
+      "full_point_count": 1015280,
+      "parameters_attempt_preserved": true
+    }
+  ],
+  "input_hashes": {
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/run.json": "cbfef36d72b2bd9465691e53cc1f567a9463f48f0947ca5aa55ff0d93d6f74e5",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/prediction.json": "c66dbd4a53f39dbebd121d7137a892d08bfe2f9ddc91f3175fd9757d4e0c41a4",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/fused.npz": "557e751ced79ce94caeadefdcd8a2f6bf2f582ef9c26d33dcff7325aff92892b",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_normal5/anchors.npz": "89147f71817cdce1dffb6fae6c02355f0bd47d8f7f6db9af2390b3ad7e717810",
+    "outputs/stage5_v1/dtu_scan6_normal5/selected_artifacts/raw_predictions.npz": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d",
+    "data/stage5_fusion_tracks/dtu_scan6_normal5/observations.npz": "8cd1d1945eb316907d687d51b8f6b79878129a0a937ebdc0721c838c425ea922",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/colmap/input_mapping.json": "97afa1a62b6a01be33665d389acc088d20b6f4ede9cb67181788f55f19ce08be",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/vggt_raw/input_mapping.json": "77df59136452b5f134a2b5e1d54b8f2df600e03b3616b39e27ed510bed2db852"
+  },
+  "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+  "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+  "grouped_initial_sha256": "a1b606b7bf6dc4dc767d5c784c0b019513f9b85a1aae39eafc28d7f56cbb52bf",
+  "problem_sha256": "3ff9f8ee83203a6c1bd281095b7af1a19b461b4ef8ae4363c8c03d96f585f3f4",
+  "wall_seconds": 1.6595678419998876,
+  "peak_rss_gib": 0.17008590698242188,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}

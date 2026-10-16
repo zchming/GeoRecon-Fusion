@@ -1,0 +1,37 @@
+{
+  "scene_id": "dtu_scan6_blur5",
+  "rows": [
+    {
+      "name": "optimized",
+      "pose_prior_strength": 1.0,
+      "solver": {
+        "accepted": false,
+        "status": "no_eligible_fusion_correspondence",
+        "upstream_reason": "predicted_camera_disagreement"
+      },
+      "artifact_sha256": "ea0889e3678a7ac59d3f925395c2be978a9b37e6150345afa6a7d86eb342a2b0",
+      "prediction_sha256": "fb8519b6625dad1f714165b9af4c148140fd7770408d3f99f43d2a4fbc8c8a2e",
+      "moved_points_vs_fusion": 0,
+      "full_point_count": 1015280,
+      "parameters_attempt_preserved": false
+    }
+  ],
+  "input_hashes": {
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/run.json": "06d8238c5849e8653390e07fbc8c6075ce1a57f8d8ea54e6063e27b51844b579",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/prediction.json": "12b416b34a1d1c0d3d9d9ac1819e8cd9831119fddc6a1f6437ae711493d728e0",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/fused.npz": "8eb5a8a017e448be431d6980d2f9c4e72ce09c043183d5f6f08b84e505fe16c7",
+    "outputs/stage5_fusion_v1/frozen/dtu_scan6_blur5/anchors.npz": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+    "outputs/stage5_v1/dtu_scan6_blur5/selected_artifacts/raw_predictions.npz": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291",
+    "data/stage5_fusion_tracks/dtu_scan6_blur5/observations.npz": "7e7e2b736961eb2238940a325c62d847c70b1db9fd2e1ccf92f43a0c405df0f7",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/colmap/input_mapping.json": "a72afffddee3dd317460bf98b6f48fd68fc33bd6178a6d294fc71bbb77f40502",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/vggt_raw/input_mapping.json": "91f376195cbf1c61f41edab3d4c6759e1f71d16222c230067b2a88fbfdf2da3a"
+  },
+  "protocol_sha256": "30f7294f1925c3ea18ff8e31c6fc7d70b9c819ef2f46937804bb549b5c7c7f87",
+  "rule_sha256": "3da54a4f94aedab02c66f5b1025e5945d9134e0b953fa7add59d2a51127b7460",
+  "grouped_initial_sha256": "ea0889e3678a7ac59d3f925395c2be978a9b37e6150345afa6a7d86eb342a2b0",
+  "problem_sha256": null,
+  "wall_seconds": 1.2480039550000583,
+  "peak_rss_gib": 0.150146484375,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0
+}

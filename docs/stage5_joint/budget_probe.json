@@ -1,0 +1,39 @@
+{
+  "scope": "synthetic forced solver budget failure, not natural DTU failure or candidate fit",
+  "record": {
+    "accepted": false,
+    "status": 0,
+    "message": "The maximum number of function evaluations is exceeded.",
+    "nfev": 1,
+    "residual_calls_including_finite_differences": 11,
+    "optimality": 0.7434791831365658,
+    "initial_objective": 0.10245351252097135,
+    "final_objective": 0.10245351252097135,
+    "objective_terms_final": {
+      "reprojection": 0.024930646875336082,
+      "raw_xyz_prior": 0.06198239961165264,
+      "classical_xyz_prior": 0.015540466033982625,
+      "pose_prior": 0.0,
+      "positive_depth": 0.0
+    },
+    "initial_reprojection_rms_native_px": 0.12898017130673628,
+    "final_reprojection_rms_native_px": 0.12898017130673628,
+    "min_observation_depth": 3.003,
+    "unique_points": 4,
+    "observations": 12,
+    "variables": 24,
+    "normalization_raw_units": 3.0,
+    "max_rotation_delta_deg": 0.0,
+    "max_translation_delta_over_depth": 0.0,
+    "wall_seconds": 0.004250503000093886,
+    "history": []
+  },
+  "attempt_preserved": true,
+  "fallback_bytes_equal": true,
+  "GT_read_guard_active": true,
+  "artifacts": {
+    "outputs/stage5_joint_v1/probes/synthetic_budget_failure/attempt.npz": "404d3af43da857e506782e3ab78376e6e1a4db3fe435516e316dad625526d9f9",
+    "outputs/stage5_joint_v1/probes/synthetic_budget_failure/fallback.npz": "24a539272beb4f0efb5262703af74e6283eec025ecf63f8834500069d1ded5e3",
+    "outputs/stage5_joint_v1/probes/synthetic_budget_failure/problem.npz": "d6703def752b9a5ce21aea5b1973c4c205d6fb5c9eaae2848232bfed74307f9c"
+  }
+}

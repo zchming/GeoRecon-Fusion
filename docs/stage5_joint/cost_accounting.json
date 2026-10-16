@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "previous_historical_eager_plus_fusion_seconds": 54.1588846460005,
+      "new_joint_process_body_seconds": 1.2311470279996684,
+      "new_solver_seconds": 0,
+      "accounted_historical_sum_seconds": 55.39003167400017
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "previous_historical_eager_plus_fusion_seconds": 52.24963069200237,
+      "new_joint_process_body_seconds": 1.6161242529997253,
+      "new_solver_seconds": 0.08723275200009084,
+      "accounted_historical_sum_seconds": 53.865754945002095
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "previous_historical_eager_plus_fusion_seconds": 55.0663058250027,
+      "new_joint_process_body_seconds": 0.7572414249998474,
+      "new_solver_seconds": 0,
+      "accounted_historical_sum_seconds": 55.82354725000255
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "previous_historical_eager_plus_fusion_seconds": 54.59124111500546,
+      "new_joint_process_body_seconds": 0.7485512690000178,
+      "new_solver_seconds": 0,
+      "accounted_historical_sum_seconds": 55.33979238400548
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "previous_historical_eager_plus_fusion_seconds": 50.358643942998015,
+      "new_joint_process_body_seconds": 1.2480039550000583,
+      "new_solver_seconds": 0,
+      "accounted_historical_sum_seconds": 51.60664789799807
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "previous_historical_eager_plus_fusion_seconds": 52.25316922800164,
+      "new_joint_process_body_seconds": 1.6595678419998876,
+      "new_solver_seconds": 0.13608413799966002,
+      "accounted_historical_sum_seconds": 53.912737070001526
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "previous_historical_eager_plus_fusion_seconds": 54.656274115001224,
+      "new_joint_process_body_seconds": 0.7583489570001802,
+      "new_solver_seconds": 0,
+      "accounted_historical_sum_seconds": 55.414623072001405
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "previous_historical_eager_plus_fusion_seconds": 53.99389589000134,
+      "new_joint_process_body_seconds": 0.7558405229997334,
+      "new_solver_seconds": 0,
+      "accounted_historical_sum_seconds": 54.749736413001074
+    }
+  ],
+  "new_joint_seconds_sum": 8.774825251999118,
+  "solver_only_seconds_sum": 0.22331688999975086,
+  "peak_joint_process_rss_gib": 0.17008590698242188,
+  "offline_evaluation_wall_seconds": 11.284433129000263,
+  "peak_evaluator_rss_gib": 0.4069175720214844,
+  "new_GPU_allocated_bytes": 0,
+  "fresh_online_end_to_end_wall_time": null,
+  "scope": "historical eager baseline including BA failures/diagnostics/selection, fusion and new joint body; not fresh online latency; new joint timing includes grouped-initial and attempt/accepted artifact writes; excludes process startup"
+}
