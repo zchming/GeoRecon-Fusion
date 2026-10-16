@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-16T08:42:37.404025+00:00",
+  "code": {
+    "code_commit": "b53f2c07a7afc7c60e660d0b697d7060ab701274",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "75d526edb20db9d7d43c6ac72113675f746eb0f2edb83fdc205a6eea7d274063",
+    "data_kind": "synthetic"
+  },
+  "commands": [
+    {
+      "command": [
+        "/home/zchming/.venvs/visual-geometry/bin/georecon",
+        "synthetic-demo",
+        "--config",
+        "configs/experiments/stage1_synthetic.json",
+        "--output",
+        "outputs/stage1/synthetic"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"exact_sim3\": {\n    \"registration_ratio\": 1.0,\n    \"rotation_evaluated_pairs\": 6,\n    \"translation_direction_deg\": {\n      \"count\": 6,\n      \"mean\": 1.42295607708599e-07,\n      \"median\": 0.0\n    },\n    \"ate_rmse\": 4.488343482654874e-16\n  },\n  \"perturbed_partial\": {\n    \"registration_ratio\": 0.75,\n    \"rotation_evaluated_pairs\": 3,\n    \"translation_direction_deg\": {\n      \"count\": 3,\n      \"mean\": 1.7058583277845354,\n      \"median\": 0.9166542563852673\n    },\n    \"ate_rmse\": 0.02004824929968101\n  },\n  \"no_reconstruction\": {\n    \"registration_ratio\": 0.0,\n    \"rotation_evaluated_pairs\": 0,\n    \"translation_direction_deg\": {\n      \"count\": 0,\n      \"mean\": null,\n      \"median\": null\n    },\n    \"ate_rmse\": null\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/zchming/.venvs/visual-geometry/bin/georecon",
+        "inspect-scene",
+        "data/dtu_smoke_pinned/manifest.json",
+        "--output",
+        "outputs/stage1/dtu_inspection.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"scene_id\": \"dtu_scan1_light3_smoke\",\n  \"kind\": \"real\",\n  \"image_ids\": [\n    \"001\",\n    \"002\",\n    \"003\"\n  ],\n  \"original_shapes\": [\n    [\n      1200,\n      1600,\n      3\n    ],\n    [\n      1200,\n      1600,\n      3\n    ],\n    [\n      1200,\n      1600,\n      3\n    ]\n  ],\n  \"processed_shapes\": [\n    [\n      600,\n      800,\n      3\n    ],\n    [\n      600,\n      800,\n      3\n    ],\n    [\n      600,\n      800,\n      3\n    ]\n  ],\n  \"checks\": \"hashes_dimensions_decode_preprocessing_passed\",\n  \"baseline_status\": \"not_run\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/zchming/.venvs/visual-geometry/bin/georecon",
+        "evaluate-poses",
+        "--prediction",
+        "data/dtu_smoke_pinned/prediction_not_run.json",
+        "--reference",
+        "data/dtu_smoke_pinned/reference.json",
+        "--output",
+        "outputs/stage1/dtu_notrun_evaluation.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"schema_version\": 1,\n  \"scene_id\": \"dtu_scan1_light3_smoke\",\n  \"method_id\": \"baseline_not_run\",\n  \"data_kind\": \"real\",\n  \"run_status\": \"not_run\",\n  \"failure_reason\": \"method has not been run\",\n  \"input_images\": 3,\n  \"registered_images\": 0,\n  \"registration_ratio\": 0.0,\n  \"input_pairs\": 3,\n  \"rotation_evaluated_pairs\": 0,\n  \"translation_evaluated_pairs\": 0,\n  \"pairs\": [\n    {\n      \"image_ids\": [\n        \"001\",\n        \"002\"\n      ],\n      \"rotation_deg\": null,\n      \"translation_direction_deg\": null,\n      \"status\": \"unavailable\",\n      \"reason\": \"unregistered_image\"\n    },\n    {\n      \"image_ids\": [\n        \"001\",\n        \"003\"\n      ],\n      \"rotation_deg\": null,\n      \"translation_direction_deg\": null,\n      \"status\": \"unavailable\",\n      \"reason\": \"unregistered_image\"\n    },\n    {\n      \"image_ids\": [\n        \"002\",\n        \"003\"\n      ],\n      \"rotation_deg\": null,\n      \"translation_direction_deg\": null,\n      \"status\": \"unavailable\",\n      \"reason\": \"unregistered_image\"\n    }\n  ],\n  \"rotation_deg_registered_subset\": {\n    \"count\": 0,\n    \"mean\": null,\n    \"median\": null\n  },\n  \"translation_direction_deg_registered_subset\": {\n    \"count\": 0,\n    \"mean\": null,\n    \"median\": null\n  },\n  \"camera_center_ate\": {\n    \"status\": \"unavailable\",\n    \"reason\": \"requires >=3 noncollinear registered cameras\",\n    \"unit\": \"mm\",\n    \"rmse\": null\n  },\n  \"dense_geometry\": {\n    \"status\": \"not_evaluated\",\n    \"reason\": \"stage1 pose protocol only\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "installed package import from /tmp",
+      "returncode": 0,
+      "stdout": "0.1.0 CPU imports; torch not imported\n",
+      "stderr": ""
+    }
+  ]
+}

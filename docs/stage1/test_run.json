@@ -1,0 +1,15 @@
+{
+  "checked_at_utc": "2026-10-16T08:41:48.932582+00:00",
+  "command": [
+    "/home/zchming/.venvs/visual-geometry/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "returncode": 0,
+  "output_file": "tests.txt",
+  "scope": "CPU geometry/protocol and synthetic integration tests; no real baseline"
+}

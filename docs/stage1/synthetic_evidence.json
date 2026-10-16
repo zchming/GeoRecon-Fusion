@@ -1,0 +1,430 @@
+{
+  "scope": "synthetic fixture checks, NOT benchmark",
+  "run": {
+    "scope": "synthetic_fixture_generation_and_evaluation_not_model_inference",
+    "config": {
+      "scene_id": "synthetic_geometry_smoke",
+      "seed": 42,
+      "image_wh": [
+        160,
+        120
+      ],
+      "focal_px": 130,
+      "points": 40,
+      "centers": [
+        [
+          -0.6,
+          -0.2,
+          0
+        ],
+        [
+          0.6,
+          -0.2,
+          0
+        ],
+        [
+          0.4,
+          0.5,
+          0.1
+        ],
+        [
+          -0.5,
+          0.4,
+          -0.1
+        ]
+      ],
+      "similarity_scale": 2.3,
+      "similarity_yaw_radians": 0.31,
+      "similarity_translation": [
+        1.2,
+        -0.8,
+        2.0
+      ],
+      "perturb_camera_index": 1,
+      "perturb_center": [
+        0.05,
+        0.02,
+        0.0
+      ],
+      "missing_camera_index": 3
+    },
+    "provenance": {
+      "code_commit": "b53f2c07a7afc7c60e660d0b697d7060ab701274",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "75d526edb20db9d7d43c6ac72113675f746eb0f2edb83fdc205a6eea7d274063",
+      "data_kind": "synthetic"
+    },
+    "versions": {
+      "python": "3.12.3",
+      "numpy": "2.5.2",
+      "Pillow": "12.3.0"
+    },
+    "total_seconds": 0.044750689001375576
+  },
+  "evaluations": {
+    "exact_sim3": {
+      "schema_version": 1,
+      "scene_id": "synthetic_geometry_smoke",
+      "method_id": "synthetic_exact_sim3",
+      "data_kind": "synthetic",
+      "run_status": "success",
+      "failure_reason": null,
+      "input_images": 4,
+      "registered_images": 4,
+      "registration_ratio": 1.0,
+      "input_pairs": 6,
+      "rotation_evaluated_pairs": 6,
+      "translation_evaluated_pairs": 6,
+      "pairs": [
+        {
+          "image_ids": [
+            "000",
+            "001"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.0,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "000",
+            "002"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.0,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "000",
+            "003"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.0,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "001",
+            "002"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.0,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "001",
+            "003"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.0,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "002",
+            "003"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 8.537736462515939e-07,
+          "status": "evaluated",
+          "reason": null
+        }
+      ],
+      "rotation_deg_registered_subset": {
+        "count": 6,
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "translation_direction_deg_registered_subset": {
+        "count": 6,
+        "mean": 1.42295607708599e-07,
+        "median": 0.0
+      },
+      "camera_center_ate": {
+        "status": "evaluated",
+        "reason": null,
+        "unit": "m",
+        "rmse": 4.488343482654874e-16,
+        "image_ids": [
+          "000",
+          "001",
+          "002",
+          "003"
+        ],
+        "per_camera_error": [
+          4.47545209131181e-16,
+          4.335559509131367e-16,
+          5.125396027766235e-16,
+          3.9350319887992495e-16
+        ],
+        "alignment": {
+          "scope": "evaluation_only_registered_subset",
+          "type": "Sim3",
+          "scale": 0.43478260869565205,
+          "R": [
+            [
+              0.952333569885713,
+              0.3050586364434434,
+              -2.776653527316885e-17
+            ],
+            [
+              -0.3050586364434433,
+              0.9523335698857127,
+              2.524000224231702e-17
+            ],
+            [
+              7.999256812104458e-18,
+              -2.2974321260796688e-17,
+              1.0
+            ]
+          ],
+          "t": [
+            -0.39076233682960904,
+            0.4904074868003052,
+            -0.8695652173913041
+          ]
+        }
+      },
+      "dense_geometry": {
+        "status": "not_evaluated",
+        "reason": "stage1 pose protocol only"
+      }
+    },
+    "perturbed_partial": {
+      "schema_version": 1,
+      "scene_id": "synthetic_geometry_smoke",
+      "method_id": "synthetic_perturbed_partial",
+      "data_kind": "synthetic",
+      "run_status": "partial",
+      "failure_reason": "one camera intentionally omitted",
+      "input_images": 4,
+      "registered_images": 3,
+      "registration_ratio": 0.75,
+      "input_pairs": 6,
+      "rotation_evaluated_pairs": 3,
+      "translation_evaluated_pairs": 3,
+      "pairs": [
+        {
+          "image_ids": [
+            "000",
+            "001"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.9166542563852673,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "000",
+            "002"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 0.0,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "000",
+            "003"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "001",
+            "002"
+          ],
+          "rotation_deg": 0.0,
+          "translation_direction_deg": 4.200920726968339,
+          "status": "evaluated",
+          "reason": null
+        },
+        {
+          "image_ids": [
+            "001",
+            "003"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "002",
+            "003"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        }
+      ],
+      "rotation_deg_registered_subset": {
+        "count": 3,
+        "mean": 0.0,
+        "median": 0.0
+      },
+      "translation_direction_deg_registered_subset": {
+        "count": 3,
+        "mean": 1.7058583277845354,
+        "median": 0.9166542563852673
+      },
+      "camera_center_ate": {
+        "status": "evaluated",
+        "reason": null,
+        "unit": "m",
+        "rmse": 0.02004824929968101,
+        "image_ids": [
+          "000",
+          "001",
+          "002"
+        ],
+        "per_camera_error": [
+          0.013389207487449406,
+          0.022421476185588412,
+          0.022886752248049543
+        ],
+        "alignment": {
+          "scope": "evaluation_only_registered_subset",
+          "type": "Sim3",
+          "scale": 0.4273831932194427,
+          "R": [
+            [
+              0.9466955833392652,
+              0.3221294595702443,
+              0.00028941822904083214
+            ],
+            [
+              -0.32212863005377584,
+              0.9466901883870741,
+              0.0032913388343971304
+            ],
+            [
+              0.0007862478022135891,
+              -0.0032091258354304004,
+              0.9999945416479863
+            ]
+          ],
+          "t": [
+            -0.3904377103831146,
+            0.4826366824134965,
+            -0.8555311703277534
+          ]
+        }
+      },
+      "dense_geometry": {
+        "status": "not_evaluated",
+        "reason": "stage1 pose protocol only"
+      }
+    },
+    "no_reconstruction": {
+      "schema_version": 1,
+      "scene_id": "synthetic_geometry_smoke",
+      "method_id": "synthetic_no_reconstruction",
+      "data_kind": "synthetic",
+      "run_status": "no_reconstruction",
+      "failure_reason": "intentional synthetic failure fixture",
+      "input_images": 4,
+      "registered_images": 0,
+      "registration_ratio": 0.0,
+      "input_pairs": 6,
+      "rotation_evaluated_pairs": 0,
+      "translation_evaluated_pairs": 0,
+      "pairs": [
+        {
+          "image_ids": [
+            "000",
+            "001"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "000",
+            "002"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "000",
+            "003"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "001",
+            "002"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "001",
+            "003"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        },
+        {
+          "image_ids": [
+            "002",
+            "003"
+          ],
+          "rotation_deg": null,
+          "translation_direction_deg": null,
+          "status": "unavailable",
+          "reason": "unregistered_image"
+        }
+      ],
+      "rotation_deg_registered_subset": {
+        "count": 0,
+        "mean": null,
+        "median": null
+      },
+      "translation_direction_deg_registered_subset": {
+        "count": 0,
+        "mean": null,
+        "median": null
+      },
+      "camera_center_ate": {
+        "status": "unavailable",
+        "reason": "requires >=3 noncollinear registered cameras",
+        "unit": "m",
+        "rmse": null
+      },
+      "dense_geometry": {
+        "status": "not_evaluated",
+        "reason": "stage1 pose protocol only"
+      }
+    }
+  }
+}
