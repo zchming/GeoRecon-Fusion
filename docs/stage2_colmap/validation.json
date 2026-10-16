@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-16T09:14:14.462606+00:00",
+  "code": {
+    "code_commit": "1d0bc8a9ee463a1b747482cec509e0c3df8ca019",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "d972e48ebec1a44dbc0a0fb70d84fcb09ac4c79475f0ddeb6bf229cc0d0e93ce",
+    "data_kind": "real"
+  },
+  "checks": {
+    "native_model_reloaded": "PASS",
+    "exported_camera_centers_match_native": "PASS",
+    "original_image_dimensions_restored": "PASS",
+    "point_ids_xyz_rgb_match_native_exactly": "PASS",
+    "no_prior_focal_length_in_database": "PASS",
+    "all_input_pairs_retained": "PASS",
+    "export_pixel_origin_roundtrip": "PASS"
+  },
+  "native_to_export_max_abs_processed_px": 2.2737367544323206e-13,
+  "reference_sha256": "c03e2d81f93e9c42657ef68a640ee7d31e566359f92de302987a2c583abf7f44",
+  "config_sha256": "852732f227f050c75607934a24dc30985f583990c5252a5f4b43f11162bb3bbf",
+  "final_prediction_sha256": "fbcb3b6b9223088937d9f3752078bf4e44dce9497724ce131df88da4a9212a48",
+  "final_native_log_sha256": "8a62f7375436b02499325da33a92a1882eb6caee134f1c65222083082c29f0c6"
+}

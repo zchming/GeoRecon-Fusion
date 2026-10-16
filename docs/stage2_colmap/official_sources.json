@@ -1,0 +1,16 @@
+{
+  "official_repository": "https://github.com/colmap/colmap",
+  "tag": "4.2.1",
+  "commit": "bd1fcf654d2dd8fefa1466999c190a246f83f4b9",
+  "official_python_docs": "https://colmap.github.io/pycolmap/index.html",
+  "official_example": "https://github.com/colmap/colmap/blob/4.2.1/python/examples/example.py",
+  "pixel_convention": "https://colmap.github.io/database.html",
+  "license": "https://github.com/colmap/colmap/blob/4.2.1/COPYING.txt",
+  "wheel": {
+    "filename": "pycolmap-4.2.1-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/a5/9a/a76e54e33730eceecb5da7eca38ad939cd6c69633339b3a53cf7299f7ea9/pycolmap-4.2.1-cp312-cp312-manylinux_2_28_x86_64.whl",
+    "pypi_sha256": "711cef7bd0d30326a5d75967043371c98667f24db305b8cd5cd19339d02a7073",
+    "bytes": 38191187
+  },
+  "note": "PyPI checksum is metadata of the official release wheel; code commit is the official tag, not a locally built checkout."
+}
