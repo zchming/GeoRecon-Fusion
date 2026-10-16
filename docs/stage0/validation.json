@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-10-16T08:27:30.496688+00:00",
+  "scope": "stage0_artifacts_only",
+  "checks": {
+    "script_syntax": "PASS (ast.parse)",
+    "json_parsing": "PASS",
+    "relative_links_in_readme_and_report": "PASS",
+    "gpu_matmul_audit": "PASS",
+    "pip_check_audit": "PASS",
+    "cpp_configure_build_execute_audit": "PASS",
+    "existing_checkpoint_sha256": "PASS",
+    "large_local_files_ignored": "PASS"
+  },
+  "not_run": [
+    "COLMAP",
+    "VGGT fresh forward",
+    "VGGT official BA",
+    "real benchmark",
+    "fusion"
+  ]
+}

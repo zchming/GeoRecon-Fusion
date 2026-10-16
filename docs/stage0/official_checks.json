@@ -1,0 +1,43 @@
+{
+  "vggt_remote_head": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/facebookresearch/vggt.git",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "a288dd0f14786c93483e45524328726ab7b1b4ce\tHEAD\n",
+    "stderr": ""
+  },
+  "colmap_4_2_1": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/colmap/colmap.git",
+      "refs/tags/4.2.1"
+    ],
+    "returncode": 0,
+    "stdout": "bd1fcf654d2dd8fefa1466999c190a246f83f4b9\trefs/tags/4.2.1\n",
+    "stderr": ""
+  },
+  "colmap_license": {
+    "url": "https://raw.githubusercontent.com/colmap/colmap/4.2.1/COPYING.txt",
+    "status": 200,
+    "sha256": "ab30dabb4f0a6731f980108f57aa160cc8f5cebae6984e01a5d109df99669233",
+    "bytes": 1909
+  },
+  "colmap_install_pinned": {
+    "url": "https://raw.githubusercontent.com/colmap/colmap/4.2.1/doc/install.rst",
+    "status": 200,
+    "sha256": "652eb54a83cef19876d58ef599270b78aca93bc07000231dd64ea8b7725a22fc",
+    "bytes": 18564
+  },
+  "colmap_cli_pinned": {
+    "url": "https://raw.githubusercontent.com/colmap/colmap/4.2.1/doc/cli.rst",
+    "status": 200,
+    "sha256": "3c40954f234e09d42008610656befe253505a6cf1c601d31d3e3347e2a452450",
+    "bytes": 22017
+  },
+  "checked_at_utc": "2026-10-16T08:27:21.801236+00:00"
+}

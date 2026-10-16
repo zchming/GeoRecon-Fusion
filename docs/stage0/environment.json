@@ -1,0 +1,276 @@
+{
+  "checked_at_utc": "2026-10-16T08:21:01.108408+00:00",
+  "scope": "stage0_environment_only",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/zchming/.venvs/visual-geometry/bin/python",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "wsl": true,
+  "cpu_count_visible": 24,
+  "disk_bytes": {
+    "total": 1081101176832,
+    "used": 18169466880,
+    "free": 1007939354624
+  },
+  "commands": {
+    "os": {
+      "command": [
+        "cat",
+        "/etc/os-release"
+      ],
+      "returncode": 0,
+      "stdout": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+      "stderr": ""
+    },
+    "cpu": {
+      "command": [
+        "lscpu"
+      ],
+      "returncode": 0,
+      "stdout": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  24\nOn-line CPU(s) list:                     0-23\nVendor ID:                               GenuineIntel\nModel name:                              13th Gen Intel(R) Core(TM) i7-13700KF\nCPU family:                              6\nModel:                                   183\nThread(s) per core:                      2\nCore(s) per socket:                      12\nSocket(s):                               1\nStepping:                                1\nBogoMIPS:                                6835.19\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize ibt flush_l1d arch_capabilities\nVirtualization:                          VT-x\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               576 KiB (12 instances)\nL1i cache:                               384 KiB (12 instances)\nL2 cache:                                24 MiB (12 instances)\nL3 cache:                                30 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-23\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Mitigation; Clear Register File\nVulnerability Retbleed:                  Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected\n",
+      "stderr": ""
+    },
+    "memory": {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "returncode": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:     16681775104  1092382720 15315197952     4419584   484458496 15589392384\nSwap:     4294967296           0  4294967296\n",
+      "stderr": ""
+    },
+    "gpu": {
+      "command": [
+        "nvidia-smi"
+      ],
+      "returncode": 0,
+      "stdout": "Fri Oct 16 16:21:01 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 615.78.05              KMD Version: 617.42        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4070 ...    On  |   00000000:01:00.0  On |                  N/A |\n|  0%   49C    P8             13W /  220W |     845MiB /  12282MiB |     30%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A              37      G   /Xwayland                             N/A      |\n+-----------------------------------------------------------------------------------------+\n",
+      "stderr": ""
+    },
+    "cmake": {
+      "command": [
+        "cmake",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "cmake version 3.28.3\n\nCMake suite maintained and supported by Kitware (kitware.com/cmake).\n",
+      "stderr": ""
+    },
+    "ninja": {
+      "command": [
+        "ninja",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "1.11.1\n",
+      "stderr": ""
+    },
+    "compiler": {
+      "command": [
+        "c++",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "colmap": {
+      "command": [
+        "colmap",
+        "-h"
+      ],
+      "error": "[Errno 2] No such file or directory: 'colmap'"
+    },
+    "cuda_compiler": {
+      "command": [
+        "nvcc",
+        "--version"
+      ],
+      "error": "[Errno 2] No such file or directory: 'nvcc'"
+    },
+    "pip_check": {
+      "command": [
+        "/home/zchming/.venvs/visual-geometry/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "stdout": "No broken requirements found.\n",
+      "stderr": ""
+    },
+    "colmap_build_dependencies": {
+      "command": [
+        "pkg-config",
+        "--modversion",
+        "eigen3",
+        "ceres-solver",
+        "sqlite3"
+      ],
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Package eigen3 was not found in the pkg-config search path.\nPerhaps you should add the directory containing `eigen3.pc'\nto the PKG_CONFIG_PATH environment variable\nPackage 'eigen3', required by 'virtual:world', not found\nPackage 'ceres-solver', required by 'virtual:world', not found\nPackage 'sqlite3', required by 'virtual:world', not found\n"
+    }
+  },
+  "imports": {
+    "numpy": {
+      "status": "ok",
+      "version": "2.5.2"
+    },
+    "scipy": {
+      "status": "ok",
+      "version": "1.18.1"
+    },
+    "cv2": {
+      "status": "ok",
+      "version": "5.0.0"
+    },
+    "PIL": {
+      "status": "ok",
+      "version": "12.3.0"
+    },
+    "torch": {
+      "status": "ok",
+      "version": "2.11.0+cu128"
+    },
+    "torchvision": {
+      "status": "ok",
+      "version": "0.26.0+cu128"
+    },
+    "matplotlib": {
+      "status": "ok",
+      "version": "3.11.2"
+    },
+    "pycolmap": {
+      "status": "unavailable",
+      "reason": "No module named 'pycolmap'"
+    },
+    "pyceres": {
+      "status": "unavailable",
+      "reason": "No module named 'pyceres'"
+    },
+    "lightglue": {
+      "status": "unavailable",
+      "reason": "No module named 'lightglue'"
+    },
+    "trimesh": {
+      "status": "unavailable",
+      "reason": "No module named 'trimesh'"
+    },
+    "huggingface_hub": {
+      "status": "unavailable",
+      "reason": "No module named 'huggingface_hub'"
+    },
+    "einops": {
+      "status": "unavailable",
+      "reason": "No module named 'einops'"
+    },
+    "safetensors": {
+      "status": "unavailable",
+      "reason": "No module named 'safetensors'"
+    }
+  },
+  "cuda": {
+    "available": true,
+    "runtime": "12.8",
+    "name": "NVIDIA GeForce RTX 4070 SUPER",
+    "capability": [
+      8,
+      9
+    ],
+    "free_total_bytes": [
+      11587813376,
+      12878086144
+    ],
+    "bf16_supported": true,
+    "matmul_check": "PASS (128x128, rtol=atol=1e-3); not model inference"
+  },
+  "compiler_probe": [
+    {
+      "command": [
+        "cmake",
+        "-S",
+        "/tmp/georecon-stage0-rvbo85p_",
+        "-B",
+        "/tmp/georecon-stage0-rvbo85p_/build",
+        "-G",
+        "Ninja"
+      ],
+      "returncode": 0,
+      "stdout": "-- The CXX compiler identification is GNU 13.3.0\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- Configuring done (0.2s)\n-- Generating done (0.0s)\n-- Build files have been written to: /tmp/georecon-stage0-rvbo85p_/build\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "cmake",
+        "--build",
+        "/tmp/georecon-stage0-rvbo85p_/build"
+      ],
+      "returncode": 0,
+      "stdout": "[1/2] Building CXX object CMakeFiles/probe.dir/main.cpp.o\n[2/2] Linking CXX executable probe\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/georecon-stage0-rvbo85p_/build/probe"
+      ],
+      "returncode": 0,
+      "stdout": "compiler probe passed\n",
+      "stderr": ""
+    }
+  ],
+  "existing_vggt": {
+    "commit": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "a288dd0f14786c93483e45524328726ab7b1b4ce\n",
+      "stderr": ""
+    },
+    "changes": {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "existing_checkpoint": {
+    "path": "experiment03_depth_reprojection/model.pt",
+    "bytes": 5026874952,
+    "sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0"
+  },
+  "legacy_dependency_import_probe": {
+    "command": [
+      "/home/zchming/.venvs/visual-geometry/bin/python",
+      "-c",
+      "import sys,json,importlib; sys.path.insert(0,sys.argv[1]); mods=['huggingface_hub','einops','safetensors']; print(json.dumps({m:getattr(importlib.import_module(m),'__version__','unknown') for m in mods}))",
+      "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/deps"
+    ],
+    "returncode": 0,
+    "stdout": "{\"huggingface_hub\": \"2.2.0\", \"einops\": \"0.8.2\", \"safetensors\": \"0.8.0\"}\n",
+    "stderr": ""
+  },
+  "network_head_only": {
+    "https://github.com/facebookresearch/vggt": {
+      "status": 200
+    },
+    "https://colmap.github.io/install.html": {
+      "status": 200
+    },
+    "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt": {
+      "status": 200
+    },
+    "https://www.eth3d.net/documentation": {
+      "error": "The read operation timed out"
+    },
+    "https://roboimagedata.compute.dtu.dk/?page_id=36": {
+      "status": 200
+    }
+  }
+}

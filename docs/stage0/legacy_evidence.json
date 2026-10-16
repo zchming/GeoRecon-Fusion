@@ -1,0 +1,102 @@
+{
+  "status": "historical_records_only_not_rerun_in_stage0",
+  "records": [
+    {
+      "source": "experiment03_depth_reprojection/performance.json",
+      "source_sha256": "8a5c023389d899c0bc3148f111c0cd57738730641244e4e2dca99b5b1dac8efd",
+      "content": {
+        "inference_seconds": 1.265346504000263,
+        "peak_allocated_bytes": 5694090752,
+        "peak_reserved_bytes": 6450839552,
+        "amp": "BF16",
+        "parameter_storage": "FP32; official checkpoint unchanged",
+        "cpu_offload": false,
+        "total_script_seconds": 8.609223835999728
+      }
+    },
+    {
+      "source": "experiment03_depth_reprojection/input_provenance.json",
+      "source_sha256": "46edead8a6f719b4ceed3d2c995f9fc874efdf4eade28f8b43b5d5ce881388e6",
+      "content": [
+        {
+          "path": "vggt_official/examples/llff_fern/images/001.png",
+          "sha256": "05402df1d7247e794768461571c188737dcae5fcb34400990f5751244a3e41c0",
+          "original_wh": [
+            706,
+            529
+          ],
+          "preprocessing": "official load_and_preprocess_images(mode=crop), width 518, height rounded to multiple of 14; center crop only if >518"
+        },
+        {
+          "path": "vggt_official/examples/llff_fern/images/002.png",
+          "sha256": "e17135aa9b506fac24a9529ee56c37ef5a52c55498998d3de64cf3e46210dccc",
+          "original_wh": [
+            706,
+            529
+          ],
+          "preprocessing": "official load_and_preprocess_images(mode=crop), width 518, height rounded to multiple of 14; center crop only if >518"
+        }
+      ]
+    },
+    {
+      "source": "experiment03_camera_geometry/performance.json",
+      "source_sha256": "56f3cab9145d30602a65d84874722fdbfe492b7e74230a7eb51936aa4a04cfdc",
+      "content": {
+        "inference_seconds": 0.8426115729998855,
+        "peak_allocated_bytes": 5694088192,
+        "peak_reserved_bytes": 6442450944,
+        "amp": "BF16",
+        "parameters": "FP32",
+        "cpu_offload": false,
+        "timing_scope": "One synchronized real forward including a metadata-only input hook; excludes loading/preprocessing"
+      }
+    },
+    {
+      "source": "experiment03_camera_geometry/input_actual.json",
+      "source_sha256": "5cf040af4b8cac03ed61ad34d3ffbdcb7657b53b8bf973559d318c57b65cc110",
+      "content": {
+        "shape": [
+          1,
+          2,
+          3,
+          392,
+          518
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0"
+      }
+    },
+    {
+      "source": "experiment05_camera_rays/validation.json",
+      "source_sha256": "01336ad773c410253db8d4f1544f111606ecdbf74ee2e1beac74834f5b49e9e8",
+      "content": {
+        "passed": true,
+        "checks": {
+          "original_rgb_preprocessing_matches_cache": true,
+          "official_source_unchanged": true,
+          "cached_predictions_unchanged": true,
+          "all_view_checks_passed": true,
+          "selected_count_total": true,
+          "five_nonempty_pngs_verified": true
+        },
+        "figures": [
+          "01_camera_rays_view1.png",
+          "02_camera_rays_view2.png",
+          "03_world_rays_3d.png",
+          "04_ray_point_consistency.png",
+          "05_depth_point_vs_point_head.png"
+        ]
+      }
+    }
+  ],
+  "official_source_files": {
+    "README.md": "56426b9aea25174ccbc4c2c37a3a22107fd8b5ac9dc5a8bf008e7457402ed3bd",
+    "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b",
+    "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+    "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+    "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef",
+    "pyproject.toml": "e12fc8148c698f5134f3783f0f59f620377600af371eb05f2de43487bc782634",
+    "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+    "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628"
+  }
+}
