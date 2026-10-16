@@ -118,10 +118,17 @@ def run_colmap(manifest_path, config_path, output):
     except OSError as exc:
         process = {"returncode": None, "timed_out": False, "error": str(exc), "wall_seconds": time.perf_counter()-start-preprocessing_seconds}
     write_json(output/"process.json", process)
-    state = read_json(output/"worker_state.json") if (output/"worker_state.json").exists() else {}
+    state_error = None
+    try:
+        state = read_json(output/"worker_state.json") if (output/"worker_state.json").exists() else {}
+        if not isinstance(state, dict):
+            raise ValueError("worker state must be an object")
+    except (ValueError, OSError) as exc:
+        state_error = f"cannot read worker state: {exc}"
+        state = {"error": state_error}
     if process["timed_out"]:
         result.update(status="timeout", failure_reason="worker exceeded configured wall-time budget; no incomplete model promoted")
-    elif process["returncode"] != 0:
+    elif process["returncode"] != 0 or state_error:
         result.update(status="oom" if state.get("failure_kind") == "oom" else "process_error", failure_reason=state.get("error", process.get("error", f"worker exited {process['returncode']}; see worker.log")))
     else:
         try:

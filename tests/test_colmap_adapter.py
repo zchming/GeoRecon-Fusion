@@ -111,6 +111,16 @@ class ColmapAdapterTests(unittest.TestCase):
         self.assertEqual(result["status"], "process_error")
         self.assertIn("IDs/order", result["failure_reason"])
 
+    def test_truncated_worker_state_still_saves_failure(self):
+        def corrupt(command, timeout, log_path, env):
+            Path(log_path).write_text("simulated interrupted state write")
+            (Path(log_path).parent/"worker_state.json").write_text('{"truncated":')
+            return {"returncode": 0, "timed_out": False, "wall_seconds": .01}
+        with patch("georecon.baselines.colmap.execute_worker", side_effect=corrupt):
+            result = run_colmap(self.manifest, self.config, self.root/"bad_state")
+        self.assertEqual(result["status"], "process_error")
+        self.assertIn("cannot read worker state", result["failure_reason"])
+
     def test_existing_output_is_never_overwritten(self):
         out = self.root/"existing"
         out.mkdir()

@@ -75,7 +75,8 @@ def main(output):
     state = {"status": "starting", "timing_seconds": {}}
     def save():
         state["peak_rss_bytes"] = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024
-        write_json(output/"worker_state.json", serializable(state))
+        write_json(output/"worker_state.tmp.json", serializable(state))
+        (output/"worker_state.tmp.json").replace(output/"worker_state.json")
     save()
     try:
         start = time.perf_counter()
