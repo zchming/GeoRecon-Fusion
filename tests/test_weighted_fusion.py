@@ -21,6 +21,15 @@ class WeightedFusionTest(unittest.TestCase):
         a={k:v[:0] for k,v in self.anchors().items()}
         out,f=blend(p,a,1);np.testing.assert_array_equal(out,p);self.assertEqual(len(f),0)
 
+    def test_source_float32_and_untouched_bytes_preserved(self):
+        p=np.array([[.123456789,2,3],[1,0,1],[.876543219,8,9]],dtype=np.float32)
+        out,_=blend(p,self.anchors(),.5)
+        self.assertEqual(out.dtype,p.dtype)
+        self.assertEqual(out[[0,2]].tobytes(),p[[0,2]].tobytes())
+        empty={k:v[:0] for k,v in self.anchors().items()}
+        untouched,_=blend(p,empty,.5)
+        self.assertEqual(untouched.tobytes(),p.tobytes())
+
     def test_invalid_weight_or_strength_rejected(self):
         p=np.zeros((2,3))
         for value in [-1,np.nan,np.inf]:
@@ -39,6 +48,16 @@ class WeightedFusionTest(unittest.TestCase):
         sim,record=predicted_alignment(a,b,{'max_center_rmse_over_raw_center_diameter':.1,'max_camera_rotation_disagreement_deg':5})
         self.assertEqual(record['status'],'aligned');self.assertAlmostEqual(sim.scale,2)
         np.testing.assert_allclose(sim.apply(centers),2*centers+[3,4,5],atol=1e-12)
+
+    def test_nonidentity_rotation_gauge_alignment(self):
+        centers=np.array([[0,0,0],[1,0,0],[0,1,0],[1,1,0]],float)
+        rotation=np.array([[0.,-1,0],[1,0,0],[0,0,1]])
+        target=2*centers@rotation.T+[3,4,5]
+        a=self.prediction(centers);b=self.prediction(target,rotation.T)
+        sim,record=predicted_alignment(a,b,{'max_center_rmse_over_raw_center_diameter':.1,'max_camera_rotation_disagreement_deg':5})
+        self.assertEqual(record['status'],'aligned')
+        np.testing.assert_allclose(sim.R,rotation,atol=1e-12)
+        np.testing.assert_allclose(sim.apply(centers),target,atol=1e-12)
 
     def test_degenerate_missing_and_disagreement_fallback(self):
         cfg={'max_center_rmse_over_raw_center_diameter':.1,'max_camera_rotation_disagreement_deg':5}

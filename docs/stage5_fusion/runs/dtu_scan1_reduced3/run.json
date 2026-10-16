@@ -1,0 +1,111 @@
+{
+  "scene_id": "dtu_scan1_reduced3",
+  "source_shape": [
+    3,
+    392,
+    518,
+    3
+  ],
+  "input_hashes": {
+    "outputs/stage5_v1/dtu_scan1_reduced3/prediction.json": "845f1850b52dcec9ac0b984b87f00cf92c6562765c14b4173382c24ecbc5bc08",
+    "outputs/stage5_v1/dtu_scan1_reduced3/decision.json": "fa411e948c78cc288b8f020146e0c66bbffc50a6c900be7f7029afd25b7763fa",
+    "outputs/stage5_v1/dtu_scan1_reduced3/selected_artifacts/raw_predictions.npz": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/prediction.json": "29d0bb3af6e6dd7e706ef3c9472ddd230c52558fb1fc5814792e6711f50c6f10",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/input_mapping.json": "4a0bd605a5e256e681eba226339a1b4e9900e5e858fb0f92ead1d63d4a1a6b98",
+    "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/vggt_raw/input_mapping.json": "1393155e3d016f47851ba5bc46aec970b393a7f4b484c03ccc76bcd32fb441e8",
+    "data/stage5_fusion_tracks/dtu_scan1_reduced3/observations.npz": "3316b724493259b575efc9666a5c6d4e99bd96d839f561afb681936ab5e4c691"
+  },
+  "alignment": {
+    "status": "aligned",
+    "source": "predicted camera orientations plus centers; closed form; no GT/ICP",
+    "scale": 0.03829903650919292,
+    "R": [
+      [
+        0.9980140657887745,
+        -0.004451032188976296,
+        -0.06283400990078769
+      ],
+      [
+        0.007597055186350618,
+        0.9987243733704207,
+        0.04991904234215005
+      ],
+      [
+        0.06253166590020715,
+        -0.050297259848967414,
+        0.9967747872069356
+      ]
+    ],
+    "t": [
+      0.1464581128328623,
+      -0.1202163720883551,
+      0.03262327737493155
+    ],
+    "shared_ids": [
+      "001",
+      "002",
+      "003"
+    ],
+    "center_rmse": 0.00396687492286553,
+    "raw_center_diameter": 0.3834519687802047,
+    "relative_center_rmse": 0.010345167702449193,
+    "rotation_disagreement_deg": [
+      0.5347805137402072,
+      0.12887409699099464,
+      0.6155428781227963
+    ]
+  },
+  "correspondence_counts": {
+    "observations": 2071,
+    "track_or_error_rejected": 4,
+    "out_of_grid": 0,
+    "geometry_rejected": 2067,
+    "eligible_observations": 0,
+    "collision_discarded": 0,
+    "eligible_grid_points": 0
+  },
+  "rows": [
+    {
+      "name": "fused",
+      "strength": 0.5,
+      "sha256": "7be923486a99895f09de5ec03f5b2be9146ad2ab72dc4ce9d49e312faa67344c",
+      "point_count": 609168,
+      "eligible_points": 0,
+      "moved_points": 0,
+      "fraction_min": null,
+      "fraction_max": null,
+      "max_displacement_raw_units": 0.0
+    }
+  ],
+  "unweighted_sha256": "f16b3a9c846377f20ed4c3d0d167847375869596f464720053faa7cab33edf63",
+  "anchors_sha256": "f2872262fe7943cf03089cefafc91c583346051da0db910fab810e0236e7331c",
+  "protocol_sha256": "dc95d541bb12979cfe11430f30f2bf58f4a2174a6eb3ffd39a42cee3d5c81439",
+  "rule_sha256": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+  "fallback": true,
+  "fallback_reason": "no_eligible_correspondences",
+  "point_deletion": false,
+  "cameras_unchanged": true,
+  "device": "CPU",
+  "gpu_allocated_bytes": 0,
+  "wall_seconds": 0.797968347999813,
+  "peak_rss_gib": 0.08933258056640625,
+  "track_export": {
+    "scene_id": "dtu_scan1_reduced3",
+    "upstream_status": "success",
+    "observations": 2071,
+    "files_sha256": {
+      "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/prediction.json": "29d0bb3af6e6dd7e706ef3c9472ddd230c52558fb1fc5814792e6711f50c6f10",
+      "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/input_mapping.json": "4a0bd605a5e256e681eba226339a1b4e9900e5e858fb0f92ead1d63d4a1a6b98",
+      "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/sparse_points.npz": "661f56c57757f9aea4d345da80a8d186502eb171121ce9dba4a28bdac8f63fb4",
+      "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/sparse/0/cameras.bin": "71e6009321703dbac8289287d2d2c8098b68c69d84c0de3e4bf0aee10d065f72",
+      "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/sparse/0/images.bin": "ce5bd5663eb5311e5b9d1050a7da02c0219a63fddda9ab903d467272a541ca84",
+      "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/sparse/0/points3D.bin": "29b4cc3c026912d04882eb366d7ae8fd8fa4f612679d30d101f6e47f02d49367"
+    },
+    "artifact_sha256": "3316b724493259b575efc9666a5c6d4e99bd96d839f561afb681936ab5e4c691",
+    "pycolmap": "4.2.1",
+    "wall_seconds": 0.02238956800010783,
+    "peak_rss_gib": 0.0930023193359375,
+    "device": "CPU",
+    "gpu_allocated_bytes": 0
+  }
+}

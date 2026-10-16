@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "point_count": 1015280,
+      "changed_grid_points": 0,
+      "fallback": true,
+      "fallback_reason": "predicted_camera_disagreement",
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "point_count": 1015280,
+      "changed_grid_points": 174,
+      "fallback": false,
+      "fallback_reason": null,
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "point_count": 609168,
+      "changed_grid_points": 0,
+      "fallback": true,
+      "fallback_reason": "no_eligible_correspondences",
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "point_count": 609168,
+      "changed_grid_points": 0,
+      "fallback": true,
+      "fallback_reason": "fewer_than_three_shared_cameras",
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "point_count": 1015280,
+      "changed_grid_points": 0,
+      "fallback": true,
+      "fallback_reason": "predicted_camera_disagreement",
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "point_count": 1015280,
+      "changed_grid_points": 328,
+      "fallback": false,
+      "fallback_reason": null,
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "point_count": 609168,
+      "changed_grid_points": 0,
+      "fallback": true,
+      "fallback_reason": "no_eligible_correspondences",
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "point_count": 609168,
+      "changed_grid_points": 0,
+      "fallback": true,
+      "fallback_reason": "fewer_than_three_shared_cameras",
+      "unaffected_float32_bytes_preserved": true,
+      "camera_and_input_hashes_verified": true,
+      "gt_read_guard_and_access_log_checked": true
+    }
+  ],
+  "prior_filter_metrics_and_failures_recomputed": true,
+  "dev_fitted_rule_reproduced_unchanged_after_dtype_fix": true,
+  "inference_gt_alignment": false,
+  "joint_optimization": false,
+  "new_model_inference": false,
+  "rule_sha256": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b",
+  "generation_script_commit": "89a0884",
+  "generation_script_sha256": "9592e9657218830a9eec63ed44be16a5135a82f6efecebc0b06a5d9633bb2a9c"
+}

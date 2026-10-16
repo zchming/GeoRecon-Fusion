@@ -1,12 +1,14 @@
 test_degenerate_missing_and_disagreement_fallback (test_weighted_fusion.WeightedFusionTest.test_degenerate_missing_and_disagreement_fallback) ... ok
 test_invalid_weight_or_strength_rejected (test_weighted_fusion.WeightedFusionTest.test_invalid_weight_or_strength_rejected) ... ok
 test_no_anchor_is_exact_fallback (test_weighted_fusion.WeightedFusionTest.test_no_anchor_is_exact_fallback) ... ok
+test_nonidentity_rotation_gauge_alignment (test_weighted_fusion.WeightedFusionTest.test_nonidentity_rotation_gauge_alignment) ... ok
 test_observed_track_half_pixel_mapping_and_collision (test_weighted_fusion.WeightedFusionTest.test_observed_track_half_pixel_mapping_and_collision) ... ok
 test_predicted_sim3_without_ground_truth (test_weighted_fusion.WeightedFusionTest.test_predicted_sim3_without_ground_truth) ... ok
+test_source_float32_and_untouched_bytes_preserved (test_weighted_fusion.WeightedFusionTest.test_source_float32_and_untouched_bytes_preserved) ... ok
 test_unsafe_geometry_does_not_invent_correspondence (test_weighted_fusion.WeightedFusionTest.test_unsafe_geometry_does_not_invent_correspondence) ... ok
 test_weighted_closed_form_and_no_evidence_preservation (test_weighted_fusion.WeightedFusionTest.test_weighted_closed_form_and_no_evidence_preservation) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 0.021s
+Ran 9 tests in 0.034s
 
 OK

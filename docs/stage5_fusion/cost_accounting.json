@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "previous_eager_accounted_seconds": 52.9885609220006,
+      "new_native_track_export_seconds": 0.01461627300022883,
+      "new_fusion_seconds": 1.155707450999671,
+      "sum_historical_and_incremental_seconds": 54.1588846460005,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 15.949239672001568,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "previous_eager_accounted_seconds": 50.734003052002095,
+      "new_native_track_export_seconds": 0.04091200500033665,
+      "new_fusion_seconds": 1.4747156349999386,
+      "sum_historical_and_incremental_seconds": 52.24963069200237,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 13.444244981001248,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "previous_eager_accounted_seconds": 54.24594790900278,
+      "new_native_track_export_seconds": 0.02238956800010783,
+      "new_fusion_seconds": 0.797968347999813,
+      "sum_historical_and_incremental_seconds": 55.0663058250027,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 12.845671081002365,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "previous_eager_accounted_seconds": 53.88933570800532,
+      "new_native_track_export_seconds": 0.0027932170000894985,
+      "new_fusion_seconds": 0.6991121900000508,
+      "sum_historical_and_incremental_seconds": 54.59124111500546,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 12.093837837004685,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "previous_eager_accounted_seconds": 49.18653388399821,
+      "new_native_track_export_seconds": 0.014222866000181966,
+      "new_fusion_seconds": 1.157887192999624,
+      "sum_historical_and_incremental_seconds": 50.358643942998015,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 12.745320219997666,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "previous_eager_accounted_seconds": 50.69432048900205,
+      "new_native_track_export_seconds": 0.04106177299991032,
+      "new_fusion_seconds": 1.5177869659996759,
+      "sum_historical_and_incremental_seconds": 52.25316922800164,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 13.200517671000853,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "previous_eager_accounted_seconds": 53.83568262200083,
+      "new_native_track_export_seconds": 0.023097481000149855,
+      "new_fusion_seconds": 0.797494012000243,
+      "sum_historical_and_incremental_seconds": 54.656274115001224,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 12.143700377997448,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "previous_eager_accounted_seconds": 53.295910341001445,
+      "new_native_track_export_seconds": 0.0029122649998498673,
+      "new_fusion_seconds": 0.6950732840000455,
+      "sum_historical_and_incremental_seconds": 53.99389589000134,
+      "minimal_raw_colmap_reuse_branch_historical_seconds": 12.095042873002967,
+      "scope": "historical eager selection/diagnostics/all branches (including BA OOM) plus new export/fusion; not new online wall time; prior optional filtering is not executed by fusion"
+    }
+  ],
+  "historical_eager_total_seconds": 418.87029492701333,
+  "new_track_export_seconds_sum": 0.1620054480008548,
+  "new_frozen_fusion_seconds_sum": 8.295745078999062,
+  "offline_evaluation_wall_seconds": 8.90747856500002,
+  "peak_fusion_rss_gib": 0.12046051025390625,
+  "peak_export_rss_gib": 0.0963287353515625,
+  "peak_evaluator_rss_gib": 0.3086738586425781,
+  "additional_gpu_allocated_bytes": 0,
+  "fresh_end_to_end_wall_time": null
+}

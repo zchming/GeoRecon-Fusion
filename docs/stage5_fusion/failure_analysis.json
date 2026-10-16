@@ -1,0 +1,260 @@
+{
+  "rows": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": true,
+      "reason": "predicted_camera_disagreement",
+      "affected_points": 0,
+      "distance_improved": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_displacement_examples": []
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": false,
+      "reason": null,
+      "affected_points": 174,
+      "distance_improved": 90,
+      "distance_worsened": 84,
+      "good_to_bad_2mm": 67,
+      "bad_to_good_2mm": 63,
+      "mean_before_mm": 2.8957324511543416,
+      "mean_after_mm": 2.2250516625115395,
+      "worst_displacement_examples": [
+        {
+          "source_point_index": 744825,
+          "colmap_point_id": 949,
+          "distance_before_mm": 1.3028364423979666,
+          "distance_after_mm": 3.9502981659155547,
+          "distance_change_mm": 2.647461723517588
+        },
+        {
+          "source_point_index": 754140,
+          "colmap_point_id": 63,
+          "distance_before_mm": 1.0964250799558803,
+          "distance_after_mm": 3.709673419150924,
+          "distance_change_mm": 2.613248339195044
+        },
+        {
+          "source_point_index": 744299,
+          "colmap_point_id": 224,
+          "distance_before_mm": 1.232714036330152,
+          "distance_after_mm": 3.693940006146361,
+          "distance_change_mm": 2.4612259698162093
+        },
+        {
+          "source_point_index": 766577,
+          "colmap_point_id": 343,
+          "distance_before_mm": 1.5035647495664022,
+          "distance_after_mm": 3.9115906770737334,
+          "distance_change_mm": 2.4080259275073312
+        },
+        {
+          "source_point_index": 748927,
+          "colmap_point_id": 198,
+          "distance_before_mm": 1.3198633509982463,
+          "distance_after_mm": 3.70399194783469,
+          "distance_change_mm": 2.384128596836444
+        },
+        {
+          "source_point_index": 762426,
+          "colmap_point_id": 74,
+          "distance_before_mm": 1.5566534688483684,
+          "distance_after_mm": 3.7451528248190225,
+          "distance_change_mm": 2.188499355970654
+        },
+        {
+          "source_point_index": 756718,
+          "colmap_point_id": 150,
+          "distance_before_mm": 1.6683425813310875,
+          "distance_after_mm": 3.7162670390787937,
+          "distance_change_mm": 2.0479244577477065
+        },
+        {
+          "source_point_index": 762957,
+          "colmap_point_id": 76,
+          "distance_before_mm": 1.660489434120405,
+          "distance_after_mm": 3.6739973956043723,
+          "distance_change_mm": 2.0135079614839673
+        },
+        {
+          "source_point_index": 761409,
+          "colmap_point_id": 327,
+          "distance_before_mm": 1.1692327752262632,
+          "distance_after_mm": 3.180792465040265,
+          "distance_change_mm": 2.0115596898140016
+        },
+        {
+          "source_point_index": 776395,
+          "colmap_point_id": 643,
+          "distance_before_mm": 1.701487226910637,
+          "distance_after_mm": 3.67658963497007,
+          "distance_change_mm": 1.9751024080594333
+        }
+      ]
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": true,
+      "reason": "no_eligible_correspondences",
+      "affected_points": 0,
+      "distance_improved": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_displacement_examples": []
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": true,
+      "reason": "fewer_than_three_shared_cameras",
+      "affected_points": 0,
+      "distance_improved": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_displacement_examples": []
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": true,
+      "reason": "predicted_camera_disagreement",
+      "affected_points": 0,
+      "distance_improved": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_displacement_examples": []
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": false,
+      "reason": null,
+      "affected_points": 328,
+      "distance_improved": 327,
+      "distance_worsened": 1,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 50,
+      "mean_before_mm": 7.002201669420861,
+      "mean_after_mm": 3.62974149945778,
+      "worst_displacement_examples": [
+        {
+          "source_point_index": 567459,
+          "colmap_point_id": 1272,
+          "distance_before_mm": 4.04064882555074,
+          "distance_after_mm": 4.054037118176011,
+          "distance_change_mm": 0.013388292625271525
+        },
+        {
+          "source_point_index": 567973,
+          "colmap_point_id": 1163,
+          "distance_before_mm": 4.892698461008711,
+          "distance_after_mm": 4.680214687716326,
+          "distance_change_mm": -0.21248377329238544
+        },
+        {
+          "source_point_index": 574198,
+          "colmap_point_id": 1220,
+          "distance_before_mm": 2.107720137238393,
+          "distance_after_mm": 1.8728642788220933,
+          "distance_change_mm": -0.23485585841629986
+        },
+        {
+          "source_point_index": 577817,
+          "colmap_point_id": 1254,
+          "distance_before_mm": 3.154894884831401,
+          "distance_after_mm": 2.729819097779934,
+          "distance_change_mm": -0.4250757870514672
+        },
+        {
+          "source_point_index": 574194,
+          "colmap_point_id": 1218,
+          "distance_before_mm": 1.1464488283261913,
+          "distance_after_mm": 0.5384148507097358,
+          "distance_change_mm": -0.6080339776164555
+        },
+        {
+          "source_point_index": 576784,
+          "colmap_point_id": 1287,
+          "distance_before_mm": 1.527010019555612,
+          "distance_after_mm": 0.7676879270353378,
+          "distance_change_mm": -0.7593220925202742
+        },
+        {
+          "source_point_index": 578344,
+          "colmap_point_id": 1256,
+          "distance_before_mm": 4.033484039565493,
+          "distance_after_mm": 3.136569042532593,
+          "distance_change_mm": -0.8969149970328996
+        },
+        {
+          "source_point_index": 577315,
+          "colmap_point_id": 690,
+          "distance_before_mm": 7.167227240685256,
+          "distance_after_mm": 6.197789169702642,
+          "distance_change_mm": -0.9694380709826138
+        },
+        {
+          "source_point_index": 575743,
+          "colmap_point_id": 1244,
+          "distance_before_mm": 4.166928135248716,
+          "distance_after_mm": 3.1891122544679,
+          "distance_change_mm": -0.9778158807808159
+        },
+        {
+          "source_point_index": 573684,
+          "colmap_point_id": 756,
+          "distance_before_mm": 5.335564587965339,
+          "distance_after_mm": 4.250149986655098,
+          "distance_change_mm": -1.0854146013102417
+        }
+      ]
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": true,
+      "reason": "no_eligible_correspondences",
+      "affected_points": 0,
+      "distance_improved": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_displacement_examples": []
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "scope": "posthoc all affected points to fixed sampled STL, mm; not masked ROI and not a new fitting signal",
+      "fallback": true,
+      "reason": "fewer_than_three_shared_cameras",
+      "affected_points": 0,
+      "distance_improved": 0,
+      "distance_worsened": 0,
+      "good_to_bad_2mm": 0,
+      "bad_to_good_2mm": 0,
+      "mean_before_mm": null,
+      "mean_after_mm": null,
+      "worst_displacement_examples": []
+    }
+  ],
+  "gt_only_after_rule_freeze": true,
+  "weights_not_changed": true
+}

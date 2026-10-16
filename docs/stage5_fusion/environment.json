@@ -1,0 +1,13 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "pycolmap_track_export": "4.2.1",
+  "nvidia_smi": "name, memory.total [MiB], memory.used [MiB]\nNVIDIA GeForce RTX 4070 SUPER, 12282 MiB, 714 MiB\n",
+  "new_model_weights_or_packages": [],
+  "device": "CPU",
+  "threads": 8,
+  "gpu_budget_gib": 12,
+  "additional_gpu_allocated_bytes": 0
+}

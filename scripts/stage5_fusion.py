@@ -104,7 +104,7 @@ def measure(ev,path):
     return current
 
 
-def fit():
+def fit(verify=False):
     from fit_stage5 import dev_only_guard
     accesses=[]
     def guard(event,args):
@@ -112,7 +112,7 @@ def fit():
         if event=='open' and isinstance(args[0],str) and args[0].startswith(str(ROOT)):accesses.append(str(Path(args[0]).relative_to(ROOT)))
     sys.addaudithook(guard)
     from stage5_points import Evaluator
-    if RULE.exists():raise ValueError('rule already frozen; no refitting')
+    if RULE.exists() and not verify:raise ValueError('rule already frozen; no refitting')
     protocol=read_json(PROTOCOL);ev=Evaluator(1);rows=[]
     for cond in CONDITIONS:
         scene='dtu_scan1_'+cond;ev.prepare(scene);dest=OUT/'dev_candidates'/scene
@@ -125,6 +125,11 @@ def fit():
     scores=[float(np.mean([r['candidates'][i]['thresholds_mm']['2']['f1'] for r in rows])) for i in range(len(protocol['candidate_strengths']))]
     best=int(np.argmax(scores));baseline=float(np.mean([r['raw']['thresholds_mm']['2']['f1'] for r in rows]))
     rule={'schema_version':1,'strength':protocol['candidate_strengths'][best],'candidate_index':best,'protocol_sha256':sha256(PROTOCOL),'fit_split':'dev_only','dev_beats_raw':scores[best]>baseline,'default_enable_recommended':False,'deployment':'explicit experimental tool; dev gain alone is insufficient for default enable','dev_gain_f1_2mm':scores[best]-baseline}
+    if verify:
+        assert rule==read_json(RULE), 'frozen rule must reproduce from DEV; never change it based on test'
+        write_json(DOC/'fit_reproduction.json',{'rule_unchanged':True,'rule_sha256':sha256(RULE),'macro_dev_f1_2mm':scores,'raw_macro_f1_2mm':baseline,'rows':rows,'project_file_accesses':sorted(set(accesses)),'test_access_denied_by_audit_hook':True})
+        print('Frozen rule reproduced from DEV only',scores,flush=True)
+        return
     write_json(RULE,rule)
     write_json(DOC/'fit_report.json',{'rows':rows,'macro_dev_f1_2mm':scores,'raw_macro_f1_2mm':baseline,'winner':best,'project_file_accesses':sorted(set(accesses)),'test_access_denied_by_audit_hook':True})
     print(rule,scores,flush=True)
@@ -150,7 +155,7 @@ def evaluate():
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['generate','fit','evaluate']);p.add_argument('--scene');p.add_argument('--dev',action='store_true');p.add_argument('--output-root',type=Path);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['generate','fit','evaluate']);p.add_argument('--scene');p.add_argument('--dev',action='store_true');p.add_argument('--output-root',type=Path);p.add_argument('--verify-frozen',action='store_true');args=p.parse_args()
     if args.output_root is not None:OUT=args.output_root.resolve()
     if args.action=='generate':
         from georecon.reliability.analyze import deny_ground_truth
@@ -164,5 +169,5 @@ if __name__=='__main__':
         generate(args.scene,args.dev)
         dest=OUT/('dev_candidates' if args.dev else 'frozen')/args.scene
         write_json(dest/'invocation.json',{'argv':sys.argv,'project_file_accesses':sorted(set(accesses)),'gt_guard_active':True,'script_sha256':sha256(Path(__file__)),'code':code_provenance('real')})
-    elif args.action=='fit':fit()
+    elif args.action=='fit':fit(args.verify_frozen)
     else:evaluate()

@@ -9,6 +9,16 @@
       "original_source_sha256": "290de8851ee7a51c2d55cb5a564f27fb6a8dece8887004294bf8141d0cdf6291",
       "outcome": "zero correspondences in all four dev conditions; weights unidentifiable",
       "change": "rotation from predicted camera orientation mean, then closed-form scale/translation from centers; same local gates and weights; no GT used for this revision"
+    },
+    {
+      "name": "float64_output_attempt02",
+      "split": "dev_and_frozen_test",
+      "preserved_directory": "outputs/stage5_fusion_v1/failures/float64_output_attempt02",
+      "preserved_comparison": "docs/stage5_fusion/attempt02_comparison.json",
+      "issue": "casting untouched float32 points to float64 changed downstream NumPy scalar-scale rounding in inherited Sim3 evaluation, even on fallback",
+      "fix": "preserve source float32 dtype for entire output, round updated values to source precision; exact bytes at untouched positions",
+      "rule_strength_and_gates_changed": false,
+      "rule_sha256_before_fix": "f6e146b5a87659af6e3fb20d717b45be2b7531034c75f2d43830f095ac1b1c5b"
     }
   ]
 }

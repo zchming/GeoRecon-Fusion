@@ -86,9 +86,9 @@ def associate(points, depths, extrinsics, intrinsics, observations, colmap_mappi
 
 
 def blend(points, anchors, strength=None):
-    """Return a float64 full grid: unavailable locations are unchanged; no point deletion."""
+    """Return a source-dtype full grid: unavailable values/bytes unchanged; no deletion."""
     if strength is not None and (not np.isfinite(strength) or strength<0):raise ValueError('invalid fusion strength')
-    out=points.reshape(-1,3).astype(np.float64).copy();ids=anchors['source_point_indices']
+    out=points.reshape(-1,3).copy();ids=anchors['source_point_indices']
     wc=anchors['classical_weight'];wr=anchors['raw_weight']
     if np.any(~np.isfinite(wc)) or np.any(~np.isfinite(wr)) or np.any(wc<=0) or np.any(wr<=0):raise ValueError('nonpositive or nonfinite weights')
     fraction=np.full(len(ids),.5) if strength is None else strength*wc/(wr+strength*wc)
