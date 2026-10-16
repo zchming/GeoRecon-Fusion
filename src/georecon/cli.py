@@ -36,6 +36,9 @@ def main():
     ba = sub.add_parser("run-vggt-ba", help="Pinned official VGGT BA, offline weights, same three-view smoke input")
     for name in ["manifest", "config", "official-repo", "checkpoint", "assets", "dinov2-repo", "lightglue-repo", "output"]:
         ba.add_argument("--"+name, required=True)
+    reliability = sub.add_parser("analyze-reliability", help="GT-free geometric diagnostics only; no selection or fusion")
+    for name in ["bundle", "config", "output"]:
+        reliability.add_argument("--"+name, required=True)
     args = parser.parse_args()
     try:
         if args.command == "synthetic-demo":
@@ -61,6 +64,9 @@ def main():
         elif args.command == "run-vggt-ba":
             from .baselines.vggt_ba import run_vggt_ba
             result = run_vggt_ba(args.manifest, args.config, args.official_repo, args.checkpoint, args.assets, args.dinov2_repo, args.lightglue_repo, args.output)
+        elif args.command == "analyze-reliability":
+            from .reliability.analyze import run
+            result = run(args.bundle, args.config, args.output)
         else:
             result = evaluate_poses(read_json(args.prediction), read_json(args.reference))
             write_json(args.output, result)

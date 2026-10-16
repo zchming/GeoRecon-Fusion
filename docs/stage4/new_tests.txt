@@ -1,0 +1,15 @@
+test_connectivity_counts_isolated_views (test_reliability.ReliabilityTests.test_connectivity_counts_isolated_views) ... ok
+test_degenerate_geometry_unknown (test_reliability.ReliabilityTests.test_degenerate_geometry_unknown) ... ok
+test_depth_checks_other_view_and_boundaries (test_reliability.ReliabilityTests.test_depth_checks_other_view_and_boundaries) ... ok
+test_epipolar_sign_ambiguity_requires_cheirality (test_reliability.ReliabilityTests.test_epipolar_sign_ambiguity_requires_cheirality) ... ok
+test_gt_guard_blocks_real_file_reads (test_reliability.ReliabilityTests.test_gt_guard_blocks_real_file_reads) ... ok
+test_image_matches_are_repeatable_without_prediction_or_gt (test_reliability.ReliabilityTests.test_image_matches_are_repeatable_without_prediction_or_gt) ... ok
+test_missing_evidence_and_method_failure_do_not_get_scores (test_reliability.ReliabilityTests.test_missing_evidence_and_method_failure_do_not_get_scores) ... ok
+test_observed_pixel_error_not_self_projection (test_reliability.ReliabilityTests.test_observed_pixel_error_not_self_projection) ... ok
+test_textureless_images_are_unknown_not_perfect (test_reliability.ReliabilityTests.test_textureless_images_are_unknown_not_perfect) ... ok
+test_world_scale_and_gauge_invariance (test_reliability.ReliabilityTests.test_world_scale_and_gauge_invariance) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.200s
+
+OK

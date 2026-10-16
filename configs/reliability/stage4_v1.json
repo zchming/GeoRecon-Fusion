@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "opencv_threads": 8,
+  "sift_features": 4096,
+  "ratio_threshold": 0.75,
+  "min_evidence_matches": 24,
+  "max_audit_matches": 512,
+  "image_f_ransac_px": 1.5,
+  "image_f_ransac_iterations": 10000,
+  "image_f_ransac_confidence": 0.999,
+  "grid_wh": [8, 6],
+  "min_covered_cells": 4,
+  "epipolar_tolerance_px": 1.5,
+  "depth_sample_stride": 16,
+  "min_depth_samples": 64,
+  "depth_relative_tolerance": 0.05,
+  "unknown_rule": "missing camera, too few independent matches, poor spatial coverage, degenerate baseline, or absent depth => unknown/not_supported; never a high score",
+  "calibration": "none; raw diagnostic quantities, not probabilities; no universal composite score",
+  "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+}

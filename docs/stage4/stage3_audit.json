@@ -1,0 +1,179 @@
+{
+  "audited_at_utc": "2026-10-16T10:12:20.175544+00:00",
+  "rows": [
+    {
+      "scene": "dtu_scan1_blur5",
+      "method": "colmap",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_blur5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "method": "colmap",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_normal5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "method": "colmap",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_reduced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "method": "colmap",
+      "status": "no_reconstruction",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan1_spaced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "method": "colmap",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_blur5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "method": "colmap",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_normal5",
+      "method": "vggt_ba",
+      "status": "oom",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "method": "colmap",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_reduced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "method": "colmap",
+      "status": "no_reconstruction",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "method": "vggt_raw",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    },
+    {
+      "scene": "dtu_scan6_spaced3",
+      "method": "vggt_ba",
+      "status": "success",
+      "evaluation_matches_published": true,
+      "artifact_hashes_verified": true
+    }
+  ],
+  "counts": {
+    "no_reconstruction": 2,
+    "oom": 4,
+    "success": 18
+  },
+  "freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0"
+}

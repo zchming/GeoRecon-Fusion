@@ -1,0 +1,135 @@
+{
+  "created_at_utc": "2026-10-16T10:12:20.264333+00:00",
+  "stage3_freeze_sha256": "2a5e898c2e3807bacd22d056b172e782d4794babb0121dfdb5da2a8da9426df0",
+  "config_sha256": "54c59e9c1591ccb172cfb08a82802c2f4587b134d5b7e1ff8470a637645e6ac2",
+  "cases": [
+    {
+      "scene_id": "dtu_scan1_blur5",
+      "split": "dev",
+      "bundle": "data/stage4_bundles/dtu_scan1_blur5",
+      "files": {
+        "colmap.json": "a83992413ae9267d6020bfa8363ce3fbd436cc879a53272002d0e3f31f28352d",
+        "images/001.png": "147da144c7f05149dfe5b900bd630837e108f2e775837f380c4234eb898f4cc6",
+        "images/002.png": "3e1f6ac407bb33449ad18585e0ce9226457643596cf46c139e792c404aee7a76",
+        "images/003.png": "291fa7d1049a7616158e4c1707654fa91ea25d8e482ace3bbcc7184d141ea8c3",
+        "images/004.png": "2c42240013893b77deee0d826e6e9f6e77e9cd19045c3ab305510f7183e8307f",
+        "images/005.png": "3f0574c4819a6e0808ee2807428a02c14526e87d8dad8d0ab28a0e42d6aea2ab",
+        "manifest.json": "b04e1566393a84df5e71a2bf91e7c0f2d5aed4b834a28f408b3a013492f657b1",
+        "raw_predictions.npz": "3b5ae44990209e5f88a3506e6366068404a065e1f71138c233729083b3aa5004",
+        "vggt_ba.json": "d8fa3e8a328a7202ea434c0d2a50e918bc3c3827772c3842477b178e6accb6e6",
+        "vggt_raw.json": "4e570bc47157db64a9773f8ab5e36b8cff26a3ce6a316b28a101b0eb4b2ab130"
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "split": "dev",
+      "bundle": "data/stage4_bundles/dtu_scan1_normal5",
+      "files": {
+        "colmap.json": "b571af7d7c25bd32f50959ec6065c73aba3a7075bf7f13956f218e158698fc25",
+        "images/001.png": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+        "images/002.png": "d2a04b6d16d3c1638aabbc519e34135684152541cdca8f316a7377a78a956e66",
+        "images/003.png": "2809df3c735bceb23644779c800e2b994739ffda3b2c5e2080da04d5617efbab",
+        "images/004.png": "5d66db3f23e918d94c5910183a9aab59aca65c40d7e2c703b3dc6d0abc280544",
+        "images/005.png": "93100baccffb5acf2c44775339960347127173e1f7d454ba3e65dcb49e9638a0",
+        "manifest.json": "8df96f4f5460ae9799044b425e6397048ac52e5d49b2a2cfec7a34b20641f678",
+        "raw_predictions.npz": "b892b447594385fade118940801e357f2bb2758cf9dcaf046d871e0279dd5c55",
+        "vggt_ba.json": "4ea2fdcd6d88eb409d86e9e7e3ba530cbe6f2b21cada608d048a039be0862bd7",
+        "vggt_raw.json": "37e2d51ff9d8121cbe78f7aaa8ef22ee28000200de431c8ea36d3ce58dd80333"
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_reduced3",
+      "split": "dev",
+      "bundle": "data/stage4_bundles/dtu_scan1_reduced3",
+      "files": {
+        "colmap.json": "29d0bb3af6e6dd7e706ef3c9472ddd230c52558fb1fc5814792e6711f50c6f10",
+        "images/001.png": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+        "images/002.png": "d2a04b6d16d3c1638aabbc519e34135684152541cdca8f316a7377a78a956e66",
+        "images/003.png": "2809df3c735bceb23644779c800e2b994739ffda3b2c5e2080da04d5617efbab",
+        "manifest.json": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+        "raw_predictions.npz": "d68984201e982364c2a76a84761caf2d114cfc1caa9ca36dbd4dbd51f6d1a4e5",
+        "vggt_ba.json": "0126ce68f23980bf1af0de3d55a161c98aad0d591caddc5c7488d7d72f6c3af9",
+        "vggt_raw.json": "54bbbfd0a12586d323c0501dca4739a86a5f3a273c5f2a317edfcbb8926f1e62"
+      }
+    },
+    {
+      "scene_id": "dtu_scan1_spaced3",
+      "split": "dev",
+      "bundle": "data/stage4_bundles/dtu_scan1_spaced3",
+      "files": {
+        "colmap.json": "e8e9e291cca753a8509e1ab53e27c79c4f8e518e67e17e56893028d7f35996f5",
+        "images/001.png": "51a6a44a15b7ec0c0a85f9383fe0cd7634bcebe1751ad6af1542daaf3808d8cc",
+        "images/010.png": "da518e0581f3093237571f35a88fb571eae15a0ee4676714bb1389332347a482",
+        "images/020.png": "4ccbc3235ebe19cc577428c723e264bf7405115837c316d59b19d236bbfd6ca3",
+        "manifest.json": "5d4d75d7a1c42daeb53183dc9ea96e2594ade589506bdc6845a77bbf0890f6a2",
+        "raw_predictions.npz": "9606cef01b286e0e4b9395b5084894d0196c24b4ccd3dcd1a3494c4334c9dfdd",
+        "vggt_ba.json": "a73b92ad4972d8f1f3e139b3034e8e91c1379054cf8664208f71d13893c9d729",
+        "vggt_raw.json": "f25205aa131227b183c7a2b6863ef53aa9f9d6a88d9cfbb4d02e77eb3ee05e6b"
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_blur5",
+      "split": "test",
+      "bundle": "data/stage4_bundles/dtu_scan6_blur5",
+      "files": {
+        "colmap.json": "f12061c2d1c8069f3cebe7e0a5d175a05544c54a9eeaa0387dde6b24e63b530b",
+        "images/001.png": "644c8efff65130e33f589c2b7e336317ca60478fee3c5be686061097c5fd93eb",
+        "images/002.png": "b8853ff0dbf2bf06850c2217be3dfba3f73913bdc7087aeaa4771e943c067fee",
+        "images/003.png": "4f027c405d32e03ddd71b128898744b28161a635a788a843f88c726e5eb29ad6",
+        "images/004.png": "69f16465a71690b040ed9a5189f8d0073c47faafbda84da796b210c7d2f2e730",
+        "images/005.png": "a86e7970fcbbe4377e3300f6420698023c52bd295f8d1bbb6baccfcbb66fe9f1",
+        "manifest.json": "78ecd44dc7422b93398e28f224a3a0b3cbc4473091c189846ed734a4a841a690",
+        "raw_predictions.npz": "c318b09c7765ca1c8e1e2c2749be11af9b74881b47c4e3daace0cfc853bc4291",
+        "vggt_ba.json": "1e4bd89e915a033e439fb700c74712186dee11bb368f50ff6ceae8896462facd",
+        "vggt_raw.json": "0f36c51a42c0880fa45f48be52fa1ec47d9493294f9735037797eeb01dde7f77"
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "split": "test",
+      "bundle": "data/stage4_bundles/dtu_scan6_normal5",
+      "files": {
+        "colmap.json": "2e371706f077155d8d9edc467d17784bb9d4ebd407e15ae8121d857c5fce2ea9",
+        "images/001.png": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+        "images/002.png": "17047847c82f2ec6bfa986f8987531591469dc764e9ee251e418be04ed122cac",
+        "images/003.png": "95801ec4c1c8e29913550dcbb9710a7beee33db90f30dca923aedb8110b3c906",
+        "images/004.png": "806128d37487a2f4d3cafdc049c33e05f9ed43bf048e8ee9ebe124200582c3a2",
+        "images/005.png": "23961c677ee20e8a361f8be26ced28ef3408aea8cb9553a327ac4f8146e25065",
+        "manifest.json": "30872f0dbdab8bcd0d158bd813d126c958b84bfe5bea869b569d1cc1315afa61",
+        "raw_predictions.npz": "4b830504747cbb9bc4195649dc8c0cab3a75c2ab0b8f0536395948917e4a185d",
+        "vggt_ba.json": "1766030fd33da37d720774ce3c907f30e54f52e486cf4f22407372b0ae3b19b8",
+        "vggt_raw.json": "b3a6e1b1db8143b8d9ac8f0e339b17f8ce39ba8712289f6c9f0cf78c53dd9afe"
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_reduced3",
+      "split": "test",
+      "bundle": "data/stage4_bundles/dtu_scan6_reduced3",
+      "files": {
+        "colmap.json": "90c516d765967820fe4a91516f852a2191eef5d31e9205fb6ede8dc51ae9053a",
+        "images/001.png": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+        "images/002.png": "17047847c82f2ec6bfa986f8987531591469dc764e9ee251e418be04ed122cac",
+        "images/003.png": "95801ec4c1c8e29913550dcbb9710a7beee33db90f30dca923aedb8110b3c906",
+        "manifest.json": "d9655387c9f83279abad8e9d9188657924fe07d6752c45c8a9b3e9b5bc223030",
+        "raw_predictions.npz": "28bbe64e9a54a5b1f70a26e6b78cc045d9fa555bdc7b51a24fba1579d89a7f8d",
+        "vggt_ba.json": "90793edab7ee18e207122f72e96f1a9b65360a1b2468972039a02a2ec9f256e3",
+        "vggt_raw.json": "24e57c0d7349718a03d506154bccd7ceab4f79d43d2cea5f5dce860acf2ec0b1"
+      }
+    },
+    {
+      "scene_id": "dtu_scan6_spaced3",
+      "split": "test",
+      "bundle": "data/stage4_bundles/dtu_scan6_spaced3",
+      "files": {
+        "colmap.json": "f768fa2b1e70a529a0c83d9a9a89f8e9b1503c1c3f72051b7b45ea284c5409f1",
+        "images/001.png": "f82db58056ea450848dfb871658943b4d2dca416ff7a6acb047eabd9a44919ef",
+        "images/010.png": "1fe7963754f1c6aa4d574fc4c9a1b1f5545352141750bbf52e0d1ad3a905eb19",
+        "images/020.png": "3b81cedb82724753171730ce087b352c863ca0a24b3dbd7daa1231681e3608d0",
+        "manifest.json": "21858f70615a51ff09a809ead63204d5de7788348d736ee891890fa35c14456e",
+        "raw_predictions.npz": "ef65beeb125afbd3c744c4313a0c86fc5a0dd18211a3ab808eba2b68210ce8b7",
+        "vggt_ba.json": "280e0df3f5bfee64aa12300658803d70feb43747c07b52305957842fbedc4470",
+        "vggt_raw.json": "2fe8aded489ae62dc827fe930360fe59748033e2c6040996528486c2b431a1ed"
+      }
+    }
+  ]
+}
