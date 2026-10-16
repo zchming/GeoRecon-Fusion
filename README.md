@@ -6,13 +6,14 @@
 
 研究问题：经典 SfM/MVS 与视觉几何基础模型分别何时失败？推理时无需真值的可靠性判断能否支持选择或融合，并改善精度、完整度、成功率与计算成本之间的权衡？融合有效与否尚待实验验证。
 
-## 当前状态：阶段 2 的 COLMAP 与 VGGT raw 子步骤完成
+## 当前状态：阶段 2 的 COLMAP、VGGT raw 与官方 BA 小样本子步骤完成
 
-已接入官方 PyCOLMAP CPU SfM 和固定版本 VGGT 原始 GPU 推理，使用相同 DTU 三图及公共输入；52 项 CPU 数学/接口检查通过，真实 GPU forward 另行验证。COLMAP 注册 3/3 图像、输出 690 个稀疏点；VGGT 为三图输出相机、原始深度/点图及置信度。**这只是单场景开发验证，没有固定 Benchmark 或融合结论；VGGT 官方 BA 尚未接入，阶段 2 整体尚未完成。**
+已接入官方 PyCOLMAP CPU SfM、固定版本 VGGT 原始 GPU 推理及官方跟踪/BA，使用相同 DTU 三图及公共输入；57 项 CPU 数学/接口检查通过，GPU 与原生 BA 另行实跑验收。COLMAP 注册 3/3 图像、输出 690 个稀疏点；VGGT raw 输出相机与原始稠密预测；官方 BA 在显式 12GB 显存调度下输出 3/3 相机和 8220 个优化稀疏点，总耗时 40.45 s、整卡采样峰值 10.12 GiB。**这是单场景接入验证，没有固定 Benchmark、可靠性或融合结论；BA 并未使所有位姿指标改善。**
 
 - [阶段 1 报告、真实执行记录与限制](docs/stage1/report.md)
 - [阶段 2 COLMAP 报告、结果与复现](docs/stage2_colmap/report.md)
 - [阶段 2 VGGT raw 报告、坐标核对与结果](docs/stage2_vggt/report.md)
+- [阶段 2 官方 BA 报告、完整耗时/显存与失败记录](docs/stage2_vggt_ba/report.md)
 - [相机、输入、结果与评价协议](docs/protocol.md)
 - [阶段 0 环境审计与方案](docs/stage0/report.md)
 - [完整项目要求与阶段边界](docs/project_brief.md)
@@ -95,11 +96,11 @@ data/                    # 本地数据，Git 忽略
 outputs/                 # 本地运行产物，Git 忽略
 ```
 
-只支持无畸变 PINHOLE；其他相机模型明确拒绝。COLMAP 稀疏点云和 VGGT 原始深度/点图/置信度已导出校验；统一轨迹数组未接入。三个依赖锁分别对应 CPU 几何、COLMAP、VGGT 运行环境，不混装旧版官方 BA 依赖。
+统一协议支持无畸变 PINHOLE，BA 的 SIMPLE_PINHOLE 无损展开为 fx=fy。COLMAP 稀疏点云、VGGT 原始深度/点图/置信度以及 BA 的优化点云/原始跟踪数组已导出校验；没有将原始深度标成 BA 后稠密结果。CPU 几何、COLMAP、VGGT raw 与官方 BA 使用分开的依赖锁；PyCOLMAP 4.2.1 与 BA 的 3.10.0 分环境。BA 复现与显存适配见[说明](docs/stage2_vggt_ba/reproduce.md)。
 
 ## 后续工作：等待明确授权
 
-2. 阶段 2 剩余：VGGT 官方 BA 小样本接入；COLMAP MVS 仅在另行授权且 GPU 构建可用时开展。
+2. 阶段 2 当前授权子步骤已完成；COLMAP MVS 仅在另行授权且 GPU 构建可用时开展。
 3. 固定 Benchmark 与失败分析。
 4. 几何可靠性分析。
 5. 选择/融合与消融。

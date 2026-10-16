@@ -1,0 +1,34 @@
+{
+  "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+  "files_sha256": {
+    "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+    "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+    "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+    "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+    "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+    "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+    "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+  },
+  "ba_files_sha256": {
+    "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+    "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+    "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+    "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+    "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+  },
+  "dinov2": {
+    "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "license_sha256": {
+      "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+      "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+      "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+      "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+    }
+  },
+  "lightglue": {
+    "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+    "license_sha256": {
+      "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+    }
+  }
+}

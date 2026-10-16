@@ -1,0 +1,19 @@
+/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue/lightglue/lightglue.py:24: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)
+Arguments: {'scene_dir': '/home/zchming/projects/VisionGeometryLab/outputs/stage2_vggt_ba/attempt01', 'seed': 42, 'use_ba': True, 'max_reproj_error': 8.0, 'shared_camera': False, 'camera_type': 'SIMPLE_PINHOLE', 'vis_thresh': 0.2, 'query_frame_num': 8, 'max_query_pts': 4096, 'fine_tracking': True, 'conf_thres_value': 5.0}
+Setting seed as: 42
+Using device: cuda
+Using dtype: torch.bfloat16
+Model loaded
+Traceback (most recent call last):
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 172, in main
+    demo.demo_fn(args)
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/demo_colmap.py", line 132, in demo_fn
+    images, original_coords = load_and_preprocess_images_square(image_path_list, img_load_resolution)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 50, in wrapped
+    return fn(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 96, in audited_loader
+    raise ValueError('official glob order differs from manifest; refusing reordered inference')
+ValueError: official glob order differs from manifest; refusing reordered inference

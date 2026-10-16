@@ -1,0 +1,69 @@
+/home/zchming/projects/VisionGeometryLab/data/third_party/LightGlue/lightglue/lightglue.py:24: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @torch.cuda.amp.custom_fwd(cast_inputs=torch.float32)
+Arguments: {'scene_dir': '/home/zchming/projects/VisionGeometryLab/outputs/stage2_vggt_ba/attempt03', 'seed': 42, 'use_ba': True, 'max_reproj_error': 8.0, 'shared_camera': False, 'camera_type': 'SIMPLE_PINHOLE', 'vis_thresh': 0.2, 'query_frame_num': 8, 'max_query_pts': 4096, 'fine_tracking': True, 'conf_thres_value': 5.0}
+Setting seed as: 42
+Using device: cuda
+Using dtype: torch.bfloat16
+Model loaded
+Loaded 3 images from /home/zchming/projects/VisionGeometryLab/outputs/stage2_vggt_ba/attempt03/images
+/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/demo_colmap.py:75: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=dtype):
+/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/demo_colmap.py:147: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(dtype=dtype):
+/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/zchming/projects/VisionGeometryLab/data/third_party/dinov2/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+For faster inference, consider disabling fine_tracking
+Predicting tracks for query frame 0
+Traceback (most recent call last):
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 184, in main
+    demo.demo_fn(args)
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/demo_colmap.py", line 155, in demo_fn
+    pred_tracks, pred_vis_scores, pred_confs, points_3d, points_rgb = predict_tracks(
+                                                                      ^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 51, in wrapped
+    return fn(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 138, in predict
+    values=original_tracks(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/track_predict.py", line 84, in predict_tracks
+    pred_track, pred_vis, pred_conf, pred_point_3d, pred_color = _forward_on_query(
+                                                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/src/georecon/baselines/vggt_ba_worker.py", line 51, in wrapped
+    return fn(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/track_predict.py", line 220, in _forward_on_query
+    pred_track, pred_vis, _ = predict_tracks_in_chunks(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/vggsfm_utils.py", line 289, in predict_tracks_in_chunks
+    fine_pred_track, _, pred_vis, pred_score = track_predictor(
+                                               ^^^^^^^^^^^^^^^^
+  File "/home/zchming/.venvs/visual-geometry/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/.venvs/visual-geometry/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/vggsfm_tracker.py", line 94, in forward
+    fine_pred_track, pred_score = refine_track(
+                                  ^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/track_modules/track_refine.py", line 137, in refine_track
+    fine_pred_track_lists, _, _, query_point_feat = fine_tracker(
+                                                    ^^^^^^^^^^^^^
+  File "/home/zchming/.venvs/visual-geometry/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/.venvs/visual-geometry/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/track_modules/base_track_predictor.py", line 104, in forward
+    fcorr_fn = CorrBlock(fmaps, num_levels=self.corr_levels, radius=self.corr_radius)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zchming/projects/VisionGeometryLab/experiment03_depth_reprojection/vggt_official/vggt/dependency/track_modules/blocks.py", line 276, in __init__
+    fmaps_ = fmaps.reshape(B * S, C, H, W)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 11.99 GiB of which 1.03 GiB is free. 10.50 GiB allowed; Of the allocated memory 9.24 GiB is allocated by PyTorch, and 375.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

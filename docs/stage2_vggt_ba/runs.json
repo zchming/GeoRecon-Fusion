@@ -1,0 +1,901 @@
+[
+  {
+    "local_output": "outputs/stage2_vggt_ba/acceptance",
+    "status": "success",
+    "failure_reason": null,
+    "config": {
+      "schema_version": 1,
+      "method_id": "vggt_official_ba_12gb",
+      "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "device": "cuda",
+      "autocast": "bfloat16",
+      "parameter_dtype": "float32",
+      "seed": 42,
+      "num_threads": 8,
+      "timeout_seconds": 1200,
+      "max_query_pts": 4096,
+      "query_frame_num": 8,
+      "fine_tracking": true,
+      "camera_type": "SIMPLE_PINHOLE",
+      "shared_camera": false,
+      "vis_thresh": 0.2,
+      "max_reproj_error": 8.0,
+      "gpu_allocator_limit_gib": 10.5,
+      "preprocessing": "official_black_square_1024_then_bilinear_518",
+      "pycolmap_version": "3.10.0",
+      "memory_schedule": "retire_unused_vggt_after_forward"
+    },
+    "timing_seconds": {
+      "staging_and_source_checks": 0.30345554900122806,
+      "runtime_imports_and_cuda_setup": 0.6722206300000835,
+      "all_checkpoint_sha256_checks": 2.395123923000938,
+      "official_demo_import": 1.0051069049986836,
+      "vggt_model_construction": 4.510222213000816,
+      "square_preprocessing_and_pixel_audit": 0.15033132399912574,
+      "vggt_synchronized_forward": 7.236723163001443,
+      "retire_unused_vggt_storage": 0.04956300999765517,
+      "vggt_forward_and_initial_snapshot": 7.290381083999819,
+      "build_vggsfm_tracker": 0.2030373210000107,
+      "generate_rank_by_dino": 0.5687951100007922,
+      "initialize_feature_extractors": 0.02062325199949555,
+      "_forward_on_query": 17.768162035998103,
+      "_augment_non_visible_frames": 0.00013099399802740663,
+      "tracking_including_models_and_export": 21.64425855599984,
+      "ceres_bundle_adjustment": 0.4443605859996751,
+      "official_demo_wall_including_nested_stages": 35.490645375000895,
+      "worker_wall": 40.10177684899827,
+      "total": 40.449275006998505
+    },
+    "memory_bytes": {
+      "peak_gpu_allocated": 10077113856,
+      "peak_gpu_reserved": 10192158720,
+      "peak_worker_rss_os": 11007148032,
+      "peak_worker_rss_sampled": 10577215488,
+      "peak_device_used_sampled_including_desktop": 10867441664
+    },
+    "provenance": {
+      "code_commit": "38eccc03d32efe4643a1d6c03c42e72af4833edb",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "bb992727cc596f23aebafc67171813fbb62e9cb571fe84539b3618cc4f41a590",
+      "data_kind": "real",
+      "official_source": {
+        "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+        "files_sha256": {
+          "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+          "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+          "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+          "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+          "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+          "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+          "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+        },
+        "ba_files_sha256": {
+          "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+          "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+          "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+          "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+          "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+        },
+        "dinov2": {
+          "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+          "license_sha256": {
+            "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+            "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+            "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+            "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+          }
+        },
+        "lightglue": {
+          "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+          "license_sha256": {
+            "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+          }
+        }
+      },
+      "gt_access": "none; reference is evaluated separately",
+      "pixel_convention": "official tracks inserted unchanged as integer centers; no additional COLMAP -0.5 shift"
+    },
+    "state": {
+      "status": "complete",
+      "timing_seconds": {
+        "runtime_imports_and_cuda_setup": 0.6722206300000835,
+        "all_checkpoint_sha256_checks": 2.395123923000938,
+        "official_demo_import": 1.0051069049986836,
+        "vggt_model_construction": 4.510222213000816,
+        "square_preprocessing_and_pixel_audit": 0.15033132399912574,
+        "vggt_synchronized_forward": 7.236723163001443,
+        "retire_unused_vggt_storage": 0.04956300999765517,
+        "vggt_forward_and_initial_snapshot": 7.290381083999819,
+        "build_vggsfm_tracker": 0.2030373210000107,
+        "generate_rank_by_dino": 0.5687951100007922,
+        "initialize_feature_extractors": 0.02062325199949555,
+        "_forward_on_query": 17.768162035998103,
+        "_augment_non_visible_frames": 0.00013099399802740663,
+        "tracking_including_models_and_export": 21.64425855599984,
+        "ceres_bundle_adjustment": 0.4443605859996751,
+        "official_demo_wall_including_nested_stages": 35.490645375000895
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720
+      },
+      "weight_loads": [
+        {
+          "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+          "file": "model.pt",
+          "seconds": 0.06956610799898044
+        },
+        {
+          "url": "https://huggingface.co/facebook/VGGSfM/resolve/main/vggsfm_v2_tracker.pt",
+          "file": "vggsfm_v2_tracker.pt",
+          "seconds": 0.01125486999808345
+        },
+        {
+          "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+          "file": "dinov2_vitb14_reg4_pretrain.pth",
+          "seconds": 0.0066064300008292776
+        },
+        {
+          "url": "https://github.com/Shiaoming/ALIKED/raw/main/models/aliked-n16.pth",
+          "file": "aliked-n16.pth",
+          "seconds": 0.0027087300004495773
+        },
+        {
+          "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+          "file": "superpoint_v1.pth",
+          "seconds": 0.001463769000110915
+        }
+      ],
+      "peak_rss_bytes": 11007148032,
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "pycolmap": "3.10.0",
+        "pyceres": "2.3",
+        "kornia": "0.8.3",
+        "trimesh": "4.12.2",
+        "hydra-core": "1.3.2",
+        "omegaconf": "2.3.0",
+        "numpy": "2.5.2",
+        "Pillow": "12.3.0",
+        "lightglue": "0.0",
+        "python": "3.12.3",
+        "cuda_runtime": "12.8"
+      },
+      "device": {
+        "name": "NVIDIA GeForce RTX 4070 SUPER",
+        "total_bytes": 12878086144,
+        "allocator_cap_bytes": 11274289152
+      },
+      "verified_weight_sha256": {
+        "vggt": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+        "vggsfm_tracker": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+        "dinov2_vitb14_reg": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+        "aliked": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+        "superpoint": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+      },
+      "official_glob_order_corrected": true,
+      "memory_schedule": "retire_unused_vggt_after_forward",
+      "track_shapes": {
+        "xy": [
+          3,
+          15318,
+          2
+        ],
+        "visibility": [
+          3,
+          15318
+        ],
+        "confidence": [
+          15318
+        ],
+        "initial_xyz": [
+          15318,
+          3
+        ],
+        "rgb": [
+          15318,
+          3
+        ]
+      },
+      "ba_solver": "official PyCOLMAP 3.10.0 CPU Ceres defaults; no solver substitution",
+      "optimized_points": 8220,
+      "validation": {
+        "camera_export_max_abs_square_px": 3.410605131648481e-13,
+        "post_ba_mean_observation_error_px": 0.1526923357556069,
+        "observations": 19509,
+        "optimized_points": 8220,
+        "pointcloud_source": "reconstruction.points3D after BA; official points.ply is not used",
+        "native_point_roundtrip_exact": true
+      }
+    }
+  },
+  {
+    "local_output": "outputs/stage2_vggt_ba/attempt01",
+    "status": "process_error",
+    "failure_reason": "ValueError: official glob order differs from manifest; refusing reordered inference",
+    "config": {
+      "schema_version": 1,
+      "method_id": "vggt_official_ba",
+      "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "device": "cuda",
+      "autocast": "bfloat16",
+      "parameter_dtype": "float32",
+      "seed": 42,
+      "num_threads": 8,
+      "timeout_seconds": 1200,
+      "max_query_pts": 4096,
+      "query_frame_num": 8,
+      "fine_tracking": true,
+      "camera_type": "SIMPLE_PINHOLE",
+      "shared_camera": false,
+      "vis_thresh": 0.2,
+      "max_reproj_error": 8.0,
+      "gpu_allocator_limit_gib": 10.5,
+      "preprocessing": "official_black_square_1024_then_bilinear_518",
+      "pycolmap_version": "3.10.0"
+    },
+    "timing_seconds": {
+      "staging_and_source_checks": 0.38426390899985563,
+      "runtime_imports_and_cuda_setup": 1.609870955999213,
+      "all_checkpoint_sha256_checks": 3.363373567000963,
+      "official_demo_import": 1.8996141089992307,
+      "square_preprocessing_and_pixel_audit": 3.669299985631369e-05,
+      "worker_wall": 13.646399679000751,
+      "total": 14.096754810998391
+    },
+    "memory_bytes": {
+      "peak_gpu_allocated": 5031621120,
+      "peak_gpu_reserved": 5062524928,
+      "peak_worker_rss_os": 10902925312,
+      "peak_worker_rss_sampled": 10900516864,
+      "peak_device_used_sampled_including_desktop": 6141509632
+    },
+    "provenance": {
+      "code_commit": "6ab0e80dbec2dedfee24a8c96710cda65573ddbf",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "a646e1b788113a3045bb2c5ea796a1c544390113f46904da2a0d224255cea8cb",
+      "data_kind": "real",
+      "official_source": {
+        "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+        "files_sha256": {
+          "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+          "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+          "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+          "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+          "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+          "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+          "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+        },
+        "ba_files_sha256": {
+          "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+          "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+          "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+          "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+          "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+        },
+        "dinov2": {
+          "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+          "license_sha256": {
+            "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+            "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+            "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+            "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+          }
+        },
+        "lightglue": {
+          "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+          "license_sha256": {
+            "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+          }
+        }
+      },
+      "gt_access": "none; reference is evaluated separately",
+      "pixel_convention": "official tracks inserted unchanged as integer centers; no additional COLMAP -0.5 shift"
+    },
+    "state": {
+      "status": "process_error",
+      "timing_seconds": {
+        "runtime_imports_and_cuda_setup": 1.609870955999213,
+        "all_checkpoint_sha256_checks": 3.363373567000963,
+        "official_demo_import": 1.8996141089992307,
+        "square_preprocessing_and_pixel_audit": 3.669299985631369e-05
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 5031621120,
+        "peak_gpu_reserved": 5062524928
+      },
+      "weight_loads": [
+        {
+          "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+          "file": "model.pt",
+          "seconds": 0.06629924500157358
+        }
+      ],
+      "peak_rss_bytes": 10902925312,
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "pycolmap": "3.10.0",
+        "pyceres": "2.3",
+        "kornia": "0.8.3",
+        "trimesh": "4.12.2",
+        "hydra-core": "1.3.2",
+        "omegaconf": "2.3.0",
+        "numpy": "2.5.2",
+        "Pillow": "12.3.0",
+        "lightglue": "0.0",
+        "python": "3.12.3",
+        "cuda_runtime": "12.8"
+      },
+      "device": {
+        "name": "NVIDIA GeForce RTX 4070 SUPER",
+        "total_bytes": 12878086144,
+        "allocator_cap_bytes": 11274289152
+      },
+      "verified_weight_sha256": {
+        "vggt": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+        "vggsfm_tracker": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+        "dinov2_vitb14_reg": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+        "aliked": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+        "superpoint": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+      },
+      "failure_kind": "process_error",
+      "error": "ValueError: official glob order differs from manifest; refusing reordered inference"
+    }
+  },
+  {
+    "local_output": "outputs/stage2_vggt_ba/attempt02",
+    "status": "process_error",
+    "failure_reason": "RuntimeError: mmap can only be used with files saved with `torch.save(_use_new_zipfile_serialization=True), please torch.save your checkpoint with this option in order to use mmap.",
+    "config": {
+      "schema_version": 1,
+      "method_id": "vggt_official_ba",
+      "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "device": "cuda",
+      "autocast": "bfloat16",
+      "parameter_dtype": "float32",
+      "seed": 42,
+      "num_threads": 8,
+      "timeout_seconds": 1200,
+      "max_query_pts": 4096,
+      "query_frame_num": 8,
+      "fine_tracking": true,
+      "camera_type": "SIMPLE_PINHOLE",
+      "shared_camera": false,
+      "vis_thresh": 0.2,
+      "max_reproj_error": 8.0,
+      "gpu_allocator_limit_gib": 10.5,
+      "preprocessing": "official_black_square_1024_then_bilinear_518",
+      "pycolmap_version": "3.10.0"
+    },
+    "timing_seconds": {
+      "staging_and_source_checks": 0.309526659999392,
+      "runtime_imports_and_cuda_setup": 0.6974446430031094,
+      "all_checkpoint_sha256_checks": 2.3427556379974703,
+      "official_demo_import": 1.0176394920017628,
+      "vggt_model_construction": 4.607608631002222,
+      "square_preprocessing_and_pixel_audit": 0.1466154089976044,
+      "vggt_forward_and_initial_snapshot": 7.771116547999554,
+      "build_vggsfm_tracker": 0.17051528899901314,
+      "generate_rank_by_dino": 0.5286131560023932,
+      "initialize_feature_extractors": 0.018342618001042865,
+      "tracking_including_models_and_export": 0.7587019380007405,
+      "worker_wall": 19.269370285997866,
+      "total": 19.61183992899896
+    },
+    "memory_bytes": {
+      "peak_gpu_allocated": 10077113856,
+      "peak_gpu_reserved": 10192158720,
+      "peak_worker_rss_os": 11006918656,
+      "peak_worker_rss_sampled": 10771881984,
+      "peak_device_used_sampled_including_desktop": 9881780224
+    },
+    "provenance": {
+      "code_commit": "6ab0e80dbec2dedfee24a8c96710cda65573ddbf",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "1a168f7d90ba977738bff95619d5f153cd7f58c4b4108e7536cbd6bb153f80f2",
+      "data_kind": "real",
+      "official_source": {
+        "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+        "files_sha256": {
+          "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+          "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+          "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+          "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+          "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+          "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+          "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+        },
+        "ba_files_sha256": {
+          "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+          "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+          "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+          "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+          "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+        },
+        "dinov2": {
+          "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+          "license_sha256": {
+            "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+            "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+            "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+            "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+          }
+        },
+        "lightglue": {
+          "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+          "license_sha256": {
+            "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+          }
+        }
+      },
+      "gt_access": "none; reference is evaluated separately",
+      "pixel_convention": "official tracks inserted unchanged as integer centers; no additional COLMAP -0.5 shift"
+    },
+    "state": {
+      "status": "process_error",
+      "timing_seconds": {
+        "runtime_imports_and_cuda_setup": 0.6974446430031094,
+        "all_checkpoint_sha256_checks": 2.3427556379974703,
+        "official_demo_import": 1.0176394920017628,
+        "vggt_model_construction": 4.607608631002222,
+        "square_preprocessing_and_pixel_audit": 0.1466154089976044,
+        "vggt_forward_and_initial_snapshot": 7.771116547999554,
+        "build_vggsfm_tracker": 0.17051528899901314,
+        "generate_rank_by_dino": 0.5286131560023932,
+        "initialize_feature_extractors": 0.018342618001042865,
+        "tracking_including_models_and_export": 0.7587019380007405
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720
+      },
+      "weight_loads": [
+        {
+          "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+          "file": "model.pt",
+          "seconds": 0.0622208499989938
+        },
+        {
+          "url": "https://huggingface.co/facebook/VGGSfM/resolve/main/vggsfm_v2_tracker.pt",
+          "file": "vggsfm_v2_tracker.pt",
+          "seconds": 0.011131967999972403
+        },
+        {
+          "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+          "file": "dinov2_vitb14_reg4_pretrain.pth",
+          "seconds": 0.00596828000198002
+        },
+        {
+          "url": "https://github.com/Shiaoming/ALIKED/raw/main/models/aliked-n16.pth",
+          "file": "aliked-n16.pth",
+          "seconds": 0.002637328998389421
+        }
+      ],
+      "peak_rss_bytes": 11006918656,
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "pycolmap": "3.10.0",
+        "pyceres": "2.3",
+        "kornia": "0.8.3",
+        "trimesh": "4.12.2",
+        "hydra-core": "1.3.2",
+        "omegaconf": "2.3.0",
+        "numpy": "2.5.2",
+        "Pillow": "12.3.0",
+        "lightglue": "0.0",
+        "python": "3.12.3",
+        "cuda_runtime": "12.8"
+      },
+      "device": {
+        "name": "NVIDIA GeForce RTX 4070 SUPER",
+        "total_bytes": 12878086144,
+        "allocator_cap_bytes": 11274289152
+      },
+      "verified_weight_sha256": {
+        "vggt": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+        "vggsfm_tracker": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+        "dinov2_vitb14_reg": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+        "aliked": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+        "superpoint": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+      },
+      "official_glob_order_corrected": true,
+      "failure_kind": "process_error",
+      "error": "RuntimeError: mmap can only be used with files saved with `torch.save(_use_new_zipfile_serialization=True), please torch.save your checkpoint with this option in order to use mmap."
+    }
+  },
+  {
+    "local_output": "outputs/stage2_vggt_ba/attempt03",
+    "status": "oom",
+    "failure_reason": "OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 11.99 GiB of which 1.03 GiB is free. 10.50 GiB allowed; Of the allocated memory 9.24 GiB is allocated by PyTorch, and 375.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+    "config": {
+      "schema_version": 1,
+      "method_id": "vggt_official_ba",
+      "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "device": "cuda",
+      "autocast": "bfloat16",
+      "parameter_dtype": "float32",
+      "seed": 42,
+      "num_threads": 8,
+      "timeout_seconds": 1200,
+      "max_query_pts": 4096,
+      "query_frame_num": 8,
+      "fine_tracking": true,
+      "camera_type": "SIMPLE_PINHOLE",
+      "shared_camera": false,
+      "vis_thresh": 0.2,
+      "max_reproj_error": 8.0,
+      "gpu_allocator_limit_gib": 10.5,
+      "preprocessing": "official_black_square_1024_then_bilinear_518",
+      "pycolmap_version": "3.10.0"
+    },
+    "timing_seconds": {
+      "staging_and_source_checks": 0.3053892299976724,
+      "runtime_imports_and_cuda_setup": 0.6762793480011169,
+      "all_checkpoint_sha256_checks": 2.3448220060017775,
+      "official_demo_import": 1.0124198199991952,
+      "vggt_model_construction": 4.66526002899991,
+      "square_preprocessing_and_pixel_audit": 0.15803720900294138,
+      "vggt_forward_and_initial_snapshot": 7.390820962998987,
+      "build_vggsfm_tracker": 0.20947859800071456,
+      "generate_rank_by_dino": 0.5536040709994268,
+      "initialize_feature_extractors": 0.020348406997072743,
+      "_forward_on_query": 11.193745870001294,
+      "tracking_including_models_and_export": 15.26716492199921,
+      "worker_wall": 33.43604849399708,
+      "total": 33.856693402998644
+    },
+    "memory_bytes": {
+      "peak_gpu_allocated": 10077113856,
+      "peak_gpu_reserved": 10315890688,
+      "peak_worker_rss_os": 11007524864,
+      "peak_worker_rss_sampled": 10587881472,
+      "peak_device_used_sampled_including_desktop": 11460935680
+    },
+    "provenance": {
+      "code_commit": "6ab0e80dbec2dedfee24a8c96710cda65573ddbf",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "0533513a8817564d0bc7a44c30ea12f56ed5fefd7c4f405cb511a05521fbece5",
+      "data_kind": "real",
+      "official_source": {
+        "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+        "files_sha256": {
+          "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+          "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+          "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+          "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+          "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+          "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+          "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+        },
+        "ba_files_sha256": {
+          "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+          "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+          "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+          "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+          "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+        },
+        "dinov2": {
+          "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+          "license_sha256": {
+            "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+            "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+            "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+            "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+          }
+        },
+        "lightglue": {
+          "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+          "license_sha256": {
+            "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+          }
+        }
+      },
+      "gt_access": "none; reference is evaluated separately",
+      "pixel_convention": "official tracks inserted unchanged as integer centers; no additional COLMAP -0.5 shift"
+    },
+    "state": {
+      "status": "process_error",
+      "timing_seconds": {
+        "runtime_imports_and_cuda_setup": 0.6762793480011169,
+        "all_checkpoint_sha256_checks": 2.3448220060017775,
+        "official_demo_import": 1.0124198199991952,
+        "vggt_model_construction": 4.66526002899991,
+        "square_preprocessing_and_pixel_audit": 0.15803720900294138,
+        "vggt_forward_and_initial_snapshot": 7.390820962998987,
+        "build_vggsfm_tracker": 0.20947859800071456,
+        "generate_rank_by_dino": 0.5536040709994268,
+        "initialize_feature_extractors": 0.020348406997072743,
+        "_forward_on_query": 11.193745870001294,
+        "tracking_including_models_and_export": 15.26716492199921
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10315890688
+      },
+      "weight_loads": [
+        {
+          "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+          "file": "model.pt",
+          "seconds": 0.05853396100064856
+        },
+        {
+          "url": "https://huggingface.co/facebook/VGGSfM/resolve/main/vggsfm_v2_tracker.pt",
+          "file": "vggsfm_v2_tracker.pt",
+          "seconds": 0.010813765999046154
+        },
+        {
+          "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+          "file": "dinov2_vitb14_reg4_pretrain.pth",
+          "seconds": 0.009137648001342313
+        },
+        {
+          "url": "https://github.com/Shiaoming/ALIKED/raw/main/models/aliked-n16.pth",
+          "file": "aliked-n16.pth",
+          "seconds": 0.0025276039996242616
+        },
+        {
+          "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+          "file": "superpoint_v1.pth",
+          "seconds": 0.002324667999346275
+        }
+      ],
+      "peak_rss_bytes": 11007524864,
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "pycolmap": "3.10.0",
+        "pyceres": "2.3",
+        "kornia": "0.8.3",
+        "trimesh": "4.12.2",
+        "hydra-core": "1.3.2",
+        "omegaconf": "2.3.0",
+        "numpy": "2.5.2",
+        "Pillow": "12.3.0",
+        "lightglue": "0.0",
+        "python": "3.12.3",
+        "cuda_runtime": "12.8"
+      },
+      "device": {
+        "name": "NVIDIA GeForce RTX 4070 SUPER",
+        "total_bytes": 12878086144,
+        "allocator_cap_bytes": 11274289152
+      },
+      "verified_weight_sha256": {
+        "vggt": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+        "vggsfm_tracker": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+        "dinov2_vitb14_reg": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+        "aliked": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+        "superpoint": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+      },
+      "official_glob_order_corrected": true,
+      "failure_kind": "oom",
+      "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 1.76 GiB. GPU 0 has a total capacity of 11.99 GiB of which 1.03 GiB is free. 10.50 GiB allowed; Of the allocated memory 9.24 GiB is allocated by PyTorch, and 375.97 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    }
+  },
+  {
+    "local_output": "outputs/stage2_vggt_ba/attempt04_12gb",
+    "status": "success",
+    "failure_reason": null,
+    "config": {
+      "schema_version": 1,
+      "method_id": "vggt_official_ba_12gb",
+      "official_commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+      "checkpoint_revision": "860abec7937da0a4c03c41d3c269c366e82abdf9",
+      "checkpoint_url": "https://huggingface.co/facebook/VGGT-1B/resolve/860abec7937da0a4c03c41d3c269c366e82abdf9/model.pt",
+      "checkpoint_sha256": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+      "device": "cuda",
+      "autocast": "bfloat16",
+      "parameter_dtype": "float32",
+      "seed": 42,
+      "num_threads": 8,
+      "timeout_seconds": 1200,
+      "max_query_pts": 4096,
+      "query_frame_num": 8,
+      "fine_tracking": true,
+      "camera_type": "SIMPLE_PINHOLE",
+      "shared_camera": false,
+      "vis_thresh": 0.2,
+      "max_reproj_error": 8.0,
+      "gpu_allocator_limit_gib": 10.5,
+      "preprocessing": "official_black_square_1024_then_bilinear_518",
+      "pycolmap_version": "3.10.0",
+      "memory_schedule": "retire_unused_vggt_after_forward"
+    },
+    "timing_seconds": {
+      "staging_and_source_checks": 0.3112523309973767,
+      "runtime_imports_and_cuda_setup": 0.6747649230019306,
+      "all_checkpoint_sha256_checks": 2.350446076998196,
+      "official_demo_import": 1.0147338589995343,
+      "vggt_model_construction": 4.70405263000066,
+      "square_preprocessing_and_pixel_audit": 0.1464771569990262,
+      "retire_unused_vggt_storage": 0.049903490998985944,
+      "vggt_forward_and_initial_snapshot": 7.4418000990008295,
+      "build_vggsfm_tracker": 0.2083289469992451,
+      "generate_rank_by_dino": 0.5444848170009209,
+      "initialize_feature_extractors": 0.017255601000215393,
+      "_forward_on_query": 17.26883633699981,
+      "_augment_non_visible_frames": 0.00010625899813021533,
+      "tracking_including_models_and_export": 21.098511244999827,
+      "ceres_bundle_adjustment": 0.47024884399797884,
+      "official_demo_wall_including_nested_stages": 35.32111554999938,
+      "worker_wall": 39.89863269699708,
+      "total": 40.25147133099745
+    },
+    "memory_bytes": {
+      "peak_gpu_allocated": 10077113856,
+      "peak_gpu_reserved": 10192158720,
+      "peak_worker_rss_os": 11007438848,
+      "peak_worker_rss_sampled": 10902269952,
+      "peak_device_used_sampled_including_desktop": 11326717952
+    },
+    "provenance": {
+      "code_commit": "6ab0e80dbec2dedfee24a8c96710cda65573ddbf",
+      "working_tree_dirty": true,
+      "source_tree_sha256": "209178dc3fcfea2e013b96ab1091ff0dbf8994c74b1a33235995a7cb61f599ed",
+      "data_kind": "real",
+      "official_source": {
+        "commit": "a288dd0f14786c93483e45524328726ab7b1b4ce",
+        "files_sha256": {
+          "vggt/models/vggt.py": "dbc92d6214882161d9042b1bc60cc932a9fd6bb609fc913d14906328f7833607",
+          "vggt/models/aggregator.py": "c994d7231eda2380f208355a64bce3cd7c4b97ef06393355e632415bfc1513e5",
+          "vggt/utils/load_fn.py": "d57b7a16c2e04333a2e68d365aa21f1dd61759e984f744cbcbe6b66d787f37ef",
+          "vggt/utils/pose_enc.py": "845fc3a46cb851bebf0720b8fc2b9f34334ae8e11f1982376ba59f90ff18f22b",
+          "vggt/utils/geometry.py": "c6f505182e4e926629c04adbdf633eb80238da3a3c87eb8337b6f130ab01ab93",
+          "requirements.txt": "171720da9f30387a5232065fd7848d767cc6cb9fafca2da928aa686cb79923f2",
+          "LICENSE.txt": "b94e46746792d1adfa0ebdbccada5d4576d244ae230be9de8a46b5868fff001b"
+        },
+        "ba_files_sha256": {
+          "demo_colmap.py": "c1aaebd123ad66ee85d46e6b629f1e02c8e60a897682fc2e9afcde65937818ce",
+          "vggt/dependency/track_predict.py": "8ee1dc033ef059a895c8176625e13d7bcef135a59c1bb30b6ecf75c8a09fc628",
+          "vggt/dependency/vggsfm_utils.py": "6a5bf8d2a669672aae8cfc4e66192a065a3f64268792fe5b64f86fe326d1b569",
+          "vggt/dependency/np_to_pycolmap.py": "bbb233d3a36aad00a89caf252ecc7e3ba6518bbd3c9be32eaf3efe46ef3a3b3d",
+          "requirements_demo.txt": "a4a2d34487f088e4240b92e2d8df1aa7ae6ab7c0859a40648329df381d2c47ef"
+        },
+        "dinov2": {
+          "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+          "license_sha256": {
+            "LICENSE_XRAY_DINO_MODEL": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad",
+            "LICENSE_CELL_DINO_CODE": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6",
+            "LICENSE_CELL_DINO_MODELS": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f",
+            "LICENSE": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+          }
+        },
+        "lightglue": {
+          "commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+          "license_sha256": {
+            "LICENSE": "0e6031ed3e62dc91dc8b1c8f240abd200b1083f60773362e64e339fe01d1bf18"
+          }
+        }
+      },
+      "gt_access": "none; reference is evaluated separately",
+      "pixel_convention": "official tracks inserted unchanged as integer centers; no additional COLMAP -0.5 shift"
+    },
+    "state": {
+      "status": "complete",
+      "timing_seconds": {
+        "runtime_imports_and_cuda_setup": 0.6747649230019306,
+        "all_checkpoint_sha256_checks": 2.350446076998196,
+        "official_demo_import": 1.0147338589995343,
+        "vggt_model_construction": 4.70405263000066,
+        "square_preprocessing_and_pixel_audit": 0.1464771569990262,
+        "retire_unused_vggt_storage": 0.049903490998985944,
+        "vggt_forward_and_initial_snapshot": 7.4418000990008295,
+        "build_vggsfm_tracker": 0.2083289469992451,
+        "generate_rank_by_dino": 0.5444848170009209,
+        "initialize_feature_extractors": 0.017255601000215393,
+        "_forward_on_query": 17.26883633699981,
+        "_augment_non_visible_frames": 0.00010625899813021533,
+        "tracking_including_models_and_export": 21.098511244999827,
+        "ceres_bundle_adjustment": 0.47024884399797884,
+        "official_demo_wall_including_nested_stages": 35.32111554999938
+      },
+      "memory_bytes": {
+        "peak_gpu_allocated": 10077113856,
+        "peak_gpu_reserved": 10192158720
+      },
+      "weight_loads": [
+        {
+          "url": "https://huggingface.co/facebook/VGGT-1B/resolve/main/model.pt",
+          "file": "model.pt",
+          "seconds": 0.07135424399893964
+        },
+        {
+          "url": "https://huggingface.co/facebook/VGGSfM/resolve/main/vggsfm_v2_tracker.pt",
+          "file": "vggsfm_v2_tracker.pt",
+          "seconds": 0.011314852003124543
+        },
+        {
+          "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+          "file": "dinov2_vitb14_reg4_pretrain.pth",
+          "seconds": 0.009043334001034964
+        },
+        {
+          "url": "https://github.com/Shiaoming/ALIKED/raw/main/models/aliked-n16.pth",
+          "file": "aliked-n16.pth",
+          "seconds": 0.002498581998224836
+        },
+        {
+          "url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+          "file": "superpoint_v1.pth",
+          "seconds": 0.001442830001906259
+        }
+      ],
+      "peak_rss_bytes": 11007438848,
+      "versions": {
+        "torch": "2.11.0+cu128",
+        "torchvision": "0.26.0+cu128",
+        "pycolmap": "3.10.0",
+        "pyceres": "2.3",
+        "kornia": "0.8.3",
+        "trimesh": "4.12.2",
+        "hydra-core": "1.3.2",
+        "omegaconf": "2.3.0",
+        "numpy": "2.5.2",
+        "Pillow": "12.3.0",
+        "lightglue": "0.0",
+        "python": "3.12.3",
+        "cuda_runtime": "12.8"
+      },
+      "device": {
+        "name": "NVIDIA GeForce RTX 4070 SUPER",
+        "total_bytes": 12878086144,
+        "allocator_cap_bytes": 11274289152
+      },
+      "verified_weight_sha256": {
+        "vggt": "d15bf50a8615c8225ed48b51ea5cac673d82442ec0309036df555a053253afe0",
+        "vggsfm_tracker": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+        "dinov2_vitb14_reg": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+        "aliked": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+        "superpoint": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e"
+      },
+      "official_glob_order_corrected": true,
+      "memory_schedule": "retire_unused_vggt_after_forward",
+      "track_shapes": {
+        "xy": [
+          3,
+          15319,
+          2
+        ],
+        "visibility": [
+          3,
+          15319
+        ],
+        "confidence": [
+          15319
+        ],
+        "initial_xyz": [
+          15319,
+          3
+        ],
+        "rgb": [
+          15319,
+          3
+        ]
+      },
+      "ba_solver": "official PyCOLMAP 3.10.0 CPU Ceres defaults; no solver substitution",
+      "optimized_points": 8200,
+      "validation": {
+        "camera_export_max_abs_square_px": 3.410605131648481e-13,
+        "post_ba_mean_observation_error_px": 0.15190240419974496,
+        "observations": 19440,
+        "optimized_points": 8200,
+        "pointcloud_source": "reconstruction.points3D after BA; official points.ply is not used"
+      }
+    }
+  }
+]

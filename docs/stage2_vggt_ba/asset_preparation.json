@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "lightglue_commit": "2f23ca2ea9638cecad7f7220795210fc6b8353c3",
+  "dinov2_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "assets": [
+    {
+      "name": "vggsfm_tracker",
+      "filename": "vggsfm_v2_tracker.pt",
+      "requested_url": "https://huggingface.co/facebook/VGGSfM/resolve/main/vggsfm_v2_tracker.pt",
+      "download_url": "https://huggingface.co/facebook/VGGSfM/resolve/643a1eb2069dad9b4cff071960323542477272e3/vggsfm_v2_tracker.pt",
+      "sha256": "451f1d218be1ef661c81d6254cbc633a5190e7d6069fe51621cc29ba5d90a404",
+      "license_note": "VGGSfM model card: CC-BY-NC-4.0",
+      "bytes": 195346695,
+      "preparation_seconds": 38.30427938000139,
+      "preparation_source": "official_download",
+      "pin_provenance": "previous/publication pin"
+    },
+    {
+      "name": "dinov2_vitb14_reg",
+      "filename": "dinov2_vitb14_reg4_pretrain.pth",
+      "requested_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+      "download_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_reg4_pretrain.pth",
+      "sha256": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71",
+      "license_note": "DINOv2 model card: Apache-2.0",
+      "bytes": 346393545,
+      "preparation_seconds": 23.47507526499976,
+      "preparation_source": "official_download",
+      "pin_provenance": "first observed official HTTPS bytes; not publisher-supplied checksum"
+    },
+    {
+      "name": "aliked",
+      "filename": "aliked-n16.pth",
+      "requested_url": "https://github.com/Shiaoming/ALIKED/raw/main/models/aliked-n16.pth",
+      "download_url": "https://raw.githubusercontent.com/Shiaoming/ALIKED/683d7c65197395c0b3f01ebe76e1084a27e73a65/models/aliked-n16.pth",
+      "sha256": "5be8704840ed662d9d8c561bf7279c222092674e7eb05fd0feab94899e9d82f2",
+      "license_note": "ALIKED BSD-3-Clause; preserve its notices",
+      "bytes": 2738091,
+      "preparation_seconds": 12.343555704999744,
+      "preparation_source": "official_download",
+      "pin_provenance": "first observed official HTTPS bytes; not publisher-supplied checksum"
+    },
+    {
+      "name": "superpoint",
+      "filename": "superpoint_v1.pth",
+      "requested_url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+      "download_url": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/superpoint_v1.pth",
+      "sha256": "52b6708629640ca883673b5d5c097c4ddad37d8048b33f09c8ca0d69db12c40e",
+      "license_note": "SuperPoint restrictive noncommercial internal research license; NOT Apache-2.0; no redistribution",
+      "bytes": 5206086,
+      "preparation_seconds": 24.42854989300031,
+      "preparation_source": "official_download",
+      "pin_provenance": "first observed official HTTPS bytes; not publisher-supplied checksum"
+    }
+  ],
+  "prepared_at_utc": "2026-10-16T09:37:27.332132+00:00",
+  "total_seconds": 38.304901504001464
+}

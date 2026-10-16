@@ -1,0 +1,80 @@
+{
+  "scope": "stage2 single-scene integration checks only",
+  "same_common_images_as_raw": true,
+  "manifest_sha256": "5753c59b26dc9389bbb2dc7a356144f98381d97aeccd40d77baa38652b609a00",
+  "source_tree_sha256_matches_acceptance": true,
+  "finite_npz_arrays": true,
+  "array_shapes": {
+    "square_initial.npz": {
+      "extrinsics": [
+        3,
+        3,
+        4
+      ],
+      "intrinsics": [
+        3,
+        3,
+        3
+      ],
+      "depth": [
+        3,
+        518,
+        518,
+        1
+      ],
+      "depth_conf": [
+        3,
+        518,
+        518
+      ]
+    },
+    "tracks.npz": {
+      "xy": [
+        3,
+        15318,
+        2
+      ],
+      "visibility": [
+        3,
+        15318
+      ],
+      "confidence": [
+        15318
+      ],
+      "initial_xyz": [
+        15318,
+        3
+      ],
+      "rgb": [
+        15318,
+        3
+      ]
+    },
+    "optimized_points.npz": {
+      "xyz": [
+        8220,
+        3
+      ],
+      "rgb": [
+        8220,
+        3
+      ],
+      "point_ids": [
+        8220
+      ]
+    }
+  },
+  "checks": {
+    "camera_export_max_abs_square_px": 3.410605131648481e-13,
+    "post_ba_mean_observation_error_px": 0.1526923357556069,
+    "observations": 19509,
+    "optimized_points": 8220,
+    "pointcloud_source": "reconstruction.points3D after BA; official points.ply is not used",
+    "native_point_roundtrip_exact": true
+  },
+  "large_artifact_location": "/home/zchming/projects/VisionGeometryLab/outputs/stage2_vggt_ba/acceptance",
+  "data_and_weights_uploaded": false,
+  "setup_install_and_clone_wall_seconds": null,
+  "setup_install_timing_note": "not uniformly timed; no invented cold deployment total",
+  "asset_download_wall_seconds": 38.304901504001464
+}

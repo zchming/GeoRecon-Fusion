@@ -1,0 +1,60 @@
+{
+  "source_commit": "38eccc03d32efe4643a1d6c03c42e72af4833edb",
+  "source_tree_sha256": "bb992727cc596f23aebafc67171813fbb62e9cb571fe84539b3618cc4f41a590",
+  "inference_command": [
+    "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+    "-m",
+    "georecon.cli",
+    "run-vggt-ba",
+    "--manifest",
+    "data/dtu_smoke_pinned/manifest.json",
+    "--config",
+    "configs/methods/vggt_ba_12gb_smoke.json",
+    "--official-repo",
+    "experiment03_depth_reprojection/vggt_official",
+    "--checkpoint",
+    "experiment03_depth_reprojection/model.pt",
+    "--assets",
+    "data/vggt_ba_assets",
+    "--dinov2-repo",
+    "data/third_party/dinov2",
+    "--lightglue-repo",
+    "data/third_party/LightGlue",
+    "--output",
+    "outputs/stage2_vggt_ba/acceptance"
+  ],
+  "evaluations": [
+    {
+      "command": [
+        "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+        "-m",
+        "georecon.cli",
+        "evaluate-poses",
+        "--prediction",
+        "outputs/stage2_vggt_ba/acceptance/prediction.json",
+        "--reference",
+        "data/dtu_smoke_pinned/reference.json",
+        "--output",
+        "outputs/stage2_vggt_ba/acceptance/evaluation.json"
+      ],
+      "wall_seconds": 0.09360034299970721,
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/home/zchming/.venvs/georecon-vggt-ba/bin/python",
+        "-m",
+        "georecon.cli",
+        "evaluate-poses",
+        "--prediction",
+        "outputs/stage2_vggt_ba/acceptance/pre_ba_prediction.json",
+        "--reference",
+        "data/dtu_smoke_pinned/reference.json",
+        "--output",
+        "outputs/stage2_vggt_ba/acceptance/pre_ba_evaluation.json"
+      ],
+      "wall_seconds": 0.10935572700327612,
+      "returncode": 0
+    }
+  ]
+}
