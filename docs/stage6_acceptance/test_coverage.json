@@ -1,0 +1,24 @@
+{
+  "environments": {
+    "reliability": {
+      "discovered": 134,
+      "passed": 133,
+      "skipped": 1,
+      "log_sha256": "dd574fdea48408591398c2b3f04f75d3092952676b1890b9cc4b4376aa76b1d1"
+    },
+    "colmap": {
+      "discovered": 134,
+      "passed": 100,
+      "skipped": 34,
+      "log_sha256": "2a0b9682248493100b23e3e664295dd1b31dccfd58ebeb32f39c1785e7d132ff"
+    }
+  },
+  "distinct_tests_passed_in_at_least_one_environment": 134,
+  "skipped_in_both_environments": [],
+  "teaching_test_counts": {
+    "two_view": 10,
+    "PnP_incremental": 6,
+    "BA": 8
+  },
+  "regression_count_includes_prior_stages": true
+}

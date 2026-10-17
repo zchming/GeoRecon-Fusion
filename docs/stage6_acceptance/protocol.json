@@ -1,0 +1,32 @@
+{
+  "scope": "stage6 teaching SfM acceptance only",
+  "intrinsics": "known per-image distortion-free K supplied explicitly, K_processed=A K_original, zero-based pixel centers",
+  "images": "existing DTU scan1 only, Pillow bilinear 1600x1200 to 800x600, no crop or view substitution",
+  "inference_truth_policy": "K declared input; no pose, scale or point reference file reads in recorded inference; GT evaluation only",
+  "gauge_before_BA": "seed camera1 I/0 and unit seed translation norm",
+  "gauge_after_BA": "first seed pose fixed; second seed center largest initial coordinate component relative to first is fixed; baseline norm can change, scale still arbitrary",
+  "BA_unchanged_entities": [
+    "registered image set",
+    "input order",
+    "K",
+    "point IDs/count",
+    "RGB",
+    "keypoint observations"
+  ],
+  "configurations": {
+    "stage6": {
+      "path": "configs/teaching/stage6_two_view.json",
+      "sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e"
+    },
+    "stage6_incremental": {
+      "path": "configs/teaching/stage6_incremental.json",
+      "sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46"
+    },
+    "stage6_ba": {
+      "path": "configs/teaching/stage6_ba.json",
+      "sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb"
+    }
+  },
+  "boundary": "no stage7, no benchmark extension, no new reliability/fusion/training/UI",
+  "source_provenance": "historical Git package plus locked uncommitted source bytes reconstructed; added modules legitimately change the current full-package hash"
+}

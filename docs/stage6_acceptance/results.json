@@ -1,0 +1,678 @@
+{
+  "two_view": {
+    "scope": "Stage6 calibrated two-view teaching substep",
+    "real_pairs": 3,
+    "real_successes": 2,
+    "controls": 8,
+    "control_expected_statuses_met": true,
+    "all_status_counts": {
+      "success": 4,
+      "no_reconstruction": 7
+    },
+    "real_matches_and_points": [
+      {
+        "case_id": "dtu_scan1_001_003",
+        "status": "success",
+        "failure_reason": null,
+        "rotation_error_deg": 1.6421869315989523,
+        "translation_direction_error_deg": 1.9651659698059947,
+        "mutual_matches": 427,
+        "kept_points": 404
+      },
+      {
+        "case_id": "dtu_scan1_001_020",
+        "status": "no_reconstruction",
+        "failure_reason": "insufficient_matches",
+        "rotation_error_deg": null,
+        "translation_direction_error_deg": null,
+        "mutual_matches": 4,
+        "kept_points": 0
+      },
+      {
+        "case_id": "dtu_scan1_blur_001_003",
+        "status": "success",
+        "failure_reason": null,
+        "rotation_error_deg": 1.0444899074387528,
+        "translation_direction_error_deg": 0.49699752195009167,
+        "mutual_matches": 101,
+        "kept_points": 86
+      }
+    ],
+    "known_intrinsics_are_input": true,
+    "new_downloads_or_models": 0,
+    "new_Benchmark_results": false,
+    "PnP_incremental_BA_in_scope": false,
+    "next_stage_started": false
+  },
+  "incremental_and_BA_same_registered_set_points_and_observations": [
+    {
+      "case_id": "dtu_scan1_reduced3",
+      "kind": "real",
+      "incremental_status": "success",
+      "registered": 3,
+      "input_images": 3,
+      "points_before_and_after_BA": 1793,
+      "PnP_inliers_in_fixed_registration_order": [
+        316
+      ],
+      "BA_reason": "accepted_converged",
+      "BA_converged": true,
+      "before_BA": {
+        "registered_images": 3,
+        "points": 1793,
+        "observations": 3902,
+        "reprojection_rmse_px": 0.35165765285021844,
+        "reprojection_max_px": 1.8431174286811944,
+        "observations_above_2px": 0,
+        "positive_observations": 3902,
+        "robust_objective_scale1": 217.91733649346656,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.6515092208606285,
+            "translation_direction_deg": 1.4114856815121049
+          },
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 1.6421869315989523,
+            "translation_direction_deg": 1.9651659698059947
+          },
+          {
+            "ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 1.0485754211691216,
+            "translation_direction_deg": 2.1875943906403768
+          }
+        ],
+        "mean_pair_rotation_deg": 1.1140905245429007,
+        "mean_pair_translation_direction_deg": 1.8547486806528255,
+        "camera_center_ATE_refit_Sim3_mm": 1.2899759259169021,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": null
+      },
+      "after_BA": {
+        "registered_images": 3,
+        "points": 1793,
+        "observations": 3902,
+        "reprojection_rmse_px": 0.1979478126158679,
+        "reprojection_max_px": 1.7825213772004564,
+        "observations_above_2px": 0,
+        "positive_observations": 3902,
+        "robust_objective_scale1": 70.1265935729092,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.17093351658996042,
+            "translation_direction_deg": 0.7310018318480429
+          },
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.25430452488545124,
+            "translation_direction_deg": 0.6219619976865975
+          },
+          {
+            "ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.11924287772827942,
+            "translation_direction_deg": 0.6319262425514897
+          }
+        ],
+        "mean_pair_rotation_deg": 0.1814936397345637,
+        "mean_pair_translation_direction_deg": 0.66163002402871,
+        "camera_center_ATE_refit_Sim3_mm": 0.2440618293778255,
+        "camera_center_ATE_fixed_before_Sim3_mm": 2.334236641610014,
+        "ATE_unavailable_reason": null
+      }
+    },
+    {
+      "case_id": "dtu_scan1_normal5",
+      "kind": "real",
+      "incremental_status": "success",
+      "registered": 5,
+      "input_images": 5,
+      "points_before_and_after_BA": 2658,
+      "PnP_inliers_in_fixed_registration_order": [
+        316,
+        357,
+        260
+      ],
+      "BA_reason": "accepted_evaluation_budget_limited",
+      "BA_converged": false,
+      "before_BA": {
+        "registered_images": 5,
+        "points": 2658,
+        "observations": 6249,
+        "reprojection_rmse_px": 0.41861282206295586,
+        "reprojection_max_px": 1.9912186799087566,
+        "observations_above_2px": 0,
+        "positive_observations": 6249,
+        "robust_objective_scale1": 476.1591945591853,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.6515092208606285,
+            "translation_direction_deg": 1.4114856815121049
+          },
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 1.6421869315989523,
+            "translation_direction_deg": 1.9651659698059947
+          },
+          {
+            "ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 2.416544653334182,
+            "translation_direction_deg": 1.6833738466570605
+          },
+          {
+            "ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 3.115051658957554,
+            "translation_direction_deg": 1.7784753369512463
+          },
+          {
+            "ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 1.0485754211691216,
+            "translation_direction_deg": 2.1875943906403768
+          },
+          {
+            "ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 2.01369914441359,
+            "translation_direction_deg": 1.2885189383253166
+          },
+          {
+            "ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 2.786272409463988,
+            "translation_direction_deg": 1.5933812172360742
+          },
+          {
+            "ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 1.1947586631364273,
+            "translation_direction_deg": 0.8859757095187574
+          },
+          {
+            "ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 2.0156195602997506,
+            "translation_direction_deg": 0.8514689186813845
+          },
+          {
+            "ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.8234158078576295,
+            "translation_direction_deg": 2.0648110705143825
+          }
+        ],
+        "mean_pair_rotation_deg": 1.7707633471091824,
+        "mean_pair_translation_direction_deg": 1.5710251079842699,
+        "camera_center_ATE_refit_Sim3_mm": 2.2878751587926067,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": null
+      },
+      "after_BA": {
+        "registered_images": 5,
+        "points": 2658,
+        "observations": 6249,
+        "reprojection_rmse_px": 0.22960490661572383,
+        "reprojection_max_px": 2.5159467123138115,
+        "observations_above_2px": 3,
+        "positive_observations": 6249,
+        "robust_objective_scale1": 148.2592839003882,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.16531063333784704,
+            "translation_direction_deg": 0.7643308598217354
+          },
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.2667831158049452,
+            "translation_direction_deg": 0.6325625653852596
+          },
+          {
+            "ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.30543287443208755,
+            "translation_direction_deg": 0.4930962545150338
+          },
+          {
+            "ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.4003071517596072,
+            "translation_direction_deg": 0.4072968380968039
+          },
+          {
+            "ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.14428238935381144,
+            "translation_direction_deg": 0.5918617654617059
+          },
+          {
+            "ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.3067026893957033,
+            "translation_direction_deg": 0.4660559597299709
+          },
+          {
+            "ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.49185195849423363,
+            "translation_direction_deg": 0.4050801410053457
+          },
+          {
+            "ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.2295166110433851,
+            "translation_direction_deg": 0.4171228915193977
+          },
+          {
+            "ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.4764295467126504,
+            "translation_direction_deg": 0.3740183824217259
+          },
+          {
+            "ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.2826370969867251,
+            "translation_direction_deg": 0.13620380686333422
+          }
+        ],
+        "mean_pair_rotation_deg": 0.30692540673209956,
+        "mean_pair_translation_direction_deg": 0.4687629464820313,
+        "camera_center_ATE_refit_Sim3_mm": 1.2137403621395562,
+        "camera_center_ATE_fixed_before_Sim3_mm": 6.594281690846052,
+        "ATE_unavailable_reason": null
+      }
+    },
+    {
+      "case_id": "dtu_scan1_blur5",
+      "kind": "real",
+      "incremental_status": "success",
+      "registered": 5,
+      "input_images": 5,
+      "points_before_and_after_BA": 523,
+      "PnP_inliers_in_fixed_registration_order": [
+        71,
+        71,
+        52
+      ],
+      "BA_reason": "accepted_converged",
+      "BA_converged": true,
+      "before_BA": {
+        "registered_images": 5,
+        "points": 523,
+        "observations": 1240,
+        "reprojection_rmse_px": 0.5467650545079762,
+        "reprojection_max_px": 1.9231262610874176,
+        "observations_above_2px": 0,
+        "positive_observations": 1240,
+        "robust_objective_scale1": 157.2644948273268,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.4658448572400355,
+            "translation_direction_deg": 0.7204544522699108
+          },
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 1.0444899074387528,
+            "translation_direction_deg": 0.49699752195009167
+          },
+          {
+            "ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 1.451794320195627,
+            "translation_direction_deg": 0.5178135420609378
+          },
+          {
+            "ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 1.544896501285216,
+            "translation_direction_deg": 0.31553818373435805
+          },
+          {
+            "ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.6474931174014663,
+            "translation_direction_deg": 0.07426883015642545
+          },
+          {
+            "ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 1.1511380188454228,
+            "translation_direction_deg": 0.21925884602298487
+          },
+          {
+            "ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 1.4036736525769908,
+            "translation_direction_deg": 0.43795276067023614
+          },
+          {
+            "ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.5673419043114186,
+            "translation_direction_deg": 0.31640541237484837
+          },
+          {
+            "ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 1.0004576121817759,
+            "translation_direction_deg": 0.9696439782343971
+          },
+          {
+            "ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.5690197268855576,
+            "translation_direction_deg": 1.8515465920548877
+          }
+        ],
+        "mean_pair_rotation_deg": 0.9846149618362263,
+        "mean_pair_translation_direction_deg": 0.5919880119529078,
+        "camera_center_ATE_refit_Sim3_mm": 1.7617228752085488,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": null
+      },
+      "after_BA": {
+        "registered_images": 5,
+        "points": 523,
+        "observations": 1240,
+        "reprojection_rmse_px": 0.45685124845900704,
+        "reprojection_max_px": 2.8601687583472697,
+        "observations_above_2px": 3,
+        "positive_observations": 1240,
+        "robust_objective_scale1": 109.62728300068034,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "002"
+            ],
+            "rotation_deg": 0.16923251868554662,
+            "translation_direction_deg": 0.7099095616980045
+          },
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 0.32152647800099,
+            "translation_direction_deg": 0.49413530598134575
+          },
+          {
+            "ids": [
+              "001",
+              "004"
+            ],
+            "rotation_deg": 0.39292716644419184,
+            "translation_direction_deg": 0.35951816031292133
+          },
+          {
+            "ids": [
+              "001",
+              "005"
+            ],
+            "rotation_deg": 0.27084442278226595,
+            "translation_direction_deg": 0.20442988299720868
+          },
+          {
+            "ids": [
+              "002",
+              "003"
+            ],
+            "rotation_deg": 0.19128094139317345,
+            "translation_direction_deg": 0.33557712513989874
+          },
+          {
+            "ids": [
+              "002",
+              "004"
+            ],
+            "rotation_deg": 0.3301857628226933,
+            "translation_direction_deg": 0.17431729912921384
+          },
+          {
+            "ids": [
+              "002",
+              "005"
+            ],
+            "rotation_deg": 0.2805030597514124,
+            "translation_direction_deg": 0.09757817514697045
+          },
+          {
+            "ids": [
+              "003",
+              "004"
+            ],
+            "rotation_deg": 0.18335537637571,
+            "translation_direction_deg": 0.13316701674044817
+          },
+          {
+            "ids": [
+              "003",
+              "005"
+            ],
+            "rotation_deg": 0.24085677470533254,
+            "translation_direction_deg": 0.34069087444304574
+          },
+          {
+            "ids": [
+              "004",
+              "005"
+            ],
+            "rotation_deg": 0.17290130020498892,
+            "translation_direction_deg": 0.7384024984668403
+          }
+        ],
+        "mean_pair_rotation_deg": 0.2553613801166305,
+        "mean_pair_translation_direction_deg": 0.3587725900055898,
+        "camera_center_ATE_refit_Sim3_mm": 0.9290845483304808,
+        "camera_center_ATE_fixed_before_Sim3_mm": 5.194786120285962,
+        "ATE_unavailable_reason": null
+      }
+    },
+    {
+      "case_id": "dtu_scan1_spaced3",
+      "kind": "real",
+      "incremental_status": "no_reconstruction",
+      "registered": 0,
+      "input_images": 3,
+      "points_before_and_after_BA": 0,
+      "PnP_inliers_in_fixed_registration_order": [],
+      "BA_reason": "no_seeded_map",
+      "BA_converged": false,
+      "before_BA": {
+        "registered_images": 0,
+        "points": 0,
+        "observations": 0,
+        "reprojection_rmse_px": null,
+        "reprojection_max_px": null,
+        "observations_above_2px": 0,
+        "positive_observations": 0,
+        "robust_objective_scale1": null,
+        "pairs": [],
+        "mean_pair_rotation_deg": null,
+        "mean_pair_translation_direction_deg": null,
+        "camera_center_ATE_refit_Sim3_mm": null,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": "alignment requires >=3 paired finite 3D points"
+      },
+      "after_BA": {
+        "registered_images": 0,
+        "points": 0,
+        "observations": 0,
+        "reprojection_rmse_px": null,
+        "reprojection_max_px": null,
+        "observations_above_2px": 0,
+        "positive_observations": 0,
+        "robust_objective_scale1": null,
+        "pairs": [],
+        "mean_pair_rotation_deg": null,
+        "mean_pair_translation_direction_deg": null,
+        "camera_center_ATE_refit_Sim3_mm": null,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": "alignment requires >=3 paired finite 3D points"
+      }
+    },
+    {
+      "case_id": "blank_added_view",
+      "kind": "synthetic",
+      "incremental_status": "partial",
+      "registered": 2,
+      "input_images": 3,
+      "points_before_and_after_BA": 404,
+      "PnP_inliers_in_fixed_registration_order": [
+        0
+      ],
+      "BA_reason": "requires_at_least_three_registered_cameras",
+      "BA_converged": false,
+      "before_BA": {
+        "registered_images": 2,
+        "points": 404,
+        "observations": 808,
+        "reprojection_rmse_px": 0.23887837899265854,
+        "reprojection_max_px": 1.0140631821456,
+        "observations_above_2px": 0,
+        "positive_observations": 808,
+        "robust_objective_scale1": 21.92829911627332,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 1.6421869315989523,
+            "translation_direction_deg": 1.9651659698059947
+          }
+        ],
+        "mean_pair_rotation_deg": 1.6421869315989523,
+        "mean_pair_translation_direction_deg": 1.9651659698059947,
+        "camera_center_ATE_refit_Sim3_mm": null,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": "alignment requires >=3 paired finite 3D points"
+      },
+      "after_BA": {
+        "registered_images": 2,
+        "points": 404,
+        "observations": 808,
+        "reprojection_rmse_px": 0.23887837899265854,
+        "reprojection_max_px": 1.0140631821456,
+        "observations_above_2px": 0,
+        "positive_observations": 808,
+        "robust_objective_scale1": 21.92829911627332,
+        "pairs": [
+          {
+            "ids": [
+              "001",
+              "003"
+            ],
+            "rotation_deg": 1.6421869315989523,
+            "translation_direction_deg": 1.9651659698059947
+          }
+        ],
+        "mean_pair_rotation_deg": 1.6421869315989523,
+        "mean_pair_translation_direction_deg": 1.9651659698059947,
+        "camera_center_ATE_refit_Sim3_mm": null,
+        "camera_center_ATE_fixed_before_Sim3_mm": null,
+        "ATE_unavailable_reason": "alignment requires >=3 paired finite 3D points"
+      }
+    }
+  ],
+  "independent_real_objects": 1,
+  "DTU_scan": 1,
+  "conditions": [
+    "reduced3",
+    "normal5",
+    "blur5",
+    "spaced3"
+  ],
+  "no_new_data_or_configuration_search": true,
+  "not_a_new_benchmark_or_blind_test": true
+}

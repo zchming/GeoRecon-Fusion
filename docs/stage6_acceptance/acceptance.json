@@ -1,0 +1,64 @@
+{
+  "stage": 6,
+  "scope": "minimal explainable calibrated teaching SfM on existing local DTU small samples",
+  "stage_acceptance": "passed",
+  "engineering_and_evidence_acceptance": "passed",
+  "requirements": [
+    {
+      "requirement": "feature extraction and matching",
+      "status": "passed",
+      "evidence": "11 pair and 5 sequence replays; saved stable keypoint and match indices"
+    },
+    {
+      "requirement": "ratio/mutual filtering and RANSAC",
+      "status": "passed",
+      "evidence": "two_view.py, frozen configs and all masks/hypotheses replayed"
+    },
+    {
+      "requirement": "known-K essential matrix and pose recovery",
+      "status": "passed",
+      "evidence": "four R/t hypotheses, I/0 first camera and unit baseline checked"
+    },
+    {
+      "requirement": "triangulation and cheirality",
+      "status": "passed",
+      "evidence": "replayed DLT, positive depths, >=0.5 degree parallax and <=2px initial observation gates"
+    },
+    {
+      "requirement": "PnP and incremental registration",
+      "status": "passed",
+      "evidence": "fixed-order registered-set outputs, unique track IDs; blank-view rejection preserves map"
+    },
+    {
+      "requirement": "reprojection error",
+      "status": "passed",
+      "evidence": "independent before/after observation reprojection, complete residual and rejection arrays"
+    },
+    {
+      "requirement": "small bundle adjustment",
+      "status": "passed",
+      "evidence": "sparse fixed-K joint poses/XYZ, gauge checks, unchanged points/tracks/K, convergence labels"
+    },
+    {
+      "requirement": "scope, degeneracies and reproducibility",
+      "status": "passed",
+      "evidence": "failure_catalog, historical source/input/output locks, synthetic controls and test coverage"
+    }
+  ],
+  "historical_cases_verified": {
+    "two_view": 11,
+    "incremental": 5,
+    "BA": 5,
+    "additional_BA_synthetic_failure_controls": 4
+  },
+  "distinct_tests_cross_environment": 134,
+  "known_K_preserved": true,
+  "old_records_and_all_comparable_failures_preserved": true,
+  "no_inference_pose_or_scale_truth_reads_recorded": true,
+  "all_BA_runs_converged": false,
+  "novel_algorithm_or_general_performance_gain_established": false,
+  "research_project_complete": false,
+  "stage7_started": false,
+  "GPU_budget_GiB": 12,
+  "stop_at_stage_boundary": true
+}

@@ -1,0 +1,24 @@
+{
+  "required_source_and_substep_evidence_sha256": {
+    "scripts/accept_stage6.py": "49c13e1d57fa8ab4fe23e8312cc8537baf81f248518b3a2e6ab8ebf442f8f358",
+    "scripts/report_stage6_acceptance.py": "a9fd1d225c96d42a4f76be23e6940bed82492f408f522f71d216dc2cba1bf71f",
+    "docs/stage6/input_lock.json": "1a6c01b25dbd107058ff2d896bcb8215d953f7e4bb53098f5fdbec0e4df56686",
+    "docs/stage6/source_lock.json": "335f07b31e7067191fb535a5c09f8a858eafb619759d4f54312efece5ea7e708",
+    "docs/stage6/acceptance.json": "418bfbf442215a69bc6fceda95062bcbbbef37f4f9814c46be90b4b1d0554589",
+    "docs/stage6_incremental/input_lock.json": "8f7ad91ddf9317f088539cc39ceb9d56e20f4eb5a90dd3a47da640ba9d5afb02",
+    "docs/stage6_incremental/source_lock.json": "23774dd29ec3ba893612fedd5fea7f9ec8a452cb1991c6e90469c0bf77008259",
+    "docs/stage6_incremental/acceptance.json": "29dd6206e6411469e30d9cbdaa26fcba3bcbd87242a7ffd0d69e5ff2f453d9db",
+    "docs/stage6_ba/input_lock.json": "eb4507854d50241f87aec25513ba03ba5e05faf05f23690d8fa9bfc5fbc425c2",
+    "docs/stage6_ba/source_lock.json": "90089196e8f7c80e54d71c474af3f4dfdd0fbabea79c040920694b3838c53b69",
+    "docs/stage6_ba/acceptance.json": "a770ba4229a180a05a3631a747793443673344da0940b1082de1f53e1dfcaa1a",
+    "AGENTS.md": "c2c6b3c1852463acfcf88435c08fb428eae571588e4ef93ae90a98951e61bffa",
+    "docs/project_brief.md": "3e9beba447058d07310e9a916028993bf48ce6ce53c680f7183653279c754560"
+  },
+  "historical_artifact_lock_sha256": "44b7575db412f1d35cfc8ee0306c4b9bb399ec50b911cfcf9df3aa173051275d",
+  "regression_logs_sha256": {
+    "regression_reliability.txt": "dd574fdea48408591398c2b3f04f75d3092952676b1890b9cc4b4376aa76b1d1",
+    "regression_colmap.txt": "2a0b9682248493100b23e3e664295dd1b31dccfd58ebeb32f39c1785e7d132ff"
+  },
+  "before_acceptance_HEAD": "38439e0f95747c8eee821be85818d2bab187a011",
+  "new_inference_runs_or_settings": false
+}

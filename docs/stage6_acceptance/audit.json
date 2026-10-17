@@ -1,0 +1,351 @@
+{
+  "source_checks": {
+    "src/georecon/teaching/two_view.py": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "src/georecon/teaching/run.py": "b895bfaf8b147eda3f542716c914262a092ca8a57ba4641ee9228f465556200b",
+    "src/georecon/cli.py": "fd909d90160bee36e6197246f59192e6e2d0c36fc77c4e7d5437a9bddeb36695",
+    "scripts/prepare_stage6.py": "7cd9529b05a9c6525c475b570cc7e8213561dbe11846192aabc0b4b1ad4dd03d",
+    "scripts/run_stage6.py": "6ae278d0ee800a37802f2af5dbfbe71cd23b1bc09a239346c740fde501d91a28",
+    "scripts/evaluate_stage6.py": "a2d7cc6d80e5517414257f0160832cc547b2bd02e0005852ef22ad05079dd216",
+    "scripts/check_stage6.py": "be87a694219964890c0136e0e05e32a309e9448228197ef486984af903296992",
+    "scripts/report_stage6.py": "8deda232945dd117f2cf3483c500e1afe898374e95b2f33f20e433bf70d2426b",
+    "src/georecon/teaching/incremental.py": "bc19fb9bdba2910ec4ff335da78a209e1fdaa1521c448433f2fefbeb79e85af0",
+    "src/georecon/teaching/incremental_run.py": "c9286ff405bbd03f75a94c56bcf6f12dbee57311a4d6d6a836a3e034378f9a74",
+    "scripts/run_stage6_incremental.py": "15baa3dc2e5cd7283ac1490ce62094c5e418df10b2a868890a9eb14fccc39117",
+    "scripts/prepare_stage6_incremental.py": "8a689ea63f5dad377fd8c7ba85ef19350bae6da7a0b5b049ed3dc5f623052e7c",
+    "scripts/check_stage6_incremental.py": "da4fef22a242526fb33d0f3dda8663e5e0d89137db679964722338ef023edf5f",
+    "tests/test_incremental_sfm.py": "c471b41df804d1833919f4f670eb68071c38b03c0ca10e23c5904dd480d1a6eb",
+    "src/georecon/teaching/bundle_adjustment.py": "20a218cb0d6ed14d888816ef951c8a92d60ea05a34431dbd183b6381c6532e3a",
+    "src/georecon/teaching/ba_run.py": "0ba61c7313547cb945ef3974aad605634b776c684ab3d3b015fa46cfcb5e6bb8",
+    "scripts/prepare_stage6_ba.py": "5d489774395883d9a54659b0606fa95a04c8ccf5b277ab6be8e2acb505e87572",
+    "scripts/run_stage6_ba.py": "d84f59b002a7af23f7ff40536405374b8a80a1be06d0ec0bfbf4299eb676080d",
+    "tests/test_teaching_ba.py": "607e7df1504ab5dadf3be81dea17d3e9d4a3fddf73ea26244dc773f4f283e11b",
+    "scripts/check_stage6_ba.py": "761d8310230bbe7d66a050cd672643ae155f6a50c629c791b828a212b3745995",
+    "scripts/control_stage6_ba.py": "bc35e28c09199764f6118521abc556e3dbb13e5737fb4e15f074bc9dba2125bf",
+    "scripts/report_stage6_ba.py": "4f5b9fce4b438081a24b4cbac9ec7cd6c6e2890c40f1056a9b35156e0e55cbd7"
+  },
+  "historical_package_provenance": {
+    "stage6": {
+      "code_commit_at_run": "9e8e0309172ddbe1ec56c4280d3d65a20cd4ef7d",
+      "reconstructed_package_sha256": "7f002384735e9a659a92f997d0c1373244ecfc9419fd80845ff87eda93fe52ad",
+      "committed_package_plus_frozen_src_overrides_verified": true
+    },
+    "stage6_incremental": {
+      "code_commit_at_run": "bc0c0ac49d1eaa2b1382b4431d8ed5c6430544dc",
+      "reconstructed_package_sha256": "6f749f168cbae33b5a39b3aa080fe9ee48c7cbeaddf1f94d959fdd11b287daa3",
+      "committed_package_plus_frozen_src_overrides_verified": true
+    },
+    "stage6_ba": {
+      "code_commit_at_run": "abc5f85268d9b1f4b46a25f417fb5d01cac9a76b",
+      "reconstructed_package_sha256": "508409b98cabc1a6e16ae5bf01f866c4d21ee62daaf5455f1c15b66a609486f4",
+      "committed_package_plus_frozen_src_overrides_verified": true
+    }
+  },
+  "all_21_run_records_and_exits_verified": [
+    {
+      "stage": "stage6",
+      "case_id": "dtu_scan1_001_003",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 2,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "dtu_scan1_001_020",
+      "kind": "real",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "dtu_scan1_blur_001_003",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 2,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "blank_pair",
+      "kind": "synthetic",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "identical_dtu_image",
+      "kind": "synthetic",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "nonplanar_exact",
+      "kind": "synthetic",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 2,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "nonplanar_noise_outliers",
+      "kind": "synthetic",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 2,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "planar",
+      "kind": "synthetic",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "pure_rotation",
+      "kind": "synthetic",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "tiny_baseline",
+      "kind": "synthetic",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6",
+      "case_id": "too_few_matches",
+      "kind": "synthetic",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 2,
+      "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "dtu_scan1_reduced3",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 3,
+      "images": 3,
+      "config_sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "dtu_scan1_normal5",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 5,
+      "images": 5,
+      "config_sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "dtu_scan1_blur5",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 5,
+      "images": 5,
+      "config_sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "dtu_scan1_spaced3",
+      "kind": "real",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 3,
+      "config_sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "blank_added_view",
+      "kind": "synthetic",
+      "status": "partial",
+      "exit_code": 1,
+      "registered_images": 2,
+      "images": 3,
+      "config_sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "dtu_scan1_reduced3",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 3,
+      "images": 3,
+      "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "dtu_scan1_normal5",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 5,
+      "images": 5,
+      "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "dtu_scan1_blur5",
+      "kind": "real",
+      "status": "success",
+      "exit_code": 0,
+      "registered_images": 5,
+      "images": 5,
+      "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "dtu_scan1_spaced3",
+      "kind": "real",
+      "status": "no_reconstruction",
+      "exit_code": 1,
+      "registered_images": 0,
+      "images": 3,
+      "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+      "no_recorded_pose_truth_access": true
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "blank_added_view",
+      "kind": "synthetic",
+      "status": "partial",
+      "exit_code": 1,
+      "registered_images": 2,
+      "images": 3,
+      "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+      "no_recorded_pose_truth_access": true
+    }
+  ],
+  "two_view_replay": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "success",
+      "points": 404
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    },
+    {
+      "case_id": "dtu_scan1_blur_001_003",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "success",
+      "points": 86
+    },
+    {
+      "case_id": "blank_pair",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    },
+    {
+      "case_id": "identical_dtu_image",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    },
+    {
+      "case_id": "nonplanar_exact",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "success",
+      "points": 160
+    },
+    {
+      "case_id": "nonplanar_noise_outliers",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "success",
+      "points": 128
+    },
+    {
+      "case_id": "planar",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    },
+    {
+      "case_id": "pure_rotation",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    },
+    {
+      "case_id": "tiny_baseline",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    },
+    {
+      "case_id": "too_few_matches",
+      "all_feature_and_geometry_arrays_replayed": true,
+      "status": "no_reconstruction",
+      "points": 0
+    }
+  ],
+  "incremental_5_runs_exactly_replayed": true,
+  "BA_5_runs_independently_reprojected_and_gauge_checked": true,
+  "BA_4_synthetic_failure_controls_hashes_and_reasons_verified": true,
+  "all_historical_files_unchanged": true,
+  "historical_file_count": 312,
+  "current_scope": "stage6 acceptance only, known K, no new samples or algorithm changes",
+  "seconds": 4.672494842000106
+}

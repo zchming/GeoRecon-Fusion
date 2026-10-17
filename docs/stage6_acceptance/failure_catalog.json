@@ -1,0 +1,184 @@
+{
+  "cases": [
+    {
+      "stage": "stage6",
+      "case_id": "dtu_scan1_001_020",
+      "kind": "real",
+      "category": "real_failure",
+      "reason": "insufficient_matches",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6",
+      "case_id": "blank_pair",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "insufficient_matches",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6",
+      "case_id": "identical_dtu_image",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "identical_correspondences_no_baseline",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6",
+      "case_id": "planar",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "homography_dominated_ambiguous_geometry",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6",
+      "case_id": "pure_rotation",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "homography_dominated_ambiguous_geometry",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6",
+      "case_id": "tiny_baseline",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "homography_dominated_ambiguous_geometry",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6",
+      "case_id": "too_few_matches",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "insufficient_matches",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "dtu_scan1_spaced3",
+      "kind": "real",
+      "category": "real_failure",
+      "reason": "seed_initialization_failed",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6_incremental",
+      "case_id": "blank_added_view",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "one_or_more_pnp_registrations_failed",
+      "original_status": "partial"
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "dtu_scan1_normal5",
+      "kind": "real",
+      "category": "solver_evaluation_budget",
+      "reason": "accepted_evaluation_budget_limited",
+      "original_status": "success"
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "dtu_scan1_spaced3",
+      "kind": "real",
+      "category": "not_applicable_or_failed_input_map",
+      "reason": "no_seeded_map",
+      "original_status": "no_reconstruction"
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "blank_added_view",
+      "kind": "synthetic",
+      "category": "not_applicable_or_failed_input_map",
+      "reason": "requires_at_least_three_registered_cameras",
+      "original_status": "partial"
+    },
+    {
+      "stage": "stage6_ba",
+      "kind": "real",
+      "category": "accepted_solution_tradeoff",
+      "case_id": "dtu_scan1_reduced3",
+      "reason": "accepted_BA_has_GT_metric_regression",
+      "metrics": [
+        "camera_center_ATE_fixed_before_Sim3_mm"
+      ]
+    },
+    {
+      "stage": "stage6_ba",
+      "kind": "real",
+      "category": "accepted_solution_tradeoff",
+      "case_id": "dtu_scan1_normal5",
+      "reason": "accepted_BA_has_worse_max_observation_error",
+      "before_px": 1.9912186799087566,
+      "after_px": 2.5159467123138115,
+      "observations_above_2px": 3
+    },
+    {
+      "stage": "stage6_ba",
+      "kind": "real",
+      "category": "accepted_solution_tradeoff",
+      "case_id": "dtu_scan1_normal5",
+      "reason": "accepted_BA_has_GT_metric_regression",
+      "metrics": [
+        "camera_center_ATE_fixed_before_Sim3_mm"
+      ]
+    },
+    {
+      "stage": "stage6_ba",
+      "kind": "real",
+      "category": "accepted_solution_tradeoff",
+      "case_id": "dtu_scan1_blur5",
+      "reason": "accepted_BA_has_worse_max_observation_error",
+      "before_px": 1.9231262610874176,
+      "after_px": 2.8601687583472697,
+      "observations_above_2px": 3
+    },
+    {
+      "stage": "stage6_ba",
+      "kind": "real",
+      "category": "accepted_solution_tradeoff",
+      "case_id": "dtu_scan1_blur5",
+      "reason": "accepted_BA_has_GT_metric_regression",
+      "metrics": [
+        "camera_center_ATE_fixed_before_Sim3_mm"
+      ]
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "collinear",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "collinear_structure",
+      "explicit_resource_profile_change": null
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "zero_baseline",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "zero_seed_baseline",
+      "explicit_resource_profile_change": null
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "disconnected",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "disconnected_observation_graph",
+      "explicit_resource_profile_change": null
+    },
+    {
+      "stage": "stage6_ba",
+      "case_id": "forced_wall_budget",
+      "kind": "synthetic",
+      "category": "synthetic_expected_rejection",
+      "reason": "wall_budget_exceeded",
+      "explicit_resource_profile_change": "wall_budget_seconds=0 only for deliberate timeout control"
+    }
+  ],
+  "counting_note": "same seed failure recurs downstream; records are not independent scenes; expected controls are not natural failures",
+  "point_accuracy_or_completeness": "not evaluated against GT for teaching sparse maps"
+}

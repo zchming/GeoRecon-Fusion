@@ -1,0 +1,60 @@
+{
+  "historical_profiles": {
+    "stage6": {
+      "algorithm_process_body_seconds_sum": 1.3024452870004097,
+      "controller_measurement_windows_seconds_sum": 4.022815603000254,
+      "controller_includes_nvidia_sampling_overhead": true,
+      "peak_worker_rss_gib": 0.193756103515625,
+      "algorithm_GPU_allocated_bytes": 0,
+      "sampled_whole_card_used_mib_min": 503.0,
+      "sampled_whole_card_used_mib_max": 508.0,
+      "teaching_child_seen_in_exposed_compute_listing": false,
+      "WSL_listing_limit": "whole-card desktop usage is not task allocation; per-process listing may be limited; no CUDA calls/model and OpenCL explicitly disabled"
+    },
+    "stage6_incremental": {
+      "body_total_seconds": 1.3631565179998688,
+      "controller_total_seconds": 2.5322936680004204,
+      "peak_process_rss_bytes": 233492480,
+      "task_gpu_allocated_bytes": 0,
+      "whole_card_observed_MiB": [
+        503,
+        507
+      ],
+      "GPU_total_MiB": 12282,
+      "CPU_threads": 8,
+      "OpenCL": false,
+      "cost_scope": "five immutable image sequence runs; one attempt each; model training/download not performed"
+    },
+    "stage6_ba": {
+      "five_run_body_seconds": 6.096147736999228,
+      "BA_solver_seconds": 3.3437203759999647,
+      "controller_seconds_including_process_startup_and_GPU_sampling": 7.967481374999807,
+      "peak_process_RSS_bytes": 495132672,
+      "task_new_GPU_allocated_bytes": 0,
+      "whole_card_used_MiB_range": [
+        504,
+        509
+      ],
+      "whole_card_total_MiB": [
+        12282
+      ],
+      "compute_process_lists_empty": true,
+      "CPU_threads": 8,
+      "GPU_process_listing_limitation": "WSL enumeration not a complete isolation guarantee; card includes desktop",
+      "timing_scope": "single runs on saved maps; no incremental reconstruction timing included; body excludes final JSON writes; synthetic failure controls timed separately in their stats"
+    }
+  },
+  "acceptance_check_GPU_snapshot": "NVIDIA GeForce RTX 4070 SUPER, 539, 12282",
+  "acceptance_check_compute_apps_snapshot": "",
+  "acceptance_no_CUDA_or_model_calls": true,
+  "GPU_budget_GiB": 12,
+  "current_snapshot_is_not_a_measured_peak": true,
+  "audit_wall_seconds": 4.672494842000106,
+  "not_end_to_end_speed_benchmark": "different substeps include repeated images/controls and timing scopes; no aggregate pipeline speed claim",
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "opencv": "5.0.0",
+    "scipy": "1.18.1"
+  }
+}
