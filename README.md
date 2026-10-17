@@ -4,7 +4,7 @@
 
 面向三维视觉算法实践的多视图重建项目：统一接入COLMAP与VGGT，实现可解释的已知内参SfM，并研究困难输入下的失败原因及可靠性判断。
 
-**当前结论：** 基线、教学SfM与实验诊断链已实现；稳定融合收益、原创算法优势和未知场景泛化尚未建立。SIFT＋LightGlue仅完成兼容性预检，下一步候选为学习匹配与鲁棒初始化，Stage 7A尚未启动。
+**当前结论：** 基线、教学SfM与实验诊断链已实现；稳定融合收益、原创算法优势和未知场景泛化尚未建立。Stage 7A已完成A/B/C受控实验：LightGlue相对共享RootSIFT互检有局部位姿收益，但新增错误接受和普通对退化，判定NO_GO_EVIDENCE，不自动推进Stage 7B。[本轮结果与限制](docs/stage7a_results.md)
 
 ## 系统架构与核心实现
 
@@ -21,7 +21,7 @@ flowchart TD
     B --> V[独立真值评价与失败统计]
     R --> V
     F --> V
-    L[SIFT＋LightGlue：仅接口与资源预检]
+    L[SIFT / RootSIFT / LightGlue：受控对照已完成] --> E
 ```
 
 | 能力 | 代码入口 | 实现与使用边界 |
@@ -32,7 +32,7 @@ flowchart TD
 | PnP、增量注册、BA | [incremental.py](src/georecon/teaching/incremental.py)、[bundle_adjustment.py](src/georecon/teaching/bundle_adjustment.py) | 已实现；固定种子、固定顺序，小规模教学范围 |
 | 可靠性与实验策略 | [reliability](src/georecon/reliability/)、[selection](src/georecon/selection/)、[filtering](src/georecon/filtering/)、[fusion](src/georecon/fusion/)、[optimization](src/georecon/optimization/) | 无GT推理信号、unknown、回退、局部融合与优化；没有稳定性能收益 |
 | 位姿评价 | [poses.py](src/georecon/evaluation/poses.py) | 覆盖率、旋转/有向平移误差、评价专用Sim(3) ATE；失败不填零误差 |
-| 学习匹配候选 | [preflight_sift_lightglue.py](scripts/preflight_sift_lightglue.py) | 官方权重及坐标/RootSIFT契约预检；尚未验证几何或位姿收益 |
+| 受控学习匹配 | [run_stage7a.py](scripts/run_stage7a.py)、[matching](src/georecon/matching/) | A/B/C共享特征、冻结后端、独立评价；局部收益与新增伤害共存，未通过稳定性门 |
 
 ## 真实结果与失败案例
 
@@ -77,6 +77,17 @@ AUC保留失败分母。公共输入800×600，但raw模型网格518×392，BA�
 
 此为有限采样、自定义点云评价，不是官方DTU稠密排名。融合只改502点（约0.0077%）；其余六条件回退。选择全部选raw、未知点误删、权重优势不迁移及留出源视图混杂均有保留。暂不扩大该融合路线。[消融与负结果](docs/stage5_acceptance/report.md) · [502点诊断](docs/fusion_diagnostics_502/report.md) · [留出验证](docs/heldout_fusion_502/report.md)
 
+### Stage 7A：学习匹配有局部收益，稳定性门未通过
+
+A为原SIFT互检，B为共享RootSIFT互检，C为同一RootSIFT＋官方LightGlue；已知K、46个去重图像对、三个固定几何种子，按四条件宏平均。scan6为已反复查看的历史验证，两个物体不足以证明泛化，数值不与上面的自估内参基线直接排名。
+
+| 物体 | A AUC@10 | B AUC@10 | C AUC@10 | C−B |
+|---|---:|---:|---:|---:|
+| scan1 | 0.6068 | 0.5429 | 0.6027 | +0.0597 |
+| scan6 | 0.2627 | 0.4760 | 0.5722 | +0.0962 |
+
+C相对B救回7个模糊对的正确位姿，但2个普通对退化、6个不同图像对新增错误接受，冻结G2失败；scan1相对旧A的AUC也略降。困难对的GT极线兼容候选数配对差中位数为+66/+101，这是几何代理，不是真实3D对应精度。整批含预热与冷启动耗时32.40s，整卡采样峰值2065MiB；首轮软件失败及全部反例仍保留。[结果、继续门与失败案例](docs/stage7a_results.md) · [逐组表](docs/results/stage7a_pairs.csv) · [逐条件表](docs/results/stage7a_conditions.csv)
+
 ## Quick Start：完整CPU协议与评价示例
 
 从仓库根目录，在Python 3.12环境执行；无需DTU、模型或GPU：
@@ -102,14 +113,14 @@ python -m pip check
 python -m unittest discover -s tests -v
 ```
 
-[CPU CI](.github/workflows/cpu-tests.yml)在Python 3.12安装上述依赖，运行全部发现的单元测试，逐项输出跳过原因，并将通过、跳过、失败与错误写入Actions摘要。默认不安装Torch/LightGlue、不下载权重、不运行GPU模型。目前152项中，完整CPU依赖下147项通过，5项LightGlue契约测试因可选依赖缺失跳过；测试数会随实现变化，实际运行日志为准。
+[CPU CI](.github/workflows/cpu-tests.yml)在Python 3.12安装上述依赖，运行全部发现的单元测试，逐项输出跳过原因，并将通过、跳过、失败与错误写入Actions摘要。默认不安装Torch/LightGlue、不下载权重、不运行GPU模型。目前169项中，完整CPU依赖下163项通过，6项LightGlue契约/导入测试因可选依赖缺失跳过；测试数会随实现变化，实际运行日志为准。
 
 ## 贡献归属与限制
 
 - **本项目实现：** 协议/适配与评价、经典教学几何链、实验策略、消融与失败诊断。教学实现使用成熟算法和求解器，不作为新SfM算法。
 - **第三方：** COLMAP/PyCOLMAP、VGGT及官方跟踪/BA、LightGlue预训练模型、OpenCV估计器、SciPy优化器。来源和权重条款见[复现与归属说明](docs/reproduction.md#第三方归属与数据)。未为第三方重新许可，也未选定项目许可证。
 - 只有两个反复查看的物体；没有独立新场景、稠密MVS、生产级SfM或稳定融合收益证据。低残差、更多匹配、完整输出都不等于准确率。
-- SIFT＋LightGlue预检输出28条宽间隔候选，未几何验证。该候选与后续Stage 7A均不属于已完成性能贡献。
+- SIFT＋LightGlue已完成受控验证，支持有限样本上的局部准确性改善；scan1宽间隔001–020的28条候选仍被E内点门拒绝，scan6宽间隔010–020新增约63°错误接受。未建立稳定无伤害提升或算法新颖性。
 - 原始数据、权重、vendor和大产物不入Git；部分历史重放依赖本地缓存及本机环境，不能仅clone仓库就完整复现实验。GPU使用上限12GB，五图官方BA的OOM仍保留。
 
 ## 技术文档与历史证据
@@ -123,6 +134,7 @@ python -m unittest discover -s tests -v
 | 无GT几何诊断与反例 | [可靠性报告](docs/stage4/report.md) |
 | 选择/融合与消融验收 | [阶段5验收](docs/stage5_acceptance/report.md) |
 | PnP、增量与教学BA | [增量注册](docs/stage6_incremental/report.md) · [BA](docs/stage6_ba/report.md) · [阶段6验收](docs/stage6_acceptance/report.md) |
+| Stage 7A受控结果与反例 | [结果与复现边界](docs/stage7a_results.md) · [冻结协议](docs/stage7a_protocol.md) |
 | 学习匹配器预检 | [预检报告](docs/sift_lightglue_preflight/report.md) |
 | 累计贡献边界与项目约定 | [contributions](docs/contributions.md) · [AGENTS](AGENTS.md) · [原项目要求](docs/project_brief.md) |
 
