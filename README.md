@@ -28,6 +28,8 @@
 
 新增受限的观测级留出诊断：1447折中302折通过原门限并可评分，仅覆盖240/502位置；无有效折的262位置原样保留。scan1总体AUROC受源视图混杂，源004内高分子集仍平均有害；scan6可评集合缺少恶化类，未支持安全修正识别。累计 **147项不同测试交叉覆盖**。原融合与输出未变，无新数据、模型或下一阶段工作。
 
+新增 SIFT＋LightGlue 前端兼容性预检：复核历史匹配图，固定旧SIFT坐标并适配RootSIFT、尺度和弧度方向；两组既有DTU图像通过官方权重GPU接口检查，峰值allocated约282MiB。未运行几何后端或正式精度对比，未证明宽间隔失败已修复，未改融合或进入下一阶段。详见[预检报告](docs/sift_lightglue_preflight/report.md)。
+
 - [阶段 1 报告、真实执行记录与限制](docs/stage1/report.md)
 - [阶段 2 COLMAP 报告、结果与复现](docs/stage2_colmap/report.md)
 - [阶段 2 VGGT raw 报告、坐标核对与结果](docs/stage2_vggt/report.md)

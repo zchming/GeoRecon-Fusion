@@ -1,0 +1,142 @@
+{
+  "scope": "API/resource preflight only; no backend, GT evaluation or formal comparison",
+  "weight_sha256": "5b52b8d9982d43532dc042606b346bb9594c9f5a4bd6f64362c63866287b4ac0",
+  "vendor_commit": "eb42fee2d71449efb0aa5c10549752b5d75384d8",
+  "source_sha256": {
+    "lightglue/sift.py": "9fa24851ff25b6f09cb06fa62aed1d07fa9cb6aa340c79d6467b3bdfdd4508cd",
+    "lightglue/lightglue.py": "dcb75b9cad1985c5e7a537c512d4318d47fbcc99df75b39a513de60e027c039f",
+    "lightglue/utils.py": "c6d9260656a24d826128b68c95d0b7798106d04f4244a77f3b1856573f58e690"
+  },
+  "versions": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "torch": "2.11.0+cu128",
+    "opencv": "5.0.0",
+    "numpy": "2.5.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+  "allocator_budget_bytes": 11811160064,
+  "model_load_seconds": 0.22190860800037626,
+  "model_load_peak_allocated_bytes": 47547904,
+  "model_load_peak_reserved_bytes": 48234496,
+  "weight_missing_keys": [
+    "confidence_thresholds"
+  ],
+  "weight_unexpected_keys": [],
+  "matcher_config": {
+    "name": "lightglue",
+    "input_dim": 128,
+    "descriptor_dim": 256,
+    "add_scale_ori": true,
+    "n_layers": 9,
+    "num_heads": 4,
+    "flash": true,
+    "mp": false,
+    "depth_confidence": 0.95,
+    "width_confidence": 0.99,
+    "filter_threshold": 0.1,
+    "weights": "sift_lightglue"
+  },
+  "cases": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "inputs": [
+        {
+          "image_id": "001",
+          "sha256": "d39122a44dd9c201671602c09c928dbe3d2b57906e12d2ad1b18519401a7d07d",
+          "size_wh": [
+            800,
+            600
+          ],
+          "features": 3809,
+          "extract_and_adapt_seconds": 0.06763796200084471,
+          "historical_xy_exact_parity": true
+        },
+        {
+          "image_id": "003",
+          "sha256": "9c635bac48390dd4c5625bd11a157542bb254eeb4e0dac6724f0889edd0edd01",
+          "size_wh": [
+            800,
+            600
+          ],
+          "features": 4096,
+          "extract_and_adapt_seconds": 0.040211804999671585,
+          "historical_xy_exact_parity": true
+        }
+      ],
+      "h2d_seconds": 0.0015867770007389481,
+      "matcher_seconds_single_pass": 0.42850898500000767,
+      "matches_contract_count_only": 1134,
+      "stop_layer": 7,
+      "peak_allocated_bytes": 296077824,
+      "peak_reserved_bytes": 398458880,
+      "whole_card_snapshot": "1158, 12282",
+      "index_and_mutuality_checks": true,
+      "local_npz_sha256": "fbcb4e6a67f5a270c974f93019535ab23729f17f4080683418e7abaf602e8b0a"
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "inputs": [
+        {
+          "image_id": "001",
+          "sha256": "d39122a44dd9c201671602c09c928dbe3d2b57906e12d2ad1b18519401a7d07d",
+          "size_wh": [
+            800,
+            600
+          ],
+          "features": 3809,
+          "extract_and_adapt_seconds": 0.048680908999813255,
+          "historical_xy_exact_parity": true
+        },
+        {
+          "image_id": "020",
+          "sha256": "7e0e8a8689792feb3ab87a1a0c3bca4367c0144b820f263b0ec9b471729b1053",
+          "size_wh": [
+            800,
+            600
+          ],
+          "features": 1357,
+          "extract_and_adapt_seconds": 0.03292742200028442,
+          "historical_xy_exact_parity": true
+        }
+      ],
+      "h2d_seconds": 0.0007360700001299847,
+      "matcher_seconds_single_pass": 0.030044690999602608,
+      "matches_contract_count_only": 28,
+      "stop_layer": 5,
+      "peak_allocated_bytes": 219291136,
+      "peak_reserved_bytes": 400556032,
+      "whole_card_snapshot": "1160, 12282",
+      "index_and_mutuality_checks": true,
+      "local_npz_sha256": "fa7782c1f04897bb1eb6b6ff88a9a8b123bd6d2428b73d3fc5943c887103e117"
+    }
+  ],
+  "official_extractor_separate_contract": {
+    "features": 3464,
+    "configuration": {
+      "rootsift": true,
+      "nms_radius": 0,
+      "max_num_keypoints": 4096,
+      "backend": "opencv",
+      "detection_threshold": 0.0066667,
+      "edge_threshold": 10,
+      "first_octave": -1,
+      "num_octaves": 4
+    },
+    "resize_override": null,
+    "image_size_wh": [
+      [
+        800.0,
+        600.0
+      ]
+    ],
+    "not_used_for_matcher_smoke": true
+  },
+  "empty_descriptor_policy": "explicit skip before adapter/matcher; detector empty case checked; no geometry attempted",
+  "limitations": [
+    "single pass timing includes cold kernels, not a benchmark",
+    "whole-card snapshot is not continuous peak measurement; allocator peak is measured",
+    "matches are unverified; no accuracy, pose or robustness gain established",
+    "official OpenCV coordinate TODO remains; no claim of pycolmap convention equivalence",
+    "legacy detector + RootSIFT adaptation changes descriptor metric; a future fair matcher comparison needs shared features"
+  ]
+}
