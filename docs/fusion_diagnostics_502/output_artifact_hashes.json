@@ -1,0 +1,8 @@
+{
+  "outputs/fusion_diagnostics_502_v2/dtu_scan6_normal5/summary.json": "215c40452ae637dd7c2e0d47bb1891b21179e68a129241a34585bb2720e73da7",
+  "outputs/fusion_diagnostics_502_v2/dtu_scan6_normal5/diagnostics.npz": "c2a2a80f02c4f945d7c4345518bbbe35cd8edaa47c005a007517c907c8ff63ef",
+  "outputs/fusion_diagnostics_502_v2/dtu_scan1_normal5/summary.json": "ce508f948bd0a90ef5e9dbbbfe76d0cd4fc60183a85ac4cc5c5914e9ba55f254",
+  "outputs/fusion_diagnostics_502_v2/dtu_scan1_normal5/diagnostics.npz": "34052d4dfa471b39a8383b9e2344871751800fec18915a6f0d871bbab136c485",
+  "outputs/fusion_diagnostics_502_v1/dtu_scan1_normal5/summary.json": "5950e2726dda8e0337743c6cdc27e2a3c267d23447b662991ec9c9a05c60314d",
+  "outputs/fusion_diagnostics_502_v1/dtu_scan1_normal5/diagnostics.npz": "34052d4dfa471b39a8383b9e2344871751800fec18915a6f0d871bbab136c485"
+}

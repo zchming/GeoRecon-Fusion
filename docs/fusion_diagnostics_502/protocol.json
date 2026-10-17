@@ -1,0 +1,57 @@
+{
+  "scope": "posthoc diagnostics only for original 502 modified grid positions (scan1 174, scan6 328); six zero-anchor cases remain out-of-support failures",
+  "deployment_rule_changed": false,
+  "new_data_or_inference_or_next_stage": false,
+  "primary_reference": "same published raw-camera-to-GT Sim3 and 200000 evenly spaced STL vertices; all affected points, no ROI; no point-to-point identity truth",
+  "sensitivity_reference": "all existing STL vertices with same alignment; this is a new diagnostic resource profile, not replacement of published metric or official DTU evaluation",
+  "ROI_sensitivity": "fixed raw ObsMask only, report denominator separately",
+  "oracle_betas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "oracle_extra_action": "actual frozen weighted fraction per point",
+  "oracle_scope": "pointwise min distance among finite fixed actions, ties choose raw/earlier action; not global F1 upper bound, never deployment",
+  "counterfactuals": [
+    "GT-camera-assisted colmap-to-GT similarity using orientations/centers, fixed original correspondences and beta; GT-only diagnostic, not error-free true alignment",
+    "bilinear raw XYZ at original continuous observation, fixed anchor and beta; interpolation sensitivity, not proof of true correspondence or a deployable correction",
+    "factorial combination of above two; report interactions without causal percentage attribution"
+  ],
+  "signal_directions": {
+    "negative_raw_support": -1,
+    "negative_raw_observed": -1,
+    "negative_raw_confidence": -1,
+    "negative_depth_confidence": -1,
+    "negative_colmap_error": -1,
+    "track_length": 1,
+    "negative_relative_disagreement": -1,
+    "negative_pixel_rounding": -1,
+    "track_reprojection_gain": 1,
+    "minimum_parallax": 1,
+    "negative_alignment_LOO_sensitivity": -1,
+    "negative_raw_weight_over_classical": -1
+  },
+  "identifiability": "all predeclared scalar ranks; higher score predicts frozen fusion benefit; AUROC, Spearman, unique-landmark means, source-view strata; no training, sign fitting, threshold optimization or new fusion policy",
+  "top_coverage_fractions": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "ties": "include entire score tie group, show actual coverage",
+  "grouping": "same classical point ID is a dependent group; source-view and object-level limitations explicit",
+  "continue_criteria_exploratory_not_statistical": {
+    "complementarity": "oracle mean distance gain >=10% and full endpoint better on >=20% of points in BOTH scenes under primary reference, confirm gain direction with full reference",
+    "identifiability": "at least one prespecified same-direction signal AUROC>=0.65 and unique-landmark mean AUROC>=0.60 in BOTH scenes, top25% positive mean gain above matched random expectation; report all signals, not a significance test",
+    "interpretation": "only conditional small follow-up if both pass; if complementarity alone passes, do not expand existing weighting or claim stable benefit"
+  },
+  "runtime": {
+    "CPU_threads": 8,
+    "GPU_budget_GiB": 12,
+    "CUDA_or_new_model": false,
+    "threads_for_tree": 8
+  },
+  "splits": "scan1 and scan6 both previously inspected; exploratory retrospective diagnostics, no fresh blind test"
+}

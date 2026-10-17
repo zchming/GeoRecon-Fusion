@@ -24,6 +24,8 @@
 
 阶段6教学范围已完成验收：核对21条历史运行和4组额外BA退化控制，重放双视图与增量流程，独立检查BA约束与残差；134项不同测试重新分环境交叉覆盖。保留所有失败、未收敛与指标取舍，未改变已知K、现有DTU样本或算法配置。**验收通过是工程与证据结论，不是泛化或性能创新证明；停止于阶段6，未进入阶段7。**
 
+另经授权完成历史502个修正点的回顾性诊断，复用阶段5原产物，未修改融合规则。局部插值oracle有改善空间，但经典端点仅5/174、4/328点优于raw，现有信号未通过跨场景一致可识别性门；不建议继续扩大当前启发式融合。保留源视图混杂、参考密度敏感性及重复观测引发的首轮诊断失败。累计 **140项不同测试交叉覆盖**，未进入下一阶段。
+
 - [阶段 1 报告、真实执行记录与限制](docs/stage1/report.md)
 - [阶段 2 COLMAP 报告、结果与复现](docs/stage2_colmap/report.md)
 - [阶段 2 VGGT raw 报告、坐标核对与结果](docs/stage2_vggt/report.md)
@@ -42,6 +44,7 @@
 - [阶段 6 最小PnP与增量注册、失败与验收](docs/stage6_incremental/report.md)
 - [阶段 6 最小教学BA、前后对比、退化与验收](docs/stage6_ba/report.md)
 - [阶段 6 汇总、完整失败清单与阶段验收](docs/stage6_acceptance/report.md)
+- [历史502个融合修正点：互补性、伤害来源与可识别性诊断](docs/fusion_diagnostics_502/report.md)
 - [阶段 6 数学流程与中间产物说明](docs/stage6/walkthrough.md)
 - [截至当前的贡献与证据边界](docs/contributions.md)
 - [相机、输入、结果与评价协议](docs/protocol.md)

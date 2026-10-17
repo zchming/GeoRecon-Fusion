@@ -1,0 +1,20 @@
+{
+  "engineering_diagnostic_acceptance": "passed",
+  "frozen_endpoint_complementarity_gate_passed": false,
+  "finite_action_oracle_shows_local_interpolation_headroom_in_both_scenes": true,
+  "prespecified_scalar_signals_cross_scene_gate_passed": false,
+  "recommendation": "do_not_expand_or_tune_current_heuristic_weighted_fusion; retain local oracle headroom as a hypothesis, prioritize distinguishable evidence and geometric error-source diagnosis only if separately authorized",
+  "not_recommended_now": [
+    "larger fusion weights or broader propagation",
+    "joint optimization to chase residuals",
+    "training/selecting a gate on these already-inspected objects",
+    "claiming stable global fusion benefit or novelty"
+  ],
+  "why_gate_failure_is_not_impossibility": "endpoint superiority and useful interpolation are distinct; oracle improves even when endpoint is worse. Failed frozen criteria are pilot decisions, not a theorem that fusion cannot help. Existing signals tested are univariate, not all possible predictors.",
+  "independent_objects": 2,
+  "source_view_and_class_imbalance_limit": "scan1 strong view-dependent signs; scan6 327 improvements/1 harm so AUROC highly unstable",
+  "original_fusion_rule_and_outputs_changed": false,
+  "new_stage_started": false,
+  "new_data_downloaded": false,
+  "new_method_claimed": false
+}

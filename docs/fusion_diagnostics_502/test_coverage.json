@@ -1,0 +1,19 @@
+{
+  "environments": {
+    "reliability": {
+      "discovered": 140,
+      "passed": 139,
+      "skipped": 1,
+      "log_sha256": "c8c052cf7f1ae6c9b53fd72ee3becf9dece0a63351901c1fc297e509a95d439e"
+    },
+    "colmap": {
+      "discovered": 140,
+      "passed": 100,
+      "skipped": 40,
+      "log_sha256": "d450db37fbc38d09e3fc6e4e64a28fba55a8534767308510282b91ce0db4b7d4"
+    }
+  },
+  "distinct_cross_environment_passed": 140,
+  "new_diagnostic_math_tests": 6,
+  "no_tests_skipped_in_both": true
+}

@@ -1,0 +1,13 @@
+{
+  "wall_seconds": 3.4247934290001467,
+  "peak_process_RSS_bytes": 395112448,
+  "CPU_threads": 8,
+  "GPU_task_allocated_bytes": 0,
+  "GPU_budget_GiB": 12,
+  "whole_card_snapshot_before_MiB": "538, 12282",
+  "whole_card_snapshot_after_MiB": "543, 12282",
+  "snapshot_not_peak": true,
+  "new_weights_models_downloads": false,
+  "input_and_rule_hashes_unchanged_after_analysis": true,
+  "source_kind": "posthoc evaluation reads GT intentionally; never inference or fitting"
+}

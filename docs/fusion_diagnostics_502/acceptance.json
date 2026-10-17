@@ -1,0 +1,18 @@
+{
+  "scope": "retrospective diagnostics of existing 502 fusion-corrected positions only",
+  "engineering_and_evidence_checks": "passed",
+  "affected_points": 502,
+  "independent_previously_inspected_objects": 2,
+  "no_input_or_original_rule_or_output_changed": true,
+  "no_new_prediction_or_deployment_policy": true,
+  "main_and_full_reference_objective_and_oracle_verified": true,
+  "old_8_case_validator_readonly_passed": true,
+  "140_distinct_tests_cross_environment_passed": true,
+  "failed_first_diagnostic_attempt_retained": true,
+  "finite_action_local_oracle_headroom": true,
+  "endpoint_superiority_and_current_scalar_identifiability_not_established": true,
+  "stable_global_fusion_gain_or_novelty": false,
+  "next_stage_started": false,
+  "GPU_new_allocated_bytes": 0,
+  "GPU_budget_GiB": 12
+}

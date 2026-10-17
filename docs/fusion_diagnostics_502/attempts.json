@@ -1,0 +1,20 @@
+{
+  "attempt01": {
+    "exit_code": 1,
+    "output_root": "outputs/fusion_diagnostics_502_v1",
+    "source_and_trace": "attempts/attempt01",
+    "failure": "diagnostic ingestion asserted one observation per landmark/source image; scan6 includes repeated rows",
+    "partial_scan1_output_retained": true,
+    "wall_seconds": null,
+    "timing_note": "exception occurred before execution summary; unavailable, not zero"
+  },
+  "attempt02": {
+    "exit_code": 0,
+    "output_root": "outputs/fusion_diagnostics_502_v2",
+    "change": "restore source observation using original pixel-to-grid mapping, original stable collision order and original gate; parallax between distinct views; no protocol, beta, candidates, signal direction, GT sample or fusion rule change",
+    "successful_body_wall_seconds": 3.4247934290001467
+  },
+  "first_protocol_sha256": "9506ddf484964f27fb77384834b533a7b6d654eee7da8d7cb34612a53175712e",
+  "first_attempt_input_lock_sha256": "16e043eda87deec9eabc82ff0a0c088ed9b098602477786089c300f3305de070",
+  "final_input_lock_sha256": "16e043eda87deec9eabc82ff0a0c088ed9b098602477786089c300f3305de070"
+}

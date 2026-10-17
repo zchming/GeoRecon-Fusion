@@ -1,0 +1,10 @@
+{
+  "frozen_before_diagnostic_outcomes": true,
+  "source_sha256": {
+    "scripts/prepare_fusion_diagnostics.py": "87328c6375b0218f6f062f237dfdf8681087cef0ac4b2e56c3bf91080c651e47",
+    "scripts/diagnose_fusion_502.py": "eabe25766459103697e4c2a8c43d3370a37ca38dee08415ed6d39dad0115e936",
+    "scripts/fusion_diagnostics_math.py": "522c13370bc19d0fb88f10f849665e71f128cd72f2b59c19b80eb8f88f03ba86",
+    "tests/test_fusion_diagnostics.py": "7c5c81e8fd39cd74656c4f1c486c63b3d4401a212d0900877493c191f1ab29e8"
+  },
+  "input_lock_sha256": "16e043eda87deec9eabc82ff0a0c088ed9b098602477786089c300f3305de070"
+}

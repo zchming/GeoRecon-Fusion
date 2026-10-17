@@ -1,0 +1,36 @@
+{
+  "scenes": [
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "original_correspondence_association_replayed_exactly": true,
+      "primary_and_full_reference_distances_replayed_exactly": true,
+      "source_observation_mapping_including_duplicates_matches_old_gate_and_order": true,
+      "oracle_verified_pointwise_not_worse_than_raw_or_frozen": true,
+      "all_AUCs_match_direct_pair_counting": true,
+      "GT_assisted_endpoint_mean_error_mm": 23.23941945619853,
+      "GT_assisted_endpoint_better_than_raw_count": 0,
+      "float64_coordinate_control_max_distance_difference_from_original_float32_mm": 6.817783900425756e-05,
+      "float64_coordinate_control_mean_distance_difference_mm": 3.659847394631362e-06,
+      "full_reference_points": 2880879
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "original_correspondence_association_replayed_exactly": true,
+      "primary_and_full_reference_distances_replayed_exactly": true,
+      "source_observation_mapping_including_duplicates_matches_old_gate_and_order": true,
+      "oracle_verified_pointwise_not_worse_than_raw_or_frozen": true,
+      "all_AUCs_match_direct_pair_counting": true,
+      "GT_assisted_endpoint_mean_error_mm": 12.94483955622206,
+      "GT_assisted_endpoint_better_than_raw_count": 2,
+      "float64_coordinate_control_max_distance_difference_from_original_float32_mm": 6.959804985684492e-05,
+      "float64_coordinate_control_mean_distance_difference_mm": -6.147388692858095e-06,
+      "full_reference_points": 3279989
+    }
+  ],
+  "old_rules_inputs_and_outputs_unchanged": true,
+  "old_8_case_fusion_validator_passed_readonly": true,
+  "first_failed_attempt_preserved": true,
+  "production_rule_created_or_changed": false,
+  "GT_is_posthoc_diagnostic_only": true,
+  "checks_passed": true
+}

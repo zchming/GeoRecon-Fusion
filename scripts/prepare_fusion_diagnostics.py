@@ -1,0 +1,26 @@
+"""Freeze posthoc 502-point diagnostics without modifying any production rule."""
+from pathlib import Path
+from georecon.data.protocol import read_json,write_json,sha256
+ROOT=Path(__file__).resolve().parents[1];DOC=ROOT/'docs/fusion_diagnostics_502'
+def prepare():
+    if (DOC/'input_lock.json').exists():raise ValueError('diagnostic inputs already frozen')
+    old=read_json(ROOT/'docs/stage5_fusion/input_lock.json');files={}
+    for name,h in old['source_files_sha256'].items():assert sha256(ROOT/name)==h;files[name]=h
+    for case in old['cases']:
+        for group in ['input_hashes','native_model_files_sha256']:
+            for name,h in case[group].items():assert sha256(ROOT/name)==h;files[name]=h
+        base=ROOT/'outputs/stage5_fusion_v1/frozen'/case['scene_id']
+        for name,key in [('anchors.npz','anchors_sha256'),('fused.npz','fused_sha256'),('unweighted.npz','unweighted_sha256')]:assert sha256(base/name)==case[key];files[str((base/name).relative_to(ROOT))]=case[key]
+        for name in ['run.json','prediction.json','invocation.json']:files[str((base/name).relative_to(ROOT))]=sha256(base/name)
+    for scan in [1,6]:
+        scene=f'dtu_scan{scan}_normal5'
+        paths=[ROOT/'data/stage3_dtu'/f'scan{scan}_normal5/reference.json',ROOT/'outputs/stage5_points_v1/frozen'/scene/'evidence.npz',ROOT/'data/stage5_point_gt'/f'scan{scan}/provenance.json']
+        for row in read_json(paths[-1])['files']:
+            assert sha256(ROOT/row['local'])==row['sha256'];files[row['local']]=row['sha256']
+        for p in paths:files[str(p.relative_to(ROOT))]=sha256(p)
+    for name in ['configs/fusion/stage5_v1.json','configs/fusion/stage5_protocol.json','docs/stage5_fusion/input_lock.json','docs/stage5_fusion/comparison.json','docs/stage5_fusion/failure_analysis.json','docs/stage5_acceptance/report.md']:
+        files[name]=sha256(ROOT/name)
+    protocol={'scope':'posthoc diagnostics only for original 502 modified grid positions (scan1 174, scan6 328); six zero-anchor cases remain out-of-support failures','deployment_rule_changed':False,'new_data_or_inference_or_next_stage':False,'primary_reference':'same published raw-camera-to-GT Sim3 and 200000 evenly spaced STL vertices; all affected points, no ROI; no point-to-point identity truth','sensitivity_reference':'all existing STL vertices with same alignment; this is a new diagnostic resource profile, not replacement of published metric or official DTU evaluation','ROI_sensitivity':'fixed raw ObsMask only, report denominator separately','oracle_betas':[0.,.25,.5,.75,1.],'oracle_extra_action':'actual frozen weighted fraction per point','oracle_scope':'pointwise min distance among finite fixed actions, ties choose raw/earlier action; not global F1 upper bound, never deployment','counterfactuals':['GT-camera-assisted colmap-to-GT similarity using orientations/centers, fixed original correspondences and beta; GT-only diagnostic, not error-free true alignment','bilinear raw XYZ at original continuous observation, fixed anchor and beta; interpolation sensitivity, not proof of true correspondence or a deployable correction','factorial combination of above two; report interactions without causal percentage attribution'], 'signal_directions':{'negative_raw_support':-1,'negative_raw_observed':-1,'negative_raw_confidence':-1,'negative_depth_confidence':-1,'negative_colmap_error':-1,'track_length':1,'negative_relative_disagreement':-1,'negative_pixel_rounding':-1,'track_reprojection_gain':1,'minimum_parallax':1,'negative_alignment_LOO_sensitivity':-1,'negative_raw_weight_over_classical':-1},'identifiability':'all predeclared scalar ranks; higher score predicts frozen fusion benefit; AUROC, Spearman, unique-landmark means, source-view strata; no training, sign fitting, threshold optimization or new fusion policy','top_coverage_fractions':[.1,.25,.5,1.],'ties':'include entire score tie group, show actual coverage','grouping':'same classical point ID is a dependent group; source-view and object-level limitations explicit','continue_criteria_exploratory_not_statistical':{'complementarity':'oracle mean distance gain >=10% and full endpoint better on >=20% of points in BOTH scenes under primary reference, confirm gain direction with full reference','identifiability':'at least one prespecified same-direction signal AUROC>=0.65 and unique-landmark mean AUROC>=0.60 in BOTH scenes, top25% positive mean gain above matched random expectation; report all signals, not a significance test','interpretation':'only conditional small follow-up if both pass; if complementarity alone passes, do not expand existing weighting or claim stable benefit'},'runtime':{'CPU_threads':8,'GPU_budget_GiB':12,'CUDA_or_new_model':False,'threads_for_tree':8},'splits':'scan1 and scan6 both previously inspected; exploratory retrospective diagnostics, no fresh blind test'}
+    write_json(DOC/'protocol.json',protocol);write_json(DOC/'input_lock.json',{'files_sha256':files,'protocol_sha256':sha256(DOC/'protocol.json'),'old_fusion_rule_sha256':sha256(ROOT/'configs/fusion/stage5_v1.json'),'primary_case_ids':['dtu_scan1_normal5','dtu_scan6_normal5'],'original_total_grid_points':6497792,'affected_points_expected':502})
+    print('Frozen diagnostic protocol and immutable inputs. No outcome-dependent rule changes.')
+if __name__=='__main__':prepare()
