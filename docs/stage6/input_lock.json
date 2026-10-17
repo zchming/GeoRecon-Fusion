@@ -1,0 +1,137 @@
+{
+  "protocol_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+  "cases": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "mode": "images",
+      "input": "data/stage6_pairs/dtu_scan1_001_003/input.json",
+      "input_sha256": "b64a6c890f5dbfcddc3ec3115f752240068edfb8e66057ac0263a40e8596b13f",
+      "reference": "data/stage6_truth/dtu_scan1_001_003.json",
+      "reference_sha256": "61a47d0b15ebec9311e044823bc6cfa03b8b6dda275e0920831eedea87f9b1e3",
+      "source": {
+        "source_manifest": "data/stage3_dtu/scan1_reduced3/manifest.json",
+        "manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+        "calibration_source_sha256": "f02fc31a6985b0977097deb539885deaef217aca74b6c59cfcd38498cadef655",
+        "processed_pixel_transform": "A = diag(sx,sy,1) with translations (s-1)/2; Knew=A*K"
+      }
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "mode": "images",
+      "input": "data/stage6_pairs/dtu_scan1_001_020/input.json",
+      "input_sha256": "0a9f095a1a82ab0cbbecde21c9e6b23e47ab157e40a07fd85cffe94ee8362067",
+      "reference": "data/stage6_truth/dtu_scan1_001_020.json",
+      "reference_sha256": "f45890f72bb9d35c275efc5ab0e1bbbd00eb1f4c4d4c70e82d53a675727659b5",
+      "source": {
+        "source_manifest": "data/stage3_dtu/scan1_spaced3/manifest.json",
+        "manifest_sha256": "5d4d75d7a1c42daeb53183dc9ea96e2594ade589506bdc6845a77bbf0890f6a2",
+        "calibration_source_sha256": "426de37ee73b2775f475817d6a1112cc3d26223f02f4ae1f87a0982adf76f6f7",
+        "processed_pixel_transform": "A = diag(sx,sy,1) with translations (s-1)/2; Knew=A*K"
+      }
+    },
+    {
+      "case_id": "dtu_scan1_blur_001_003",
+      "mode": "images",
+      "input": "data/stage6_pairs/dtu_scan1_blur_001_003/input.json",
+      "input_sha256": "e24ea9c0b6933f25c22c22362af0b7c0ae6c1f3b5279539b5a1d60c5d1e2f042",
+      "reference": "data/stage6_truth/dtu_scan1_blur_001_003.json",
+      "reference_sha256": "f1911cd89ce40d84d1f72f7ae52f4edd1994a9e0ad21389b6b80badf392800f2",
+      "source": {
+        "source_manifest": "data/stage3_dtu/scan1_blur5/manifest.json",
+        "manifest_sha256": "b04e1566393a84df5e71a2bf91e7c0f2d5aed4b834a28f408b3a013492f657b1",
+        "calibration_source_sha256": "f36088dabb2b03f2621d320d6874b6a0b909f520c6370c75e0434613e39dba5b",
+        "processed_pixel_transform": "A = diag(sx,sy,1) with translations (s-1)/2; Knew=A*K"
+      }
+    },
+    {
+      "case_id": "blank_pair",
+      "mode": "images",
+      "input": "data/stage6_pairs/blank_pair/input.json",
+      "input_sha256": "0f1294de33df2e2c928281093002d17bf26f81149848b833f4284bc1dbd5093a",
+      "reference": "data/stage6_truth/blank_pair.json",
+      "reference_sha256": "2cb8d8fa8446dbbe15dd0b360c3105c6d553b5066c7517ac1a669e34d391a0c2",
+      "source": {
+        "control": "generated blank images; not DTU benchmark sample"
+      }
+    },
+    {
+      "case_id": "identical_dtu_image",
+      "mode": "images",
+      "input": "data/stage6_pairs/identical_dtu_image/input.json",
+      "input_sha256": "ccec3e0cdb7f586e9167a181f39af460f11bacc854c78e6662aff0ef57f69da9",
+      "reference": "data/stage6_truth/identical_dtu_image.json",
+      "reference_sha256": "8a574645acd42d0e1d5c5c6bfbf342dfc1cbd3ed61be68090b980445f986100e",
+      "source": {
+        "control": "duplicate image degeneracy; not independent real scene"
+      }
+    },
+    {
+      "case_id": "nonplanar_exact",
+      "mode": "correspondences",
+      "input": "data/stage6_pairs/nonplanar_exact/input.json",
+      "input_sha256": "c4678e9c8ca5d04a45708918d0c028fcd9556188257639077fe741c2c9bf8779",
+      "reference": "data/stage6_truth/nonplanar_exact.json",
+      "reference_sha256": "87d44a89dfa5f74d29faa8c08053e1dc01391796320a2c86e22aed25a9286b31",
+      "source": {
+        "control": "seeded synthetic geometric observations; not image-matching benchmark"
+      }
+    },
+    {
+      "case_id": "nonplanar_noise_outliers",
+      "mode": "correspondences",
+      "input": "data/stage6_pairs/nonplanar_noise_outliers/input.json",
+      "input_sha256": "af70cc3df61c3cf81ed38cf115a5324d0e67f41f2bee3186e0d7e27a68219656",
+      "reference": "data/stage6_truth/nonplanar_noise_outliers.json",
+      "reference_sha256": "f79ffa1e987f5c3c786731a6551d850ccd65a62da4f02a6790cab598cee8c88e",
+      "source": {
+        "control": "seeded synthetic geometric observations; not image-matching benchmark"
+      }
+    },
+    {
+      "case_id": "planar",
+      "mode": "correspondences",
+      "input": "data/stage6_pairs/planar/input.json",
+      "input_sha256": "e494a63f5191b4e015a878e39963da0b1e677d13193d173f930634794974f810",
+      "reference": "data/stage6_truth/planar.json",
+      "reference_sha256": "c852c712bb580ac8b34e7df0bf81510115147829607f8584f6ec98c338183915",
+      "source": {
+        "control": "seeded synthetic geometric observations; not image-matching benchmark"
+      }
+    },
+    {
+      "case_id": "pure_rotation",
+      "mode": "correspondences",
+      "input": "data/stage6_pairs/pure_rotation/input.json",
+      "input_sha256": "62033e746e3c3d7baf9cbc4817311840b05c00ff59cdf7e3ab22b61fe731cc85",
+      "reference": "data/stage6_truth/pure_rotation.json",
+      "reference_sha256": "9f8b2541f5f4372806b3af2f3eb0498a03c0802f0ba811c7fe9c2b9d3c1ef6c3",
+      "source": {
+        "control": "seeded synthetic geometric observations; not image-matching benchmark"
+      }
+    },
+    {
+      "case_id": "tiny_baseline",
+      "mode": "correspondences",
+      "input": "data/stage6_pairs/tiny_baseline/input.json",
+      "input_sha256": "68514e3d831d122250fdfd418ffce2b33bb0afcb7a3d2bbb7b56fef8e1768e8f",
+      "reference": "data/stage6_truth/tiny_baseline.json",
+      "reference_sha256": "0f87a7795ae57c7896a45dbd447f127e566155a87040e30d5dffa85f237467f1",
+      "source": {
+        "control": "seeded synthetic geometric observations; not image-matching benchmark"
+      }
+    },
+    {
+      "case_id": "too_few_matches",
+      "mode": "correspondences",
+      "input": "data/stage6_pairs/too_few_matches/input.json",
+      "input_sha256": "ff6f54afc3c93212323281311a411f7c0196377061e04f4ce2cc3ac262d3ecc3",
+      "reference": "data/stage6_truth/too_few_matches.json",
+      "reference_sha256": "d5cd53e7288a95f8fcf58dd9fc70ccffa57ddb84de9bcafc829d8f7fd982fab4",
+      "source": {
+        "control": "seeded synthetic geometric observations; not image-matching benchmark"
+      }
+    }
+  ],
+  "no_new_downloads": true,
+  "DTU_intrinsics_are_declared_input_not_pose_evaluation_leakage": true
+}

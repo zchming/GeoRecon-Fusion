@@ -1,0 +1,27 @@
+usage: cli.py [-h]
+              {synthetic-demo,prepare-dtu,inspect-scene,evaluate-poses,run-colmap,run-vggt,run-vggt-ba,analyze-reliability,select-scene,run-teaching-sfm}
+              ...
+
+GeoRecon-Fusion geometry checks and explicit baseline runs
+
+positional arguments:
+  {synthetic-demo,prepare-dtu,inspect-scene,evaluate-poses,run-colmap,run-vggt,run-vggt-ba,analyze-reliability,select-scene,run-teaching-sfm}
+    synthetic-demo      Synthetic checks, never real benchmark results
+    prepare-dtu         Download only 3 DTU views and calibration via bounded
+                        HTTP ranges
+    inspect-scene       Verify hashes, order, decode and preprocessing
+    evaluate-poses      Reference-only evaluation, separate from inference
+    run-colmap          Official CPU COLMAP SfM, estimated intrinsics, no
+                        reference access
+    run-vggt            Pinned local VGGT raw forward, no BA or download
+    run-vggt-ba         Pinned official VGGT BA, offline weights, same three-
+                        view smoke input
+    analyze-reliability
+                        GT-free geometric diagnostics only; no selection or
+                        fusion
+    select-scene        Frozen whole-scene selection/fallback only; no fusion
+    run-teaching-sfm    Stage6 calibrated two-view SIFT/essential/DLT teaching
+                        chain, no BA
+
+options:
+  -h, --help            show this help message and exit

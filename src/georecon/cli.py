@@ -42,6 +42,9 @@ def main():
     selection = sub.add_parser("select-scene", help="Frozen whole-scene selection/fallback only; no fusion")
     for name in ["bundle", "policy", "output"]:
         selection.add_argument("--"+name, required=True)
+    teaching = sub.add_parser("run-teaching-sfm", help="Stage6 calibrated two-view SIFT/essential/DLT teaching chain, no BA")
+    for name in ["input", "config", "output"]:
+        teaching.add_argument("--"+name, required=True)
     args = parser.parse_args()
     try:
         if args.command == "synthetic-demo":
@@ -73,11 +76,14 @@ def main():
         elif args.command == "select-scene":
             from .selection.run import run
             result = run(args.bundle, args.policy, args.output)
+        elif args.command == "run-teaching-sfm":
+            from .teaching.run import run
+            result = run(args.input, args.config, args.output)
         else:
             result = evaluate_poses(read_json(args.prediction), read_json(args.reference))
             write_json(args.output, result)
         print(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False))
-        if args.command in {"run-colmap", "run-vggt", "run-vggt-ba"} and result["status"] not in {"success", "partial"} and not (args.command == "run-vggt" and args.preflight_only and result["status"] == "not_run"):
+        if args.command in {"run-colmap", "run-vggt", "run-vggt-ba", "run-teaching-sfm"} and result["status"] not in {"success", "partial"} and not (args.command == "run-vggt" and args.preflight_only and result["status"] == "not_run"):
             raise SystemExit(1)
     except (ValueError, KeyError, OSError) as exc:
         print(f"georecon: {exc}", file=sys.stderr)

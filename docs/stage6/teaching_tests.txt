@@ -1,0 +1,15 @@
+test_calibrated_pose_correct_sign_and_arbitrary_scale (test_teaching_sfm.TeachingCVTest.test_calibrated_pose_correct_sign_and_arbitrary_scale) ... ok
+test_few_matches_and_identity_are_failures_without_pose (test_teaching_sfm.TeachingCVTest.test_few_matches_and_identity_are_failures_without_pose) ... ok
+test_image_matching_recovers_pixel_shift_and_blank_has_no_descriptors (test_teaching_sfm.TeachingCVTest.test_image_matching_recovers_pixel_shift_and_blank_has_no_descriptors) ... ok
+test_nonplanar_correspondence_outliers_are_filtered (test_teaching_sfm.TeachingCVTest.test_nonplanar_correspondence_outliers_are_filtered) ... ok
+test_planar_and_pure_rotation_cases_reject_ambiguous_model (test_teaching_sfm.TeachingCVTest.test_planar_and_pure_rotation_cases_reject_ambiguous_model) ... ok
+test_runtime_truth_guard_and_intrinsics_permission (test_teaching_sfm.TeachingCVTest.test_runtime_truth_guard_and_intrinsics_permission) ... ok
+test_dlt_reconstructs_nontrivial_world_to_camera_pose (test_teaching_sfm.TeachingMathTest.test_dlt_reconstructs_nontrivial_world_to_camera_pose) ... ok
+test_intrinsics_and_skew_normalization (test_teaching_sfm.TeachingMathTest.test_intrinsics_and_skew_normalization) ... ok
+test_negative_depth_points_remain_explicit_rejections (test_teaching_sfm.TeachingMathTest.test_negative_depth_points_remain_explicit_rejections) ... ok
+test_tiny_parallax_and_zero_baseline_are_not_good_points (test_teaching_sfm.TeachingMathTest.test_tiny_parallax_and_zero_baseline_are_not_good_points) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.286s
+
+OK

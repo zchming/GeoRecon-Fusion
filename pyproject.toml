@@ -12,6 +12,7 @@ dependencies = ["numpy>=1.26,<3", "Pillow>=10,<13"]
 [project.optional-dependencies]
 colmap = ["pycolmap==4.2.1"]
 optimization = ["scipy>=1.16,<2"]
+teaching = ["opencv-python>=4.10,<6"]
 
 [project.scripts]
 georecon = "georecon.cli:main"

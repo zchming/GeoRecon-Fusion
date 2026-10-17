@@ -1,0 +1,9 @@
+{
+  "acceptance_sha256": "aa1be9a53d0412f4e3f5f87433f176eb7eff9ed2b3b3a3fadf38e4f390d64fe7",
+  "input_lock_sha256": "68b19b91949d0d24758276833dba2d34288b1cdd59bb004a212c5ce1e5056b96",
+  "all_source_rules_input_and_24_ablation_artifact_hashes_verified": true,
+  "engineering_acceptance": "passed",
+  "stable_gain": "not_established",
+  "previous_outputs_changed": false,
+  "stage6_is_teaching_not_a_method_performance_extension": true
+}
