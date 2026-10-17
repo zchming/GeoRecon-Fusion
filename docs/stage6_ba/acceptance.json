@@ -1,0 +1,11 @@
+{
+  "substep": "stage6 minimal calibrated teaching BA",
+  "engineering_acceptance": "passed",
+  "all_5_baseline_maps_and_inputs_unchanged": true,
+  "registered_set_K_tracks_and_point_count_unchanged": true,
+  "fixed_first_pose_and_single_scale_coordinate_verified": true,
+  "accepted_outputs_finite_positive_and_nonincreasing_objective": true,
+  "before_after_GT_evaluation_is_offline_only": true,
+  "next_stage_started": false,
+  "stable_general_gain_or_novel_algorithm_proven": false
+}

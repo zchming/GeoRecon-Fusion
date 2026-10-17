@@ -1,0 +1,1 @@
+requires_at_least_three_registered_cameras

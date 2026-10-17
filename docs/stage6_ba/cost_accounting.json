@@ -1,0 +1,18 @@
+{
+  "five_run_body_seconds": 6.096147736999228,
+  "BA_solver_seconds": 3.3437203759999647,
+  "controller_seconds_including_process_startup_and_GPU_sampling": 7.967481374999807,
+  "peak_process_RSS_bytes": 495132672,
+  "task_new_GPU_allocated_bytes": 0,
+  "whole_card_used_MiB_range": [
+    504,
+    509
+  ],
+  "whole_card_total_MiB": [
+    12282
+  ],
+  "compute_process_lists_empty": true,
+  "CPU_threads": 8,
+  "GPU_process_listing_limitation": "WSL enumeration not a complete isolation guarantee; card includes desktop",
+  "timing_scope": "single runs on saved maps; no incremental reconstruction timing included; body excludes final JSON writes; synthetic failure controls timed separately in their stats"
+}

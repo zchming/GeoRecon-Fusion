@@ -1,0 +1,12 @@
+{
+  "source_sha256": {
+    "src/georecon/teaching/bundle_adjustment.py": "20a218cb0d6ed14d888816ef951c8a92d60ea05a34431dbd183b6381c6532e3a",
+    "src/georecon/teaching/ba_run.py": "0ba61c7313547cb945ef3974aad605634b776c684ab3d3b015fa46cfcb5e6bb8",
+    "scripts/prepare_stage6_ba.py": "5d489774395883d9a54659b0606fa95a04c8ccf5b277ab6be8e2acb505e87572",
+    "scripts/run_stage6_ba.py": "d84f59b002a7af23f7ff40536405374b8a80a1be06d0ec0bfbf4299eb676080d",
+    "tests/test_teaching_ba.py": "607e7df1504ab5dadf3be81dea17d3e9d4a3fddf73ea26244dc773f4f283e11b"
+  },
+  "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+  "input_lock_sha256": "eb4507854d50241f87aec25513ba03ba5e05faf05f23690d8fa9bfc5fbc425c2",
+  "frozen_before_real_runs": true
+}

@@ -1,0 +1,5 @@
+{
+  "scripts/check_stage6_ba.py": "761d8310230bbe7d66a050cd672643ae155f6a50c629c791b828a212b3745995",
+  "scripts/control_stage6_ba.py": "bc35e28c09199764f6118521abc556e3dbb13e5737fb4e15f074bc9dba2125bf",
+  "scripts/report_stage6_ba.py": "4f5b9fce4b438081a24b4cbac9ec7cd6c6e2890c40f1056a9b35156e0e55cbd7"
+}

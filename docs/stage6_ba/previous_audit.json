@@ -1,0 +1,16 @@
+{
+  "acceptance_sha256": "29dd6206e6411469e30d9cbdaa26fcba3bcbd87242a7ffd0d69e5ff2f453d9db",
+  "source_hashes_verified": {
+    "src/georecon/teaching/incremental.py": "bc19fb9bdba2910ec4ff335da78a209e1fdaa1521c448433f2fefbeb79e85af0",
+    "src/georecon/teaching/incremental_run.py": "c9286ff405bbd03f75a94c56bcf6f12dbee57311a4d6d6a836a3e034378f9a74",
+    "src/georecon/teaching/two_view.py": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "scripts/run_stage6_incremental.py": "15baa3dc2e5cd7283ac1490ce62094c5e418df10b2a868890a9eb14fccc39117",
+    "scripts/prepare_stage6_incremental.py": "8a689ea63f5dad377fd8c7ba85ef19350bae6da7a0b5b049ed3dc5f623052e7c"
+  },
+  "previous_replay_log": "previous_check.txt",
+  "previous_failures_preserved": [
+    "001/020 seed has 4 matches, no map",
+    "blank 002 has 0 links, partial 2-camera map with 404 points"
+  ],
+  "old_files_modified": false
+}

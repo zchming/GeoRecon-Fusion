@@ -1,0 +1,17 @@
+{
+  "accepted": false,
+  "reason": "requires_at_least_three_registered_cameras",
+  "solver_status": null,
+  "converged": false,
+  "cameras": 2,
+  "points": 404,
+  "observations": 808,
+  "gauge": {
+    "fixed_camera": 0,
+    "scale_anchor_camera": 1,
+    "fixed_center_axis": 0,
+    "constraint": "one component of second camera center relative to fixed first center is held at its initial value"
+  },
+  "history": [],
+  "wall_seconds": 4.476999947655713e-06
+}

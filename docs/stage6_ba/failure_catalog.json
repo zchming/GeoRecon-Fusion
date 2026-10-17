@@ -1,0 +1,49 @@
+[
+  {
+    "case_id": "dtu_scan1_reduced3",
+    "reason": "accepted_BA_has_GT_metric_regression",
+    "metrics": [
+      "camera_center_ATE_fixed_before_Sim3_mm"
+    ]
+  },
+  {
+    "case_id": "dtu_scan1_normal5",
+    "reason": "accepted_BA_has_worse_max_observation_error",
+    "before_px": 1.9912186799087566,
+    "after_px": 2.5159467123138115,
+    "observations_above_2px": 3
+  },
+  {
+    "case_id": "dtu_scan1_normal5",
+    "reason": "accepted_BA_has_GT_metric_regression",
+    "metrics": [
+      "camera_center_ATE_fixed_before_Sim3_mm"
+    ]
+  },
+  {
+    "case_id": "dtu_scan1_blur5",
+    "reason": "accepted_BA_has_worse_max_observation_error",
+    "before_px": 1.9231262610874176,
+    "after_px": 2.8601687583472697,
+    "observations_above_2px": 3
+  },
+  {
+    "case_id": "dtu_scan1_blur5",
+    "reason": "accepted_BA_has_GT_metric_regression",
+    "metrics": [
+      "camera_center_ATE_fixed_before_Sim3_mm"
+    ]
+  },
+  {
+    "case_id": "dtu_scan1_spaced3",
+    "kind": "real",
+    "reason": "no_seeded_map",
+    "original_status_retained": "no_reconstruction"
+  },
+  {
+    "case_id": "blank_added_view",
+    "kind": "synthetic",
+    "reason": "requires_at_least_three_registered_cameras",
+    "original_status_retained": "partial"
+  }
+]

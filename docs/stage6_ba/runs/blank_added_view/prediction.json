@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "blank_added_view",
+  "method_id": "teaching_incremental_sfm_ba",
+  "run_id": "teaching_incremental_sfm_ba",
+  "input_manifest_sha256": "fd99358fe3cb3a3d9b743fa49fe3e2f87703544ae327cb44bc47e37b08bdf508",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "partial",
+  "failure_reason": "one_or_more_pnp_registrations_failed",
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.1652570952901,
+            -0.00012403167471539058,
+            411.3526366281194
+          ],
+          [
+            0.0,
+            1441.5876376816568,
+            309.2854587867471
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "t": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": false,
+      "camera": null,
+      "reason": "insufficient_2d3d"
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.166159711225,
+            -2.774193051153218e-05,
+            411.35311063797417
+          ],
+          [
+            0.0,
+            1441.5886986743906,
+            309.2851769081775
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.5286095447453936,
+            -0.7619180303887343,
+            0.3742363747320929
+          ],
+          [
+            0.8049016940744232,
+            0.5899322673602821,
+            0.06413410015958873
+          ],
+          [
+            -0.2696390403487434,
+            0.26732159451811655,
+            0.925112940685677
+          ]
+        ],
+        "t": [
+          -0.9701370339369932,
+          -0.16628829405667445,
+          0.17658521637910185
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": {
+      "path": "sparse_points.npz",
+      "sha256": "8722f4421a51c7c74c1b690866951494c7a4c21ab73cd9c3dc0f6173c486ec3b",
+      "semantics": "all original sparse points, same IDs/rgb/observation table; BA candidate only if accepted; arbitrary scale with fixed gauge coordinate"
+    },
+    "tracks": {
+      "path": "observations.npz",
+      "sha256": "3c1d1b81d13cbb8920b932df50fa6264e42f216866aa8edd31bd7c0a50cf4e78",
+      "semantics": "unchanged measured keypoint observations and original image-index mapping; no tracks filtered or created"
+    },
+    "confidence": null
+  },
+  "provenance": {
+    "data_kind": "synthetic",
+    "code_commit": "abc5f85268d9b1f4b46a25f417fb5d01cac9a76b",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "508409b98cabc1a6e16ae5bf01f866c4d21ee62daaf5455f1c15b66a609486f4",
+    "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+    "known_intrinsics": "declared known K; no pose truth",
+    "BA": true,
+    "BA_accepted": false,
+    "baseline_prediction_sha256": "13e427c29cb5fc635fabc67a6caa819cd7920369dbe2de39d86e4ace1011951a",
+    "pose_truth_access": "none; runtime guard active",
+    "scope": "stage6 teaching calibrated BA only"
+  },
+  "config": {
+    "schema_version": 1,
+    "scope": "stage6 minimal teaching calibrated BA only; no next stage",
+    "known_K": "unchanged per-image supplied calibration, zero-based 800x600 pixels; no distortion fit",
+    "solver": "SciPy sparse least_squares trf/lsmr, 2-point Jacobian",
+    "loss": "soft_l1 on individual pixel residual components",
+    "loss_scale_px": 1.0,
+    "gauge": "fix first seed pose and largest nonzero initial second seed center coordinate relative to first; all other poses/points free",
+    "min_points": 20,
+    "max_points": 3000,
+    "max_observations": 20000,
+    "min_registered_cameras": 3,
+    "max_nfev": 80,
+    "wall_budget_seconds": 60.0,
+    "ftol": 1e-08,
+    "xtol": 1e-08,
+    "gtol": 1e-08,
+    "CPU_threads": 8,
+    "GPU_budget_GiB": 12,
+    "GPU_allocated_bytes": 0,
+    "fit_on_GT": false,
+    "filter_observations": false,
+    "filter_points": false,
+    "priors": false,
+    "retry_or_parameter_search": false,
+    "acceptance": "finite solution, all observed depths positive, robust objective nonincreasing; max_nfev status0 may be accepted with explicit nonconverged label; timeout rejected",
+    "fallback": "retain original registration, poses, points, tracks; preserve rejected candidate"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "timing_seconds": {
+    "process_body": 0.2029242149997117,
+    "ba_solver": 4.476999947655713e-06
+  },
+  "memory_bytes": {
+    "peak_rss_os": 134938624,
+    "peak_gpu_allocated": 0
+  },
+  "logs": [
+    "ba.json",
+    "invocation.json"
+  ]
+}

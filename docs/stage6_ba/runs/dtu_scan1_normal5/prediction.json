@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan1_normal5",
+  "method_id": "teaching_incremental_sfm_ba",
+  "run_id": "teaching_incremental_sfm_ba",
+  "input_manifest_sha256": "c93eebcd8ad26fea0c195e07062ef1d8d013c852e66ae658a422c07681ddfe08",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "success",
+  "failure_reason": null,
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.1652570952901,
+            -0.00012403167471539058,
+            411.3526366281194
+          ],
+          [
+            0.0,
+            1441.5876376816568,
+            309.2854587867471
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "t": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.1650693758454,
+            0.0002651189258259368,
+            411.3521648266034
+          ],
+          [
+            0.0,
+            1441.587570474034,
+            309.2843241190561
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.8723788281431288,
+            -0.4407267419580393,
+            0.21145949761283642
+          ],
+          [
+            0.4534709400307651,
+            0.8911701554382215,
+            -0.01341121187030995
+          ],
+          [
+            -0.18253571364320897,
+            0.10759039445632643,
+            0.9772947458497341
+          ]
+        ],
+        "t": [
+          -0.5084971723134525,
+          0.032269395548291446,
+          0.05157352678976489
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.166159711225,
+            -2.774193051153218e-05,
+            411.35311063797417
+          ],
+          [
+            0.0,
+            1441.5886986743906,
+            309.2851769081775
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.5235399141539193,
+            -0.7537580492593771,
+            0.3971835362454053
+          ],
+          [
+            0.8015041065225764,
+            0.5938250316934472,
+            0.0704485554268004
+          ],
+          [
+            -0.2889586917106894,
+            0.2814616046834362,
+            0.9150312779210733
+          ]
+        ],
+        "t": [
+          -0.9566629056528883,
+          -0.16936665025889353,
+          0.19962857733591213
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "004",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.164894138866,
+            8.481976238185254e-05,
+            411.3520084605752
+          ],
+          [
+            0.0,
+            1441.5872161022428,
+            309.2849865762292
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.04355264257523157,
+            -0.8599988129499281,
+            0.5084340754212174
+          ],
+          [
+            0.9551564377764896,
+            0.18503731841496976,
+            0.23116524429058016
+          ],
+          [
+            -0.29288111359191576,
+            0.47556622306310947,
+            0.8294922668612695
+          ]
+        ],
+        "t": [
+          -1.2254493343519919,
+          -0.5552673859688227,
+          0.4026207665750904
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "005",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.1651539725065,
+            -0.0001635788437211397,
+            411.3529535765095
+          ],
+          [
+            0.0,
+            1441.5876474790182,
+            309.28535391266917
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            -0.44449985048721924,
+            -0.7327681038052257,
+            0.5152385748005804
+          ],
+          [
+            0.8748930562867447,
+            -0.23165181982253893,
+            0.42532290607742324
+          ],
+          [
+            -0.1923071058959557,
+            0.6398346195843108,
+            0.7440629251638076
+          ]
+        ],
+        "t": [
+          -1.2395387427046298,
+          -1.0209496665983888,
+          0.6072194745508084
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": {
+      "path": "sparse_points.npz",
+      "sha256": "d7179b2224f0f822a0e731b9cffb1fecb9327f43edbdf72d71ca56322d0ae99c",
+      "semantics": "all original sparse points, same IDs/rgb/observation table; BA candidate only if accepted; arbitrary scale with fixed gauge coordinate"
+    },
+    "tracks": {
+      "path": "observations.npz",
+      "sha256": "d12949fa83dc0ffc474ed1f45d3030af3b963a5ca074734ab347991d01180def",
+      "semantics": "unchanged measured keypoint observations and original image-index mapping; no tracks filtered or created"
+    },
+    "confidence": null
+  },
+  "provenance": {
+    "data_kind": "real",
+    "code_commit": "abc5f85268d9b1f4b46a25f417fb5d01cac9a76b",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "508409b98cabc1a6e16ae5bf01f866c4d21ee62daaf5455f1c15b66a609486f4",
+    "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+    "known_intrinsics": "declared known K; no pose truth",
+    "BA": true,
+    "BA_accepted": true,
+    "baseline_prediction_sha256": "ba42468449b6b54b3b9768ee081d0ed18f6a396fe095a60a0320777fa2a5c1f1",
+    "pose_truth_access": "none; runtime guard active",
+    "scope": "stage6 teaching calibrated BA only"
+  },
+  "config": {
+    "schema_version": 1,
+    "scope": "stage6 minimal teaching calibrated BA only; no next stage",
+    "known_K": "unchanged per-image supplied calibration, zero-based 800x600 pixels; no distortion fit",
+    "solver": "SciPy sparse least_squares trf/lsmr, 2-point Jacobian",
+    "loss": "soft_l1 on individual pixel residual components",
+    "loss_scale_px": 1.0,
+    "gauge": "fix first seed pose and largest nonzero initial second seed center coordinate relative to first; all other poses/points free",
+    "min_points": 20,
+    "max_points": 3000,
+    "max_observations": 20000,
+    "min_registered_cameras": 3,
+    "max_nfev": 80,
+    "wall_budget_seconds": 60.0,
+    "ftol": 1e-08,
+    "xtol": 1e-08,
+    "gtol": 1e-08,
+    "CPU_threads": 8,
+    "GPU_budget_GiB": 12,
+    "GPU_allocated_bytes": 0,
+    "fit_on_GT": false,
+    "filter_observations": false,
+    "filter_points": false,
+    "priors": false,
+    "retry_or_parameter_search": false,
+    "acceptance": "finite solution, all observed depths positive, robust objective nonincreasing; max_nfev status0 may be accepted with explicit nonconverged label; timeout rejected",
+    "fallback": "retain original registration, poses, points, tracks; preserve rejected candidate"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "timing_seconds": {
+    "process_body": 3.855749077999917,
+    "ba_solver": 2.3761134420001326
+  },
+  "memory_bytes": {
+    "peak_rss_os": 495132672,
+    "peak_gpu_allocated": 0
+  },
+  "logs": [
+    "ba.json",
+    "invocation.json"
+  ]
+}

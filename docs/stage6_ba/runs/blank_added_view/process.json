@@ -1,0 +1,41 @@
+{
+  "case_id": "blank_added_view",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.teaching.ba_run",
+    "--input",
+    "/home/zchming/projects/VisionGeometryLab/data/stage6_incremental/blank_added_view/input.json",
+    "--baseline",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_incremental_v1/blank_added_view",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_ba.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_ba_v1/blank_added_view"
+  ],
+  "exit_code": 1,
+  "controller_seconds": 0.5882740459996967,
+  "gpu_before": {
+    "memory_used_total_MiB": "508, 12282",
+    "compute_apps": "",
+    "returncode": 0
+  },
+  "gpu_samples": [
+    {
+      "memory_used_total_MiB": "508, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "509, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    }
+  ],
+  "gpu_after": {
+    "memory_used_total_MiB": "509, 12282",
+    "compute_apps": "",
+    "returncode": 0
+  },
+  "profile": "CPU SciPy sparse least squares; no CUDA/model/OpenCL; whole card is not task allocation; WSL process listing limited"
+}

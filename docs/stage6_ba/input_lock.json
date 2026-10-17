@@ -1,0 +1,93 @@
+{
+  "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+  "cases": [
+    {
+      "case_id": "dtu_scan1_reduced3",
+      "input": "data/stage6_incremental/dtu_scan1_reduced3/input.json",
+      "input_sha256": "43c5f74dbf689b7b525be5c0f69a7f5db39f2cda66f149b0fef11bfa8727e51e",
+      "reference": "data/stage6_incremental_truth/dtu_scan1_reduced3.json",
+      "reference_sha256": "1fb4e8b923a497d88ea5b1adc9a4866681af05ebfaed19c3e36fc32349b5d820",
+      "source_manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+      "source_reference_sha256": "f02fc31a6985b0977097deb539885deaef217aca74b6c59cfcd38498cadef655",
+      "baseline": "outputs/stage6_incremental_v1/dtu_scan1_reduced3",
+      "baseline_files_sha256": {
+        "invocation.json": "24620b3aefce4ea2b349310224ce3a38b63ac60daa9b37c7e65c7823c8edb591",
+        "steps.json": "ee836100b046ad3fce2c496bc4eda3104c30f4d7348fdc8890868a41e5450dc9",
+        "prediction.json": "6bbd6af9960e9e3e081d0028d68f32f4e480fde1085083764b433996a4cf2476",
+        "geometry_steps.npz": "a55873d776c771804430d6d1fcefc65143906645fef05a53b923f8ec975d22fc",
+        "sparse_points.npz": "1bb83c02d74a23c5701e6ececbe0cadbe08841bfb2744593d9dad389edba2930"
+      }
+    },
+    {
+      "case_id": "dtu_scan1_normal5",
+      "input": "data/stage6_incremental/dtu_scan1_normal5/input.json",
+      "input_sha256": "c93eebcd8ad26fea0c195e07062ef1d8d013c852e66ae658a422c07681ddfe08",
+      "reference": "data/stage6_incremental_truth/dtu_scan1_normal5.json",
+      "reference_sha256": "8a374617a9510f63d43fe583a75f6e022752cb573a49fb5340d3437cd1fdeea1",
+      "source_manifest_sha256": "8df96f4f5460ae9799044b425e6397048ac52e5d49b2a2cfec7a34b20641f678",
+      "source_reference_sha256": "cd0f84f8e330e834e459934b89eac4a911152d3e9a885799be9e3f7a92d95fc8",
+      "baseline": "outputs/stage6_incremental_v1/dtu_scan1_normal5",
+      "baseline_files_sha256": {
+        "invocation.json": "b69fcbff1d916612e40fd9f525082bf92490557d612d63d7de9568f99bdce607",
+        "steps.json": "fb4f9ed24e6661a3cc8055e6831cd51a6d842514197454ef385d514e6ddc836d",
+        "prediction.json": "ba42468449b6b54b3b9768ee081d0ed18f6a396fe095a60a0320777fa2a5c1f1",
+        "geometry_steps.npz": "79ff201aafa3527ebca7cf6f4330a30d589b7e273054c105ec162beba397fb08",
+        "sparse_points.npz": "f05113ea1d671a7f17ebe1aae6682db17f663c43e6f70ce340a22d717ea7183e"
+      }
+    },
+    {
+      "case_id": "dtu_scan1_blur5",
+      "input": "data/stage6_incremental/dtu_scan1_blur5/input.json",
+      "input_sha256": "31a966cfd131f28b413ce891f859b89a729eb221b9da4a1791f700e766fcee92",
+      "reference": "data/stage6_incremental_truth/dtu_scan1_blur5.json",
+      "reference_sha256": "8a374617a9510f63d43fe583a75f6e022752cb573a49fb5340d3437cd1fdeea1",
+      "source_manifest_sha256": "b04e1566393a84df5e71a2bf91e7c0f2d5aed4b834a28f408b3a013492f657b1",
+      "source_reference_sha256": "f36088dabb2b03f2621d320d6874b6a0b909f520c6370c75e0434613e39dba5b",
+      "baseline": "outputs/stage6_incremental_v1/dtu_scan1_blur5",
+      "baseline_files_sha256": {
+        "invocation.json": "b73441ecc5a1c12afe1c4dc1a08a4dddfec86afcf411432f695298818c0e03fd",
+        "steps.json": "37f6bfdd67b74265caeb4f92ad39c2fdd3c111c81034a3c7830b9026a3c264be",
+        "prediction.json": "8e6054c17cd053ab2d1189dd95574e92942d3c0722c354570e4d68368afc2d3e",
+        "geometry_steps.npz": "e4676368177f093562e61e6145d9e5bc5d03ebc980e8021887298280123d10d3",
+        "sparse_points.npz": "542a629bf07fdcc2b1a3e3aa905fe52298d62085328fe8e7e499299f4b5b3a9d"
+      }
+    },
+    {
+      "case_id": "dtu_scan1_spaced3",
+      "input": "data/stage6_incremental/dtu_scan1_spaced3/input.json",
+      "input_sha256": "620f05e985ecca0357e72abd59afc1184748a3eb3103c75db8bb7b9242684f95",
+      "reference": "data/stage6_incremental_truth/dtu_scan1_spaced3.json",
+      "reference_sha256": "fb6e7f7e52a50e90240e0a5703951d9feb7a66708e48abca914196a1b2529c24",
+      "source_manifest_sha256": "5d4d75d7a1c42daeb53183dc9ea96e2594ade589506bdc6845a77bbf0890f6a2",
+      "source_reference_sha256": "426de37ee73b2775f475817d6a1112cc3d26223f02f4ae1f87a0982adf76f6f7",
+      "baseline": "outputs/stage6_incremental_v1/dtu_scan1_spaced3",
+      "baseline_files_sha256": {
+        "invocation.json": "abb13e6adf04c75b0d77a0e1377fef7df5017262ba9860d9ece4471b4b942a80",
+        "steps.json": "404b26055e9a6b5e32edf03414b9a852ed5ea0127c56ca6a2e44d300ed6b7bf5",
+        "prediction.json": "f5659e1f638330da97e623ee0e44db55aeecb9894050634954e8cbdfcdc375bb",
+        "geometry_steps.npz": "96f4abf2ad14ea0c9682fc6b532ec5838d81d2bf5b71f350035b3d8c194ae1e5",
+        "sparse_points.npz": "65b0153dd2bdd1fffbb243473afe32f2df1924b217e6cfb6cdc5d8ca95bc6099"
+      }
+    },
+    {
+      "case_id": "blank_added_view",
+      "input": "data/stage6_incremental/blank_added_view/input.json",
+      "input_sha256": "fd99358fe3cb3a3d9b743fa49fe3e2f87703544ae327cb44bc47e37b08bdf508",
+      "reference": "data/stage6_incremental_truth/blank_added_view.json",
+      "reference_sha256": "2798234dc2b860ed7216516a9a8352554086f82dd302be1ff45f453c398bdbcd",
+      "source_manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+      "source_reference_sha256": "f02fc31a6985b0977097deb539885deaef217aca74b6c59cfcd38498cadef655",
+      "baseline": "outputs/stage6_incremental_v1/blank_added_view",
+      "baseline_files_sha256": {
+        "invocation.json": "0b4c60b6ba4fd17ae1e18d9ef7afe2d0fef2785b2654f2355686a1415ae87c1c",
+        "steps.json": "d0c5bce8e38b3daa9303ad074c40dadfddbfffb4d80d4c5507e36e49facb71ed",
+        "prediction.json": "13e427c29cb5fc635fabc67a6caa819cd7920369dbe2de39d86e4ace1011951a",
+        "geometry_steps.npz": "5a787f107026e6a6ad41efac2bdaaa34664f925b76e199dc88525a2d7462f295",
+        "sparse_points.npz": "8722f4421a51c7c74c1b690866951494c7a4c21ab73cd9c3dc0f6173c486ec3b"
+      }
+    }
+  ],
+  "known_K_and_all_original_3_or_5_views_preserved": true,
+  "no_new_downloads": true,
+  "data_profile": "exact previous incremental maps/observations, no new feature extraction or map re-selection"
+}

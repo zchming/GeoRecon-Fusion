@@ -1,0 +1,106 @@
+{
+  "case_id": "dtu_scan1_normal5",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.teaching.ba_run",
+    "--input",
+    "/home/zchming/projects/VisionGeometryLab/data/stage6_incremental/dtu_scan1_normal5/input.json",
+    "--baseline",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_incremental_v1/dtu_scan1_normal5",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_ba.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_ba_v1/dtu_scan1_normal5"
+  ],
+  "exit_code": 0,
+  "controller_seconds": 4.241400132000308,
+  "gpu_before": {
+    "memory_used_total_MiB": "504, 12282",
+    "compute_apps": "",
+    "returncode": 0
+  },
+  "gpu_samples": [
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "508, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "508, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "508, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "509, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "509, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "509, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "509, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "504, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    }
+  ],
+  "gpu_after": {
+    "memory_used_total_MiB": "504, 12282",
+    "compute_apps": "",
+    "returncode": 0
+  },
+  "profile": "CPU SciPy sparse least squares; no CUDA/model/OpenCL; whole card is not task allocation; WSL process listing limited"
+}

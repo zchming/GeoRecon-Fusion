@@ -1,0 +1,1 @@
+[('dtu_scan1_reduced3', 'success', 3, 1793), ('dtu_scan1_normal5', 'success', 5, 2658), ('dtu_scan1_blur5', 'success', 5, 523), ('dtu_scan1_spaced3', 'no_reconstruction', 0, 0), ('blank_added_view', 'partial', 2, 404)]

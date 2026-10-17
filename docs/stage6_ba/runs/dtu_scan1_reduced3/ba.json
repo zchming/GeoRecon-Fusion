@@ -1,0 +1,165 @@
+{
+  "accepted": true,
+  "reason": "accepted_converged",
+  "solver_status": 2,
+  "converged": true,
+  "cameras": 3,
+  "points": 1793,
+  "observations": 3902,
+  "gauge": {
+    "fixed_camera": 0,
+    "scale_anchor_camera": 2,
+    "fixed_center_axis": 0,
+    "constraint": "one component of second camera center relative to fixed first center is held at its initial value"
+  },
+  "history": [
+    {
+      "iteration": 1,
+      "objective": 210.19772199648222,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.1424843309996504
+    },
+    {
+      "iteration": 2,
+      "objective": 197.74422297488582,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.15098609300002863
+    },
+    {
+      "iteration": 3,
+      "objective": 181.40234221082682,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.1599528899996585
+    },
+    {
+      "iteration": 4,
+      "objective": 163.275236467564,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.16919337099989207
+    },
+    {
+      "iteration": 5,
+      "objective": 141.45065334632045,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.17996489699999074
+    },
+    {
+      "iteration": 6,
+      "objective": 122.81487948448402,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.192614386999594
+    },
+    {
+      "iteration": 7,
+      "objective": 118.48104461625331,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.21737197199990987
+    },
+    {
+      "iteration": 8,
+      "objective": 113.8025682308868,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.2426105849999658
+    },
+    {
+      "iteration": 9,
+      "objective": 106.5625674304187,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.26753541799962477
+    },
+    {
+      "iteration": 10,
+      "objective": 100.3881133327265,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.2938598069999898
+    },
+    {
+      "iteration": 11,
+      "objective": 85.05538017485006,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.31970426199995927
+    },
+    {
+      "iteration": 12,
+      "objective": 78.04238601743347,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.3456603569998151
+    },
+    {
+      "iteration": 13,
+      "objective": 75.98273084125492,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.36863980499992977
+    },
+    {
+      "iteration": 14,
+      "objective": 74.14230753809866,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.3904889349996665
+    },
+    {
+      "iteration": 15,
+      "objective": 72.72991443421304,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.41624059699961435
+    },
+    {
+      "iteration": 16,
+      "objective": 71.75320040092511,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.4401375099996585
+    },
+    {
+      "iteration": 17,
+      "objective": 70.90820214781002,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.4644846649998726
+    },
+    {
+      "iteration": 18,
+      "objective": 70.28033780900617,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.48537597399990773
+    },
+    {
+      "iteration": 19,
+      "objective": 70.12695483443534,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.5056527219999225
+    },
+    {
+      "iteration": 20,
+      "objective": 70.12662115728068,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.5176003949995902
+    },
+    {
+      "iteration": 21,
+      "objective": 70.12660030834913,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.5281602029999704
+    },
+    {
+      "iteration": 22,
+      "objective": 70.1265941076431,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.5378305569997792
+    },
+    {
+      "iteration": 23,
+      "objective": 70.12659357290943,
+      "positive_observations": 3902,
+      "elapsed_seconds": 0.5465943449999031
+    }
+  ],
+  "initial_objective": 217.91733649345963,
+  "initial_rmse_px": 0.35165765285021294,
+  "solver_message": "`ftol` termination condition is satisfied.",
+  "nfev": 27,
+  "optimality": 4.5255095272525985,
+  "final_objective": 70.12659357290943,
+  "final_rmse_px": 0.19794781261586825,
+  "positive_observations": 3902,
+  "function_calls": 243,
+  "wall_seconds": 0.5469887799999924
+}

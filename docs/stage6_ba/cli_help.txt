@@ -1,0 +1,11 @@
+usage: ba_run.py [-h] --input INPUT --baseline BASELINE --config CONFIG
+                 --output OUTPUT
+
+Immutable teaching BA wrapper over a hashed incremental map, known K only.
+
+options:
+  -h, --help           show this help message and exit
+  --input INPUT
+  --baseline BASELINE
+  --config CONFIG
+  --output OUTPUT

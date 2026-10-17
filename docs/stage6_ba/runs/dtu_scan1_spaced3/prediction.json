@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan1_spaced3",
+  "method_id": "teaching_incremental_sfm_ba",
+  "run_id": "teaching_incremental_sfm_ba",
+  "input_manifest_sha256": "620f05e985ecca0357e72abd59afc1184748a3eb3103c75db8bb7b9242684f95",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "no_reconstruction",
+  "failure_reason": "seed_initialization_failed",
+  "images": [
+    {
+      "image_id": "001",
+      "registered": false,
+      "camera": null,
+      "reason": "seed_initialization_failed"
+    },
+    {
+      "image_id": "010",
+      "registered": false,
+      "camera": null,
+      "reason": "seed_initialization_failed"
+    },
+    {
+      "image_id": "020",
+      "registered": false,
+      "camera": null,
+      "reason": "seed_initialization_failed"
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": null,
+    "tracks": {
+      "path": "observations.npz",
+      "sha256": "0955a7632bdea419dbc1eeb97a669988882002657928260b80a7d06518a627b1",
+      "semantics": "unchanged measured keypoint observations and original image-index mapping; no tracks filtered or created"
+    },
+    "confidence": null
+  },
+  "provenance": {
+    "data_kind": "real",
+    "code_commit": "abc5f85268d9b1f4b46a25f417fb5d01cac9a76b",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "508409b98cabc1a6e16ae5bf01f866c4d21ee62daaf5455f1c15b66a609486f4",
+    "config_sha256": "544a62203daad5bf84df38372d11412b1cf4512b5f0af46309aa13afe4c7ddcb",
+    "known_intrinsics": "declared known K; no pose truth",
+    "BA": true,
+    "BA_accepted": false,
+    "baseline_prediction_sha256": "f5659e1f638330da97e623ee0e44db55aeecb9894050634954e8cbdfcdc375bb",
+    "pose_truth_access": "none; runtime guard active",
+    "scope": "stage6 teaching calibrated BA only"
+  },
+  "config": {
+    "schema_version": 1,
+    "scope": "stage6 minimal teaching calibrated BA only; no next stage",
+    "known_K": "unchanged per-image supplied calibration, zero-based 800x600 pixels; no distortion fit",
+    "solver": "SciPy sparse least_squares trf/lsmr, 2-point Jacobian",
+    "loss": "soft_l1 on individual pixel residual components",
+    "loss_scale_px": 1.0,
+    "gauge": "fix first seed pose and largest nonzero initial second seed center coordinate relative to first; all other poses/points free",
+    "min_points": 20,
+    "max_points": 3000,
+    "max_observations": 20000,
+    "min_registered_cameras": 3,
+    "max_nfev": 80,
+    "wall_budget_seconds": 60.0,
+    "ftol": 1e-08,
+    "xtol": 1e-08,
+    "gtol": 1e-08,
+    "CPU_threads": 8,
+    "GPU_budget_GiB": 12,
+    "GPU_allocated_bytes": 0,
+    "fit_on_GT": false,
+    "filter_observations": false,
+    "filter_points": false,
+    "priors": false,
+    "retry_or_parameter_search": false,
+    "acceptance": "finite solution, all observed depths positive, robust objective nonincreasing; max_nfev status0 may be accepted with explicit nonconverged label; timeout rejected",
+    "fallback": "retain original registration, poses, points, tracks; preserve rejected candidate"
+  },
+  "versions": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "timing_seconds": {
+    "process_body": 0.00983709699994506,
+    "ba_solver": 0.0
+  },
+  "memory_bytes": {
+    "peak_rss_os": 83365888,
+    "peak_gpu_allocated": 0
+  },
+  "logs": [
+    "ba.json",
+    "invocation.json"
+  ]
+}
