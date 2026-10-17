@@ -1,0 +1,78 @@
+[
+  {
+    "scene_id": "dtu_scan1_normal5",
+    "scorable_source_witness_counts": [
+      {
+        "source": "003",
+        "witness": "002",
+        "folds": 3
+      },
+      {
+        "source": "003",
+        "witness": "004",
+        "folds": 9
+      },
+      {
+        "source": "004",
+        "witness": "002",
+        "folds": 11
+      },
+      {
+        "source": "004",
+        "witness": "003",
+        "folds": 45
+      }
+    ],
+    "all_requested_witnesses_scorable_positions": 0,
+    "raw_mean_error_eligible_mm": 2.2452940582700642,
+    "raw_mean_error_ineligible_mm": 3.246854061472402
+  },
+  {
+    "scene_id": "dtu_scan6_normal5",
+    "scorable_source_witness_counts": [
+      {
+        "source": "002",
+        "witness": "003",
+        "folds": 2
+      },
+      {
+        "source": "002",
+        "witness": "004",
+        "folds": 4
+      },
+      {
+        "source": "003",
+        "witness": "002",
+        "folds": 20
+      },
+      {
+        "source": "003",
+        "witness": "004",
+        "folds": 50
+      },
+      {
+        "source": "004",
+        "witness": "001",
+        "folds": 3
+      },
+      {
+        "source": "004",
+        "witness": "002",
+        "folds": 56
+      },
+      {
+        "source": "004",
+        "witness": "003",
+        "folds": 87
+      },
+      {
+        "source": "004",
+        "witness": "005",
+        "folds": 12
+      }
+    ],
+    "all_requested_witnesses_scorable_positions": 0,
+    "raw_mean_error_eligible_mm": 6.788965008990397,
+    "raw_mean_error_ineligible_mm": 7.258371885642696
+  }
+]

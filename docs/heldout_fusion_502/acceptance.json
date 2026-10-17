@@ -1,0 +1,16 @@
+{
+  "scope": "authorized minimum heldout feasibility/crossfit/source-view ranking diagnostic",
+  "engineering_acceptance": "passed",
+  "source_groups_disjoint": true,
+  "witness_omitted_from_DLT_alignment_and_raw_depth_support": true,
+  "witness_coordinate_and_depth_mutation_probes_passed": true,
+  "candidate_copies_and_scores_replayed_exactly": true,
+  "both_GT_density_profiles_verified": true,
+  "within_source_random_and_200_permutation_controls_verified": true,
+  "all_unavailable_folds_and_positions_retained": true,
+  "all_147_tests_cross_environment_passed": true,
+  "scientific_safe_correction_hypothesis": "not_established",
+  "original_rule_and_outputs_unchanged": true,
+  "GT_guard_generation_active": true,
+  "new_stage_started": false
+}

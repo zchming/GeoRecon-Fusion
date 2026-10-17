@@ -1,0 +1,1 @@
+[{'scene_id': 'dtu_scan1_normal5', 'positions': 174, 'folds': 509, 'geometrically_feasible_folds': 509, 'constructed_folds': 68, 'scorable_folds': 68}, {'scene_id': 'dtu_scan6_normal5', 'positions': 328, 'folds': 938, 'geometrically_feasible_folds': 938, 'constructed_folds': 234, 'scorable_folds': 234}]

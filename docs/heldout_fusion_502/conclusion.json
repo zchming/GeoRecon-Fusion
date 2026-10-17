@@ -1,0 +1,17 @@
+{
+  "engineering_and_evidence_acceptance": "passed",
+  "source_positions": 502,
+  "requested_folds": 1447,
+  "scorable_folds": 302,
+  "evaluable_positions": 240,
+  "unavailable_positions": 262,
+  "balanced_interpretable_source_strata": 0,
+  "safe_correction_discrimination_supported": false,
+  "worth_expanding_current_fusion_or_training_selector_on_these_objects": false,
+  "why": "coverage and class balance insufficient; scan1 aggregate score explained by source view, and source004 top25/50 remain harmful on average. scan6 has no harmed position in evaluable set.",
+  "not_a_proof_that_all_heldout_evidence_or_fusion_is_useless": true,
+  "future_work_only_if_separately_authorized": "first resolve candidate availability and obtain defensible within-view positive/negative validation, not add model/weight complexity",
+  "conditional_holdout_not_full_pipeline_independence": true,
+  "old_fusion_rule_or_predictions_modified": false,
+  "new_data_downloads_or_next_stage": false
+}

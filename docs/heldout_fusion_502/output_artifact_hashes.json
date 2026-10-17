@@ -1,0 +1,19 @@
+{
+  "outputs/heldout_fusion_502_v1/protocol.json": "d199c6c6798d95879ea477974383abf20044c3ea08eb95cb21050cae0955f1f9",
+  "outputs/heldout_fusion_502_v1/invocation.json": "0ceaf1f24113e2d7d4041e9db19b66315628221892fb1492ca91e806e4341ebb",
+  "outputs/heldout_fusion_502_v1/execution.json": "a44cc3bd6c61594d9cf3ccb218767e98bae4ce4b6c10d040900d250719f64396",
+  "outputs/heldout_fusion_502_v1/input_lock.json": "331f9dd58faac6cb57e30e4cdfd0ddb689f91dfbf812b528bfb0e7ef8e8bcc7b",
+  "outputs/heldout_fusion_502_v1/source_lock.json": "860bd4b8a748a3e375f87493cba09976559a5e8763f6195d03f07e449bfe3f18",
+  "outputs/heldout_fusion_502_v1/dtu_scan6_normal5/alignments.json": "841b62d059a635065d8bac23f1acb0acbf66d0cd193dfe7db87c69ff1652f699",
+  "outputs/heldout_fusion_502_v1/dtu_scan6_normal5/candidates.npz": "52da48c30822cb5726613f5701fc27e2cb6dfeca806be60e6bc3838b5af286c0",
+  "outputs/heldout_fusion_502_v1/dtu_scan6_normal5/folds.json": "e78eb624f0e746cdb1656a8abf49542cc82bc967d341b6a117a88915e052ceab",
+  "outputs/heldout_fusion_502_v1/dtu_scan6_normal5/positions.json": "8d3a315ada00a1a37451e5cd1b505e08ca1735b208dbb40a206c6b4375563d64",
+  "outputs/heldout_fusion_502_v1/dtu_scan6_normal5/offline_position_evaluation.json": "936af5df4a41871bf83849dc439331e967ecabbb539486273d43fb4af94c0227",
+  "outputs/heldout_fusion_502_v1/dtu_scan6_normal5/offline_evaluation.npz": "1c7b371714cf72950cc27a5b50010d4c5664daed4e6bb663c4e0c85c1b797942",
+  "outputs/heldout_fusion_502_v1/dtu_scan1_normal5/alignments.json": "ee97ac5ab82abd6d1a4f930a463a00574c998e9fc1ae117264c0a8c7816f664e",
+  "outputs/heldout_fusion_502_v1/dtu_scan1_normal5/candidates.npz": "c683b9d387f1a8f6bc224b37eae0bc20ad2a41a257607c703c0bc12587a45353",
+  "outputs/heldout_fusion_502_v1/dtu_scan1_normal5/folds.json": "b472e9720afecd1af4a4a0b38ad347bac9cf8c8e1572894fc3c4375276dcbdb8",
+  "outputs/heldout_fusion_502_v1/dtu_scan1_normal5/positions.json": "cf5fb7f8306bc590ffbaaf2554c3392ecca2e0c86dfb8ed0b62ed53ca6134720",
+  "outputs/heldout_fusion_502_v1/dtu_scan1_normal5/offline_position_evaluation.json": "6960767cfb7cee84ff2e0242aa0c62560564d424a36a4f9c6b2705e2d10dae60",
+  "outputs/heldout_fusion_502_v1/dtu_scan1_normal5/offline_evaluation.npz": "3d0aec2c7372d0da971747232c086e9cbad9475156bd87568e6024ededd1246e"
+}

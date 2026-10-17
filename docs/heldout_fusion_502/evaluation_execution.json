@@ -1,0 +1,6 @@
+{
+  "wall_seconds": 2.8346244379999916,
+  "peak_process_RSS_bytes": 501067776,
+  "GPU_task_allocated_bytes": 0,
+  "scope": "offline GT scoring and within-source permutations, not model inference"
+}

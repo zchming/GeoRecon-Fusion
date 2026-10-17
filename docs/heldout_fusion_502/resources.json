@@ -1,0 +1,38 @@
+{
+  "generation": {
+    "wall_seconds": 0.6575544309998804,
+    "peak_process_RSS_bytes": 78106624,
+    "GPU_task_allocated_bytes": 0,
+    "CPU_threads": 8,
+    "counts": [
+      {
+        "scene_id": "dtu_scan1_normal5",
+        "positions": 174,
+        "folds": 509,
+        "geometrically_feasible_folds": 509,
+        "constructed_folds": 68,
+        "scorable_folds": 68
+      },
+      {
+        "scene_id": "dtu_scan6_normal5",
+        "positions": 328,
+        "folds": 938,
+        "geometrically_feasible_folds": 938,
+        "constructed_folds": 234,
+        "scorable_folds": 234
+      }
+    ]
+  },
+  "offline_evaluation": {
+    "wall_seconds": 2.8346244379999916,
+    "peak_process_RSS_bytes": 501067776,
+    "GPU_task_allocated_bytes": 0,
+    "scope": "offline GT scoring and within-source permutations, not model inference"
+  },
+  "task_new_GPU_bytes": 0,
+  "GPU_budget_GiB": 12,
+  "whole_card_snapshot": "NVIDIA GeForce RTX 4070 SUPER, 555, 12282",
+  "compute_apps_snapshot": "",
+  "snapshot_not_peak_or_task_allocation": true,
+  "timing_scope": "separate candidate generation and offline GT scoring/ranking; excludes independent checks, test suites, reporting and pre-existing upstream inference; no pipeline speed claim"
+}

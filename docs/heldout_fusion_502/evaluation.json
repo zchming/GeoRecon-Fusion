@@ -1,0 +1,1005 @@
+{
+  "scenes": [
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "positions": 174,
+      "requested_folds": 509,
+      "geometrically_feasible_folds": 509,
+      "constructed_folds": 68,
+      "scorable_folds": 68,
+      "evaluable_positions": 61,
+      "positions_with_no_evaluable_fold": 113,
+      "all_requested_folds_scorable_positions": 0,
+      "fold_construction_failures": {
+        "construction_track_length_gate": 140,
+        "source_reprojection_gate": 296,
+        "source_3d_disagreement_gate": 5
+      },
+      "witness_unavailable_reasons": {
+        "no_candidate": 441
+      },
+      "overall_AUROC_descriptive_only": {
+        "valid": 61,
+        "positive": 15,
+        "negative": 46,
+        "auc": 0.7913043478260869
+      },
+      "source_only_mean_score_overall_AUROC": {
+        "valid": 61,
+        "positive": 15,
+        "negative": 46,
+        "auc": 0.9
+      },
+      "strata": [
+        {
+          "source_image": "003",
+          "original_positions": 82,
+          "evaluable_positions": 12,
+          "benefit_positions": 12,
+          "harm_positions": 0,
+          "interpretable_AUROC": false,
+          "AUROC": {
+            "valid": 12,
+            "positive": 12,
+            "negative": 0,
+            "auc": null
+          },
+          "mean_gain_mm": 2.6769985845679094,
+          "mean_harm_fold_fraction": 0.0,
+          "rank_profiles": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 3,
+              "evaluable": 12,
+              "actual_fraction": 0.25,
+              "score_threshold_descriptive_only": -0.6052293533293944,
+              "mean_gain_mm": 3.7778183828337526,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.9240951447445327,
+              "random_same_count_expected_gain_mm": 2.6769985845679094,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 2.714319537096563,
+                "gain_5_95_percentile_mm": [
+                  2.012893154260714,
+                  3.38927063748498
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 6,
+              "evaluable": 12,
+              "actual_fraction": 0.5,
+              "score_threshold_descriptive_only": -0.8547932695984666,
+              "mean_gain_mm": 3.1261643952827747,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.2278244109137924,
+              "random_same_count_expected_gain_mm": 2.6769985845679094,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 2.6799955105567985,
+                "gain_5_95_percentile_mm": [
+                  2.3023622515034514,
+                  3.0448111696061493
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 12,
+              "evaluable": 12,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": -1.394075470656743,
+              "mean_gain_mm": 2.6769985845679094,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 2.671736144706427,
+              "random_same_count_expected_gain_mm": 2.6769985845679094,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 2.676998584567909,
+                "gain_5_95_percentile_mm": [
+                  2.6769985845679094,
+                  2.6769985845679094
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "source_only_constant_tie_profile": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 12,
+              "evaluable": 12,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 2.6769985845679094,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 2.671736144706427,
+              "random_same_count_expected_gain_mm": 2.6769985845679094,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 2.676998584567909,
+                "gain_5_95_percentile_mm": [
+                  2.6769985845679094,
+                  2.6769985845679094
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 12,
+              "evaluable": 12,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 2.6769985845679094,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 2.671736144706427,
+              "random_same_count_expected_gain_mm": 2.6769985845679094,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 2.676998584567909,
+                "gain_5_95_percentile_mm": [
+                  2.6769985845679094,
+                  2.6769985845679094
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 12,
+              "evaluable": 12,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 2.6769985845679094,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 2.671736144706427,
+              "random_same_count_expected_gain_mm": 2.6769985845679094,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 2.676998584567909,
+                "gain_5_95_percentile_mm": [
+                  2.6769985845679094,
+                  2.6769985845679094
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "full_DLT_resubstitution": {
+            "same_evaluable_positions": 12,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 12,
+              "positive": 12,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 12,
+              "positive": 12,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          },
+          "original_frozen_resubstitution": {
+            "same_evaluable_positions": 12,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 12,
+              "positive": 12,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 12,
+              "positive": 12,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          }
+        },
+        {
+          "source_image": "004",
+          "original_positions": 92,
+          "evaluable_positions": 49,
+          "benefit_positions": 3,
+          "harm_positions": 46,
+          "interpretable_AUROC": false,
+          "AUROC": {
+            "valid": 49,
+            "positive": 3,
+            "negative": 46,
+            "auc": 0.5362318840579711
+          },
+          "mean_gain_mm": -0.886068750480681,
+          "mean_harm_fold_fraction": 0.9387755102040817,
+          "rank_profiles": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 13,
+              "evaluable": 49,
+              "actual_fraction": 0.2653061224489796,
+              "score_threshold_descriptive_only": -1.0257552541001669,
+              "mean_gain_mm": -0.46468063348518424,
+              "harm_rate": 0.9230769230769231,
+              "good_to_bad_2mm_rate": 0.6153846153846154,
+              "full_reference_mean_gain_mm": -0.4104834820207494,
+              "random_same_count_expected_gain_mm": -0.886068750480681,
+              "random_same_count_expected_harm_rate": 0.9387755102040817,
+              "random_same_count_expected_good_to_bad_rate": 0.7448979591836735,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": -0.8855063450403589,
+                "gain_5_95_percentile_mm": [
+                  -1.1458735308551744,
+                  -0.6591844542274918
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 25,
+              "evaluable": 49,
+              "actual_fraction": 0.5102040816326531,
+              "score_threshold_descriptive_only": -1.174658592662823,
+              "mean_gain_mm": -0.6261082051203721,
+              "harm_rate": 0.92,
+              "good_to_bad_2mm_rate": 0.74,
+              "full_reference_mean_gain_mm": -0.5987853280687537,
+              "random_same_count_expected_gain_mm": -0.886068750480681,
+              "random_same_count_expected_harm_rate": 0.9387755102040817,
+              "random_same_count_expected_good_to_bad_rate": 0.7448979591836735,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": -0.8836749905277699,
+                "gain_5_95_percentile_mm": [
+                  -1.0186593151652472,
+                  -0.7410872734928513
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 49,
+              "evaluable": 49,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": -2.020724103182566,
+              "mean_gain_mm": -0.886068750480681,
+              "harm_rate": 0.9387755102040817,
+              "good_to_bad_2mm_rate": 0.7448979591836735,
+              "full_reference_mean_gain_mm": -0.8784782590930358,
+              "random_same_count_expected_gain_mm": -0.886068750480681,
+              "random_same_count_expected_harm_rate": 0.9387755102040817,
+              "random_same_count_expected_good_to_bad_rate": 0.7448979591836735,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": -0.886068750480681,
+                "gain_5_95_percentile_mm": [
+                  -0.886068750480681,
+                  -0.886068750480681
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "source_only_constant_tie_profile": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 49,
+              "evaluable": 49,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": -0.886068750480681,
+              "harm_rate": 0.9387755102040817,
+              "good_to_bad_2mm_rate": 0.7448979591836735,
+              "full_reference_mean_gain_mm": -0.8784782590930358,
+              "random_same_count_expected_gain_mm": -0.886068750480681,
+              "random_same_count_expected_harm_rate": 0.9387755102040817,
+              "random_same_count_expected_good_to_bad_rate": 0.7448979591836735,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": -0.886068750480681,
+                "gain_5_95_percentile_mm": [
+                  -0.886068750480681,
+                  -0.886068750480681
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 49,
+              "evaluable": 49,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": -0.886068750480681,
+              "harm_rate": 0.9387755102040817,
+              "good_to_bad_2mm_rate": 0.7448979591836735,
+              "full_reference_mean_gain_mm": -0.8784782590930358,
+              "random_same_count_expected_gain_mm": -0.886068750480681,
+              "random_same_count_expected_harm_rate": 0.9387755102040817,
+              "random_same_count_expected_good_to_bad_rate": 0.7448979591836735,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": -0.886068750480681,
+                "gain_5_95_percentile_mm": [
+                  -0.886068750480681,
+                  -0.886068750480681
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 49,
+              "evaluable": 49,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": -0.886068750480681,
+              "harm_rate": 0.9387755102040817,
+              "good_to_bad_2mm_rate": 0.7448979591836735,
+              "full_reference_mean_gain_mm": -0.8784782590930358,
+              "random_same_count_expected_gain_mm": -0.886068750480681,
+              "random_same_count_expected_harm_rate": 0.9387755102040817,
+              "random_same_count_expected_good_to_bad_rate": 0.7448979591836735,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": -0.886068750480681,
+                "gain_5_95_percentile_mm": [
+                  -0.886068750480681,
+                  -0.886068750480681
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "full_DLT_resubstitution": {
+            "same_evaluable_positions": 49,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 49,
+              "positive": 0,
+              "negative": 49,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 49,
+              "positive": 3,
+              "negative": 46,
+              "auc": 0.427536231884058
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          },
+          "original_frozen_resubstitution": {
+            "same_evaluable_positions": 49,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 49,
+              "positive": 0,
+              "negative": 49,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 49,
+              "positive": 3,
+              "negative": 46,
+              "auc": 0.427536231884058
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          }
+        }
+      ],
+      "mean_point_gain_mm": -0.18513747145472872,
+      "eligible_raw_mean_error_mm": 2.2452940582700642,
+      "ineligible_raw_mean_error_mm": 3.246854061472402,
+      "GT_reference_label_flips_at_position_mean": 2
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "positions": 328,
+      "requested_folds": 938,
+      "geometrically_feasible_folds": 938,
+      "constructed_folds": 234,
+      "scorable_folds": 234,
+      "evaluable_positions": 179,
+      "positions_with_no_evaluable_fold": 149,
+      "all_requested_folds_scorable_positions": 0,
+      "fold_construction_failures": {
+        "construction_track_length_gate": 255,
+        "source_reprojection_gate": 449
+      },
+      "witness_unavailable_reasons": {
+        "no_candidate": 704
+      },
+      "overall_AUROC_descriptive_only": {
+        "valid": 179,
+        "positive": 179,
+        "negative": 0,
+        "auc": null
+      },
+      "source_only_mean_score_overall_AUROC": {
+        "valid": 179,
+        "positive": 179,
+        "negative": 0,
+        "auc": null
+      },
+      "strata": [
+        {
+          "source_image": "002",
+          "original_positions": 19,
+          "evaluable_positions": 4,
+          "benefit_positions": 4,
+          "harm_positions": 0,
+          "interpretable_AUROC": false,
+          "AUROC": {
+            "valid": 4,
+            "positive": 4,
+            "negative": 0,
+            "auc": null
+          },
+          "mean_gain_mm": 3.4684340380549723,
+          "mean_harm_fold_fraction": 0.0,
+          "rank_profiles": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 1,
+              "evaluable": 4,
+              "actual_fraction": 0.25,
+              "score_threshold_descriptive_only": -1.0756353250246793,
+              "mean_gain_mm": 2.9928623113382433,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.256358425129052,
+              "random_same_count_expected_gain_mm": 3.4684340380549723,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.4564041394395177,
+                "gain_5_95_percentile_mm": [
+                  2.9928623113382433,
+                  3.9490738474976355
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 2,
+              "evaluable": 4,
+              "actual_fraction": 0.5,
+              "score_threshold_descriptive_only": -1.4543274738464045,
+              "mean_gain_mm": 3.4709680794179394,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.517213088022697,
+              "random_same_count_expected_gain_mm": 3.4684340380549723,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.4658004367530157,
+                "gain_5_95_percentile_mm": [
+                  3.107492865211209,
+                  3.8293752108987356
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 4,
+              "evaluable": 4,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": -1.8386317069167974,
+              "mean_gain_mm": 3.4684340380549723,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.482983478042722,
+              "random_same_count_expected_gain_mm": 3.4684340380549723,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.4684340380549723,
+                "gain_5_95_percentile_mm": [
+                  3.4684340380549723,
+                  3.4684340380549723
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "source_only_constant_tie_profile": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 4,
+              "evaluable": 4,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.4684340380549723,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.482983478042722,
+              "random_same_count_expected_gain_mm": 3.4684340380549723,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.4684340380549723,
+                "gain_5_95_percentile_mm": [
+                  3.4684340380549723,
+                  3.4684340380549723
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 4,
+              "evaluable": 4,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.4684340380549723,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.482983478042722,
+              "random_same_count_expected_gain_mm": 3.4684340380549723,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.4684340380549723,
+                "gain_5_95_percentile_mm": [
+                  3.4684340380549723,
+                  3.4684340380549723
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 4,
+              "evaluable": 4,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.4684340380549723,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.482983478042722,
+              "random_same_count_expected_gain_mm": 3.4684340380549723,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.4684340380549723,
+                "gain_5_95_percentile_mm": [
+                  3.4684340380549723,
+                  3.4684340380549723
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "full_DLT_resubstitution": {
+            "same_evaluable_positions": 4,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 4,
+              "positive": 4,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 4,
+              "positive": 4,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          },
+          "original_frozen_resubstitution": {
+            "same_evaluable_positions": 4,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 4,
+              "positive": 4,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 4,
+              "positive": 4,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          }
+        },
+        {
+          "source_image": "003",
+          "original_positions": 150,
+          "evaluable_positions": 70,
+          "benefit_positions": 70,
+          "harm_positions": 0,
+          "interpretable_AUROC": false,
+          "AUROC": {
+            "valid": 70,
+            "positive": 70,
+            "negative": 0,
+            "auc": null
+          },
+          "mean_gain_mm": 3.7452335432961603,
+          "mean_harm_fold_fraction": 0.0,
+          "rank_profiles": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 18,
+              "evaluable": 70,
+              "actual_fraction": 0.2571428571428571,
+              "score_threshold_descriptive_only": -0.14109090736434338,
+              "mean_gain_mm": 3.3269562074016195,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.2282527823847325,
+              "random_same_count_expected_gain_mm": 3.7452335432961603,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.74011240481538,
+                "gain_5_95_percentile_mm": [
+                  3.481789923793051,
+                  4.005874142843604
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 35,
+              "evaluable": 70,
+              "actual_fraction": 0.5,
+              "score_threshold_descriptive_only": -0.44934575276256217,
+              "mean_gain_mm": 3.464986374440241,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.377069490842159,
+              "random_same_count_expected_gain_mm": 3.7452335432961603,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.731988839792594,
+                "gain_5_95_percentile_mm": [
+                  3.5939194166574246,
+                  3.876216415264011
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 70,
+              "evaluable": 70,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": -1.1595184811937456,
+              "mean_gain_mm": 3.7452335432961603,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.6951693679957835,
+              "random_same_count_expected_gain_mm": 3.7452335432961603,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.7452335432961594,
+                "gain_5_95_percentile_mm": [
+                  3.7452335432961603,
+                  3.7452335432961603
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "source_only_constant_tie_profile": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 70,
+              "evaluable": 70,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.7452335432961603,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.6951693679957835,
+              "random_same_count_expected_gain_mm": 3.7452335432961603,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.7452335432961594,
+                "gain_5_95_percentile_mm": [
+                  3.7452335432961603,
+                  3.7452335432961603
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 70,
+              "evaluable": 70,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.7452335432961603,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.6951693679957835,
+              "random_same_count_expected_gain_mm": 3.7452335432961603,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.7452335432961594,
+                "gain_5_95_percentile_mm": [
+                  3.7452335432961603,
+                  3.7452335432961603
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 70,
+              "evaluable": 70,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.7452335432961603,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.6951693679957835,
+              "random_same_count_expected_gain_mm": 3.7452335432961603,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.7452335432961594,
+                "gain_5_95_percentile_mm": [
+                  3.7452335432961603,
+                  3.7452335432961603
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "full_DLT_resubstitution": {
+            "same_evaluable_positions": 70,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 70,
+              "positive": 70,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 70,
+              "positive": 70,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          },
+          "original_frozen_resubstitution": {
+            "same_evaluable_positions": 70,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 70,
+              "positive": 70,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 70,
+              "positive": 70,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          }
+        },
+        {
+          "source_image": "004",
+          "original_positions": 159,
+          "evaluable_positions": 105,
+          "benefit_positions": 105,
+          "harm_positions": 0,
+          "interpretable_AUROC": false,
+          "AUROC": {
+            "valid": 105,
+            "positive": 105,
+            "negative": 0,
+            "auc": null
+          },
+          "mean_gain_mm": 3.3813489044419915,
+          "mean_harm_fold_fraction": 0.0,
+          "rank_profiles": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 27,
+              "evaluable": 105,
+              "actual_fraction": 0.2571428571428571,
+              "score_threshold_descriptive_only": 0.13054114086701318,
+              "mean_gain_mm": 3.2877200760224974,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.232415703165426,
+              "random_same_count_expected_gain_mm": 3.3813489044419915,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.379247937514003,
+                "gain_5_95_percentile_mm": [
+                  3.252929040743872,
+                  3.497685888748933
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 53,
+              "evaluable": 105,
+              "actual_fraction": 0.5047619047619047,
+              "score_threshold_descriptive_only": -0.050086690322234784,
+              "mean_gain_mm": 3.234901275050754,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.2169339083769213,
+              "random_same_count_expected_gain_mm": 3.3813489044419915,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.3772746773964526,
+                "gain_5_95_percentile_mm": [
+                  3.305877257473322,
+                  3.4477494339068175
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 105,
+              "evaluable": 105,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": -2.4089394985501658,
+              "mean_gain_mm": 3.3813489044419915,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.3880883348032502,
+              "random_same_count_expected_gain_mm": 3.3813489044419915,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.381348904441992,
+                "gain_5_95_percentile_mm": [
+                  3.3813489044419915,
+                  3.3813489044419915
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "source_only_constant_tie_profile": [
+            {
+              "requested_fraction": 0.25,
+              "selected": 105,
+              "evaluable": 105,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.3813489044419915,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.3880883348032502,
+              "random_same_count_expected_gain_mm": 3.3813489044419915,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.381348904441992,
+                "gain_5_95_percentile_mm": [
+                  3.3813489044419915,
+                  3.3813489044419915
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 0.5,
+              "selected": 105,
+              "evaluable": 105,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.3813489044419915,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.3880883348032502,
+              "random_same_count_expected_gain_mm": 3.3813489044419915,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.381348904441992,
+                "gain_5_95_percentile_mm": [
+                  3.3813489044419915,
+                  3.3813489044419915
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            },
+            {
+              "requested_fraction": 1.0,
+              "selected": 105,
+              "evaluable": 105,
+              "actual_fraction": 1.0,
+              "score_threshold_descriptive_only": 0.0,
+              "mean_gain_mm": 3.3813489044419915,
+              "harm_rate": 0.0,
+              "good_to_bad_2mm_rate": 0.0,
+              "full_reference_mean_gain_mm": 3.3880883348032502,
+              "random_same_count_expected_gain_mm": 3.3813489044419915,
+              "random_same_count_expected_harm_rate": 0.0,
+              "random_same_count_expected_good_to_bad_rate": 0.0,
+              "within_stratum_permutation_200": {
+                "gain_mean_mm": 3.381348904441992,
+                "gain_5_95_percentile_mm": [
+                  3.3813489044419915,
+                  3.3813489044419915
+                ],
+                "note": "shuffle variability, not object-level confidence interval or significance test"
+              }
+            }
+          ],
+          "full_DLT_resubstitution": {
+            "same_evaluable_positions": 105,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 105,
+              "positive": 105,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 105,
+              "positive": 105,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          },
+          "original_frozen_resubstitution": {
+            "same_evaluable_positions": 105,
+            "AUROC_for_its_own_candidate_gain": {
+              "valid": 105,
+              "positive": 105,
+              "negative": 0,
+              "auc": null
+            },
+            "AUROC_for_crossfit_candidate_gain_same_points": {
+              "valid": 105,
+              "positive": 105,
+              "negative": 0,
+              "auc": null
+            },
+            "warning": "fit-in score, not genuinely held out; candidate differs from crossfit"
+          }
+        }
+      ],
+      "mean_point_gain_mm": 3.525596196365141,
+      "eligible_raw_mean_error_mm": 6.788965008990397,
+      "ineligible_raw_mean_error_mm": 7.258371885642696,
+      "GT_reference_label_flips_at_position_mean": 0
+    }
+  ],
+  "decision": {
+    "enough_balanced_source_strata_in_each_object": false,
+    "all_interpretable_strata_25_and_50_percent_checks_pass": false,
+    "recommend_limited_followup": false,
+    "not_statistical_confirmation": true,
+    "no_new_deployment_rule": true,
+    "conditional_on_frozen_full_input_cameras_and_original_selection": true
+  }
+}

@@ -1,0 +1,2 @@
+[('dtu_scan1_normal5', 61, [('003', 12, 12, 0, None), ('004', 49, 3, 46, 0.5362318840579711)]), ('dtu_scan6_normal5', 179, [('002', 4, 4, 0, None), ('003', 70, 70, 0, None), ('004', 105, 105, 0, None)])]
+{'enough_balanced_source_strata_in_each_object': False, 'all_interpretable_strata_25_and_50_percent_checks_pass': False, 'recommend_limited_followup': False, 'not_statistical_confirmation': True, 'no_new_deployment_rule': True, 'conditional_on_frozen_full_input_cameras_and_original_selection': True}

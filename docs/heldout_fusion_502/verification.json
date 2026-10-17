@@ -1,0 +1,32 @@
+{
+  "scenes": [
+    {
+      "scene_id": "dtu_scan1_normal5",
+      "folds": 509,
+      "all_witness_groups_disjoint_from_construction": true,
+      "witness_camera_excluded_from_alignment": true,
+      "copied_candidates_weights_gates_and_scores_replayed_exactly": true,
+      "perturbed_witness_coordinates_leave_construction_unchanged_probes": 3,
+      "source_stratum_profiles_and_200_permutations_replayed": true,
+      "source_only_ties_not_split": true,
+      "both_GT_reference_distance_profiles_replayed_exactly": true,
+      "witness_depth_mutation_does_not_change_support": true
+    },
+    {
+      "scene_id": "dtu_scan6_normal5",
+      "folds": 938,
+      "all_witness_groups_disjoint_from_construction": true,
+      "witness_camera_excluded_from_alignment": true,
+      "copied_candidates_weights_gates_and_scores_replayed_exactly": true,
+      "perturbed_witness_coordinates_leave_construction_unchanged_probes": 3,
+      "source_stratum_profiles_and_200_permutations_replayed": true,
+      "source_only_ties_not_split": true,
+      "both_GT_reference_distance_profiles_replayed_exactly": true,
+      "witness_depth_mutation_does_not_change_support": true
+    }
+  ],
+  "original_files_and_fusion_rule_unchanged": true,
+  "GT_guard_and_access_log_verified": true,
+  "scope_is_conditional_not_full_pipeline_independence": true,
+  "passed": true
+}

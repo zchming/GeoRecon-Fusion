@@ -1,0 +1,18 @@
+{
+  "construction_source_sha256": {
+    "scripts/generate_heldout_fusion.py": "61c8d89dadef074a9c9c197db8489d9b5c4cde9f3927a8d6d839f521b58d034a",
+    "scripts/heldout_fusion_math.py": "212070f412a932c646a946d34065c5ee359b1a06e093c12593f0e0550e42cf6e",
+    "scripts/prepare_heldout_fusion.py": "10b1d6b7358a0ace5b541c4ba271b27505529aba909252c32d05c82b6b15ec84",
+    "tests/test_heldout_fusion.py": "cbc16914402b453ddc048f240c8e6057e65db9fc47d484ca057966dd1017fdca"
+  },
+  "delivery_source_sha256": {
+    "scripts/evaluate_heldout_fusion.py": "da38177304ff2e9e90c1761e4e08af88b74a2b8b3e5be17ee73217936fe0ef66",
+    "scripts/check_heldout_fusion.py": "ba196d35d62678c5dcc8325e583901bc9ef13529a847e4d15c391588ca7cad3e",
+    "scripts/report_heldout_fusion.py": "a3ebc9acfd9ae244a84fb4096d9fb9f5ec617c5fbfe2aca0de58673a190b44ff"
+  },
+  "protocol_sha256": "d199c6c6798d95879ea477974383abf20044c3ea08eb95cb21050cae0955f1f9",
+  "input_lock_sha256": "331f9dd58faac6cb57e30e4cdfd0ddb689f91dfbf812b528bfb0e7ef8e8bcc7b",
+  "output_artifact_hashes_sha256": "98de344b2d0754100800b6e126da383f5940167362245d115fc362185024dcc8",
+  "construction_frozen_before_candidate_generation": true,
+  "new_deployment_or_rule": false
+}

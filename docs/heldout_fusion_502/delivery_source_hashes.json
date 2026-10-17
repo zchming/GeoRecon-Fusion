@@ -1,0 +1,5 @@
+{
+  "scripts/evaluate_heldout_fusion.py": "da38177304ff2e9e90c1761e4e08af88b74a2b8b3e5be17ee73217936fe0ef66",
+  "scripts/check_heldout_fusion.py": "ba196d35d62678c5dcc8325e583901bc9ef13529a847e4d15c391588ca7cad3e",
+  "scripts/report_heldout_fusion.py": "a3ebc9acfd9ae244a84fb4096d9fb9f5ec617c5fbfe2aca0de58673a190b44ff"
+}
