@@ -1,0 +1,17 @@
+{
+  "configuration_commit": "9e8e030",
+  "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+  "input_lock_sha256": "1a6c01b25dbd107058ff2d896bcb8215d953f7e4bb53098f5fdbec0e4df56686",
+  "source_sha256": {
+    "src/georecon/teaching/two_view.py": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "src/georecon/teaching/run.py": "b895bfaf8b147eda3f542716c914262a092ca8a57ba4641ee9228f465556200b",
+    "src/georecon/cli.py": "fd909d90160bee36e6197246f59192e6e2d0c36fc77c4e7d5437a9bddeb36695",
+    "scripts/prepare_stage6.py": "7cd9529b05a9c6525c475b570cc7e8213561dbe11846192aabc0b4b1ad4dd03d",
+    "scripts/run_stage6.py": "6ae278d0ee800a37802f2af5dbfbe71cd23b1bc09a239346c740fde501d91a28",
+    "scripts/evaluate_stage6.py": "a2d7cc6d80e5517414257f0160832cc547b2bd02e0005852ef22ad05079dd216",
+    "scripts/check_stage6.py": "be87a694219964890c0136e0e05e32a309e9448228197ef486984af903296992",
+    "scripts/report_stage6.py": "8deda232945dd117f2cf3483c500e1afe898374e95b2f33f20e433bf70d2426b"
+  },
+  "stage5_acceptance_sha256": "aa1be9a53d0412f4e3f5f87433f176eb7eff9ed2b3b3a3fadf38e4f390d64fe7",
+  "algorithm_not_retuned_after_real_run": true
+}

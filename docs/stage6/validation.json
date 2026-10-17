@@ -1,0 +1,99 @@
+{
+  "rows": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "dtu_scan1_blur_001_003",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "blank_pair",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "identical_dtu_image",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "nonplanar_exact",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "nonplanar_noise_outliers",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "planar",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "pure_rotation",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "tiny_baseline",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    },
+    {
+      "case_id": "too_few_matches",
+      "feature_and_geometry_replay_identical": true,
+      "unit_baseline_first_frame_gauge_checked": true,
+      "triangulation_depth_angle_reprojection_checked": true,
+      "input_intrinsics_only_and_no_pose_reference_reads": true,
+      "failed_cases_do_not_export_cameras_or_points": true
+    }
+  ],
+  "frozen_before_runs_commit": "9e8e030",
+  "all_8_expected_control_statuses_met": true,
+  "known_K_is_explicit_input": true,
+  "teaching_two_view_only": true,
+  "PnP_incremental_BA_implemented": false,
+  "stage7_started": false,
+  "GPU_allocated_bytes": 0
+}

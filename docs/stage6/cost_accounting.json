@@ -1,0 +1,11 @@
+{
+  "algorithm_process_body_seconds_sum": 1.3024452870004097,
+  "controller_measurement_windows_seconds_sum": 4.022815603000254,
+  "controller_includes_nvidia_sampling_overhead": true,
+  "peak_worker_rss_gib": 0.193756103515625,
+  "algorithm_GPU_allocated_bytes": 0,
+  "sampled_whole_card_used_mib_min": 503.0,
+  "sampled_whole_card_used_mib_max": 508.0,
+  "teaching_child_seen_in_exposed_compute_listing": false,
+  "WSL_listing_limit": "whole-card desktop usage is not task allocation; per-process listing may be limited; no CUDA calls/model and OpenCL explicitly disabled"
+}

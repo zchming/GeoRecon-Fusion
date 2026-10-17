@@ -1,0 +1,467 @@
+{
+  "rows": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "kind": "real",
+      "input_mode": "images",
+      "status": "success",
+      "failure_reason": null,
+      "features": {
+        "keypoints": [
+          3809,
+          4096
+        ],
+        "ratio_forward": 499,
+        "ratio_backward": 509,
+        "mutual_matches": 427,
+        "sift_cap_is_target_not_strict_maximum": true
+      },
+      "geometry": {
+        "matches": 427,
+        "essential_inliers": 404,
+        "homography_inliers": 343,
+        "kept_points": 404,
+        "hypotheses": [
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": -1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": -1,
+            "dual_positive_points": 404,
+            "median_max_view_reprojection_px": 0.1298891025341824
+          }
+        ],
+        "normalized_ransac_threshold": 0.0010388696988095133,
+        "selected_hypothesis": {
+          "essential_index": 0,
+          "rotation_index": 1,
+          "translation_sign": -1,
+          "dual_positive_points": 404,
+          "median_max_view_reprojection_px": 0.1298891025341824
+        },
+        "positive_fraction": 1.0,
+        "positive_median_parallax_deg": 18.458957945249296,
+        "accepted_median_parallax_deg": 18.458957945249296,
+        "accepted_max_reprojection_px": 1.0140631821456
+      },
+      "expected_status": null,
+      "expected_status_met": true,
+      "rotation_error_deg": 1.6421869315989523,
+      "translation_direction_error_deg": 1.9651659698059947,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "kind": "real",
+      "input_mode": "images",
+      "status": "no_reconstruction",
+      "failure_reason": "insufficient_matches",
+      "features": {
+        "keypoints": [
+          3809,
+          1357
+        ],
+        "ratio_forward": 41,
+        "ratio_backward": 15,
+        "mutual_matches": 4,
+        "sift_cap_is_target_not_strict_maximum": true
+      },
+      "geometry": {
+        "matches": 4,
+        "essential_inliers": 0,
+        "homography_inliers": 0,
+        "kept_points": 0,
+        "hypotheses": []
+      },
+      "expected_status": null,
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "dtu_scan1_blur_001_003",
+      "kind": "real",
+      "input_mode": "images",
+      "status": "success",
+      "failure_reason": null,
+      "features": {
+        "keypoints": [
+          504,
+          678
+        ],
+        "ratio_forward": 115,
+        "ratio_backward": 118,
+        "mutual_matches": 101,
+        "sift_cap_is_target_not_strict_maximum": true
+      },
+      "geometry": {
+        "matches": 101,
+        "essential_inliers": 86,
+        "homography_inliers": 63,
+        "kept_points": 86,
+        "hypotheses": [
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": -1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": -1,
+            "dual_positive_points": 86,
+            "median_max_view_reprojection_px": 0.2910402930090533
+          }
+        ],
+        "normalized_ransac_threshold": 0.0010388696988095133,
+        "selected_hypothesis": {
+          "essential_index": 0,
+          "rotation_index": 1,
+          "translation_sign": -1,
+          "dual_positive_points": 86,
+          "median_max_view_reprojection_px": 0.2910402930090533
+        },
+        "positive_fraction": 1.0,
+        "positive_median_parallax_deg": 19.161207867710136,
+        "accepted_median_parallax_deg": 19.161207867710136,
+        "accepted_max_reprojection_px": 0.8865769607606535
+      },
+      "expected_status": null,
+      "expected_status_met": true,
+      "rotation_error_deg": 1.0444899074387528,
+      "translation_direction_error_deg": 0.49699752195009167,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "blank_pair",
+      "kind": "synthetic",
+      "input_mode": "images",
+      "status": "no_reconstruction",
+      "failure_reason": "insufficient_matches",
+      "features": {
+        "keypoints": [
+          0,
+          0
+        ],
+        "ratio_forward": 0,
+        "ratio_backward": 0,
+        "mutual_matches": 0,
+        "sift_cap_is_target_not_strict_maximum": true
+      },
+      "geometry": {
+        "matches": 0,
+        "essential_inliers": 0,
+        "homography_inliers": 0,
+        "kept_points": 0,
+        "hypotheses": []
+      },
+      "expected_status": "no_reconstruction",
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "identical_dtu_image",
+      "kind": "synthetic",
+      "input_mode": "images",
+      "status": "no_reconstruction",
+      "failure_reason": "identical_correspondences_no_baseline",
+      "features": {
+        "keypoints": [
+          3809,
+          3809
+        ],
+        "ratio_forward": 3809,
+        "ratio_backward": 3809,
+        "mutual_matches": 3809,
+        "sift_cap_is_target_not_strict_maximum": true
+      },
+      "geometry": {
+        "matches": 3809,
+        "essential_inliers": 0,
+        "homography_inliers": 0,
+        "kept_points": 0,
+        "hypotheses": []
+      },
+      "expected_status": "no_reconstruction",
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "nonplanar_exact",
+      "kind": "synthetic",
+      "input_mode": "correspondences",
+      "status": "success",
+      "failure_reason": null,
+      "features": null,
+      "geometry": {
+        "matches": 160,
+        "essential_inliers": 160,
+        "homography_inliers": 23,
+        "kept_points": 160,
+        "hypotheses": [
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": -1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": -1,
+            "dual_positive_points": 160,
+            "median_max_view_reprojection_px": 1.6510603283444027e-12
+          }
+        ],
+        "normalized_ransac_threshold": 0.002146690518783542,
+        "selected_hypothesis": {
+          "essential_index": 0,
+          "rotation_index": 1,
+          "translation_sign": -1,
+          "dual_positive_points": 160,
+          "median_max_view_reprojection_px": 1.6510603283444027e-12
+        },
+        "positive_fraction": 1.0,
+        "positive_median_parallax_deg": 6.295505291089078,
+        "accepted_median_parallax_deg": 6.295505291089078,
+        "accepted_max_reprojection_px": 2.5618982671915015e-12
+      },
+      "expected_status": "success",
+      "expected_status_met": true,
+      "rotation_error_deg": 0.0,
+      "translation_direction_error_deg": 0.0,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only",
+      "synthetic_oracle_scale_shape_error": {
+        "scope": "synthetic only, GT baseline used only for evaluation; exclude injected false pairs",
+        "matched_true_points": 160,
+        "mean": 8.796052894221689e-13,
+        "median": 8.80097351654493e-13,
+        "unit": "unit-baseline world",
+        "false_pairs_kept": 0
+      }
+    },
+    {
+      "case_id": "nonplanar_noise_outliers",
+      "kind": "synthetic",
+      "input_mode": "correspondences",
+      "status": "success",
+      "failure_reason": null,
+      "features": null,
+      "geometry": {
+        "matches": 160,
+        "essential_inliers": 129,
+        "homography_inliers": 21,
+        "kept_points": 128,
+        "hypotheses": [
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": 1,
+            "dual_positive_points": 1,
+            "median_max_view_reprojection_px": 0.2254265548685754
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 0,
+            "translation_sign": -1,
+            "dual_positive_points": 128,
+            "median_max_view_reprojection_px": 0.1562202650266271
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": 1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          },
+          {
+            "essential_index": 0,
+            "rotation_index": 1,
+            "translation_sign": -1,
+            "dual_positive_points": 0,
+            "median_max_view_reprojection_px": null
+          }
+        ],
+        "normalized_ransac_threshold": 0.002146690518783542,
+        "selected_hypothesis": {
+          "essential_index": 0,
+          "rotation_index": 0,
+          "translation_sign": -1,
+          "dual_positive_points": 128,
+          "median_max_view_reprojection_px": 0.1562202650266271
+        },
+        "positive_fraction": 0.9922480620155039,
+        "positive_median_parallax_deg": 6.012208482218653,
+        "accepted_median_parallax_deg": 6.012208482218653,
+        "accepted_max_reprojection_px": 0.978970608436492
+      },
+      "expected_status": "success",
+      "expected_status_met": true,
+      "rotation_error_deg": 0.2734737298291734,
+      "translation_direction_error_deg": 2.3792721378838353,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only",
+      "synthetic_oracle_scale_shape_error": {
+        "scope": "synthetic only, GT baseline used only for evaluation; exclude injected false pairs",
+        "matched_true_points": 128,
+        "mean": 0.32348853208831296,
+        "median": 0.3353824505400482,
+        "unit": "unit-baseline world",
+        "false_pairs_kept": 0
+      }
+    },
+    {
+      "case_id": "planar",
+      "kind": "synthetic",
+      "input_mode": "correspondences",
+      "status": "no_reconstruction",
+      "failure_reason": "homography_dominated_ambiguous_geometry",
+      "features": null,
+      "geometry": {
+        "matches": 160,
+        "essential_inliers": 160,
+        "homography_inliers": 160,
+        "kept_points": 0,
+        "hypotheses": [],
+        "normalized_ransac_threshold": 0.002146690518783542
+      },
+      "expected_status": "no_reconstruction",
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "pure_rotation",
+      "kind": "synthetic",
+      "input_mode": "correspondences",
+      "status": "no_reconstruction",
+      "failure_reason": "homography_dominated_ambiguous_geometry",
+      "features": null,
+      "geometry": {
+        "matches": 160,
+        "essential_inliers": 156,
+        "homography_inliers": 160,
+        "kept_points": 0,
+        "hypotheses": [],
+        "normalized_ransac_threshold": 0.002146690518783542
+      },
+      "expected_status": "no_reconstruction",
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "tiny_baseline",
+      "kind": "synthetic",
+      "input_mode": "correspondences",
+      "status": "no_reconstruction",
+      "failure_reason": "homography_dominated_ambiguous_geometry",
+      "features": null,
+      "geometry": {
+        "matches": 160,
+        "essential_inliers": 160,
+        "homography_inliers": 160,
+        "kept_points": 0,
+        "hypotheses": [],
+        "normalized_ransac_threshold": 0.002146690518783542
+      },
+      "expected_status": "no_reconstruction",
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    },
+    {
+      "case_id": "too_few_matches",
+      "kind": "synthetic",
+      "input_mode": "correspondences",
+      "status": "no_reconstruction",
+      "failure_reason": "insufficient_matches",
+      "features": null,
+      "geometry": {
+        "matches": 7,
+        "essential_inliers": 0,
+        "homography_inliers": 0,
+        "kept_points": 0,
+        "hypotheses": []
+      },
+      "expected_status": "no_reconstruction",
+      "expected_status_met": true,
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "metric_scale_evaluated": false,
+      "reference_access": "offline evaluation only"
+    }
+  ],
+  "not_a_benchmark_or_model_ranking": true,
+  "known_K_assumption_differs_from_stage3_self_calibrated_COLMAP": true,
+  "cases_with_expected_status": 8,
+  "all_expected_statuses_met": true
+}

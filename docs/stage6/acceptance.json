@@ -1,0 +1,17 @@
+{
+  "scope": "authorized Stage6 minimal calibrated two-view teaching substep",
+  "substep_acceptance": "passed",
+  "whole_incremental_SfM_implemented": false,
+  "PnP_incremental_BA": false,
+  "stage7_started": false,
+  "stage5_evidence_reviewed": true,
+  "real_pair_successes": 2,
+  "real_pair_failures_preserved": 1,
+  "all_8_control_expectations_met": true,
+  "known_K_declared_input": true,
+  "no_pose_or_scale_reference_reads": true,
+  "feature_and_geometry_replay_identical": true,
+  "cross_environment_tests": 120,
+  "performance_ranking_or_novelty_claim": false,
+  "GPU_allocated_bytes": 0
+}

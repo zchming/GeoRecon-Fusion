@@ -1,0 +1,45 @@
+{
+  "scope": "Stage6 calibrated two-view teaching substep",
+  "real_pairs": 3,
+  "real_successes": 2,
+  "controls": 8,
+  "control_expected_statuses_met": true,
+  "all_status_counts": {
+    "success": 4,
+    "no_reconstruction": 7
+  },
+  "real_matches_and_points": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "status": "success",
+      "failure_reason": null,
+      "rotation_error_deg": 1.6421869315989523,
+      "translation_direction_error_deg": 1.9651659698059947,
+      "mutual_matches": 427,
+      "kept_points": 404
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "status": "no_reconstruction",
+      "failure_reason": "insufficient_matches",
+      "rotation_error_deg": null,
+      "translation_direction_error_deg": null,
+      "mutual_matches": 4,
+      "kept_points": 0
+    },
+    {
+      "case_id": "dtu_scan1_blur_001_003",
+      "status": "success",
+      "failure_reason": null,
+      "rotation_error_deg": 1.0444899074387528,
+      "translation_direction_error_deg": 0.49699752195009167,
+      "mutual_matches": 101,
+      "kept_points": 86
+    }
+  ],
+  "known_intrinsics_are_input": true,
+  "new_downloads_or_models": 0,
+  "new_Benchmark_results": false,
+  "PnP_incremental_BA_in_scope": false,
+  "next_stage_started": false
+}

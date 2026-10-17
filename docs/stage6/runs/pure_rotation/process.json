@@ -1,0 +1,58 @@
+{
+  "case_id": "pure_rotation",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.cli",
+    "run-teaching-sfm",
+    "--input",
+    "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/pure_rotation/input.json",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/pure_rotation"
+  ],
+  "returncode": 1,
+  "full_process_wall_seconds_including_sampling": 0.24570677199994861,
+  "pid": 3884,
+  "gpu_before": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "gpu_samples": [
+    {
+      "card": {
+        "returncode": 0,
+        "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+        "stderr": ""
+      },
+      "compute": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "gpu_after": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+  "algorithm_GPU_allocated_bytes": 0
+}

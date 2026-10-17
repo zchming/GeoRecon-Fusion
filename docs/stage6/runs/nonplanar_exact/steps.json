@@ -1,0 +1,61 @@
+{
+  "case_id": "nonplanar_exact",
+  "kind": "synthetic",
+  "mode": "correspondences",
+  "feature_stage": null,
+  "geometry_stage": {
+    "matches": 160,
+    "essential_inliers": 160,
+    "homography_inliers": 23,
+    "kept_points": 160,
+    "hypotheses": [
+      {
+        "essential_index": 0,
+        "rotation_index": 0,
+        "translation_sign": 1,
+        "dual_positive_points": 0,
+        "median_max_view_reprojection_px": null
+      },
+      {
+        "essential_index": 0,
+        "rotation_index": 0,
+        "translation_sign": -1,
+        "dual_positive_points": 0,
+        "median_max_view_reprojection_px": null
+      },
+      {
+        "essential_index": 0,
+        "rotation_index": 1,
+        "translation_sign": 1,
+        "dual_positive_points": 0,
+        "median_max_view_reprojection_px": null
+      },
+      {
+        "essential_index": 0,
+        "rotation_index": 1,
+        "translation_sign": -1,
+        "dual_positive_points": 160,
+        "median_max_view_reprojection_px": 1.6510603283444027e-12
+      }
+    ],
+    "normalized_ransac_threshold": 0.002146690518783542,
+    "selected_hypothesis": {
+      "essential_index": 0,
+      "rotation_index": 1,
+      "translation_sign": -1,
+      "dual_positive_points": 160,
+      "median_max_view_reprojection_px": 1.6510603283444027e-12
+    },
+    "positive_fraction": 1.0,
+    "positive_median_parallax_deg": 6.295505291089078,
+    "accepted_median_parallax_deg": 6.295505291089078,
+    "accepted_max_reprojection_px": 2.5618982671915015e-12
+  },
+  "status": "success",
+  "failure_reason": null,
+  "known_K": true,
+  "translation_norm": 1.0,
+  "wall_seconds": 0.11563320300001578,
+  "peak_rss_gib": 0.06835174560546875,
+  "GPU_allocated_bytes": 0
+}

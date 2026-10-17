@@ -1,0 +1,21 @@
+{
+  "case_id": "pure_rotation",
+  "kind": "synthetic",
+  "mode": "correspondences",
+  "feature_stage": null,
+  "geometry_stage": {
+    "matches": 160,
+    "essential_inliers": 156,
+    "homography_inliers": 160,
+    "kept_points": 0,
+    "hypotheses": [],
+    "normalized_ransac_threshold": 0.002146690518783542
+  },
+  "status": "no_reconstruction",
+  "failure_reason": "homography_dominated_ambiguous_geometry",
+  "known_K": true,
+  "translation_norm": null,
+  "wall_seconds": 0.009674788999973316,
+  "peak_rss_gib": 0.06592559814453125,
+  "GPU_allocated_bytes": 0
+}

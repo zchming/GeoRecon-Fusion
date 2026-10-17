@@ -1,0 +1,29 @@
+{
+  "case_id": "blank_pair",
+  "kind": "synthetic",
+  "mode": "images",
+  "feature_stage": {
+    "keypoints": [
+      0,
+      0
+    ],
+    "ratio_forward": 0,
+    "ratio_backward": 0,
+    "mutual_matches": 0,
+    "sift_cap_is_target_not_strict_maximum": true
+  },
+  "geometry_stage": {
+    "matches": 0,
+    "essential_inliers": 0,
+    "homography_inliers": 0,
+    "kept_points": 0,
+    "hypotheses": []
+  },
+  "status": "no_reconstruction",
+  "failure_reason": "insufficient_matches",
+  "known_K": true,
+  "translation_norm": null,
+  "wall_seconds": 0.07208895500002654,
+  "peak_rss_gib": 0.17599868774414062,
+  "GPU_allocated_bytes": 0
+}

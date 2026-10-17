@@ -1,0 +1,29 @@
+{
+  "case_id": "dtu_scan1_001_020",
+  "kind": "real",
+  "mode": "images",
+  "feature_stage": {
+    "keypoints": [
+      3809,
+      1357
+    ],
+    "ratio_forward": 41,
+    "ratio_backward": 15,
+    "mutual_matches": 4,
+    "sift_cap_is_target_not_strict_maximum": true
+  },
+  "geometry_stage": {
+    "matches": 4,
+    "essential_inliers": 0,
+    "homography_inliers": 0,
+    "kept_points": 0,
+    "hypotheses": []
+  },
+  "status": "no_reconstruction",
+  "failure_reason": "insufficient_matches",
+  "known_K": true,
+  "translation_norm": null,
+  "wall_seconds": 0.24602226100000735,
+  "peak_rss_gib": 0.17868423461914062,
+  "GPU_allocated_bytes": 0
+}

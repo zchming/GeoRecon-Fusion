@@ -1,0 +1,22 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "numpy": "2.5.2",
+  "opencv": "5.0.0",
+  "opencv_OpenCL_used": false,
+  "new_packages_weights_models": [],
+  "GPU_budget_gib": 12,
+  "GPU_snapshot": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "opencv_documentation": "official 4.x web API guidance; actual tested runtime version recorded separately"
+}

@@ -1,0 +1,778 @@
+{
+  "rows": [
+    {
+      "case_id": "dtu_scan1_001_003",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/dtu_scan1_001_003/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/dtu_scan1_001_003"
+      ],
+      "returncode": 0,
+      "full_process_wall_seconds_including_sampling": 0.5518306260000827,
+      "pid": 3551,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "dtu_scan1_001_020",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/dtu_scan1_001_020/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/dtu_scan1_001_020"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.49829609299990807,
+      "pid": 3597,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "dtu_scan1_blur_001_003",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/dtu_scan1_blur_001_003/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/dtu_scan1_blur_001_003"
+      ],
+      "returncode": 0,
+      "full_process_wall_seconds_including_sampling": 0.48423694600001,
+      "pid": 3643,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "blank_pair",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/blank_pair/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/blank_pair"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.35593507700014015,
+      "pid": 3695,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "identical_dtu_image",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/identical_dtu_image/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/identical_dtu_image"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.4952809490000618,
+      "pid": 3737,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "nonplanar_exact",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/nonplanar_exact/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/nonplanar_exact"
+      ],
+      "returncode": 0,
+      "full_process_wall_seconds_including_sampling": 0.3514969550001297,
+      "pid": 3783,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "nonplanar_noise_outliers",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/nonplanar_noise_outliers/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/nonplanar_noise_outliers"
+      ],
+      "returncode": 0,
+      "full_process_wall_seconds_including_sampling": 0.36288988100000097,
+      "pid": 3818,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        },
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "planar",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/planar/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/planar"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.23335525699985737,
+      "pid": 3853,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "pure_rotation",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/pure_rotation/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/pure_rotation"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.24570677199994861,
+      "pid": 3884,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "tiny_baseline",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/tiny_baseline/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/tiny_baseline"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.22068718800005627,
+      "pid": 3915,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    },
+    {
+      "case_id": "too_few_matches",
+      "command": [
+        "/home/zchming/.venvs/georecon-reliability/bin/python",
+        "-m",
+        "georecon.cli",
+        "run-teaching-sfm",
+        "--input",
+        "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/too_few_matches/input.json",
+        "--config",
+        "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+        "--output",
+        "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/too_few_matches"
+      ],
+      "returncode": 1,
+      "full_process_wall_seconds_including_sampling": 0.22309985900005813,
+      "pid": 3946,
+      "gpu_before": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "gpu_samples": [
+        {
+          "card": {
+            "returncode": 0,
+            "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+            "stderr": ""
+          },
+          "compute": {
+            "returncode": 0,
+            "stdout": "",
+            "stderr": ""
+          }
+        }
+      ],
+      "gpu_after": {
+        "card": {
+          "returncode": 0,
+          "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+          "stderr": ""
+        },
+        "compute": {
+          "returncode": 0,
+          "stdout": "",
+          "stderr": ""
+        }
+      },
+      "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+      "algorithm_GPU_allocated_bytes": 0
+    }
+  ],
+  "new_downloads": 0,
+  "real_cases": 3,
+  "synthetic_or_degeneracy_controls": 8,
+  "all_cases_preserved": true
+}

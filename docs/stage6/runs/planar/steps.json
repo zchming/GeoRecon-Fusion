@@ -1,0 +1,21 @@
+{
+  "case_id": "planar",
+  "kind": "synthetic",
+  "mode": "correspondences",
+  "feature_stage": null,
+  "geometry_stage": {
+    "matches": 160,
+    "essential_inliers": 160,
+    "homography_inliers": 160,
+    "kept_points": 0,
+    "hypotheses": [],
+    "normalized_ransac_threshold": 0.002146690518783542
+  },
+  "status": "no_reconstruction",
+  "failure_reason": "homography_dominated_ambiguous_geometry",
+  "known_K": true,
+  "translation_norm": null,
+  "wall_seconds": 0.012033204999852387,
+  "peak_rss_gib": 0.0658416748046875,
+  "GPU_allocated_bytes": 0
+}

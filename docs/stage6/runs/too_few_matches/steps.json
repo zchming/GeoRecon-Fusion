@@ -1,0 +1,20 @@
+{
+  "case_id": "too_few_matches",
+  "kind": "synthetic",
+  "mode": "correspondences",
+  "feature_stage": null,
+  "geometry_stage": {
+    "matches": 7,
+    "essential_inliers": 0,
+    "homography_inliers": 0,
+    "kept_points": 0,
+    "hypotheses": []
+  },
+  "status": "no_reconstruction",
+  "failure_reason": "insufficient_matches",
+  "known_K": true,
+  "translation_norm": null,
+  "wall_seconds": 0.01439479200007554,
+  "peak_rss_gib": 0.06241607666015625,
+  "GPU_allocated_bytes": 0
+}

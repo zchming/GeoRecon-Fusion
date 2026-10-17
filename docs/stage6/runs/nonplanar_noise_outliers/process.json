@@ -1,0 +1,70 @@
+{
+  "case_id": "nonplanar_noise_outliers",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.cli",
+    "run-teaching-sfm",
+    "--input",
+    "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/nonplanar_noise_outliers/input.json",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/nonplanar_noise_outliers"
+  ],
+  "returncode": 0,
+  "full_process_wall_seconds_including_sampling": 0.36288988100000097,
+  "pid": 3818,
+  "gpu_before": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "gpu_samples": [
+    {
+      "card": {
+        "returncode": 0,
+        "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+        "stderr": ""
+      },
+      "compute": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "card": {
+        "returncode": 0,
+        "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+        "stderr": ""
+      },
+      "compute": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "gpu_after": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+  "algorithm_GPU_allocated_bytes": 0
+}

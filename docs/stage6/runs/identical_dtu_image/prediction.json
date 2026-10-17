@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "identical_dtu_image",
+  "method_id": "teaching_two_view_sfm",
+  "run_id": "teaching_two_view_sfm",
+  "input_manifest_sha256": "ccec3e0cdb7f586e9167a181f39af460f11bacc854c78e6662aff0ef57f69da9",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "no_reconstruction",
+  "failure_reason": "identical_correspondences_no_baseline",
+  "images": [
+    {
+      "image_id": "copy0",
+      "registered": false,
+      "camera": null,
+      "reason": "identical_correspondences_no_baseline"
+    },
+    {
+      "image_id": "copy1",
+      "registered": false,
+      "camera": null,
+      "reason": "identical_correspondences_no_baseline"
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": null,
+    "tracks": {
+      "path": "geometry_steps.npz",
+      "sha256": "f773c34a62cc8ef2fa0fd1351e6753fc61fd3f4b5803d19b6e23ba02e6f54643",
+      "semantics": "measured pixels, RANSAC/hypothesis/triangulation debug arrays; rejected candidates are not accepted geometry"
+    },
+    "confidence": null
+  },
+  "provenance": {
+    "data_kind": "synthetic",
+    "code_commit": "9e8e0309172ddbe1ec56c4280d3d65a20cd4ef7d",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "7f002384735e9a659a92f997d0c1373244ecfc9419fd80845ff87eda93fe52ad",
+    "known_intrinsics": "supplied K is declared input; no pose or scale truth input",
+    "pose_truth_access": "none; runtime guard active",
+    "input_hashes": {
+      "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/identical_dtu_image/input.json": "ccec3e0cdb7f586e9167a181f39af460f11bacc854c78e6662aff0ef57f69da9",
+      "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/identical_dtu_image/0.png": "d39122a44dd9c201671602c09c928dbe3d2b57906e12d2ad1b18519401a7d07d",
+      "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/identical_dtu_image/1.png": "d39122a44dd9c201671602c09c928dbe3d2b57906e12d2ad1b18519401a7d07d"
+    },
+    "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+    "scope": "educational calibrated two-view, no PnP/incremental mapping/BA"
+  },
+  "config": {
+    "schema_version": 1,
+    "scope": "stage6 minimal teaching calibrated two-view SfM; no PnP, incremental registration, BA, new benchmark or stage7",
+    "intrinsics_protocol": "known distortion-free K per image, explicitly supplied calibration input; DTU pose/scale/reference points never used in reconstruction",
+    "preprocessing": "reuse fixed local stage3 Pillow bilinear 800x600 images and zero-based pixel-center affine A; K_processed=A*K_original",
+    "real_pairs": [
+      {
+        "case_id": "dtu_scan1_001_003",
+        "source_scene": "scan1_reduced3",
+        "view_ids": [
+          "001",
+          "003"
+        ]
+      },
+      {
+        "case_id": "dtu_scan1_001_020",
+        "source_scene": "scan1_spaced3",
+        "view_ids": [
+          "001",
+          "020"
+        ]
+      },
+      {
+        "case_id": "dtu_scan1_blur_001_003",
+        "source_scene": "scan1_blur5",
+        "view_ids": [
+          "001",
+          "003"
+        ]
+      }
+    ],
+    "image_failure_controls": [
+      "blank_pair",
+      "identical_dtu_image"
+    ],
+    "synthetic_correspondence_cases": [
+      "nonplanar_exact",
+      "nonplanar_noise_outliers",
+      "planar",
+      "pure_rotation",
+      "tiny_baseline",
+      "too_few_matches"
+    ],
+    "seed": 42,
+    "opencv_threads": 8,
+    "sift_features": 4096,
+    "ratio_threshold": 0.75,
+    "min_matches": 20,
+    "essential_ransac_px": 1.5,
+    "essential_ransac_probability": 0.999,
+    "essential_ransac_iterations": 10000,
+    "normalized_threshold_rule": "pixel threshold divided by mean fx/fy across both images; exact K inverse includes skew",
+    "homography_dominance_fraction": 0.9,
+    "homography_to_essential_inlier_ratio": 0.95,
+    "homography_gate": "conservative ambiguity warning/rejection, not proof of planarity or rotation",
+    "min_positive_depth_fraction": 0.6,
+    "min_parallax_deg": 0.5,
+    "max_reprojection_px": 2.0,
+    "min_kept_points": 20,
+    "pose_hypotheses": "decomposeEssentialMat, enumerate (R1,+t),(R1,-t),(R2,+t),(R2,-t); choose most finite dual-positive E inliers, tie lower median max-view reprojection",
+    "triangulation": "explicit batched DLT SVD; save all candidate points/depths/angles/errors/masks; filter dual-positive, sufficient angle, both-view reprojection",
+    "scale": "camera1 I/0; camera2 world-to-camera R/t with norm(t)=1; no metric scale recovery",
+    "fit_on_GT": false,
+    "gpu_budget_gib": 12,
+    "device": "CPU OpenCV SIFT/RANSAC and NumPy SVD; no model load or GPU allocation",
+    "budget": {
+      "image_width": 800,
+      "image_height": 600,
+      "new_downloads": 0,
+      "sift_nfeatures_target": 4096
+    },
+    "frozen_before_real_run": true
+  },
+  "versions": {
+    "python": "3.12.3",
+    "opencv": "5.0.0",
+    "numpy": "2.5.2"
+  },
+  "timing_seconds": {
+    "process_body": 0.21624306700005036
+  },
+  "memory_bytes": {
+    "peak_rss_os": 197197824,
+    "peak_gpu_allocated": 0
+  },
+  "logs": [
+    "steps.json",
+    "invocation.json"
+  ]
+}

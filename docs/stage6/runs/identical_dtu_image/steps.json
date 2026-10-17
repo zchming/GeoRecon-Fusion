@@ -1,0 +1,29 @@
+{
+  "case_id": "identical_dtu_image",
+  "kind": "synthetic",
+  "mode": "images",
+  "feature_stage": {
+    "keypoints": [
+      3809,
+      3809
+    ],
+    "ratio_forward": 3809,
+    "ratio_backward": 3809,
+    "mutual_matches": 3809,
+    "sift_cap_is_target_not_strict_maximum": true
+  },
+  "geometry_stage": {
+    "matches": 3809,
+    "essential_inliers": 0,
+    "homography_inliers": 0,
+    "kept_points": 0,
+    "hypotheses": []
+  },
+  "status": "no_reconstruction",
+  "failure_reason": "identical_correspondences_no_baseline",
+  "known_K": true,
+  "translation_norm": null,
+  "wall_seconds": 0.21624306700005036,
+  "peak_rss_gib": 0.18365478515625,
+  "GPU_allocated_bytes": 0
+}

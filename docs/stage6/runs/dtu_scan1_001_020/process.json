@@ -1,0 +1,82 @@
+{
+  "case_id": "dtu_scan1_001_020",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.cli",
+    "run-teaching-sfm",
+    "--input",
+    "/home/zchming/projects/VisionGeometryLab/data/stage6_pairs/dtu_scan1_001_020/input.json",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_two_view.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_two_view_v1/dtu_scan1_001_020"
+  ],
+  "returncode": 1,
+  "full_process_wall_seconds_including_sampling": 0.49829609299990807,
+  "pid": 3597,
+  "gpu_before": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 508",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "gpu_samples": [
+    {
+      "card": {
+        "returncode": 0,
+        "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+        "stderr": ""
+      },
+      "compute": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "card": {
+        "returncode": 0,
+        "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+        "stderr": ""
+      },
+      "compute": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "card": {
+        "returncode": 0,
+        "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+        "stderr": ""
+      },
+      "compute": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  ],
+  "gpu_after": {
+    "card": {
+      "returncode": 0,
+      "stdout": "NVIDIA GeForce RTX 4070 SUPER, 12282, 503",
+      "stderr": ""
+    },
+    "compute": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "measurement_scope": "whole card and exposed compute listing; WSL may not expose per-process memory; CPU algorithm/OpenCL disabled, no CUDA/model allocation",
+  "algorithm_GPU_allocated_bytes": 0
+}

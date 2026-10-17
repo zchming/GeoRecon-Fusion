@@ -1,0 +1,61 @@
+{
+  "case_id": "nonplanar_noise_outliers",
+  "kind": "synthetic",
+  "mode": "correspondences",
+  "feature_stage": null,
+  "geometry_stage": {
+    "matches": 160,
+    "essential_inliers": 129,
+    "homography_inliers": 21,
+    "kept_points": 128,
+    "hypotheses": [
+      {
+        "essential_index": 0,
+        "rotation_index": 0,
+        "translation_sign": 1,
+        "dual_positive_points": 1,
+        "median_max_view_reprojection_px": 0.2254265548685754
+      },
+      {
+        "essential_index": 0,
+        "rotation_index": 0,
+        "translation_sign": -1,
+        "dual_positive_points": 128,
+        "median_max_view_reprojection_px": 0.1562202650266271
+      },
+      {
+        "essential_index": 0,
+        "rotation_index": 1,
+        "translation_sign": 1,
+        "dual_positive_points": 0,
+        "median_max_view_reprojection_px": null
+      },
+      {
+        "essential_index": 0,
+        "rotation_index": 1,
+        "translation_sign": -1,
+        "dual_positive_points": 0,
+        "median_max_view_reprojection_px": null
+      }
+    ],
+    "normalized_ransac_threshold": 0.002146690518783542,
+    "selected_hypothesis": {
+      "essential_index": 0,
+      "rotation_index": 0,
+      "translation_sign": -1,
+      "dual_positive_points": 128,
+      "median_max_view_reprojection_px": 0.1562202650266271
+    },
+    "positive_fraction": 0.9922480620155039,
+    "positive_median_parallax_deg": 6.012208482218653,
+    "accepted_median_parallax_deg": 6.012208482218653,
+    "accepted_max_reprojection_px": 0.978970608436492
+  },
+  "status": "success",
+  "failure_reason": null,
+  "known_K": true,
+  "translation_norm": 1.0,
+  "wall_seconds": 0.11312880300010875,
+  "peak_rss_gib": 0.06827926635742188,
+  "GPU_allocated_bytes": 0
+}

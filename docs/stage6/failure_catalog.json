@@ -1,0 +1,78 @@
+{
+  "rows": [
+    {
+      "case_id": "dtu_scan1_001_020",
+      "kind": "real",
+      "mode": "images",
+      "reason": "insufficient_matches",
+      "matches": 4,
+      "source": "outputs/stage6_two_view_v1/dtu_scan1_001_020",
+      "steps_sha256": "48bdfc59a567c54695ac250058b7a248795a8eca375c2b38f3eb3d7b2ac6be66",
+      "process_returncode": 1
+    },
+    {
+      "case_id": "blank_pair",
+      "kind": "synthetic",
+      "mode": "images",
+      "reason": "insufficient_matches",
+      "matches": 0,
+      "source": "outputs/stage6_two_view_v1/blank_pair",
+      "steps_sha256": "198513f20391756f66cf0ffecd8859041ed30d003038f6da87c29b8712e3a588",
+      "process_returncode": 1
+    },
+    {
+      "case_id": "identical_dtu_image",
+      "kind": "synthetic",
+      "mode": "images",
+      "reason": "identical_correspondences_no_baseline",
+      "matches": 3809,
+      "source": "outputs/stage6_two_view_v1/identical_dtu_image",
+      "steps_sha256": "a54cf2e389b4cdb131fd8396be5648bf783ac8d4c20a9a684f622ae70a1d637c",
+      "process_returncode": 1
+    },
+    {
+      "case_id": "planar",
+      "kind": "synthetic",
+      "mode": "correspondences",
+      "reason": "homography_dominated_ambiguous_geometry",
+      "matches": 160,
+      "source": "outputs/stage6_two_view_v1/planar",
+      "steps_sha256": "316a13cab61e41c3f4839a9811108c0e75e365f3c60b35159352c24b50edf5d5",
+      "process_returncode": 1
+    },
+    {
+      "case_id": "pure_rotation",
+      "kind": "synthetic",
+      "mode": "correspondences",
+      "reason": "homography_dominated_ambiguous_geometry",
+      "matches": 160,
+      "source": "outputs/stage6_two_view_v1/pure_rotation",
+      "steps_sha256": "6aae1f15279ab3cf8d869fd56095d0a3ec92fb954c554881f97f70a12eb8e767",
+      "process_returncode": 1
+    },
+    {
+      "case_id": "tiny_baseline",
+      "kind": "synthetic",
+      "mode": "correspondences",
+      "reason": "homography_dominated_ambiguous_geometry",
+      "matches": 160,
+      "source": "outputs/stage6_two_view_v1/tiny_baseline",
+      "steps_sha256": "beb024a95a08fd5460fad5b017ec9a2065555ac7e14d271c7e21adc32d7550e5",
+      "process_returncode": 1
+    },
+    {
+      "case_id": "too_few_matches",
+      "kind": "synthetic",
+      "mode": "correspondences",
+      "reason": "insufficient_matches",
+      "matches": 7,
+      "source": "outputs/stage6_two_view_v1/too_few_matches",
+      "steps_sha256": "87f70ddfea17f6437decce82e4478ec3b9e605c4cccb6bf8547ebd4a1e0b8a6f",
+      "process_returncode": 1
+    }
+  ],
+  "controls_not_natural_failures": true,
+  "actual_real_pair_failures": 1,
+  "unexpected_process_errors": 0,
+  "threshold_or_input_changes_after_results": false
+}
