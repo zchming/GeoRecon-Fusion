@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "configuration_kind": "declarative_protocol_not_executable_runner_config",
+  "protocol_id": "stage7a_geometry_feasibility_v1",
+  "status": "frozen_design_pending_user_review_no_execution_authorized",
+  "baseline_commit": "f3a1e86dd3ab759c3f86b1d52bca8dd635bbc66d",
+  "scope": "declarative plan only; no implementation, feature extraction, matching, geometry solving or model inference in this change",
+  "primary_contrast": [
+    "C_rootsift_lightglue",
+    "B_rootsift_ratio"
+  ],
+  "arms": {
+    "A_sift_ratio": {
+      "features": "shared historical OpenCV SIFT; original float32 descriptors",
+      "matcher": "CPU BF L2, strict ratio < 0.75 in both directions plus mutuality"
+    },
+    "B_rootsift_ratio": {
+      "features": "same XY/order/scales/orientations; official RootSIFT descriptors shared byte-for-byte with C",
+      "matcher": "CPU BF L2, strict ratio < 0.75 in both directions plus mutuality"
+    },
+    "C_rootsift_lightglue": {
+      "features": "exact same cached feature tensors as B",
+      "matcher_config": {
+        "name": "lightglue",
+        "input_dim": 128,
+        "descriptor_dim": 256,
+        "add_scale_ori": true,
+        "n_layers": 9,
+        "num_heads": 4,
+        "flash": true,
+        "mp": false,
+        "depth_confidence": 0.95,
+        "width_confidence": 0.99,
+        "filter_threshold": 0.1,
+        "weights": "sift_lightglue"
+      }
+    }
+  },
+  "official_full_extractor_arm": "excluded from v1; requires a separate approved amendment",
+  "features": {
+    "opencv_threads": 8,
+    "sift_seed": 42,
+    "nfeatures_target": 4096,
+    "contrast_threshold": 0.04,
+    "edge_threshold": 10,
+    "n_octave_layers": 3,
+    "enable_precise_upscale": false,
+    "gray": "cv2.COLOR_RGB2GRAY on the common RGB uint8 image",
+    "no_extra_nms_or_dedup": true,
+    "overflow_policy": "retain all detector outputs up to hard resource guard 4608; never silently trim; exceeding guard is a failed resource case for every arm",
+    "rootsift": "official sift_to_rootsift eps=1e-6; L1 normalize, clip-min, sqrt, L2 normalize on CPU float32",
+    "xy": "OpenCV .pt unchanged, zero-based pixel centers; no +/-0.5 shift",
+    "scale": "KeyPoint.size, not radius or octave",
+    "orientation": "KeyPoint.angle converted degrees to radians",
+    "sorting": "all accepted match indices lexicographically sorted before the same backend",
+    "sigma": 1.6,
+    "descriptor_type": "CV_32F"
+  },
+  "input": {
+    "scans": {
+      "development": [
+        1
+      ],
+      "historical_validation_not_blind": [
+        6
+      ]
+    },
+    "light": 3,
+    "common_wh": [
+      800,
+      600
+    ],
+    "resize": "existing Pillow bilinear / pixel-center affine; no new crop/resize/perturbation",
+    "K": "explicit known K_processed=A*K_original; evaluation R/t excluded from inference",
+    "intrinsics_protocol_changed_from_stage3": "known K teaching protocol, not estimated-intrinsics COLMAP ranking",
+    "unique_pair_count": 46,
+    "geometry_seeds": [
+      42,
+      43,
+      44
+    ],
+    "input_locks": [
+      {
+        "scene_id": "dtu_scan1_normal5",
+        "role": "development",
+        "condition": "normal5",
+        "manifest": "data/stage3_dtu/scan1_normal5/manifest.json",
+        "manifest_sha256": "8df96f4f5460ae9799044b425e6397048ac52e5d49b2a2cfec7a34b20641f678",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan1_normal5/reference.json",
+        "reference_sha256": "cd0f84f8e330e834e459934b89eac4a911152d3e9a885799be9e3f7a92d95fc8",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_normal5/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "78f7b41e460c2c56a702a3cd40776da73bda2c3c574ef9c6db9b830ed8a994e7"
+      },
+      {
+        "scene_id": "dtu_scan1_reduced3",
+        "role": "development",
+        "condition": "reduced3",
+        "manifest": "data/stage3_dtu/scan1_reduced3/manifest.json",
+        "manifest_sha256": "ba6bd61c41a01c136dd8b9143786bf7598df5bb808ab9df73de3fa72df374788",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan1_reduced3/reference.json",
+        "reference_sha256": "f02fc31a6985b0977097deb539885deaef217aca74b6c59cfcd38498cadef655",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_reduced3/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "4a0bd605a5e256e681eba226339a1b4e9900e5e858fb0f92ead1d63d4a1a6b98"
+      },
+      {
+        "scene_id": "dtu_scan1_spaced3",
+        "role": "development",
+        "condition": "spaced3",
+        "manifest": "data/stage3_dtu/scan1_spaced3/manifest.json",
+        "manifest_sha256": "5d4d75d7a1c42daeb53183dc9ea96e2594ade589506bdc6845a77bbf0890f6a2",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan1_spaced3/reference.json",
+        "reference_sha256": "426de37ee73b2775f475817d6a1112cc3d26223f02f4ae1f87a0982adf76f6f7",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_spaced3/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "0b3f128b8e5072f1d4ac5ede91e8956b9a4d02e30c0a81c56b61a25f1f0647a8"
+      },
+      {
+        "scene_id": "dtu_scan1_blur5",
+        "role": "development",
+        "condition": "blur5",
+        "manifest": "data/stage3_dtu/scan1_blur5/manifest.json",
+        "manifest_sha256": "b04e1566393a84df5e71a2bf91e7c0f2d5aed4b834a28f408b3a013492f657b1",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan1_blur5/reference.json",
+        "reference_sha256": "f36088dabb2b03f2621d320d6874b6a0b909f520c6370c75e0434613e39dba5b",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan1_blur5/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "db15db89b89860c67d62f111b0201c72ee37812290e896fbc14f73a309187afb"
+      },
+      {
+        "scene_id": "dtu_scan6_normal5",
+        "role": "historical_validation_not_blind",
+        "condition": "normal5",
+        "manifest": "data/stage3_dtu/scan6_normal5/manifest.json",
+        "manifest_sha256": "30872f0dbdab8bcd0d158bd813d126c958b84bfe5bea869b569d1cc1315afa61",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan6_normal5/reference.json",
+        "reference_sha256": "949391dce0fbe95131d948925e526dc13cddf4d40f51e940839febfb9e3b8f5c",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_normal5/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "97afa1a62b6a01be33665d389acc088d20b6f4ede9cb67181788f55f19ce08be"
+      },
+      {
+        "scene_id": "dtu_scan6_reduced3",
+        "role": "historical_validation_not_blind",
+        "condition": "reduced3",
+        "manifest": "data/stage3_dtu/scan6_reduced3/manifest.json",
+        "manifest_sha256": "d9655387c9f83279abad8e9d9188657924fe07d6752c45c8a9b3e9b5bc223030",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan6_reduced3/reference.json",
+        "reference_sha256": "1318d7bfccf1a445ebf4054bed535620f3c2923584db48af5d438759ad48c3ae",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_reduced3/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "7da6c709506b994a5a4fd16dce1ed05a531cfc1fb735d8004946a3793dcc2914"
+      },
+      {
+        "scene_id": "dtu_scan6_spaced3",
+        "role": "historical_validation_not_blind",
+        "condition": "spaced3",
+        "manifest": "data/stage3_dtu/scan6_spaced3/manifest.json",
+        "manifest_sha256": "21858f70615a51ff09a809ead63204d5de7788348d736ee891890fa35c14456e",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan6_spaced3/reference.json",
+        "reference_sha256": "21604ba4b8cf2c6c4a7ce6dce423e3b74d23cfcae8ce61cfb3f0c8841fb70908",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_spaced3/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "626bd24edb37b70b19005f12430726b48542c9ab4f4be64e7ba3ca41e9ee36e4"
+      },
+      {
+        "scene_id": "dtu_scan6_blur5",
+        "role": "historical_validation_not_blind",
+        "condition": "blur5",
+        "manifest": "data/stage3_dtu/scan6_blur5/manifest.json",
+        "manifest_sha256": "78ecd44dc7422b93398e28f224a3a0b3cbc4473091c189846ed734a4a841a690",
+        "reference_evaluation_only_except_K": "data/stage3_dtu/scan6_blur5/reference.json",
+        "reference_sha256": "6ebbb6052b4d5e07d140bc18b810eba6617e275b1b8651ee1ba6e77cebdc34e0",
+        "common_input_mapping": "outputs/stage3_dtu_pose_pilot_v1/dtu_scan6_blur5/colmap/input_mapping.json",
+        "common_input_mapping_sha256": "a72afffddee3dd317460bf98b6f48fd68fc33bd6178a6d294fc71bbb77f40502"
+      }
+    ],
+    "cases": [
+      {"case_id":"scan1_sharp_001_002","scan":1,"view_ids":["001","002"],"conditions":["normal5","reduced3"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_001_003","scan":1,"view_ids":["001","003"],"conditions":["normal5","reduced3"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_001_004","scan":1,"view_ids":["001","004"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_001_005","scan":1,"view_ids":["001","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_002_003","scan":1,"view_ids":["002","003"],"conditions":["normal5","reduced3"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_002_004","scan":1,"view_ids":["002","004"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_002_005","scan":1,"view_ids":["002","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_003_004","scan":1,"view_ids":["003","004"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_003_005","scan":1,"view_ids":["003","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_sharp_004_005","scan":1,"view_ids":["004","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan1_spaced_001_010","scan":1,"view_ids":["001","010"],"conditions":["spaced3"],"difficulty_group":true},
+      {"case_id":"scan1_spaced_001_020","scan":1,"view_ids":["001","020"],"conditions":["spaced3"],"difficulty_group":true},
+      {"case_id":"scan1_spaced_010_020","scan":1,"view_ids":["010","020"],"conditions":["spaced3"],"difficulty_group":true},
+      {"case_id":"scan1_blur_001_002","scan":1,"view_ids":["001","002"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_001_003","scan":1,"view_ids":["001","003"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_001_004","scan":1,"view_ids":["001","004"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_001_005","scan":1,"view_ids":["001","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_002_003","scan":1,"view_ids":["002","003"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_002_004","scan":1,"view_ids":["002","004"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_002_005","scan":1,"view_ids":["002","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_003_004","scan":1,"view_ids":["003","004"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_003_005","scan":1,"view_ids":["003","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan1_blur_004_005","scan":1,"view_ids":["004","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_sharp_001_002","scan":6,"view_ids":["001","002"],"conditions":["normal5","reduced3"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_001_003","scan":6,"view_ids":["001","003"],"conditions":["normal5","reduced3"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_001_004","scan":6,"view_ids":["001","004"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_001_005","scan":6,"view_ids":["001","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_002_003","scan":6,"view_ids":["002","003"],"conditions":["normal5","reduced3"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_002_004","scan":6,"view_ids":["002","004"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_002_005","scan":6,"view_ids":["002","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_003_004","scan":6,"view_ids":["003","004"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_003_005","scan":6,"view_ids":["003","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_sharp_004_005","scan":6,"view_ids":["004","005"],"conditions":["normal5"],"difficulty_group":false},
+      {"case_id":"scan6_spaced_001_010","scan":6,"view_ids":["001","010"],"conditions":["spaced3"],"difficulty_group":true},
+      {"case_id":"scan6_spaced_001_020","scan":6,"view_ids":["001","020"],"conditions":["spaced3"],"difficulty_group":true},
+      {"case_id":"scan6_spaced_010_020","scan":6,"view_ids":["010","020"],"conditions":["spaced3"],"difficulty_group":true},
+      {"case_id":"scan6_blur_001_002","scan":6,"view_ids":["001","002"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_001_003","scan":6,"view_ids":["001","003"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_001_004","scan":6,"view_ids":["001","004"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_001_005","scan":6,"view_ids":["001","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_002_003","scan":6,"view_ids":["002","003"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_002_004","scan":6,"view_ids":["002","004"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_002_005","scan":6,"view_ids":["002","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_003_004","scan":6,"view_ids":["003","004"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_003_005","scan":6,"view_ids":["003","005"],"conditions":["blur5"],"difficulty_group":true},
+      {"case_id":"scan6_blur_004_005","scan":6,"view_ids":["004","005"],"conditions":["blur5"],"difficulty_group":true}
+    ]
+  },
+  "backend": {
+    "source": "src/georecon/teaching/two_view.py",
+    "sha256": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "config_source": "configs/teaching/stage6_two_view.json",
+    "config_sha256": "cb35d16411844cbbe65dd70d519aaf0ed929021d9c675e0f6911b8066df6399e",
+    "same_parameters_all_arms": {
+      "min_matches": 20,
+      "essential_ransac_px": 1.5,
+      "essential_ransac_probability": 0.999,
+      "essential_ransac_iterations": 10000,
+      "normalized_threshold_rule": "pixel threshold divided by mean fx/fy across both images; exact K inverse includes skew",
+      "homography_dominance_fraction": 0.9,
+      "homography_to_essential_inlier_ratio": 0.95,
+      "min_positive_depth_fraction": 0.6,
+      "min_parallax_deg": 0.5,
+      "max_reprojection_px": 2.0,
+      "min_kept_points": 20,
+      "pose_hypotheses": "decomposeEssentialMat, enumerate (R1,+t),(R1,-t),(R2,+t),(R2,-t); choose most finite dual-positive E inliers, tie lower median max-view reprojection",
+      "triangulation": "explicit batched DLT SVD; save all candidate points/depths/angles/errors/masks; filter dual-positive, sufficient angle, both-view reprojection"
+    },
+    "scope": "reuse reconstruct() unchanged; only seed replaced by each declared geometry seed; no PnP/incremental/BA or alternative seed search"
+  },
+  "lightglue": {
+    "vendor_commit": "eb42fee2d71449efb0aa5c10549752b5d75384d8",
+    "source_sha256": {
+      "lightglue/sift.py": "9fa24851ff25b6f09cb06fa62aed1d07fa9cb6aa340c79d6467b3bdfdd4508cd",
+      "lightglue/lightglue.py": "dcb75b9cad1985c5e7a537c512d4318d47fbcc99df75b39a513de60e027c039f",
+      "lightglue/utils.py": "c6d9260656a24d826128b68c95d0b7798106d04f4244a77f3b1856573f58e690"
+    },
+    "weights_sha256": "5b52b8d9982d43532dc042606b346bb9594c9f5a4bd6f64362c63866287b4ac0",
+    "weights_source": "https://github.com/cvg/LightGlue/releases/download/v0.1_arxiv/sift_lightglue.pth",
+    "offline_cached_weights_only": true,
+    "runtime": {
+      "python": "3.12.3",
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "numpy": "2.5.2",
+      "Pillow": "12.3.0",
+      "opencv-python": "5.0.0.93",
+      "kornia": "0.8.3",
+      "lightglue": "0.0"
+    },
+    "runtime_changes_require_amendment": true
+  },
+  "metrics": {
+    "pose_correct_degrees": 5.0,
+    "joint_auc_degrees": [
+      5,
+      10,
+      20
+    ],
+    "primary_auc": 10,
+    "gt_epipolar_sqrt_sampson_threshold_px": 1.5,
+    "coverage_grid_xy": [
+      8,
+      6
+    ],
+    "true_3d_match_precision": "not_measured_no_dense_correspondence_or_visibility_GT",
+    "GT_excluded_from_inference_and_selection": true,
+    "primary_aggregation": "per seed, mean within each of four conditions, then equal condition macro per object; no best seed; also report canonical 46-pair table",
+    "failure_pose_auc_contribution": 0,
+    "undefined_ratio": "null with explicit reason, never substituted as precision zero or one",
+    "candidate_stage_gate": "algorithm accepted AND oriented rotation and translation errors both <=5 degrees",
+    "grid_coverage": "GT-compatible candidate occupied cells /48 per image; pair uses min of two; no object/visibility masking",
+    "quantile_rule": "linear interpolation, numpy.quantile(method=linear)"
+  },
+  "budget": {
+    "cpu_threads": 8,
+    "batch_size": 1,
+    "gpu_allocator_bytes": 11811160064,
+    "whole_card_ceiling_bytes": 12884901888,
+    "gpu_sampling_ms": 100,
+    "feature_hard_guard": 4608,
+    "new_data_or_weights_downloads": 0,
+    "unique_shared_feature_images": 24,
+    "main_matcher_runs": 138,
+    "main_geometry_calls_max": 414,
+    "lightglue_warmup_calls": 2,
+    "cold_profile_runs": 9,
+    "cold_profile_geometry_calls": 9,
+    "cold_profile_case_ids": [
+      "scan1_sharp_001_003",
+      "scan1_spaced_001_020",
+      "scan1_blur_001_003"
+    ],
+    "feature_wall_seconds_per_image": 30,
+    "pair_arm_wall_seconds_including_three_geometry_seeds": 180,
+    "cold_profile_wall_seconds_per_run": 180,
+    "total_session_wall_seconds": 1800,
+    "process_rss_ceiling_gib": 8,
+    "local_artifact_ceiling_gib": 1,
+    "concurrent_gpu_workers": 1,
+    "cold_profiles_not_used_for_quality_or_seed_selection": true,
+    "gpu_device": "existing local NVIDIA GeForce RTX 4070 SUPER; no cloud",
+    "main_arm_order": "canonical cases in listed order, rotating ABC/BCA/CAB by zero-based case index; development before historical validation"
+  },
+  "go_no_go": {
+    "minimum_rescued_pairs": 2,
+    "rescue": "B correct in 0/3 seeds, C correct in 3/3 seeds, hard group only; at least one pair from each object",
+    "per_object_condition_macro_auc10_delta_min": 0.0,
+    "normal_pair_regression": "none: B correct in 3/3 seeds must remain C correct in 3/3",
+    "new_false_accepts": "none on any planned pair/seed: C accepted with defined joint angle >5 where B did not do so",
+    "hard_group_median_gt_consistent_match_count_delta": "strictly positive on each object",
+    "hard_group_median_gt_consistent_grid_coverage_delta": "nonnegative on each object",
+    "median_added_postfeature_latency_seconds_max": 1.0,
+    "p95_added_postfeature_latency_seconds_max": 3.0,
+    "latency_contrast": "C minus B, transfers+matcher+geometry seed42, paired across 46 cases; feature-cache cost and cold profiles reported separately",
+    "numerical_tolerance": 1e-12,
+    "all_gates_required": true,
+    "incomplete_or_contract_error": "preserve all planned rows and reasons; apply verdict precedence; no tuning or positive quality claim from partial results",
+    "no_automatic_stage7b": true,
+    "resource_failures_max": 0,
+    "verdict_precedence": [
+      "input/software contract invalid -> BLOCKED, no scientific verdict",
+      "resource guard/OOM/timeout/budget limit -> NO_GO_RESOURCE; unfinished quality gates remain inconclusive",
+      "external interruption or undefined evaluation -> INCONCLUSIVE",
+      "complete valid results but quality/cost gate fails -> NO_GO_EVIDENCE or NO_GO_COST",
+      "all gates pass -> GO_FEASIBILITY only; Stage7B still requires approval"
+    ]
+  },
+  "explicitly_not_authorized": [
+    "algorithm development",
+    "experiment execution",
+    "Stage 7B",
+    "new data downloads",
+    "official full extractor comparison",
+    "VGGT rerun",
+    "training",
+    "BA resource research",
+    "fusion modification",
+    "archive/deletion",
+    "merge main",
+    "commit",
+    "push"
+  ]
+}
