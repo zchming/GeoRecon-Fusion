@@ -1,0 +1,45 @@
+{
+  "case_id": "dtu_scan1_reduced3",
+  "command": [
+    "/home/zchming/.venvs/georecon-reliability/bin/python",
+    "-m",
+    "georecon.teaching.incremental_run",
+    "--input",
+    "/home/zchming/projects/VisionGeometryLab/data/stage6_incremental/dtu_scan1_reduced3/input.json",
+    "--config",
+    "/home/zchming/projects/VisionGeometryLab/configs/teaching/stage6_incremental.json",
+    "--output",
+    "/home/zchming/projects/VisionGeometryLab/outputs/stage6_incremental_v1/dtu_scan1_reduced3"
+  ],
+  "exit_code": 0,
+  "controller_seconds": 0.5653067789999113,
+  "gpu_before": {
+    "memory_used_total_MiB": "503, 12282",
+    "compute_apps": "",
+    "returncode": 0
+  },
+  "gpu_samples": [
+    {
+      "memory_used_total_MiB": "503, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "503, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    },
+    {
+      "memory_used_total_MiB": "503, 12282",
+      "compute_apps": "",
+      "returncode": 0
+    }
+  ],
+  "gpu_after": {
+    "memory_used_total_MiB": "503, 12282",
+    "compute_apps": "",
+    "returncode": 0
+  },
+  "GPU_task_allocated_bytes": 0,
+  "profile": "CPU SIFT/EPnP/NumPy; no CUDA/OpenCL; whole-card usage includes desktop; WSL compute listing limited"
+}

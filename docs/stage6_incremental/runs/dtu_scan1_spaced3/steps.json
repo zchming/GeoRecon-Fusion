@@ -1,0 +1,18 @@
+[
+  {
+    "view_indices": [
+      0,
+      2
+    ],
+    "operation": "seed",
+    "status": "no_reconstruction",
+    "reason": "insufficient_matches",
+    "stats": {
+      "matches": 4,
+      "essential_inliers": 0,
+      "homography_inliers": 0,
+      "kept_points": 0,
+      "hypotheses": []
+    }
+  }
+]

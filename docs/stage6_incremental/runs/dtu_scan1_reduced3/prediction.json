@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "role": "prediction",
+  "scene_id": "dtu_scan1_reduced3",
+  "method_id": "teaching_incremental_sfm",
+  "run_id": "teaching_incremental_sfm",
+  "input_manifest_sha256": "43c5f74dbf689b7b525be5c0f69a7f5db39f2cda66f149b0fef11bfa8727e51e",
+  "coordinate_convention": "opencv_world_to_camera_z_depth",
+  "world_unit": "arbitrary",
+  "status": "success",
+  "failure_reason": null,
+  "images": [
+    {
+      "image_id": "001",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.1652570952901,
+            -0.00012403167471539058,
+            411.3526366281194
+          ],
+          [
+            0.0,
+            1441.5876376816568,
+            309.2854587867471
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "t": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "002",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.1650693758454,
+            0.0002651189258259368,
+            411.3521648266034
+          ],
+          [
+            0.0,
+            1441.587570474034,
+            309.2843241190561
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.8732873441203762,
+            -0.443548403238676,
+            0.2015788396226165
+          ],
+          [
+            0.455272996802858,
+            0.8902500038184196,
+            -0.01346956136809973
+          ],
+          [
+            -0.1734811603066009,
+            0.1035361998806455,
+            0.9793796722073368
+          ]
+        ],
+        "t": [
+          -0.5224783055241692,
+          0.034488183669706254,
+          0.04564232367843424
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    },
+    {
+      "image_id": "003",
+      "registered": true,
+      "camera": {
+        "model": "PINHOLE",
+        "K": [
+          [
+            1446.166159711225,
+            -2.774193051153218e-05,
+            411.35311063797417
+          ],
+          [
+            0.0,
+            1441.5886986743906,
+            309.2851769081775
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "R": [
+          [
+            0.5286095447453936,
+            -0.7619180303887343,
+            0.3742363747320929
+          ],
+          [
+            0.8049016940744232,
+            0.5899322673602821,
+            0.06413410015958873
+          ],
+          [
+            -0.2696390403487434,
+            0.26732159451811655,
+            0.925112940685677
+          ]
+        ],
+        "t": [
+          -0.9701370339369932,
+          -0.16628829405667445,
+          0.17658521637910185
+        ],
+        "width": 800,
+        "height": 600
+      },
+      "reason": null
+    }
+  ],
+  "artifacts": {
+    "depth": null,
+    "pointcloud": {
+      "path": "sparse_points.npz",
+      "sha256": "1bb83c02d74a23c5701e6ececbe0cadbe08841bfb2744593d9dad389edba2930",
+      "semantics": "unit seed baseline XYZ, immutable existing points; observation rows [view,keypoint,landmark], point_creation_view -1=seed"
+    },
+    "tracks": {
+      "path": "geometry_steps.npz",
+      "sha256": "a55873d776c771804430d6d1fcefc65143906645fef05a53b923f8ec975d22fc",
+      "semantics": "measured pair matches, seed candidates, PnP candidates/masks and new triangulation candidates including rejections"
+    },
+    "confidence": null
+  },
+  "provenance": {
+    "data_kind": "real",
+    "code_commit": "bc0c0ac49d1eaa2b1382b4431d8ed5c6430544dc",
+    "working_tree_dirty": true,
+    "source_tree_sha256": "6f749f168cbae33b5a39b3aa080fe9ee48c7cbeaddf1f94d959fdd11b287daa3",
+    "config_sha256": "04f9cc251dc3d392a5a19370ce2a0a24136b0194f8bfbd6e0404ce95e070cf46",
+    "known_intrinsics": "declared known K; no pose truth",
+    "BA": false
+  },
+  "config": {
+    "schema_version": 1,
+    "scope": "stage6 minimal PnP/incremental only; no BA, stage7 or new benchmark",
+    "intrinsics_protocol": "known distortion-free K per image, explicitly supplied calibration input; DTU pose/scale/reference points never used in reconstruction",
+    "preprocessing": "reuse fixed local stage3 Pillow bilinear 800x600 images and zero-based pixel-center affine A; K_processed=A*K_original",
+    "seed": 42,
+    "opencv_threads": 8,
+    "sift_features": 4096,
+    "ratio_threshold": 0.75,
+    "min_matches": 20,
+    "essential_ransac_px": 1.5,
+    "essential_ransac_probability": 0.999,
+    "essential_ransac_iterations": 10000,
+    "normalized_threshold_rule": "pixel threshold divided by mean fx/fy across both images; exact K inverse includes skew",
+    "homography_dominance_fraction": 0.9,
+    "homography_to_essential_inlier_ratio": 0.95,
+    "homography_gate": "conservative ambiguity warning/rejection, not proof of planarity or rotation",
+    "min_positive_depth_fraction": 0.6,
+    "min_parallax_deg": 0.5,
+    "max_reprojection_px": 2.0,
+    "min_kept_points": 20,
+    "pose_hypotheses": "decomposeEssentialMat, enumerate (R1,+t),(R1,-t),(R2,+t),(R2,-t); choose most finite dual-positive E inliers, tie lower median max-view reprojection",
+    "triangulation": "explicit batched DLT SVD; save all candidate points/depths/angles/errors/masks; filter dual-positive, sufficient angle, both-view reprojection",
+    "scale": "camera1 I/0; camera2 world-to-camera R/t with norm(t)=1; no metric scale recovery",
+    "fit_on_GT": false,
+    "gpu_budget_gib": 12,
+    "device": "CPU OpenCV SIFT/RANSAC and NumPy SVD; no model load or GPU allocation",
+    "budget": {
+      "image_width": 800,
+      "image_height": 600,
+      "new_downloads": 0,
+      "sift_nfeatures_target": 4096
+    },
+    "frozen_before_real_run": true,
+    "pnp_min_inliers": 12,
+    "pnp_iterations": 1000,
+    "pnp_ransac_px": 2.0,
+    "registration_order": "manifest order excluding fixed seed; one attempt per view; no adaptive selection/retries",
+    "track_conflicts": "reject ambiguous keypoint or landmark identities in both directions",
+    "existing_poses_and_points": "immutable; no BA or pose refinement",
+    "cases": [
+      {
+        "case_id": "dtu_scan1_reduced3",
+        "source_scene": "scan1_reduced3",
+        "seed_ids": [
+          "001",
+          "003"
+        ]
+      },
+      {
+        "case_id": "dtu_scan1_normal5",
+        "source_scene": "scan1_normal5",
+        "seed_ids": [
+          "001",
+          "003"
+        ]
+      },
+      {
+        "case_id": "dtu_scan1_blur5",
+        "source_scene": "scan1_blur5",
+        "seed_ids": [
+          "001",
+          "003"
+        ]
+      },
+      {
+        "case_id": "dtu_scan1_spaced3",
+        "source_scene": "scan1_spaced3",
+        "seed_ids": [
+          "001",
+          "020"
+        ]
+      }
+    ]
+  },
+  "versions": {},
+  "timing_seconds": {
+    "process_body": 0.2817397659996459
+  },
+  "memory_bytes": {
+    "peak_rss_os": 227487744,
+    "peak_gpu_allocated": 0
+  },
+  "logs": []
+}

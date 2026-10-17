@@ -1,0 +1,14 @@
+{
+  "body_total_seconds": 1.3631565179998688,
+  "controller_total_seconds": 2.5322936680004204,
+  "peak_process_rss_bytes": 233492480,
+  "task_gpu_allocated_bytes": 0,
+  "whole_card_observed_MiB": [
+    503,
+    507
+  ],
+  "GPU_total_MiB": 12282,
+  "CPU_threads": 8,
+  "OpenCL": false,
+  "cost_scope": "five immutable image sequence runs; one attempt each; model training/download not performed"
+}

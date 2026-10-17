@@ -1,0 +1,12 @@
+{
+  "scope": "stage6 minimal known-K PnP and incremental registration without BA",
+  "engineering_acceptance": "passed",
+  "all_5_runs_exactly_replayed": true,
+  "prior_seed_poses_exactly_preserved": true,
+  "all_track_id_uniqueness_and_positive_depth_reprojection_checks_passed": true,
+  "source_input_and_config_hashes_verified": true,
+  "failure_controls_retained": true,
+  "BA": false,
+  "next_stage_started": false,
+  "novelty_or_general_performance_gain_established": false
+}

@@ -1,0 +1,77 @@
+{
+  "source_hashes_verified": {
+    "src/georecon/teaching/two_view.py": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "src/georecon/teaching/run.py": "b895bfaf8b147eda3f542716c914262a092ca8a57ba4641ee9228f465556200b",
+    "src/georecon/cli.py": "fd909d90160bee36e6197246f59192e6e2d0c36fc77c4e7d5437a9bddeb36695",
+    "scripts/prepare_stage6.py": "7cd9529b05a9c6525c475b570cc7e8213561dbe11846192aabc0b4b1ad4dd03d",
+    "scripts/run_stage6.py": "6ae278d0ee800a37802f2af5dbfbe71cd23b1bc09a239346c740fde501d91a28",
+    "scripts/evaluate_stage6.py": "a2d7cc6d80e5517414257f0160832cc547b2bd02e0005852ef22ad05079dd216",
+    "scripts/check_stage6.py": "be87a694219964890c0136e0e05e32a309e9448228197ef486984af903296992",
+    "scripts/report_stage6.py": "8deda232945dd117f2cf3483c500e1afe898374e95b2f33f20e433bf70d2426b"
+  },
+  "all_11_input_and_truth_hashes_verified": true,
+  "previous_acceptance": {
+    "scope": "authorized Stage6 minimal calibrated two-view teaching substep",
+    "substep_acceptance": "passed",
+    "whole_incremental_SfM_implemented": false,
+    "PnP_incremental_BA": false,
+    "stage7_started": false,
+    "stage5_evidence_reviewed": true,
+    "real_pair_successes": 2,
+    "real_pair_failures_preserved": 1,
+    "all_8_control_expectations_met": true,
+    "known_K_declared_input": true,
+    "no_pose_or_scale_reference_reads": true,
+    "feature_and_geometry_replay_identical": true,
+    "cross_environment_tests": 120,
+    "performance_ranking_or_novelty_claim": false,
+    "GPU_allocated_bytes": 0
+  },
+  "previous_summary": {
+    "scope": "Stage6 calibrated two-view teaching substep",
+    "real_pairs": 3,
+    "real_successes": 2,
+    "controls": 8,
+    "control_expected_statuses_met": true,
+    "all_status_counts": {
+      "success": 4,
+      "no_reconstruction": 7
+    },
+    "real_matches_and_points": [
+      {
+        "case_id": "dtu_scan1_001_003",
+        "status": "success",
+        "failure_reason": null,
+        "rotation_error_deg": 1.6421869315989523,
+        "translation_direction_error_deg": 1.9651659698059947,
+        "mutual_matches": 427,
+        "kept_points": 404
+      },
+      {
+        "case_id": "dtu_scan1_001_020",
+        "status": "no_reconstruction",
+        "failure_reason": "insufficient_matches",
+        "rotation_error_deg": null,
+        "translation_direction_error_deg": null,
+        "mutual_matches": 4,
+        "kept_points": 0
+      },
+      {
+        "case_id": "dtu_scan1_blur_001_003",
+        "status": "success",
+        "failure_reason": null,
+        "rotation_error_deg": 1.0444899074387528,
+        "translation_direction_error_deg": 0.49699752195009167,
+        "mutual_matches": 101,
+        "kept_points": 86
+      }
+    ],
+    "known_intrinsics_are_input": true,
+    "new_downloads_or_models": 0,
+    "new_Benchmark_results": false,
+    "PnP_incremental_BA_in_scope": false,
+    "next_stage_started": false
+  },
+  "wide_pair_failure_preserved": "001/020: 4 mutual matches; insufficient_matches",
+  "old_outputs_modified": false
+}

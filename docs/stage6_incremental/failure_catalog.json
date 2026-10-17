@@ -1,0 +1,21 @@
+{
+  "real": [
+    {
+      "case": "dtu_scan1_spaced3",
+      "reason": "seed 001/020 insufficient_matches, 4 mutual correspondences",
+      "downstream_pnp": "not attempted; no seeded map"
+    }
+  ],
+  "synthetic": [
+    {
+      "case": "blank_added_view",
+      "reason": "002 has zero 2D3D links; insufficient_2d3d",
+      "retained": "2 registered seed cameras and 404 unchanged seed points"
+    }
+  ],
+  "unproven_failure_modes": [
+    "near-collinear / poorly conditioned configurations beyond exact collinear unit control",
+    "long sequence drift, duplicate physical landmarks, false track identities",
+    "ambiguous planar PnP; no explicit multi-solution disambiguation"
+  ]
+}

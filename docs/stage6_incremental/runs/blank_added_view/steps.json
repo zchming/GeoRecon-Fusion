@@ -1,0 +1,70 @@
+[
+  {
+    "view_indices": [
+      0,
+      2
+    ],
+    "operation": "seed",
+    "status": "success",
+    "reason": null,
+    "stats": {
+      "matches": 427,
+      "essential_inliers": 404,
+      "homography_inliers": 343,
+      "kept_points": 404,
+      "hypotheses": [
+        {
+          "essential_index": 0,
+          "rotation_index": 0,
+          "translation_sign": 1,
+          "dual_positive_points": 0,
+          "median_max_view_reprojection_px": null
+        },
+        {
+          "essential_index": 0,
+          "rotation_index": 0,
+          "translation_sign": -1,
+          "dual_positive_points": 0,
+          "median_max_view_reprojection_px": null
+        },
+        {
+          "essential_index": 0,
+          "rotation_index": 1,
+          "translation_sign": 1,
+          "dual_positive_points": 0,
+          "median_max_view_reprojection_px": null
+        },
+        {
+          "essential_index": 0,
+          "rotation_index": 1,
+          "translation_sign": -1,
+          "dual_positive_points": 404,
+          "median_max_view_reprojection_px": 0.1298891025341824
+        }
+      ],
+      "normalized_ransac_threshold": 0.0010388696988095133,
+      "selected_hypothesis": {
+        "essential_index": 0,
+        "rotation_index": 1,
+        "translation_sign": -1,
+        "dual_positive_points": 404,
+        "median_max_view_reprojection_px": 0.1298891025341824
+      },
+      "positive_fraction": 1.0,
+      "positive_median_parallax_deg": 18.458957945249296,
+      "accepted_median_parallax_deg": 18.458957945249296,
+      "accepted_max_reprojection_px": 1.0140631821456
+    }
+  },
+  {
+    "view_index": 1,
+    "operation": "pnp",
+    "candidate_links": 0,
+    "unique_links": 0,
+    "inliers": 0,
+    "registered": false,
+    "reason": "insufficient_2d3d",
+    "points_before": 404,
+    "new_points": 0
+  }
+]
