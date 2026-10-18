@@ -1,0 +1,17 @@
+family,arm,ranking,method,maps,no_seed,attempts,exact,unavailable,insufficient_2d3d,raw_distinct_lt12,conflict_blocks_threshold,indirect_support_gap,registered,ransac_failed,positive_reprojection_rejected
+dtu,B,inliers,legacy,60,5,115,75,40,45,40,0,0,56,0,14
+dtu,B,inliers,ap3p,60,5,115,75,40,45,40,0,0,55,0,15
+dtu,B,quality,legacy,60,5,115,75,40,45,40,0,0,56,0,14
+dtu,B,quality,ap3p,60,5,115,75,40,45,40,0,0,55,0,15
+dtu,C,inliers,legacy,60,0,120,73,47,25,20,5,0,85,0,10
+dtu,C,inliers,ap3p,60,0,120,71,49,25,20,5,0,89,0,6
+dtu,C,quality,legacy,60,0,120,75,45,25,20,5,0,83,0,12
+dtu,C,quality,ap3p,60,0,120,75,45,25,20,5,0,85,0,10
+tum_rgbd,B,inliers,legacy,60,40,60,60,0,60,60,0,0,0,0,0
+tum_rgbd,B,inliers,ap3p,60,40,60,60,0,60,60,0,0,0,0,0
+tum_rgbd,B,quality,legacy,60,40,60,60,0,60,60,0,0,0,0,0
+tum_rgbd,B,quality,ap3p,60,40,60,60,0,60,60,0,0,0,0,0
+tum_rgbd,C,inliers,legacy,60,30,70,70,0,61,46,15,0,0,9,0
+tum_rgbd,C,inliers,ap3p,60,30,70,70,0,61,46,15,0,0,3,6
+tum_rgbd,C,quality,legacy,60,30,70,70,0,61,46,15,0,0,9,0
+tum_rgbd,C,quality,ap3p,60,30,70,70,0,61,46,15,0,0,3,6
