@@ -45,19 +45,38 @@ def pnp(x,uv,k,cfg):
     out.update(registered=True,reason=None);return out
 
 
-def reconstruct_incremental(images,ks,seed,cfg):
+def reconstruct_incremental(images,ks,seed,cfg,*,features=None,pair_matches=None,seed_result=None):
+    """Legacy defaults; optional measured features/matches and verified seed for experiments.
+
+    Pair tables must use canonical i<j indices; reversal preserves feature identity.
+    No evaluation metadata is accepted by this interface.
+    """
     import cv2
     cv2.setNumThreads(cfg['opencv_threads']);cv2.ocl.setUseOpenCL(False)
-    sift=cv2.SIFT_create(nfeatures=cfg['sift_features']);features=[]
-    for im in images:
-        kp,des=sift.detectAndCompute(cv2.cvtColor(im,cv2.COLOR_RGB2GRAY),None)
-        features.append((np.array([v.pt for v in kp],float).reshape(-1,2),des))
+    if features is None:
+        sift=cv2.SIFT_create(nfeatures=cfg['sift_features']);features=[]
+        for im in images:
+            kp,des=sift.detectAndCompute(cv2.cvtColor(im,cv2.COLOR_RGB2GRAY),None)
+            features.append((np.array([v.pt for v in kp],float).reshape(-1,2),des))
+    if len(features)!=len(images) or len(ks)!=len(images):raise ValueError('feature/camera count mismatch')
+    for xy,_ in features:
+        if np.asarray(xy).ndim!=2 or np.asarray(xy).shape[1]!=2 or not np.isfinite(xy).all():raise ValueError('finite Nx2 features required')
+    if pair_matches is not None:
+        from ..matching.features import validate_pairs
+        from itertools import combinations
+        if set(pair_matches)!=set(combinations(range(len(images)),2)):raise ValueError('complete canonical pair table required')
+        for (i,j),m in pair_matches.items():
+            checked=validate_pairs(m,len(features[i][0]),len(features[j][0]))
+            if not np.array_equal(checked,m):raise ValueError('canonical match order required')
     cache={};debug={};steps=[]
     def pairs(i,j):
         if (i,j) not in cache:
-            cache[i,j]=match(features[i][1],features[j][1],cfg['ratio_threshold']);debug[f'matches_{i}_{j}']=cache[i,j]
+            cache[i,j]=(pair_matches[i,j] if i<j else pair_matches[j,i][:,::-1]) if pair_matches is not None else match(features[i][1],features[j][1],cfg['ratio_threshold']);debug[f'matches_{i}_{j}']=cache[i,j]
         return cache[i,j]
-    a,b=seed;m=pairs(a,b);base=reconstruct(features[a][0][m[:,0]],features[b][0][m[:,1]],ks[a],ks[b],cfg)
+    a,b=seed;m=pairs(a,b);base=seed_result if seed_result is not None else reconstruct(features[a][0][m[:,0]],features[b][0][m[:,1]],ks[a],ks[b],cfg)
+    if seed_result is not None:
+        for key,xy in [('pixels_first',features[a][0][m[:,0]]),('pixels_second',features[b][0][m[:,1]])]:
+            if not np.array_equal(base['arrays'][key],xy):raise ValueError('seed result does not match measured pixels')
     debug.update({'seed_'+k:v for k,v in base['arrays'].items()})
     poses={};xyz=[];observations={};origins=[]
     steps.append({'view_indices':[a,b],'operation':'seed','status':base['status'],'reason':base['reason'],'stats':base['stats']})

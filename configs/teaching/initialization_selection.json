@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "preferred_strategy": null,
+  "status": "both_rankings_retained_no_universal_default",
+  "primary_frontend": "C: shared RootSIFT + frozen official LightGlue",
+  "retained_alternative": "quality",
+  "delete_alternative_or_failures": false,
+  "production_default_changed": false,
+  "max_seed_attempts": 3,
+  "frozen_geometry": "MSAC1.5px; original PnP remains default; AP3P only explicit experimental candidate",
+  "evidence_protocol": "configs/experiments/stage7b_final_search_v2.json",
+  "evidence_protocol_sha256": "2b0f02f13561c7b2338c9ea5711c41b755d04978189c8d02e79f2b7982d5b571",
+  "decision": {
+    "preselected_candidate": "lm",
+    "preselected_result": "NO_GO_STABLE_PROMOTION",
+    "exploratory_candidate": "ap3p",
+    "candidate_independently_confirmed": false,
+    "automatic_default_replacement": false,
+    "retain_both_rankings": true
+  },
+  "reason": "TUM quality ranking beats inlier ranking, while DTU/Middlebury favor inliers; no universal ranking. Exploratory AP3P improves TUM under both rankings and reduces some false/severe pairs elsewhere but lowers LightGlue DTU score; retain for review, no stable promotion.",
+  "secondary_frontend_caveat": "RootSIFT-ratio B AP3P improves DTU but adds one severe TUM pair-seed position10->11. Do not infer frontend-independent safety.",
+  "safety_caveat": "Original ranking harms vs fixed remain; AP3P is not a verified safe production replacement. Negative and partial runs remain recoverable.",
+  "prior_selection": {
+    "preferred_strategy": "inliers",
+    "status": "provisional_research_reference",
+    "evidence_protocol": "configs/experiments/stage7b_cross_dataset_v1.json",
+    "evidence_protocol_sha256": "a79d25e950e88cde91f26eec274cbfb9a8346fb23815a870a58e83482efc73e2",
+    "decision": {
+      "quality_dominates_both_families": {
+        "strecha": false,
+        "middlebury": false
+      },
+      "no_scene_severe_increase": true,
+      "external_quality_promotion_gate": false,
+      "provisional_reference": "inliers",
+      "claim": "candidate external validation only; no universal winner if tradeoffs; preserve both implementations"
+    },
+    "reason": "LightGlue: inlier ranking weakly dominates quality ranking in scene-averaged score10 across all6 new sequences/objects; same or better reconstruction and false/severe counts. Differences are small or concentrated in a failure, not proof of universal stability."
+  },
+  "retained_strategies": [
+    "inliers",
+    "quality"
+  ],
+  "candidate_limits": {
+    "TUM_inliers_score10_before": 0.28804844730820184,
+    "TUM_inliers_score10_after": 0.3174602041171327,
+    "TUM_quality_score10_before": 0.333912799002939,
+    "TUM_quality_score10_after": 0.35902299016341244,
+    "DTU_inliers_score10_delta": -0.0024655238566674287,
+    "complete_accurate_rate_improved": false,
+    "counterexample": "TUM xyz blur5 seed43 registered3->2, score10 .147289->.006867",
+    "novel_algorithm_claim": false
+  }
+}
