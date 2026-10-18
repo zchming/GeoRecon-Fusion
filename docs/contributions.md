@@ -1,5 +1,42 @@
 # 累计贡献与证据边界
 
+<a id="portfolio-contributions"></a>
+## 当前项目侧贡献与求职展示（2026-10-18）
+
+项目已完成基线接入、已知K教学SfM/BA、可靠性与融合实验、受控学习匹配/种子/PnP对照、留出确认及缓存支持诊断。**当前适合展示的是几何理解、系统实现、受控评价与失败定位能力；尚无跨数据集稳定算法优势或原创求解器。** 下文历史记录中的“尚未进入阶段7”“仅预检”等表示当时状态，不是当前能力。
+
+### 维护者应能讲解和复现的核心实现
+
+| 项目侧实现/整合 | 核心代码 | 面试可核查的问题 | 第三方边界 |
+|---|---|---|---|
+| 相机与统一输出协议、独立评价 | [camera.py](../src/georecon/geometry/camera.py)、[poses.py](../src/georecon/evaluation/poses.py)、[协议](protocol.md) | world-to-camera、像素中心变换、任意尺度、失败分母、Sim(3)评价对齐 | 坐标约定和评价流程由项目组织，不是新相机模型 |
+| 双视图几何与拒绝条件 | [two_view.py](../src/georecon/teaching/two_view.py) | E的四个位姿假设、显式DLT、正深度/视差/重投影门 | OpenCV提供特征、鲁棒E/H估计等；不能把估计器记为自研 |
+| 观测身份、PnP调度与增量地图 | [incremental.py](../src/georecon/teaching/incremental.py) | 为什么重复支持不等于唯一3D点，为什么双向身份冲突必须拒绝，失败如何保留部分地图 | EPnP/AP3P与RANSAC使用OpenCV；项目实现关联、调度和状态协议 |
+| 固定K教学BA问题构建 | [bundle_adjustment.py](../src/georecon/teaching/bundle_adjustment.py)、[ba_run.py](../src/georecon/teaching/ba_run.py) | 规范自由度、残差/稀疏结构、预算与接受条件，为什么拟合改善仍可能真实位姿变差 | SciPy负责数值最小二乘，不是自行实现优化器或新的BA算法 |
+| 可解释种子选择及PnP公平对照 | [initialization.py](../src/georecon/teaching/initialization.py)、[PnP组件](../src/georecon/teaching/pnp_refinement.py) | 如何保持共享特征、相同后端/预算、限制尝试次数和GT隔离 | RootSIFT、LightGlue、MSAC、PnP求解器均为已有方法；项目贡献是适配和验证 |
+| 支持损失与不可评估诊断 | [support_diagnostic.py](../src/georecon/evaluation/support_diagnostic.py)、[只读入口](../scripts/diagnose_stage7d_support.py) | 如何分开重复投票与身份冲突；为何最终观测不能倒推全部中间状态 | 图连通不是正确轨迹；没有开发轨迹修复算法或获得性能提升 |
+| COLMAP/VGGT基线适配 | [baselines](../src/georecon/baselines/)、[运行说明](reproduction.md) | 预处理、内参协议、资源预算与官方BA OOM如何影响公平性 | 模型、官方跟踪/BA和预训练权重属于第三方；不是自训或自研网络 |
+
+### 可用于简历的保守表述
+
+- 构建多视图重建实验系统，统一COLMAP/VGGT相机与失败协议，实现已知内参的双视图DLT、观测关联、增量注册和固定K教学BA，建立推理与真值评价分离的复现流程。
+- 基于共享特征和冻结几何后端开展匹配、种子选择与PnP受控对照；AP3P留出验证在DTU质量排序下将完整准确图由28/60提高到30/60，但收益集中于同一物体条件，未确认跨数据集稳定优势。
+- 实现缓存匹配拓扑及重复/冲突支持诊断，审计960份既有运行与1,460次PnP尝试，保留346次中间状态不可评估；按预声明条件停止不具备充分证据的轨迹修复路线。
+
+以上是本项目代码与证据可支持的表述，不自动证明任何个人独立完成全部代码；用于个人简历时，应与实际承担、可解释和可复现的工作一致。运行次数不写成独立场景数。没有证据支持“SOTA”“原创融合算法”“稳定提升准确率”“自研AP3P/LightGlue/VGGT”或生产级SfM。
+
+### 三条证据链与当前停止点
+
+1. **经典几何实现有效，但范围有限。** reduced3的BA重投影RMSE .352→.198px、重新对齐ATE 1.290→.244mm；normal5仍预算未收敛，固定原对齐ATE/尾部存在退化。[教学验收](stage6_acceptance/report.md)
+2. **局部恢复成立，普遍安全性未成立。** Stage7C质量排序下DTU分数@10 +1.887个百分点、完整准确28/60→30/60且错误0；同物体条件贡献两个恢复，scan13/15略降，内点排序新增4个错误，TUM无复制收益。AP3P及两排序保持显式可选，不升级默认。[验收](stage7c_confirmation.md#stage7c-acceptance) · [逐项指标](results/stage7c_confirmation_contrasts.csv)
+3. **负结果用于停止决策。** 融合有限收益未迁移；Stage7D的冲突阻断只覆盖一个TUM序列，未达到冻结继续门；不是通过删失败或改阈值制造成功。[融合验收](stage5_acceptance/report.md) · [支持诊断](stage7d_support_diagnostic.md)
+
+最新发布`b7fdf33`的[CPU CI](https://github.com/zchming/GeoRecon-Fusion-Geometry-Reliability-Aware-Hybrid-Multi-View-3D-Reconstruction/actions/runs/39127655433)为246通过、6项独立LightGlue环境依赖跳过、0失败；252项报告包括跳过。测试是软件正确性证据，不是独立场景性能样本。本次成果整理未新增实验、测试运行或性能结论。
+
+当前建议将项目作为有完整证据和边界的算法工程作品展示；停止当前融合、求解器组合和轨迹修复搜索。新的性能研究须另行定义问题、数据与验收条件并获授权，不能把已反复查看的缓存继续称独立测试。[复现入口及资源条件](reproduction.md)
+
+## 历史贡献记录（按原执行阶段保留）
+
 截至阶段6教学版SfM阶段验收，系统已经完成“基线—诊断—选择—过滤—融合—联合优化”的最小实验链，并补充了已知K的双视图教学链。当前贡献以工程协议和可审计的经验结果为主，不能直接等同于新算法或性能突破。阶段5工程与证据验收通过，稳定收益未证实；现有147项不同测试分环境交叉覆盖。阶段6完成双视图、PnP、增量注册与最小固定K BA的教学范围验收，尚未进入阶段7。
 
 |类别|已经完成的内容|证据|边界|

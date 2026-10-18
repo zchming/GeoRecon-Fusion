@@ -2,6 +2,8 @@
 
 所有命令从仓库根目录执行。已验证目标为Linux/WSL、Python 3.12；本页不承诺所有平台兼容。旧命令及历史文件未改动，已有输出请保留，新运行使用不同目录。
 
+**先选择复现目标：** 无数据的新用户先运行CPU协议与评价示例；有已知K图像再运行教学SfM/BA；复核研究结论则需要对应历史缓存、源码和权重。本页提供已有入口，本次成果整理只静态核对命令、资源条件与链接，没有执行示例或新实验。基础安装和示例完整运行不等于真实重建性能已复现。
+
 ## 安装与执行矩阵
 
 | 任务 | 安装 / 前提 | 无模型离线运行？ |
@@ -12,7 +14,8 @@
 | COLMAP CPU SfM | `python -m pip install -r requirements-colmap-lock.txt`，再`python -m pip install -e . --no-deps --no-build-isolation` | 需要本地manifest和图像，不需要模型权重 |
 | VGGT raw | 独立CUDA环境、[运行依赖](../requirements-vggt-runtime-lock.txt)、固定官方源码及本地checkpoint | 不能只靠基础安装；推理需要GPU和权重 |
 | VGGT官方跟踪/BA | 独立环境，PyCOLMAP 3.10.0；额外tracker/DINOv2/特征权重与源码 | 需要全部本地资源；勿与PyCOLMAP 4.2.1基线混装 |
-| SIFT＋LightGlue预检 | 独立Torch/LightGlue环境、固定源码和SIFT权重、旧教学NPZ | 非通用入口，依赖本机缓存与历史结果 |
+| SIFT＋LightGlue预检及受控实验 | 独立Torch/LightGlue环境、固定源码和SIFT权重；真实对照另需图像/缓存与冻结配置 | 完整模型运行不属于CPU基础安装；历史实验条件见各报告 |
+| Stage7D匹配/轨迹支持诊断 | NumPy、完整Stage7C缓存和冻结代码基线；不调用模型/几何求解 | 缓存齐全后可离线，不是纯Git克隆可运行的真实数据示例 |
 | 原阶段报告/验收重放 | 完整历史docs、data、outputs、源码版本及锁 | 不是clone后即可运行的独立示例 |
 
 `pyproject.toml`的extras是当前允许版本范围；根目录requirements文件记录历史实测版本，不是同一环境可以混装的总锁。部分历史venv使用`.pth`共享既有运行库。当前CPU CI安装声明范围内可用版本，不将它冒称历史逐包环境。
@@ -28,6 +31,8 @@ georecon evaluate-poses --prediction outputs/quickstart/prediction_exact_sim3.js
 ```
 
 输出含manifest、生成图像、reference、三种prediction/evaluation以及run.json。exact_sim3是完整预测，perturbed_partial为人为缺失/扰动，no_reconstruction为人为失败；缺失误差为null，不填零。示例的意义是完整跑通数据与评价，不是测模型精度。
+
+可检查`evaluation_exact_sim3.json`的完整注册和接近浮点零的对齐误差，`evaluation_perturbed_partial.json`的缺失相机，以及`evaluation_no_reconstruction.json`的无重建状态；`rechecked.json`是显式再评价输出。请使用尚不存在的输出文件及新的示例目录；生成器会拒绝已有manifest，但不保证任意非空目录安全。先激活对应Python 3.12环境，`georecon`来自本项目安装后的CLI入口。
 
 ## 真实教学SfM：需要已有本地输入
 
@@ -72,12 +77,33 @@ georecon run-vggt --manifest data/dtu_smoke_pinned/manifest.json --config config
 
 历史批量运行器及LightGlue预检包含固定venv、缓存和输出位置，应按历史报告恢复相应环境；它们尚未改造成通用Benchmark入口。不要为重跑历史验收而覆盖旧结果、修改哈希锁或把新结果写回旧报告。
 
+## 研究结果与只读诊断复核
+
+| 需要核查的证据 | 已有入口及前提 |
+|---|---|
+| 受控A/B/C匹配及首轮失败 | [Stage7A报告](stage7a_results.md)：冻结图像/预处理、共享特征、固定LightGlue源码和本地权重；不单凭基础安装宣称可复现 |
+| 种子选择与PnP组合 | [Stage7B报告](stage7b_initialization.md)：DTU等五来源缓存、相机适配与原几何配置；自估K的COLMAP仅作另协议参考 |
+| AP3P留出确认 | [Stage7C报告及完整命令](stage7c_confirmation.md)：原冻结配置、Stage7A/B依赖和新对象缓存；其准备入口仍访问网络，不是离线示例 |
+| 支持损失、不可评估与停止门 | [Stage7D报告](stage7d_support_diagnostic.md)：960份record/map、特征与匹配缓存及冻结源码；有全部缓存才能独立复核计数 |
+
+Stage7D入口需要在原仓库布局下恢复清单对应缓存（旧索引含本地绝对路径；搬迁后不可静默改写并冒称同一冻结运行）。以下命令**仅供具备原布局/哈希的维护者复核，不是新用户Quick Start**；输出选用冻结父目录下新的子目录，禁止覆盖已有结果：
+
+```bash
+PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scripts/diagnose_stage7d_support.py \
+  --config configs/experiments/stage7d_support_diagnostic_v1.json \
+  --data outputs/stage7c_data_v1 --study outputs/stage7c_confirmation_v1 \
+  --output outputs/stage7d_support_diagnostic_v1/review_new
+```
+
+入口只读取既有关键点、匹配索引、观测身份和record，先检查哈希，诊断表封存后再关联旧评价，不调用GT几何或新求解器。检查`decision.json`、`session.json`、`unavailable.csv`及`features_seal.json`，不要把0个几何求解或程序正常退出写成性能通过。原`failure.json`及两次完整输出保持原位；大表/缓存不在Git，公开的是分组摘要与代表性失败解释。
+
 ## CPU CI与跳过解释
 
 [工作流](../.github/workflows/cpu-tests.yml)使用Python 3.12，安装`.[teaching,optimization,colmap]`，先检查依赖，再运行全部单元测试。无模型、DTU或历史缓存输入。GitHub Actions本身将在提交/推送或手动触发后才能验证，本地通过不等于已在远端运行。
 
 - verbose日志保留每项测试的执行/跳过原因；摘要分别统计通过、跳过、失败事件和错误事件。
-- 当前完整CPU环境发现152项，147通过，5项LightGlue契约因缺少可选Torch/LightGlue而跳过；它们是接口测试，不等于GPU几何性能验证。
+- 最新发布提交`b7fdf33`的[实际CI](https://github.com/zchming/GeoRecon-Fusion-Geometry-Reliability-Aware-Hybrid-Multi-View-3D-Reconstruction/actions/runs/39127655433)报告252项：246通过、6项独立LightGlue环境依赖跳过，0失败/错误。其中5项为输入契约，1项为官方RootSIFT读取保护测试；跳过不算通过。
+- 同一提交发布前的本地主环境为251通过、1项原生PyCOLMAP依赖跳过；本地具备LightGlue而CI具备PyCOLMAP，不能合并成“全部252项通过”。本次文档整理没有重跑上述测试，也没有新CI。
 - 只装基础依赖时还会跳过OpenCV、SciPy或PyCOLMAP相关测试，必须按日志解释，不能称全部通过。
 - 依赖安装失败、测试导入错误、断言失败或零测试均不能报成功。
 
@@ -100,7 +126,7 @@ README两张PNG由现有运行预览原样复制，未裁剪、修饰、重算�
 |---|---|
 | COLMAP/PyCOLMAP | [官方项目](https://github.com/colmap/colmap)；本项目适配其SfM与优化，不原创其求解器 |
 | VGGT及官方跟踪/BA | [官方源码](https://github.com/facebookresearch/vggt/tree/a288dd0f14786c93483e45524328726ab7b1b4ce)；模型、跟踪器、特征权重等来源与条款见[接入报告](stage2_vggt_ba/report.md#输入依赖与权重) |
-| LightGlue | [官方项目](https://github.com/cvg/LightGlue)；本项目仅做SIFT权重兼容预检，详见[版本与权重](sift_lightglue_preflight/report.md)；BA使用的fork与此次预检不是同一配置 |
+| LightGlue | [官方项目](https://github.com/cvg/LightGlue)；本项目已完成SIFT权重预检、受控匹配与后续SfM对照，使用第三方预训练模型；[版本与权重](sift_lightglue_preflight/report.md)、[受控验证](stage7a_results.md)。VGGT BA使用的fork与此处官方配置不同 |
 | 数值工具 | OpenCV特征/估计器、SciPy优化器、NumPy/Pillow；教学链与实验流程由本项目组织实现 |
 | DTU | [官方数据页面](https://roboimagedata.compute.dtu.dk/?page_id=36)；引用Jensen等《Large Scale Multi-view Stereopsis Evaluation》，CVPR 2014；数据获取、引用要求及原说明见[数据报告](stage1/report.md) |
 
