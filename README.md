@@ -4,7 +4,7 @@
 
 面向三维视觉算法实践的多视图重建项目：统一接入COLMAP与VGGT，实现可解释的已知内参SfM，并研究困难输入下的失败原因及可靠性判断。
 
-**当前结论：** 基线、教学SfM与实验诊断链已实现；稳定融合收益和原创算法优势尚未建立。保留MSAC 1.5 px及内点/几何质量两种排序。五数据来源对照发现AP3P在TUM上的局部收益，但DTU略退化，未通过跨数据集稳定替换门。[最新结果、失败与复现](docs/stage7b_initialization.md#final-five-dataset-search)
+**当前结论：** 基线、教学SfM与实验诊断链已实现；稳定融合收益和原创算法优势尚未建立。保留MSAC 1.5 px及内点/几何质量两种排序。Stage7C留出确认发现AP3P在新DTU质量排序上的局部准确恢复，但TUM复制收益未成立，整体仍为NO_GO；默认流程不变。[Stage 7B验收](docs/stage7b_initialization.md#stage7b-acceptance) · [最新Stage 7C留出确认](docs/stage7c_confirmation.md)
 
 ## 系统架构与核心实现
 
@@ -110,6 +110,8 @@ C相对B救回7个模糊对的正确位姿，但2个普通对退化、6个不同
 
 ### 最后一轮：五数据来源，保留AP3P候选及退化
 
+**阶段验收：工程实现与证据整理完成；跨数据集稳定提升目标未通过（NO_GO）。** 两种排序均需显式选择；AP3P目前由实验组件/runner提供，不改变旧教学入口，也没有按数据集或GT自动择优。[验收清单、使用边界与累计贡献](docs/stage7b_initialization.md#stage7b-acceptance)
+
 DTU、Strecha、Middlebury、TUM RGB-D、South Building共12个外部场景、四条件、五种子；5,760次对照不是5,760个独立样本。固定匹配/MSAC/BA，只替换PnP求解器；South Building使用SfM样例参考位姿，不是独立真值。
 
 | LightGlue＋内点排序 | 原EPnP→AP3P位姿分数@10 | 错误接受 | 严重错误 |
@@ -121,6 +123,12 @@ DTU、Strecha、Middlebury、TUM RGB-D、South Building共12个外部场景、�
 | South Building* | .7256→.7278 | 5→5 | 5→5 |
 
 TUM分数增加2.94个百分点、错误接受减少19.6%；两段序列与五种子的宏平均均改善，仍有单条件注册3→2的失败。质量排序上AP3P也改善TUM（.3339→.3590，错误46→36），但质量排序在DTU/Middlebury落后，故两排序都保留。**完整准确重建率未提高；AP3P是探索性候选，尚未独立确认，不自动改默认。** 开发预选LM因新增严重错误未通过。标准AP3P/LM来自OpenCV，不是原创求解器。[全部对照及反例](docs/stage7b_initialization.md#final-five-dataset-search) · [汇总CSV](docs/results/stage7b_final_search.csv) · [AP3P全部240项变化](docs/results/stage7b_final_ap3p_pairs.csv) · [实验组件](src/georecon/teaching/pnp_refinement.py)
+
+### Stage 7C：AP3P留出确认，有局部恢复但未通过稳定门
+
+冻结AP3P与原EPnP，在未参与选择的DTU物体12/13/15及TUM三段新采集序列上完成960次对照。主前端LightGlue、质量排序下，DTU分数.6303→.6492，完整准确图28/60→30/60，错误/严重均0；新增两次准确恢复来自同一scan12宽视角条件的两个种子。scan13/15分数略降，不能称全部物体改善。内点排序虽提高均值，却新增4个>5°错误。
+
+新TUM没有PnP成功注册，EPnP/AP3P结果相同，不能确认旧TUM收益迁移，也不能以缺少有效注册机会证明AP3P无效。**本轮`NO_GO_CONFIRMATION`，保留两排序与可选AP3P，默认不变。** 新TUM录制仍可能共享旧办公室，不称跨地点盲测。[冻结协议、结果与反例](docs/stage7c_confirmation.md) · [精简指标](docs/results/stage7c_confirmation_contrasts.csv)
 
 ## Quick Start：完整CPU协议与评价示例
 
@@ -147,13 +155,13 @@ python -m pip check
 python -m unittest discover -s tests -v
 ```
 
-[CPU CI](.github/workflows/cpu-tests.yml)在Python 3.12安装上述依赖，运行全部发现的单元测试，逐项输出跳过原因，并将通过、跳过、失败与错误写入Actions摘要。默认不安装Torch/LightGlue、不下载权重、不运行GPU模型。本轮本地主环境240项中239通过、1项原生PyCOLMAP测试跳过；独立COLMAP环境另跑适配器10项全部通过，包含原生测试。尚未提交本轮代码，不能将本地结果写成GitHub CI成功；实际CI日志为准。
+[CPU CI](.github/workflows/cpu-tests.yml)在Python 3.12安装上述依赖，运行全部发现的单元测试，逐项输出跳过原因，并将通过、跳过、失败与错误写入Actions摘要。默认不安装Torch/LightGlue、不下载权重、不运行GPU模型。本轮本地主环境240项中239通过、1项原生PyCOLMAP测试跳过；独立COLMAP环境另跑适配器10项全部通过，包含原生测试。代码提交`d1e986e`的[GitHub CI](https://github.com/zchming/GeoRecon-Fusion-Geometry-Reliability-Aware-Hybrid-Multi-View-3D-Reconstruction/actions/runs/39094362158)已成功：234通过、6项因需要独立LightGlue环境跳过，失败和错误均0。Stage7B验收当时仅整理文档。新增Stage7C后本地245项中244通过、1项原生PyCOLMAP跳过；本轮未重跑另一环境的旧适配器测试，未提交/推送，尚无Stage7C CI。CPU CI不等于GPU实验在线复现。
 
 ## 贡献归属与限制
 
 - **本项目实现：** 协议/适配与评价、经典教学几何链、实验策略、消融与失败诊断。教学实现使用成熟算法和求解器，不作为新SfM算法。
 - **第三方：** COLMAP/PyCOLMAP、VGGT及官方跟踪/BA、LightGlue预训练模型、OpenCV估计器、SciPy优化器。来源和权重条款见[复现与归属说明](docs/reproduction.md#第三方归属与数据)。未为第三方重新许可，也未选定项目许可证。
-- 历史研究只有两个反复查看的物体；Stage 7B新增三个DTU物体及Strecha四序列、Middlebury两个物体，仍不足以证明广泛泛化，新数据已用于候选验证与保留决定。没有稠密MVS、生产级SfM或稳定融合收益证据。低残差、更多匹配、完整输出都不等于准确率。
+- 历史研究只有两个反复查看的物体；Stage7B覆盖五数据来源，Stage7C再留出三个DTU物体及三个TUM采集序列，仍不足以证明广泛泛化，新数据已用于候选验证与保留决定。没有稠密MVS、生产级SfM或稳定融合收益证据。低残差、更多匹配、完整输出都不等于准确率。
 - SIFT＋LightGlue已完成受控验证，支持有限样本上的局部准确性改善；scan1宽间隔001–020的28条候选仍被E内点门拒绝，scan6宽间隔010–020新增约63°错误接受。未建立稳定无伤害提升或算法新颖性。
 - 原始数据、权重、vendor和大产物不入Git；部分历史重放依赖本地缓存及本机环境，不能仅clone仓库就完整复现实验。GPU使用上限12GB，五图官方BA的OOM仍保留。
 
@@ -170,6 +178,7 @@ python -m unittest discover -s tests -v
 | PnP、增量与教学BA | [增量注册](docs/stage6_incremental/report.md) · [BA](docs/stage6_ba/report.md) · [阶段6验收](docs/stage6_acceptance/report.md) |
 | Stage 7A受控结果与反例 | [结果与复现边界](docs/stage7a_results.md) · [冻结协议](docs/stage7a_protocol.md) |
 | Stage 7B种子选择、独立测试与负结果 | [技术报告与复现](docs/stage7b_initialization.md) · [实现](src/georecon/teaching/initialization.py) |
+| Stage 7C AP3P留出确认 | [冻结方案、实测与停止判断](docs/stage7c_confirmation.md) · [验收逻辑](src/georecon/evaluation/confirmation.py) |
 | 学习匹配器预检 | [预检报告](docs/sift_lightglue_preflight/report.md) |
 | 累计贡献边界与项目约定 | [contributions](docs/contributions.md) · [AGENTS](AGENTS.md) · [原项目要求](docs/project_brief.md) |
 
