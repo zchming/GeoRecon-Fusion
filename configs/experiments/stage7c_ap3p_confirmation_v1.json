@@ -1,0 +1,206 @@
+{
+  "id": "stage7c_ap3p_confirmation_v1",
+  "stage": "7C independent confirmation, no new algorithm",
+  "created_unix": 1792295630.456747,
+  "base_commit": "d1e986e3988edc8017ffacf5c44712ac48b10260",
+  "selected": "ap3p",
+  "scope": "User approved independent AP3P confirmation after frozen scheme; preserve Stage7B acceptance edits; no commit/push/main/next stage",
+  "frontends": [
+    "B",
+    "C"
+  ],
+  "primary_frontend": "C",
+  "rankings": [
+    "inliers",
+    "quality"
+  ],
+  "pnp_candidates": [
+    "legacy",
+    "ap3p"
+  ],
+  "geometry_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "development": "No Stage7C development tuning; Stage7B is historical selection evidence; candidate, preprocessing, gates, methods and scenes fixed before new input retrieval",
+  "data": {
+    "dtu": {
+      "scans": [
+        12,
+        13,
+        15
+      ],
+      "views": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10,
+        20
+      ],
+      "light": 3,
+      "url": "https://roboimagedata2.compute.dtu.dk/data/MVS/Rectified.zip",
+      "archive_size": 129593443783,
+      "etag": "\"1e2c5f05c7-5652dcf644cb3\"",
+      "calibration": "Existing official SampleSet cal18 matrices, same acquisition positions, new object IDs do not imply new camera trajectory",
+      "conditions": {
+        "normal5": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "reduced3": [
+          1,
+          2,
+          3
+        ],
+        "spaced3": [
+          1,
+          10,
+          20
+        ],
+        "blur5": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "tum": {
+      "scenes": [
+        "freiburg1_desk2",
+        "freiburg1_room",
+        "freiburg1_teddy"
+      ],
+      "archive_base": "https://vision.in.tum.de/rgbd/dataset/freiburg1/rgbd_dataset_",
+      "prefix_bytes": 8388608,
+      "images": 7,
+      "selection": "First7 RGB regular-file members in official TAR archive order, sort chosen filenames. normal/blur first5, reduced first3, spaced indices0/3/6. No quality/GT/overlap reselection. Archive-order subsets need not be temporally adjacent; all access failures retained, no substitute scenes.",
+      "conditions": {
+        "normal5": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "reduced3": [
+          0,
+          1,
+          2
+        ],
+        "spaced3": [
+          0,
+          3,
+          6
+        ],
+        "blur5": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "K": [
+        [
+          517.3,
+          0,
+          318.6
+        ],
+        [
+          0,
+          516.5,
+          255.3
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": [
+        0.2624,
+        -0.9531,
+        -0.0054,
+        0.0026,
+        1.1633
+      ],
+      "reference": "Official mocap optical-center camera-to-world xyzw; nearest within20ms then invert; missing reference recorded unknown",
+      "maximum_pose_gap_seconds": 0.02
+    }
+  },
+  "preprocessing": "Exact Stage7B family-specific profile: DTU1600x1200->800x600 Pillow bilinear, K pixel-center affine; TUM640x480 same-K OpenCV undistortion with black borders, no crop. Blur radius4 original pixels BEFORE resize/undistort. No new model or weights.",
+  "frozen_geometry": "MSAC1.5 uniform/LO12/20/10000, same H/decomposition/DLT/gates; original PnP1000/.999/2px/12inliers. AP3P changes only minimal PnP RANSAC solver. BA20evaluations/5seconds, no points/observations subsampling or new retries. Both rankings independently predeclared, no post-test winner selection.",
+  "planned_cases": 24,
+  "planned_runs": 960,
+  "planned_source_scenes": 6,
+  "metrics": "Same failure-aware allplannedpair linear joint pose scores5/10/20, complete accurate<=5deg, registered/correct cameras, initialization, false>5/severe>20, per-scene/seed/condition tails and costs. Scenes equally weighted within family; conditions/seeds correlated, not independent sample count. Primary C and secondary B never pooled. Unknown references/unrun rows separate, no evidence claim unless full planned matrix available.",
+  "gates": {
+    "general": "For EACH ranking, primary C: DTU AND TUM macro score10>=legacy, complete accurate nondecrease, false/severe counts nonincrease, no scene severe increase, all data/GT and technical audits complete. No tolerance picked to fit Stage7B DTU drop.",
+    "tum_replication": "For EACH ranking: TUM score10 increase>=.01 OR >=10% fewer false with nondecreasing score; >=4/5 seed macro score deltas positive; all3 TUM scenes score nonnegative. Also general nonregression gates above.",
+    "decision": "If TUM gate passes but DTU gate fails, only conditional cross-scene TUM evidence, NO global replacement. If gates fail do not tune/reselect scenes or add methods. Any B severe increase rules out frontend-independent safety. Even all gates pass only bounded six-scene confirmation, no auto-default or novelty claim.",
+    "technical": "Source/input hashes/GT guard/scene split verified; shared seeds and before-BA seed poses identical between solvers; all960 planned runs and pair slots accounted for, no process errors/missing references/BA walltimeouts; retain all geometric failures and budget-limited BA. Candidate selection lock precedes first new downloads and predictions."
+  },
+  "budget": {
+    "gpu_gib": 12,
+    "rss_gib": 8,
+    "download_bytes": 134217728,
+    "disk_gib": 3,
+    "session_seconds": 7200,
+    "cpu_workers": 4,
+    "opencv_threads_per_worker": 8,
+    "blas_threads_per_worker": 1,
+    "omp_threads_per_worker": 1,
+    "potential_aggregate_opencv_threads": 32
+  },
+  "stop": "One fixed960-map matrix only. No extra thresholds/weights/LM/source replacement, training, fusion, new optimization, unseen data expansion or next stage. Access failures remain planned unavailable and cannot be counted as passed. Stop at budget; large/full archives forbidden. Preserve all historical and current failures. No commit/push without separate confirmation.",
+  "algorithm_locks": {
+    "src/georecon/teaching/pnp_refinement.py": "d974f411b87a572a67e01e9873b5bae63d5a7d28b12956a9d0099dfaf3176774",
+    "src/georecon/teaching/initialization.py": "ddfe5cea7fa2ff075948715c7c04e6e2f761d37719d0edf7e920207f00e8f228",
+    "src/georecon/teaching/incremental.py": "049b89fb64e852f72650caf4a18e7075aaa4cc324a420b378c1602d3ef0a42f7",
+    "src/georecon/teaching/two_view.py": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "src/georecon/teaching/bundle_adjustment.py": "20a218cb0d6ed14d888816ef951c8a92d60ea05a34431dbd183b6381c6532e3a",
+    "src/georecon/matching/backend_control.py": "f3c232b4c603da4245e85cc4b79ac2966459a81ff6e67c722072196fe39f7c93",
+    "src/georecon/matching/worker.py": "05e9c37022dba8c63d406ff0a5116078365db437ab46991725bc8a3177c19c09",
+    "src/georecon/matching/features.py": "df08b5ba375f74663dd8737a3f2b0fae7e9f7f49cc704f99fb0a16f62fffbe3e",
+    "src/georecon/data/motion_benchmarks.py": "98b387f85e3897f415f5941c0b3a633de140598574aede12d5e5e5afa968d17e",
+    "src/georecon/data/calibrated_benchmarks.py": "86e3078f7b1a5dfb352e361cad7ac2712d3e06041b7170fbaf33df166db78bd6",
+    "src/georecon/data/remote_zip.py": "6ac03b11f0d7369de12045fd05c8cb41fce5fb62b60037b6db5b6f5395b09ae9",
+    "scripts/run_stage7b_final_search.py": "a98849319812e476570795566aebe539ddb3aa63a542a7fb453bed34b19f896c",
+    "scripts/prepare_stage7c_confirmation.py": "40bdc40b785034b6c7ebd7ccb871411e57ffe9cd6a30e8c708612de710d35e8d",
+    "scripts/report_stage7c_confirmation.py": "83151a6fa1bd1e374ddd1c5d3ce6af063cde9a9c571b1e9787aac316489e7ca5",
+    "src/georecon/evaluation/confirmation.py": "b3a7d314de9228b1df742146182abc5d311dab71d8039bb658a612af2442f9b1",
+    "tests/test_confirmation.py": "130c62772f65853111cf98770ebd02d2e648064a6f2afdd3850c67e6d969b06c"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "opencv-python": "5.0.0.93",
+    "torch": "2.11.0+cu128",
+    "Pillow": "12.3.0"
+  },
+  "calibration_sha256": {
+    "pos_001.txt": "892234b937d511d0e10ab80f7832f2e3316a032aa0221db264c795169273ba20",
+    "pos_002.txt": "ad57a8e6042f616d7c225d944fe5b01ecbfedfcb8fea3148e776139c0a79045a",
+    "pos_003.txt": "2ae1bd34ae18b7595cf0c3125aa5d669f69775a885b69ee9e8426cabcba491cb",
+    "pos_004.txt": "b34fbd8b584ee6085ed59ad2656e46dc3abe9fdc0d09b310228a87bd141ff34d",
+    "pos_005.txt": "54d049c6e0b234ec949e1902d89eec33587f8ad4a53fd7df648ae3707d493642",
+    "pos_010.txt": "ecc3a331d36a3bc4d8b1c739fb24184a590f017498d2268ab0d52e42a56f6a23",
+    "pos_020.txt": "bf2344171ffa41969c9761ddbe1c1c097e12070b749673afe4022d959083bcd1"
+  },
+  "independence_scope": "New DTU OBJECTS and TUM RECORDINGS, not guaranteed new geography; fr1_desk2/room may share office with previous desk. Sequence-level held-out replication only; cannot claim location-independent TUM generalization.",
+  "baseline_bundle_sha256": "ecf4bbd530228455d55d13ec5b0ae1c862889c0e43e622aeda716758161946e8",
+  "baseline_inference_sha256": "ccf79b04b9e0b1944e55dfac067b6de9bf08d704ef88cbdb9e45b160caf1af51",
+  "final_freeze_unix": 1792295865.3827777,
+  "final_freeze_note": "All protocol/source fields finalized before first new scene retrieval; five synthetic acceptance-gate tests passed, no held-out outcome inspected."
+}

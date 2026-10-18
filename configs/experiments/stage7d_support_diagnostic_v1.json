@@ -1,0 +1,73 @@
+{
+  "id": "stage7d_support_diagnostic_protocol_v1",
+  "status": "plan_frozen_not_executed",
+  "base_commit": "0715e4e1acc8d1326faaef4b8571c8313ebf320e",
+  "scope": "Existing Stage7C caches only; no new geometry, inference, downloads, strategy, commit or push. Diagnostic execution requires separate approval.",
+  "anchors_sha256": {
+    "configs/experiments/stage7c_ap3p_confirmation_v1.json": "d7003d86b0b0c31dc6152bc01dffc143f3cffc91d7b58fc11040bdcdc55409a0",
+    "outputs/stage7c_data_v1/inference.json": "b3ffc42794f708a44f27e760b626bd2588f11ed930cb5791451025a4641d62cb",
+    "outputs/stage7c_confirmation_v1/input_manifest.json": "dacd1636ef897721e911922e584b16198f383df86ebb4e75304b58b212298053",
+    "outputs/stage7c_confirmation_v1/input_hashes.json": "5c9375da74a5d54c1891e1b4b4fbe43e315c049662600f06efd869d393727819",
+    "outputs/stage7c_confirmation_v1/freeze.json": "a6235dc79292005b67457cb2300a6e6291261ad026b64b19233618d49d5a63ff",
+    "outputs/stage7c_confirmation_v1/evaluation.json": "62a4234336faf65eb0c7638355f90a62bd087a74943ac7cfce8037beaa38004e",
+    "outputs/stage7c_confirmation_v1/review/checks_and_decision.json": "d279a26f90fdac0a12e253aae9a6ca389c773a8c7e7c3f395cca8adf913de4cc",
+    "outputs/stage7c_confirmation_v1/review/supplementary_audit.json": "000ca221ddb9b58168372215ad58f4914313555eab893e1369e33328c015cd82"
+  },
+  "algorithm_locks": {
+    "src/georecon/teaching/pnp_refinement.py": "d974f411b87a572a67e01e9873b5bae63d5a7d28b12956a9d0099dfaf3176774",
+    "src/georecon/teaching/initialization.py": "ddfe5cea7fa2ff075948715c7c04e6e2f761d37719d0edf7e920207f00e8f228",
+    "src/georecon/teaching/incremental.py": "049b89fb64e852f72650caf4a18e7075aaa4cc324a420b378c1602d3ef0a42f7",
+    "src/georecon/teaching/two_view.py": "14843b469a70212ad12d523b3b200e47aa0fa3f32718b3da6301d0b1a72b9ba9",
+    "src/georecon/teaching/bundle_adjustment.py": "20a218cb0d6ed14d888816ef951c8a92d60ea05a34431dbd183b6381c6532e3a",
+    "src/georecon/matching/backend_control.py": "f3c232b4c603da4245e85cc4b79ac2966459a81ff6e67c722072196fe39f7c93",
+    "src/georecon/matching/worker.py": "05e9c37022dba8c63d406ff0a5116078365db437ab46991725bc8a3177c19c09",
+    "src/georecon/matching/features.py": "df08b5ba375f74663dd8737a3f2b0fae7e9f7f49cc704f99fb0a16f62fffbe3e",
+    "src/georecon/data/motion_benchmarks.py": "98b387f85e3897f415f5941c0b3a633de140598574aede12d5e5e5afa968d17e",
+    "src/georecon/data/calibrated_benchmarks.py": "86e3078f7b1a5dfb352e361cad7ac2712d3e06041b7170fbaf33df166db78bd6",
+    "src/georecon/data/remote_zip.py": "6ac03b11f0d7369de12045fd05c8cb41fce5fb62b60037b6db5b6f5395b09ae9",
+    "scripts/run_stage7b_final_search.py": "a98849319812e476570795566aebe539ddb3aa63a542a7fb453bed34b19f896c",
+    "scripts/prepare_stage7c_confirmation.py": "40bdc40b785034b6c7ebd7ccb871411e57ffe9cd6a30e8c708612de710d35e8d",
+    "scripts/report_stage7c_confirmation.py": "83151a6fa1bd1e374ddd1c5d3ce6af063cde9a9c571b1e9787aac316489e7ca5",
+    "src/georecon/evaluation/confirmation.py": "b3a7d314de9228b1df742146182abc5d311dab71d8039bb658a612af2442f9b1",
+    "tests/test_confirmation.py": "130c62772f65853111cf98770ebd02d2e648064a6f2afdd3850c67e6d969b06c"
+  },
+  "record_set": {
+    "files": 960,
+    "sha256": "4cba9363281e6fe7f202c5243c377b14658d41a1aab3c34d9b1b953b6cecbc01"
+  },
+  "map_set": {
+    "files": 960,
+    "sha256": "92059903a4fd5f050e80288459cccf4bc071ba15a8e13f836df8181e69503fa1"
+  },
+  "set_hash_encoding": "Sort repository-relative POSIX paths lexicographically; concatenate path + NUL + lowercase SHA256(file bytes) + LF; SHA256 UTF-8 stream. Missing/extra files invalidate freeze.",
+  "planned_records": 960,
+  "primary_frontend": "C",
+  "secondary_frontend": "B",
+  "rankings": [
+    "inliers",
+    "quality"
+  ],
+  "methods": [
+    "legacy",
+    "ap3p"
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "planned_cases": 24,
+  "raw_graph_groups": 48,
+  "budgets": {
+    "wall_seconds": 600,
+    "rss_gib": 8,
+    "cpu_workers": 1,
+    "gpu_bytes": 0,
+    "network_bytes": 0,
+    "new_output_mib": 64
+  },
+  "protocol_document": "docs/stage7d_support_diagnostic_protocol.md",
+  "protocol_document_sha256": "1367361ac7f907bbbb81669b1562af7847763464bb7fa5d885dbfde8b9abd05a"
+}
